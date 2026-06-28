@@ -11,7 +11,7 @@ Rubric: `rubric.json`
 | --- | --- | --- | --- |
 | `REQ-load-success` | Successful graph loading | Loading | `LOAD path` parses a module file and prints `OK` |
 | `REQ-load-replaces-graph` | Graph replacement | Loading, Global Invariants | A successful `LOAD` replaces the entire current graph |
-| `REQ-load-error-atomicity` | Failed load recovery | Loading, Error Behavior and Recovery | Failed `LOAD` reports `ERR ...` and preserves the previous graph |
+| `REQ-load-error-atomicity` | Failed load recovery | Loading, Error Behavior and Recovery | Failed `LOAD` reports `ERR ...` and preserves the previous graph, including empty files and malformed dependency lists |
 | `REQ-load-duplicate-error` | Duplicate module rejection | Loading, Module Definition Format | Duplicate module names make `LOAD` fail |
 | `REQ-load-unresolved-ok` | Unresolved references allowed | Loading, Module Definition Format | Unresolved dependencies do not prevent loading |
 | `REQ-list-sorted` | Module listing | Listing Modules | `LIST` prints module names in lexicographic order |
@@ -23,7 +23,8 @@ Rubric: `rubric.json`
 | `REQ-query-consistency` | Consistent graph views | Global Invariants | `INFO`, `DEPS`, and `RDEPS` agree on the same directed edges |
 | `REQ-transitive-basic` | Transitive dependency query | Transitive Dependencies | `TRANSITIVE name` prints recursive dependencies |
 | `REQ-rtransitive-basic` | Transitive reverse query | Transitive Reverse Dependencies | `RTRANSITIVE name` prints recursive reverse dependencies |
-| `REQ-transitive-dedup` | Traversal deduplication | Transitive Dependencies | Recursive traversal prints each reachable name at most once |
+| `REQ-transitive-dedup` | Traversal deduplication | Transitive Dependencies | Recursive dependency traversal prints each reachable name at most once |
+| `REQ-rtransitive-dedup` | Reverse traversal deduplication | Transitive Reverse Dependencies | Recursive reverse traversal prints each reachable name at most once |
 | `REQ-transitive-cycle-safe` | Cycle-safe dependency traversal | Transitive Dependencies | Traversal terminates on cycles and does not print the start node as its own dependency |
 | `REQ-rtransitive-cycle-safe` | Cycle-safe reverse traversal | Transitive Reverse Dependencies | Reverse traversal terminates on cycles and does not print the start target as its own reverse dependency |
 | `REQ-cycle-detect` | Cycle detection | Cycle Detection | `CHECK_CYCLES` prints `CYCLE` or `ACYCLIC` |
@@ -46,7 +47,7 @@ Rubric: `rubric.json`
 | `MBGU003` | direct dependencies | `REQ-deps-basic`, `REQ-deps-sorted` | Query direct dependencies |
 | `MBGU004` | reverse dependencies | `REQ-rdeps-basic`, `REQ-rdeps-sorted` | Query direct reverse dependencies |
 | `MBGU005` | transitive dependencies | `REQ-transitive-basic`, `REQ-transitive-dedup` | Recursive dependency traversal |
-| `MBGU006` | transitive reverse dependencies | `REQ-rtransitive-basic`, `REQ-transitive-dedup` | Recursive reverse traversal |
+| `MBGU006` | transitive reverse dependencies | `REQ-rtransitive-basic`, `REQ-rtransitive-dedup` | Recursive reverse traversal |
 | `MBGU007` | unresolved dependencies | `REQ-unresolved-basic`, `REQ-load-unresolved-ok` | Unresolved references are reported after load |
 | `MBGU008` | cycle detection | `REQ-cycle-detect` | Detect a simple dependency cycle |
 | `MBGU009` | removal | `REQ-remove-basic`, `REQ-unresolved-after-remove` | Removed modules disappear and remaining references become unresolved |
@@ -64,7 +65,7 @@ Rubric: `rubric.json`
 | --- | --- | --- | --- | --- |
 | `MBGS001` | `state_accumulation` | load -> list -> load -> list | `REQ-load-success`, `REQ-load-replaces-graph`, `REQ-list-sorted` | Successful load replaces previous graph state |
 | `MBGS002` | `global_invariant` | info -> deps -> rdeps | `REQ-info-basic`, `REQ-deps-basic`, `REQ-rdeps-basic`, `REQ-query-consistency` | Direct and reverse views agree on the same graph |
-| `MBGS003` | `cross_feature_dataflow` | direct edges -> transitive -> reverse transitive | `REQ-transitive-basic`, `REQ-rtransitive-basic`, `REQ-transitive-dedup` | Parsed edges feed recursive traversal |
+| `MBGS003` | `cross_feature_dataflow` | direct edges -> transitive -> reverse transitive | `REQ-transitive-basic`, `REQ-rtransitive-basic`, `REQ-transitive-dedup`, `REQ-rtransitive-dedup` | Parsed edges feed recursive traversal |
 | `MBGS004` | `boundary_crossing` | unresolved -> rdeps -> rtransitive | `REQ-unresolved-basic`, `REQ-rdeps-unresolved-target`, `REQ-rtransitive-unresolved-target` | Unresolved targets still participate in reverse queries |
 | `MBGS005` | `error_atomicity` | remove -> unresolved -> rdeps | `REQ-remove-basic`, `REQ-unresolved-after-remove`, `REQ-rdeps-unresolved-target` | Removing a module updates unresolved and reverse views |
 | `MBGS006` | `global_invariant` | cycle check -> transitive -> reverse transitive | `REQ-cycle-detect`, `REQ-transitive-cycle-safe`, `REQ-rtransitive-cycle-safe` | Cycle traversal terminates and preserves start-node exclusion |
@@ -75,7 +76,7 @@ Rubric: `rubric.json`
 | `MBGS011` | `cross_feature_dataflow` | unresolved -> transitive -> reverse transitive | `REQ-transitive-basic`, `REQ-rtransitive-unresolved-target`, `REQ-unresolved-basic` | A shared unresolved dependency remains consistent across traversal views |
 | `MBGS012` | `error_atomicity` | load -> duplicate load -> info | `REQ-load-duplicate-error`, `REQ-load-error-atomicity`, `REQ-info-basic` | Duplicate-module load failure preserves the previous graph |
 | `MBGS013` | `error_atomicity` | load -> malformed load -> info | `REQ-load-error-atomicity`, `REQ-load-success`, `REQ-info-basic` | Trailing-comma load failure preserves later info queries |
-| `MBGS014` | `error_atomicity` | load -> empty load -> list | `REQ-load-error-atomicity`, `REQ-list-sorted` | Empty files fail without replacing the graph |
+| `MBGS014` | `error_atomicity` | load -> empty load -> list | `REQ-load-error-atomicity`, `REQ-list-sorted` | Empty or zero-module files are invalid and fail without replacing the graph |
 | `MBGS015` | `global_invariant` | unresolved -> malformed load -> reverse query | `REQ-load-error-atomicity`, `REQ-unresolved-basic`, `REQ-query-consistency` | Top-level garbage preserves unresolved dependency state |
 | `MBGS016` | `operation_order_sensitivity` | load -> remove -> malformed reload -> query | `REQ-load-error-atomicity`, `REQ-remove-basic`, `REQ-unresolved-after-remove` | Malformed reload after removal preserves the already-mutated graph |
 
@@ -121,7 +122,7 @@ Additional cases were added after comparing this task with the official core exa
 - `MBGS011` checks unresolved dependencies across transitive and reverse-transitive queries.
 - `MBGS012` checks duplicate-load error atomicity against a previous valid graph.
 
-This brings MiniBuildGraph to 16 unit cases and 12 system cases, matching the scale used by stronger official tasks while keeping all state setup through public `LOAD` commands.
+This brings MiniBuildGraph to 16 unit cases and 16 system cases, matching the scale used by stronger official tasks while keeping all state setup through public `LOAD` commands.
 
 ## Model-Gap Strengthening Pass 2026-06-21
 
@@ -132,6 +133,6 @@ After auxiliary bare-model runs (Doubao-Seed-2.0, DeepSeek-V4-Pro, and GPT-5.5),
 - `MBGS015` checks that top-level garbage fails without clearing unresolved dependency state.
 - `MBGS016` checks that malformed reloads after `REMOVE` preserve the already-mutated graph state.
 
-These cases all exercise the existing PRD invariant that failed `LOAD` operations must preserve the previous graph unchanged. They use only public `LOAD`, query, and `REMOVE` commands and do not depend on private reference file formats.
+These cases exercise the public `LOAD` failure rules and the invariant that failed `LOAD` operations must preserve the previous graph unchanged. They use only public `LOAD`, query, and `REMOVE` commands and do not depend on private reference file formats.
 
 These bare-model runs are not counted as core evidence under the executable code-agent policy; they are retained only as auxiliary task-hardening signals.

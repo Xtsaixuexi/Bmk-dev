@@ -331,7 +331,7 @@
         "category": "redir_scope_pipeline_scope",
         "requirement_refs": [
             "REQ-redir-output",
-            "REQ-redir-error-atomicity",
+            "REQ-redir-scope",
             "REQ-pipe-dataflow",
             "REQ-cat-stdin",
             "REQ-cat-file"

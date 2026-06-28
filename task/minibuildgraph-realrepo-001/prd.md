@@ -78,6 +78,7 @@ Required behavior:
 - `TYPE` is a string such as `binary`, `library`, `test`, or `tool`.
 - `deps` is a comma-separated list of direct dependencies.
 - `deps =` means the module has no direct dependencies.
+- Empty dependency items are invalid; for example, a trailing comma in `deps = lib,` makes the file invalid.
 - Whitespace around names, commas, braces, and equals signs is allowed.
 - Module names are case-sensitive.
 - Each module name must be unique in a loaded graph.
@@ -118,7 +119,8 @@ OK
 Loading fails with a deterministic `ERR ...` line if:
 
 - the file does not exist
-- the file has invalid syntax
+- the file is empty or contains zero module blocks
+- the file has invalid syntax, including empty dependency items or trailing dependency commas
 - duplicate module names are found
 
 If loading fails, the previous graph must remain unchanged.

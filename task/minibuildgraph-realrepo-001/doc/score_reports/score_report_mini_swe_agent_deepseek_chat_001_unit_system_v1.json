@@ -334,7 +334,7 @@
       "system_dimension": null,
       "requirement_refs": [
         "REQ-rtransitive-basic",
-        "REQ-transitive-dedup"
+        "REQ-rtransitive-dedup"
       ],
       "description": "RTRANSITIVE prints recursive reverse dependencies without duplicates.",
       "weight": 4,
@@ -489,7 +489,8 @@
       "requirement_refs": [
         "REQ-transitive-basic",
         "REQ-rtransitive-basic",
-        "REQ-transitive-dedup"
+        "REQ-transitive-dedup",
+        "REQ-rtransitive-dedup"
       ],
       "description": "Direct edges feed both transitive and reverse-transitive traversal consistently.",
       "weight": 8,

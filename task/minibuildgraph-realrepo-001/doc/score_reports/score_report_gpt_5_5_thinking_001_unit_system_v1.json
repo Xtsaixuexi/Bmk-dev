@@ -300,7 +300,11 @@
       "actual_stdout": "OK\nbase\nlib\nutil",
       "test_stderr": "",
       "returncode": 0,
-      "passed": true
+      "passed": true,
+      "requirement_refs": [
+        "REQ-transitive-basic",
+        "REQ-transitive-dedup"
+      ]
     },
     {
       "id": "MBGU006",
@@ -313,7 +317,11 @@
       "actual_stdout": "OK\napp\nlib\nutil",
       "test_stderr": "",
       "returncode": 0,
-      "passed": true
+      "passed": true,
+      "requirement_refs": [
+        "REQ-rtransitive-basic",
+        "REQ-rtransitive-dedup"
+      ]
     },
     {
       "id": "MBGU007",
@@ -430,7 +438,13 @@
       "actual_stdout": "OK\nb\nc\nd\na\nb\nc",
       "test_stderr": "",
       "returncode": 0,
-      "passed": true
+      "passed": true,
+      "requirement_refs": [
+        "REQ-transitive-basic",
+        "REQ-rtransitive-basic",
+        "REQ-transitive-dedup",
+        "REQ-rtransitive-dedup"
+      ]
     },
     {
       "id": "MBGS004",

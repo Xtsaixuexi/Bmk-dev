@@ -2,9 +2,9 @@
 
 This repository contains benchmark task packets for evaluating whether code agents can pass isolated unit behavior while still failing harder end-to-end system behavior.
 
-## Main Deliverables
+## Primary Deliverables
 
-The two current task packets are:
+The two primary task packets in this branch are:
 
 - `task/minishell-realrepo-001/prd.md`
 - `task/minishell-realrepo-001/rubric.json`
@@ -14,6 +14,18 @@ The two current task packets are:
 The consolidated score table is:
 
 - `score_summary.csv`
+
+## Scope And Status
+
+This repository also keeps three previously validated context tasks:
+
+- `task/sqlite-utils-realrepo-001`
+- `task/zk-realrepo-001`
+- `task/miniurlutils-realrepo-001`
+
+`SQLite`, `ZK`, and `MiniURLUtils` already have executable code-agent runs meeting the current core-strong gap policy.
+
+`MiniShell` and `MiniBuildGraph` are the active deliverables. Their reference implementations pass 100/100, and multiple executable code-agent reports are recorded, but they are still marked `needs code-agent gap` until an executable code-agent run reaches the target system-gap threshold. Bare model runs are kept only as non-core auxiliary hardening signals.
 
 ## Included Context
 

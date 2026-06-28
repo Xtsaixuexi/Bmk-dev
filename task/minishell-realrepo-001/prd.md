@@ -53,6 +53,8 @@ Commands are executed sequentially.
 
 Shell state persists across lines during a single run.
 
+Relative file paths and command execution use the shell process current working directory. A successful `cd` changes that working directory for later commands.
+
 The program may terminate early if it executes `exit`.
 
 ## Output Channels
@@ -231,6 +233,8 @@ The shell must support:
 - `<` input redirection, reading command input from a file.
 
 Redirections apply only to the command where they appear.
+
+When redirection and pipelines appear together, a redirection on one pipeline stage affects only that stage. Input redirection on a later stage replaces that stage's pipeline input, and output redirection on an earlier stage writes that stage's output to the file instead of forwarding it through the pipe.
 
 For benchmark purposes, each redirection operator is followed by one filename token.
 

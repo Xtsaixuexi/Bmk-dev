@@ -34,7 +34,8 @@ Rubric: `rubric.json`
 | `REQ-redir-output` | `>` redirection | Redirections | Output redirection replaces file contents |
 | `REQ-redir-append` | `>>` redirection | Redirections | Append redirection preserves previous file content |
 | `REQ-redir-input` | `<` redirection | Redirections | Command input can come from a file |
-| `REQ-redir-error-atomicity` | Redirection scope/recovery | Redirections, Global Invariants | Redirection affects only the target command and does not corrupt shell state |
+| `REQ-redir-scope` | Redirection scope | Redirections, Global Invariants | Redirection affects only the pipeline stage where it appears |
+| `REQ-redir-error-atomicity` | Failed redirection recovery | Redirections, Global Invariants | Failed redirections do not corrupt shell state |
 | `REQ-exit-basic` | `exit` | Built-in Commands | Later input lines are not executed after `exit` |
 | `REQ-cat-stdin` | `cat` stdin mode | Built-in Commands | `cat` without file arguments reads standard input |
 | `REQ-cat-file` | `cat` file mode | Built-in Commands | `cat FILE` prints file contents |
@@ -78,7 +79,7 @@ Rubric: `rubric.json`
 | `MSS007` | `error_atomicity` | export -> failed export -> expansion | `REQ-export-set`, `REQ-var-name`, `REQ-export-error-atomicity`, `REQ-var-expansion` | Invalid export does not corrupt previous environment |
 | `MSS008` | `boundary_crossing` | pipeline -> grep status -> `$?` | `REQ-pipe-dataflow`, `REQ-pipe-status`, `REQ-exit-status-expansion`, `REQ-grep-literal`, `REQ-grep-status` | Pipeline output and status are both observable |
 | `MSS009` | `boundary_crossing` | export -> unset -> expansion -> env | `REQ-export-set`, `REQ-unset-basic`, `REQ-var-undefined`, `REQ-env-output` | Removed variables disappear from both expansion and env |
-| `MSS010` | `global_invariant` | redirection -> pipeline -> file read | `REQ-redir-output`, `REQ-redir-error-atomicity`, `REQ-pipe-dataflow`, `REQ-cat-stdin`, `REQ-cat-file` | Redirection scope and pipeline flow remain separate |
+| `MSS010` | `global_invariant` | redirection -> pipeline -> file read | `REQ-redir-output`, `REQ-redir-scope`, `REQ-pipe-dataflow`, `REQ-cat-stdin`, `REQ-cat-file` | Redirection scope and pipeline flow remain separate |
 | `MSS011` | `boundary_crossing` | failed command -> stderr -> `$?` -> later stdout | `REQ-error-deterministic`, `REQ-error-stderr`, `REQ-error-status`, `REQ-exit-status-expansion`, `REQ-exec-sequence` | Failures update status, keep diagnostics off stdout, and allow later commands |
 | `MSS012` | `boundary_crossing` | pipeline -> input redirection -> status | `REQ-pipe-dataflow`, `REQ-redir-input`, `REQ-cat-stdin`, `REQ-exit-status-expansion` | Input redirection on a later pipeline stage overrides pipe input without leaking earlier data |
 
@@ -89,7 +90,7 @@ System dimension coverage:
 - `global_invariant`: `MSS003`, `MSS010`
 - `error_atomicity`: `MSS006`, `MSS007`
 - `operation_order_sensitivity`: `MSS005`
-- `boundary_crossing`: `MSS008`, `MSS009`, `MSS011`
+- `boundary_crossing`: `MSS008`, `MSS009`, `MSS011`, `MSS012`
 
 ## Reference And Model Verification
 
@@ -100,11 +101,12 @@ System dimension coverage:
 | Codex local | 100.00% | 100.00% | 0.00 | code_agent_control | `score_report_codex_local_20260623_unit_system_v1.json` |
 | OpenHands + DeepSeek Chat | 100.00% | 100.00% | 0.00 | code_agent_control | `score_report_openhands_deepseek_chat_001_unit_system_v1.json` |
 | Mini-SWE-Agent + DeepSeek Chat | 100.00% | 91.67% | 8.33 | code_agent_candidate_reviewed | `score_report_mini_swe_agent_deepseek_chat_001_unit_system_v1.json` |
+| SWE-Agent + DeepSeek Chat | 68.75% | 58.33% | 10.42 | code_agent_candidate_reviewed | `score_report_swe_agent_deepseek_chat_001_unit_system_v1.json` |
 | Doubao Seed 2.0 | 100.00% | 100.00% | 0.00 | auxiliary_non_core_bare_model | `score_report_doubao_seed_2_0_001_unit_system_v1.json` |
 | DeepSeek V4 Pro | 93.75% | 66.67% | 27.08 | auxiliary_non_core_bare_model | `score_report_deepseek_v4_pro_001_unit_system_v1.json` |
 | GPT-5.5 Thinking | 93.75% | 91.67% | 2.08 | auxiliary_non_core_bare_model | `score_report_gpt_5_5_thinking_001_unit_system_v1.json` |
 
-Current status: reference passes, but no executable code-agent run reaches the `gap >= 15pp` core-strong threshold. MiniShell remains `needs_code_agent_gap`; bare-model scores are retained only as auxiliary observations.
+Current status: reference passes, but no executable code-agent run reaches the `gap >= 15pp` core-strong threshold. MiniShell remains task-level `needs_code_agent_gap`; individual executable agent runs with completed reports are marked `candidate_reviewed` in `score_summary.csv`. Bare-model scores are retained only as auxiliary observations.
 
 ## Fairness Notes
 

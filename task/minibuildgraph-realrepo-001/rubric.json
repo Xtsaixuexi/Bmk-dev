@@ -70,7 +70,7 @@
         "category": "transitive_reverse_dependencies",
         "requirement_refs": [
             "REQ-rtransitive-basic",
-            "REQ-transitive-dedup"
+            "REQ-rtransitive-dedup"
         ],
         "description": "RTRANSITIVE prints recursive reverse dependencies without duplicates.",
         "weight": 4,
