@@ -28,8 +28,6 @@ Supporting files live under `doc/`:
 Agent coverage and route status are tracked in:
 
 - `code_agent_execution_matrix.csv`
-- `code_agent执行矩阵.md`
-- `核心路线执行核对表.md`
 
 ## Validation
 
