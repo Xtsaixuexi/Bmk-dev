@@ -1,27 +1,42 @@
-# Unit/System Gap Core Tasks
+# Bmk-dev Unit/System Gap Tasks
 
-Strict core package with five confirmed tasks.
+This repository contains benchmark task packets for evaluating whether code agents can pass isolated unit behavior while still failing harder end-to-end system behavior.
 
-Each task directory keeps the core task definition at the top level:
+## Main Deliverables
 
-- `prd.md`
-- `rubric.json`
+The two current task packets are:
 
-Supporting review materials live under each task's `doc/` directory:
+- `task/minishell-realrepo-001/prd.md`
+- `task/minishell-realrepo-001/rubric.json`
+- `task/minibuildgraph-realrepo-001/prd.md`
+- `task/minibuildgraph-realrepo-001/rubric.json`
+
+The consolidated score table is:
+
+- `score_summary.csv`
+
+## Included Context
+
+Each task directory keeps the public product requirements in `prd.md` and the executable grading cases in `rubric.json`.
+
+Supporting files live under `doc/`:
 
 - `source_repo.md`
 - `requirement_map.md`
 - `score_reports/`
 
-## Tasks
+Agent coverage and route status are tracked in:
 
-- `task/sqlite-utils-realrepo-001`
-- `task/zk-realrepo-001`
-- `task/miniurlutils-realrepo-001`
-- `task/minishell-realrepo-001`
-- `task/minibuildgraph-realrepo-001`
+- `code_agent_execution_matrix.csv`
+- `code_agent执行矩阵.md`
+- `核心路线执行核对表.md`
 
-Scores are summarized in `score_summary.csv`.
+## Validation
 
-Route execution is tracked in `核心路线执行核对表.md`.
-Code agent availability and coverage are tracked in `code_agent执行矩阵.md`.
+Run the repository consistency check:
+
+```bash
+python tools/validate_scores.py --root .
+```
+
+Current validation status: 0 errors, 0 warnings.
