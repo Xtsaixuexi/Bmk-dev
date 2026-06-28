@@ -1,0 +1,320 @@
+[
+  {
+    "id": "MDU001",
+    "layer": "unit",
+    "category": "api_shape",
+    "requirement_refs": ["REQ-api-shape"],
+    "description": "Required public API functions are importable and callable.",
+    "weight": 4,
+    "test_code": "from minidotenv import dotenv_values, load_dotenv, find_dotenv, get_key, set_key, unset_key\nprint(all(callable(x) for x in [dotenv_values, load_dotenv, find_dotenv, get_key, set_key, unset_key]))\n",
+    "expected_output": "True"
+  },
+  {
+    "id": "MDU002",
+    "layer": "unit",
+    "category": "source_selection",
+    "requirement_refs": ["REQ-source-selection", "REQ-parse-basic"],
+    "description": "dotenv_path takes precedence over stream input.",
+    "weight": 4,
+    "test_code": "import io, tempfile, os\nfrom minidotenv import dotenv_values\nwith tempfile.TemporaryDirectory() as td:\n    path = os.path.join(td, '.env')\n    open(path, 'w', encoding='utf-8').write('A=file\\n')\n    vals = dotenv_values(path, stream=io.StringIO('A=stream\\n'))\n    print(vals)\n",
+    "expected_output": "{'A': 'file'}"
+  },
+  {
+    "id": "MDU003",
+    "layer": "unit",
+    "category": "parse_basic",
+    "requirement_refs": ["REQ-parse-basic"],
+    "description": "Basic KEY=value, empty value, and bare key parse to string, empty string, and None.",
+    "weight": 4,
+    "test_code": "import io\nfrom minidotenv import dotenv_values\nvals = dotenv_values(stream=io.StringIO('A=1\\nEMPTY=\\nBARE\\n'))\nprint(vals)\n",
+    "expected_output": "{'A': '1', 'EMPTY': '', 'BARE': None}"
+  },
+  {
+    "id": "MDU004",
+    "layer": "unit",
+    "category": "comments_export",
+    "requirement_refs": ["REQ-parse-comments-export", "REQ-inline-comments"],
+    "description": "Comments, blank lines, export prefixes, and inline comments are handled.",
+    "weight": 4,
+    "test_code": "import io\nfrom minidotenv import dotenv_values\ncontent = '# top\\n\\nexport A=1\\nB=two # trailing\\nC=hash#literal\\n'\nprint(dotenv_values(stream=io.StringIO(content)))\n",
+    "expected_output": "{'A': '1', 'B': 'two', 'C': 'hash#literal'}"
+  },
+  {
+    "id": "MDU005",
+    "layer": "unit",
+    "category": "quotes",
+    "requirement_refs": ["REQ-quote-single", "REQ-quote-double"],
+    "description": "Single and double quoted values remove quotes and decode supported escapes.",
+    "weight": 4,
+    "test_code": "import io\nfrom minidotenv import dotenv_values\ncontent = \"S='one two'\\nD=\\\"line\\\\nnext\\\"\\nT=\\\"tab\\\\tend\\\"\\n\"\nvals = dotenv_values(stream=io.StringIO(content))\nprint(vals['S'])\nprint(repr(vals['D']))\nprint(repr(vals['T']))\n",
+    "expected_output": "one two\n'line\\nnext'\n'tab\\tend'"
+  },
+  {
+    "id": "MDU006",
+    "layer": "unit",
+    "category": "interpolation",
+    "requirement_refs": ["REQ-interpolate-basic", "REQ-interpolate-default"],
+    "description": "Interpolation supports earlier file variables and default values.",
+    "weight": 4,
+    "test_code": "import io, os\nfrom minidotenv import dotenv_values\nos.environ.pop('BASE', None)\ncontent = 'BASE=/app\\nLOG=${BASE}/log\\nMISS=${UNSET:-fallback}\\n'\nprint(dotenv_values(stream=io.StringIO(content)))\n",
+    "expected_output": "{'BASE': '/app', 'LOG': '/app/log', 'MISS': 'fallback'}"
+  },
+  {
+    "id": "MDU007",
+    "layer": "unit",
+    "category": "interpolation_order",
+    "requirement_refs": ["REQ-interpolate-order"],
+    "description": "Interpolation does not see bindings defined later in the file.",
+    "weight": 4,
+    "test_code": "import io, os\nfrom minidotenv import dotenv_values\nos.environ.pop('LATER', None)\ncontent = 'FIRST=${LATER}x\\nLATER=value\\n'\nprint(dotenv_values(stream=io.StringIO(content)))\n",
+    "expected_output": "{'FIRST': 'x', 'LATER': 'value'}"
+  },
+  {
+    "id": "MDU008",
+    "layer": "unit",
+    "category": "load_env",
+    "requirement_refs": ["REQ-load-no-override", "REQ-load-override", "REQ-load-none-skip"],
+    "description": "load_dotenv respects override mode and skips None values.",
+    "weight": 4,
+    "test_code": "import io, os\nfrom minidotenv import load_dotenv\nos.environ['A'] = 'env'\nos.environ.pop('BARE', None)\nload_dotenv(stream=io.StringIO('A=file\\nBARE\\n'), override=False)\nprint(os.environ.get('A'))\nprint('BARE' in os.environ)\nload_dotenv(stream=io.StringIO('A=file\\n'), override=True)\nprint(os.environ.get('A'))\n",
+    "expected_output": "env\nFalse\nfile"
+  },
+  {
+    "id": "MDU009",
+    "layer": "unit",
+    "category": "find_dotenv",
+    "requirement_refs": ["REQ-find-dotenv"],
+    "description": "find_dotenv searches upward from the current working directory.",
+    "weight": 4,
+    "test_code": "import os, tempfile\nfrom minidotenv import find_dotenv\nwith tempfile.TemporaryDirectory() as td:\n    os.makedirs(os.path.join(td, 'a', 'b'))\n    open(os.path.join(td, '.env'), 'w', encoding='utf-8').write('A=1\\n')\n    old = os.getcwd()\n    os.chdir(os.path.join(td, 'a', 'b'))\n    try:\n        found = find_dotenv()\n        print(os.path.basename(found))\n        print(os.path.dirname(found) == td)\n    finally:\n        os.chdir(old)\n",
+    "expected_output": ".env\nTrue"
+  },
+  {
+    "id": "MDU010",
+    "layer": "unit",
+    "category": "get_set_unset",
+    "requirement_refs": ["REQ-get-key", "REQ-set-key", "REQ-unset-key"],
+    "description": "set_key, get_key, and unset_key operate on one file deterministically.",
+    "weight": 4,
+    "test_code": "import os, tempfile\nfrom minidotenv import set_key, get_key, unset_key, dotenv_values\nwith tempfile.TemporaryDirectory() as td:\n    path = os.path.join(td, '.env')\n    open(path, 'w', encoding='utf-8').write('A=1\\n')\n    print(set_key(path, 'B', 'two', quote_mode='never'))\n    print(get_key(path, 'B'))\n    print(unset_key(path, 'A'))\n    print(dotenv_values(path))\n",
+    "expected_output": "True\ntwo\nTrue\n{'B': 'two'}"
+  },
+  {
+    "id": "MDU011",
+    "layer": "unit",
+    "category": "set_replace",
+    "requirement_refs": ["REQ-set-key"],
+    "description": "set_key replaces the first matching key without duplicating it.",
+    "weight": 4,
+    "test_code": "import os, tempfile\nfrom minidotenv import set_key, dotenv_values\nwith tempfile.TemporaryDirectory() as td:\n    path = os.path.join(td, '.env')\n    open(path, 'w', encoding='utf-8').write('A=old\\nB=keep\\n')\n    set_key(path, 'A', 'new', quote_mode='never')\n    text = open(path, encoding='utf-8').read()\n    print(dotenv_values(path))\n    print(text.count('A=') == 1)\n",
+    "expected_output": "{'A': 'new', 'B': 'keep'}\nTrue"
+  },
+  {
+    "id": "MDU012",
+    "layer": "unit",
+    "category": "malformed_recovery",
+    "requirement_refs": ["REQ-malformed-recovery", "REQ-key-validation"],
+    "description": "Malformed lines and invalid keys are skipped while later valid bindings parse.",
+    "weight": 4,
+    "test_code": "import io\nfrom minidotenv import dotenv_values\ncontent = 'GOOD=1\\n1BAD=no\\nnot a binding ?\\nNEXT=2\\n'\nprint(dotenv_values(stream=io.StringIO(content)))\n",
+    "expected_output": "{'GOOD': '1', 'NEXT': '2'}"
+  },
+  {
+    "id": "MDS001",
+    "layer": "system",
+    "system_dimension": "cross_feature_dataflow",
+    "category": "parse_interpolate_load",
+    "requirement_refs": ["REQ-parse-basic", "REQ-interpolate-basic", "REQ-load-override"],
+    "description": "Parsed values feed interpolation and then environment loading.",
+    "weight": 8,
+    "test_code": "import io, os\nfrom minidotenv import load_dotenv\nos.environ.pop('ROOT', None); os.environ.pop('CONF', None)\ncontent = 'ROOT=/srv\\nCONF=${ROOT}/conf\\n'\nload_dotenv(stream=io.StringIO(content), override=True)\nprint(os.environ.get('CONF'))\n",
+    "expected_output": "/srv/conf"
+  },
+  {
+    "id": "MDS002",
+    "layer": "system",
+    "system_dimension": "state_accumulation",
+    "category": "set_parse_load_get",
+    "requirement_refs": ["REQ-set-key", "REQ-get-key", "REQ-load-override"],
+    "description": "File mutation affects later parsing, loading, and key lookup.",
+    "weight": 8,
+    "test_code": "import os, tempfile\nfrom minidotenv import set_key, get_key, load_dotenv\nwith tempfile.TemporaryDirectory() as td:\n    path = os.path.join(td, '.env')\n    open(path, 'w', encoding='utf-8').write('A=1\\n')\n    set_key(path, 'B', '2', quote_mode='never')\n    os.environ.pop('B', None)\n    load_dotenv(path, override=True)\n    print(get_key(path, 'B'))\n    print(os.environ.get('B'))\n",
+    "expected_output": "2\n2"
+  },
+  {
+    "id": "MDS003",
+    "layer": "system",
+    "system_dimension": "global_invariant",
+    "category": "values_vs_load_env",
+    "requirement_refs": ["REQ-source-selection", "REQ-no-state-leak", "REQ-load-override"],
+    "description": "dotenv_values is read-only while load_dotenv mutates os.environ.",
+    "weight": 8,
+    "test_code": "import io, os\nfrom minidotenv import dotenv_values, load_dotenv\nos.environ.pop('ONLY_PARSE', None)\nvals = dotenv_values(stream=io.StringIO('ONLY_PARSE=1\\n'))\nprint(vals)\nprint('ONLY_PARSE' in os.environ)\nload_dotenv(stream=io.StringIO('ONLY_PARSE=2\\n'), override=True)\nprint(os.environ.get('ONLY_PARSE'))\n",
+    "expected_output": "{'ONLY_PARSE': '1'}\nFalse\n2"
+  },
+  {
+    "id": "MDS004",
+    "layer": "system",
+    "system_dimension": "error_atomicity",
+    "category": "invalid_set_preserves_file",
+    "requirement_refs": ["REQ-key-validation", "REQ-mutation-atomicity", "REQ-parse-basic"],
+    "description": "A failed set_key with an invalid key does not corrupt the original file.",
+    "weight": 8,
+    "test_code": "import os, tempfile\nfrom minidotenv import set_key, dotenv_values\nwith tempfile.TemporaryDirectory() as td:\n    path = os.path.join(td, '.env')\n    open(path, 'w', encoding='utf-8').write('GOOD=1\\n# keep\\n')\n    before = open(path, encoding='utf-8').read()\n    try:\n        result = set_key(path, '1BAD', 'x', quote_mode='never')\n    except Exception:\n        result = False\n    after = open(path, encoding='utf-8').read()\n    print(result)\n    print(before == after)\n    print(dotenv_values(path))\n",
+    "expected_output": "False\nTrue\n{'GOOD': '1'}"
+  },
+  {
+    "id": "MDS005",
+    "layer": "system",
+    "system_dimension": "operation_order_sensitivity",
+    "category": "override_interpolation_priority",
+    "requirement_refs": ["REQ-interpolate-basic", "REQ-load-no-override", "REQ-load-override"],
+    "description": "Override mode changes interpolation and final loaded environment values.",
+    "weight": 8,
+    "test_code": "import io, os\nfrom minidotenv import dotenv_values, load_dotenv\nos.environ['BASE'] = 'env'\ncontent = 'BASE=file\\nPATH=${BASE}/bin\\n'\nprint(dotenv_values(stream=io.StringIO(content), override=False))\nprint(dotenv_values(stream=io.StringIO(content), override=True))\nos.environ['PATH_OUT'] = 'old'\nload_dotenv(stream=io.StringIO('PATH_OUT=${BASE}/out\\n'), override=True)\nprint(os.environ['PATH_OUT'])\n",
+    "expected_output": "{'BASE': 'file', 'PATH': 'env/bin'}\n{'BASE': 'file', 'PATH': 'file/bin'}\nenv/out"
+  },
+  {
+    "id": "MDS006",
+    "layer": "system",
+    "system_dimension": "boundary_crossing",
+    "category": "find_load_env_interpolation",
+    "requirement_refs": ["REQ-find-dotenv", "REQ-interpolate-basic", "REQ-load-no-override"],
+    "description": "Path discovery, environment priority, and interpolation compose from a nested cwd.",
+    "weight": 8,
+    "test_code": "import os, tempfile\nfrom minidotenv import find_dotenv, load_dotenv\nwith tempfile.TemporaryDirectory() as td:\n    os.makedirs(os.path.join(td, 'child', 'deep'))\n    open(os.path.join(td, '.env'), 'w', encoding='utf-8').write('BASE=file\\nOUT=${BASE}/x\\n')\n    os.environ['BASE'] = 'env'\n    os.environ.pop('OUT', None)\n    old = os.getcwd(); os.chdir(os.path.join(td, 'child', 'deep'))\n    try:\n        found = find_dotenv()\n        load_dotenv(found, override=False)\n        print(os.path.dirname(found) == td)\n        print(os.environ.get('BASE'))\n        print(os.environ.get('OUT'))\n    finally:\n        os.chdir(old)\n",
+    "expected_output": "True\nenv\nenv/x"
+  },
+  {
+    "id": "MDS007",
+    "layer": "system",
+    "system_dimension": "durability_reload",
+    "category": "unset_reload_preserves_comments",
+    "requirement_refs": ["REQ-unset-key", "REQ-get-key", "REQ-no-state-leak"],
+    "description": "unset_key persists across later reads while preserving unrelated lines and comments.",
+    "weight": 8,
+    "test_code": "import os, tempfile\nfrom minidotenv import unset_key, get_key, dotenv_values\nwith tempfile.TemporaryDirectory() as td:\n    path = os.path.join(td, '.env')\n    open(path, 'w', encoding='utf-8').write('# keep\\nA=1\\nB=2\\n')\n    print(unset_key(path, 'A'))\n    print(get_key(path, 'A'))\n    print(dotenv_values(path))\n    print('# keep' in open(path, encoding='utf-8').read())\n",
+    "expected_output": "True\nNone\n{'B': '2'}\nTrue"
+  },
+  {
+    "id": "MDS008",
+    "layer": "system",
+    "system_dimension": "error_atomicity",
+    "category": "malformed_then_mutate",
+    "requirement_refs": ["REQ-malformed-recovery", "REQ-set-key", "REQ-parse-basic"],
+    "description": "Malformed lines are skipped and do not prevent later mutation and parsing.",
+    "weight": 8,
+    "test_code": "import os, tempfile\nfrom minidotenv import dotenv_values, set_key\nwith tempfile.TemporaryDirectory() as td:\n    path = os.path.join(td, '.env')\n    open(path, 'w', encoding='utf-8').write('A=1\\nbad line ?\\nB=2\\n')\n    print(dotenv_values(path))\n    set_key(path, 'C', '3', quote_mode='never')\n    print(dotenv_values(path))\n",
+    "expected_output": "{'A': '1', 'B': '2'}\n{'A': '1', 'B': '2', 'C': '3'}"
+  },
+  {
+    "id": "MDS009",
+    "layer": "system",
+    "system_dimension": "state_accumulation",
+    "category": "replace_then_interpolate",
+    "requirement_refs": ["REQ-set-key", "REQ-interpolate-basic", "REQ-no-state-leak"],
+    "description": "Replacing a key changes later interpolation results without duplicating state.",
+    "weight": 8,
+    "test_code": "import os, tempfile\nfrom minidotenv import set_key, dotenv_values\nwith tempfile.TemporaryDirectory() as td:\n    path = os.path.join(td, '.env')\n    open(path, 'w', encoding='utf-8').write('ROOT=old\\nOUT=${ROOT}/out\\n')\n    print(dotenv_values(path)['OUT'])\n    set_key(path, 'ROOT', 'new', quote_mode='never')\n    vals = dotenv_values(path)\n    print(vals['OUT'])\n    print(open(path, encoding='utf-8').read().count('ROOT=') == 1)\n",
+    "expected_output": "old/out\nnew/out\nTrue"
+  },
+  {
+    "id": "MDS010",
+    "layer": "system",
+    "system_dimension": "global_invariant",
+    "category": "missing_sources_safe",
+    "requirement_refs": ["REQ-source-selection", "REQ-get-key", "REQ-unset-key"],
+    "description": "Missing files are handled safely across read, load, get, and unset helpers.",
+    "weight": 8,
+    "test_code": "import os, tempfile\nfrom minidotenv import dotenv_values, load_dotenv, get_key, unset_key\nwith tempfile.TemporaryDirectory() as td:\n    path = os.path.join(td, 'missing.env')\n    print(dotenv_values(path))\n    print(load_dotenv(path))\n    print(get_key(path, 'A'))\n    print(unset_key(path, 'A'))\n",
+    "expected_output": "{}\nFalse\nNone\nFalse"
+  },
+  {
+    "id": "MDS011",
+    "layer": "system",
+    "system_dimension": "boundary_crossing",
+    "category": "quoted_comments_interpolation",
+    "requirement_refs": ["REQ-quote-single", "REQ-quote-double", "REQ-inline-comments", "REQ-interpolate-basic"],
+    "description": "Quotes, comments, and interpolation interact without losing literal content.",
+    "weight": 8,
+    "test_code": "import io\nfrom minidotenv import dotenv_values\ncontent = \"A='hash # kept'\\nB=two # cut\\nC=\\\"${B} value\\\"\\nD=${A}\\n\"\nprint(dotenv_values(stream=io.StringIO(content)))\n",
+    "expected_output": "{'A': 'hash # kept', 'B': 'two', 'C': 'two value', 'D': 'hash # kept'}"
+  },
+  {
+    "id": "MDS012",
+    "layer": "system",
+    "system_dimension": "operation_order_sensitivity",
+    "category": "file_precedence_over_stream_after_mutation",
+    "requirement_refs": ["REQ-source-selection", "REQ-set-key", "REQ-parse-basic"],
+    "description": "A mutated file takes precedence over a conflicting stream in later reads.",
+    "weight": 8,
+    "test_code": "import io, os, tempfile\nfrom minidotenv import set_key, dotenv_values\nwith tempfile.TemporaryDirectory() as td:\n    path = os.path.join(td, '.env')\n    open(path, 'w', encoding='utf-8').write('A=old\\n')\n    set_key(path, 'A', 'file', quote_mode='never')\n    vals = dotenv_values(path, stream=io.StringIO('A=stream\\n'))\n    print(vals)\n",
+    "expected_output": "{'A': 'file'}"
+  },
+  {
+    "id": "MDS013",
+    "layer": "system",
+    "system_dimension": "boundary_crossing",
+    "category": "implicit_find_values_load_isolation",
+    "requirement_refs": ["REQ-find-dotenv", "REQ-source-selection", "REQ-no-state-leak", "REQ-load-override"],
+    "description": "Implicit discovery is used without leaking dotenv_values state into os.environ or later directories.",
+    "weight": 8,
+    "test_code": "import os, tempfile\nfrom minidotenv import dotenv_values, load_dotenv, find_dotenv\nwith tempfile.TemporaryDirectory() as td:\n    root = os.path.join(td, 'root')\n    other = os.path.join(td, 'other')\n    os.makedirs(os.path.join(root, 'a', 'b'))\n    os.makedirs(other)\n    open(os.path.join(root, '.env'), 'w', encoding='utf-8').write('IMPLICIT=one\\nCOMBINED=${IMPLICIT}/x\\n')\n    os.environ.pop('IMPLICIT', None); os.environ.pop('COMBINED', None)\n    old = os.getcwd()\n    try:\n        os.chdir(os.path.join(root, 'a', 'b'))\n        print(os.path.basename(find_dotenv()))\n        print(dotenv_values())\n        print('IMPLICIT' in os.environ)\n        print(load_dotenv(override=True))\n        print(os.environ.get('COMBINED'))\n        os.chdir(other)\n        print(find_dotenv())\n        print(dotenv_values())\n    finally:\n        os.chdir(old)\n",
+    "expected_output": ".env\n{'IMPLICIT': 'one', 'COMBINED': 'one/x'}\nFalse\nTrue\none/x\n\n{}"
+  },
+  {
+    "id": "MDS014",
+    "layer": "system",
+    "system_dimension": "state_accumulation",
+    "category": "multi_mutation_export_duplicates_reload",
+    "requirement_refs": ["REQ-set-key", "REQ-unset-key", "REQ-parse-comments-export", "REQ-load-override"],
+    "description": "Multiple mutations replace export bindings, append new keys, remove only the first duplicate, and affect later load results.",
+    "weight": 8,
+    "test_code": "import os, tempfile\nfrom minidotenv import set_key, unset_key, dotenv_values, load_dotenv\nwith tempfile.TemporaryDirectory() as td:\n    path = os.path.join(td, '.env')\n    open(path, 'w', encoding='utf-8').write('# top\\nexport A=old\\nB=first\\nB=second\\n')\n    print(set_key(path, 'A', 'new', quote_mode='never'))\n    print(set_key(path, 'C', '${A}/c', quote_mode='never'))\n    print(unset_key(path, 'B'))\n    vals = dotenv_values(path)\n    print(vals)\n    os.environ.pop('A', None); os.environ.pop('B', None); os.environ.pop('C', None)\n    load_dotenv(path, override=True)\n    print(os.environ.get('A'), os.environ.get('B'), os.environ.get('C'))\n    text = open(path, encoding='utf-8').read()\n    print('# top' in text)\n    print(text.count('B=') == 1)\n",
+    "expected_output": "True\nTrue\nTrue\n{'A': 'new', 'B': 'second', 'C': 'new/c'}\nnew second new/c\nTrue\nTrue"
+  },
+  {
+    "id": "MDS015",
+    "layer": "system",
+    "system_dimension": "error_atomicity",
+    "category": "failed_operations_then_valid_mutation",
+    "requirement_refs": ["REQ-key-validation", "REQ-mutation-atomicity", "REQ-malformed-recovery", "REQ-set-key", "REQ-unset-key"],
+    "description": "Failed mutations and malformed lines preserve the file and do not prevent later valid mutation.",
+    "weight": 8,
+    "test_code": "import os, tempfile\nfrom minidotenv import set_key, unset_key, dotenv_values\nwith tempfile.TemporaryDirectory() as td:\n    missing = os.path.join(td, 'missing.env')\n    path = os.path.join(td, '.env')\n    open(path, 'w', encoding='utf-8').write('A=1\\nmalformed line ?\\nB=2\\n')\n    before = open(path, encoding='utf-8').read()\n    print(set_key(missing, 'X', '1', quote_mode='never'))\n    print(set_key(path, 'BAD-KEY', 'x', quote_mode='never'))\n    print(unset_key(missing, 'A'))\n    print(open(path, encoding='utf-8').read() == before)\n    print(set_key(path, 'C', '3', quote_mode='never'))\n    print(unset_key(path, 'A'))\n    print(dotenv_values(path))\n",
+    "expected_output": "False\nFalse\nFalse\nTrue\nTrue\nTrue\n{'B': '2', 'C': '3'}"
+  },
+  {
+    "id": "MDS016",
+    "layer": "system",
+    "system_dimension": "global_invariant",
+    "category": "interpolate_false_values_load",
+    "requirement_refs": ["REQ-interpolate-basic", "REQ-source-selection", "REQ-load-override", "REQ-no-state-leak"],
+    "description": "interpolate=False keeps literal placeholders through parse and load while later calls still interpolate normally.",
+    "weight": 8,
+    "test_code": "import io, os\nfrom minidotenv import dotenv_values, load_dotenv\nos.environ['BASE'] = 'envbase'\nos.environ.pop('OUT', None); os.environ.pop('RAW', None)\ncontent = 'BASE=filebase\\nOUT=${BASE}/out\\nRAW=${MISSING:-fallback}\\n'\nprint(dotenv_values(stream=io.StringIO(content), interpolate=False))\nload_dotenv(stream=io.StringIO(content), override=True, interpolate=False)\nprint(os.environ.get('OUT'))\nprint(os.environ.get('RAW'))\nprint(dotenv_values(stream=io.StringIO(content), interpolate=True, override=True)['OUT'])\n",
+    "expected_output": "{'BASE': 'filebase', 'OUT': '${BASE}/out', 'RAW': '${MISSING:-fallback}'}\n${BASE}/out\n${MISSING:-fallback}\nfilebase/out"
+  },
+  {
+    "id": "MDS017",
+    "layer": "system",
+    "system_dimension": "durability_reload",
+    "category": "quote_mode_always_roundtrip",
+    "requirement_refs": ["REQ-set-key", "REQ-quote-single", "REQ-get-key", "REQ-parse-basic"],
+    "description": "quote_mode=always writes escaped single-quoted content that survives get, parse, and unrelated comment preservation.",
+    "weight": 8,
+    "test_code": "import os, tempfile\nfrom minidotenv import set_key, get_key, dotenv_values\nwith tempfile.TemporaryDirectory() as td:\n    path = os.path.join(td, '.env')\n    open(path, 'w', encoding='utf-8').write('# keep\\nA=1\\n')\n    value = \"two words 'quoted' \\\\ slash\"\n    print(set_key(path, 'COMPLEX', value, quote_mode='always'))\n    print(get_key(path, 'COMPLEX'))\n    print(dotenv_values(path)['COMPLEX'] == value)\n    text = open(path, encoding='utf-8').read()\n    print('# keep' in text)\n    print(\"COMPLEX='\" in text)\n",
+    "expected_output": "True\ntwo words 'quoted' \\ slash\nTrue\nTrue\nTrue"
+  },
+  {
+    "id": "MDS018",
+    "layer": "system",
+    "system_dimension": "no_state_leak",
+    "category": "repeated_stream_file_isolation",
+    "requirement_refs": ["REQ-no-state-leak", "REQ-interpolate-basic", "REQ-interpolate-order", "REQ-source-selection"],
+    "description": "Repeated stream and file parses do not leak earlier bindings into later sources.",
+    "weight": 8,
+    "test_code": "import io, os, tempfile\nfrom minidotenv import dotenv_values\nos.environ.pop('LOCAL', None)\nfirst = dotenv_values(stream=io.StringIO('LOCAL=first\\nOUT=${LOCAL}/one\\n'))\nsecond = dotenv_values(stream=io.StringIO('OUT=${LOCAL:-fallback}/two\\nLOCAL=second\\n'))\nwith tempfile.TemporaryDirectory() as td:\n    path = os.path.join(td, '.env')\n    open(path, 'w', encoding='utf-8').write('OUT=${LOCAL:-filefallback}/three\\n')\n    third = dotenv_values(path)\nprint(first)\nprint(second)\nprint(third)\n",
+    "expected_output": "{'LOCAL': 'first', 'OUT': 'first/one'}\n{'OUT': 'fallback/two', 'LOCAL': 'second'}\n{'OUT': 'filefallback/three'}"
+  }
+]

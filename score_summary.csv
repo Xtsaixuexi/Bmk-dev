@@ -21,3 +21,6 @@ MiniBuildGraph,codex-local-20260623,100.00,93.75,6.25,candidate_reviewed
 MiniBuildGraph,openhands-deepseek-chat-001,87.50,75.00,12.50,candidate_reviewed
 MiniBuildGraph,mini-swe-agent-deepseek-chat-001,93.75,81.25,12.50,candidate_reviewed
 MiniBuildGraph,swe-agent-deepseek-chat-001,93.75,81.25,12.50,candidate_reviewed
+MiniDotenv,reference,100.00,100.00,0.00,reference_pass
+MiniDotenv,codex-subagent-001,100.00,100.00,0.00,candidate_reviewed
+MiniDotenv,mini-swe-agent-deepseek-chat-001,100.00,100.00,0.00,candidate_reviewed

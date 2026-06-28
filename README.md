@@ -11,6 +11,11 @@ The two primary task packets in this branch are:
 - `task/minibuildgraph-realrepo-001/prd.md`
 - `task/minibuildgraph-realrepo-001/rubric.json`
 
+The current exploratory task packet is:
+
+- `task/minidotenv-realrepo-001/prd.md`
+- `task/minidotenv-realrepo-001/rubric.json`
+
 The consolidated score table is:
 
 - `score_summary.csv`
@@ -25,7 +30,7 @@ This repository also keeps three previously validated context tasks:
 
 `SQLite`, `ZK`, and `MiniURLUtils` already have executable code-agent runs meeting the current core-strong gap policy.
 
-`MiniShell` and `MiniBuildGraph` are the active deliverables. Their reference implementations pass 100/100, and multiple executable code-agent reports are recorded, but they are still marked `needs code-agent gap` until an executable code-agent run reaches the target system-gap threshold. Plain GPT / DeepSeek / Doubao bare-model runs are intentionally excluded from the public score evidence.
+`MiniShell`, `MiniBuildGraph`, and `MiniDotenv` are active deliverables. Their reference implementations pass 100/100, and executable code-agent reports are recorded, but they are still marked `needs code-agent gap` until an executable code-agent run reaches the target system-gap threshold. Plain GPT / DeepSeek / Doubao bare-model runs are intentionally excluded from the public score evidence.
 
 ## Included Context
 
@@ -49,4 +54,4 @@ Run the repository consistency check:
 python tools/validate_scores.py --root .
 ```
 
-Current validation status: 0 errors, 0 warnings.
+Current validation status: 6 manifest tasks, 25 score rows, 0 errors, 0 warnings.

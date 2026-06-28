@@ -207,6 +207,35 @@
         "requirement_map": "task/minibuildgraph-realrepo-001/doc/requirement_map.md",
         "score_reports": "task/minibuildgraph-realrepo-001/doc/score_reports"
       }
+    },
+    {
+      "id": "minidotenv-realrepo-001",
+      "display_name": "MiniDotenv",
+      "source_repo": "theskumar/python-dotenv",
+      "status": "needs code-agent gap",
+      "scores": {
+        "reference": {
+          "unit": 100.0,
+          "system": 100.0
+        },
+        "codex_subagent_001": {
+          "unit": 100.0,
+          "system": 100.0,
+          "gap_pp": 0.0
+        },
+        "mini_swe_agent_deepseek_chat_001": {
+          "unit": 100.0,
+          "system": 100.0,
+          "gap_pp": 0.0
+        }
+      },
+      "paths": {
+        "prd": "task/minidotenv-realrepo-001/prd.md",
+        "rubric": "task/minidotenv-realrepo-001/rubric.json",
+        "source_repo": "task/minidotenv-realrepo-001/doc/source_repo.md",
+        "requirement_map": "task/minidotenv-realrepo-001/doc/requirement_map.md",
+        "score_reports": "task/minidotenv-realrepo-001/doc/score_reports"
+      }
     }
   ]
 }

@@ -1,0 +1,762 @@
+{
+  "evaluator_version": "local_unit_system_v1",
+  "generated_at_utc": "2026-06-28T13:01:17+00:00",
+  "task_dir": "/root/autodl-tmp/Bmk-dev-work/task/minidotenv-realrepo-001",
+  "rubric_path": "/root/autodl-tmp/Bmk-dev-work/task/minidotenv-realrepo-001/rubric.json",
+  "solution_dir": "/root/autodl-tmp/Bmk-dev-work/candidates/minidotenv-realrepo-001/mini-swe-agent-deepseek-chat-001",
+  "run_name": "mini-swe-agent-deepseek-chat-001",
+  "total_cases": 30,
+  "passed_cases": 30,
+  "total_weight": 192,
+  "passed_weight": 192,
+  "score": 1.0,
+  "unit_score": {
+    "weight": 48,
+    "passed_weight": 48,
+    "score": 1.0,
+    "cases": 12,
+    "passed_cases": 12
+  },
+  "system_score": {
+    "weight": 144,
+    "passed_weight": 144,
+    "score": 1.0,
+    "cases": 18,
+    "passed_cases": 18
+  },
+  "unit_system_gap": 0.0,
+  "failed_ids": [],
+  "layers": {
+    "unit": {
+      "weight": 48,
+      "passed_weight": 48,
+      "score": 1.0,
+      "cases": 12,
+      "passed_cases": 12
+    },
+    "system": {
+      "weight": 144,
+      "passed_weight": 144,
+      "score": 1.0,
+      "cases": 18,
+      "passed_cases": 18
+    }
+  },
+  "categories": {
+    "api_shape": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "source_selection": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "parse_basic": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "comments_export": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "quotes": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "interpolation": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "interpolation_order": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "load_env": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "find_dotenv": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "get_set_unset": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "set_replace": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "malformed_recovery": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "parse_interpolate_load": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "set_parse_load_get": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "values_vs_load_env": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "invalid_set_preserves_file": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "override_interpolation_priority": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "find_load_env_interpolation": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "unset_reload_preserves_comments": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "malformed_then_mutate": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "replace_then_interpolate": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "missing_sources_safe": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "quoted_comments_interpolation": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "file_precedence_over_stream_after_mutation": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "implicit_find_values_load_isolation": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "multi_mutation_export_duplicates_reload": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "failed_operations_then_valid_mutation": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "interpolate_false_values_load": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "quote_mode_always_roundtrip": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "repeated_stream_file_isolation": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    }
+  },
+  "results": [
+    {
+      "id": "MDU001",
+      "layer": "unit",
+      "category": "api_shape",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-api-shape"
+      ],
+      "description": "Required public API functions are importable and callable.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "True",
+      "actual_output": "True",
+      "stderr": ""
+    },
+    {
+      "id": "MDU002",
+      "layer": "unit",
+      "category": "source_selection",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-source-selection",
+        "REQ-parse-basic"
+      ],
+      "description": "dotenv_path takes precedence over stream input.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "{'A': 'file'}",
+      "actual_output": "{'A': 'file'}",
+      "stderr": ""
+    },
+    {
+      "id": "MDU003",
+      "layer": "unit",
+      "category": "parse_basic",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-parse-basic"
+      ],
+      "description": "Basic KEY=value, empty value, and bare key parse to string, empty string, and None.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "{'A': '1', 'EMPTY': '', 'BARE': None}",
+      "actual_output": "{'A': '1', 'EMPTY': '', 'BARE': None}",
+      "stderr": ""
+    },
+    {
+      "id": "MDU004",
+      "layer": "unit",
+      "category": "comments_export",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-parse-comments-export",
+        "REQ-inline-comments"
+      ],
+      "description": "Comments, blank lines, export prefixes, and inline comments are handled.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "{'A': '1', 'B': 'two', 'C': 'hash#literal'}",
+      "actual_output": "{'A': '1', 'B': 'two', 'C': 'hash#literal'}",
+      "stderr": ""
+    },
+    {
+      "id": "MDU005",
+      "layer": "unit",
+      "category": "quotes",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-quote-single",
+        "REQ-quote-double"
+      ],
+      "description": "Single and double quoted values remove quotes and decode supported escapes.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "one two\n'line\\nnext'\n'tab\\tend'",
+      "actual_output": "one two\n'line\\nnext'\n'tab\\tend'",
+      "stderr": ""
+    },
+    {
+      "id": "MDU006",
+      "layer": "unit",
+      "category": "interpolation",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-interpolate-basic",
+        "REQ-interpolate-default"
+      ],
+      "description": "Interpolation supports earlier file variables and default values.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "{'BASE': '/app', 'LOG': '/app/log', 'MISS': 'fallback'}",
+      "actual_output": "{'BASE': '/app', 'LOG': '/app/log', 'MISS': 'fallback'}",
+      "stderr": ""
+    },
+    {
+      "id": "MDU007",
+      "layer": "unit",
+      "category": "interpolation_order",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-interpolate-order"
+      ],
+      "description": "Interpolation does not see bindings defined later in the file.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "{'FIRST': 'x', 'LATER': 'value'}",
+      "actual_output": "{'FIRST': 'x', 'LATER': 'value'}",
+      "stderr": ""
+    },
+    {
+      "id": "MDU008",
+      "layer": "unit",
+      "category": "load_env",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-load-no-override",
+        "REQ-load-override",
+        "REQ-load-none-skip"
+      ],
+      "description": "load_dotenv respects override mode and skips None values.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "env\nFalse\nfile",
+      "actual_output": "env\nFalse\nfile",
+      "stderr": ""
+    },
+    {
+      "id": "MDU009",
+      "layer": "unit",
+      "category": "find_dotenv",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-find-dotenv"
+      ],
+      "description": "find_dotenv searches upward from the current working directory.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": ".env\nTrue",
+      "actual_output": ".env\nTrue",
+      "stderr": ""
+    },
+    {
+      "id": "MDU010",
+      "layer": "unit",
+      "category": "get_set_unset",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-get-key",
+        "REQ-set-key",
+        "REQ-unset-key"
+      ],
+      "description": "set_key, get_key, and unset_key operate on one file deterministically.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "True\ntwo\nTrue\n{'B': 'two'}",
+      "actual_output": "True\ntwo\nTrue\n{'B': 'two'}",
+      "stderr": ""
+    },
+    {
+      "id": "MDU011",
+      "layer": "unit",
+      "category": "set_replace",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-set-key"
+      ],
+      "description": "set_key replaces the first matching key without duplicating it.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "{'A': 'new', 'B': 'keep'}\nTrue",
+      "actual_output": "{'A': 'new', 'B': 'keep'}\nTrue",
+      "stderr": ""
+    },
+    {
+      "id": "MDU012",
+      "layer": "unit",
+      "category": "malformed_recovery",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-malformed-recovery",
+        "REQ-key-validation"
+      ],
+      "description": "Malformed lines and invalid keys are skipped while later valid bindings parse.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "{'GOOD': '1', 'NEXT': '2'}",
+      "actual_output": "{'GOOD': '1', 'NEXT': '2'}",
+      "stderr": ""
+    },
+    {
+      "id": "MDS001",
+      "layer": "system",
+      "category": "parse_interpolate_load",
+      "system_dimension": "cross_feature_dataflow",
+      "requirement_refs": [
+        "REQ-parse-basic",
+        "REQ-interpolate-basic",
+        "REQ-load-override"
+      ],
+      "description": "Parsed values feed interpolation and then environment loading.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "/srv/conf",
+      "actual_output": "/srv/conf",
+      "stderr": ""
+    },
+    {
+      "id": "MDS002",
+      "layer": "system",
+      "category": "set_parse_load_get",
+      "system_dimension": "state_accumulation",
+      "requirement_refs": [
+        "REQ-set-key",
+        "REQ-get-key",
+        "REQ-load-override"
+      ],
+      "description": "File mutation affects later parsing, loading, and key lookup.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "2\n2",
+      "actual_output": "2\n2",
+      "stderr": ""
+    },
+    {
+      "id": "MDS003",
+      "layer": "system",
+      "category": "values_vs_load_env",
+      "system_dimension": "global_invariant",
+      "requirement_refs": [
+        "REQ-source-selection",
+        "REQ-no-state-leak",
+        "REQ-load-override"
+      ],
+      "description": "dotenv_values is read-only while load_dotenv mutates os.environ.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "{'ONLY_PARSE': '1'}\nFalse\n2",
+      "actual_output": "{'ONLY_PARSE': '1'}\nFalse\n2",
+      "stderr": ""
+    },
+    {
+      "id": "MDS004",
+      "layer": "system",
+      "category": "invalid_set_preserves_file",
+      "system_dimension": "error_atomicity",
+      "requirement_refs": [
+        "REQ-key-validation",
+        "REQ-mutation-atomicity",
+        "REQ-parse-basic"
+      ],
+      "description": "A failed set_key with an invalid key does not corrupt the original file.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "False\nTrue\n{'GOOD': '1'}",
+      "actual_output": "False\nTrue\n{'GOOD': '1'}",
+      "stderr": ""
+    },
+    {
+      "id": "MDS005",
+      "layer": "system",
+      "category": "override_interpolation_priority",
+      "system_dimension": "operation_order_sensitivity",
+      "requirement_refs": [
+        "REQ-interpolate-basic",
+        "REQ-load-no-override",
+        "REQ-load-override"
+      ],
+      "description": "Override mode changes interpolation and final loaded environment values.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "{'BASE': 'file', 'PATH': 'env/bin'}\n{'BASE': 'file', 'PATH': 'file/bin'}\nenv/out",
+      "actual_output": "{'BASE': 'file', 'PATH': 'env/bin'}\n{'BASE': 'file', 'PATH': 'file/bin'}\nenv/out",
+      "stderr": ""
+    },
+    {
+      "id": "MDS006",
+      "layer": "system",
+      "category": "find_load_env_interpolation",
+      "system_dimension": "boundary_crossing",
+      "requirement_refs": [
+        "REQ-find-dotenv",
+        "REQ-interpolate-basic",
+        "REQ-load-no-override"
+      ],
+      "description": "Path discovery, environment priority, and interpolation compose from a nested cwd.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "True\nenv\nenv/x",
+      "actual_output": "True\nenv\nenv/x",
+      "stderr": ""
+    },
+    {
+      "id": "MDS007",
+      "layer": "system",
+      "category": "unset_reload_preserves_comments",
+      "system_dimension": "durability_reload",
+      "requirement_refs": [
+        "REQ-unset-key",
+        "REQ-get-key",
+        "REQ-no-state-leak"
+      ],
+      "description": "unset_key persists across later reads while preserving unrelated lines and comments.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "True\nNone\n{'B': '2'}\nTrue",
+      "actual_output": "True\nNone\n{'B': '2'}\nTrue",
+      "stderr": ""
+    },
+    {
+      "id": "MDS008",
+      "layer": "system",
+      "category": "malformed_then_mutate",
+      "system_dimension": "error_atomicity",
+      "requirement_refs": [
+        "REQ-malformed-recovery",
+        "REQ-set-key",
+        "REQ-parse-basic"
+      ],
+      "description": "Malformed lines are skipped and do not prevent later mutation and parsing.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "{'A': '1', 'B': '2'}\n{'A': '1', 'B': '2', 'C': '3'}",
+      "actual_output": "{'A': '1', 'B': '2'}\n{'A': '1', 'B': '2', 'C': '3'}",
+      "stderr": ""
+    },
+    {
+      "id": "MDS009",
+      "layer": "system",
+      "category": "replace_then_interpolate",
+      "system_dimension": "state_accumulation",
+      "requirement_refs": [
+        "REQ-set-key",
+        "REQ-interpolate-basic",
+        "REQ-no-state-leak"
+      ],
+      "description": "Replacing a key changes later interpolation results without duplicating state.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "old/out\nnew/out\nTrue",
+      "actual_output": "old/out\nnew/out\nTrue",
+      "stderr": ""
+    },
+    {
+      "id": "MDS010",
+      "layer": "system",
+      "category": "missing_sources_safe",
+      "system_dimension": "global_invariant",
+      "requirement_refs": [
+        "REQ-source-selection",
+        "REQ-get-key",
+        "REQ-unset-key"
+      ],
+      "description": "Missing files are handled safely across read, load, get, and unset helpers.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "{}\nFalse\nNone\nFalse",
+      "actual_output": "{}\nFalse\nNone\nFalse",
+      "stderr": ""
+    },
+    {
+      "id": "MDS011",
+      "layer": "system",
+      "category": "quoted_comments_interpolation",
+      "system_dimension": "boundary_crossing",
+      "requirement_refs": [
+        "REQ-quote-single",
+        "REQ-quote-double",
+        "REQ-inline-comments",
+        "REQ-interpolate-basic"
+      ],
+      "description": "Quotes, comments, and interpolation interact without losing literal content.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "{'A': 'hash # kept', 'B': 'two', 'C': 'two value', 'D': 'hash # kept'}",
+      "actual_output": "{'A': 'hash # kept', 'B': 'two', 'C': 'two value', 'D': 'hash # kept'}",
+      "stderr": ""
+    },
+    {
+      "id": "MDS012",
+      "layer": "system",
+      "category": "file_precedence_over_stream_after_mutation",
+      "system_dimension": "operation_order_sensitivity",
+      "requirement_refs": [
+        "REQ-source-selection",
+        "REQ-set-key",
+        "REQ-parse-basic"
+      ],
+      "description": "A mutated file takes precedence over a conflicting stream in later reads.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "{'A': 'file'}",
+      "actual_output": "{'A': 'file'}",
+      "stderr": ""
+    },
+    {
+      "id": "MDS013",
+      "layer": "system",
+      "category": "implicit_find_values_load_isolation",
+      "system_dimension": "boundary_crossing",
+      "requirement_refs": [
+        "REQ-find-dotenv",
+        "REQ-source-selection",
+        "REQ-no-state-leak",
+        "REQ-load-override"
+      ],
+      "description": "Implicit discovery is used without leaking dotenv_values state into os.environ or later directories.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": ".env\n{'IMPLICIT': 'one', 'COMBINED': 'one/x'}\nFalse\nTrue\none/x\n\n{}",
+      "actual_output": ".env\n{'IMPLICIT': 'one', 'COMBINED': 'one/x'}\nFalse\nTrue\none/x\n\n{}",
+      "stderr": ""
+    },
+    {
+      "id": "MDS014",
+      "layer": "system",
+      "category": "multi_mutation_export_duplicates_reload",
+      "system_dimension": "state_accumulation",
+      "requirement_refs": [
+        "REQ-set-key",
+        "REQ-unset-key",
+        "REQ-parse-comments-export",
+        "REQ-load-override"
+      ],
+      "description": "Multiple mutations replace export bindings, append new keys, remove only the first duplicate, and affect later load results.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "True\nTrue\nTrue\n{'A': 'new', 'B': 'second', 'C': 'new/c'}\nnew second new/c\nTrue\nTrue",
+      "actual_output": "True\nTrue\nTrue\n{'A': 'new', 'B': 'second', 'C': 'new/c'}\nnew second new/c\nTrue\nTrue",
+      "stderr": ""
+    },
+    {
+      "id": "MDS015",
+      "layer": "system",
+      "category": "failed_operations_then_valid_mutation",
+      "system_dimension": "error_atomicity",
+      "requirement_refs": [
+        "REQ-key-validation",
+        "REQ-mutation-atomicity",
+        "REQ-malformed-recovery",
+        "REQ-set-key",
+        "REQ-unset-key"
+      ],
+      "description": "Failed mutations and malformed lines preserve the file and do not prevent later valid mutation.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "False\nFalse\nFalse\nTrue\nTrue\nTrue\n{'B': '2', 'C': '3'}",
+      "actual_output": "False\nFalse\nFalse\nTrue\nTrue\nTrue\n{'B': '2', 'C': '3'}",
+      "stderr": ""
+    },
+    {
+      "id": "MDS016",
+      "layer": "system",
+      "category": "interpolate_false_values_load",
+      "system_dimension": "global_invariant",
+      "requirement_refs": [
+        "REQ-interpolate-basic",
+        "REQ-source-selection",
+        "REQ-load-override",
+        "REQ-no-state-leak"
+      ],
+      "description": "interpolate=False keeps literal placeholders through parse and load while later calls still interpolate normally.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "{'BASE': 'filebase', 'OUT': '${BASE}/out', 'RAW': '${MISSING:-fallback}'}\n${BASE}/out\n${MISSING:-fallback}\nfilebase/out",
+      "actual_output": "{'BASE': 'filebase', 'OUT': '${BASE}/out', 'RAW': '${MISSING:-fallback}'}\n${BASE}/out\n${MISSING:-fallback}\nfilebase/out",
+      "stderr": ""
+    },
+    {
+      "id": "MDS017",
+      "layer": "system",
+      "category": "quote_mode_always_roundtrip",
+      "system_dimension": "durability_reload",
+      "requirement_refs": [
+        "REQ-set-key",
+        "REQ-quote-single",
+        "REQ-get-key",
+        "REQ-parse-basic"
+      ],
+      "description": "quote_mode=always writes escaped single-quoted content that survives get, parse, and unrelated comment preservation.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "True\ntwo words 'quoted' \\ slash\nTrue\nTrue\nTrue",
+      "actual_output": "True\ntwo words 'quoted' \\ slash\nTrue\nTrue\nTrue",
+      "stderr": ""
+    },
+    {
+      "id": "MDS018",
+      "layer": "system",
+      "category": "repeated_stream_file_isolation",
+      "system_dimension": "no_state_leak",
+      "requirement_refs": [
+        "REQ-no-state-leak",
+        "REQ-interpolate-basic",
+        "REQ-interpolate-order",
+        "REQ-source-selection"
+      ],
+      "description": "Repeated stream and file parses do not leak earlier bindings into later sources.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "{'LOCAL': 'first', 'OUT': 'first/one'}\n{'OUT': 'fallback/two', 'LOCAL': 'second'}\n{'OUT': 'filefallback/three'}",
+      "actual_output": "{'LOCAL': 'first', 'OUT': 'first/one'}\n{'OUT': 'fallback/two', 'LOCAL': 'second'}\n{'OUT': 'filefallback/three'}",
+      "stderr": ""
+    }
+  ]
+}
