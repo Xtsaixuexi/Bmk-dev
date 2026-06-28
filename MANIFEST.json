@@ -156,26 +156,6 @@
           "gap_pp": 10.42
         }
       },
-      "auxiliary_scores": {
-        "doubao_seed_2_0_001": {
-          "unit": 100.0,
-          "system": 100.0,
-          "gap_pp": 0.0,
-          "status": "non_core_bare_model"
-        },
-        "deepseek_v4_pro_001": {
-          "unit": 93.75,
-          "system": 66.67,
-          "gap_pp": 27.08,
-          "status": "non_core_bare_model"
-        },
-        "gpt_5_5_thinking_001": {
-          "unit": 93.75,
-          "system": 91.67,
-          "gap_pp": 2.08,
-          "status": "non_core_bare_model"
-        }
-      },
       "paths": {
         "prd": "task/minishell-realrepo-001/prd.md",
         "rubric": "task/minishell-realrepo-001/rubric.json",
@@ -218,26 +198,6 @@
           "unit": 93.75,
           "system": 81.25,
           "gap_pp": 12.5
-        }
-      },
-      "auxiliary_scores": {
-        "doubao_seed_2_0_001": {
-          "unit": 87.5,
-          "system": 68.75,
-          "gap_pp": 18.75,
-          "status": "non_core_bare_model"
-        },
-        "deepseek_v4_pro_001": {
-          "unit": 87.5,
-          "system": 68.75,
-          "gap_pp": 18.75,
-          "status": "non_core_bare_model"
-        },
-        "gpt_5_5_thinking_001": {
-          "unit": 100.0,
-          "system": 93.75,
-          "gap_pp": 6.25,
-          "status": "non_core_bare_model"
         }
       },
       "paths": {

@@ -102,11 +102,8 @@ System dimension coverage:
 | OpenHands + DeepSeek Chat | 100.00% | 100.00% | 0.00 | code_agent_control | `score_report_openhands_deepseek_chat_001_unit_system_v1.json` |
 | Mini-SWE-Agent + DeepSeek Chat | 100.00% | 91.67% | 8.33 | code_agent_candidate_reviewed | `score_report_mini_swe_agent_deepseek_chat_001_unit_system_v1.json` |
 | SWE-Agent + DeepSeek Chat | 68.75% | 58.33% | 10.42 | code_agent_candidate_reviewed | `score_report_swe_agent_deepseek_chat_001_unit_system_v1.json` |
-| Doubao Seed 2.0 | 100.00% | 100.00% | 0.00 | auxiliary_non_core_bare_model | `score_report_doubao_seed_2_0_001_unit_system_v1.json` |
-| DeepSeek V4 Pro | 93.75% | 66.67% | 27.08 | auxiliary_non_core_bare_model | `score_report_deepseek_v4_pro_001_unit_system_v1.json` |
-| GPT-5.5 Thinking | 93.75% | 91.67% | 2.08 | auxiliary_non_core_bare_model | `score_report_gpt_5_5_thinking_001_unit_system_v1.json` |
 
-Current status: reference passes, but no executable code-agent run reaches the `gap >= 15pp` core-strong threshold. MiniShell remains task-level `needs_code_agent_gap`; individual executable agent runs with completed reports are marked `candidate_reviewed` in `score_summary.csv`. Bare-model scores are retained only as auxiliary observations.
+Current status: reference passes, but no executable code-agent run reaches the `gap >= 15pp` core-strong threshold. MiniShell remains task-level `needs_code_agent_gap`; individual executable agent runs with completed reports are marked `candidate_reviewed` in `score_summary.csv`. Plain GPT / DeepSeek / Doubao bare-model runs are excluded from the public score evidence.
 
 ## Fairness Notes
 

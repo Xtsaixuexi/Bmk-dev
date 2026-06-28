@@ -25,7 +25,7 @@ This repository also keeps three previously validated context tasks:
 
 `SQLite`, `ZK`, and `MiniURLUtils` already have executable code-agent runs meeting the current core-strong gap policy.
 
-`MiniShell` and `MiniBuildGraph` are the active deliverables. Their reference implementations pass 100/100, and multiple executable code-agent reports are recorded, but they are still marked `needs code-agent gap` until an executable code-agent run reaches the target system-gap threshold. Bare model runs are kept only as non-core auxiliary hardening signals.
+`MiniShell` and `MiniBuildGraph` are the active deliverables. Their reference implementations pass 100/100, and multiple executable code-agent reports are recorded, but they are still marked `needs code-agent gap` until an executable code-agent run reaches the target system-gap threshold. Plain GPT / DeepSeek / Doubao bare-model runs are intentionally excluded from the public score evidence.
 
 ## Included Context
 

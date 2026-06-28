@@ -89,9 +89,7 @@ def validate(root: Path) -> dict:
             continue
 
         if status == "non_core_bare_model":
-            task_scores = task.get("auxiliary_scores", {})
-            if norm(solution) not in {norm(key) for key in task_scores}:
-                add_issue(errors, "error", "non-core bare model row missing from MANIFEST auxiliary_scores", task=task_name, solution=solution)
+            add_issue(errors, "error", "bare model rows are excluded from public score_summary", task=task_name, solution=solution)
 
         task_dir = root / "task" / task["id"]
         report_path = score_report_path(task_dir, solution)
@@ -118,13 +116,12 @@ def validate(root: Path) -> dict:
     summary_keys = {(row["task"], norm(row["solution"])) for row in rows}
     for task in manifest.get("tasks", []):
         display = task["display_name"]
-        for score_group, required_status in (("scores", None), ("auxiliary_scores", "non_core_bare_model")):
-            for solution_key, score in task.get(score_group, {}).items():
-                solution_norm = norm(solution_key)
-                if (display, solution_norm) not in summary_keys:
-                    add_issue(warnings, "warning", "MANIFEST score missing from score_summary", task=display, solution=solution_key)
-                if required_status and norm(str(score.get("status", ""))) != required_status:
-                    add_issue(errors, "error", "MANIFEST auxiliary score has wrong status", task=display, solution=solution_key, status=score.get("status"))
+        if task.get("auxiliary_scores"):
+            add_issue(errors, "error", "MANIFEST auxiliary_scores are excluded from public evidence", task=display)
+        for solution_key in task.get("scores", {}):
+            solution_norm = norm(solution_key)
+            if (display, solution_norm) not in summary_keys:
+                add_issue(warnings, "warning", "MANIFEST score missing from score_summary", task=display, solution=solution_key)
 
     for row in matrix_rows:
         status = norm(row.get("status", ""))

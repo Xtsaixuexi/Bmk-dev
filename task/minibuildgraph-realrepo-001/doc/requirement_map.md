@@ -98,9 +98,6 @@ System dimension coverage:
 | Codex local | 100.00% | 93.75% | 6.25 | code_agent_candidate_reviewed | `score_report_codex_local_20260623_unit_system_v1.json` |
 | OpenHands + DeepSeek Chat | 87.50% | 75.00% | 12.50 | code_agent_candidate_reviewed | `score_report_openhands_deepseek_chat_001_unit_system_v1.json` |
 | Mini-SWE-Agent + DeepSeek Chat | 93.75% | 81.25% | 12.50 | code_agent_candidate_reviewed | `score_report_mini_swe_agent_deepseek_chat_001_unit_system_v1.json` |
-| Doubao Seed 2.0 | 87.50% | 68.75% | 18.75 | auxiliary_non_core_bare_model | `score_report_doubao_seed_2_0_001_unit_system_v1.json` |
-| DeepSeek V4 Pro | 87.50% | 68.75% | 18.75 | auxiliary_non_core_bare_model | `score_report_deepseek_v4_pro_001_unit_system_v1.json` |
-| GPT-5.5 Thinking | 100.00% | 93.75% | 6.25 | auxiliary_non_core_bare_model | `score_report_gpt_5_5_thinking_001_unit_system_v1.json` |
 
 Current status: reference passes, and multiple executable code-agent runs show positive gaps, but the maximum code-agent gap is currently 12.50pp. MiniBuildGraph remains `needs_code_agent_gap` until an executable code-agent run reaches the `gap >= 15pp` core-strong threshold.
 
@@ -126,7 +123,7 @@ This brings MiniBuildGraph to 16 unit cases and 16 system cases, matching the sc
 
 ## Model-Gap Strengthening Pass 2026-06-21
 
-After auxiliary bare-model runs (Doubao-Seed-2.0, DeepSeek-V4-Pro, and GPT-5.5), MiniBuildGraph was strengthened with additional public-behavior system cases:
+After reviewing earlier non-public exploratory outputs, MiniBuildGraph was strengthened with additional public-behavior system cases:
 
 - `MBGS013` checks that a trailing dependency comma fails atomically and preserves later `INFO` behavior.
 - `MBGS014` checks that an empty file cannot silently replace a valid graph.
@@ -135,4 +132,4 @@ After auxiliary bare-model runs (Doubao-Seed-2.0, DeepSeek-V4-Pro, and GPT-5.5),
 
 These cases exercise the public `LOAD` failure rules and the invariant that failed `LOAD` operations must preserve the previous graph unchanged. They use only public `LOAD`, query, and `REMOVE` commands and do not depend on private reference file formats.
 
-These bare-model runs are not counted as core evidence under the executable code-agent policy; they are retained only as auxiliary task-hardening signals.
+Plain GPT / DeepSeek / Doubao bare-model runs are excluded from the public score evidence; only executable code-agent reports are retained.
