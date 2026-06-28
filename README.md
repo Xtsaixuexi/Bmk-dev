@@ -28,9 +28,9 @@ This repository also keeps three previously validated context tasks:
 - `task/zk-realrepo-001`
 - `task/miniurlutils-realrepo-001`
 
-`SQLite`, `ZK`, and `MiniURLUtils` already have executable code-agent runs meeting the current core-strong gap policy.
+`SQLite`, `ZK`, `MiniURLUtils`, and `MiniDotenv` already have executable code-agent runs meeting the current core-strong gap policy.
 
-`MiniShell`, `MiniBuildGraph`, and `MiniDotenv` are active deliverables. Their reference implementations pass 100/100, and executable code-agent reports are recorded, but they are still marked `needs code-agent gap` until an executable code-agent run reaches the target system-gap threshold. Plain GPT / DeepSeek / Doubao bare-model runs are intentionally excluded from the public score evidence.
+`MiniShell` and `MiniBuildGraph` are active deliverables that still need a stronger executable code-agent gap. Plain GPT / DeepSeek / Doubao bare-model runs are intentionally excluded from the public score evidence.
 
 ## Included Context
 
@@ -54,4 +54,4 @@ Run the repository consistency check:
 python tools/validate_scores.py --root .
 ```
 
-Current validation status: 6 manifest tasks, 25 score rows, 0 errors, 0 warnings.
+Current validation status: 6 manifest tasks, 27 score rows, 0 errors, 0 warnings.

@@ -1,14 +1,14 @@
 {
   "evaluator_version": "local_unit_system_v1",
-  "generated_at_utc": "2026-06-28T12:49:51+00:00",
+  "generated_at_utc": "2026-06-28T13:24:39+00:00",
   "task_dir": "/root/autodl-tmp/Bmk-dev-work/task/minidotenv-realrepo-001",
   "rubric_path": "/root/autodl-tmp/Bmk-dev-work/task/minidotenv-realrepo-001/rubric.json",
   "solution_dir": "/root/autodl-tmp/Bmk-dev-work/candidates/minidotenv-realrepo-001/codex-subagent-001",
   "run_name": "codex-subagent-001",
-  "total_cases": 30,
-  "passed_cases": 30,
-  "total_weight": 192,
-  "passed_weight": 192,
+  "total_cases": 34,
+  "passed_cases": 34,
+  "total_weight": 224,
+  "passed_weight": 224,
   "score": 1.0,
   "unit_score": {
     "weight": 48,
@@ -18,11 +18,11 @@
     "passed_cases": 12
   },
   "system_score": {
-    "weight": 144,
-    "passed_weight": 144,
+    "weight": 176,
+    "passed_weight": 176,
     "score": 1.0,
-    "cases": 18,
-    "passed_cases": 18
+    "cases": 22,
+    "passed_cases": 22
   },
   "unit_system_gap": 0.0,
   "failed_ids": [],
@@ -35,11 +35,11 @@
       "passed_cases": 12
     },
     "system": {
-      "weight": 144,
-      "passed_weight": 144,
+      "weight": 176,
+      "passed_weight": 176,
       "score": 1.0,
-      "cases": 18,
-      "passed_cases": 18
+      "cases": 22,
+      "passed_cases": 22
     }
   },
   "categories": {
@@ -218,6 +218,30 @@
       "passed_weight": 8
     },
     "repeated_stream_file_isolation": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "export_whitespace_interpolation": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "append_without_final_newline": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "comment_append_without_final_newline": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "quote_append_load_without_final_newline": {
       "cases": 1,
       "passed_cases": 1,
       "weight": 8,
@@ -756,6 +780,79 @@
       "returncode": 0,
       "expected_output": "{'LOCAL': 'first', 'OUT': 'first/one'}\n{'OUT': 'fallback/two', 'LOCAL': 'second'}\n{'OUT': 'filefallback/three'}",
       "actual_output": "{'LOCAL': 'first', 'OUT': 'first/one'}\n{'OUT': 'fallback/two', 'LOCAL': 'second'}\n{'OUT': 'filefallback/three'}",
+      "stderr": ""
+    },
+    {
+      "id": "MDS019",
+      "layer": "system",
+      "category": "export_whitespace_interpolation",
+      "system_dimension": "boundary_crossing",
+      "requirement_refs": [
+        "REQ-parse-comments-export",
+        "REQ-interpolate-basic",
+        "REQ-load-override"
+      ],
+      "description": "The export prefix accepts whitespace before a binding and the parsed value feeds later interpolation and loading.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "{'A': '1', 'B': '1/b'}\nTrue\n1/b",
+      "actual_output": "{'A': '1', 'B': '1/b'}\nTrue\n1/b",
+      "stderr": ""
+    },
+    {
+      "id": "MDS020",
+      "layer": "system",
+      "category": "append_without_final_newline",
+      "system_dimension": "durability_reload",
+      "requirement_refs": [
+        "REQ-set-key",
+        "REQ-parse-basic",
+        "REQ-no-state-leak"
+      ],
+      "description": "Appending a new key to a file without a trailing newline creates a separate binding that later parsing can read.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "True\n'A=1\\nB=2\\n'\n{'A': '1', 'B': '2'}",
+      "actual_output": "True\n'A=1\\nB=2\\n'\n{'A': '1', 'B': '2'}",
+      "stderr": ""
+    },
+    {
+      "id": "MDS021",
+      "layer": "system",
+      "category": "comment_append_without_final_newline",
+      "system_dimension": "durability_reload",
+      "requirement_refs": [
+        "REQ-set-key",
+        "REQ-parse-comments-export",
+        "REQ-parse-basic"
+      ],
+      "description": "Appending after a final comment without a trailing newline preserves the comment and creates a parseable binding.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "True\n'# keep\\nA=1\\n'\n{'A': '1'}\nTrue",
+      "actual_output": "True\n'# keep\\nA=1\\n'\n{'A': '1'}\nTrue",
+      "stderr": ""
+    },
+    {
+      "id": "MDS022",
+      "layer": "system",
+      "category": "quote_append_load_without_final_newline",
+      "system_dimension": "state_accumulation",
+      "requirement_refs": [
+        "REQ-set-key",
+        "REQ-quote-single",
+        "REQ-load-override",
+        "REQ-parse-basic"
+      ],
+      "description": "A quoted append to a file without a trailing newline survives parsing and environment loading.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "True\n{'A': '1', 'B': 'two words'}\nTrue\ntwo words",
+      "actual_output": "True\n{'A': '1', 'B': 'two words'}\nTrue\ntwo words",
       "stderr": ""
     }
   ]

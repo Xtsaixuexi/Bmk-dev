@@ -5,7 +5,7 @@ Date: 2026-06-28
 Public packet: `prd.md`
 Rubric: `rubric.json`
 
-Current rubric size: 30 executable cases, including 12 unit cases and 18 system cases.
+Current rubric size: 34 executable cases, including 12 unit cases and 22 system cases.
 
 ## Public Requirements
 
@@ -74,6 +74,10 @@ Current rubric size: 30 executable cases, including 12 unit cases and 18 system 
 | `MDS016` | `global_invariant` | interpolate=False parse -> load -> later interpolate=True parse | `REQ-interpolate-basic`, `REQ-source-selection`, `REQ-load-override`, `REQ-no-state-leak` | Literal interpolation mode is preserved through parsing and loading without poisoning later calls |
 | `MDS017` | `durability_reload` | quote_mode always -> get -> parse -> file preservation | `REQ-set-key`, `REQ-quote-single`, `REQ-get-key`, `REQ-parse-basic` | Escaped quoted writes survive later helper reads and parsing |
 | `MDS018` | `no_state_leak` | stream parse -> second stream parse -> file parse | `REQ-no-state-leak`, `REQ-interpolate-basic`, `REQ-interpolate-order`, `REQ-source-selection` | Repeated stream/file parses do not share hidden bindings |
+| `MDS019` | `boundary_crossing` | export whitespace -> interpolate -> load | `REQ-parse-comments-export`, `REQ-interpolate-basic`, `REQ-load-override` | Export-prefixed bindings with whitespace feed interpolation and environment loading |
+| `MDS020` | `durability_reload` | append without final newline -> parse | `REQ-set-key`, `REQ-parse-basic`, `REQ-no-state-leak` | Appended bindings remain separate parseable lines even when the old file has no trailing newline |
+| `MDS021` | `durability_reload` | final comment without newline -> append -> parse | `REQ-set-key`, `REQ-parse-comments-export`, `REQ-parse-basic` | Comments are preserved and appended bindings stay parseable |
+| `MDS022` | `state_accumulation` | quoted append without newline -> parse -> load | `REQ-set-key`, `REQ-quote-single`, `REQ-load-override`, `REQ-parse-basic` | Quoted mutation output survives later parse and environment loading |
 
 ## Reference Verification
 
@@ -81,11 +85,13 @@ Current rubric size: 30 executable cases, including 12 unit cases and 18 system 
 | --- | ---: | ---: | ---: | --- | --- |
 | Reference | 100.00% | 100.00% | 0.00 | reference_pass | `score_report_reference_unit_system_v1.json` |
 | Codex subagent 001 | 100.00% | 100.00% | 0.00 | candidate_reviewed | `score_report_codex_subagent_001_unit_system_v1.json` |
-| Mini-SWE-Agent DeepSeek chat 001 | 100.00% | 100.00% | 0.00 | candidate_reviewed | `score_report_mini_swe_agent_deepseek_chat_001_unit_system_v1.json` |
+| Mini-SWE-Agent DeepSeek chat 001 | 100.00% | 81.82% | 18.18 | core_strong | `score_report_mini_swe_agent_deepseek_chat_001_unit_system_v1.json` |
+| OpenHands DeepSeek chat 001 | 33.33% | 27.27% | 6.06 | candidate_reviewed | `score_report_openhands_deepseek_chat_001_unit_system_v1.json` |
+| SWE-Agent DeepSeek chat 001 | 100.00% | 81.82% | 18.18 | core_strong | `score_report_swe_agent_deepseek_chat_001_unit_system_v1.json` |
 
 ## Current Gap Status
 
-MiniDotenv is closed-loop executable: the public PRD, rubric, reference, and scorer all run successfully. However, the currently available executable code-agent candidates do not produce a unit-system gap. The task should remain `needs code-agent gap`, not `core strong`, until a fresh code-agent run has unit > system with at least a 15pp gap.
+MiniDotenv is closed-loop executable: the public PRD, rubric, reference, and scorer all run successfully. Mini-SWE-Agent and SWE-Agent both pass all unit cases while failing the added system mutation/export-whitespace chains, producing an 18.18pp unit-system gap. The task now satisfies the current `core strong` gate.
 
 ## Fairness Notes
 

@@ -3,43 +3,68 @@
   "generated_at_utc": "2026-06-28T13:24:39+00:00",
   "task_dir": "/root/autodl-tmp/Bmk-dev-work/task/minidotenv-realrepo-001",
   "rubric_path": "/root/autodl-tmp/Bmk-dev-work/task/minidotenv-realrepo-001/rubric.json",
-  "solution_dir": "/root/autodl-tmp/Bmk-dev-work/candidates/minidotenv-realrepo-001/reference",
-  "run_name": "reference",
+  "solution_dir": "/root/autodl-tmp/Bmk-dev-work/candidates/minidotenv-realrepo-001/openhands-deepseek-chat-001",
+  "run_name": "openhands-deepseek-chat-001",
   "total_cases": 34,
-  "passed_cases": 34,
+  "passed_cases": 10,
   "total_weight": 224,
-  "passed_weight": 224,
-  "score": 1.0,
+  "passed_weight": 64,
+  "score": 0.2857142857142857,
   "unit_score": {
     "weight": 48,
-    "passed_weight": 48,
-    "score": 1.0,
+    "passed_weight": 16,
+    "score": 0.3333333333333333,
     "cases": 12,
-    "passed_cases": 12
+    "passed_cases": 4
   },
   "system_score": {
     "weight": 176,
-    "passed_weight": 176,
-    "score": 1.0,
+    "passed_weight": 48,
+    "score": 0.2727272727272727,
     "cases": 22,
-    "passed_cases": 22
+    "passed_cases": 6
   },
-  "unit_system_gap": 0.0,
-  "failed_ids": [],
+  "unit_system_gap": 0.06060606060606061,
+  "failed_ids": [
+    "MDU002",
+    "MDU003",
+    "MDU004",
+    "MDU006",
+    "MDU007",
+    "MDU010",
+    "MDU011",
+    "MDU012",
+    "MDS003",
+    "MDS004",
+    "MDS005",
+    "MDS007",
+    "MDS008",
+    "MDS011",
+    "MDS012",
+    "MDS013",
+    "MDS014",
+    "MDS015",
+    "MDS016",
+    "MDS018",
+    "MDS019",
+    "MDS020",
+    "MDS021",
+    "MDS022"
+  ],
   "layers": {
     "unit": {
       "weight": 48,
-      "passed_weight": 48,
-      "score": 1.0,
+      "passed_weight": 16,
+      "score": 0.3333333333333333,
       "cases": 12,
-      "passed_cases": 12
+      "passed_cases": 4
     },
     "system": {
       "weight": 176,
-      "passed_weight": 176,
-      "score": 1.0,
+      "passed_weight": 48,
+      "score": 0.2727272727272727,
       "cases": 22,
-      "passed_cases": 22
+      "passed_cases": 6
     }
   },
   "categories": {
@@ -51,21 +76,21 @@
     },
     "source_selection": {
       "cases": 1,
-      "passed_cases": 1,
+      "passed_cases": 0,
       "weight": 4,
-      "passed_weight": 4
+      "passed_weight": 0
     },
     "parse_basic": {
       "cases": 1,
-      "passed_cases": 1,
+      "passed_cases": 0,
       "weight": 4,
-      "passed_weight": 4
+      "passed_weight": 0
     },
     "comments_export": {
       "cases": 1,
-      "passed_cases": 1,
+      "passed_cases": 0,
       "weight": 4,
-      "passed_weight": 4
+      "passed_weight": 0
     },
     "quotes": {
       "cases": 1,
@@ -75,15 +100,15 @@
     },
     "interpolation": {
       "cases": 1,
-      "passed_cases": 1,
+      "passed_cases": 0,
       "weight": 4,
-      "passed_weight": 4
+      "passed_weight": 0
     },
     "interpolation_order": {
       "cases": 1,
-      "passed_cases": 1,
+      "passed_cases": 0,
       "weight": 4,
-      "passed_weight": 4
+      "passed_weight": 0
     },
     "load_env": {
       "cases": 1,
@@ -99,21 +124,21 @@
     },
     "get_set_unset": {
       "cases": 1,
-      "passed_cases": 1,
+      "passed_cases": 0,
       "weight": 4,
-      "passed_weight": 4
+      "passed_weight": 0
     },
     "set_replace": {
       "cases": 1,
-      "passed_cases": 1,
+      "passed_cases": 0,
       "weight": 4,
-      "passed_weight": 4
+      "passed_weight": 0
     },
     "malformed_recovery": {
       "cases": 1,
-      "passed_cases": 1,
+      "passed_cases": 0,
       "weight": 4,
-      "passed_weight": 4
+      "passed_weight": 0
     },
     "parse_interpolate_load": {
       "cases": 1,
@@ -129,21 +154,21 @@
     },
     "values_vs_load_env": {
       "cases": 1,
-      "passed_cases": 1,
+      "passed_cases": 0,
       "weight": 8,
-      "passed_weight": 8
+      "passed_weight": 0
     },
     "invalid_set_preserves_file": {
       "cases": 1,
-      "passed_cases": 1,
+      "passed_cases": 0,
       "weight": 8,
-      "passed_weight": 8
+      "passed_weight": 0
     },
     "override_interpolation_priority": {
       "cases": 1,
-      "passed_cases": 1,
+      "passed_cases": 0,
       "weight": 8,
-      "passed_weight": 8
+      "passed_weight": 0
     },
     "find_load_env_interpolation": {
       "cases": 1,
@@ -153,15 +178,15 @@
     },
     "unset_reload_preserves_comments": {
       "cases": 1,
-      "passed_cases": 1,
+      "passed_cases": 0,
       "weight": 8,
-      "passed_weight": 8
+      "passed_weight": 0
     },
     "malformed_then_mutate": {
       "cases": 1,
-      "passed_cases": 1,
+      "passed_cases": 0,
       "weight": 8,
-      "passed_weight": 8
+      "passed_weight": 0
     },
     "replace_then_interpolate": {
       "cases": 1,
@@ -177,39 +202,39 @@
     },
     "quoted_comments_interpolation": {
       "cases": 1,
-      "passed_cases": 1,
+      "passed_cases": 0,
       "weight": 8,
-      "passed_weight": 8
+      "passed_weight": 0
     },
     "file_precedence_over_stream_after_mutation": {
       "cases": 1,
-      "passed_cases": 1,
+      "passed_cases": 0,
       "weight": 8,
-      "passed_weight": 8
+      "passed_weight": 0
     },
     "implicit_find_values_load_isolation": {
       "cases": 1,
-      "passed_cases": 1,
+      "passed_cases": 0,
       "weight": 8,
-      "passed_weight": 8
+      "passed_weight": 0
     },
     "multi_mutation_export_duplicates_reload": {
       "cases": 1,
-      "passed_cases": 1,
+      "passed_cases": 0,
       "weight": 8,
-      "passed_weight": 8
+      "passed_weight": 0
     },
     "failed_operations_then_valid_mutation": {
       "cases": 1,
-      "passed_cases": 1,
+      "passed_cases": 0,
       "weight": 8,
-      "passed_weight": 8
+      "passed_weight": 0
     },
     "interpolate_false_values_load": {
       "cases": 1,
-      "passed_cases": 1,
+      "passed_cases": 0,
       "weight": 8,
-      "passed_weight": 8
+      "passed_weight": 0
     },
     "quote_mode_always_roundtrip": {
       "cases": 1,
@@ -219,33 +244,33 @@
     },
     "repeated_stream_file_isolation": {
       "cases": 1,
-      "passed_cases": 1,
+      "passed_cases": 0,
       "weight": 8,
-      "passed_weight": 8
+      "passed_weight": 0
     },
     "export_whitespace_interpolation": {
       "cases": 1,
-      "passed_cases": 1,
+      "passed_cases": 0,
       "weight": 8,
-      "passed_weight": 8
+      "passed_weight": 0
     },
     "append_without_final_newline": {
       "cases": 1,
-      "passed_cases": 1,
+      "passed_cases": 0,
       "weight": 8,
-      "passed_weight": 8
+      "passed_weight": 0
     },
     "comment_append_without_final_newline": {
       "cases": 1,
-      "passed_cases": 1,
+      "passed_cases": 0,
       "weight": 8,
-      "passed_weight": 8
+      "passed_weight": 0
     },
     "quote_append_load_without_final_newline": {
       "cases": 1,
-      "passed_cases": 1,
+      "passed_cases": 0,
       "weight": 8,
-      "passed_weight": 8
+      "passed_weight": 0
     }
   },
   "results": [
@@ -276,10 +301,10 @@
       ],
       "description": "dotenv_path takes precedence over stream input.",
       "weight": 4,
-      "passed": true,
+      "passed": false,
       "returncode": 0,
       "expected_output": "{'A': 'file'}",
-      "actual_output": "{'A': 'file'}",
+      "actual_output": "OrderedDict([('A', 'file')])",
       "stderr": ""
     },
     {
@@ -292,10 +317,10 @@
       ],
       "description": "Basic KEY=value, empty value, and bare key parse to string, empty string, and None.",
       "weight": 4,
-      "passed": true,
+      "passed": false,
       "returncode": 0,
       "expected_output": "{'A': '1', 'EMPTY': '', 'BARE': None}",
-      "actual_output": "{'A': '1', 'EMPTY': '', 'BARE': None}",
+      "actual_output": "OrderedDict([('A', '1'), ('EMPTY', ''), ('BARE', None)])",
       "stderr": ""
     },
     {
@@ -309,10 +334,10 @@
       ],
       "description": "Comments, blank lines, export prefixes, and inline comments are handled.",
       "weight": 4,
-      "passed": true,
+      "passed": false,
       "returncode": 0,
       "expected_output": "{'A': '1', 'B': 'two', 'C': 'hash#literal'}",
-      "actual_output": "{'A': '1', 'B': 'two', 'C': 'hash#literal'}",
+      "actual_output": "OrderedDict([('A', '1'), ('B', 'two'), ('C', 'hash#literal')])",
       "stderr": ""
     },
     {
@@ -343,10 +368,10 @@
       ],
       "description": "Interpolation supports earlier file variables and default values.",
       "weight": 4,
-      "passed": true,
+      "passed": false,
       "returncode": 0,
       "expected_output": "{'BASE': '/app', 'LOG': '/app/log', 'MISS': 'fallback'}",
-      "actual_output": "{'BASE': '/app', 'LOG': '/app/log', 'MISS': 'fallback'}",
+      "actual_output": "OrderedDict([('BASE', '/app'), ('LOG', '/app/log'), ('MISS', 'fallback')])",
       "stderr": ""
     },
     {
@@ -359,10 +384,10 @@
       ],
       "description": "Interpolation does not see bindings defined later in the file.",
       "weight": 4,
-      "passed": true,
+      "passed": false,
       "returncode": 0,
       "expected_output": "{'FIRST': 'x', 'LATER': 'value'}",
-      "actual_output": "{'FIRST': 'x', 'LATER': 'value'}",
+      "actual_output": "OrderedDict([('FIRST', 'x'), ('LATER', 'value')])",
       "stderr": ""
     },
     {
@@ -411,10 +436,10 @@
       ],
       "description": "set_key, get_key, and unset_key operate on one file deterministically.",
       "weight": 4,
-      "passed": true,
+      "passed": false,
       "returncode": 0,
       "expected_output": "True\ntwo\nTrue\n{'B': 'two'}",
-      "actual_output": "True\ntwo\nTrue\n{'B': 'two'}",
+      "actual_output": "True\ntwo\nTrue\nOrderedDict([('B', 'two')])",
       "stderr": ""
     },
     {
@@ -427,10 +452,10 @@
       ],
       "description": "set_key replaces the first matching key without duplicating it.",
       "weight": 4,
-      "passed": true,
+      "passed": false,
       "returncode": 0,
       "expected_output": "{'A': 'new', 'B': 'keep'}\nTrue",
-      "actual_output": "{'A': 'new', 'B': 'keep'}\nTrue",
+      "actual_output": "OrderedDict([('A', 'new'), ('B', 'keep')])\nTrue",
       "stderr": ""
     },
     {
@@ -444,10 +469,10 @@
       ],
       "description": "Malformed lines and invalid keys are skipped while later valid bindings parse.",
       "weight": 4,
-      "passed": true,
+      "passed": false,
       "returncode": 0,
       "expected_output": "{'GOOD': '1', 'NEXT': '2'}",
-      "actual_output": "{'GOOD': '1', 'NEXT': '2'}",
+      "actual_output": "OrderedDict([('GOOD', '1'), ('NEXT', '2')])",
       "stderr": ""
     },
     {
@@ -498,10 +523,10 @@
       ],
       "description": "dotenv_values is read-only while load_dotenv mutates os.environ.",
       "weight": 8,
-      "passed": true,
+      "passed": false,
       "returncode": 0,
       "expected_output": "{'ONLY_PARSE': '1'}\nFalse\n2",
-      "actual_output": "{'ONLY_PARSE': '1'}\nFalse\n2",
+      "actual_output": "OrderedDict([('ONLY_PARSE', '1')])\nFalse\n2",
       "stderr": ""
     },
     {
@@ -516,10 +541,10 @@
       ],
       "description": "A failed set_key with an invalid key does not corrupt the original file.",
       "weight": 8,
-      "passed": true,
+      "passed": false,
       "returncode": 0,
       "expected_output": "False\nTrue\n{'GOOD': '1'}",
-      "actual_output": "False\nTrue\n{'GOOD': '1'}",
+      "actual_output": "False\nTrue\nOrderedDict([('GOOD', '1')])",
       "stderr": ""
     },
     {
@@ -534,10 +559,10 @@
       ],
       "description": "Override mode changes interpolation and final loaded environment values.",
       "weight": 8,
-      "passed": true,
+      "passed": false,
       "returncode": 0,
       "expected_output": "{'BASE': 'file', 'PATH': 'env/bin'}\n{'BASE': 'file', 'PATH': 'file/bin'}\nenv/out",
-      "actual_output": "{'BASE': 'file', 'PATH': 'env/bin'}\n{'BASE': 'file', 'PATH': 'file/bin'}\nenv/out",
+      "actual_output": "OrderedDict([('BASE', 'file'), ('PATH', 'env/bin')])\nOrderedDict([('BASE', 'file'), ('PATH', 'file/bin')])\nenv/out",
       "stderr": ""
     },
     {
@@ -570,10 +595,10 @@
       ],
       "description": "unset_key persists across later reads while preserving unrelated lines and comments.",
       "weight": 8,
-      "passed": true,
+      "passed": false,
       "returncode": 0,
       "expected_output": "True\nNone\n{'B': '2'}\nTrue",
-      "actual_output": "True\nNone\n{'B': '2'}\nTrue",
+      "actual_output": "True\nNone\nOrderedDict([('B', '2')])\nTrue",
       "stderr": ""
     },
     {
@@ -588,10 +613,10 @@
       ],
       "description": "Malformed lines are skipped and do not prevent later mutation and parsing.",
       "weight": 8,
-      "passed": true,
+      "passed": false,
       "returncode": 0,
       "expected_output": "{'A': '1', 'B': '2'}\n{'A': '1', 'B': '2', 'C': '3'}",
-      "actual_output": "{'A': '1', 'B': '2'}\n{'A': '1', 'B': '2', 'C': '3'}",
+      "actual_output": "OrderedDict([('A', '1'), ('B', '2')])\nOrderedDict([('A', '1'), ('B', '2'), ('C', '3')])",
       "stderr": ""
     },
     {
@@ -643,10 +668,10 @@
       ],
       "description": "Quotes, comments, and interpolation interact without losing literal content.",
       "weight": 8,
-      "passed": true,
+      "passed": false,
       "returncode": 0,
       "expected_output": "{'A': 'hash # kept', 'B': 'two', 'C': 'two value', 'D': 'hash # kept'}",
-      "actual_output": "{'A': 'hash # kept', 'B': 'two', 'C': 'two value', 'D': 'hash # kept'}",
+      "actual_output": "OrderedDict([('A', 'hash # kept'), ('B', 'two'), ('C', 'two value'), ('D', 'hash # kept')])",
       "stderr": ""
     },
     {
@@ -661,10 +686,10 @@
       ],
       "description": "A mutated file takes precedence over a conflicting stream in later reads.",
       "weight": 8,
-      "passed": true,
+      "passed": false,
       "returncode": 0,
       "expected_output": "{'A': 'file'}",
-      "actual_output": "{'A': 'file'}",
+      "actual_output": "OrderedDict([('A', 'file')])",
       "stderr": ""
     },
     {
@@ -680,10 +705,10 @@
       ],
       "description": "Implicit discovery is used without leaking dotenv_values state into os.environ or later directories.",
       "weight": 8,
-      "passed": true,
+      "passed": false,
       "returncode": 0,
       "expected_output": ".env\n{'IMPLICIT': 'one', 'COMBINED': 'one/x'}\nFalse\nTrue\none/x\n\n{}",
-      "actual_output": ".env\n{'IMPLICIT': 'one', 'COMBINED': 'one/x'}\nFalse\nTrue\none/x\n\n{}",
+      "actual_output": ".env\nOrderedDict([('IMPLICIT', 'one'), ('COMBINED', 'one/x')])\nFalse\nTrue\none/x\n\n{}",
       "stderr": ""
     },
     {
@@ -699,10 +724,10 @@
       ],
       "description": "Multiple mutations replace export bindings, append new keys, remove only the first duplicate, and affect later load results.",
       "weight": 8,
-      "passed": true,
+      "passed": false,
       "returncode": 0,
       "expected_output": "True\nTrue\nTrue\n{'A': 'new', 'B': 'second', 'C': 'new/c'}\nnew second new/c\nTrue\nTrue",
-      "actual_output": "True\nTrue\nTrue\n{'A': 'new', 'B': 'second', 'C': 'new/c'}\nnew second new/c\nTrue\nTrue",
+      "actual_output": "True\nTrue\nTrue\nOrderedDict([('A', 'new'), ('B', 'second'), ('C', 'new/c')])\nnew second new/c\nTrue\nTrue",
       "stderr": ""
     },
     {
@@ -719,10 +744,10 @@
       ],
       "description": "Failed mutations and malformed lines preserve the file and do not prevent later valid mutation.",
       "weight": 8,
-      "passed": true,
+      "passed": false,
       "returncode": 0,
       "expected_output": "False\nFalse\nFalse\nTrue\nTrue\nTrue\n{'B': '2', 'C': '3'}",
-      "actual_output": "False\nFalse\nFalse\nTrue\nTrue\nTrue\n{'B': '2', 'C': '3'}",
+      "actual_output": "False\nFalse\nFalse\nTrue\nTrue\nTrue\nOrderedDict([('B', '2'), ('C', '3')])",
       "stderr": ""
     },
     {
@@ -738,10 +763,10 @@
       ],
       "description": "interpolate=False keeps literal placeholders through parse and load while later calls still interpolate normally.",
       "weight": 8,
-      "passed": true,
+      "passed": false,
       "returncode": 0,
       "expected_output": "{'BASE': 'filebase', 'OUT': '${BASE}/out', 'RAW': '${MISSING:-fallback}'}\n${BASE}/out\n${MISSING:-fallback}\nfilebase/out",
-      "actual_output": "{'BASE': 'filebase', 'OUT': '${BASE}/out', 'RAW': '${MISSING:-fallback}'}\n${BASE}/out\n${MISSING:-fallback}\nfilebase/out",
+      "actual_output": "OrderedDict([('BASE', 'filebase'), ('OUT', '${BASE}/out'), ('RAW', '${MISSING:-fallback}')])\n${BASE}/out\n${MISSING:-fallback}\nfilebase/out",
       "stderr": ""
     },
     {
@@ -776,10 +801,10 @@
       ],
       "description": "Repeated stream and file parses do not leak earlier bindings into later sources.",
       "weight": 8,
-      "passed": true,
+      "passed": false,
       "returncode": 0,
       "expected_output": "{'LOCAL': 'first', 'OUT': 'first/one'}\n{'OUT': 'fallback/two', 'LOCAL': 'second'}\n{'OUT': 'filefallback/three'}",
-      "actual_output": "{'LOCAL': 'first', 'OUT': 'first/one'}\n{'OUT': 'fallback/two', 'LOCAL': 'second'}\n{'OUT': 'filefallback/three'}",
+      "actual_output": "OrderedDict([('LOCAL', 'first'), ('OUT', 'first/one')])\nOrderedDict([('OUT', 'fallback/two'), ('LOCAL', 'second')])\nOrderedDict([('OUT', 'filefallback/three')])",
       "stderr": ""
     },
     {
@@ -794,10 +819,10 @@
       ],
       "description": "The export prefix accepts whitespace before a binding and the parsed value feeds later interpolation and loading.",
       "weight": 8,
-      "passed": true,
+      "passed": false,
       "returncode": 0,
       "expected_output": "{'A': '1', 'B': '1/b'}\nTrue\n1/b",
-      "actual_output": "{'A': '1', 'B': '1/b'}\nTrue\n1/b",
+      "actual_output": "OrderedDict([('B', '/b')])\nTrue\n/b",
       "stderr": ""
     },
     {
@@ -812,10 +837,10 @@
       ],
       "description": "Appending a new key to a file without a trailing newline creates a separate binding that later parsing can read.",
       "weight": 8,
-      "passed": true,
+      "passed": false,
       "returncode": 0,
       "expected_output": "True\n'A=1\\nB=2\\n'\n{'A': '1', 'B': '2'}",
-      "actual_output": "True\n'A=1\\nB=2\\n'\n{'A': '1', 'B': '2'}",
+      "actual_output": "True\n'A=1B=2\\n'\nOrderedDict([('A', '1B=2')])",
       "stderr": ""
     },
     {
@@ -830,10 +855,10 @@
       ],
       "description": "Appending after a final comment without a trailing newline preserves the comment and creates a parseable binding.",
       "weight": 8,
-      "passed": true,
+      "passed": false,
       "returncode": 0,
       "expected_output": "True\n'# keep\\nA=1\\n'\n{'A': '1'}\nTrue",
-      "actual_output": "True\n'# keep\\nA=1\\n'\n{'A': '1'}\nTrue",
+      "actual_output": "True\n'# keepA=1\\n'\nOrderedDict()\nTrue",
       "stderr": ""
     },
     {
@@ -849,10 +874,10 @@
       ],
       "description": "A quoted append to a file without a trailing newline survives parsing and environment loading.",
       "weight": 8,
-      "passed": true,
+      "passed": false,
       "returncode": 0,
       "expected_output": "True\n{'A': '1', 'B': 'two words'}\nTrue\ntwo words",
-      "actual_output": "True\n{'A': '1', 'B': 'two words'}\nTrue\ntwo words",
+      "actual_output": "True\nOrderedDict([('A', \"1B='two words'\")])\nTrue\nNone",
       "stderr": ""
     }
   ]

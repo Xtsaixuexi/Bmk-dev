@@ -316,5 +316,49 @@
     "weight": 8,
     "test_code": "import io, os, tempfile\nfrom minidotenv import dotenv_values\nos.environ.pop('LOCAL', None)\nfirst = dotenv_values(stream=io.StringIO('LOCAL=first\\nOUT=${LOCAL}/one\\n'))\nsecond = dotenv_values(stream=io.StringIO('OUT=${LOCAL:-fallback}/two\\nLOCAL=second\\n'))\nwith tempfile.TemporaryDirectory() as td:\n    path = os.path.join(td, '.env')\n    open(path, 'w', encoding='utf-8').write('OUT=${LOCAL:-filefallback}/three\\n')\n    third = dotenv_values(path)\nprint(first)\nprint(second)\nprint(third)\n",
     "expected_output": "{'LOCAL': 'first', 'OUT': 'first/one'}\n{'OUT': 'fallback/two', 'LOCAL': 'second'}\n{'OUT': 'filefallback/three'}"
+  },
+  {
+    "id": "MDS019",
+    "layer": "system",
+    "system_dimension": "boundary_crossing",
+    "category": "export_whitespace_interpolation",
+    "requirement_refs": ["REQ-parse-comments-export", "REQ-interpolate-basic", "REQ-load-override"],
+    "description": "The export prefix accepts whitespace before a binding and the parsed value feeds later interpolation and loading.",
+    "weight": 8,
+    "test_code": "import io, os\nfrom minidotenv import dotenv_values, load_dotenv\nos.environ.pop('A', None); os.environ.pop('B', None)\ncontent = 'export\\tA=1\\nB=${A}/b\\n'\nprint(dotenv_values(stream=io.StringIO(content)))\nprint(load_dotenv(stream=io.StringIO(content), override=True))\nprint(os.environ.get('B'))\n",
+    "expected_output": "{'A': '1', 'B': '1/b'}\nTrue\n1/b"
+  },
+  {
+    "id": "MDS020",
+    "layer": "system",
+    "system_dimension": "durability_reload",
+    "category": "append_without_final_newline",
+    "requirement_refs": ["REQ-set-key", "REQ-parse-basic", "REQ-no-state-leak"],
+    "description": "Appending a new key to a file without a trailing newline creates a separate binding that later parsing can read.",
+    "weight": 8,
+    "test_code": "import os, tempfile\nfrom minidotenv import set_key, dotenv_values\nwith tempfile.TemporaryDirectory() as td:\n    path = os.path.join(td, '.env')\n    open(path, 'w', encoding='utf-8').write('A=1')\n    print(set_key(path, 'B', '2', quote_mode='never'))\n    print(repr(open(path, encoding='utf-8').read()))\n    print(dotenv_values(path))\n",
+    "expected_output": "True\n'A=1\\nB=2\\n'\n{'A': '1', 'B': '2'}"
+  },
+  {
+    "id": "MDS021",
+    "layer": "system",
+    "system_dimension": "durability_reload",
+    "category": "comment_append_without_final_newline",
+    "requirement_refs": ["REQ-set-key", "REQ-parse-comments-export", "REQ-parse-basic"],
+    "description": "Appending after a final comment without a trailing newline preserves the comment and creates a parseable binding.",
+    "weight": 8,
+    "test_code": "import os, tempfile\nfrom minidotenv import set_key, dotenv_values\nwith tempfile.TemporaryDirectory() as td:\n    path = os.path.join(td, '.env')\n    open(path, 'w', encoding='utf-8').write('# keep')\n    print(set_key(path, 'A', '1', quote_mode='never'))\n    text = open(path, encoding='utf-8').read()\n    print(repr(text))\n    print(dotenv_values(path))\n    print('# keep' in text)\n",
+    "expected_output": "True\n'# keep\\nA=1\\n'\n{'A': '1'}\nTrue"
+  },
+  {
+    "id": "MDS022",
+    "layer": "system",
+    "system_dimension": "state_accumulation",
+    "category": "quote_append_load_without_final_newline",
+    "requirement_refs": ["REQ-set-key", "REQ-quote-single", "REQ-load-override", "REQ-parse-basic"],
+    "description": "A quoted append to a file without a trailing newline survives parsing and environment loading.",
+    "weight": 8,
+    "test_code": "import os, tempfile\nfrom minidotenv import set_key, dotenv_values, load_dotenv\nwith tempfile.TemporaryDirectory() as td:\n    path = os.path.join(td, '.env')\n    open(path, 'w', encoding='utf-8').write('A=1')\n    os.environ.pop('B', None)\n    print(set_key(path, 'B', 'two words', quote_mode='always'))\n    print(dotenv_values(path))\n    print(load_dotenv(path, override=True))\n    print(os.environ.get('B'))\n",
+    "expected_output": "True\n{'A': '1', 'B': 'two words'}\nTrue\ntwo words"
   }
 ]

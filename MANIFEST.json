@@ -212,7 +212,7 @@
       "id": "minidotenv-realrepo-001",
       "display_name": "MiniDotenv",
       "source_repo": "theskumar/python-dotenv",
-      "status": "needs code-agent gap",
+      "status": "core strong",
       "scores": {
         "reference": {
           "unit": 100.0,
@@ -225,8 +225,18 @@
         },
         "mini_swe_agent_deepseek_chat_001": {
           "unit": 100.0,
-          "system": 100.0,
-          "gap_pp": 0.0
+          "system": 81.82,
+          "gap_pp": 18.18
+        },
+        "openhands_deepseek_chat_001": {
+          "unit": 33.33,
+          "system": 27.27,
+          "gap_pp": 6.06
+        },
+        "swe_agent_deepseek_chat_001": {
+          "unit": 100.0,
+          "system": 81.82,
+          "gap_pp": 18.18
         }
       },
       "paths": {

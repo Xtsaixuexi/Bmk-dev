@@ -23,4 +23,6 @@ MiniBuildGraph,mini-swe-agent-deepseek-chat-001,93.75,81.25,12.50,candidate_revi
 MiniBuildGraph,swe-agent-deepseek-chat-001,93.75,81.25,12.50,candidate_reviewed
 MiniDotenv,reference,100.00,100.00,0.00,reference_pass
 MiniDotenv,codex-subagent-001,100.00,100.00,0.00,candidate_reviewed
-MiniDotenv,mini-swe-agent-deepseek-chat-001,100.00,100.00,0.00,candidate_reviewed
+MiniDotenv,mini-swe-agent-deepseek-chat-001,100.00,81.82,18.18,core_strong
+MiniDotenv,openhands-deepseek-chat-001,33.33,27.27,6.06,candidate_reviewed
+MiniDotenv,swe-agent-deepseek-chat-001,100.00,81.82,18.18,core_strong
