@@ -1,0 +1,3 @@
+LLM_MODEL=openai/gpt-4o
+LLM_BASE_URL=https://aihubmix.com/v1
+LLM_API_KEY=REPLACE_WITH_KEY_IN_LOCAL_TERMINAL

@@ -19,6 +19,7 @@ Scorer: `scoring/score_zmini.py`
 | `REQ-note-parse` | Title/body/word-count parsing | Notes | Frontmatter title, heading fallback, filename fallback, and word count are exposed in note objects |
 | `REQ-tags` | Tag parsing/filtering/listing | Notes, `list`, `tag list` | YAML tags/keywords, hashtags, colon tags, tag expressions, and tag counts |
 | `REQ-links-graph` | Link resolution and graph export | Notes, `list`, `graph` | Markdown/wiki links resolve by path/stem/id/title and feed filters and graph edges |
+| `REQ-graph` | Graph export compatibility alias | `graph` | Rubric alias for graph JSON nodes/edges covered by `REQ-links-graph` |
 | `REQ-list-filters` | List filters, output formats, sorting | `list` | Match, regex, tags, link filters, exclude, limit, sort, path/title/JSON outputs |
 | `REQ-config` | Config defaults and named filters | Config | Note defaults/templates and named filters affect `new`, `list`, and `graph` |
 | `REQ-errors` | Error and atomicity behavior | Error Behavior | Missing notebooks, invalid regexes, duplicates, and invalid commands fail nonzero without corrupting state |

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SysEval 研究提案</title>
+<style>
+  :root{--bg:#f6f8fa;--sur:#ffffff;--sur2:#f1f3f5;--bd:#d0d7de;
+    --tx:#1f2328;--mt:#57606a;--bl:#0969da;--gn:#1a7f37;
+    --pu:#6639ba;--or:#bc4c00;--rd:#cf222e;--yw:#9a6700;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+    background:var(--bg);color:var(--tx);line-height:1.85;}
+  .hero{background:linear-gradient(135deg,#eef2ff,#f8faff,#f0f4ff);
+    border-bottom:1px solid var(--bd);padding:56px 40px;text-align:center;}
+  .hero h1{font-size:1.9em;color:#1e293b;margin-bottom:10px;font-weight:700;line-height:1.35;}
+  .hero .sub{color:var(--bl);font-size:1em;margin-bottom:6px;}
+  .hero .meta{color:var(--mt);font-size:0.83em;margin:8px 0;}
+  .hero .claim{display:inline-block;margin-top:18px;background:rgba(26,127,55,0.06);
+    border:1px solid rgba(26,127,55,0.25);border-radius:8px;padding:13px 24px;
+    font-size:0.93em;color:#166534;max-width:740px;font-style:italic;}
+  .toc{background:var(--sur);border:1px solid var(--bd);border-radius:8px;
+    padding:16px 28px;margin:28px auto;max-width:960px;text-align:center;}
+  .toc a{color:var(--tx);text-decoration:none;display:inline-block;
+    padding:3px 10px;border-radius:4px;font-size:0.88em;margin:2px 4px;}
+  .toc a:hover{background:var(--sur2);color:var(--bl);}
+  .wrap{max-width:960px;margin:0 auto;padding:16px 40px 80px;}
+  .sec{margin-top:48px;padding-top:28px;border-top:1px solid var(--bd);}
+  h2{font-size:1.35em;color:#1e293b;margin-bottom:16px;
+    padding-bottom:6px;border-bottom:2px solid var(--bl);display:inline-block;}
+  h3{font-size:1.02em;color:var(--pu);margin:22px 0 9px;}
+  p{margin:9px 0;}
+  ul,ol{margin:9px 0 9px 22px;}
+  li{margin:5px 0;}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:0.87em;}
+  th,td{padding:9px 13px;border:1px solid var(--bd);vertical-align:top;}
+  th{background:var(--sur2);color:var(--bl);font-weight:600;}
+  td{background:var(--sur);}
+  .box{border-radius:7px;padding:13px 17px;margin:14px 0;border-left:4px solid;}
+  .box-bl{background:rgba(9,105,218,0.05);border-color:var(--bl);}
+  .box-gn{background:rgba(26,127,55,0.05);border-color:var(--gn);}
+  .box-yw{background:rgba(154,103,0,0.05);border-color:var(--yw);}
+  .bt{font-weight:700;font-size:0.91em;margin-bottom:5px;}
+  .box-bl .bt{color:var(--bl);}.box-gn .bt{color:var(--gn);}.box-yw .bt{color:var(--yw);}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:12px;margin:14px 0;}
+  .card{background:var(--sur);border:1px solid var(--bd);border-radius:8px;padding:16px;
+    box-shadow:0 1px 4px rgba(0,0,0,0.06);transition:box-shadow .2s;}
+  .card:hover{box-shadow:0 4px 12px rgba(0,0,0,0.1);}
+  .card h4{color:var(--or);font-size:0.93em;margin-bottom:7px;}
+  .card p{font-size:0.88em;color:var(--mt);}
+  .footer{text-align:center;padding:20px;color:var(--mt);font-size:0.8em;border-top:1px solid var(--bd);}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div style="color:var(--mt);font-size:0.8em;margin-bottom:8px;">研究提案 &nbsp;·&nbsp; 投稿目标：AAAI 2027 &nbsp;·&nbsp; 草稿 v0.1</div>
+  <h1>Can Code Agents Build More Than the Sum of Their Parts?</h1>
+  <div class="sub">SysEval：面向仓库级代码生成的组合推理能力评测基准</div>
+  <div class="claim">
+    "代码智能体能够正确实现各独立功能模块，却系统性地无法生成跨模块语义一致的完整系统——
+    这一组合推理缺口在多任务域与多模型间稳定复现，且在提供完整规范的条件下依然显著存在。"
+  </div>
+</div>
+
+<div class="toc">
+  <span style="color:var(--mt);font-size:0.8em;margin-right:6px;">目录</span>
+  <a href="#intro">1. 引言</a>
+  <a href="#related">2. 相关工作</a>
+  <a href="#method">3. 方法设计</a>
+  <a href="#exp">4. 实验设计</a>
+</div>
+
+<div class="wrap">
+
+<!-- 1. 引言 -->
+<div class="sec" id="intro">
+<h2>1. 引言</h2>
+
+<p>仓库级代码生成代表了代码智能体的重要能力边界。现有评测框架主要覆盖两个层次：函数级功能正确性（HumanEval、MBPP）与仓库级缺陷修复（SWE-bench）。近期，一批 doc2repo 工作（如 RepoZero、NL2Repo-Bench）将评测粒度提升至端到端仓库生成，测量智能体从自然语言规范构建完整软件系统的能力。然而，这些工作仍以<strong>单一特性的正确性</strong>为核心评测信号，尚未测量特性之间的组合正确性——而后者正是真实软件系统区别于独立函数集合的核心属性。</p>
+
+<p>真实软件系统的核心特征在于多模块间的共享约束：模块之间共用类型系统、键命名空间与全局不变式，任一模块的实现决策都将约束其他模块的语义空间。因此，能够正确实现各独立功能模块的智能体，未必具备构建跨模块语义一致系统的能力。</p>
+
+<div class="box box-gn">
+  <div class="bt">核心主张</div>
+  我们提出，代码智能体存在系统性的<strong>组合推理缺口（Compositional Gap）</strong>：单元通过率（UPR，衡量模块独立正确性）与系统通过率（SPR，衡量跨模块组合正确性）之间存在稳定且显著的差距（CG = UPR − SPR &gt; 0）。该差距在完整规范条件下持续存在，并在多任务域与多模型间稳定复现；人工参考实现不存在此差距，表明 CG 是智能体的能力属性，而非任务本身难度的产物。
+</div>
+
+<p>为精确<strong>测量</strong>这一差距，我们构建了 SysEval：一个基于规定性 PRD（prescriptive PRD，有别于从已有代码提取的描述性规范）的仓库级代码生成评测套件。规定性 PRD 不包含函数签名或 I/O 示例——这两类构造要素是现有基准普遍提供、却会系统性地掩盖组合失败的锚点信息。去除这些锚点是暴露并量化组合推理缺口的方法论前提，而非本文的核心主张本身。</p>
+
+<h3>主要贡献</h3>
+<div class="grid">
+  <div class="card">
+    <h4>新的评测维度</h4>
+    <p>定义并测量组合差距（CG = UPR − SPR），揭示现有基准完全不可见的失败模式。配合失败归因框架，区分级联失败（feature 未实现）与组合失败（跨模块契约违反），支持差距的因果解读。</p>
+  </div>
+  <div class="card">
+    <h4>SysEval 基准</h4>
+    <p>无行为锚点的仓库级生成评测套件，采用双层测试设计以隔离组合推理能力。通过消融实验验证：补充行为锚点后差距显著缩小，确认组合差距是智能体的能力属性而非任务难度产物。</p>
+  </div>
+</div>
+</div>
+
+<!-- 2. 相关工作 -->
+<div class="sec" id="related">
+<h2>2. 相关工作</h2>
+
+<h3>函数/文件级代码生成</h3>
+<p>HumanEval、MBPP、DS-1000、LiveCodeBench 在函数粒度上评测代码生成，以 I/O 示例和参考测试作为行为锚点。此类基准无法暴露组合推理失败——单个函数本身不涉及跨模块契约。</p>
+
+<h3>仓库级缺陷修复基准</h3>
+<p>SWE-bench 基于真实 GitHub issue 与补丁构建，评测智能体在完整代码库上下文中的缺陷修复能力，完整代码库本身构成强行为锚点。此类基准的核心能力是"在已有代码库中定位并修改代码"，而非"依据规范从头构建组合结构"。</p>
+
+<h3>从规范生成仓库</h3>
+
+<table>
+  <thead>
+    <tr><th>基准</th><th>行为锚点</th><th>组合信号</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>RepoZero</td><td>每个函数 4 个 I/O 示例</td><td>弱（示例掩盖跨模块依赖）</td></tr>
+    <tr><td>NL2Repo-Bench</td><td>AST 提取的 API 签名面</td><td>部分（接口已预先固定）</td></tr>
+    <tr><td>ProgramBench</td><td>可按需查询的运行时 oracle</td><td>部分（on-demand 锚点）</td></tr>
+    <tr><td><strong>SysEval（本文）</strong></td><td><strong>无</strong></td><td><strong>完整（双层测试隔离组合差距）</strong></td></tr>
+  </tbody>
+</table>
+
+<div class="box box-bl">
+  <div class="bt">定位</div>
+  现有仓库级生成基准至少提供以下之一：函数签名、I/O 示例、可查询 oracle、或从代码提取的描述性规范。SysEval 移除全部行为锚点，仅提供规定性 PRD 与全局不变式，从而使组合推理失败得以被精确测量。
+</div>
+</div>
+
+<!-- 3. 方法设计 -->
+<div class="sec" id="method">
+<h2>3. 方法设计</h2>
+
+<h3>3.1 核心设计原理：单一来源，多视图派生</h3>
+<p>每个 SysEval 任务围绕一个<strong>共享状态对象</strong>构建——所有 feature 模块均须对其达成一致（键命名空间、类型注册表、累积上下文等）。该共享状态不归属于任何单一模块；每个模块均对其执行读写操作，且受跨系统全局不变式约束。</p>
+<p>此设计迫使智能体在生成每个模块时推理其对全局状态的影响，而非仅关注该模块自身的输出。不满足此属性的任务将被拒收：若各 feature 间相互独立，则系统测试退化为逐一运行单元测试，无法产生有意义的组合差距。</p>
+
+<h3>3.2 规定性 PRD</h3>
+<p>每个任务的输入规范为<strong>规定性</strong>（prescriptive）PRD：仅定义系统的行为语义，而不约束代码结构。这与描述性规范（descriptive spec，从已有代码提取）形成对比。</p>
+
+<div class="grid">
+  <div class="card">
+    <h4>PRD 包含</h4>
+    <p>每个 feature 模块的精确行为语义 &bull; 显式全局不变式（跨模块规则）&bull; 共享数据模型 &bull; 错误行为规范 &bull; 明确的非目标边界</p>
+  </div>
+  <div class="card">
+    <h4>PRD 刻意排除</h4>
+    <p>函数签名或类名（无 API 面锚点）&bull; 输入/输出示例 &bull; 参考实现或伪代码 &bull; 任何关于测试结构的提示</p>
+  </div>
+</div>
+
+<h3>3.3 双层测试设计</h3>
+
+<p><strong>Feature-Pure 单元测试</strong>——满足特性纯约束：单元测试的所有状态设置仅使用被测模块自身的操作（或直接对象构造）。此设计确保单元测试失败可因果归因至单一模块，而非其他模块错误状态引发的级联效应。</p>
+
+<p><strong>跨特性系统测试</strong>——每个系统测试要求交错调用至少两个 feature 模块的操作，且测试通过的前提是这些模块在实现时对共享状态达成一致。我们沿六个维度组织系统测试：</p>
+
+<table>
+  <thead><tr><th>维度</th><th>测试内容</th></tr></thead>
+  <tbody>
+    <tr><td>跨特性数据流</td><td>模块 A 写入的数据可被模块 B 正确读取</td></tr>
+    <tr><td>状态累积</td><td>跨模块的顺序操作能正确累积系统状态</td></tr>
+    <tr><td>全局不变式</td><td>任意模块操作组合后，系统级约束持续成立</td></tr>
+    <tr><td>错误原子性</td><td>失败的跨模块操作不遗留部分提交的中间状态</td></tr>
+    <tr><td>操作顺序敏感性</td><td>操作顺序的语义被正确建模与保留</td></tr>
+    <tr><td>边界穿越</td><td>值穿越模块边界时其语义被完整保持</td></tr>
+  </tbody>
+</table>
+
+<h3>3.4 任务准入验证</h3>
+<p>每个任务须通过三道准入门槛方可纳入核心评测套件：</p>
+<ol>
+  <li><strong>参考门槛</strong>：人工参考实现须达到单元测试通过率 = 100%、系统测试通过率 = 100%。未达标表明规范存在歧义或测试设计存在缺陷。</li>
+  <li><strong>差距门槛</strong>：至少一个智能体条件需展示单元通过率 &gt; 系统通过率，且差距 ≥ 15pp，以确认组合差距真实存在。</li>
+  <li><strong>公平性门槛</strong>：人工审计单元测试，排除私有形状陷阱、精确文本匹配陷阱、环境依赖等测试工件引入的混淆因素。</li>
+</ol>
+</div>
+
+<!-- 4. 实验设计 -->
+<div class="sec" id="exp">
+<h2>4. 实验设计</h2>
+
+<h3>4.1 实验设置</h3>
+<p><strong>智能体条件</strong>：Codex（单轮子智能体）、OpenHands + 强力开源模型（多轮脚手架，配备文件编辑与代码执行工具）。目标覆盖 6 个模型，包括前沿闭源模型（Claude、GPT-5）与代表性开源模型（DeepSeek-Coder、Qwen-Coder）。</p>
+<p><strong>评测协议</strong>：每个智能体仅接收 PRD 文本，从空目录生成完整 Python 包。测试套件由外部工具执行，智能体在生成阶段无法访问测试代码。</p>
+<p><strong>评测指标</strong>：UPR（单元通过率）、SPR（系统通过率）、CG = UPR − SPR（组合差距，正值表明智能体实现单一 feature 的能力强于协调多 feature 的能力）。</p>
+
+<h3>4.2 主实验：组合差距的规模与稳定性</h3>
+<p>在约 100 个核心任务上测量 CG。核心研究问题：该差距是否在多任务域（数据库、图结构、解析、配置管理等）间稳定复现？人工参考实现作为上界基准（CG = 0）。</p>
+
+<div class="box box-bl">
+  <div class="bt">预期结果</div>
+  所有任务的 CG 均为正值；人工参考实现的 CG = 0。差距规模在各任务域间保持一致，验证该现象是智能体的系统性属性，而非特定任务的偶发失败。
+</div>
+
+<h3>4.3 消融实验：行为锚点的因果效应</h3>
+<p>在核心任务上对比四个条件，以因果识别行为锚点对组合差距的贡献：</p>
+<table>
+  <thead><tr><th>条件</th><th>额外输入信息</th><th>可比基准</th></tr></thead>
+  <tbody>
+    <tr><td>A — 基线</td><td>仅 PRD（无行为锚点）</td><td>SysEval 默认设置</td></tr>
+    <tr><td>B — 模块名</td><td>+ 建议的模块/类名</td><td>部分描述性规范</td></tr>
+    <tr><td>C — API 面</td><td>+ 完整函数签名</td><td>NL2Repo-Bench</td></tr>
+    <tr><td>D — I/O 示例</td><td>+ 每个 feature 4 个示例</td><td>RepoZero</td></tr>
+  </tbody>
+</table>
+<p>预期：条件 C 与 D 均能显著降低 CG，而 UPR 基本保持不变。该结果将为"行为锚点因果性地压缩组合差距"的解释提供实证支持。</p>
+
+<h3>4.4 失败归因分析</h3>
+<p>对每个系统测试失败，尝试归因至以下类型，或归纳出新的失败模式：</p>
+<ul>
+  <li><strong>类型 1——级联失败</strong>：某模块的单元测试失败，依赖该模块的系统测试随之失败。根因为 feature 未正确实现，不构成组合推理失败的证据。</li>
+  <li><strong>类型 2——契约违反</strong>：所有单元测试通过，但系统测试失败。根因为跨模块语义不一致，是组合推理失败的直接体现。</li>
+  <li><strong>类型 3——顺序语义错误</strong>：系统测试结果依赖操作顺序，且智能体对顺序语义的建模存在偏差。</li>
+</ul>
+<p>核心假设：在具有强跨模块契约的任务上，类型 2 失败占组合差距的主体。</p>
+
+<h3>4.5 讨论：为何完整规范不足以消除差距？</h3>
+<p>一个自然的竞争假设是：若 PRD 中将跨模块不变式表述得更为明确，智能体便能正确实现。消融实验将直接检验这一假设——若即使在已包含明确全局不变式的条件 A 中，组合差距依然显著存在，仅在补充行为锚点（条件 C/D）后差距才出现实质性闭合，则支持以下架构性解释。</p>
+<p>这一模式若得到证实，将表明差距的根因并非信息层面的，而是<strong>架构性的</strong>：智能体以局部贪婪的方式逐模块生成代码，在各模块的生成上下文中满足其局部规范，但未维护关于"当前实现决策如何约束其余模块"的跨模块全局表示。行为锚点通过提供可观察的目标信号，在一定程度上替代了这种跨模块推理能力。</p>
+</div>
+
+</div><!-- /wrap -->
+
+<div class="footer">
+  SysEval &nbsp;·&nbsp; 研究提案 v0.1 &nbsp;·&nbsp; 2026-06-27 &nbsp;·&nbsp; 内部文档
+</div>
+
+</body>
+</html>

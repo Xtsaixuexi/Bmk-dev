@@ -53,6 +53,10 @@ Rubric: `rubric.json`
 | `MBGU010` | failed load recovery | `REQ-load-error-atomicity`, `REQ-list-sorted` | Failed load preserves the previous graph |
 | `MBGU011` | duplicate modules | `REQ-load-duplicate-error` | Duplicate module names reject the load |
 | `MBGU012` | errors | `REQ-error-invalid-command`, `REQ-error-unknown-module` | Stable invalid-command and unknown-module errors |
+| `MBGU013` | cycle detection acyclic branch | `REQ-cycle-detect` | A one-way graph reports `ACYCLIC` |
+| `MBGU014` | forward references | `REQ-load-success`, `REQ-unresolved-basic` | Dependencies defined later in the same file resolve correctly |
+| `MBGU015` | remove outgoing edges | `REQ-remove-basic`, `REQ-unresolved-after-remove` | Removing a module drops its outgoing edges while preserving remaining unresolved references |
+| `MBGU016` | malformed dependency list | `REQ-load-error-atomicity` | A trailing dependency comma fails deterministically |
 
 ## System Coverage
 
@@ -68,19 +72,36 @@ Rubric: `rubric.json`
 | `MBGS008` | `operation_order_sensitivity` | load -> remove -> unresolved -> replacement load | `REQ-remove-basic`, `REQ-load-replaces-graph`, `REQ-unresolved-basic` | Later load clears earlier removal/unresolved state |
 | `MBGS009` | `operation_order_sensitivity` | load -> list/deps/unresolved sorting | `REQ-list-sorted`, `REQ-deps-sorted`, `REQ-unresolved-sorted` | Output order remains deterministic across query types |
 | `MBGS010` | `error_atomicity` | load -> failed remove -> list | `REQ-remove-error-atomicity`, `REQ-error-unknown-module`, `REQ-list-sorted` | Failed remove preserves graph state |
+| `MBGS011` | `cross_feature_dataflow` | unresolved -> transitive -> reverse transitive | `REQ-transitive-basic`, `REQ-rtransitive-unresolved-target`, `REQ-unresolved-basic` | A shared unresolved dependency remains consistent across traversal views |
+| `MBGS012` | `error_atomicity` | load -> duplicate load -> info | `REQ-load-duplicate-error`, `REQ-load-error-atomicity`, `REQ-info-basic` | Duplicate-module load failure preserves the previous graph |
+| `MBGS013` | `error_atomicity` | load -> malformed load -> info | `REQ-load-error-atomicity`, `REQ-load-success`, `REQ-info-basic` | Trailing-comma load failure preserves later info queries |
+| `MBGS014` | `error_atomicity` | load -> empty load -> list | `REQ-load-error-atomicity`, `REQ-list-sorted` | Empty files fail without replacing the graph |
+| `MBGS015` | `global_invariant` | unresolved -> malformed load -> reverse query | `REQ-load-error-atomicity`, `REQ-unresolved-basic`, `REQ-query-consistency` | Top-level garbage preserves unresolved dependency state |
+| `MBGS016` | `operation_order_sensitivity` | load -> remove -> malformed reload -> query | `REQ-load-error-atomicity`, `REQ-remove-basic`, `REQ-unresolved-after-remove` | Malformed reload after removal preserves the already-mutated graph |
 
 System dimension coverage:
 
-- `cross_feature_dataflow`: `MBGS003`
+- `cross_feature_dataflow`: `MBGS003`, `MBGS011`
 - `state_accumulation`: `MBGS001`
-- `global_invariant`: `MBGS002`, `MBGS006`
-- `error_atomicity`: `MBGS005`, `MBGS007`, `MBGS010`
-- `operation_order_sensitivity`: `MBGS008`, `MBGS009`
+- `global_invariant`: `MBGS002`, `MBGS006`, `MBGS015`
+- `error_atomicity`: `MBGS005`, `MBGS007`, `MBGS010`, `MBGS012`, `MBGS013`, `MBGS014`
+- `operation_order_sensitivity`: `MBGS008`, `MBGS009`, `MBGS016`
 - `boundary_crossing`: `MBGS004`
 
 ## Reference And Model Verification
 
-Pending. To match the strict `Bmk-dev` core-strong bar, a reference solution should score 100% unit and 100% system, and at least one fresh candidate run should show unit score greater than system score with a gap of at least 15 percentage points.
+| Run | Unit | System | Gap pp | Evidence role | Report |
+| --- | ---: | ---: | ---: | --- | --- |
+| Reference | 100.00% | 100.00% | 0.00 | reference_pass | `score_report_reference_unit_system_v1.json` |
+| Codex subagent | 100.00% | 93.75% | 6.25 | code_agent_candidate_reviewed | `score_report_codex_subagent_001_unit_system_v1.json` |
+| Codex local | 100.00% | 93.75% | 6.25 | code_agent_candidate_reviewed | `score_report_codex_local_20260623_unit_system_v1.json` |
+| OpenHands + DeepSeek Chat | 87.50% | 75.00% | 12.50 | code_agent_candidate_reviewed | `score_report_openhands_deepseek_chat_001_unit_system_v1.json` |
+| Mini-SWE-Agent + DeepSeek Chat | 93.75% | 81.25% | 12.50 | code_agent_candidate_reviewed | `score_report_mini_swe_agent_deepseek_chat_001_unit_system_v1.json` |
+| Doubao Seed 2.0 | 87.50% | 68.75% | 18.75 | auxiliary_non_core_bare_model | `score_report_doubao_seed_2_0_001_unit_system_v1.json` |
+| DeepSeek V4 Pro | 87.50% | 68.75% | 18.75 | auxiliary_non_core_bare_model | `score_report_deepseek_v4_pro_001_unit_system_v1.json` |
+| GPT-5.5 Thinking | 100.00% | 93.75% | 6.25 | auxiliary_non_core_bare_model | `score_report_gpt_5_5_thinking_001_unit_system_v1.json` |
+
+Current status: reference passes, and multiple executable code-agent runs show positive gaps, but the maximum code-agent gap is currently 12.50pp. MiniBuildGraph remains `needs_code_agent_gap` until an executable code-agent run reaches the `gap >= 15pp` core-strong threshold.
 
 ## Fairness Notes
 
@@ -104,7 +125,7 @@ This brings MiniBuildGraph to 16 unit cases and 12 system cases, matching the sc
 
 ## Model-Gap Strengthening Pass 2026-06-21
 
-After running Doubao-Seed-2.0, DeepSeek-V4-Pro, and GPT-5.5 candidates, MiniBuildGraph was strengthened with additional public-behavior system cases:
+After auxiliary bare-model runs (Doubao-Seed-2.0, DeepSeek-V4-Pro, and GPT-5.5), MiniBuildGraph was strengthened with additional public-behavior system cases:
 
 - `MBGS013` checks that a trailing dependency comma fails atomically and preserves later `INFO` behavior.
 - `MBGS014` checks that an empty file cannot silently replace a valid graph.
@@ -112,3 +133,5 @@ After running Doubao-Seed-2.0, DeepSeek-V4-Pro, and GPT-5.5 candidates, MiniBuil
 - `MBGS016` checks that malformed reloads after `REMOVE` preserve the already-mutated graph state.
 
 These cases all exercise the existing PRD invariant that failed `LOAD` operations must preserve the previous graph unchanged. They use only public `LOAD`, query, and `REMOVE` commands and do not depend on private reference file formats.
+
+These bare-model runs are not counted as core evidence under the executable code-agent policy; they are retained only as auxiliary task-hardening signals.

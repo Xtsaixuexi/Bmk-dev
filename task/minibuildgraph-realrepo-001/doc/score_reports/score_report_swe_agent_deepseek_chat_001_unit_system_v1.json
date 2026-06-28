@@ -1,0 +1,801 @@
+{
+  "evaluator_version": "local_unit_system_v1",
+  "generated_at_utc": "2026-06-28T06:58:43+00:00",
+  "task_dir": "/root/autodl-tmp/Bmk-dev-work/task/minibuildgraph-realrepo-001",
+  "rubric_path": "/root/autodl-tmp/Bmk-dev-work/task/minibuildgraph-realrepo-001/rubric.json",
+  "solution_dir": "/root/autodl-tmp/Bmk-dev-work/candidates/minibuildgraph-realrepo-001/swe-agent-deepseek-chat-001",
+  "run_name": "swe-agent-deepseek-chat-001",
+  "total_cases": 32,
+  "passed_cases": 28,
+  "total_weight": 192,
+  "passed_weight": 164,
+  "score": 0.8541666666666666,
+  "unit_score": {
+    "weight": 64,
+    "passed_weight": 60,
+    "score": 0.9375,
+    "cases": 16,
+    "passed_cases": 15
+  },
+  "system_score": {
+    "weight": 128,
+    "passed_weight": 104,
+    "score": 0.8125,
+    "cases": 16,
+    "passed_cases": 13
+  },
+  "unit_system_gap": 0.125,
+  "failed_ids": [
+    "MBGU016",
+    "MBGS013",
+    "MBGS014",
+    "MBGS016"
+  ],
+  "layers": {
+    "unit": {
+      "weight": 64,
+      "passed_weight": 60,
+      "score": 0.9375,
+      "cases": 16,
+      "passed_cases": 15
+    },
+    "system": {
+      "weight": 128,
+      "passed_weight": 104,
+      "score": 0.8125,
+      "cases": 16,
+      "passed_cases": 13
+    }
+  },
+  "categories": {
+    "load_list": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "info": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "direct_dependencies": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "reverse_dependencies": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "transitive_dependencies": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "transitive_reverse_dependencies": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "unresolved_dependencies": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "cycle_detection": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "remove": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "load_error_atomicity": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "duplicate_modules": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "errors": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "load_replaces_graph": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "direct_reverse_info_consistency": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "transitive_reverse_transitive": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "unresolved_reverse_queries": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "remove_updates_unresolved_and_reverse": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "cycle_traversal_termination": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "failed_load_preserves_queries": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "replacement_clears_removed_state": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "lexicographic_outputs": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "failed_remove_preserves_graph": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "cycle_detection_acyclic": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "forward_references": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "remove_drops_outgoing_edges": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 4,
+      "passed_weight": 4
+    },
+    "malformed_dependency_list": {
+      "cases": 1,
+      "passed_cases": 0,
+      "weight": 4,
+      "passed_weight": 0
+    },
+    "transitive_unresolved_reverse_consistency": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "duplicate_load_preserves_previous_graph": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "trailing_comma_load_preserves_graph": {
+      "cases": 1,
+      "passed_cases": 0,
+      "weight": 8,
+      "passed_weight": 0
+    },
+    "empty_load_preserves_graph": {
+      "cases": 1,
+      "passed_cases": 0,
+      "weight": 8,
+      "passed_weight": 0
+    },
+    "garbage_load_preserves_unresolved_state": {
+      "cases": 1,
+      "passed_cases": 1,
+      "weight": 8,
+      "passed_weight": 8
+    },
+    "malformed_reload_after_remove_preserves_removed_state": {
+      "cases": 1,
+      "passed_cases": 0,
+      "weight": 8,
+      "passed_weight": 0
+    }
+  },
+  "results": [
+    {
+      "id": "MBGU001",
+      "layer": "unit",
+      "category": "load_list",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-load-success",
+        "REQ-list-sorted"
+      ],
+      "description": "LOAD builds a graph and LIST prints loaded module names in lexicographic order.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\napp\nlib",
+      "actual_output": "OK\napp\nlib",
+      "stderr": ""
+    },
+    {
+      "id": "MBGU002",
+      "layer": "unit",
+      "category": "info",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-info-basic",
+        "REQ-deps-sorted"
+      ],
+      "description": "INFO prints name, type, and direct dependencies sorted lexicographically.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\nname=app\ntype=binary\ndeps=lib,util",
+      "actual_output": "OK\nname=app\ntype=binary\ndeps=lib,util",
+      "stderr": ""
+    },
+    {
+      "id": "MBGU003",
+      "layer": "unit",
+      "category": "direct_dependencies",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-deps-basic",
+        "REQ-deps-sorted"
+      ],
+      "description": "DEPS prints direct dependencies, one per line, in lexicographic order.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\nlib\nutil",
+      "actual_output": "OK\nlib\nutil",
+      "stderr": ""
+    },
+    {
+      "id": "MBGU004",
+      "layer": "unit",
+      "category": "reverse_dependencies",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-rdeps-basic",
+        "REQ-rdeps-sorted"
+      ],
+      "description": "RDEPS prints modules that directly depend on the queried target.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\napp\ntest",
+      "actual_output": "OK\napp\ntest",
+      "stderr": ""
+    },
+    {
+      "id": "MBGU005",
+      "layer": "unit",
+      "category": "transitive_dependencies",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-transitive-basic",
+        "REQ-transitive-dedup"
+      ],
+      "description": "TRANSITIVE prints recursive dependencies without duplicates.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\nbase\nlib\nutil",
+      "actual_output": "OK\nbase\nlib\nutil",
+      "stderr": ""
+    },
+    {
+      "id": "MBGU006",
+      "layer": "unit",
+      "category": "transitive_reverse_dependencies",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-rtransitive-basic",
+        "REQ-transitive-dedup"
+      ],
+      "description": "RTRANSITIVE prints recursive reverse dependencies without duplicates.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\napp\nlib\nutil",
+      "actual_output": "OK\napp\nlib\nutil",
+      "stderr": ""
+    },
+    {
+      "id": "MBGU007",
+      "layer": "unit",
+      "category": "unresolved_dependencies",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-unresolved-basic",
+        "REQ-load-unresolved-ok"
+      ],
+      "description": "Unresolved dependencies are tracked but do not prevent loading.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\nmissing",
+      "actual_output": "OK\nmissing",
+      "stderr": ""
+    },
+    {
+      "id": "MBGU008",
+      "layer": "unit",
+      "category": "cycle_detection",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-cycle-detect"
+      ],
+      "description": "CHECK_CYCLES reports CYCLE when the graph contains a dependency cycle.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\nCYCLE",
+      "actual_output": "OK\nCYCLE",
+      "stderr": ""
+    },
+    {
+      "id": "MBGU009",
+      "layer": "unit",
+      "category": "remove",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-remove-basic",
+        "REQ-unresolved-after-remove"
+      ],
+      "description": "REMOVE deletes a module and turns remaining references to it into unresolved dependencies.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\nOK\napp\nlib",
+      "actual_output": "OK\nOK\napp\nlib",
+      "stderr": ""
+    },
+    {
+      "id": "MBGU010",
+      "layer": "unit",
+      "category": "load_error_atomicity",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-load-error-atomicity",
+        "REQ-list-sorted"
+      ],
+      "description": "A failed LOAD reports an error and preserves the previously loaded graph.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\nTrue\napp",
+      "actual_output": "OK\nTrue\napp",
+      "stderr": ""
+    },
+    {
+      "id": "MBGU011",
+      "layer": "unit",
+      "category": "duplicate_modules",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-load-duplicate-error"
+      ],
+      "description": "Duplicate module names make LOAD fail with a deterministic error.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "True\n1",
+      "actual_output": "True\n1",
+      "stderr": ""
+    },
+    {
+      "id": "MBGU012",
+      "layer": "unit",
+      "category": "errors",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-error-invalid-command",
+        "REQ-error-unknown-module"
+      ],
+      "description": "Invalid commands and unknown module queries emit stable error lines.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "ERR invalid command\nERR unknown module",
+      "actual_output": "ERR invalid command\nERR unknown module",
+      "stderr": ""
+    },
+    {
+      "id": "MBGS001",
+      "layer": "system",
+      "category": "load_replaces_graph",
+      "system_dimension": "state_accumulation",
+      "requirement_refs": [
+        "REQ-load-success",
+        "REQ-load-replaces-graph",
+        "REQ-list-sorted"
+      ],
+      "description": "A second successful LOAD replaces the entire previous graph.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\napp\nOK\ntool",
+      "actual_output": "OK\napp\nOK\ntool",
+      "stderr": ""
+    },
+    {
+      "id": "MBGS002",
+      "layer": "system",
+      "category": "direct_reverse_info_consistency",
+      "system_dimension": "global_invariant",
+      "requirement_refs": [
+        "REQ-info-basic",
+        "REQ-deps-basic",
+        "REQ-rdeps-basic",
+        "REQ-query-consistency"
+      ],
+      "description": "INFO, DEPS, and RDEPS expose consistent views of the same directed graph.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\nlib\nutil\napp\nname=app\ntype=binary\ndeps=lib,util",
+      "actual_output": "OK\nlib\nutil\napp\nname=app\ntype=binary\ndeps=lib,util",
+      "stderr": ""
+    },
+    {
+      "id": "MBGS003",
+      "layer": "system",
+      "category": "transitive_reverse_transitive",
+      "system_dimension": "cross_feature_dataflow",
+      "requirement_refs": [
+        "REQ-transitive-basic",
+        "REQ-rtransitive-basic",
+        "REQ-transitive-dedup"
+      ],
+      "description": "Direct edges feed both transitive and reverse-transitive traversal consistently.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\nb\nc\nd\na\nb\nc",
+      "actual_output": "OK\nb\nc\nd\na\nb\nc",
+      "stderr": ""
+    },
+    {
+      "id": "MBGS004",
+      "layer": "system",
+      "category": "unresolved_reverse_queries",
+      "system_dimension": "boundary_crossing",
+      "requirement_refs": [
+        "REQ-unresolved-basic",
+        "REQ-rdeps-unresolved-target",
+        "REQ-rtransitive-unresolved-target"
+      ],
+      "description": "Unresolved dependency names can be queried as reverse-dependency targets.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\nmissing\nlib\napp\nlib",
+      "actual_output": "OK\nmissing\nlib\napp\nlib",
+      "stderr": ""
+    },
+    {
+      "id": "MBGS005",
+      "layer": "system",
+      "category": "remove_updates_unresolved_and_reverse",
+      "system_dimension": "error_atomicity",
+      "requirement_refs": [
+        "REQ-remove-basic",
+        "REQ-unresolved-after-remove",
+        "REQ-rdeps-unresolved-target"
+      ],
+      "description": "Removing a module updates unresolved and reverse-dependency views consistently.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\nOK\nlib\napp\nutil",
+      "actual_output": "OK\nOK\nlib\napp\nutil",
+      "stderr": ""
+    },
+    {
+      "id": "MBGS006",
+      "layer": "system",
+      "category": "cycle_traversal_termination",
+      "system_dimension": "global_invariant",
+      "requirement_refs": [
+        "REQ-cycle-detect",
+        "REQ-transitive-cycle-safe",
+        "REQ-rtransitive-cycle-safe"
+      ],
+      "description": "Cycle detection and traversal terminate without printing the starting module as its own dependency.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\nCYCLE\nb\nb",
+      "actual_output": "OK\nCYCLE\nb\nb",
+      "stderr": ""
+    },
+    {
+      "id": "MBGS007",
+      "layer": "system",
+      "category": "failed_load_preserves_queries",
+      "system_dimension": "error_atomicity",
+      "requirement_refs": [
+        "REQ-load-error-atomicity",
+        "REQ-list-sorted"
+      ],
+      "description": "A failed LOAD does not poison later queries against the previous valid graph.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\nTrue\napp",
+      "actual_output": "OK\nTrue\napp",
+      "stderr": ""
+    },
+    {
+      "id": "MBGS008",
+      "layer": "system",
+      "category": "replacement_clears_removed_state",
+      "system_dimension": "operation_order_sensitivity",
+      "requirement_refs": [
+        "REQ-remove-basic",
+        "REQ-load-replaces-graph",
+        "REQ-unresolved-basic"
+      ],
+      "description": "A later successful LOAD replaces state created by an earlier REMOVE operation.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\nOK\nlib\nOK\nclean",
+      "actual_output": "OK\nOK\nlib\nOK\nclean",
+      "stderr": ""
+    },
+    {
+      "id": "MBGS009",
+      "layer": "system",
+      "category": "lexicographic_outputs",
+      "system_dimension": "operation_order_sensitivity",
+      "requirement_refs": [
+        "REQ-list-sorted",
+        "REQ-deps-sorted",
+        "REQ-unresolved-sorted"
+      ],
+      "description": "LIST, DEPS, and UNRESOLVED outputs remain deterministic and lexicographic.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\na\nm\nz\na\nmissing1\nmissing2\nmissing1\nmissing2",
+      "actual_output": "OK\na\nm\nz\na\nmissing1\nmissing2\nmissing1\nmissing2",
+      "stderr": ""
+    },
+    {
+      "id": "MBGS010",
+      "layer": "system",
+      "category": "failed_remove_preserves_graph",
+      "system_dimension": "error_atomicity",
+      "requirement_refs": [
+        "REQ-remove-error-atomicity",
+        "REQ-error-unknown-module",
+        "REQ-list-sorted"
+      ],
+      "description": "A failed REMOVE reports an error and preserves the graph.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\nERR unknown module\napp",
+      "actual_output": "OK\nERR unknown module\napp",
+      "stderr": ""
+    },
+    {
+      "id": "MBGU013",
+      "layer": "unit",
+      "category": "cycle_detection_acyclic",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-cycle-detect"
+      ],
+      "description": "CHECK_CYCLES reports ACYCLIC for a graph with only one-way dependency edges.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\nACYCLIC",
+      "actual_output": "OK\nACYCLIC",
+      "stderr": ""
+    },
+    {
+      "id": "MBGU014",
+      "layer": "unit",
+      "category": "forward_references",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-load-success",
+        "REQ-unresolved-basic"
+      ],
+      "description": "A dependency defined later in the same file is resolved and must not appear in UNRESOLVED.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK",
+      "actual_output": "OK",
+      "stderr": ""
+    },
+    {
+      "id": "MBGU015",
+      "layer": "unit",
+      "category": "remove_drops_outgoing_edges",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-remove-basic",
+        "REQ-unresolved-after-remove"
+      ],
+      "description": "Removing a module drops its outgoing dependencies while preserving references from remaining modules to the removed name.",
+      "weight": 4,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\nOK\nlib",
+      "actual_output": "OK\nOK\nlib",
+      "stderr": ""
+    },
+    {
+      "id": "MBGU016",
+      "layer": "unit",
+      "category": "malformed_dependency_list",
+      "system_dimension": null,
+      "requirement_refs": [
+        "REQ-load-error-atomicity"
+      ],
+      "description": "A malformed dependency list with a trailing comma makes LOAD fail deterministically.",
+      "weight": 4,
+      "passed": false,
+      "returncode": 0,
+      "expected_output": "True\n1",
+      "actual_output": "False\n2",
+      "stderr": ""
+    },
+    {
+      "id": "MBGS011",
+      "layer": "system",
+      "category": "transitive_unresolved_reverse_consistency",
+      "system_dimension": "cross_feature_dataflow",
+      "requirement_refs": [
+        "REQ-transitive-basic",
+        "REQ-rtransitive-unresolved-target",
+        "REQ-unresolved-basic"
+      ],
+      "description": "A shared unresolved dependency participates consistently in TRANSITIVE, RDEPS, RTRANSITIVE, and UNRESOLVED queries.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\nmissing\nlib\nmissing\napp\nlib\napp\nlib",
+      "actual_output": "OK\nmissing\nlib\nmissing\napp\nlib\napp\nlib",
+      "stderr": ""
+    },
+    {
+      "id": "MBGS012",
+      "layer": "system",
+      "category": "duplicate_load_preserves_previous_graph",
+      "system_dimension": "error_atomicity",
+      "requirement_refs": [
+        "REQ-load-duplicate-error",
+        "REQ-load-error-atomicity",
+        "REQ-info-basic"
+      ],
+      "description": "A duplicate-module LOAD fails without replacing the previous valid graph used by later INFO queries.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\nTrue\nname=app\ntype=binary\ndeps=",
+      "actual_output": "OK\nTrue\nname=app\ntype=binary\ndeps=",
+      "stderr": ""
+    },
+    {
+      "id": "MBGS013",
+      "layer": "system",
+      "category": "trailing_comma_load_preserves_graph",
+      "system_dimension": "error_atomicity",
+      "requirement_refs": [
+        "REQ-load-error-atomicity",
+        "REQ-load-success",
+        "REQ-info-basic"
+      ],
+      "description": "A LOAD with a trailing dependency comma fails and preserves the previous graph for later INFO queries.",
+      "weight": 8,
+      "passed": false,
+      "returncode": 0,
+      "expected_output": "OK\nTrue\nname=app\ntype=binary\ndeps=lib",
+      "actual_output": "OK\nFalse\nERR unknown module",
+      "stderr": ""
+    },
+    {
+      "id": "MBGS014",
+      "layer": "system",
+      "category": "empty_load_preserves_graph",
+      "system_dimension": "error_atomicity",
+      "requirement_refs": [
+        "REQ-load-error-atomicity",
+        "REQ-list-sorted"
+      ],
+      "description": "An empty module file is a failed LOAD and does not replace the previous valid graph with an empty graph.",
+      "weight": 8,
+      "passed": false,
+      "returncode": 1,
+      "expected_output": "OK\nTrue\napp",
+      "actual_output": "OK\nFalse",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/bmk-eval-9refofpl/case.py\", line 11, in <module>\n    print(lines[2])\nIndexError: list index out of range"
+    },
+    {
+      "id": "MBGS015",
+      "layer": "system",
+      "category": "garbage_load_preserves_unresolved_state",
+      "system_dimension": "global_invariant",
+      "requirement_refs": [
+        "REQ-load-error-atomicity",
+        "REQ-unresolved-basic",
+        "REQ-query-consistency"
+      ],
+      "description": "Top-level garbage after a module makes LOAD fail without clearing unresolved dependency state from the previous graph.",
+      "weight": 8,
+      "passed": true,
+      "returncode": 0,
+      "expected_output": "OK\nTrue\nmissing\napp",
+      "actual_output": "OK\nTrue\nmissing\napp",
+      "stderr": ""
+    },
+    {
+      "id": "MBGS016",
+      "layer": "system",
+      "category": "malformed_reload_after_remove_preserves_removed_state",
+      "system_dimension": "operation_order_sensitivity",
+      "requirement_refs": [
+        "REQ-load-error-atomicity",
+        "REQ-remove-basic",
+        "REQ-unresolved-after-remove"
+      ],
+      "description": "After REMOVE mutates the graph, a malformed reload must preserve that removed-module state rather than partially rebuilding.",
+      "weight": 8,
+      "passed": false,
+      "returncode": 0,
+      "expected_output": "OK\nOK\nTrue\napp\nlib",
+      "actual_output": "OK\nOK\nFalse\nother\ndep",
+      "stderr": ""
+    }
+  ]
+}

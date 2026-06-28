@@ -62,6 +62,8 @@ Rubric: `rubric.json`
 | `MSU012` | error recovery | `REQ-error-deterministic`, `REQ-error-stderr`, `REQ-exec-sequence` | Unknown command diagnostics use stderr and later stdout remains clean |
 | `MSU013` | utility commands | `REQ-cat-file` | `cat FILE` prints file contents |
 | `MSU014` | quoting | `REQ-parse-operators`, `REQ-parse-single-quotes`, `REQ-parse-double-quotes` | Operators inside quotes are literal text |
+| `MSU015` | syntax error recovery | `REQ-parse-single-quotes`, `REQ-error-stderr`, `REQ-exec-sequence` | Unmatched quotes report stderr errors and later commands still run |
+| `MSU016` | grep exit status | `REQ-pipe-dataflow`, `REQ-grep-status`, `REQ-exit-status-expansion` | A grep miss in a pipeline updates later `$?` to `1` |
 
 ## System Coverage
 
@@ -78,6 +80,7 @@ Rubric: `rubric.json`
 | `MSS009` | `boundary_crossing` | export -> unset -> expansion -> env | `REQ-export-set`, `REQ-unset-basic`, `REQ-var-undefined`, `REQ-env-output` | Removed variables disappear from both expansion and env |
 | `MSS010` | `global_invariant` | redirection -> pipeline -> file read | `REQ-redir-output`, `REQ-redir-error-atomicity`, `REQ-pipe-dataflow`, `REQ-cat-stdin`, `REQ-cat-file` | Redirection scope and pipeline flow remain separate |
 | `MSS011` | `boundary_crossing` | failed command -> stderr -> `$?` -> later stdout | `REQ-error-deterministic`, `REQ-error-stderr`, `REQ-error-status`, `REQ-exit-status-expansion`, `REQ-exec-sequence` | Failures update status, keep diagnostics off stdout, and allow later commands |
+| `MSS012` | `boundary_crossing` | pipeline -> input redirection -> status | `REQ-pipe-dataflow`, `REQ-redir-input`, `REQ-cat-stdin`, `REQ-exit-status-expansion` | Input redirection on a later pipeline stage overrides pipe input without leaking earlier data |
 
 System dimension coverage:
 
@@ -90,7 +93,18 @@ System dimension coverage:
 
 ## Reference And Model Verification
 
-Pending. The next validation step is to run a reference solution and at least one candidate solution against `rubric.json`, then record unit score, system score, and gap.
+| Run | Unit | System | Gap pp | Evidence role | Report |
+| --- | ---: | ---: | ---: | --- | --- |
+| Reference | 100.00% | 100.00% | 0.00 | reference_pass | `score_report_reference_unit_system_v1.json` |
+| Codex subagent | 100.00% | 100.00% | 0.00 | code_agent_control | `score_report_codex_subagent_001_unit_system_v1.json` |
+| Codex local | 100.00% | 100.00% | 0.00 | code_agent_control | `score_report_codex_local_20260623_unit_system_v1.json` |
+| OpenHands + DeepSeek Chat | 100.00% | 100.00% | 0.00 | code_agent_control | `score_report_openhands_deepseek_chat_001_unit_system_v1.json` |
+| Mini-SWE-Agent + DeepSeek Chat | 100.00% | 91.67% | 8.33 | code_agent_candidate_reviewed | `score_report_mini_swe_agent_deepseek_chat_001_unit_system_v1.json` |
+| Doubao Seed 2.0 | 100.00% | 100.00% | 0.00 | auxiliary_non_core_bare_model | `score_report_doubao_seed_2_0_001_unit_system_v1.json` |
+| DeepSeek V4 Pro | 93.75% | 66.67% | 27.08 | auxiliary_non_core_bare_model | `score_report_deepseek_v4_pro_001_unit_system_v1.json` |
+| GPT-5.5 Thinking | 93.75% | 91.67% | 2.08 | auxiliary_non_core_bare_model | `score_report_gpt_5_5_thinking_001_unit_system_v1.json` |
+
+Current status: reference passes, but no executable code-agent run reaches the `gap >= 15pp` core-strong threshold. MiniShell remains `needs_code_agent_gap`; bare-model scores are retained only as auxiliary observations.
 
 ## Fairness Notes
 

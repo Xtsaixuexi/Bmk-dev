@@ -75,7 +75,7 @@
         "openhands_deepseek_v4_pro_001": {
           "unit": 83.33,
           "system": 41.67,
-          "gap_pp": 41.66
+          "gap_pp": 41.67
         }
       },
       "paths": {
@@ -105,6 +105,11 @@
           "unit": 100.0,
           "system": 60.0,
           "gap_pp": 40.0
+        },
+        "mini_swe_agent_deepseek_chat_001": {
+          "unit": 88.89,
+          "system": 60.0,
+          "gap_pp": 28.89
         }
       },
       "paths": {
@@ -119,7 +124,7 @@
       "id": "minishell-realrepo-001",
       "display_name": "MiniShell",
       "source_repo": "mcombeau/minishell",
-      "status": "core strong",
+      "status": "needs code-agent gap",
       "scores": {
         "reference": {
           "unit": 100.0,
@@ -130,20 +135,45 @@
           "system": 100.0,
           "gap_pp": 0.0
         },
-        "doubao_seed_2_0_001": {
+        "codex_local_20260623": {
           "unit": 100.0,
           "system": 100.0,
           "gap_pp": 0.0
         },
+        "openhands_deepseek_chat_001": {
+          "unit": 100.0,
+          "system": 100.0,
+          "gap_pp": 0.0
+        },
+        "mini_swe_agent_deepseek_chat_001": {
+          "unit": 100.0,
+          "system": 91.67,
+          "gap_pp": 8.33
+        },
+        "swe_agent_deepseek_chat_001": {
+          "unit": 68.75,
+          "system": 58.33,
+          "gap_pp": 10.42
+        }
+      },
+      "auxiliary_scores": {
+        "doubao_seed_2_0_001": {
+          "unit": 100.0,
+          "system": 100.0,
+          "gap_pp": 0.0,
+          "status": "non_core_bare_model"
+        },
         "deepseek_v4_pro_001": {
           "unit": 93.75,
           "system": 66.67,
-          "gap_pp": 27.08
+          "gap_pp": 27.08,
+          "status": "non_core_bare_model"
         },
         "gpt_5_5_thinking_001": {
           "unit": 93.75,
           "system": 91.67,
-          "gap_pp": 2.08
+          "gap_pp": 2.08,
+          "status": "non_core_bare_model"
         }
       },
       "paths": {
@@ -158,7 +188,7 @@
       "id": "minibuildgraph-realrepo-001",
       "display_name": "MiniBuildGraph",
       "source_repo": "quarkslab/bgraph",
-      "status": "core strong",
+      "status": "needs code-agent gap",
       "scores": {
         "reference": {
           "unit": 100.0,
@@ -169,20 +199,45 @@
           "system": 93.75,
           "gap_pp": 6.25
         },
+        "codex_local_20260623": {
+          "unit": 100.0,
+          "system": 93.75,
+          "gap_pp": 6.25
+        },
+        "openhands_deepseek_chat_001": {
+          "unit": 87.5,
+          "system": 75.0,
+          "gap_pp": 12.5
+        },
+        "mini_swe_agent_deepseek_chat_001": {
+          "unit": 93.75,
+          "system": 81.25,
+          "gap_pp": 12.5
+        },
+        "swe_agent_deepseek_chat_001": {
+          "unit": 93.75,
+          "system": 81.25,
+          "gap_pp": 12.5
+        }
+      },
+      "auxiliary_scores": {
         "doubao_seed_2_0_001": {
           "unit": 87.5,
           "system": 68.75,
-          "gap_pp": 18.75
+          "gap_pp": 18.75,
+          "status": "non_core_bare_model"
         },
         "deepseek_v4_pro_001": {
           "unit": 87.5,
           "system": 68.75,
-          "gap_pp": 18.75
+          "gap_pp": 18.75,
+          "status": "non_core_bare_model"
         },
         "gpt_5_5_thinking_001": {
           "unit": 100.0,
           "system": 93.75,
-          "gap_pp": 6.25
+          "gap_pp": 6.25,
+          "status": "non_core_bare_model"
         }
       },
       "paths": {
