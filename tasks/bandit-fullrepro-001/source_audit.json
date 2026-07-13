@@ -1,0 +1,19 @@
+{
+  "task_id": "bandit-fullrepro-001",
+  "repo": "PyCQA/bandit",
+  "path": "/root/autodl-tmp/new-e2e/PyCQA__bandit",
+  "commit": "c45446eaa30c4f28289c3b8ba9a955e1d78ba715",
+  "package": "bandit",
+  "source_loc": 17540,
+  "source_python_files": 164,
+  "test_files": 32,
+  "test_functions_rough": 265,
+  "collected_nodeids": 275,
+  "collection_errors": 0,
+  "docs_files_rough": 163,
+  "private_import_file_rate": 0.0,
+  "network_test_file_rate": 0.156,
+  "snapshot_test_file_rate": 0.0,
+  "environment": "/root/autodl-tmp/Bmk-Lizhiqian/envs/bandit-fullrepro-001",
+  "proposed_disposition": "S1_SELECTED_PENDING_REVIEW"
+}

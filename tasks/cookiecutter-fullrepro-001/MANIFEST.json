@@ -1,0 +1,37 @@
+{
+  "task_id": "cookiecutter-fullrepro-001",
+  "status": "QUALIFIED",
+  "spec": "spec.md",
+  "filter": "oracle_candidates_v1",
+  "reference": "reference_score.json",
+  "candidate_run": "Bmk-dev/candidate-runs/codex-cookiecutter-specv2only-20260629-001",
+  "candidate_score": "candidate-runs/codex-cookiecutter-specv2only-20260629-001/codex_specv2only_score_report.md",
+  "caveat": "Best valid candidate (spec_v2-only, 25.38%) with corrected scorer isolation (--remove-path cookiecutter). Earlier high scores (97.81%) were invalid: reference-path leakage, target-package PyPI install, and scorer source-package shadowing. Spec detail experiment showed v2-only outperforms patched packet and v3/v4 variants.",
+  "scorer_isolation": {
+    "score_harness": "harness/score_pytest_original.py",
+    "package_import": "cookiecutter",
+    "preflight_command": "python -c \"import cookiecutter; print(cookiecutter.__file__)\"",
+    "remove_paths": [
+      "cookiecutter",
+      "cookiecutter.egg-info"
+    ],
+    "recorded_from_artifacts": false,
+    "source_shadowing_guard": "Remove the source package path from the copied oracle worktree before scoring, then require preflight stdout to point into candidate output.",
+    "verification_status": "recommended_not_historically_recorded; rerun scoring before using as a final candidate score"
+  },
+  "coverage-gap": {
+    "verdict": "FULL",
+    "scoreable_tests": 213,
+    "global_floor_ok": true,
+    "per_section_minimums": {
+      "Cross-View Invariants": 5,
+      "Error Semantics": 3,
+      "workflow_sections": 3,
+      "all_other_scored_sections": 3
+    },
+    "below_minimum_sections": [],
+    "unknown_mapping_cells": 0,
+    "requires_action": "No Gate D action required under current-main audit."
+  },
+  "labels": []
+}

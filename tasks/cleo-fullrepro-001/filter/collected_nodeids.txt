@@ -1,0 +1,258 @@
+tests/commands/completion/test_completions_command.py::test_invalid_shell
+tests/commands/completion/test_completions_command.py::test_bash
+tests/commands/completion/test_completions_command.py::test_zsh
+tests/commands/completion/test_completions_command.py::test_fish
+tests/commands/test_command.py::test_set_application
+tests/commands/test_command.py::test_with_signature
+tests/commands/test_command.py::test_signature_inheritance
+tests/commands/test_command.py::test_overwrite
+tests/commands/test_command.py::test_explicit_multiple_argument
+tests/events/test_event.py::test_is_propagation_not_stopped
+tests/events/test_event.py::test_stop_propagation_and_is_propagation_stopped
+tests/events/test_event_dispatcher.py::test_initial_state
+tests/events/test_event_dispatcher.py::test_add_listener
+tests/events/test_event_dispatcher.py::test_get_listeners_sorts_by_priority
+tests/events/test_event_dispatcher.py::test_get_all_listeners_sorts_by_priority
+tests/events/test_event_dispatcher.py::test_get_listener_priority
+tests/events/test_event_dispatcher.py::test_dispatch
+tests/events/test_event_dispatcher.py::test_stop_event_propagation
+tests/fixtures/exceptions/nested1.py::outer
+tests/fixtures/exceptions/nested2.py::call
+tests/fixtures/exceptions/raiser_with_suppressed_context.py::raiser_with_suppressed_context
+tests/fixtures/exceptions/recursion.py::recursion_error
+tests/fixtures/exceptions/simple.py::simple_exception
+tests/formatters/test_formatter.py::test_format_and_wrap[foo<error>bar</error> baz-2-fo\no\x1b[31;1mb\x1b[39;22m\n\x1b[31;1mar\x1b[39;22m\nba\nz]
+tests/formatters/test_formatter.py::test_format_and_wrap[pre <error>foo bar baz</error> post-2-pr\ne \x1b[31;1m\x1b[39;22m\n\x1b[31;1mfo\x1b[39;22m\n\x1b[31;1mo \x1b[39;22m\n\x1b[31;1mba\x1b[39;22m\n\x1b[31;1mr \x1b[39;22m\n\x1b[31;1mba\x1b[39;22m\n\x1b[31;1mz\x1b[39;22m \npo\nst]
+tests/formatters/test_formatter.py::test_format_and_wrap[pre <error>foo bar baz</error> post-3-pre\x1b[31;1m\x1b[39;22m\n\x1b[31;1mfoo\x1b[39;22m\n\x1b[31;1mbar\x1b[39;22m\n\x1b[31;1mbaz\x1b[39;22m\npos\nt]
+tests/formatters/test_formatter.py::test_format_and_wrap[pre <error>foo bar baz</error> post-4-pre \x1b[31;1m\x1b[39;22m\n\x1b[31;1mfoo \x1b[39;22m\n\x1b[31;1mbar \x1b[39;22m\n\x1b[31;1mbaz\x1b[39;22m \npost]
+tests/formatters/test_formatter.py::test_format_and_wrap[pre <error>foo bar baz</error> post-5-pre \x1b[31;1mf\x1b[39;22m\n\x1b[31;1moo ba\x1b[39;22m\n\x1b[31;1mr baz\x1b[39;22m\npost]
+tests/formatters/test_formatter.py::test_format_and_wrap[Lorem <error>ipsum</error> dolor <info>sit</info> amet-4-Lore\nm \x1b[31;1mip\x1b[39;22m\n\x1b[31;1msum\x1b[39;22m \ndolo\nr \x1b[34msi\x1b[39m\n\x1b[34mt\x1b[39m am\net]
+tests/formatters/test_formatter.py::test_format_and_wrap[Lorem <error>ipsum</error> dolor <info>sit</info> amet-8-Lorem \x1b[31;1mip\x1b[39;22m\n\x1b[31;1msum\x1b[39;22m dolo\nr \x1b[34msit\x1b[39m am\net]
+tests/formatters/test_formatter.py::test_format_and_wrap[Lorem <error>ipsum</error> dolor <info>sit</info>, <error>amet</error> et <info>laudantium</info> architecto-18-Lorem \x1b[31;1mipsum\x1b[39;22m dolor \x1b[34m\x1b[39m\n\x1b[34msit\x1b[39m, \x1b[31;1mamet\x1b[39;22m et \x1b[34mlauda\x1b[39m\n\x1b[34mntium\x1b[39m architecto]
+tests/formatters/test_formatter.py::test_format_and_wrap_undecorated[foo<error>bar</error> baz-2-fo\nob\nar\nba\nz]
+tests/formatters/test_formatter.py::test_format_and_wrap_undecorated[pre <error>foo bar baz</error> post-2-pr\ne \nfo\no \nba\nr \nba\nz \npo\nst]
+tests/formatters/test_formatter.py::test_format_and_wrap_undecorated[pre <error>foo bar baz</error> post-3-pre\nfoo\nbar\nbaz\npos\nt]
+tests/formatters/test_formatter.py::test_format_and_wrap_undecorated[pre <error>foo bar baz</error> post-4-pre \nfoo \nbar \nbaz \npost]
+tests/formatters/test_formatter.py::test_format_and_wrap_undecorated[pre <error>foo bar baz</error> post-5-pre f\noo ba\nr baz\npost]
+tests/io/inputs/test_argument.py::test_optional_non_list_argument
+tests/io/inputs/test_argument.py::test_required_non_list_argument
+tests/io/inputs/test_argument.py::test_list_argument
+tests/io/inputs/test_argument.py::test_required_arguments_do_not_support_default_values
+tests/io/inputs/test_argument.py::test_list_arguments_do_not_support_non_list_default_values
+tests/io/inputs/test_argv_input.py::test_it_uses_argv_by_default
+tests/io/inputs/test_argv_input.py::test_parse_arguments
+tests/io/inputs/test_argv_input.py::test_parse_options[args0-options0-expected_options0]
+tests/io/inputs/test_argv_input.py::test_parse_options[args1-options1-expected_options1]
+tests/io/inputs/test_argv_input.py::test_parse_options[args2-options2-expected_options2]
+tests/io/inputs/test_argv_input.py::test_parse_options[args3-options3-expected_options3]
+tests/io/inputs/test_argv_input.py::test_parse_options[args4-options4-expected_options4]
+tests/io/inputs/test_argv_input.py::test_parse_options[args5-options5-expected_options5]
+tests/io/inputs/test_argv_input.py::test_parse_options[args6-options6-expected_options6]
+tests/io/inputs/test_argv_input.py::test_parse_options[args7-options7-expected_options7]
+tests/io/inputs/test_argv_input.py::test_parse_options[args8-options8-expected_options8]
+tests/io/inputs/test_argv_input.py::test_parse_options[args9-options9-expected_options9]
+tests/io/inputs/test_argv_input.py::test_parse_options[args10-options10-expected_options10]
+tests/io/inputs/test_argv_input.py::test_parse_options[args11-options11-expected_options11]
+tests/io/inputs/test_argv_input.py::test_parse_options[args12-options12-expected_options12]
+tests/io/inputs/test_argv_input.py::test_parse_options[args13-options13-expected_options13]
+tests/io/inputs/test_argv_input.py::test_parse_options[args14-options14-expected_options14]
+tests/io/inputs/test_argv_input.py::test_parse_options[args15-options15-expected_options15]
+tests/io/inputs/test_argv_input.py::test_parse_options[args16-options16-expected_options16]
+tests/io/inputs/test_option.py::test_create
+tests/io/inputs/test_option.py::test_dashed_name
+tests/io/inputs/test_option.py::test_fail_if_name_is_empty
+tests/io/inputs/test_option.py::test_fail_if_default_value_provided_for_flag
+tests/io/inputs/test_option.py::test_fail_if_wrong_default_value_for_list_option
+tests/io/inputs/test_option.py::test_shortcut
+tests/io/inputs/test_option.py::test_dashed_shortcut
+tests/io/inputs/test_option.py::test_multiple_shortcuts
+tests/io/inputs/test_option.py::test_fail_if_shortcut_is_empty
+tests/io/inputs/test_option.py::test_optional_value
+tests/io/inputs/test_option.py::test_optional_value_with_default
+tests/io/inputs/test_option.py::test_required_value
+tests/io/inputs/test_option.py::test_required_value_with_default
+tests/io/inputs/test_option.py::test_list
+tests/io/inputs/test_option.py::test_multi_valued_with_default
+tests/io/outputs/test_section_output.py::test_clear_all
+tests/io/outputs/test_section_output.py::test_clear_with_number_of_lines
+tests/io/outputs/test_section_output.py::test_clear_with_number_of_lines_and_multiple_sections
+tests/io/outputs/test_section_output.py::test_clear_preserves_empty_lines
+tests/io/outputs/test_section_output.py::test_overwrite
+tests/io/outputs/test_section_output.py::test_overwrite_multiple_lines
+tests/io/outputs/test_section_output.py::test_add_multiple_sections
+tests/io/outputs/test_section_output.py::test_multiple_sections_output
+tests/io/outputs/test_stream_output.py::test_is_decorated_respects_environment[env0-False]
+tests/io/outputs/test_stream_output.py::test_is_decorated_respects_environment[env1-True]
+tests/loaders/test_factory_command_loader.py::test_has
+tests/loaders/test_factory_command_loader.py::test_get
+tests/loaders/test_factory_command_loader.py::test_get_invalid_command_raises_error
+tests/loaders/test_factory_command_loader.py::test_names
+tests/test_application.py::test_name_version_getters
+tests/test_application.py::test_name_version_setter
+tests/test_application.py::test_long_version
+tests/test_application.py::test_help
+tests/test_application.py::test_all
+tests/test_application.py::test_add
+tests/test_application.py::test_has_get
+tests/test_application.py::test_silent_help
+tests/test_application.py::test_get_namespaces
+tests/test_application.py::test_find_namespace
+tests/test_application.py::test_find_namespace_with_sub_namespaces
+tests/test_application.py::test_find_ambiguous_namespace
+tests/test_application.py::test_find_invalid_namespace
+tests/test_application.py::test_find_unique_name_but_namespace_name
+tests/test_application.py::test_find
+tests/test_application.py::test_find_ambiguous_command
+tests/test_application.py::test_find_ambiguous_command_hidden
+tests/test_application.py::test_set_catch_exceptions
+tests/test_application.py::test_auto_exit
+tests/test_application.py::test_run
+tests/test_application.py::test_run_runs_the_list_command_without_arguments
+tests/test_application.py::test_run_runs_help_command_if_required
+tests/test_application.py::test_run_runs_help_command_with_command
+tests/test_application.py::test_run_removes_all_output_if_quiet
+tests/test_application.py::test_run_with_verbosity
+tests/test_application.py::test_run_with_version
+tests/test_application.py::test_run_with_help
+tests/test_application.py::test_run_with_input
+tests/test_application.py::test_run_namespaced_with_input
+tests/test_application.py::test_run_with_input_and_non_interactive[cmd0]
+tests/test_application.py::test_run_with_input_and_non_interactive[cmd1]
+tests/test_color.py::test_ansi_colors[--options0- ]
+tests/test_color.py::test_ansi_colors[red-yellow-options1-\x1b[31;43m \x1b[39;49m]
+tests/test_color.py::test_ansi_colors[red-yellow-options2-\x1b[31;43;4m \x1b[39;49;24m]
+tests/test_color.py::test_true_color_support[#fff-#000-options0-\x1b[38;2;255;255;255;48;2;0;0;0m \x1b[39;49m]
+tests/test_color.py::test_true_color_support[#ffffff-#000000-options1-\x1b[38;2;255;255;255;48;2;0;0;0m \x1b[39;49m]
+tests/test_color.py::test_degrade_true_colors[#f00-#ff0-options0-\x1b[31;43m \x1b[39;49m]
+tests/test_color.py::test_degrade_true_colors[#c0392b-#f1c40f-options1-\x1b[31;43m \x1b[39;49m]
+tests/test_helpers.py::test_argument
+tests/test_helpers.py::test_option
+tests/test_terminal.py::test_size
+tests/test_terminal.py::test_columns_env[314-None-314]
+tests/test_terminal.py::test_columns_env[200-40-40]
+tests/test_terminal.py::test_columns_env[random-40-40]
+tests/test_terminal.py::test_columns_env[random-None-80]
+tests/test_terminal.py::test_lines_env[314-None-314]
+tests/test_terminal.py::test_lines_env[200-40-40]
+tests/test_terminal.py::test_lines_env[random-40-40]
+tests/test_terminal.py::test_lines_env[random-None-25]
+tests/test_utils.py::test_format_time[0.1-< 1 sec]
+tests/test_utils.py::test_format_time[1.0-1 sec]
+tests/test_utils.py::test_format_time[2.0-2 secs]
+tests/test_utils.py::test_format_time[59.0-59 secs]
+tests/test_utils.py::test_format_time[60.0-1 min]
+tests/test_utils.py::test_format_time[120.0-2 mins]
+tests/test_utils.py::test_format_time[3600.0-1 hr]
+tests/test_utils.py::test_format_time[7200.0-2 hrs]
+tests/test_utils.py::test_format_time[129600.0-1 day]
+tests/test_utils.py::test_format_time[129601.0-2 days]
+tests/test_utils.py::test_format_time[700000.0-9 days]
+tests/test_utils.py::test_find_similar_names[env add-expected0]
+tests/test_utils.py::test_find_similar_names[evn add-expected1]
+tests/test_utils.py::test_find_similar_names[env-expected2]
+tests/test_utils.py::test_strip_tags[<ab> cde</>- cde]
+tests/test_utils.py::test_strip_tags[<ab-<ab]
+tests/test_utils.py::test_strip_tags[cd>-cd>]
+tests/test_utils.py::test_wcwidth[\x00-0]
+tests/test_utils.py::test_wcwidth[\n--1]
+tests/test_utils.py::test_wcwidth[a-1]
+tests/test_utils.py::test_wcwidth[1-1]
+tests/test_utils.py::test_wcwidth[\u05d0-1]
+tests/test_utils.py::test_wcwidth[\u200b-0]
+tests/test_utils.py::test_wcwidth[\u1abe-0]
+tests/test_utils.py::test_wcwidth[\u0591-0]
+tests/test_utils.py::test_wcwidth[\U0001f250-2]
+tests/test_utils.py::test_wcwidth[\uff04-2]
+tests/test_utils.py::test_wcswidth[-0]
+tests/test_utils.py::test_wcswidth[hello, world!-13]
+tests/test_utils.py::test_wcswidth[hello, world!\n--1]
+tests/test_utils.py::test_wcswidth[0123456789-10]
+tests/test_utils.py::test_wcswidth[\u05e9\u05dc\u05d5\u05dd, \u05e2\u05d5\u05dc\u05dd!-11]
+tests/test_utils.py::test_wcswidth[\u05e9\u05b0\u05d1\u05bb\u05e2\u05b8\u05d9\u05d9\u05dd-6]
+tests/test_utils.py::test_wcswidth[\U0001f250\U0001f250\U0001f250-6]
+tests/testers/test_application_tester.py::test_execute
+tests/testers/test_application_tester.py::test_execute_namespace_command
+tests/testers/test_command_tester.py::test_execute
+tests/testers/test_command_tester.py::test_execute_namespace_command
+tests/ui/exception_trace/helpers.py::simple_exception
+tests/ui/exception_trace/helpers.py::nested_exception
+tests/ui/exception_trace/helpers.py::recursive_exception
+tests/ui/exception_trace/test_frame.py::test_frame
+tests/ui/exception_trace/test_frame.py::test_frame_with_no_context_should_return_empty_line
+tests/ui/exception_trace/test_inspector.py::test_inspector_with_simple_exception
+tests/ui/exception_trace/test_inspector.py::test_inspector_with_nested_exception
+tests/ui/exception_trace/test_inspector.py::test_inspector_with_recursive_exception
+tests/ui/test_choice_question.py::test_ask_choice
+tests/ui/test_confirmation_question.py::test_ask[-True-True]
+tests/ui/test_confirmation_question.py::test_ask[-False-False]
+tests/ui/test_confirmation_question.py::test_ask[y-True-True]
+tests/ui/test_confirmation_question.py::test_ask[yes-True-True]
+tests/ui/test_confirmation_question.py::test_ask[n-False-True]
+tests/ui/test_confirmation_question.py::test_ask[no-False-True]
+tests/ui/test_confirmation_question.py::test_ask_with_custom_answer
+tests/ui/test_exception_trace.py::test_render_better_error_message
+tests/ui/test_exception_trace.py::test_render_debug_better_error_message
+tests/ui/test_exception_trace.py::test_render_debug_better_error_message_recursion_error
+tests/ui/test_exception_trace.py::test_render_very_verbose_better_error_message
+tests/ui/test_exception_trace.py::test_render_debug_better_error_message_recursion_error_with_multiple_duplicated_frames
+tests/ui/test_exception_trace.py::test_render_can_ignore_given_files
+tests/ui/test_exception_trace.py::test_render_shows_ignored_files_if_in_debug_mode
+tests/ui/test_exception_trace.py::test_render_falls_back_on_ascii_symbols
+tests/ui/test_exception_trace.py::test_empty_source_file_do_not_break_highlighter
+tests/ui/test_exception_trace.py::test_docstrings_are_correctly_rendered
+tests/ui/test_exception_trace.py::test_simple_render
+tests/ui/test_exception_trace.py::test_simple_render_aborts_if_no_message
+tests/ui/test_exception_trace.py::test_render_with_suppressed_context
+tests/ui/test_progress_bar.py::test_multiple_start
+tests/ui/test_progress_bar.py::test_advance
+tests/ui/test_progress_bar.py::test_advance_with_step
+tests/ui/test_progress_bar.py::test_advance_multiple_times
+tests/ui/test_progress_bar.py::test_advance_over_max
+tests/ui/test_progress_bar.py::test_format
+tests/ui/test_progress_bar.py::test_customizations
+tests/ui/test_progress_bar.py::test_display_without_start
+tests/ui/test_progress_bar.py::test_display_with_quiet_verbosity
+tests/ui/test_progress_bar.py::test_finish_without_start
+tests/ui/test_progress_bar.py::test_percent
+tests/ui/test_progress_bar.py::test_overwrite_with_shorter_line
+tests/ui/test_progress_bar.py::test_set_current_progress
+tests/ui/test_progress_bar.py::test_multibyte_support
+tests/ui/test_progress_bar.py::test_clear
+tests/ui/test_progress_bar.py::test_percent_not_hundred_before_complete
+tests/ui/test_progress_bar.py::test_non_decorated_output
+tests/ui/test_progress_bar.py::test_multiline_format
+tests/ui/test_progress_bar.py::test_regress
+tests/ui/test_progress_bar.py::test_regress_with_steps
+tests/ui/test_progress_bar.py::test_regress_multiple_times
+tests/ui/test_progress_bar.py::test_regress_below_min
+tests/ui/test_progress_bar.py::test_overwrite_with_section_output
+tests/ui/test_progress_bar.py::test_overwrite_multiple_progress_bars_with_section_outputs
+tests/ui/test_progress_bar.py::test_min_and_max_seconds_between_redraws
+tests/ui/test_progress_indicator.py::test_default_indicator
+tests/ui/test_progress_indicator.py::test_explicit_format
+tests/ui/test_question.py::test_ask
+tests/ui/test_question.py::test_ask_hidden_response
+tests/ui/test_question.py::test_ask_and_validate
+tests/ui/test_question.py::test_no_interaction
+tests/ui/test_question.py::test_ask_question_with_special_characters
+tests/ui/test_table.py::test_render[headers0-rows0-default-+---------------+--------------------------+------------------+\n| ISBN          | Title                    | Author           |\n+---------------+--------------------------+------------------+\n| 99921-58-10-7 | Divine Comedy            | Dante Alighieri  |\n| 9971-5-0210-0 | A Tale of Two Cities     | Charles Dickens  |\n| 960-425-059-0 | The Lord of the Rings    | J. R. R. Tolkien |\n| 80-902734-1-6 | And Then There Were None | Agatha Christie  |\n| 9782070409341 | Le P\xe8re Goriot           | Honor\xe9 de Balzac |\n+---------------+--------------------------+------------------+\n]
+tests/ui/test_table.py::test_render[headers1-rows1-compact- ISBN          Title                    Author           \n 99921-58-10-7 Divine Comedy            Dante Alighieri  \n 9971-5-0210-0 A Tale of Two Cities     Charles Dickens  \n 960-425-059-0 The Lord of the Rings    J. R. R. Tolkien \n 80-902734-1-6 And Then There Were None Agatha Christie  \n 9782070409341 Le P\xe8re Goriot           Honor\xe9 de Balzac \n]
+tests/ui/test_table.py::test_render[headers2-rows2-borderless- =============== ========================== ================== \n  ISBN            Title                      Author            \n =============== ========================== ================== \n  99921-58-10-7   Divine Comedy              Dante Alighieri   \n  9971-5-0210-0   A Tale of Two Cities       Charles Dickens   \n  960-425-059-0   The Lord of the Rings      J. R. R. Tolkien  \n  80-902734-1-6   And Then There Were None   Agatha Christie   \n  9782070409341   Le P\xe8re Goriot             Honor\xe9 de Balzac  \n =============== ========================== ================== \n]
+tests/ui/test_table.py::test_render[headers3-rows3-box-\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502 ISBN          \u2502 Title                    \u2502 Author           \u2502\n\u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524\n\u2502 99921-58-10-7 \u2502 Divine Comedy            \u2502 Dante Alighieri  \u2502\n\u2502 9971-5-0210-0 \u2502 A Tale of Two Cities     \u2502 Charles Dickens  \u2502\n\u2502 960-425-059-0 \u2502 The Lord of the Rings    \u2502 J. R. R. Tolkien \u2502\n\u2502 80-902734-1-6 \u2502 And Then There Were None \u2502 Agatha Christie  \u2502\n\u2502 9782070409341 \u2502 Le P\xe8re Goriot           \u2502 Honor\xe9 de Balzac \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n]
+tests/ui/test_table.py::test_render[headers4-rows4-box-double-\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2564\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2564\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557\n\u2551 ISBN          \u2502 Title                    \u2502 Author           \u2551\n\u2560\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u256a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2563\n\u2551 99921-58-10-7 \u2502 Divine Comedy            \u2502 Dante Alighieri  \u2551\n\u2551 9971-5-0210-0 \u2502 A Tale of Two Cities     \u2502 Charles Dickens  \u2551\n\u255f\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2562\n\u2551 960-425-059-0 \u2502 The Lord of the Rings    \u2502 J. R. R. Tolkien \u2551\n\u2551 80-902734-1-6 \u2502 And Then There Were None \u2502 Agatha Christie  \u2551\n\u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2567\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2567\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d\n]
+tests/ui/test_table.py::test_render[headers5-rows5-default-+---------------+--------------------------+------------------+\n| ISBN          | Title                    |                  |\n+---------------+--------------------------+------------------+\n| 99921-58-10-7 | Divine Comedy            | Dante Alighieri  |\n| 9971-5-0210-0 |                          |                  |\n| 960-425-059-0 | The Lord of the Rings    | J. R. R. Tolkien |\n| 80-902734-1-6 | And Then There Were None | Agatha Christie  |\n+---------------+--------------------------+------------------+\n]
+tests/ui/test_table.py::test_render[headers6-rows6-default-+---------------+--------------------------+------------------+\n| 99921-58-10-7 | Divine Comedy            | Dante Alighieri  |\n| 9971-5-0210-0 |                          |                  |\n| 960-425-059-0 | The Lord of the Rings    | J. R. R. Tolkien |\n| 80-902734-1-6 | And Then There Were None | Agatha Christie  |\n+---------------+--------------------------+------------------+\n]
+tests/ui/test_table.py::test_render[headers7-rows7-default-+------+-------+\n| ISBN | Title |\n+------+-------+\n]
+tests/ui/test_table.py::test_render[headers8-rows8-default-]
+tests/ui/test_table.py::test_render[headers9-rows9-default-+---------------+----------------------------+-----------------+\n| ISBN          | Title                      | Author          |\n+---------------+----------------------------+-----------------+\n| 99921-58-10-7 | Divine                     | Dante Alighieri |\n|               | Comedy                     |                 |\n| 9971-5-0210-2 | Harry Potter               | Rowling         |\n|               | and the Chamber of Secrets | Joanne K.       |\n| 9971-5-0210-2 | Harry Potter               | Rowling         |\n|               | and the Chamber of Secrets | Joanne K.       |\n| 960-425-059-0 | The Lord of the Rings      | J. R. R.        |\n|               |                            | Tolkien         |\n+---------------+----------------------------+-----------------+\n]
+tests/ui/test_table.py::test_render[headers10-rows10-default-+---------------+----------------------+-----------------+\n| ISBN          | Title                | Author          |\n+---------------+----------------------+-----------------+\n| 99921-58-10-7 | Divine Comedy        | Dante Alighieri |\n| 9971-5-0210-0 | A Tale of Two Cities | Charles Dickens |\n+---------------+----------------------+-----------------+\n]
+tests/ui/test_table.py::test_render[headers11-rows11-default-+----------------+----------------+-----------------+\n| ISBN           | Title          | Author          |\n+----------------+----------------+-----------------+\n| 99921-58-10-7  | Divine Comedy  | Dante Alighieri |\n+----------------+----------------+-----------------+\n| Divine Comedy(Dante Alighieri)                    |\n+----------------+----------------+-----------------+\n| Arduino: A Quick-Start Guide    | Mark Schmidt    |\n+----------------+----------------+-----------------+\n| 9971-5-0210-0  | A Tale of                        |\n|                | Two Cities                       |\n+----------------+----------------+-----------------+\n]
+tests/ui/test_table.py::test_render[headers12-rows12-default-+---------------+----------------------+-----------------+\n| ISBN          | Title                | Author          |\n+---------------+----------------------+-----------------+\n| 9971-5-0210-0 | Divine Comedy        | Dante Alighieri |\n|               | A Tale of Two Cities | Charles Dickens |\n|               | The Lord of          | J. R.           |\n|               | the Rings            | R. Tolkien      |\n+---------------+----------------------+-----------------+\n| 80-902734-1-6 | And Then             | Agatha Christie |\n| 80-902734-1-7 | There                | Test            |\n|               | Were None            |                 |\n+---------------+----------------------+-----------------+\n]
+tests/ui/test_table.py::test_render[headers13-rows13-default-+------------------+---------+-----------------+\n| ISBN             | Title   | Author          |\n+------------------+---------+-----------------+\n| 9971-5-0210-0              | Dante Alighieri |\n|                            | Charles Dickens |\n+------------------+---------+-----------------+\n| Dante Alighieri  | 9971-5-0210-0             |\n| J. R. R. Tolkien |                           |\n| J. R. R          |                           |\n+------------------+---------+-----------------+\n]
+tests/ui/test_table.py::test_render[headers14-rows14-default-+-----------------+-------+-----------------+\n| ISBN            | Title | Author          |\n+-----------------+-------+-----------------+\n| 9971                    | Dante Alighieri |\n| -5-                     | Charles Dickens |\n| 021                     |                 |\n| 0-0                     |                 |\n+-----------------+-------+-----------------+\n| Dante Alighieri | 9971                    |\n| Charles Dickens | -5-                     |\n|                 | 021                     |\n|                 | 0-0                     |\n+-----------------+-------+-----------------+\n| 9971                    | Dante           |\n| -5-                     | Alighieri       |\n| 021                     |                 |\n| 0-0                     |                 |\n+-----------------+-------+-----------------+\n]
+tests/ui/test_table.py::test_render[headers15-rows15-default-+-----------------+-------+-----------------+\n| ISBN            | Title | Author          |\n+-----------------+-------+-----------------+\n| 9971                    | Dante Alighieri |\n| -5-                     | Charles Dickens |\n| 021                     |                 |\n| 0-0                     |                 |\n| Dante Alighieri | 9971                    |\n| Charles Dickens | -5-                     |\n|                 | 021                     |\n|                 | 0-0                     |\n+-----------------+-------+-----------------+\n]
+tests/ui/test_table.py::test_render[headers16-rows16-default-+---------------+-----------------+\n| ISBN          | Author          |\n+---------------+-----------------+\n| 9971-5-0210-0 | Dante Alighieri |\n|               |-----------------|\n|               | Charles Dickens |\n+---------------+-----------------+\n]
+tests/ui/test_table.py::test_render[headers17-rows17-default-+------+-------+--------+\n| Main title            |\n+------+-------+--------+\n| ISBN | Title | Author |\n+------+-------+--------+\n]
+tests/ui/test_table.py::test_render[headers18-rows18-default-+---+--+--+---+--+---+--+---+--+\n| 1       | 2    | 3    | 4    |\n+---+--+--+---+--+---+--+---+--+\n]
+tests/ui/test_table.py::test_column_style
+tests/ui/test_table.py::test_style_for_side_effects

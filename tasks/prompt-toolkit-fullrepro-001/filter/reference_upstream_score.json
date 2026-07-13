@@ -1,0 +1,2899 @@
+{
+  "source_repo": "/root/autodl-tmp/new-e2e/prompt-toolkit__python-prompt-toolkit",
+  "solution_dir": "/root/autodl-tmp/new-e2e/prompt-toolkit__python-prompt-toolkit/src",
+  "nodeids": "/root/autodl-tmp/Bmk-Lizhiqian/wip/prompt-toolkit-fullrepro-001/filter/kept_upstream.txt",
+  "taxonomy": "/root/autodl-tmp/Bmk-Lizhiqian/wip/prompt-toolkit-fullrepro-001/filter/taxonomy.jsonl",
+  "run_dir": "/root/autodl-tmp/Bmk-Lizhiqian/wip/prompt-toolkit-fullrepro-001/filter/reference_upstream_run",
+  "import_provenance": {
+    "returncode": 0,
+    "stdout": "/root/autodl-tmp/new-e2e/prompt-toolkit__python-prompt-toolkit/src/prompt_toolkit/__init__.py\n",
+    "stderr": ""
+  },
+  "grouped_results": {
+    "tests/test_buffer.py": {
+      "returncode": 0,
+      "stdout": "initial\ninsert text\ncursor movement\nbackspace\ncursor up\ncursor down\njoin next line\nnewline\nswap characters before cursor\n\n9 passed in 0.07s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1783591347.7290573,
+        "duration": 0.07620406150817871,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/wip/prompt-toolkit-fullrepro-001/filter/reference_upstream_run/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 9,
+          "total": 9,
+          "collected": 9
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "tests/test_buffer.py::test_initial",
+                "type": "Function",
+                "lineno": 13
+              },
+              {
+                "nodeid": "tests/test_buffer.py::test_insert_text",
+                "type": "Function",
+                "lineno": 18
+              },
+              {
+                "nodeid": "tests/test_buffer.py::test_cursor_movement",
+                "type": "Function",
+                "lineno": 24
+              },
+              {
+                "nodeid": "tests/test_buffer.py::test_backspace",
+                "type": "Function",
+                "lineno": 36
+              },
+              {
+                "nodeid": "tests/test_buffer.py::test_cursor_up",
+                "type": "Function",
+                "lineno": 46
+              },
+              {
+                "nodeid": "tests/test_buffer.py::test_cursor_down",
+                "type": "Function",
+                "lineno": 65
+              },
+              {
+                "nodeid": "tests/test_buffer.py::test_join_next_line",
+                "type": "Function",
+                "lineno": 82
+              },
+              {
+                "nodeid": "tests/test_buffer.py::test_newline",
+                "type": "Function",
+                "lineno": 98
+              },
+              {
+                "nodeid": "tests/test_buffer.py::test_swap_characters_before_cursor",
+                "type": "Function",
+                "lineno": 105
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "tests/test_buffer.py::test_initial",
+            "lineno": 13,
+            "outcome": "passed",
+            "keywords": [
+              "test_initial",
+              "test_buffer.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00029485858976840973,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00013426877558231354,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012030266225337982,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_buffer.py::test_insert_text",
+            "lineno": 18,
+            "outcome": "passed",
+            "keywords": [
+              "test_insert_text",
+              "test_buffer.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00019020400941371918,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00014139525592327118,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001240558922290802,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_buffer.py::test_cursor_movement",
+            "lineno": 24,
+            "outcome": "passed",
+            "keywords": [
+              "test_cursor_movement",
+              "test_buffer.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00020012445747852325,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00020152516663074493,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012289360165596008,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_buffer.py::test_backspace",
+            "lineno": 36,
+            "outcome": "passed",
+            "keywords": [
+              "test_backspace",
+              "test_buffer.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00019234232604503632,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.000155765563249588,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010821223258972168,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_buffer.py::test_cursor_up",
+            "lineno": 46,
+            "outcome": "passed",
+            "keywords": [
+              "test_cursor_up",
+              "test_buffer.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00017819739878177643,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00019820407032966614,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011251494288444519,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_buffer.py::test_cursor_down",
+            "lineno": 65,
+            "outcome": "passed",
+            "keywords": [
+              "test_cursor_down",
+              "test_buffer.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00018135085701942444,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0001904573291540146,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00019560381770133972,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_buffer.py::test_join_next_line",
+            "lineno": 82,
+            "outcome": "passed",
+            "keywords": [
+              "test_join_next_line",
+              "test_buffer.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001838449388742447,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00020384415984153748,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011617504060268402,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_buffer.py::test_newline",
+            "lineno": 98,
+            "outcome": "passed",
+            "keywords": [
+              "test_newline",
+              "test_buffer.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00018388964235782623,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00015855580568313599,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011317059397697449,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_buffer.py::test_swap_characters_before_cursor",
+            "lineno": 105,
+            "outcome": "passed",
+            "keywords": [
+              "test_swap_characters_before_cursor",
+              "test_buffer.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00018105842173099518,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00015537813305854797,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011403858661651611,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    },
+    "tests/test_completion.py": {
+      "returncode": 0,
+      "stdout": "pathcompleter completes in current directory\npathcompleter completes files in current directory\npathcompleter completes files in absolute directory\npathcompleter completes directories with only directories\npathcompleter respects completions under min input len\npathcompleter does not expanduser by default\npathcompleter can expanduser\npathcompleter can apply file filter\npathcompleter get paths constrains path\nword completer static word list\nword completer ignore case\nword completer match middle\nword completer sentence\nword completer dynamic word list\nword completer pattern\nfuzzy completer\nnested completer\ndeduplicate completer\n\n18 passed in 0.10s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1783591348.0926597,
+        "duration": 0.1002647876739502,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/wip/prompt-toolkit-fullrepro-001/filter/reference_upstream_run/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 18,
+          "total": 18,
+          "collected": 18
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "tests/test_completion.py::test_pathcompleter_completes_in_current_directory",
+                "type": "Function",
+                "lineno": 39
+              },
+              {
+                "nodeid": "tests/test_completion.py::test_pathcompleter_completes_files_in_current_directory",
+                "type": "Function",
+                "lineno": 48
+              },
+              {
+                "nodeid": "tests/test_completion.py::test_pathcompleter_completes_files_in_absolute_directory",
+                "type": "Function",
+                "lineno": 72
+              },
+              {
+                "nodeid": "tests/test_completion.py::test_pathcompleter_completes_directories_with_only_directories",
+                "type": "Function",
+                "lineno": 96
+              },
+              {
+                "nodeid": "tests/test_completion.py::test_pathcompleter_respects_completions_under_min_input_len",
+                "type": "Function",
+                "lineno": 129
+              },
+              {
+                "nodeid": "tests/test_completion.py::test_pathcompleter_does_not_expanduser_by_default",
+                "type": "Function",
+                "lineno": 191
+              },
+              {
+                "nodeid": "tests/test_completion.py::test_pathcompleter_can_expanduser",
+                "type": "Function",
+                "lineno": 200
+              },
+              {
+                "nodeid": "tests/test_completion.py::test_pathcompleter_can_apply_file_filter",
+                "type": "Function",
+                "lineno": 209
+              },
+              {
+                "nodeid": "tests/test_completion.py::test_pathcompleter_get_paths_constrains_path",
+                "type": "Function",
+                "lineno": 233
+              },
+              {
+                "nodeid": "tests/test_completion.py::test_word_completer_static_word_list",
+                "type": "Function",
+                "lineno": 259
+              },
+              {
+                "nodeid": "tests/test_completion.py::test_word_completer_ignore_case",
+                "type": "Function",
+                "lineno": 282
+              },
+              {
+                "nodeid": "tests/test_completion.py::test_word_completer_match_middle",
+                "type": "Function",
+                "lineno": 291
+              },
+              {
+                "nodeid": "tests/test_completion.py::test_word_completer_sentence",
+                "type": "Function",
+                "lineno": 297
+              },
+              {
+                "nodeid": "tests/test_completion.py::test_word_completer_dynamic_word_list",
+                "type": "Function",
+                "lineno": 313
+              },
+              {
+                "nodeid": "tests/test_completion.py::test_word_completer_pattern",
+                "type": "Function",
+                "lineno": 333
+              },
+              {
+                "nodeid": "tests/test_completion.py::test_fuzzy_completer",
+                "type": "Function",
+                "lineno": 348
+              },
+              {
+                "nodeid": "tests/test_completion.py::test_nested_completer",
+                "type": "Function",
+                "lineno": 402
+              },
+              {
+                "nodeid": "tests/test_completion.py::test_deduplicate_completer",
+                "type": "Function",
+                "lineno": 446
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "tests/test_completion.py::test_pathcompleter_completes_in_current_directory",
+            "lineno": 39,
+            "outcome": "passed",
+            "keywords": [
+              "test_pathcompleter_completes_in_current_directory",
+              "test_completion.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00017844326794147491,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0003258753567934036,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011251866817474365,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_completion.py::test_pathcompleter_completes_files_in_current_directory",
+            "lineno": 48,
+            "outcome": "passed",
+            "keywords": [
+              "test_pathcompleter_completes_files_in_current_directory",
+              "test_completion.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001491997390985489,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0007674656808376312,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010877847671508789,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_completion.py::test_pathcompleter_completes_files_in_absolute_directory",
+            "lineno": 72,
+            "outcome": "passed",
+            "keywords": [
+              "test_pathcompleter_completes_files_in_absolute_directory",
+              "test_completion.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010017119348049164,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0006347298622131348,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001107286661863327,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_completion.py::test_pathcompleter_completes_directories_with_only_directories",
+            "lineno": 96,
+            "outcome": "passed",
+            "keywords": [
+              "test_pathcompleter_completes_directories_with_only_directories",
+              "test_completion.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010045617818832397,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0009205490350723267,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010688789188861847,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_completion.py::test_pathcompleter_respects_completions_under_min_input_len",
+            "lineno": 129,
+            "outcome": "passed",
+            "keywords": [
+              "test_pathcompleter_respects_completions_under_min_input_len",
+              "test_completion.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001300126314163208,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0011279471218585968,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010433793067932129,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_completion.py::test_pathcompleter_does_not_expanduser_by_default",
+            "lineno": 191,
+            "outcome": "passed",
+            "keywords": [
+              "test_pathcompleter_does_not_expanduser_by_default",
+              "test_completion.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 9.835883975028992e-05,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00015359185636043549,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 9.782053530216217e-05,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_completion.py::test_pathcompleter_can_expanduser",
+            "lineno": 200,
+            "outcome": "passed",
+            "keywords": [
+              "test_pathcompleter_can_expanduser",
+              "test_completion.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 9.607523679733276e-05,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0003033112734556198,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010260194540023804,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_completion.py::test_pathcompleter_can_apply_file_filter",
+            "lineno": 209,
+            "outcome": "passed",
+            "keywords": [
+              "test_pathcompleter_can_apply_file_filter",
+              "test_completion.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 9.755231440067291e-05,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0008350629359483719,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001075994223356247,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_completion.py::test_pathcompleter_get_paths_constrains_path",
+            "lineno": 233,
+            "outcome": "passed",
+            "keywords": [
+              "test_pathcompleter_get_paths_constrains_path",
+              "test_completion.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010110810399055481,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0009670741856098175,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010672211647033691,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_completion.py::test_word_completer_static_word_list",
+            "lineno": 259,
+            "outcome": "passed",
+            "keywords": [
+              "test_word_completer_static_word_list",
+              "test_completion.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010712817311286926,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00020765140652656555,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 9.925104677677155e-05,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_completion.py::test_word_completer_ignore_case",
+            "lineno": 282,
+            "outcome": "passed",
+            "keywords": [
+              "test_word_completer_ignore_case",
+              "test_completion.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010777078568935394,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00018328800797462463,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001194346696138382,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_completion.py::test_word_completer_match_middle",
+            "lineno": 291,
+            "outcome": "passed",
+            "keywords": [
+              "test_word_completer_match_middle",
+              "test_completion.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 9.788200259208679e-05,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00014839880168437958,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001051444560289383,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_completion.py::test_word_completer_sentence",
+            "lineno": 297,
+            "outcome": "passed",
+            "keywords": [
+              "test_word_completer_sentence",
+              "test_completion.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001005902886390686,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00015578418970108032,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 9.708106517791748e-05,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_completion.py::test_word_completer_dynamic_word_list",
+            "lineno": 313,
+            "outcome": "passed",
+            "keywords": [
+              "test_word_completer_dynamic_word_list",
+              "test_completion.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 9.823031723499298e-05,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00016459450125694275,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 9.592436254024506e-05,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_completion.py::test_word_completer_pattern",
+            "lineno": 333,
+            "outcome": "passed",
+            "keywords": [
+              "test_word_completer_pattern",
+              "test_completion.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 9.555928409099579e-05,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00030374713242053986,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010081194341182709,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_completion.py::test_fuzzy_completer",
+            "lineno": 348,
+            "outcome": "passed",
+            "keywords": [
+              "test_fuzzy_completer",
+              "test_completion.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010188110172748566,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.001262269914150238,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010789185762405396,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_completion.py::test_nested_completer",
+            "lineno": 402,
+            "outcome": "passed",
+            "keywords": [
+              "test_nested_completer",
+              "test_completion.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010808184742927551,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00032727234065532684,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010445527732372284,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_completion.py::test_deduplicate_completer",
+            "lineno": 446,
+            "outcome": "passed",
+            "keywords": [
+              "test_deduplicate_completer",
+              "test_completion.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 9.956583380699158e-05,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00020369142293930054,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011560320854187012,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    },
+    "tests/test_document.py": {
+      "returncode": 0,
+      "stdout": "current char\ntext before cursor\ntext after cursor\nlines\nline count\ncurrent line before cursor\ncurrent line after cursor\ncurrent line\ncursor position\ntranslate index to position\nis cursor at the end\nget word before cursor with whitespace and pattern\n\n12 passed in 0.08s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1783591348.438981,
+        "duration": 0.08096122741699219,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/wip/prompt-toolkit-fullrepro-001/filter/reference_upstream_run/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 12,
+          "total": 12,
+          "collected": 12
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "tests/test_document.py::test_current_char",
+                "type": "Function",
+                "lineno": 16
+              },
+              {
+                "nodeid": "tests/test_document.py::test_text_before_cursor",
+                "type": "Function",
+                "lineno": 21
+              },
+              {
+                "nodeid": "tests/test_document.py::test_text_after_cursor",
+                "type": "Function",
+                "lineno": 25
+              },
+              {
+                "nodeid": "tests/test_document.py::test_lines",
+                "type": "Function",
+                "lineno": 29
+              },
+              {
+                "nodeid": "tests/test_document.py::test_line_count",
+                "type": "Function",
+                "lineno": 33
+              },
+              {
+                "nodeid": "tests/test_document.py::test_current_line_before_cursor",
+                "type": "Function",
+                "lineno": 37
+              },
+              {
+                "nodeid": "tests/test_document.py::test_current_line_after_cursor",
+                "type": "Function",
+                "lineno": 41
+              },
+              {
+                "nodeid": "tests/test_document.py::test_current_line",
+                "type": "Function",
+                "lineno": 45
+              },
+              {
+                "nodeid": "tests/test_document.py::test_cursor_position",
+                "type": "Function",
+                "lineno": 49
+              },
+              {
+                "nodeid": "tests/test_document.py::test_translate_index_to_position",
+                "type": "Function",
+                "lineno": 58
+              },
+              {
+                "nodeid": "tests/test_document.py::test_is_cursor_at_the_end",
+                "type": "Function",
+                "lineno": 68
+              },
+              {
+                "nodeid": "tests/test_document.py::test_get_word_before_cursor_with_whitespace_and_pattern",
+                "type": "Function",
+                "lineno": 73
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "tests/test_document.py::test_current_char",
+            "lineno": 16,
+            "outcome": "passed",
+            "keywords": [
+              "test_current_char",
+              "test_document.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00026302412152290344,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00014573894441127777,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00014105439186096191,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_document.py::test_text_before_cursor",
+            "lineno": 21,
+            "outcome": "passed",
+            "keywords": [
+              "test_text_before_cursor",
+              "test_document.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00018637627363204956,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00013025663793087006,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012724846601486206,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_document.py::test_text_after_cursor",
+            "lineno": 25,
+            "outcome": "passed",
+            "keywords": [
+              "test_text_after_cursor",
+              "test_document.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001529548317193985,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00011591054499149323,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010758265852928162,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_document.py::test_lines",
+            "lineno": 29,
+            "outcome": "passed",
+            "keywords": [
+              "test_lines",
+              "test_document.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001498498022556305,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00011328421533107758,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010501593351364136,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_document.py::test_line_count",
+            "lineno": 33,
+            "outcome": "passed",
+            "keywords": [
+              "test_line_count",
+              "test_document.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001502111554145813,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00011576153337955475,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010625459253787994,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_document.py::test_current_line_before_cursor",
+            "lineno": 37,
+            "outcome": "passed",
+            "keywords": [
+              "test_current_line_before_cursor",
+              "test_document.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00015138834714889526,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0001203976571559906,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010651722550392151,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_document.py::test_current_line_after_cursor",
+            "lineno": 41,
+            "outcome": "passed",
+            "keywords": [
+              "test_current_line_after_cursor",
+              "test_document.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.000157967209815979,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00011048093438148499,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010506808757781982,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_document.py::test_current_line",
+            "lineno": 45,
+            "outcome": "passed",
+            "keywords": [
+              "test_current_line",
+              "test_document.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014982372522354126,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00012568198144435883,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012521445751190186,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_document.py::test_cursor_position",
+            "lineno": 49,
+            "outcome": "passed",
+            "keywords": [
+              "test_cursor_position",
+              "test_document.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001495014876127243,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0001308247447013855,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010729581117630005,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_document.py::test_translate_index_to_position",
+            "lineno": 58,
+            "outcome": "passed",
+            "keywords": [
+              "test_translate_index_to_position",
+              "test_document.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014978088438510895,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00012541189789772034,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010727904736995697,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_document.py::test_is_cursor_at_the_end",
+            "lineno": 68,
+            "outcome": "passed",
+            "keywords": [
+              "test_is_cursor_at_the_end",
+              "test_document.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00015054456889629364,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0001310594379901886,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010625272989273071,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_document.py::test_get_word_before_cursor_with_whitespace_and_pattern",
+            "lineno": 73,
+            "outcome": "passed",
+            "keywords": [
+              "test_get_word_before_cursor_with_whitespace_and_pattern",
+              "test_document.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 9.935162961483002e-05,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0001302473247051239,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 9.627826511859894e-05,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    },
+    "tests/test_formatted_text.py": {
+      "returncode": 0,
+      "stdout": "basic html\nhtml with fg bg\nansi formatting\nansi dim\nansi 256 color\nansi true color\nansi interpolation\ninterpolation\nhtml interpolation\nmerge formatted text\npygments tokens\nsplit lines\nsplit lines 2\nsplit lines 3\nsplit lines 4\n\n15 passed in 0.09s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1783591348.7927215,
+        "duration": 0.09183239936828613,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/wip/prompt-toolkit-fullrepro-001/filter/reference_upstream_run/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 15,
+          "total": 15,
+          "collected": 15
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "tests/test_formatted_text.py::test_basic_html",
+                "type": "Function",
+                "lineno": 14
+              },
+              {
+                "nodeid": "tests/test_formatted_text.py::test_html_with_fg_bg",
+                "type": "Function",
+                "lineno": 35
+              },
+              {
+                "nodeid": "tests/test_formatted_text.py::test_ansi_formatting",
+                "type": "Function",
+                "lineno": 55
+              },
+              {
+                "nodeid": "tests/test_formatted_text.py::test_ansi_dim",
+                "type": "Function",
+                "lineno": 91
+              },
+              {
+                "nodeid": "tests/test_formatted_text.py::test_ansi_256_color",
+                "type": "Function",
+                "lineno": 131
+              },
+              {
+                "nodeid": "tests/test_formatted_text.py::test_ansi_true_color",
+                "type": "Function",
+                "lineno": 140
+              },
+              {
+                "nodeid": "tests/test_formatted_text.py::test_ansi_interpolation",
+                "type": "Function",
+                "lineno": 147
+              },
+              {
+                "nodeid": "tests/test_formatted_text.py::test_interpolation",
+                "type": "Function",
+                "lineno": 212
+              },
+              {
+                "nodeid": "tests/test_formatted_text.py::test_html_interpolation",
+                "type": "Function",
+                "lineno": 232
+              },
+              {
+                "nodeid": "tests/test_formatted_text.py::test_merge_formatted_text",
+                "type": "Function",
+                "lineno": 254
+              },
+              {
+                "nodeid": "tests/test_formatted_text.py::test_pygments_tokens",
+                "type": "Function",
+                "lineno": 265
+              },
+              {
+                "nodeid": "tests/test_formatted_text.py::test_split_lines",
+                "type": "Function",
+                "lineno": 279
+              },
+              {
+                "nodeid": "tests/test_formatted_text.py::test_split_lines_2",
+                "type": "Function",
+                "lineno": 289
+              },
+              {
+                "nodeid": "tests/test_formatted_text.py::test_split_lines_3",
+                "type": "Function",
+                "lineno": 301
+              },
+              {
+                "nodeid": "tests/test_formatted_text.py::test_split_lines_4",
+                "type": "Function",
+                "lineno": 328
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "tests/test_formatted_text.py::test_basic_html",
+            "lineno": 14,
+            "outcome": "passed",
+            "keywords": [
+              "test_basic_html",
+              "test_formatted_text.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00018462911248207092,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00027047842741012573,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011816062033176422,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_formatted_text.py::test_html_with_fg_bg",
+            "lineno": 35,
+            "outcome": "passed",
+            "keywords": [
+              "test_html_with_fg_bg",
+              "test_formatted_text.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010643154382705688,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0002897605299949646,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.000109085813164711,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_formatted_text.py::test_ansi_formatting",
+            "lineno": 55,
+            "outcome": "passed",
+            "keywords": [
+              "test_ansi_formatting",
+              "test_formatted_text.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010142475366592407,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00015853159129619598,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010026805102825165,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_formatted_text.py::test_ansi_dim",
+            "lineno": 91,
+            "outcome": "passed",
+            "keywords": [
+              "test_ansi_dim",
+              "test_formatted_text.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010176748037338257,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00015364587306976318,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 9.735673666000366e-05,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_formatted_text.py::test_ansi_256_color",
+            "lineno": 131,
+            "outcome": "passed",
+            "keywords": [
+              "test_ansi_256_color",
+              "test_formatted_text.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010039284825325012,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00013077259063720703,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010013580322265625,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_formatted_text.py::test_ansi_true_color",
+            "lineno": 140,
+            "outcome": "passed",
+            "keywords": [
+              "test_ansi_true_color",
+              "test_formatted_text.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010046176612377167,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00014661997556686401,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010032393038272858,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_formatted_text.py::test_ansi_interpolation",
+            "lineno": 147,
+            "outcome": "passed",
+            "keywords": [
+              "test_ansi_interpolation",
+              "test_formatted_text.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010110251605510712,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00026921555399894714,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010811910033226013,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_formatted_text.py::test_interpolation",
+            "lineno": 212,
+            "outcome": "passed",
+            "keywords": [
+              "test_interpolation",
+              "test_formatted_text.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00011284463107585907,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00022633560001850128,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010547228157520294,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_formatted_text.py::test_html_interpolation",
+            "lineno": 232,
+            "outcome": "passed",
+            "keywords": [
+              "test_html_interpolation",
+              "test_formatted_text.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.000101480633020401,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0006571616977453232,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010999664664268494,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_formatted_text.py::test_merge_formatted_text",
+            "lineno": 254,
+            "outcome": "passed",
+            "keywords": [
+              "test_merge_formatted_text",
+              "test_formatted_text.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010365433990955353,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00022079981863498688,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010223127901554108,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_formatted_text.py::test_pygments_tokens",
+            "lineno": 265,
+            "outcome": "passed",
+            "keywords": [
+              "test_pygments_tokens",
+              "test_formatted_text.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 9.893998503684998e-05,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00011853687465190887,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 9.672902524471283e-05,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_formatted_text.py::test_split_lines",
+            "lineno": 279,
+            "outcome": "passed",
+            "keywords": [
+              "test_split_lines",
+              "test_formatted_text.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010250136256217957,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0001169797033071518,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 9.454041719436646e-05,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_formatted_text.py::test_split_lines_2",
+            "lineno": 289,
+            "outcome": "passed",
+            "keywords": [
+              "test_split_lines_2",
+              "test_formatted_text.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001017935574054718,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00012544170022010803,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 9.736232459545135e-05,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_formatted_text.py::test_split_lines_3",
+            "lineno": 301,
+            "outcome": "passed",
+            "keywords": [
+              "test_split_lines_3",
+              "test_formatted_text.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010163336992263794,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00012151896953582764,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 9.653158485889435e-05,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_formatted_text.py::test_split_lines_4",
+            "lineno": 328,
+            "outcome": "passed",
+            "keywords": [
+              "test_split_lines_4",
+              "test_formatted_text.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010977499186992645,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00011646933853626251,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011461041867733002,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    },
+    "tests/test_key_binding.py": {
+      "returncode": 0,
+      "stdout": "remove bindings\nfeed simple\nfeed several\ncontrol square closed any\ncommon prefix\nprevious key sequence\n\n6 passed in 0.10s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1783591349.1512656,
+        "duration": 0.10436058044433594,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/wip/prompt-toolkit-fullrepro-001/filter/reference_upstream_run/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 6,
+          "total": 6,
+          "collected": 6
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "tests/test_key_binding.py::test_remove_bindings",
+                "type": "Function",
+                "lineno": 79
+              },
+              {
+                "nodeid": "tests/test_key_binding.py::test_feed_simple",
+                "type": "Function",
+                "lineno": 101
+              },
+              {
+                "nodeid": "tests/test_key_binding.py::test_feed_several",
+                "type": "Function",
+                "lineno": 110
+              },
+              {
+                "nodeid": "tests/test_key_binding.py::test_control_square_closed_any",
+                "type": "Function",
+                "lineno": 136
+              },
+              {
+                "nodeid": "tests/test_key_binding.py::test_common_prefix",
+                "type": "Function",
+                "lineno": 145
+              },
+              {
+                "nodeid": "tests/test_key_binding.py::test_previous_key_sequence",
+                "type": "Function",
+                "lineno": 162
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "tests/test_key_binding.py::test_remove_bindings",
+            "lineno": 79,
+            "outcome": "passed",
+            "keywords": [
+              "test_remove_bindings",
+              "test_key_binding.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00023120269179344177,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.007503807544708252,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013173557817935944,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_key_binding.py::test_feed_simple",
+            "lineno": 101,
+            "outcome": "passed",
+            "keywords": [
+              "test_feed_simple",
+              "test_key_binding.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0002619996666908264,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.004354769363999367,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013560056686401367,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_key_binding.py::test_feed_several",
+            "lineno": 110,
+            "outcome": "passed",
+            "keywords": [
+              "test_feed_several",
+              "test_key_binding.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0002583600580692291,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.004347296431660652,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00014369003474712372,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_key_binding.py::test_control_square_closed_any",
+            "lineno": 136,
+            "outcome": "passed",
+            "keywords": [
+              "test_control_square_closed_any",
+              "test_key_binding.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00026569142937660217,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0046714358031749725,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001412946730852127,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_key_binding.py::test_common_prefix",
+            "lineno": 145,
+            "outcome": "passed",
+            "keywords": [
+              "test_common_prefix",
+              "test_key_binding.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00025331415235996246,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.004219779744744301,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013910606503486633,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_key_binding.py::test_previous_key_sequence",
+            "lineno": 162,
+            "outcome": "passed",
+            "keywords": [
+              "test_previous_key_sequence",
+              "test_key_binding.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00026674382388591766,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0048300642520189285,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00014144368469715118,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    },
+    "tests/test_layout.py": {
+      "returncode": 0,
+      "stdout": "layout class\ncreate invalid layout\n\n2 passed in 0.06s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1783591349.4760542,
+        "duration": 0.06535768508911133,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/wip/prompt-toolkit-fullrepro-001/filter/reference_upstream_run/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 2,
+          "total": 2,
+          "collected": 2
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "tests/test_layout.py::test_layout_class",
+                "type": "Function",
+                "lineno": 9
+              },
+              {
+                "nodeid": "tests/test_layout.py::test_create_invalid_layout",
+                "type": "Function",
+                "lineno": 50
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "tests/test_layout.py::test_layout_class",
+            "lineno": 9,
+            "outcome": "passed",
+            "keywords": [
+              "test_layout_class",
+              "test_layout.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00015797652304172516,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.000515516847372055,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013802386820316315,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_layout.py::test_create_invalid_layout",
+            "lineno": 50,
+            "outcome": "passed",
+            "keywords": [
+              "test_create_invalid_layout",
+              "test_layout.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001125819981098175,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00018956512212753296,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011212378740310669,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    },
+    "tests/test_style.py": {
+      "returncode": 0,
+      "stdout": "style from dict\nclass combinations 1\nclass combinations 2\nsubstyles\nswap light and dark style transformation\n\n5 passed in 0.07s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1783591349.8118145,
+        "duration": 0.07380437850952148,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/wip/prompt-toolkit-fullrepro-001/filter/reference_upstream_run/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 5,
+          "total": 5,
+          "collected": 5
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "tests/test_style.py::test_style_from_dict",
+                "type": "Function",
+                "lineno": 5
+              },
+              {
+                "nodeid": "tests/test_style.py::test_class_combinations_1",
+                "type": "Function",
+                "lineno": 88
+              },
+              {
+                "nodeid": "tests/test_style.py::test_class_combinations_2",
+                "type": "Function",
+                "lineno": 119
+              },
+              {
+                "nodeid": "tests/test_style.py::test_substyles",
+                "type": "Function",
+                "lineno": 162
+              },
+              {
+                "nodeid": "tests/test_style.py::test_swap_light_and_dark_style_transformation",
+                "type": "Function",
+                "lineno": 234
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "tests/test_style.py::test_style_from_dict",
+            "lineno": 5,
+            "outcome": "passed",
+            "keywords": [
+              "test_style_from_dict",
+              "test_style.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001687966287136078,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00024046748876571655,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001169200986623764,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_style.py::test_class_combinations_1",
+            "lineno": 88,
+            "outcome": "passed",
+            "keywords": [
+              "test_class_combinations_1",
+              "test_style.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010305643081665039,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00021835044026374817,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010289251804351807,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_style.py::test_class_combinations_2",
+            "lineno": 119,
+            "outcome": "passed",
+            "keywords": [
+              "test_class_combinations_2",
+              "test_style.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010127946734428406,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0003162045031785965,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010568462312221527,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_style.py::test_substyles",
+            "lineno": 162,
+            "outcome": "passed",
+            "keywords": [
+              "test_substyles",
+              "test_style.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010090135037899017,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0002404581755399704,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011595338582992554,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_style.py::test_swap_light_and_dark_style_transformation",
+            "lineno": 234,
+            "outcome": "passed",
+            "keywords": [
+              "test_swap_light_and_dark_style_transformation",
+              "test_style.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010185688734054565,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00015718303620815277,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010143965482711792,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    },
+    "tests/test_style_transformation.py": {
+      "returncode": 0,
+      "stdout": "adjust brightness style transformation\n\n1 passed in 0.05s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1783591350.1192245,
+        "duration": 0.051462411880493164,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/wip/prompt-toolkit-fullrepro-001/filter/reference_upstream_run/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 1,
+          "total": 1,
+          "collected": 1
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "tests/test_style_transformation.py::test_adjust_brightness_style_transformation",
+                "type": "Function",
+                "lineno": 23
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "tests/test_style_transformation.py::test_adjust_brightness_style_transformation",
+            "lineno": 23,
+            "outcome": "passed",
+            "keywords": [
+              "test_adjust_brightness_style_transformation",
+              "test_style_transformation.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0002484079450368881,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00018857605755329132,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00014204345643520355,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "summary": {
+    "passed": 68,
+    "total": 68
+  },
+  "pass_rate_excluding_skips": 1.0,
+  "by_layer": {
+    "atomic": {
+      "passed": 45,
+      "total": 45
+    },
+    "integration": {
+      "passed": 23,
+      "total": 23
+    }
+  },
+  "cases": [
+    {
+      "nodeid": "tests/test_buffer.py::test_initial",
+      "base_nodeid": "tests/test_buffer.py::test_initial",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00013426877558231354,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_buffer.py::test_insert_text",
+      "base_nodeid": "tests/test_buffer.py::test_insert_text",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00014139525592327118,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_buffer.py::test_cursor_movement",
+      "base_nodeid": "tests/test_buffer.py::test_cursor_movement",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00020152516663074493,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_buffer.py::test_backspace",
+      "base_nodeid": "tests/test_buffer.py::test_backspace",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.000155765563249588,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_buffer.py::test_cursor_up",
+      "base_nodeid": "tests/test_buffer.py::test_cursor_up",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00019820407032966614,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_buffer.py::test_cursor_down",
+      "base_nodeid": "tests/test_buffer.py::test_cursor_down",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0001904573291540146,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_buffer.py::test_join_next_line",
+      "base_nodeid": "tests/test_buffer.py::test_join_next_line",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00020384415984153748,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_buffer.py::test_newline",
+      "base_nodeid": "tests/test_buffer.py::test_newline",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00015855580568313599,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_buffer.py::test_swap_characters_before_cursor",
+      "base_nodeid": "tests/test_buffer.py::test_swap_characters_before_cursor",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00015537813305854797,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_completion.py::test_pathcompleter_completes_in_current_directory",
+      "base_nodeid": "tests/test_completion.py::test_pathcompleter_completes_in_current_directory",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0003258753567934036,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_completion.py::test_pathcompleter_completes_files_in_current_directory",
+      "base_nodeid": "tests/test_completion.py::test_pathcompleter_completes_files_in_current_directory",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0007674656808376312,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_completion.py::test_pathcompleter_completes_files_in_absolute_directory",
+      "base_nodeid": "tests/test_completion.py::test_pathcompleter_completes_files_in_absolute_directory",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0006347298622131348,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_completion.py::test_pathcompleter_completes_directories_with_only_directories",
+      "base_nodeid": "tests/test_completion.py::test_pathcompleter_completes_directories_with_only_directories",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0009205490350723267,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_completion.py::test_pathcompleter_respects_completions_under_min_input_len",
+      "base_nodeid": "tests/test_completion.py::test_pathcompleter_respects_completions_under_min_input_len",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0011279471218585968,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_completion.py::test_pathcompleter_does_not_expanduser_by_default",
+      "base_nodeid": "tests/test_completion.py::test_pathcompleter_does_not_expanduser_by_default",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00015359185636043549,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_completion.py::test_pathcompleter_can_expanduser",
+      "base_nodeid": "tests/test_completion.py::test_pathcompleter_can_expanduser",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0003033112734556198,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_completion.py::test_pathcompleter_can_apply_file_filter",
+      "base_nodeid": "tests/test_completion.py::test_pathcompleter_can_apply_file_filter",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0008350629359483719,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_completion.py::test_pathcompleter_get_paths_constrains_path",
+      "base_nodeid": "tests/test_completion.py::test_pathcompleter_get_paths_constrains_path",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0009670741856098175,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_completion.py::test_word_completer_static_word_list",
+      "base_nodeid": "tests/test_completion.py::test_word_completer_static_word_list",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00020765140652656555,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_completion.py::test_word_completer_ignore_case",
+      "base_nodeid": "tests/test_completion.py::test_word_completer_ignore_case",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00018328800797462463,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_completion.py::test_word_completer_match_middle",
+      "base_nodeid": "tests/test_completion.py::test_word_completer_match_middle",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00014839880168437958,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_completion.py::test_word_completer_sentence",
+      "base_nodeid": "tests/test_completion.py::test_word_completer_sentence",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00015578418970108032,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_completion.py::test_word_completer_dynamic_word_list",
+      "base_nodeid": "tests/test_completion.py::test_word_completer_dynamic_word_list",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00016459450125694275,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_completion.py::test_word_completer_pattern",
+      "base_nodeid": "tests/test_completion.py::test_word_completer_pattern",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00030374713242053986,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_completion.py::test_fuzzy_completer",
+      "base_nodeid": "tests/test_completion.py::test_fuzzy_completer",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.001262269914150238,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_completion.py::test_nested_completer",
+      "base_nodeid": "tests/test_completion.py::test_nested_completer",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00032727234065532684,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_completion.py::test_deduplicate_completer",
+      "base_nodeid": "tests/test_completion.py::test_deduplicate_completer",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00020369142293930054,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_document.py::test_current_char",
+      "base_nodeid": "tests/test_document.py::test_current_char",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00014573894441127777,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_document.py::test_text_before_cursor",
+      "base_nodeid": "tests/test_document.py::test_text_before_cursor",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00013025663793087006,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_document.py::test_text_after_cursor",
+      "base_nodeid": "tests/test_document.py::test_text_after_cursor",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00011591054499149323,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_document.py::test_lines",
+      "base_nodeid": "tests/test_document.py::test_lines",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00011328421533107758,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_document.py::test_line_count",
+      "base_nodeid": "tests/test_document.py::test_line_count",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00011576153337955475,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_document.py::test_current_line_before_cursor",
+      "base_nodeid": "tests/test_document.py::test_current_line_before_cursor",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0001203976571559906,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_document.py::test_current_line_after_cursor",
+      "base_nodeid": "tests/test_document.py::test_current_line_after_cursor",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00011048093438148499,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_document.py::test_current_line",
+      "base_nodeid": "tests/test_document.py::test_current_line",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00012568198144435883,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_document.py::test_cursor_position",
+      "base_nodeid": "tests/test_document.py::test_cursor_position",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0001308247447013855,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_document.py::test_translate_index_to_position",
+      "base_nodeid": "tests/test_document.py::test_translate_index_to_position",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00012541189789772034,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_document.py::test_is_cursor_at_the_end",
+      "base_nodeid": "tests/test_document.py::test_is_cursor_at_the_end",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0001310594379901886,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_document.py::test_get_word_before_cursor_with_whitespace_and_pattern",
+      "base_nodeid": "tests/test_document.py::test_get_word_before_cursor_with_whitespace_and_pattern",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0001302473247051239,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_formatted_text.py::test_basic_html",
+      "base_nodeid": "tests/test_formatted_text.py::test_basic_html",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00027047842741012573,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_formatted_text.py::test_html_with_fg_bg",
+      "base_nodeid": "tests/test_formatted_text.py::test_html_with_fg_bg",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0002897605299949646,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_formatted_text.py::test_ansi_formatting",
+      "base_nodeid": "tests/test_formatted_text.py::test_ansi_formatting",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00015853159129619598,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_formatted_text.py::test_ansi_dim",
+      "base_nodeid": "tests/test_formatted_text.py::test_ansi_dim",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00015364587306976318,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_formatted_text.py::test_ansi_256_color",
+      "base_nodeid": "tests/test_formatted_text.py::test_ansi_256_color",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00013077259063720703,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_formatted_text.py::test_ansi_true_color",
+      "base_nodeid": "tests/test_formatted_text.py::test_ansi_true_color",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00014661997556686401,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_formatted_text.py::test_ansi_interpolation",
+      "base_nodeid": "tests/test_formatted_text.py::test_ansi_interpolation",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00026921555399894714,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_formatted_text.py::test_interpolation",
+      "base_nodeid": "tests/test_formatted_text.py::test_interpolation",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00022633560001850128,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_formatted_text.py::test_html_interpolation",
+      "base_nodeid": "tests/test_formatted_text.py::test_html_interpolation",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0006571616977453232,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_formatted_text.py::test_merge_formatted_text",
+      "base_nodeid": "tests/test_formatted_text.py::test_merge_formatted_text",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00022079981863498688,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_formatted_text.py::test_pygments_tokens",
+      "base_nodeid": "tests/test_formatted_text.py::test_pygments_tokens",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00011853687465190887,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_formatted_text.py::test_split_lines",
+      "base_nodeid": "tests/test_formatted_text.py::test_split_lines",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0001169797033071518,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_formatted_text.py::test_split_lines_2",
+      "base_nodeid": "tests/test_formatted_text.py::test_split_lines_2",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00012544170022010803,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_formatted_text.py::test_split_lines_3",
+      "base_nodeid": "tests/test_formatted_text.py::test_split_lines_3",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00012151896953582764,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_formatted_text.py::test_split_lines_4",
+      "base_nodeid": "tests/test_formatted_text.py::test_split_lines_4",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00011646933853626251,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_key_binding.py::test_remove_bindings",
+      "base_nodeid": "tests/test_key_binding.py::test_remove_bindings",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.007503807544708252,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_key_binding.py::test_feed_simple",
+      "base_nodeid": "tests/test_key_binding.py::test_feed_simple",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.004354769363999367,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_key_binding.py::test_feed_several",
+      "base_nodeid": "tests/test_key_binding.py::test_feed_several",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.004347296431660652,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_key_binding.py::test_control_square_closed_any",
+      "base_nodeid": "tests/test_key_binding.py::test_control_square_closed_any",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0046714358031749725,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_key_binding.py::test_common_prefix",
+      "base_nodeid": "tests/test_key_binding.py::test_common_prefix",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.004219779744744301,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_key_binding.py::test_previous_key_sequence",
+      "base_nodeid": "tests/test_key_binding.py::test_previous_key_sequence",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0048300642520189285,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_layout.py::test_layout_class",
+      "base_nodeid": "tests/test_layout.py::test_layout_class",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.000515516847372055,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_layout.py::test_create_invalid_layout",
+      "base_nodeid": "tests/test_layout.py::test_create_invalid_layout",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00018956512212753296,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_style.py::test_style_from_dict",
+      "base_nodeid": "tests/test_style.py::test_style_from_dict",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00024046748876571655,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_style.py::test_class_combinations_1",
+      "base_nodeid": "tests/test_style.py::test_class_combinations_1",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00021835044026374817,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_style.py::test_class_combinations_2",
+      "base_nodeid": "tests/test_style.py::test_class_combinations_2",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0003162045031785965,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_style.py::test_substyles",
+      "base_nodeid": "tests/test_style.py::test_substyles",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0002404581755399704,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_style.py::test_swap_light_and_dark_style_transformation",
+      "base_nodeid": "tests/test_style.py::test_swap_light_and_dark_style_transformation",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00015718303620815277,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_style_transformation.py::test_adjust_brightness_style_transformation",
+      "base_nodeid": "tests/test_style_transformation.py::test_adjust_brightness_style_transformation",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00018857605755329132,
+        "outcome": "passed"
+      }
+    }
+  ]
+}

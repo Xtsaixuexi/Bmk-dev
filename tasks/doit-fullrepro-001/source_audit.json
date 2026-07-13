@@ -1,0 +1,39 @@
+{
+  "task_id": "doit-fullrepro-001",
+  "stage": 1,
+  "source_repo": "pydoit/doit",
+  "checkout_name": "pydoit__doit",
+  "source_path": "/root/autodl-tmp/new-e2e/pydoit__doit",
+  "remote": "https://github.com/pydoit/doit.git",
+  "commit": "1f9cbbce78a93f96a35abf2db5425361e2abf142",
+  "mechanical_audit": {
+    "src_loc": 6669,
+    "source_py_files": 99,
+    "test_files": 34,
+    "test_functions_rough": 545,
+    "docs_files_rough": 97,
+    "private_import_file_rate": 0.0,
+    "network_test_file_rate": 0.088,
+    "snapshot_test_file_rate": 0.0,
+    "priority_score": 43.6,
+    "priority_reason": "screen_keep with docs/tests and acceptable import risk"
+  },
+  "collect_pre_screen": {
+    "status": "COLLECT_OK",
+    "returncode": 0,
+    "collected_nodeids": 909,
+    "error_markers": 0,
+    "command": [
+      "/root/miniconda3/bin/python",
+      "-m",
+      "pytest",
+      "--collect-only",
+      "-q",
+      "-o",
+      "addopts=",
+      "tests"
+    ]
+  },
+  "decision": "keep",
+  "selected_at": "2026-07-09"
+}

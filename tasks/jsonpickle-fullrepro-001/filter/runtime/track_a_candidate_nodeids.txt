@@ -1,0 +1,12 @@
+tests/collections_test.py::test_dict_no_cycle
+tests/collections_test.py::test_dict_self_cycle
+tests/collections_test.py::test_dict_mutual_cycle
+tests/collections_test.py::test_set_no_cycle
+tests/collections_test.py::test_set_self_cycle
+tests/collections_test.py::test_set_mutual_cycle
+tests/document_test.py::test_cyclical
+tests/stdlib_test.py::test_random_uuid
+tests/stdlib_test.py::test_known_uuid
+tests/stdlib_test.py::test_bytestream
+tests/wizard_test.py::test_with_pickling
+tests/zoneinfo_test.py::test_zoneinfo

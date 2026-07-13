@@ -1,0 +1,29 @@
+{
+  "summary": {
+    "passed": 81,
+    "total": 81
+  },
+  "pass_rate_excluding_skips": 1.0,
+  "by_layer": {
+    "atomic": {
+      "passed": 8,
+      "total": 8
+    },
+    "integration": {
+      "passed": 63,
+      "total": 63
+    },
+    "system_e2e": {
+      "passed": 10,
+      "total": 10
+    }
+  },
+  "reference_validation": "retained nodeids passed against reference implementation using recorded harness and environment",
+  "source_repo": "/root/autodl-tmp/Bmk-Lizhiqian/../e2e/markdown-it-py",
+  "full_score_json": "/root/autodl-tmp/Bmk-Lizhiqian/logs/reference-runs/e2e-remaining-20260705-rerun/markdown-it-py/score_full.json",
+  "import_provenance": {
+    "returncode": 0,
+    "stdout": "/root/autodl-tmp/e2e/markdown-it-py/markdown_it/__init__.py\n",
+    "stderr": ""
+  }
+}

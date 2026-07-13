@@ -1,0 +1,4896 @@
+{
+  "source_repo": "/root/autodl-tmp/e2e/cerberus",
+  "solution_dir": "/root/autodl-tmp/e2e/cerberus",
+  "nodeids": "/root/autodl-tmp/Bmk-Lizhiqian/wip/cerberus-fullrepro-001/filter/kept_nodeids.txt",
+  "taxonomy": "/root/autodl-tmp/Bmk-Lizhiqian/wip/cerberus-fullrepro-001/filter/test_taxonomy_score.csv",
+  "run_dir": "/root/autodl-tmp/Bmk-Lizhiqian/wip/cerberus-fullrepro-001/reference/oracle_run",
+  "grouped_results": {
+    "cerberus/tests/test_assorted.py": {
+      "returncode": 0,
+      "stdout": ".                                                                        [100%]\n1 passed in 0.02s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1782933387.3848865,
+        "duration": 0.020544767379760742,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/wip/cerberus-fullrepro-001/reference/oracle_run/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 1,
+          "total": 1,
+          "collected": 1
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "cerberus/tests/test_assorted.py::test_dynamic_types",
+                "type": "Function",
+                "lineno": 73
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "cerberus/tests/test_assorted.py::test_dynamic_types",
+            "lineno": 73,
+            "outcome": "passed",
+            "keywords": [
+              "test_dynamic_types",
+              "test_assorted.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0003910195082426071,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.002385145053267479,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011725164949893951,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    },
+    "cerberus/tests/test_customization.py": {
+      "returncode": 0,
+      "stdout": "...                                                                      [100%]\n3 passed in 0.02s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1782933387.6683288,
+        "duration": 0.02321767807006836,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/wip/cerberus-fullrepro-001/reference/oracle_run/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 3,
+          "total": 3,
+          "collected": 3
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "cerberus/tests/test_customization.py::test_contextual_data_preservation",
+                "type": "Function",
+                "lineno": 9
+              },
+              {
+                "nodeid": "cerberus/tests/test_customization.py::test_docstring_parsing",
+                "type": "Function",
+                "lineno": 29
+              },
+              {
+                "nodeid": "cerberus/tests/test_customization.py::test_schema_validation_can_be_disabled_in_schema_setter",
+                "type": "Function",
+                "lineno": 100
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "cerberus/tests/test_customization.py::test_contextual_data_preservation",
+            "lineno": 9,
+            "outcome": "passed",
+            "keywords": [
+              "test_contextual_data_preservation",
+              "test_customization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00040860287845134735,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0033178534358739853,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011884979903697968,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_customization.py::test_docstring_parsing",
+            "lineno": 29,
+            "outcome": "passed",
+            "keywords": [
+              "test_docstring_parsing",
+              "test_customization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010501034557819366,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0008576065301895142,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010695494711399078,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_customization.py::test_schema_validation_can_be_disabled_in_schema_setter",
+            "lineno": 100,
+            "outcome": "passed",
+            "keywords": [
+              "test_schema_validation_can_be_disabled_in_schema_setter",
+              "test_customization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010148435831069946,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0014878325164318085,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012487173080444336,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    },
+    "cerberus/tests/test_errors.py": {
+      "returncode": 0,
+      "stdout": "..                                                                       [100%]\n2 passed in 0.06s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1782933387.98716,
+        "duration": 0.06406402587890625,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/wip/cerberus-fullrepro-001/reference/oracle_run/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 2,
+          "total": 2,
+          "collected": 2
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "cerberus/tests/test_errors.py::test_queries",
+                "type": "Function",
+                "lineno": 272
+              },
+              {
+                "nodeid": "cerberus/tests/test_errors.py::test_basic_error_handler",
+                "type": "Function",
+                "lineno": 297
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "cerberus/tests/test_errors.py::test_queries",
+            "lineno": 272,
+            "outcome": "passed",
+            "keywords": [
+              "test_queries",
+              "test_errors.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.000416019931435585,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.001976633444428444,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001245792955160141,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_errors.py::test_basic_error_handler",
+            "lineno": 297,
+            "outcome": "passed",
+            "keywords": [
+              "test_basic_error_handler",
+              "test_errors.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00011334940791130066,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00037266500294208527,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012892484664916992,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    },
+    "cerberus/tests/test_normalization.py": {
+      "returncode": 0,
+      "stdout": ".........................................                                [100%]\n41 passed in 0.12s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1782933388.3592558,
+        "duration": 0.12195277214050293,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/wip/cerberus-fullrepro-001/reference/oracle_run/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 41,
+          "total": 41,
+          "collected": 41
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_coerce",
+                "type": "Function",
+                "lineno": 20
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_coerce_in_dictschema",
+                "type": "Function",
+                "lineno": 27
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_coerce_in_listschema",
+                "type": "Function",
+                "lineno": 34
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_coerce_in_listitems",
+                "type": "Function",
+                "lineno": 41
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_coerce_in_dictschema_in_listschema",
+                "type": "Function",
+                "lineno": 53
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_coerce_not_destructive",
+                "type": "Function",
+                "lineno": 61
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_coerce_unknown",
+                "type": "Function",
+                "lineno": 117
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_custom_coerce_and_rename",
+                "type": "Function",
+                "lineno": 124
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_coerce_chain",
+                "type": "Function",
+                "lineno": 140
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_coerce_non_digit_in_sequence",
+                "type": "Function",
+                "lineno": 156
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_nullables_dont_fail_coerce",
+                "type": "Function",
+                "lineno": 166
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_normalized",
+                "type": "Function",
+                "lineno": 184
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_rename",
+                "type": "Function",
+                "lineno": 191
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_rename_handler",
+                "type": "Function",
+                "lineno": 202
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_purge_unknown",
+                "type": "Function",
+                "lineno": 210
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_purge_unknown_in_subschema",
+                "type": "Function",
+                "lineno": 218
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_issue_147_complex",
+                "type": "Function",
+                "lineno": 231
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_issue_147_nested_dict",
+                "type": "Function",
+                "lineno": 243
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_coerce_in_valuesrules",
+                "type": "Function",
+                "lineno": 254
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_coerce_in_keysrules",
+                "type": "Function",
+                "lineno": 264
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_coercion_of_sequence_items",
+                "type": "Function",
+                "lineno": 274
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_default_missing[default0]",
+                "type": "Function",
+                "lineno": 284
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_default_missing[default1]",
+                "type": "Function",
+                "lineno": 284
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_default_existent[default0]",
+                "type": "Function",
+                "lineno": 296
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_default_existent[default1]",
+                "type": "Function",
+                "lineno": 296
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_default_none_nullable[default0]",
+                "type": "Function",
+                "lineno": 307
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_default_none_nullable[default1]",
+                "type": "Function",
+                "lineno": 307
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_default_none_nonnullable[default0]",
+                "type": "Function",
+                "lineno": 318
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_default_none_nonnullable[default1]",
+                "type": "Function",
+                "lineno": 318
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_default_none_default_value",
+                "type": "Function",
+                "lineno": 330
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_default_missing_in_subschema[default0]",
+                "type": "Function",
+                "lineno": 340
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_default_missing_in_subschema[default1]",
+                "type": "Function",
+                "lineno": 340
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_depending_default_setters",
+                "type": "Function",
+                "lineno": 357
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_issue_250_no_type_pass_on_list",
+                "type": "Function",
+                "lineno": 398
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_issue_250_no_type_fail_pass_on_other",
+                "type": "Function",
+                "lineno": 431
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_271_normalising_tuples",
+                "type": "Function",
+                "lineno": 467
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_allow_unknown_wo_schema",
+                "type": "Function",
+                "lineno": 486
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_allow_unknown_with_purge_unknown",
+                "type": "Function",
+                "lineno": 492
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_allow_unknown_with_purge_unknown_subdocument",
+                "type": "Function",
+                "lineno": 500
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_purge_readonly",
+                "type": "Function",
+                "lineno": 514
+              },
+              {
+                "nodeid": "cerberus/tests/test_normalization.py::test_defaults_in_allow_unknown_schema",
+                "type": "Function",
+                "lineno": 526
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_coerce",
+            "lineno": 20,
+            "outcome": "passed",
+            "keywords": [
+              "test_coerce",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0003775041550397873,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.006484847515821457,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011578947305679321,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_coerce_in_dictschema",
+            "lineno": 27,
+            "outcome": "passed",
+            "keywords": [
+              "test_coerce_in_dictschema",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00011724792420864105,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0010427609086036682,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010720640420913696,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_coerce_in_listschema",
+            "lineno": 34,
+            "outcome": "passed",
+            "keywords": [
+              "test_coerce_in_listschema",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010154396295547485,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00132027268409729,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010744854807853699,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_coerce_in_listitems",
+            "lineno": 41,
+            "outcome": "passed",
+            "keywords": [
+              "test_coerce_in_listitems",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010303594172000885,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0013632271438837051,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001275632530450821,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_coerce_in_dictschema_in_listschema",
+            "lineno": 53,
+            "outcome": "passed",
+            "keywords": [
+              "test_coerce_in_dictschema_in_listschema",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010997802019119263,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0017633624374866486,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011615641415119171,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_coerce_not_destructive",
+            "lineno": 61,
+            "outcome": "passed",
+            "keywords": [
+              "test_coerce_not_destructive",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00011068582534790039,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00034069642424583435,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001179371029138565,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_coerce_unknown",
+            "lineno": 117,
+            "outcome": "passed",
+            "keywords": [
+              "test_coerce_unknown",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00011515803635120392,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0010489113628864288,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010686367750167847,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_custom_coerce_and_rename",
+            "lineno": 124,
+            "outcome": "passed",
+            "keywords": [
+              "test_custom_coerce_and_rename",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010186620056629181,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0017547942698001862,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011580809950828552,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_coerce_chain",
+            "lineno": 140,
+            "outcome": "passed",
+            "keywords": [
+              "test_coerce_chain",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010931119322776794,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.001573260873556137,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012008845806121826,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_coerce_non_digit_in_sequence",
+            "lineno": 156,
+            "outcome": "passed",
+            "keywords": [
+              "test_coerce_non_digit_in_sequence",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0004883725196123123,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.008546179160475731,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.000132853165268898,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_nullables_dont_fail_coerce",
+            "lineno": 166,
+            "outcome": "passed",
+            "keywords": [
+              "test_nullables_dont_fail_coerce",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001232922077178955,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0010095182806253433,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010653957724571228,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_normalized",
+            "lineno": 184,
+            "outcome": "passed",
+            "keywords": [
+              "test_normalized",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010181218385696411,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0005679074674844742,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001039598137140274,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_rename",
+            "lineno": 191,
+            "outcome": "passed",
+            "keywords": [
+              "test_rename",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0004654284566640854,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0004417784512042999,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012851879000663757,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_rename_handler",
+            "lineno": 202,
+            "outcome": "passed",
+            "keywords": [
+              "test_rename_handler",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00011011958122253418,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0006002709269523621,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010575912892818451,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_purge_unknown",
+            "lineno": 210,
+            "outcome": "passed",
+            "keywords": [
+              "test_purge_unknown",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010128319263458252,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00039194896817207336,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010424666106700897,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_purge_unknown_in_subschema",
+            "lineno": 218,
+            "outcome": "passed",
+            "keywords": [
+              "test_purge_unknown_in_subschema",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 9.945221245288849e-05,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0010897796601057053,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001175273209810257,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_issue_147_complex",
+            "lineno": 231,
+            "outcome": "passed",
+            "keywords": [
+              "test_issue_147_complex",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00011702626943588257,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0008552931249141693,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010664202272891998,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_issue_147_nested_dict",
+            "lineno": 243,
+            "outcome": "passed",
+            "keywords": [
+              "test_issue_147_nested_dict",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010190904140472412,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0003343634307384491,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010213255882263184,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_coerce_in_valuesrules",
+            "lineno": 254,
+            "outcome": "passed",
+            "keywords": [
+              "test_coerce_in_valuesrules",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010035187005996704,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0007985830307006836,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010693632066249847,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_coerce_in_keysrules",
+            "lineno": 264,
+            "outcome": "passed",
+            "keywords": [
+              "test_coerce_in_keysrules",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00012913160026073456,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0010384880006313324,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001063179224729538,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_coercion_of_sequence_items",
+            "lineno": 274,
+            "outcome": "passed",
+            "keywords": [
+              "test_coercion_of_sequence_items",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0004565063863992691,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0011163987219333649,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011915713548660278,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_default_missing[default0]",
+            "lineno": 284,
+            "outcome": "passed",
+            "keywords": [
+              "test_default_missing[default0]",
+              "parametrize",
+              "pytestmark",
+              "default0",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00020680390298366547,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0011385884135961533,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001297425478696823,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_default_missing[default1]",
+            "lineno": 284,
+            "outcome": "passed",
+            "keywords": [
+              "test_default_missing[default1]",
+              "parametrize",
+              "pytestmark",
+              "default1",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00019712001085281372,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0010784715414047241,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011924095451831818,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_default_existent[default0]",
+            "lineno": 296,
+            "outcome": "passed",
+            "keywords": [
+              "test_default_existent[default0]",
+              "parametrize",
+              "pytestmark",
+              "default0",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00019747577607631683,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0006338637322187424,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001188572496175766,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_default_existent[default1]",
+            "lineno": 296,
+            "outcome": "passed",
+            "keywords": [
+              "test_default_existent[default1]",
+              "parametrize",
+              "pytestmark",
+              "default1",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001981481909751892,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0011934265494346619,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011958740651607513,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_default_none_nullable[default0]",
+            "lineno": 307,
+            "outcome": "passed",
+            "keywords": [
+              "test_default_none_nullable[default0]",
+              "parametrize",
+              "pytestmark",
+              "default0",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001971665769815445,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0009536221623420715,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011952035129070282,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_default_none_nullable[default1]",
+            "lineno": 307,
+            "outcome": "passed",
+            "keywords": [
+              "test_default_none_nullable[default1]",
+              "parametrize",
+              "pytestmark",
+              "default1",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00022127293050289154,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0011832397431135178,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011994689702987671,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_default_none_nonnullable[default0]",
+            "lineno": 318,
+            "outcome": "passed",
+            "keywords": [
+              "test_default_none_nonnullable[default0]",
+              "parametrize",
+              "pytestmark",
+              "default0",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00019715167582035065,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.001028265804052353,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012077204883098602,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_default_none_nonnullable[default1]",
+            "lineno": 318,
+            "outcome": "passed",
+            "keywords": [
+              "test_default_none_nonnullable[default1]",
+              "parametrize",
+              "pytestmark",
+              "default1",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00019736029207706451,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0012512151151895523,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013642199337482452,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_default_none_default_value",
+            "lineno": 330,
+            "outcome": "passed",
+            "keywords": [
+              "test_default_none_default_value",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001142304390668869,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0010292008519172668,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010515749454498291,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_default_missing_in_subschema[default0]",
+            "lineno": 340,
+            "outcome": "passed",
+            "keywords": [
+              "test_default_missing_in_subschema[default0]",
+              "parametrize",
+              "pytestmark",
+              "default0",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00022020749747753143,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0012264735996723175,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001283995807170868,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_default_missing_in_subschema[default1]",
+            "lineno": 340,
+            "outcome": "passed",
+            "keywords": [
+              "test_default_missing_in_subschema[default1]",
+              "parametrize",
+              "pytestmark",
+              "default1",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00021691620349884033,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0013044476509094238,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012012943625450134,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_depending_default_setters",
+            "lineno": 357,
+            "outcome": "passed",
+            "keywords": [
+              "test_depending_default_setters",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010176748037338257,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0022460930049419403,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010845065116882324,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_issue_250_no_type_pass_on_list",
+            "lineno": 398,
+            "outcome": "passed",
+            "keywords": [
+              "test_issue_250_no_type_pass_on_list",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001027565449476242,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.001929115504026413,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011904910206794739,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_issue_250_no_type_fail_pass_on_other",
+            "lineno": 431,
+            "outcome": "passed",
+            "keywords": [
+              "test_issue_250_no_type_fail_pass_on_other",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00011126324534416199,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0016253292560577393,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010794401168823242,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_271_normalising_tuples",
+            "lineno": 467,
+            "outcome": "passed",
+            "keywords": [
+              "test_271_normalising_tuples",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001017991453409195,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.001312989741563797,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001345314085483551,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_allow_unknown_wo_schema",
+            "lineno": 486,
+            "outcome": "passed",
+            "keywords": [
+              "test_allow_unknown_wo_schema",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00011671148240566254,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.000776907429099083,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011537224054336548,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_allow_unknown_with_purge_unknown",
+            "lineno": 492,
+            "outcome": "passed",
+            "keywords": [
+              "test_allow_unknown_with_purge_unknown",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00011085160076618195,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0005488432943820953,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010436214506626129,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_allow_unknown_with_purge_unknown_subdocument",
+            "lineno": 500,
+            "outcome": "passed",
+            "keywords": [
+              "test_allow_unknown_with_purge_unknown_subdocument",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00011182576417922974,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.001003071665763855,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011568516492843628,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_purge_readonly",
+            "lineno": 514,
+            "outcome": "passed",
+            "keywords": [
+              "test_purge_readonly",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00011101365089416504,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0010896045714616776,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010539963841438293,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_normalization.py::test_defaults_in_allow_unknown_schema",
+            "lineno": 526,
+            "outcome": "passed",
+            "keywords": [
+              "test_defaults_in_allow_unknown_schema",
+              "test_normalization.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010009109973907471,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.001421881839632988,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010999105870723724,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    },
+    "cerberus/tests/test_registries.py": {
+      "returncode": 0,
+      "stdout": "........                                                                 [100%]\n8 passed in 0.03s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1782933388.6514893,
+        "duration": 0.0359339714050293,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/wip/cerberus-fullrepro-001/reference/oracle_run/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 8,
+          "total": 8,
+          "collected": 8
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "cerberus/tests/test_registries.py::test_schema_registry_simple",
+                "type": "Function",
+                "lineno": 11
+              },
+              {
+                "nodeid": "cerberus/tests/test_registries.py::test_top_level_reference",
+                "type": "Function",
+                "lineno": 18
+              },
+              {
+                "nodeid": "cerberus/tests/test_registries.py::test_recursion",
+                "type": "Function",
+                "lineno": 37
+              },
+              {
+                "nodeid": "cerberus/tests/test_registries.py::test_references_remain_unresolved",
+                "type": "Function",
+                "lineno": 43
+              },
+              {
+                "nodeid": "cerberus/tests/test_registries.py::test_rules_registry_with_anyof_type",
+                "type": "Function",
+                "lineno": 52
+              },
+              {
+                "nodeid": "cerberus/tests/test_registries.py::test_schema_registry_with_anyof_type",
+                "type": "Function",
+                "lineno": 58
+              },
+              {
+                "nodeid": "cerberus/tests/test_registries.py::test_normalization_with_rules_set",
+                "type": "Function",
+                "lineno": 64
+              },
+              {
+                "nodeid": "cerberus/tests/test_registries.py::test_rules_set_with_dict_field",
+                "type": "Function",
+                "lineno": 74
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "cerberus/tests/test_registries.py::test_schema_registry_simple",
+            "lineno": 11,
+            "outcome": "passed",
+            "keywords": [
+              "test_schema_registry_simple",
+              "test_registries.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0003788582980632782,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.007907819002866745,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011338666081428528,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_registries.py::test_top_level_reference",
+            "lineno": 18,
+            "outcome": "passed",
+            "keywords": [
+              "test_top_level_reference",
+              "test_registries.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010157003998756409,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0007294528186321259,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011999532580375671,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_registries.py::test_recursion",
+            "lineno": 37,
+            "outcome": "passed",
+            "keywords": [
+              "test_recursion",
+              "test_registries.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00011421181261539459,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0007650107145309448,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001046936959028244,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_registries.py::test_references_remain_unresolved",
+            "lineno": 43,
+            "outcome": "passed",
+            "keywords": [
+              "test_references_remain_unresolved",
+              "test_registries.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0004970729351043701,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0003772936761379242,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012503936886787415,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_registries.py::test_rules_registry_with_anyof_type",
+            "lineno": 52,
+            "outcome": "passed",
+            "keywords": [
+              "test_rules_registry_with_anyof_type",
+              "test_registries.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 9.822286665439606e-05,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.001221371814608574,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012118369340896606,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_registries.py::test_schema_registry_with_anyof_type",
+            "lineno": 58,
+            "outcome": "passed",
+            "keywords": [
+              "test_schema_registry_with_anyof_type",
+              "test_registries.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00011641159653663635,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0011274386197328568,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010726787149906158,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_registries.py::test_normalization_with_rules_set",
+            "lineno": 64,
+            "outcome": "passed",
+            "keywords": [
+              "test_normalization_with_rules_set",
+              "test_registries.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010052695870399475,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.002143312245607376,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010749325156211853,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_registries.py::test_rules_set_with_dict_field",
+            "lineno": 74,
+            "outcome": "passed",
+            "keywords": [
+              "test_rules_set_with_dict_field",
+              "test_registries.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010005570948123932,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.002412540838122368,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010758452117443085,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    },
+    "cerberus/tests/test_schema.py": {
+      "returncode": 0,
+      "stdout": ".........                                                                [100%]\n9 passed in 0.04s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1782933388.9431965,
+        "duration": 0.038520097732543945,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/wip/cerberus-fullrepro-001/reference/oracle_run/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 9,
+          "total": 9,
+          "collected": 9
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "cerberus/tests/test_schema.py::test_bad_schema_type_field",
+                "type": "Function",
+                "lineno": 24
+              },
+              {
+                "nodeid": "cerberus/tests/test_schema.py::test_bad_of_rules",
+                "type": "Function",
+                "lineno": 50
+              },
+              {
+                "nodeid": "cerberus/tests/test_schema.py::test_normalization_rules_are_invalid_in_of_rules",
+                "type": "Function",
+                "lineno": 55
+              },
+              {
+                "nodeid": "cerberus/tests/test_schema.py::test_anyof_allof_schema_validate",
+                "type": "Function",
+                "lineno": 60
+              },
+              {
+                "nodeid": "cerberus/tests/test_schema.py::test_expansion_in_nested_schema",
+                "type": "Function",
+                "lineno": 101
+              },
+              {
+                "nodeid": "cerberus/tests/test_schema.py::test_unvalidated_schema_can_be_copied",
+                "type": "Function",
+                "lineno": 109
+              },
+              {
+                "nodeid": "cerberus/tests/test_schema.py::test_deprecated_rule_names_in_valueschema",
+                "type": "Function",
+                "lineno": 116
+              },
+              {
+                "nodeid": "cerberus/tests/test_schema.py::test_anyof_check_with",
+                "type": "Function",
+                "lineno": 162
+              },
+              {
+                "nodeid": "cerberus/tests/test_schema.py::test_rulename_space_is_normalized",
+                "type": "Function",
+                "lineno": 177
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "cerberus/tests/test_schema.py::test_bad_schema_type_field",
+            "lineno": 24,
+            "outcome": "passed",
+            "keywords": [
+              "test_bad_schema_type_field",
+              "test_schema.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.006559018045663834,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0014710910618305206,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013512000441551208,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_schema.py::test_bad_of_rules",
+            "lineno": 50,
+            "outcome": "passed",
+            "keywords": [
+              "test_bad_of_rules",
+              "test_schema.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00013471394777297974,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0007389169186353683,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010715052485466003,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_schema.py::test_normalization_rules_are_invalid_in_of_rules",
+            "lineno": 55,
+            "outcome": "passed",
+            "keywords": [
+              "test_normalization_rules_are_invalid_in_of_rules",
+              "test_schema.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010154023766517639,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0007347036153078079,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010736845433712006,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_schema.py::test_anyof_allof_schema_validate",
+            "lineno": 60,
+            "outcome": "passed",
+            "keywords": [
+              "test_anyof_allof_schema_validate",
+              "test_schema.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001376960426568985,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0015085600316524506,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010704062879085541,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_schema.py::test_expansion_in_nested_schema",
+            "lineno": 101,
+            "outcome": "passed",
+            "keywords": [
+              "test_expansion_in_nested_schema",
+              "test_schema.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010224804282188416,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0007228031754493713,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001067817211151123,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_schema.py::test_unvalidated_schema_can_be_copied",
+            "lineno": 109,
+            "outcome": "passed",
+            "keywords": [
+              "test_unvalidated_schema_can_be_copied",
+              "test_schema.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010138191282749176,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00012153387069702148,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 9.86885279417038e-05,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_schema.py::test_deprecated_rule_names_in_valueschema",
+            "lineno": 116,
+            "outcome": "passed",
+            "keywords": [
+              "test_deprecated_rule_names_in_valueschema",
+              "test_schema.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00011020340025424957,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0013387762010097504,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011503137648105621,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_schema.py::test_anyof_check_with",
+            "lineno": 162,
+            "outcome": "passed",
+            "keywords": [
+              "test_anyof_check_with",
+              "test_schema.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010271184146404266,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0006999298930168152,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010566599667072296,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_schema.py::test_rulename_space_is_normalized",
+            "lineno": 177,
+            "outcome": "passed",
+            "keywords": [
+              "test_rulename_space_is_normalized",
+              "test_schema.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010078400373458862,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0004132464528083801,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00014656782150268555,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    },
+    "cerberus/tests/test_utils.py": {
+      "returncode": 0,
+      "stdout": ".                                                                        [100%]\n1 passed in 0.01s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1782933389.205669,
+        "duration": 0.011691808700561523,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/wip/cerberus-fullrepro-001/reference/oracle_run/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 1,
+          "total": 1,
+          "collected": 1
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "cerberus/tests/test_utils.py::test_compare_paths",
+                "type": "Function",
+                "lineno": 3
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "cerberus/tests/test_utils.py::test_compare_paths",
+            "lineno": 3,
+            "outcome": "passed",
+            "keywords": [
+              "test_compare_paths",
+              "test_utils.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00037365779280662537,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0001385323703289032,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010536611080169678,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    },
+    "cerberus/tests/test_validation.py": {
+      "returncode": 0,
+      "stdout": "..................................................                       [100%]\n50 passed in 0.19s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1782933389.6501188,
+        "duration": 0.19130420684814453,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/wip/cerberus-fullrepro-001/reference/oracle_run/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 50,
+          "total": 50,
+          "collected": 50
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_empty_document",
+                "type": "Function",
+                "lineno": 24
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_bad_document_type",
+                "type": "Function",
+                "lineno": 28
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_empty_field_definition",
+                "type": "Function",
+                "lineno": 45
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_nullable_skips_allowed",
+                "type": "Function",
+                "lineno": 78
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_nullable_skips_of_roles[all]",
+                "type": "Function",
+                "lineno": 83
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_nullable_skips_of_roles[any]",
+                "type": "Function",
+                "lineno": 83
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_nullable_skips_of_roles[none]",
+                "type": "Function",
+                "lineno": 83
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_nullable_skips_of_roles[one]",
+                "type": "Function",
+                "lineno": 83
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_readonly_field_first_rule",
+                "type": "Function",
+                "lineno": 105
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_not_a_string",
+                "type": "Function",
+                "lineno": 196
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_not_a_binary",
+                "type": "Function",
+                "lineno": 200
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_not_a_integer",
+                "type": "Function",
+                "lineno": 205
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_not_a_boolean",
+                "type": "Function",
+                "lineno": 209
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_not_a_datetime",
+                "type": "Function",
+                "lineno": 213
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_not_a_float",
+                "type": "Function",
+                "lineno": 217
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_not_a_number",
+                "type": "Function",
+                "lineno": 221
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_not_a_list",
+                "type": "Function",
+                "lineno": 225
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_not_a_dict",
+                "type": "Function",
+                "lineno": 229
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_integer_allowed",
+                "type": "Function",
+                "lineno": 525
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_validate_update",
+                "type": "Function",
+                "lineno": 529
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_string",
+                "type": "Function",
+                "lineno": 540
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_string_allowed",
+                "type": "Function",
+                "lineno": 544
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_integer",
+                "type": "Function",
+                "lineno": 548
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_boolean",
+                "type": "Function",
+                "lineno": 552
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_datetime",
+                "type": "Function",
+                "lineno": 556
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_float",
+                "type": "Function",
+                "lineno": 560
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_number",
+                "type": "Function",
+                "lineno": 565
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_array",
+                "type": "Function",
+                "lineno": 570
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_set",
+                "type": "Function",
+                "lineno": 574
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_a_list_of_dicts",
+                "type": "Function",
+                "lineno": 618
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_a_list_of_values",
+                "type": "Function",
+                "lineno": 629
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_an_array_from_set",
+                "type": "Function",
+                "lineno": 633
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_a_list_of_integers",
+                "type": "Function",
+                "lineno": 637
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_empty_skips_regex",
+                "type": "Function",
+                "lineno": 837
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_unknown_key_dict",
+                "type": "Function",
+                "lineno": 886
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_unknown_key_list",
+                "type": "Function",
+                "lineno": 893
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_unknown_keys_list_of_dicts",
+                "type": "Function",
+                "lineno": 900
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_unknown_keys_retain_custom_rules",
+                "type": "Function",
+                "lineno": 908
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_callable_validator",
+                "type": "Function",
+                "lineno": 946
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_options_passed_to_nested_validators",
+                "type": "Function",
+                "lineno": 1139
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_self_root_document",
+                "type": "Function",
+                "lineno": 1147
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_validated",
+                "type": "Function",
+                "lineno": 1195
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_unicode_allowed_py3",
+                "type": "Function",
+                "lineno": 1284
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_anyof_type",
+                "type": "Function",
+                "lineno": 1528
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_nested_oneof_type",
+                "type": "Function",
+                "lineno": 1549
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_issue_107",
+                "type": "Function",
+                "lineno": 1616
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_document_path",
+                "type": "Function",
+                "lineno": 1682
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_contains[constraint0]",
+                "type": "Function",
+                "lineno": 1875
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_contains[Terry Gilliam]",
+                "type": "Function",
+                "lineno": 1875
+              },
+              {
+                "nodeid": "cerberus/tests/test_validation.py::test_schema_validation_from_rules_set",
+                "type": "Function",
+                "lineno": 2005
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_empty_document",
+            "lineno": 24,
+            "outcome": "passed",
+            "keywords": [
+              "test_empty_document",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00039315782487392426,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.006322722882032394,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012823008000850677,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_bad_document_type",
+            "lineno": 28,
+            "outcome": "passed",
+            "keywords": [
+              "test_bad_document_type",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00011369958519935608,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0007568001747131348,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010864809155464172,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_empty_field_definition",
+            "lineno": 45,
+            "outcome": "passed",
+            "keywords": [
+              "test_empty_field_definition",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00017619319260120392,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0006655994802713394,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012170709669589996,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_nullable_skips_allowed",
+            "lineno": 78,
+            "outcome": "passed",
+            "keywords": [
+              "test_nullable_skips_allowed",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010340847074985504,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0007623117417097092,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011471286416053772,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_nullable_skips_of_roles[all]",
+            "lineno": 83,
+            "outcome": "passed",
+            "keywords": [
+              "test_nullable_skips_of_roles[all]",
+              "parametrize",
+              "pytestmark",
+              "all",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00024451687932014465,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.001239849254488945,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012140348553657532,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_nullable_skips_of_roles[any]",
+            "lineno": 83,
+            "outcome": "passed",
+            "keywords": [
+              "test_nullable_skips_of_roles[any]",
+              "parametrize",
+              "pytestmark",
+              "any",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00020104087889194489,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00080067478120327,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001467093825340271,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_nullable_skips_of_roles[none]",
+            "lineno": 83,
+            "outcome": "passed",
+            "keywords": [
+              "test_nullable_skips_of_roles[none]",
+              "parametrize",
+              "pytestmark",
+              "none",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0002165045589208603,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0008606482297182083,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001516547054052353,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_nullable_skips_of_roles[one]",
+            "lineno": 83,
+            "outcome": "passed",
+            "keywords": [
+              "test_nullable_skips_of_roles[one]",
+              "parametrize",
+              "pytestmark",
+              "one",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00019904039800167084,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0007986109703779221,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012072362005710602,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_readonly_field_first_rule",
+            "lineno": 105,
+            "outcome": "passed",
+            "keywords": [
+              "test_readonly_field_first_rule",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00013025663793087006,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0005781110376119614,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012061931192874908,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_not_a_string",
+            "lineno": 196,
+            "outcome": "passed",
+            "keywords": [
+              "test_not_a_string",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00011036358773708344,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.005930360406637192,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011159852147102356,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_not_a_binary",
+            "lineno": 200,
+            "outcome": "passed",
+            "keywords": [
+              "test_not_a_binary",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010277889668941498,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.001690976321697235,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011620856821537018,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_not_a_integer",
+            "lineno": 205,
+            "outcome": "passed",
+            "keywords": [
+              "test_not_a_integer",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010163150727748871,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0015321653336286545,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010611675679683685,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_not_a_boolean",
+            "lineno": 209,
+            "outcome": "passed",
+            "keywords": [
+              "test_not_a_boolean",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010156258940696716,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0015612300485372543,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010731257498264313,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_not_a_datetime",
+            "lineno": 213,
+            "outcome": "passed",
+            "keywords": [
+              "test_not_a_datetime",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010171905159950256,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0015024840831756592,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010745786130428314,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_not_a_float",
+            "lineno": 217,
+            "outcome": "passed",
+            "keywords": [
+              "test_not_a_float",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010191090404987335,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0015548169612884521,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010713934898376465,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_not_a_number",
+            "lineno": 221,
+            "outcome": "passed",
+            "keywords": [
+              "test_not_a_number",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010269507765769958,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.001433132216334343,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010544434189796448,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_not_a_list",
+            "lineno": 225,
+            "outcome": "passed",
+            "keywords": [
+              "test_not_a_list",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00012114085257053375,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.001573791727423668,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010609067976474762,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_not_a_dict",
+            "lineno": 229,
+            "outcome": "passed",
+            "keywords": [
+              "test_not_a_dict",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 9.973160922527313e-05,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0015346202999353409,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001053493469953537,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_integer_allowed",
+            "lineno": 525,
+            "outcome": "passed",
+            "keywords": [
+              "test_integer_allowed",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010916963219642639,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0015594027936458588,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010588020086288452,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_validate_update",
+            "lineno": 529,
+            "outcome": "passed",
+            "keywords": [
+              "test_validate_update",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010095536708831787,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.001572227105498314,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011404044926166534,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_string",
+            "lineno": 540,
+            "outcome": "passed",
+            "keywords": [
+              "test_string",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010326318442821503,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0014923438429832458,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011405907571315765,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_string_allowed",
+            "lineno": 544,
+            "outcome": "passed",
+            "keywords": [
+              "test_string_allowed",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010306946933269501,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.001393880695104599,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013684481382369995,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_integer",
+            "lineno": 548,
+            "outcome": "passed",
+            "keywords": [
+              "test_integer",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00011072680354118347,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.001529725268483162,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010445527732372284,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_boolean",
+            "lineno": 552,
+            "outcome": "passed",
+            "keywords": [
+              "test_boolean",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010142102837562561,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0013977773487567902,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012772716581821442,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_datetime",
+            "lineno": 556,
+            "outcome": "passed",
+            "keywords": [
+              "test_datetime",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010158494114875793,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0014546308666467667,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010386481881141663,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_float",
+            "lineno": 560,
+            "outcome": "passed",
+            "keywords": [
+              "test_float",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 9.95490700006485e-05,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0028155576437711716,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010645762085914612,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_number",
+            "lineno": 565,
+            "outcome": "passed",
+            "keywords": [
+              "test_number",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010210089385509491,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0027447957545518875,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001145731657743454,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_array",
+            "lineno": 570,
+            "outcome": "passed",
+            "keywords": [
+              "test_array",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001108851283788681,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0015370715409517288,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010632164776325226,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_set",
+            "lineno": 574,
+            "outcome": "passed",
+            "keywords": [
+              "test_set",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010236911475658417,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.001479892060160637,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012154318392276764,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_a_list_of_dicts",
+            "lineno": 618,
+            "outcome": "passed",
+            "keywords": [
+              "test_a_list_of_dicts",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010216981172561646,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.001566445454955101,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010711327195167542,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_a_list_of_values",
+            "lineno": 629,
+            "outcome": "passed",
+            "keywords": [
+              "test_a_list_of_values",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010190531611442566,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0014885514974594116,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011541880667209625,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_an_array_from_set",
+            "lineno": 633,
+            "outcome": "passed",
+            "keywords": [
+              "test_an_array_from_set",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010105594992637634,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.001502901315689087,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001047775149345398,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_a_list_of_integers",
+            "lineno": 637,
+            "outcome": "passed",
+            "keywords": [
+              "test_a_list_of_integers",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00012376904487609863,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0015970207750797272,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010564923286437988,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_empty_skips_regex",
+            "lineno": 837,
+            "outcome": "passed",
+            "keywords": [
+              "test_empty_skips_regex",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00043074414134025574,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0004273373633623123,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011821836233139038,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_unknown_key_dict",
+            "lineno": 886,
+            "outcome": "passed",
+            "keywords": [
+              "test_unknown_key_dict",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.000439448282122612,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0002446342259645462,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011315196752548218,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_unknown_key_list",
+            "lineno": 893,
+            "outcome": "passed",
+            "keywords": [
+              "test_unknown_key_list",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00047020986676216125,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00023170001804828644,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011424906551837921,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_unknown_keys_list_of_dicts",
+            "lineno": 900,
+            "outcome": "passed",
+            "keywords": [
+              "test_unknown_keys_list_of_dicts",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00043929368257522583,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0012613218277692795,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001194830983877182,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_unknown_keys_retain_custom_rules",
+            "lineno": 908,
+            "outcome": "passed",
+            "keywords": [
+              "test_unknown_keys_retain_custom_rules",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001013725996017456,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0016205180436372757,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001069679856300354,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_callable_validator",
+            "lineno": 946,
+            "outcome": "passed",
+            "keywords": [
+              "test_callable_validator",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00012507103383541107,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0007816199213266373,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010725855827331543,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_options_passed_to_nested_validators",
+            "lineno": 1139,
+            "outcome": "passed",
+            "keywords": [
+              "test_options_passed_to_nested_validators",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00044972263276576996,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.000917334109544754,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012176297605037689,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_self_root_document",
+            "lineno": 1147,
+            "outcome": "passed",
+            "keywords": [
+              "test_self_root_document",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010344386100769043,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.002318296581506729,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010928697884082794,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_validated",
+            "lineno": 1195,
+            "outcome": "passed",
+            "keywords": [
+              "test_validated",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00045562349259853363,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0005129165947437286,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011883489787578583,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_unicode_allowed_py3",
+            "lineno": 1284,
+            "outcome": "passed",
+            "keywords": [
+              "test_unicode_allowed_py3",
+              "skipif",
+              "pytestmark",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001061800867319107,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0006782002747058868,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010627135634422302,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_anyof_type",
+            "lineno": 1528,
+            "outcome": "passed",
+            "keywords": [
+              "test_anyof_type",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010180287063121796,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0015193764120340347,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012199021875858307,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_nested_oneof_type",
+            "lineno": 1549,
+            "outcome": "passed",
+            "keywords": [
+              "test_nested_oneof_type",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010141730308532715,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0015431102365255356,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010790489614009857,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_issue_107",
+            "lineno": 1616,
+            "outcome": "passed",
+            "keywords": [
+              "test_issue_107",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0004679616540670395,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0014008581638336182,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013047829270362854,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_document_path",
+            "lineno": 1682,
+            "outcome": "passed",
+            "keywords": [
+              "test_document_path",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00011141225695610046,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0015360116958618164,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001084599643945694,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_contains[constraint0]",
+            "lineno": 1875,
+            "outcome": "passed",
+            "keywords": [
+              "test_contains[constraint0]",
+              "parametrize",
+              "pytestmark",
+              "constraint0",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00020507723093032837,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0005233194679021835,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001391824334859848,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_contains[Terry Gilliam]",
+            "lineno": 1875,
+            "outcome": "passed",
+            "keywords": [
+              "test_contains[Terry Gilliam]",
+              "parametrize",
+              "pytestmark",
+              "Terry Gilliam",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0002261325716972351,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0006060507148504257,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001287125051021576,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "cerberus/tests/test_validation.py::test_schema_validation_from_rules_set",
+            "lineno": 2005,
+            "outcome": "passed",
+            "keywords": [
+              "test_schema_validation_from_rules_set",
+              "test_validation.py",
+              "tests",
+              "cerberus",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00015797652304172516,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0007950309664011002,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010837800800800323,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "summary": {
+    "passed": 115,
+    "total": 115
+  },
+  "pass_rate_excluding_skips": 1.0,
+  "by_layer": {
+    "atomic": {
+      "passed": 54,
+      "total": 54
+    },
+    "integration": {
+      "passed": 51,
+      "total": 51
+    },
+    "system_e2e": {
+      "passed": 10,
+      "total": 10
+    }
+  },
+  "cases": [
+    {
+      "nodeid": "cerberus/tests/test_assorted.py::test_dynamic_types",
+      "base_nodeid": "cerberus/tests/test_assorted.py::test_dynamic_types",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.002385145053267479,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_customization.py::test_contextual_data_preservation",
+      "base_nodeid": "cerberus/tests/test_customization.py::test_contextual_data_preservation",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0033178534358739853,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_customization.py::test_docstring_parsing",
+      "base_nodeid": "cerberus/tests/test_customization.py::test_docstring_parsing",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0008576065301895142,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_customization.py::test_schema_validation_can_be_disabled_in_schema_setter",
+      "base_nodeid": "cerberus/tests/test_customization.py::test_schema_validation_can_be_disabled_in_schema_setter",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0014878325164318085,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_errors.py::test_queries",
+      "base_nodeid": "cerberus/tests/test_errors.py::test_queries",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.001976633444428444,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_errors.py::test_basic_error_handler",
+      "base_nodeid": "cerberus/tests/test_errors.py::test_basic_error_handler",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00037266500294208527,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_coerce",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_coerce",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.006484847515821457,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_coerce_in_dictschema",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_coerce_in_dictschema",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0010427609086036682,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_coerce_in_listschema",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_coerce_in_listschema",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00132027268409729,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_coerce_in_listitems",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_coerce_in_listitems",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0013632271438837051,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_coerce_in_dictschema_in_listschema",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_coerce_in_dictschema_in_listschema",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0017633624374866486,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_coerce_not_destructive",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_coerce_not_destructive",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00034069642424583435,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_coerce_unknown",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_coerce_unknown",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0010489113628864288,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_custom_coerce_and_rename",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_custom_coerce_and_rename",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0017547942698001862,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_coerce_chain",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_coerce_chain",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.001573260873556137,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_coerce_non_digit_in_sequence",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_coerce_non_digit_in_sequence",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.008546179160475731,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_nullables_dont_fail_coerce",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_nullables_dont_fail_coerce",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0010095182806253433,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_normalized",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_normalized",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0005679074674844742,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_rename",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_rename",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0004417784512042999,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_rename_handler",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_rename_handler",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0006002709269523621,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_purge_unknown",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_purge_unknown",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00039194896817207336,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_purge_unknown_in_subschema",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_purge_unknown_in_subschema",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0010897796601057053,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_issue_147_complex",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_issue_147_complex",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0008552931249141693,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_issue_147_nested_dict",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_issue_147_nested_dict",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0003343634307384491,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_coerce_in_valuesrules",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_coerce_in_valuesrules",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0007985830307006836,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_coerce_in_keysrules",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_coerce_in_keysrules",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0010384880006313324,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_coercion_of_sequence_items",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_coercion_of_sequence_items",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0011163987219333649,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_default_missing[default0]",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_default_missing",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0011385884135961533,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_default_missing[default1]",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_default_missing",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0010784715414047241,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_default_existent[default0]",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_default_existent",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0006338637322187424,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_default_existent[default1]",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_default_existent",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0011934265494346619,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_default_none_nullable[default0]",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_default_none_nullable",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0009536221623420715,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_default_none_nullable[default1]",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_default_none_nullable",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0011832397431135178,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_default_none_nonnullable[default0]",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_default_none_nonnullable",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.001028265804052353,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_default_none_nonnullable[default1]",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_default_none_nonnullable",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0012512151151895523,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_default_none_default_value",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_default_none_default_value",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0010292008519172668,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_default_missing_in_subschema[default0]",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_default_missing_in_subschema",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0012264735996723175,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_default_missing_in_subschema[default1]",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_default_missing_in_subschema",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0013044476509094238,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_depending_default_setters",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_depending_default_setters",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0022460930049419403,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_issue_250_no_type_pass_on_list",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_issue_250_no_type_pass_on_list",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.001929115504026413,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_issue_250_no_type_fail_pass_on_other",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_issue_250_no_type_fail_pass_on_other",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0016253292560577393,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_271_normalising_tuples",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_271_normalising_tuples",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.001312989741563797,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_allow_unknown_wo_schema",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_allow_unknown_wo_schema",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.000776907429099083,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_allow_unknown_with_purge_unknown",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_allow_unknown_with_purge_unknown",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0005488432943820953,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_allow_unknown_with_purge_unknown_subdocument",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_allow_unknown_with_purge_unknown_subdocument",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.001003071665763855,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_purge_readonly",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_purge_readonly",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0010896045714616776,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_normalization.py::test_defaults_in_allow_unknown_schema",
+      "base_nodeid": "cerberus/tests/test_normalization.py::test_defaults_in_allow_unknown_schema",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.001421881839632988,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_registries.py::test_schema_registry_simple",
+      "base_nodeid": "cerberus/tests/test_registries.py::test_schema_registry_simple",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.007907819002866745,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_registries.py::test_top_level_reference",
+      "base_nodeid": "cerberus/tests/test_registries.py::test_top_level_reference",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0007294528186321259,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_registries.py::test_recursion",
+      "base_nodeid": "cerberus/tests/test_registries.py::test_recursion",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0007650107145309448,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_registries.py::test_references_remain_unresolved",
+      "base_nodeid": "cerberus/tests/test_registries.py::test_references_remain_unresolved",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0003772936761379242,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_registries.py::test_rules_registry_with_anyof_type",
+      "base_nodeid": "cerberus/tests/test_registries.py::test_rules_registry_with_anyof_type",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.001221371814608574,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_registries.py::test_schema_registry_with_anyof_type",
+      "base_nodeid": "cerberus/tests/test_registries.py::test_schema_registry_with_anyof_type",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0011274386197328568,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_registries.py::test_normalization_with_rules_set",
+      "base_nodeid": "cerberus/tests/test_registries.py::test_normalization_with_rules_set",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.002143312245607376,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_registries.py::test_rules_set_with_dict_field",
+      "base_nodeid": "cerberus/tests/test_registries.py::test_rules_set_with_dict_field",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.002412540838122368,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_schema.py::test_bad_schema_type_field",
+      "base_nodeid": "cerberus/tests/test_schema.py::test_bad_schema_type_field",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0014710910618305206,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_schema.py::test_bad_of_rules",
+      "base_nodeid": "cerberus/tests/test_schema.py::test_bad_of_rules",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0007389169186353683,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_schema.py::test_normalization_rules_are_invalid_in_of_rules",
+      "base_nodeid": "cerberus/tests/test_schema.py::test_normalization_rules_are_invalid_in_of_rules",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0007347036153078079,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_schema.py::test_anyof_allof_schema_validate",
+      "base_nodeid": "cerberus/tests/test_schema.py::test_anyof_allof_schema_validate",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0015085600316524506,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_schema.py::test_expansion_in_nested_schema",
+      "base_nodeid": "cerberus/tests/test_schema.py::test_expansion_in_nested_schema",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0007228031754493713,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_schema.py::test_unvalidated_schema_can_be_copied",
+      "base_nodeid": "cerberus/tests/test_schema.py::test_unvalidated_schema_can_be_copied",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00012153387069702148,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_schema.py::test_deprecated_rule_names_in_valueschema",
+      "base_nodeid": "cerberus/tests/test_schema.py::test_deprecated_rule_names_in_valueschema",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0013387762010097504,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_schema.py::test_anyof_check_with",
+      "base_nodeid": "cerberus/tests/test_schema.py::test_anyof_check_with",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0006999298930168152,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_schema.py::test_rulename_space_is_normalized",
+      "base_nodeid": "cerberus/tests/test_schema.py::test_rulename_space_is_normalized",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0004132464528083801,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_utils.py::test_compare_paths",
+      "base_nodeid": "cerberus/tests/test_utils.py::test_compare_paths",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0001385323703289032,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_empty_document",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_empty_document",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.006322722882032394,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_bad_document_type",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_bad_document_type",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0007568001747131348,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_empty_field_definition",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_empty_field_definition",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0006655994802713394,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_nullable_skips_allowed",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_nullable_skips_allowed",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0007623117417097092,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_nullable_skips_of_roles[all]",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_nullable_skips_of_roles",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.001239849254488945,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_nullable_skips_of_roles[any]",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_nullable_skips_of_roles",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00080067478120327,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_nullable_skips_of_roles[none]",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_nullable_skips_of_roles",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0008606482297182083,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_nullable_skips_of_roles[one]",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_nullable_skips_of_roles",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0007986109703779221,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_readonly_field_first_rule",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_readonly_field_first_rule",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0005781110376119614,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_not_a_string",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_not_a_string",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.005930360406637192,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_not_a_binary",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_not_a_binary",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.001690976321697235,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_not_a_integer",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_not_a_integer",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0015321653336286545,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_not_a_boolean",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_not_a_boolean",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0015612300485372543,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_not_a_datetime",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_not_a_datetime",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0015024840831756592,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_not_a_float",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_not_a_float",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0015548169612884521,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_not_a_number",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_not_a_number",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.001433132216334343,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_not_a_list",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_not_a_list",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.001573791727423668,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_not_a_dict",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_not_a_dict",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0015346202999353409,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_integer_allowed",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_integer_allowed",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0015594027936458588,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_validate_update",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_validate_update",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.001572227105498314,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_string",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_string",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0014923438429832458,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_string_allowed",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_string_allowed",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.001393880695104599,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_integer",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_integer",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.001529725268483162,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_boolean",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_boolean",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0013977773487567902,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_datetime",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_datetime",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0014546308666467667,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_float",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_float",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0028155576437711716,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_number",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_number",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0027447957545518875,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_array",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_array",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0015370715409517288,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_set",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_set",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.001479892060160637,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_a_list_of_dicts",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_a_list_of_dicts",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.001566445454955101,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_a_list_of_values",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_a_list_of_values",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0014885514974594116,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_an_array_from_set",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_an_array_from_set",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.001502901315689087,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_a_list_of_integers",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_a_list_of_integers",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0015970207750797272,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_empty_skips_regex",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_empty_skips_regex",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0004273373633623123,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_unknown_key_dict",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_unknown_key_dict",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0002446342259645462,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_unknown_key_list",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_unknown_key_list",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00023170001804828644,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_unknown_keys_list_of_dicts",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_unknown_keys_list_of_dicts",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0012613218277692795,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_unknown_keys_retain_custom_rules",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_unknown_keys_retain_custom_rules",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0016205180436372757,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_callable_validator",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_callable_validator",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0007816199213266373,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_options_passed_to_nested_validators",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_options_passed_to_nested_validators",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.000917334109544754,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_self_root_document",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_self_root_document",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.002318296581506729,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_validated",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_validated",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0005129165947437286,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_unicode_allowed_py3",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_unicode_allowed_py3",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0006782002747058868,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_anyof_type",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_anyof_type",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0015193764120340347,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_nested_oneof_type",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_nested_oneof_type",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0015431102365255356,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_issue_107",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_issue_107",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0014008581638336182,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_document_path",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_document_path",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0015360116958618164,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_contains[constraint0]",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_contains",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0005233194679021835,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_contains[Terry Gilliam]",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_contains",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0006060507148504257,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "cerberus/tests/test_validation.py::test_schema_validation_from_rules_set",
+      "base_nodeid": "cerberus/tests/test_validation.py::test_schema_validation_from_rules_set",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0007950309664011002,
+        "outcome": "passed"
+      }
+    }
+  ]
+}

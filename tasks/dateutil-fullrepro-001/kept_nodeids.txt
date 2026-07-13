@@ -1,0 +1,90 @@
+tests/test_easter.py::test_easter_western[easter_date0]
+tests/test_easter.py::test_easter_western[easter_date1]
+tests/test_easter.py::test_easter_western[easter_date2]
+tests/test_easter.py::test_easter_orthodox[easter_date0]
+tests/test_easter.py::test_easter_orthodox[easter_date1]
+tests/test_easter.py::test_easter_orthodox[easter_date2]
+tests/test_easter.py::test_easter_julian[easter_date0]
+tests/test_easter.py::test_easter_julian[easter_date1]
+tests/test_easter.py::test_easter_julian[easter_date2]
+tests/test_easter.py::test_easter_bad_method
+tests/test_import_star.py::test_imported_modules
+tests/test_imports.py::test_lazy_import[easter]
+tests/test_imports.py::test_lazy_import[parser]
+tests/test_imports.py::test_lazy_import[relativedelta]
+tests/test_imports.py::test_import_version_str
+tests/test_imports.py::test_import_version_root
+tests/test_imports.py::test_import_easter_direct
+tests/test_imports.py::test_import_easter_from
+tests/test_imports.py::test_import_easter_start
+tests/test_imports.py::test_import_parser_direct
+tests/test_imports.py::test_import_parser_from
+tests/test_imports.py::test_import_parser_all
+tests/test_imports.py::test_import_relative_delta_direct
+tests/test_imports.py::test_import_relative_delta_from
+tests/test_imports.py::test_import_relative_delta_all
+tests/test_imports.py::test_import_rrule_direct
+tests/test_imports.py::test_import_rrule_from
+tests/test_imports.py::test_import_rrule_all
+tests/test_imports.py::test_import_tztest_direct
+tests/test_imports.py::test_import_tz_from
+tests/test_imports.py::test_import_tz_all
+tests/test_imports.py::test_import_tz_windows_direct
+tests/test_imports.py::test_import_tz_windows_from
+tests/test_imports.py::test_import_tz_windows_star
+tests/test_imports.py::test_import_zone_info_direct
+tests/test_imports.py::test_import_zone_info_from
+tests/test_imports.py::test_import_zone_info_star
+tests/test_isoparser.py::test_year_only[dt0]
+tests/test_isoparser.py::test_year_only[dt1]
+tests/test_isoparser.py::test_year_month[dt0]
+tests/test_isoparser.py::test_year_month[dt1]
+tests/test_isoparser.py::test_year_month[dt2]
+tests/test_isoparser.py::test_year_month_day[%Y%m%d-dt0]
+tests/test_isoparser.py::test_year_month_day[%Y%m%d-dt1]
+tests/test_isoparser.py::test_year_month_day[%Y%m%d-dt2]
+tests/test_isoparser.py::test_ymd_h[tzoffset0-%Y%m%d-dt0]
+tests/test_isoparser.py::test_ymd_h[tzoffset0-%Y%m%d-dt1]
+tests/test_isoparser.py::test_ymd_h[tzoffset0-%Y%m%d-dt2]
+tests/test_isoparser.py::test_ymd_hm[tzoffset0-%H%M-%Y%m%d-dt0]
+tests/test_isoparser.py::test_ymd_hm[tzoffset0-%H%M-%Y-%m-%d-dt0]
+tests/test_isoparser.py::test_ymd_hm[tzoffset0-%H:%M-%Y%m%d-dt0]
+tests/test_isoparser.py::test_ymd_hms[tzoffset0-%H%M%S-%Y%m%d-dt0]
+tests/test_isoparser.py::test_ymd_hms[tzoffset0-%H%M%S-%Y%m%d-dt1]
+tests/test_isoparser.py::test_ymd_hms[tzoffset0-%H%M%S-%Y%m%d-dt2]
+tests/test_isoparser.py::test_ymd_hms_micro[3-tzoffset0-%H%M%S.%f-%Y%m%d-dt0]
+tests/test_isoparser.py::test_ymd_hms_micro[3-tzoffset0-%H%M%S.%f-%Y-%m-%d-dt0]
+tests/test_isoparser.py::test_ymd_hms_micro[3-tzoffset0-%H%M%S,%f-%Y%m%d-dt0]
+tests/test_isoparser.py::test_extra_subsecond_digits[2018-07-03T14:07:00.123456000001]
+tests/test_isoparser.py::test_extra_subsecond_digits[2018-07-03T14:07:00.123456999999]
+tests/test_isoparser.py::test_full_tzoffsets[tzoffset0]
+tests/test_isoparser.py::test_full_tzoffsets[tzoffset1]
+tests/test_isoparser.py::test_full_tzoffsets[tzoffset2]
+tests/test_isoparser.py::test_datetime_midnight[2014-04-11T00]
+tests/test_isoparser.py::test_datetime_midnight[2014-04-10T24]
+tests/test_isoparser.py::test_datetime_midnight[2014-04-11T00:00]
+tests/test_isoparser.py::test_isoparse_sep_none[ -2014-01-01]
+tests/test_isoparser.py::test_isoparse_sep_none[ -20140101]
+tests/test_parser.py::test_parser[Thu Sep 25 10:36:28 2003-expected_datetime0-date command format strip]
+tests/test_parser.py::test_parser[Thu Sep 25 2003-expected_datetime1-date command format strip]
+tests/test_parser.py::test_parser[2003-09-25T10:49:41-expected_datetime2-iso format strip]
+tests/test_parser.py::test_parser_default[Thu Sep 25 10:36:28-expected_datetime0-date command format strip]
+tests/test_parser.py::test_parser_default[Thu Sep 10:36:28-expected_datetime1-date command format strip]
+tests/test_parser.py::test_parser_default[Thu 10:36:28-expected_datetime2-date command format strip]
+tests/test_parser.py::test_parse_dayfirst[-]
+tests/test_parser.py::test_parse_dayfirst[.]
+tests/test_parser.py::test_parse_dayfirst[/]
+tests/test_parser.py::test_parse_yearfirst[-]
+tests/test_parser.py::test_parse_yearfirst[.]
+tests/test_parser.py::test_parse_yearfirst[/]
+tests/test_parser.py::test_parse_ignoretz[Thu Sep 25 10:36:28 BRST 2003-expected0]
+tests/test_parser.py::test_parse_ignoretz[1996.07.10 AD at 15:08:56 PDT-expected1]
+tests/test_parser.py::test_parse_ignoretz[Tuesday, April 12, 1952 AD 3:30:42pm PST-expected2]
+tests/test_parser.py::test_parse_with_tzoffset[20030925T104941-0300-expected0]
+tests/test_parser.py::test_parse_with_tzoffset[Thu, 25 Sep 2003 10:49:41 -0300-expected1]
+tests/test_parser.py::test_parse_with_tzoffset[2003-09-25T10:49:41.5-03:00-expected2]
+tests/test_parser.py::TestFormat::test_ybd
+tests/test_parser.py::TestFormat::test_strftime_formats_2003Sep25[%a %b %d %Y-Thu Sep 25 2003]
+tests/test_parser.py::TestFormat::test_strftime_formats_2003Sep25[%b %d %Y-Sep 25 2003]
+tests/test_parser.py::TestFormat::test_strftime_formats_2003Sep25[%Y-%m-%d-2003-09-25]
+tests/test_parser.py::TestInputTypes::test_empty_string_invalid

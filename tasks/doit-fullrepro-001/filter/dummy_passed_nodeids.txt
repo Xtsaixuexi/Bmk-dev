@@ -1,0 +1,3 @@
+tests/test_cmd_base.py::TestCheckTasksExist::test_None
+tests/test_cmd_base.py::TestCheckTasksExist::test_valid
+tests/test_task.py::TestTaskInit::test_dependencySequenceIsValid

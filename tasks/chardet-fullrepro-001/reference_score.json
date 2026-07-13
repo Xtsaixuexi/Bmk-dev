@@ -1,0 +1,24 @@
+{
+  "summary": {
+    "passed": 90,
+    "failed": 0,
+    "total": 90
+  },
+  "pass_rate_excluding_skips": 1.0,
+  "by_layer": {
+    "atomic": {
+      "passed": 82,
+      "total": 82
+    },
+    "integration": {
+      "passed": 3,
+      "total": 3
+    },
+    "system_e2e": {
+      "passed": 5,
+      "total": 5
+    }
+  },
+  "reference_validation": "sampled retained nodeids passed in source tree with plugin autoload disabled",
+  "source_repo": "/root/autodl-tmp/e2e/chardet"
+}

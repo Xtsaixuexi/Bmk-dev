@@ -1,0 +1,129 @@
+{
+  "repo": "parso",
+  "src_loc": 6230,
+  "src_files": 26,
+  "test_collected": 1986,
+  "kept": 90,
+  "bad_files": [
+    {
+      "file": "test/failing_examples.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.01s"
+    },
+    {
+      "file": "test/fuzz_diff_parser.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.06s"
+    },
+    {
+      "file": "test/normalizer_issue_files/E10.py",
+      "rc": 2,
+      "kind": "no_nodes",
+      "tail": "E   TabError: inconsistent use of tabs and spaces in indentation\n=========================== short test summary info ============================\nERROR test/normalizer_issue_files/E10.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\nno tests collected, 1 error in 0.17s"
+    },
+    {
+      "file": "test/normalizer_issue_files/E101.py",
+      "rc": 2,
+      "kind": "no_nodes",
+      "tail": "E   NameError: name 'x' is not defined\n=========================== short test summary info ============================\nERROR test/normalizer_issue_files/E101.py - NameError: name 'x' is not defined\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\nno tests collected, 1 error in 0.11s"
+    },
+    {
+      "file": "test/normalizer_issue_files/E11.py",
+      "rc": 2,
+      "kind": "no_nodes",
+      "tail": "E   IndentationError: unexpected indent\n=========================== short test summary info ============================\nERROR test/normalizer_issue_files/E11.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\nno tests collected, 1 error in 0.18s"
+    },
+    {
+      "file": "test/normalizer_issue_files/E12_first.py",
+      "rc": 2,
+      "kind": "no_nodes",
+      "tail": "E   NameError: name 'row' is not defined\n=========================== short test summary info ============================\nERROR test/normalizer_issue_files/E12_first.py - NameError: name 'row' is not...\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\nno tests collected, 1 error in 0.10s"
+    },
+    {
+      "file": "test/normalizer_issue_files/E12_not_first.py",
+      "rc": 2,
+      "kind": "no_nodes",
+      "tail": "E   NameError: name 'x' is not defined\n=========================== short test summary info ============================\nERROR test/normalizer_issue_files/E12_not_first.py - NameError: name 'x' is n...\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\nno tests collected, 1 error in 0.11s"
+    },
+    {
+      "file": "test/normalizer_issue_files/E12_not_second.py",
+      "rc": 2,
+      "kind": "no_nodes",
+      "tail": "E   SyntaxError: expected 'except' or 'finally' block\n=========================== short test summary info ============================\nERROR test/normalizer_issue_files/E12_not_second.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\nno tests collected, 1 error in 0.17s"
+    },
+    {
+      "file": "test/normalizer_issue_files/E12_second.py",
+      "rc": 2,
+      "kind": "no_nodes",
+      "tail": "E   SyntaxError: invalid syntax\n=========================== short test summary info ============================\nERROR test/normalizer_issue_files/E12_second.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\nno tests collected, 1 error in 0.18s"
+    },
+    {
+      "file": "test/normalizer_issue_files/E12_third.py",
+      "rc": 2,
+      "kind": "no_nodes",
+      "tail": "E   NameError: name 'foo' is not defined\n=========================== short test summary info ============================\nERROR test/normalizer_issue_files/E12_third.py - NameError: name 'foo' is not...\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\nno tests collected, 1 error in 0.10s"
+    },
+    {
+      "file": "test/normalizer_issue_files/E20.py",
+      "rc": 2,
+      "kind": "no_nodes",
+      "tail": "E   NameError: name 'spam' is not defined\n=========================== short test summary info ============================\nERROR test/normalizer_issue_files/E20.py - NameError: name 'spam' is not defined\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\nno tests collected, 1 error in 0.10s"
+    },
+    {
+      "file": "test/normalizer_issue_files/E21.py",
+      "rc": 2,
+      "kind": "no_nodes",
+      "tail": "E   NameError: name 'spam' is not defined\n=========================== short test summary info ============================\nERROR test/normalizer_issue_files/E21.py - NameError: name 'spam' is not defined\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\nno tests collected, 1 error in 0.10s"
+    },
+    {
+      "file": "test/normalizer_issue_files/E22.py",
+      "rc": 2,
+      "kind": "no_nodes",
+      "tail": "E   TypeError: 'int' object does not support item assignment\n=========================== short test summary info ============================\nERROR test/normalizer_issue_files/E22.py - TypeError: 'int' object does not s...\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\nno tests collected, 1 error in 0.10s"
+    },
+    {
+      "file": "test/normalizer_issue_files/E23.py",
+      "rc": 2,
+      "kind": "no_nodes",
+      "tail": "E   NameError: name 'b1' is not defined\n=========================== short test summary info ============================\nERROR test/normalizer_issue_files/E23.py - NameError: name 'b1' is not defined\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\nno tests collected, 1 error in 0.10s"
+    },
+    {
+      "file": "test/normalizer_issue_files/E25.py",
+      "rc": 2,
+      "kind": "no_nodes",
+      "tail": "E   NameError: name 'bar' is not defined\n=========================== short test summary info ============================\nERROR test/normalizer_issue_files/E25.py - NameError: name 'bar' is not defined\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\nno tests collected, 1 error in 0.10s"
+    },
+    {
+      "file": "test/normalizer_issue_files/E26.py",
+      "rc": 2,
+      "kind": "no_nodes",
+      "tail": "E   NameError: name 'x' is not defined\n=========================== short test summary info ============================\nERROR test/normalizer_issue_files/E26.py - NameError: name 'x' is not defined\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\nno tests collected, 1 error in 0.11s"
+    },
+    {
+      "file": "test/normalizer_issue_files/E27.py",
+      "rc": 2,
+      "kind": "no_nodes",
+      "tail": "E   IndentationError: expected an indented block after 'if' statement on line 26\n=========================== short test summary info ============================\nERROR test/normalizer_issue_files/E27.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\nno tests collected, 1 error in 0.17s"
+    },
+    {
+      "file": "test/normalizer_issue_files/E29.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.01s"
+    },
+    {
+      "file": "test/normalizer_issue_files/E30.py",
+      "rc": 2,
+      "kind": "no_nodes",
+      "tail": "E   NameError: name 'decorator' is not defined\n=========================== short test summary info ============================\nERROR test/normalizer_issue_files/E30.py - NameError: name 'decorator' is not...\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\nno tests collected, 1 error in 0.10s"
+    },
+    {
+      "file": "test/normalizer_issue_files/E30not.py",
+      "rc": 2,
+      "kind": "no_nodes",
+      "tail": "E   NameError: name 'some_decorator' is not defined\n=========================== short test summary info ============================\nERROR test/normalizer_issue_files/E30not.py - NameError: name 'some_decorator...\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\nno tests collected, 1 error in 0.10s"
+    }
+  ]
+}

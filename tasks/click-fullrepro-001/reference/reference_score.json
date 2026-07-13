@@ -1,0 +1,20 @@
+{
+  "summary": {
+    "passed": 90,
+    "failed": 0,
+    "total": 90
+  },
+  "pass_rate_excluding_skips": 1.0,
+  "by_layer": {
+    "atomic": {
+      "passed": 70,
+      "total": 70
+    },
+    "system_e2e": {
+      "passed": 20,
+      "total": 20
+    }
+  },
+  "reference_validation": "sampled retained nodeids passed in source tree with plugin autoload disabled",
+  "source_repo": "/root/autodl-tmp/e2e/click"
+}

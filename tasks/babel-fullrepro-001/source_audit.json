@@ -1,0 +1,57 @@
+{
+  "repo": "babel",
+  "src_loc": 11582,
+  "src_files": 35,
+  "test_collected": 596,
+  "kept": 63,
+  "bad_files": [
+    {
+      "file": "tests/messages/consts.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.01s"
+    },
+    {
+      "file": "tests/messages/data/project/_hidden_by_default/hidden_file.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.01s"
+    },
+    {
+      "file": "tests/messages/data/project/file1.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.01s"
+    },
+    {
+      "file": "tests/messages/data/project/file2.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.02s"
+    },
+    {
+      "file": "tests/messages/data/project/ignored/this_wont_normally_be_here.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.02s"
+    },
+    {
+      "file": "tests/messages/data/project/issue_1224_test.py",
+      "rc": 2,
+      "kind": "no_nodes",
+      "tail": "E   ModuleNotFoundError: No module named 'myproject'\n=========================== short test summary info ============================\nERROR tests/messages/data/project/issue_1224_test.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\nno tests collected, 1 error in 0.11s"
+    },
+    {
+      "file": "tests/messages/data/setup.py",
+      "rc": 3,
+      "kind": "no_nodes",
+      "tail": "INTERNALERROR> \nINTERNALERROR> error: option --collect-only not recognized\n\nno tests collected in 0.18s\nmainloop: caught unexpected SystemExit!"
+    },
+    {
+      "file": "tests/messages/utils.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.01s"
+    }
+  ]
+}

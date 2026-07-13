@@ -1,0 +1,87 @@
+{
+  "task_id": "tomlkit-fullrepro-001",
+  "selected_repo": "tomlkit",
+  "source_path": "/root/autodl-tmp/e2e/tomlkit",
+  "source_commit": "43668ddebc3f082bf385d328aceed18d26976897",
+  "package_name": "tomlkit",
+  "project_version": "0.15.0",
+  "src_loc_estimate": 4597,
+  "source_py_files_estimate": 12,
+  "test_py_files_under_tests": 12,
+  "pytest_test_modules": 9,
+  "test_functions_estimate": 229,
+  "pytest_collect_nodeids": 1035,
+  "pytest_collect_result": "1035 tests collected in 0.19s after initializing tests/toml-test",
+  "pytest_full_suite_result": "1035 passed in 1.44s",
+  "toml_test_submodule": {
+    "path": "tests/toml-test",
+    "commit": "08ed8697864548b3cdb4b8decbf496bef47e1c82",
+    "status": "initialized"
+  },
+  "private_import_files": 7,
+  "private_import_ratio": 0.5833,
+  "private_import_scan_pattern": "from tomlkit._* or import tomlkit._*, plus imports from tomlkit.container, tomlkit.parser, tomlkit.source, tomlkit._types, tomlkit._utils, tomlkit._compat",
+  "private_import_audit": "HIGH_RISK",
+  "readme": [
+    "README.md"
+  ],
+  "public_docs": [
+    "README.md",
+    "docs/index.rst",
+    "docs/quickstart.rst",
+    "docs/api.rst"
+  ],
+  "public_api_exports_seed": [
+    "TOMLDocument",
+    "aot",
+    "array",
+    "boolean",
+    "comment",
+    "date",
+    "datetime",
+    "document",
+    "dump",
+    "dumps",
+    "float_",
+    "inline_table",
+    "integer",
+    "item",
+    "key",
+    "key_value",
+    "load",
+    "loads",
+    "nl",
+    "parse",
+    "register_encoder",
+    "string",
+    "table",
+    "time",
+    "unregister_encoder",
+    "value",
+    "ws"
+  ],
+  "runtime_dependencies": [],
+  "dev_test_dependencies": [
+    "pytest",
+    "pytest-cov",
+    "PyYAML"
+  ],
+  "core_fact_source": "TOML document text and mutable TOMLDocument/item state determine mapping behavior, item behavior, serialized output, file read/write behavior, and exception behavior.",
+  "derived_views": [
+    "parse/loads to TOMLDocument mapping behavior",
+    "dumps/dump serialization of parsed and constructed documents",
+    "TOMLFile read/write behavior",
+    "helper-created item behavior",
+    "document mutation and ordering behavior",
+    "public parser exception classes"
+  ],
+  "docs_test_alignment": "aligned_with_risk",
+  "test_import_audit": "HIGH_RISK",
+  "hard_gate_result": "keep",
+  "primary_risks": [
+    "Private and implementation-module imports affect 7/12 test files and must be rewritten or excluded during filtering.",
+    "The toml-test submodule is required for tests/test_toml_tests.py and is now initialized locally.",
+    "String-output assertions must be checked carefully for documented style-preservation coverage.",
+    "Internal proxy classes, private utilities, exact repr strings, and exception message wording are likely source-only."
+  ]
+}

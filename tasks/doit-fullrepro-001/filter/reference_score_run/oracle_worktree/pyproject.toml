@@ -1,0 +1,79 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "doit"
+version = "0.38.0.dev0"
+description = "doit - Automation Tool"
+license = {text = "MIT"}
+readme = "pypi_long_description.rst"
+requires-python = ">=3.10"
+authors = [
+    {name = "Eduardo Naufel Schettino", email = "schettino72@gmail.com"},
+]
+keywords = ["build", "make", "task", "automation", "pipeline", "task-runner"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Operating System :: POSIX",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: System Administrators",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = []
+
+# uv sync --group dev --group docs
+# pip install --dependency-groups dev,docs -e .
+[dependency-groups]
+dev = [
+    "setuptools>=68.0",
+    "build",
+    "twine",
+    "pyflakes>=3.0",
+    "pycodestyle>=2.10",
+    "rut>=0.3",
+    "coverage>=7.0",
+    "tomli; python_version < '3.11'",
+]
+docs = [
+    "sphinx>=9,<10",
+    "furo>=2025,<2027",
+    "sphinx-sitemap",
+    "sphinx_reredirects",
+    "sphinx-design",
+]
+
+[project.urls]
+Homepage = "https://pydoit.org"
+Documentation = "https://pydoit.org/"
+Source = "https://github.com/pydoit/doit/"
+Tracker = "https://github.com/pydoit/doit/issues"
+
+[project.scripts]
+doit = "doit.__main__:main"
+
+[project.optional-dependencies]
+toml = ["tomli; python_version < '3.11'"]
+cloudpickle = ["cloudpickle; platform_python_implementation != 'PyPy'"]
+
+
+[tool.rut]
+source_dirs = ["doit", "tests"]
+
+[tool.setuptools]
+packages = ["doit"]

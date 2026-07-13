@@ -1,0 +1,58 @@
+{
+  "task_id": "vcrpy-fullrepro-001",
+  "status": "QUALIFIED",
+  "spec": "spec.md",
+  "filter": "filter_v5",
+  "reference": "reference_score_filter_v5.json",
+  "candidate_run": "Bmk-dev/candidate-runs/codex-vcrpy-specv3-20260630-001",
+  "candidate_score": "judge/candidate_score_report_v5.json",
+  "caveat": "Integration/system-only verifier after original-test import-carrier cleanup.",
+  "scorer_isolation": {
+    "score_harness": "harness/score_pytest_original.py",
+    "package_import": "vcr",
+    "preflight_command": "python -c \"import vcr; print(vcr.__file__)\"",
+    "remove_paths": [
+      "vcr"
+    ],
+    "recorded_from_artifacts": false,
+    "source_shadowing_guard": "Remove the source package path from the copied oracle worktree before scoring, then require preflight stdout to point into candidate output.",
+    "verification_status": "recommended_not_historically_recorded; rerun scoring before using as a final candidate score"
+  },
+  "oracle_count": 29,
+  "expanded_score_cases": 38,
+  "coverage-gap": {
+    "verdict": "GAP",
+    "scoreable_tests": 29,
+    "global_floor_ok": false,
+    "per_section_minimums": {
+      "Cross-View Invariants": 5,
+      "Error Semantics": 3,
+      "workflow_sections": 3,
+      "all_other_scored_sections": 3
+    },
+    "below_minimum_sections": [
+      {
+        "section": "Filters And Callbacks",
+        "covered": 1,
+        "minimum": 3
+      },
+      {
+        "section": "Exception Handling And Saving",
+        "covered": 1,
+        "minimum": 3
+      },
+      {
+        "section": "Playback Repeats And Drop Unused",
+        "covered": 1,
+        "minimum": 3
+      }
+    ],
+    "unknown_mapping_cells": 0,
+    "requires_action": "Expand or remap fair public tests before strict current-main qualification; retain caveat if generation is saturated without circular/source-only assertions."
+  },
+  "labels": [
+    "sub-50-oracle",
+    "legacy-narrow-oracle",
+    "coverage-gap"
+  ]
+}

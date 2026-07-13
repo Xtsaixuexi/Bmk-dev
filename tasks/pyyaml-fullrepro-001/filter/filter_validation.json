@@ -1,0 +1,35 @@
+{
+  "coverage_below_minimum_sections": [],
+  "coverage_sections": {
+    "Constructors, Representers, Resolvers, And YAMLObject": 99,
+    "Cross-View Invariants": 514,
+    "Dumping": 177,
+    "Error Semantics": 197,
+    "Installable Surface": 3,
+    "Loading": 230,
+    "Product State Model": 465,
+    "Representative Workflows": 241,
+    "Tokens, Events, And Nodes": 577,
+    "YAML Type Mapping": 47
+  },
+  "excluded": 1688,
+  "generated_at": "2026-07-09T10:51:11.494311Z",
+  "kept": 889,
+  "layers": {
+    "atomic": 324,
+    "integration": 375,
+    "system_e2e": 190
+  },
+  "scorer_isolation": {
+    "package_import": "yaml",
+    "reference_solution_dir": "/root/autodl-tmp/new-e2e/yaml__pyyaml/lib",
+    "remove_paths": [
+      "yaml"
+    ],
+    "score_harness": "harness/score_pytest_original.py"
+  },
+  "source_only": 39,
+  "task_id": "pyyaml-fullrepro-001",
+  "total_nodeids_processed": 2616,
+  "track_b_triggered": false
+}

@@ -1,0 +1,37 @@
+{
+  "task": "cookiecutter-fullrepro-001",
+  "run": "/root/autodl-tmp/swe-e2e/logs/2026-06-29-cookiecutter-reference",
+  "status": "reference_passed",
+  "exit_code": 0,
+  "pytest_summary": {
+    "passed": 274,
+    "skipped": 4,
+    "total": 278,
+    "collected": 278
+  },
+  "kept_test_functions": 213,
+  "dropped_test_functions": 9,
+  "preserved_rate": 0.9594594594594594,
+  "notes": "Pytest summary counts parameterized cases; taxonomy counts source test functions.",
+  "summary": {
+    "passed": 274,
+    "skipped": 4,
+    "total": 278
+  },
+  "pass_rate_excluding_skips": 1.0,
+  "by_layer": {
+    "atomic": {
+      "passed": 104,
+      "total": 104
+    },
+    "integration": {
+      "passed": 66,
+      "total": 66
+    },
+    "system_e2e": {
+      "passed": 43,
+      "total": 43
+    }
+  },
+  "by_layer_note": "Layer totals count distinct retained source test functions from taxonomy.jsonl; pytest_summary counts expanded pytest cases."
+}

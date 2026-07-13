@@ -1,0 +1,39 @@
+{
+  "task_id": "prompt-toolkit-fullrepro-001",
+  "stage": 1,
+  "source_repo": "prompt-toolkit/python-prompt-toolkit",
+  "checkout_name": "prompt-toolkit__python-prompt-toolkit",
+  "source_path": "/root/autodl-tmp/new-e2e/prompt-toolkit__python-prompt-toolkit",
+  "remote": "https://github.com/prompt-toolkit/python-prompt-toolkit.git",
+  "commit": "236bfb7c15c62e921dc81bac5aefcabb16450f0c",
+  "mechanical_audit": {
+    "src_loc": 36892,
+    "source_py_files": 277,
+    "test_files": 21,
+    "test_functions_rough": 156,
+    "docs_files_rough": 159,
+    "private_import_file_rate": 0.0,
+    "network_test_file_rate": 0.048,
+    "snapshot_test_file_rate": 0.143,
+    "priority_score": 54.55,
+    "priority_reason": "screen_keep with docs/tests and acceptable import risk"
+  },
+  "collect_pre_screen": {
+    "status": "COLLECT_OK",
+    "returncode": 0,
+    "collected_nodeids": 156,
+    "error_markers": 0,
+    "command": [
+      "/root/miniconda3/bin/python",
+      "-m",
+      "pytest",
+      "--collect-only",
+      "-q",
+      "-o",
+      "addopts=",
+      "tests"
+    ]
+  },
+  "decision": "keep",
+  "selected_at": "2026-07-09"
+}

@@ -1,0 +1,88 @@
+{
+  "fetched_at_utc": "2026-07-09T09:57:29Z",
+  "source": "https://gh-proxy.com/https://github.com/E2E-Bmk/Bmk-dev.git",
+  "upstream_url": "https://github.com/E2E-Bmk/Bmk-dev/tree/main",
+  "commit": "f7b79f0ada1605aa24d7fe7b6e81665019788bea",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "70c35e4bc15379f7fac1b55275803faa8fbf09a6a689c4f882dd34cd36014afa",
+      "bytes": 3340
+    },
+    {
+      "path": "WORKFLOW_CN.md",
+      "sha256": "f23e03f1c263a28c530caa60ee0ac17009d8f898b0b4ac77fe44a4c4b828f303",
+      "bytes": 44446
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "21e22094047cd96c809acfb10df615c3e29681957229d8b2b22527d880fc303e",
+      "bytes": 31
+    },
+    {
+      "path": "MANIFEST.json",
+      "sha256": "e5c0894a2f7bcbbcc5a27c85aec1f31ff802841febdd8083855bccfcf75d2c6a",
+      "bytes": 5155
+    },
+    {
+      "path": "skills/PIPELINE_STATE.template.md",
+      "sha256": "179fa88b81221129ace3337e05afe6ace562a586a16c06133b83816cf281ecd6",
+      "bytes": 9140
+    },
+    {
+      "path": "skills/README.md",
+      "sha256": "26db980e3f279d0789adebf91213fe3e4a5d220f1ac6c5931c70ad5635c11fce",
+      "bytes": 2915
+    },
+    {
+      "path": "skills/candidate-selector/SKILL.md",
+      "sha256": "bc733e48e9eaae9193729ef1f990ef6b1464d7ba09e35f6786c148d19cee9f8d",
+      "bytes": 3816
+    },
+    {
+      "path": "skills/spec-writer/SKILL.md",
+      "sha256": "8be46346849b15c831d9bdc985c4dd9a7793c547c58affbdfea3e6bb98ae90c7",
+      "bytes": 13977
+    },
+    {
+      "path": "skills/test-filter/SKILL.md",
+      "sha256": "aaca8196d6a0d5bc6d3767832a0725832bc9fe2daf9f9040d93138ce04ac566b",
+      "bytes": 20452
+    },
+    {
+      "path": "skills/task-judge/SKILL.md",
+      "sha256": "3c7a5ac311a7fe2acde80390a51ad5c6b19b42943a59072d36831d3672f40559",
+      "bytes": 14717
+    },
+    {
+      "path": "skills/task-synthesizer/SKILL.md",
+      "sha256": "e841510f432ead6a413bc30deeeb7a2f9ea4d142a38bfb3c72fca51124b45e12",
+      "bytes": 11201
+    },
+    {
+      "path": "harness/score_pytest_original.py",
+      "sha256": "0d819c9ed97730a314157b886b644862ca785ce28d61dde208e429318ccc9553",
+      "bytes": 8766
+    },
+    {
+      "path": "harness/score.py",
+      "sha256": "503d3cfe9209b826008959acacb7cb4d7febedfa6d3cfaff5499ecd38696dd21",
+      "bytes": 13246
+    },
+    {
+      "path": "harness/run.py",
+      "sha256": "f953b36c74bf344bdb50ed6a57f8f54684c5f48cf2b83b182d5d77441c3c6619",
+      "bytes": 5974
+    },
+    {
+      "path": "harness/filter.py",
+      "sha256": "9e7ecf537ee4ad8ef3c045fc1199118d596a505f557c874ad85eaffe6870facc",
+      "bytes": 6386
+    },
+    {
+      "path": "tools/format_coverage.py",
+      "sha256": "00cc7f8a282b3ac5bb3a8219b44c66df96c035d2b46ad1f21c3bf88669c4738e",
+      "bytes": 2314
+    }
+  ]
+}

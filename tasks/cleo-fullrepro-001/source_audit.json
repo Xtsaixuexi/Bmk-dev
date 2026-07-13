@@ -1,0 +1,39 @@
+{
+  "task_id": "cleo-fullrepro-001",
+  "stage": 1,
+  "source_repo": "python-poetry/cleo",
+  "checkout_name": "python-poetry__cleo",
+  "source_path": "/root/autodl-tmp/new-e2e/python-poetry__cleo",
+  "remote": "https://github.com/python-poetry/cleo.git",
+  "commit": "8c3f1bbf82d918fc137ad40db65c446e14564aac",
+  "mechanical_audit": {
+    "src_loc": 6009,
+    "source_py_files": 75,
+    "test_files": 61,
+    "test_functions_rough": 159,
+    "docs_files_rough": 12,
+    "private_import_file_rate": 0.033,
+    "network_test_file_rate": 0.0,
+    "snapshot_test_file_rate": 0.098,
+    "priority_score": 24.14,
+    "priority_reason": "screen_keep with docs/tests and acceptable import risk"
+  },
+  "collect_pre_screen": {
+    "status": "COLLECT_OK",
+    "returncode": 0,
+    "collected_nodeids": 258,
+    "error_markers": 0,
+    "command": [
+      "/root/miniconda3/bin/python",
+      "-m",
+      "pytest",
+      "--collect-only",
+      "-q",
+      "-o",
+      "addopts=",
+      "tests"
+    ]
+  },
+  "decision": "keep",
+  "selected_at": "2026-07-09"
+}

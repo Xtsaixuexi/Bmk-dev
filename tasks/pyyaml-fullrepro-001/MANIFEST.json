@@ -1,0 +1,278 @@
+{
+  "artifacts": {
+    "candidate_filter_map": "filter/candidate_filter_map.md",
+    "collected_nodeids": "filter/all_nodeids.txt",
+    "dummy_score": "filter/dummy_score.json.gz",
+    "dummy_score_compression": "gzip; duplicate root-level copy omitted",
+    "filter_validation": "filter/filter_validation.md",
+    "kept_nodeids": "filter/kept_nodeids.txt",
+    "kept_upstream": "filter/kept_upstream.txt",
+    "reference_score": "filter/reference_score.json",
+    "reference_validation": "filter/reference_validation.md",
+    "rewrite_audit": "filter/rewrite_audit.md",
+    "rewritten_upstream_tests": "filter/rewritten_upstream_tests.py",
+    "root_kept_nodeids": "kept_nodeids.txt",
+    "root_spec_test_map": "spec_test_map.md",
+    "root_taxonomy": "taxonomy.jsonl",
+    "spec": "spec.md",
+    "spec_test_map": "filter/spec_test_map.md",
+    "spec_v1": "spec/spec_v1.md",
+    "stage3_alignment": "github_alignment/stage3_test_filter_alignment.md",
+    "taxonomy": "filter/taxonomy.jsonl",
+    "test_taxonomy_score": "filter/test_taxonomy_score.csv",
+    "root_filter_validation": "filter_validation.md",
+    "workflow_manifest": "github_alignment/raw_main/FETCH_MANIFEST.json",
+    "candidate_score_result": "candidate-runs/opencode-gpt-5.5-pyyaml-fullrepro-001-20260709T-stage4-cleanroom/score_result.json",
+    "candidate_score_report": "candidate-runs/opencode-gpt-5.5-pyyaml-fullrepro-001-20260709T-stage4-cleanroom/score_report.md",
+    "judge_diagnosis": "judge/diagnosis_report.md",
+    "judge_gate_report": "judge/gate_report.md",
+    "stage5_deepseek_review": "review/step5_deepseekv4pro_review.md",
+    "stage5_glm52_review": "review/step5_glm52_review.md"
+  },
+  "cleanroom_policy": {
+    "candidate_forbidden": [
+      "source repository",
+      "upstream tests",
+      "kept_nodeids.txt",
+      "taxonomy.jsonl",
+      "spec_test_map.md",
+      "reference_score.json",
+      "dummy_score.json",
+      "filter artifacts",
+      "review artifacts"
+    ],
+    "candidate_visible": [
+      "spec.md",
+      "public implementation prompt"
+    ]
+  },
+  "current_step": 5,
+  "dummy_passed": 0,
+  "dummy_total": 889,
+  "filter_summary": {
+    "collected_nodeids": 2616,
+    "coverage_below_minimum_sections": [],
+    "coverage_sections": {
+      "Constructors, Representers, Resolvers, And YAMLObject": 99,
+      "Cross-View Invariants": 514,
+      "Dumping": 177,
+      "Error Semantics": 197,
+      "Installable Surface": 3,
+      "Loading": 230,
+      "Product State Model": 465,
+      "Representative Workflows": 241,
+      "Tokens, Events, And Nodes": 577,
+      "YAML Type Mapping": 47
+    },
+    "dummy_summary": {
+      "collection_error": 886,
+      "failed": 3,
+      "total": 889
+    },
+    "excluded": 1688,
+    "functions_excluded_for_state": 1727,
+    "kept": 889,
+    "layers": {
+      "atomic": 324,
+      "integration": 375,
+      "system_e2e": 190
+    },
+    "oracle_count": 889,
+    "reference_summary": {
+      "passed": 889,
+      "total": 889
+    },
+    "source_only": 39,
+    "taxonomy_unknown_cases": 0,
+    "track_a": {
+      "kept_upstream": 889,
+      "rewritten_tests": 0
+    },
+    "track_b": {
+      "reason": "Track A retained 889 public behavioral nodeids with all behavior coverage floors satisfied.",
+      "triggered": false
+    }
+  },
+  "kept_nodeids": 889,
+  "model_reviews": {
+    "stage3": {
+      "deepseek-v4-pro": "PASS_CONTINUE",
+      "glm-5.2": "PASS_CONTINUE"
+    },
+    "stage5": {
+      "deepseek-v4-pro": "PASS_QUALIFY",
+      "glm-5.2": "PASS_QUALIFY"
+    }
+  },
+  "oracle_source": "upstream_filtered_reference_passed",
+  "pipeline_state": "QUALIFIED",
+  "reference_failed": 0,
+  "reference_passed": 889,
+  "reference_total": 889,
+  "remove_paths": [
+    "yaml"
+  ],
+  "repo": "yaml__pyyaml",
+  "score_harness": "harness/score_pytest_original.py",
+  "scorer_isolation": {
+    "package_import": "yaml",
+    "preflight_command": "python -c \"import yaml; print(yaml.__file__)\"",
+    "reference_solution_dir": "/root/autodl-tmp/new-e2e/yaml__pyyaml/lib",
+    "remove_paths": [
+      "yaml"
+    ],
+    "score_harness": "harness/score_pytest_original.py",
+    "source_shadowing_guard": "Use score_pytest_original.py with --remove-path yaml so copied oracle worktree cannot import a top-level source package instead of the solution path."
+  },
+  "source": {
+    "commit": "34a9bf82357f4952d8f194a5a31f1c39743652d0",
+    "package": "yaml",
+    "path": "/root/autodl-tmp/new-e2e/yaml__pyyaml",
+    "tests": "tests/legacy_tests/test_yaml.py tests/legacy_tests/test_yaml_ext.py tests/test_dump_load.py tests/test_merge.py"
+  },
+  "spec_version": "v1",
+  "state": "QUALIFIED",
+  "status": "QUALIFIED",
+  "task_id": "pyyaml-fullrepro-001",
+  "updated_at": "2026-07-09T10:53:42.629221Z",
+  "github_workflow": {
+    "fetched_at_utc": "2026-07-09T09:57:29Z",
+    "source": "https://gh-proxy.com/https://github.com/E2E-Bmk/Bmk-dev.git",
+    "upstream_url": "https://github.com/E2E-Bmk/Bmk-dev/tree/main",
+    "commit": "f7b79f0ada1605aa24d7fe7b6e81665019788bea",
+    "files": [
+      {
+        "path": "README.md",
+        "sha256": "70c35e4bc15379f7fac1b55275803faa8fbf09a6a689c4f882dd34cd36014afa",
+        "bytes": 3340
+      },
+      {
+        "path": "WORKFLOW_CN.md",
+        "sha256": "f23e03f1c263a28c530caa60ee0ac17009d8f898b0b4ac77fe44a4c4b828f303",
+        "bytes": 44446
+      },
+      {
+        "path": "AGENTS.md",
+        "sha256": "21e22094047cd96c809acfb10df615c3e29681957229d8b2b22527d880fc303e",
+        "bytes": 31
+      },
+      {
+        "path": "MANIFEST.json",
+        "sha256": "e5c0894a2f7bcbbcc5a27c85aec1f31ff802841febdd8083855bccfcf75d2c6a",
+        "bytes": 5155
+      },
+      {
+        "path": "skills/PIPELINE_STATE.template.md",
+        "sha256": "179fa88b81221129ace3337e05afe6ace562a586a16c06133b83816cf281ecd6",
+        "bytes": 9140
+      },
+      {
+        "path": "skills/README.md",
+        "sha256": "26db980e3f279d0789adebf91213fe3e4a5d220f1ac6c5931c70ad5635c11fce",
+        "bytes": 2915
+      },
+      {
+        "path": "skills/candidate-selector/SKILL.md",
+        "sha256": "bc733e48e9eaae9193729ef1f990ef6b1464d7ba09e35f6786c148d19cee9f8d",
+        "bytes": 3816
+      },
+      {
+        "path": "skills/spec-writer/SKILL.md",
+        "sha256": "8be46346849b15c831d9bdc985c4dd9a7793c547c58affbdfea3e6bb98ae90c7",
+        "bytes": 13977
+      },
+      {
+        "path": "skills/test-filter/SKILL.md",
+        "sha256": "aaca8196d6a0d5bc6d3767832a0725832bc9fe2daf9f9040d93138ce04ac566b",
+        "bytes": 20452
+      },
+      {
+        "path": "skills/task-judge/SKILL.md",
+        "sha256": "3c7a5ac311a7fe2acde80390a51ad5c6b19b42943a59072d36831d3672f40559",
+        "bytes": 14717
+      },
+      {
+        "path": "skills/task-synthesizer/SKILL.md",
+        "sha256": "e841510f432ead6a413bc30deeeb7a2f9ea4d142a38bfb3c72fca51124b45e12",
+        "bytes": 11201
+      },
+      {
+        "path": "harness/score_pytest_original.py",
+        "sha256": "0d819c9ed97730a314157b886b644862ca785ce28d61dde208e429318ccc9553",
+        "bytes": 8766
+      },
+      {
+        "path": "harness/score.py",
+        "sha256": "503d3cfe9209b826008959acacb7cb4d7febedfa6d3cfaff5499ecd38696dd21",
+        "bytes": 13246
+      },
+      {
+        "path": "harness/run.py",
+        "sha256": "f953b36c74bf344bdb50ed6a57f8f54684c5f48cf2b83b182d5d77441c3c6619",
+        "bytes": 5974
+      },
+      {
+        "path": "harness/filter.py",
+        "sha256": "9e7ecf537ee4ad8ef3c045fc1199118d596a505f557c874ad85eaffe6870facc",
+        "bytes": 6386
+      },
+      {
+        "path": "tools/format_coverage.py",
+        "sha256": "00cc7f8a282b3ac5bb3a8219b44c66df96c035d2b46ad1f21c3bf88669c4738e",
+        "bytes": 2314
+      }
+    ]
+  },
+  "stage4_candidate": {
+    "run_id": "opencode-gpt-5.5-pyyaml-fullrepro-001-20260709T-stage4-cleanroom",
+    "runner": "opencode",
+    "model": "gpt-5.5",
+    "score_result": "candidate-runs/opencode-gpt-5.5-pyyaml-fullrepro-001-20260709T-stage4-cleanroom/score_result.json",
+    "score_summary": {
+      "collection_error": 886,
+      "passed": 3,
+      "total": 889
+    },
+    "pass_rate_excluding_skips": 0.003374578177727784,
+    "by_layer": {
+      "atomic": {
+        "collection_error": 321,
+        "passed": 3,
+        "total": 324
+      },
+      "integration": {
+        "collection_error": 375,
+        "total": 375
+      },
+      "system_e2e": {
+        "collection_error": 190,
+        "total": 190
+      }
+    }
+  },
+  "judge_summary": {
+    "verdict": "QUALIFIED",
+    "candidate_run": "opencode-gpt-5.5-pyyaml-fullrepro-001-20260709T-stage4-cleanroom",
+    "score_summary": {
+      "collection_error": 886,
+      "passed": 3,
+      "total": 889
+    },
+    "pass_rate_excluding_skips": 0.003374578177727784,
+    "by_layer": {
+      "atomic": {
+        "collection_error": 321,
+        "passed": 3,
+        "total": 324
+      },
+      "integration": {
+        "collection_error": 375,
+        "total": 375
+      },
+      "system_e2e": {
+        "collection_error": 190,
+        "total": 190
+      }
+    }
+  }
+}

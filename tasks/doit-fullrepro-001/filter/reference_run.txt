@@ -1,0 +1,785 @@
+
+GetInitialWorkdir
+
+    get initial workdir
+
+Main
+
+    execute
+
+CmdAction
+
+    env
+    error
+    failure
+    result
+    success
+    success noshell
+    values
+
+CmdActionParams
+
+    changePath
+    invalid param stdout
+    noPathSet
+
+CmdVerbosity
+
+    captureStderr
+    captureStdout
+    noCaptureStderr
+    noCaptureStdout
+
+TaskIOCapture
+
+    cmd io capture no
+    cmd io capture yes
+    py io capture no
+    py io capture yes
+
+CmdExpandAction
+
+    callable invalid
+    callable return command str
+    callable tuple return command str
+    list can contain path
+    list should contain strings or paths
+    string list cant be expanded
+    task meta reference
+    task options
+    task pos arg
+    task pos arg None
+
+CmdActionStringFormatting
+
+    both
+    new
+    old
+
+CmdSaveOuput
+
+    success
+
+PythonAction
+
+    callable obj
+    error exception
+    error object
+    error taskerror
+    error taskfail
+    fail bool
+    init callable builtin
+    init callable class
+    result
+    result dict
+    success None
+    success bool
+    success dict
+    success str
+    values
+
+PythonVerbosity
+
+    captureStderr
+    captureStdout
+    noCaptureStderr
+    noCaptureStdout
+    redirectStderr
+    redirectStdout
+
+PythonActionPrepareKwargsMeta
+
+    action modifies task but not attrs
+    callable obj
+    extra arg overwritten
+    extra kwarg overwritten
+    keyword extra args
+    kwonlyargs full
+    kwonlyargs minimal
+    meta arg default disallowed
+    method
+    mixed args
+    named extra args
+    no extra args
+    option default allowed
+    task options
+    task pos arg
+
+CreateAction
+
+    testBaseAction
+    testInvalidActionNone
+    testInvalidActionObject
+    testListStringAction
+    testMethodAction
+    testStringAction
+    testTupleAction
+    testTupleActionMoreThanThreeElements
+    invalid action task param name
+
+Run
+
+    run
+
+RunTasks
+
+    run tasks error
+    run tasks pos
+    run tasks success
+
+VersionTuple
+
+    version tuple
+
+Command
+
+    call value cmd line arg
+    call value option default
+    call value overwritten default
+    configure
+    failCall
+
+ModuleTaskLoader
+
+    load tasks from dict
+    load tasks from module
+    task config
+    task opt from api to action
+    task opt from api to creator
+
+DodoTaskLoader
+
+    load tasks
+
+DoitCmdBase
+
+    testCustomChecker
+    testCustomCodec
+    testInvalidChecker
+    execute
+    execute provides dep manager
+    minversion
+    new cmd
+
+ForceVerbosity
+
+    force verbosity
+
+CheckTasksExist
+
+    invalid
+
+TaskAndDepsIter
+
+    dep iter
+
+SubtaskIter
+
+    sub iter
+
+DefaultUpdate
+
+    test
+    add defaults
+
+CmdOption
+
+    invalid field
+    missing field
+    non required fields
+
+CmdOption str2val
+
+    bool
+    int
+    invalid value
+    list
+    non string values are not converted
+    str
+    str2boolean
+    contains
+    env val
+    env val bool
+    getOption
+    getitem
+    long
+    option list
+    overwrite defaults
+    overwrite defaults convert type
+    parseDefaults
+    parseError
+    parseLongValues
+    parsePositionalArgs
+    parseShortValues
+    parseWrongChoice
+    parseWrongType
+    short
+
+UtilFunctions
+
+    md5
+    sqlite import
+    unicode md5
+
+DependencyDbJson
+
+    corrupted file
+    corrupted file unrecognized excep
+    dump
+    getNonExistent
+    get set
+    get set unicode name
+    in
+    remove
+    remove all
+    remove from non empty file
+
+DependencyDbSqlite
+
+    dump
+    getNonExistent
+    get set
+    get set unicode name
+    in
+    remove
+    remove all
+    remove from non empty file
+
+DependencyDbDbmDumb
+
+    corrupted file
+    corrupted file unrecognized excep
+    dump
+    getNonExistent
+    get set
+    get set unicode name
+    in
+    remove
+    remove all
+    remove from non empty file
+
+SaveSuccessJson
+
+    save file md5
+    save files
+    save result
+    save resultNone
+    save result dict
+    save result hash
+    save skip
+    save values
+
+SaveSuccessSqlite
+
+    save file md5
+    save files
+    save result
+    save resultNone
+    save result dict
+    save result hash
+    save skip
+    save values
+
+SaveSuccessDbmDumb
+
+    save file md5
+    save files
+    save result
+    save resultNone
+    save result dict
+    save result hash
+    save skip
+    save values
+
+GetValueJson
+
+    all values
+    invalid key
+    invalid taskid
+    ok
+    ok dot on task name
+
+GetValueSqlite
+
+    all values
+    invalid key
+    invalid taskid
+    ok
+    ok dot on task name
+
+GetValueDbmDumb
+
+    all values
+    invalid key
+    invalid taskid
+    ok
+    ok dot on task name
+
+RemoveSuccessJson
+
+    save result
+
+RemoveSuccessSqlite
+
+    save result
+
+RemoveSuccessDbmDumb
+
+    save result
+
+IgnoreJson
+
+    save result
+
+IgnoreSqlite
+
+    save result
+
+IgnoreDbmDumb
+
+    save result
+
+MD5Checker
+
+    md5
+    size
+    timestamp
+
+CustomChecker
+
+    not implemented
+
+TimestampChecker
+
+    timestamp
+
+DependencyStatus
+
+    add reason
+    add reason error
+    get error message
+    no log
+    set reason
+
+GetStatusJson
+
+    UptodateCallable True
+    UptodateCallable added attributes
+    UptodateCommand False
+    UptodateCommand True
+    UptodateFalse
+    UptodateFunction False
+    UptodateFunction True
+    UptodateFunction extra args True
+    UptodateFunction without args True
+    UptodateMethod True
+    UptodateNone
+    UptodateTrue
+    change checker
+    fileDependencies
+    fileDependencies changed
+    fileDependencies changed get log
+    file dependency not exist
+    ignore
+    noDependency
+    targetFolder
+    targets
+    targets notThere
+    uptodate call all even if some False
+
+GetStatusSqlite
+
+    UptodateCallable True
+    UptodateCallable added attributes
+    UptodateCommand False
+    UptodateCommand True
+    UptodateFalse
+    UptodateFunction False
+    UptodateFunction True
+    UptodateFunction extra args True
+    UptodateFunction without args True
+    UptodateMethod True
+    UptodateNone
+    UptodateTrue
+    change checker
+    fileDependencies
+    fileDependencies changed
+    fileDependencies changed get log
+    file dependency not exist
+    ignore
+    noDependency
+    targetFolder
+    targets
+    targets notThere
+    uptodate call all even if some False
+
+GetStatusDbmDumb
+
+    UptodateCallable True
+    UptodateCallable added attributes
+    UptodateCommand False
+    UptodateCommand True
+    UptodateFalse
+    UptodateFunction False
+    UptodateFunction True
+    UptodateFunction extra args True
+    UptodateFunction without args True
+    UptodateMethod True
+    UptodateNone
+    UptodateTrue
+    change checker
+    fileDependencies
+    fileDependencies changed
+    fileDependencies changed get log
+    file dependency not exist
+    ignore
+    noDependency
+    targetFolder
+    targets
+    targets notThere
+    uptodate call all even if some False
+    cmdline loader option before cmd name
+    cmdline loader option mixed
+    cmdline vars
+    cmdline vars not opts
+    run is default
+    run other subcommand
+    task loader has cmd list
+    version
+
+RunExtraConfig
+
+    extra config
+
+Errors
+
+    internal error
+    interrupt
+    user error
+
+Config
+
+    no ini config file
+
+FlatGenerator
+
+    nested
+
+GetModule
+
+    testAbsolutePath
+    testInParentDir
+    testInvalidCwd
+    testRelativePath
+    testWrongFileName
+    testWrongFileNameInParentDir
+
+LoadTasks
+
+    testCreateAfterDecorator
+    testCreateAfterDecoratorOnMethod
+    testNameInBlacklist
+    testUse create doit tasks
+    testUse object methods
+
+TaskGeneratorParams
+
+    args
+    args second
+    call api
+    config
+    default
+    delayed
+    dup param
+    method
+
+DodoConfig
+
+    testConfigDict Ok
+    testConfigType Error
+    testDefaultConfig Dict
+
+GenerateTaskInvalid
+
+    testInvalidValue
+
+GenerateTaskNone
+
+    testEmpty
+
+GenerateTasksSingle
+
+    testBaseName
+    testDict
+    testDocstringNotUsed
+    testInvalidNameField
+    testTaskObj
+    testUseDocstring
+
+GenerateTasksGenerator
+
+    testGenerator
+    testGeneratorBaseOnly
+    testGeneratorBasename
+    testGeneratorBasenameCanNotRepeat
+    testGeneratorBasenameCanNotRepeatNonGroup
+    testGeneratorBasenameName
+    testGeneratorDictMissingAction
+    testGeneratorDictMissingName
+    testGeneratorDoesntReturnDict
+    testGeneratorNameCanNotRepeat
+    testGeneratorReturnTaskObj
+    testGeneratorWithNoTasks
+
+PluginEntry
+
+    get
+    load error module not found
+    load error obj not found
+
+PluginDict
+
+    add plugins from pkg resources
+
+Stream
+
+    force global
+    from task
+    task verbosity not specified
+
+TaskCheckInput
+
+    testFailType
+    testFailValue
+    testOkType
+    testOkTypeABC
+    testOkValue
+
+TaskCompare
+
+    equal
+    lt
+
+TaskInit
+
+    dependencyNotSequence
+    forbid equal sign on name
+    groupTask
+    options
+    options from cfg
+    options from cfg override
+    setup
+
+TaskValueSavers
+
+    execute value savers
+
+TaskUpToDate
+
+    FalseRunalways
+    NoneIgnored
+    callable function
+    callable instance method
+    invalid
+    object with configure
+    str
+    tuple
+
+TaskExpandFileDep
+
+    dependencyStringIsFile
+    file dep path
+    file dep str
+    file dep unicode
+
+TaskDeps
+
+    calc dep
+    task dep
+    update deps
+
+TaskTargets
+
+    targets can be path
+    targets should be string or path
+
+Task Loader
+
+    delayed after execution
+
+Task Getargs
+
+    invalid desc
+    invalid desc tuple
+    ok
+
+TaskTitle
+
+    custom title
+    title
+
+TaskActions
+
+    fail first
+    fail second
+    failure
+    many
+    mixed
+    result
+    success
+    values
+
+TaskTeardown
+
+    fail
+    ok
+
+TaskClean
+
+    clean action error
+    clean action kwargs
+    clean non existent targets
+
+TaskDoc
+
+    just new line
+    multiple lines
+    no doc
+    single line
+    start with empty lines
+
+DictToTask
+
+    testDictFieldTypo
+    testDictMissingFieldAction
+    testDictOkMinimum
+
+ResultDep
+
+    group
+    single
+
+CreateFolder
+
+    create folder
+    error if path is a file
+
+TitleWithActions
+
+    actions
+    group
+
+RunOnce
+
+    run
+
+ConfigChanged
+
+    dict
+    invalid type
+    nested dict
+    string
+    unicode
+    using custom encoder
+
+Timeout
+
+    int
+    invalid
+    timedelta
+    timedelta big
+
+CheckTimestampUnchanged
+
+    op ge
+
+LongRunning
+
+    ignore keyboard interrupt
+    success
+
+Interactive
+
+    fail
+    success
+
+PythonInteractiveAction
+
+    ignore keyboard interrupt
+    returned dict saved result values
+    returned string saved result
+    success
+
+=============================== warnings summary ===============================
+test_cmd_base.py::TestDoitCmdBase::testCustomCodec
+  /root/miniconda3/lib/python3.10/site-packages/_pytest/unraisableexception.py:67: PytestUnraisableExceptionWarning: Exception ignored in: <function _Database.close at 0x7ff5fdf012d0>
+  
+  Traceback (most recent call last):
+    File "/root/miniconda3/lib/python3.10/dbm/dumb.py", line 274, in close
+      self._commit()
+    File "/root/miniconda3/lib/python3.10/dbm/dumb.py", line 129, in _commit
+      with self._io.open(self._dirfile, 'w', encoding="Latin-1") as f:
+  FileNotFoundError: [Errno 2] No such file or directory: '/tmp/doit-test-co5x4w6c/testdb.dir'
+  
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+    warnings.warn(pytest.PytestUnraisableExceptionWarning(msg))
+
+test_cmd_base.py::TestDoitCmdBase::test_execute
+  /root/miniconda3/lib/python3.10/site-packages/_pytest/unraisableexception.py:67: PytestUnraisableExceptionWarning: Exception ignored in: <function _Database.close at 0x7ff5fdf012d0>
+  
+  Traceback (most recent call last):
+    File "/root/miniconda3/lib/python3.10/dbm/dumb.py", line 274, in close
+      self._commit()
+    File "/root/miniconda3/lib/python3.10/dbm/dumb.py", line 129, in _commit
+      with self._io.open(self._dirfile, 'w', encoding="Latin-1") as f:
+  FileNotFoundError: [Errno 2] No such file or directory: '/tmp/doit-test-_dilg1vp/testdb.dir'
+  
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+    warnings.warn(pytest.PytestUnraisableExceptionWarning(msg))
+
+test_cmd_base.py::TestDoitCmdBase::test_minversion
+  /root/miniconda3/lib/python3.10/site-packages/_pytest/unraisableexception.py:67: PytestUnraisableExceptionWarning: Exception ignored in: <function _Database.close at 0x7ff5fdf012d0>
+  
+  Traceback (most recent call last):
+    File "/root/miniconda3/lib/python3.10/dbm/dumb.py", line 274, in close
+      self._commit()
+    File "/root/miniconda3/lib/python3.10/dbm/dumb.py", line 129, in _commit
+      with self._io.open(self._dirfile, 'w', encoding="Latin-1") as f:
+  FileNotFoundError: [Errno 2] No such file or directory: '/tmp/doit-test-qbtiucd9/testdb.dir'
+  
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+    warnings.warn(pytest.PytestUnraisableExceptionWarning(msg))
+
+test_cmd_base.py::TestForceVerbosity::test_force_verbosity
+  /root/miniconda3/lib/python3.10/site-packages/_pytest/unraisableexception.py:67: PytestUnraisableExceptionWarning: Exception ignored in: <function _Database.close at 0x7ff5fdf012d0>
+  
+  Traceback (most recent call last):
+    File "/root/miniconda3/lib/python3.10/dbm/dumb.py", line 274, in close
+      self._commit()
+    File "/root/miniconda3/lib/python3.10/dbm/dumb.py", line 129, in _commit
+      with self._io.open(self._dirfile, 'w', encoding="Latin-1") as f:
+  FileNotFoundError: [Errno 2] No such file or directory: '/tmp/doit-test-9ylc2dgi/testdb.dir'
+  
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+    warnings.warn(pytest.PytestUnraisableExceptionWarning(msg))
+
+test_doit_cmd.py::TestRun::test_cmdline_vars_not_opts
+  /root/miniconda3/lib/python3.10/site-packages/_pytest/unraisableexception.py:67: PytestUnraisableExceptionWarning: Exception ignored in: <function _Database.close at 0x7ff5fdf012d0>
+  
+  Traceback (most recent call last):
+    File "/root/miniconda3/lib/python3.10/dbm/dumb.py", line 274, in close
+      self._commit()
+    File "/root/miniconda3/lib/python3.10/dbm/dumb.py", line 129, in _commit
+      with self._io.open(self._dirfile, 'w', encoding="Latin-1") as f:
+  FileNotFoundError: [Errno 2] No such file or directory: '/tmp/doit-test-db4uarsk/testdb.dir'
+  
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+    warnings.warn(pytest.PytestUnraisableExceptionWarning(msg))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+438 passed, 5 warnings in 5.73s

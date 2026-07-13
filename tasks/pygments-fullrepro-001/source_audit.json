@@ -1,0 +1,33 @@
+{
+  "repo": "pygments",
+  "src_loc": 112630,
+  "src_files": 359,
+  "test_collected": 3812,
+  "kept": 90,
+  "bad_files": [
+    {
+      "file": "tests/support/empty.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.01s"
+    },
+    {
+      "file": "tests/support/html_formatter.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.01s"
+    },
+    {
+      "file": "tests/support/python_lexer.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.01s"
+    },
+    {
+      "file": "tests/support/structural_diff.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.01s"
+    }
+  ]
+}

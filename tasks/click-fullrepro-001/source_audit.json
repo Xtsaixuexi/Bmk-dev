@@ -1,0 +1,57 @@
+{
+  "repo": "click",
+  "src_loc": 9985,
+  "src_files": 32,
+  "test_collected": 32699,
+  "kept": 90,
+  "bad_files": [
+    {
+      "file": "tests/typing/typing_aliased_group.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.01s"
+    },
+    {
+      "file": "tests/typing/typing_confirmation_option.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.01s"
+    },
+    {
+      "file": "tests/typing/typing_group_kw_options.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.01s"
+    },
+    {
+      "file": "tests/typing/typing_help_option.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.01s"
+    },
+    {
+      "file": "tests/typing/typing_options.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.01s"
+    },
+    {
+      "file": "tests/typing/typing_password_option.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.01s"
+    },
+    {
+      "file": "tests/typing/typing_simple_example.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.01s"
+    },
+    {
+      "file": "tests/typing/typing_version_option.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.01s"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "repo": "arrow",
+  "src_loc": 8774,
+  "src_files": 11,
+  "test_collected": 1902,
+  "kept": 87,
+  "bad_files": [
+    {
+      "file": "tests/utils.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.01s"
+    }
+  ]
+}

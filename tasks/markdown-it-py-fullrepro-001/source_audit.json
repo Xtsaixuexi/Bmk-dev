@@ -1,0 +1,35 @@
+{
+  "repo": "markdown-it-py",
+  "src_loc": 5221,
+  "test_collected": 981,
+  "kept": 90,
+  "collected_files": {
+    "tests/test_cmark_spec/test_spec.py": 653,
+    "tests/test_port/test_fixtures.py": 238,
+    "tests/test_api/test_make_fence_rule.py": 21,
+    "tests/test_api/test_main.py": 15,
+    "tests/test_port/test_no_end_newline.py": 13,
+    "tests/test_api/test_plugin_creation.py": 12,
+    "tests/test_cli.py": 10,
+    "tests/test_tree.py": 7,
+    "tests/test_port/test_references.py": 4,
+    "tests/test_fuzzer.py": 3,
+    "tests/test_api/test_token.py": 2,
+    "tests/test_port/test_misc.py": 2,
+    "tests/test_linkify.py": 1
+  },
+  "kept_files": {
+    "tests/test_api/test_make_fence_rule.py": 21,
+    "tests/test_api/test_main.py": 15,
+    "tests/test_port/test_no_end_newline.py": 13,
+    "tests/test_api/test_plugin_creation.py": 12,
+    "tests/test_cli.py": 10,
+    "tests/test_tree.py": 7,
+    "tests/test_port/test_references.py": 4,
+    "tests/test_cmark_spec/test_spec.py": 4,
+    "tests/test_api/test_token.py": 2,
+    "tests/test_port/test_misc.py": 2
+  },
+  "private_import_files_rough": 0,
+  "collect_status": "rc=0, 981 nodeids"
+}

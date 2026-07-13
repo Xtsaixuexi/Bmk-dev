@@ -1,0 +1,26 @@
+{
+  "processed": 258,
+  "kept": 87,
+  "source_only": 105,
+  "excluded": 66,
+  "layers": {
+    "integration": 22,
+    "atomic": 54,
+    "system_e2e": 11
+  },
+  "sections": {
+    "Error Semantics": 6,
+    "Command": 3,
+    "Product State Model": 3,
+    "Events, Loaders, and Testers": 12,
+    "Arguments, Options, and Input Definitions": 16,
+    "Input Parsing": 18,
+    "Application": 8,
+    "Output, Formatting, and IO": 5,
+    "Cross-View Invariants": 5,
+    "Representative Workflows": 2,
+    "Command With Argument and Flag Option": 1,
+    "Interactive Question": 3,
+    "Formatting Styles and Helpers": 5
+  }
+}

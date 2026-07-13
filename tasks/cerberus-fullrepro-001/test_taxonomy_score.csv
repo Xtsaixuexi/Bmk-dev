@@ -1,0 +1,82 @@
+test_id,layer,keep,reason
+test_normalization::test_coerce,integration,yes,Normalization
+test_normalization::test_coerce_in_dictschema,integration,yes,Normalization
+test_normalization::test_coerce_in_listschema,integration,yes,Normalization
+test_normalization::test_coerce_in_listitems,integration,yes,Normalization
+test_normalization::test_coerce_in_dictschema_in_listschema,integration,yes,Normalization
+test_normalization::test_coerce_not_destructive,integration,yes,Normalization
+test_normalization::test_coerce_unknown,integration,yes,Normalization
+test_normalization::test_custom_coerce_and_rename,integration,yes,Normalization
+test_normalization::test_coerce_chain,integration,yes,Normalization
+test_normalization::test_coerce_non_digit_in_sequence,integration,yes,Normalization
+test_normalization::test_nullables_dont_fail_coerce,integration,yes,Normalization
+test_normalization::test_normalized,integration,yes,Normalization
+test_normalization::test_rename,integration,yes,Normalization
+test_normalization::test_rename_handler,integration,yes,Normalization
+test_normalization::test_purge_unknown,integration,yes,Normalization
+test_normalization::test_purge_unknown_in_subschema,integration,yes,Normalization
+test_normalization::test_issue_147_complex,system_e2e,yes,Normalization
+test_normalization::test_issue_147_nested_dict,system_e2e,yes,Normalization
+test_normalization::test_coerce_in_valuesrules,integration,yes,Normalization
+test_normalization::test_coerce_in_keysrules,integration,yes,Normalization
+test_normalization::test_coercion_of_sequence_items,integration,yes,Normalization
+test_normalization::test_default_missing,integration,yes,Normalization
+test_normalization::test_default_missing,integration,yes,Normalization
+test_normalization::test_default_existent,integration,yes,Normalization
+test_normalization::test_default_existent,integration,yes,Normalization
+test_normalization::test_default_none_nullable,integration,yes,Normalization
+test_normalization::test_default_none_nullable,integration,yes,Normalization
+test_normalization::test_default_none_nonnullable,integration,yes,Normalization
+test_normalization::test_default_none_nonnullable,integration,yes,Normalization
+test_normalization::test_default_none_default_value,integration,yes,Normalization
+test_normalization::test_default_missing_in_subschema,integration,yes,Normalization
+test_normalization::test_default_missing_in_subschema,integration,yes,Normalization
+test_normalization::test_depending_default_setters,integration,yes,Normalization
+test_normalization::test_issue_250_no_type_pass_on_list,integration,yes,Normalization
+test_normalization::test_issue_250_no_type_fail_pass_on_other,integration,yes,Normalization
+test_normalization::test_271_normalising_tuples,integration,yes,Normalization
+test_normalization::test_allow_unknown_wo_schema,integration,yes,Normalization
+test_normalization::test_allow_unknown_with_purge_unknown,system_e2e,yes,Normalization
+test_normalization::test_allow_unknown_with_purge_unknown_subdocument,system_e2e,yes,Normalization
+test_normalization::test_purge_readonly,integration,yes,Normalization
+test_normalization::test_defaults_in_allow_unknown_schema,system_e2e,yes,Normalization
+test_registries::test_schema_registry_simple,integration,yes,Registries
+test_registries::test_top_level_reference,integration,yes,Registries
+test_registries::test_recursion,system_e2e,yes,Registries
+test_registries::test_references_remain_unresolved,integration,yes,Registries
+test_registries::test_rules_registry_with_anyof_type,integration,yes,Registries
+test_registries::test_schema_registry_with_anyof_type,integration,yes,Registries
+test_registries::test_normalization_with_rules_set,system_e2e,yes,Registries
+test_registries::test_rules_set_with_dict_field,system_e2e,yes,Registries
+test_validation::test_empty_field_definition,atomic,yes,Common Validation Rules
+test_validation::test_nullable_skips_allowed,atomic,yes,Common Validation Rules
+test_validation::test_nullable_skips_of_roles,integration,yes,Of-Rules
+test_validation::test_nullable_skips_of_roles,integration,yes,Of-Rules
+test_validation::test_nullable_skips_of_roles,integration,yes,Of-Rules
+test_validation::test_nullable_skips_of_roles,integration,yes,Of-Rules
+test_validation::test_integer_allowed,atomic,yes,Type Checking
+test_validation::test_validate_update,atomic,yes,Validation Workflow
+test_validation::test_string,atomic,yes,Type Checking
+test_validation::test_string_allowed,atomic,yes,Type Checking
+test_validation::test_integer,atomic,yes,Type Checking
+test_validation::test_boolean,atomic,yes,Type Checking
+test_validation::test_datetime,atomic,yes,Type Checking
+test_validation::test_number,atomic,yes,Type Checking
+test_validation::test_array,atomic,yes,Type Checking
+test_validation::test_set,atomic,yes,Type Checking
+test_validation::test_a_list_of_dicts,atomic,yes,Type Checking
+test_validation::test_a_list_of_values,atomic,yes,Type Checking
+test_validation::test_an_array_from_set,atomic,yes,Type Checking
+test_validation::test_a_list_of_integers,atomic,yes,Type Checking
+test_validation::test_empty_skips_regex,atomic,yes,Common Validation Rules
+test_validation::test_unknown_key_dict,atomic,yes,Unknown Fields
+test_validation::test_unknown_key_list,atomic,yes,Unknown Fields
+test_validation::test_unknown_keys_list_of_dicts,atomic,yes,Unknown Fields
+test_validation::test_callable_validator,integration,yes,Custom Validation
+test_validation::test_options_passed_to_nested_validators,system_e2e,yes,Nested Data Rules
+test_validation::test_validated,atomic,yes,Validation Workflow
+test_validation::test_unicode_allowed_py3,atomic,yes,Common Validation Rules
+test_validation::test_anyof_type,atomic,yes,Type Checking
+test_validation::test_nested_oneof_type,atomic,yes,Type Checking
+test_validation::test_issue_107,atomic,yes,Validation Workflow
+test_validation::test_schema_validation_from_rules_set,system_e2e,yes,Type Checking

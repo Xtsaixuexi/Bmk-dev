@@ -1,0 +1,41 @@
+{
+  "task_id": "lark-fullrepro-001",
+  "source_path": "/root/autodl-tmp/e2e/lark",
+  "source_commit": "c169b26a5bec9d47e590bf4be83691bcbdfe7b6b",
+  "pytest_exitcode": 0,
+  "summary": {
+    "passed": 710,
+    "skipped": 82,
+    "total": 792,
+    "collected": 792
+  },
+  "kept_nodeids": 792,
+  "reported_tests": 792,
+  "total_scoreable": 792,
+  "passed": 710,
+  "failed": 0,
+  "skipped": 82,
+  "pass_rate_excluding_skips": 1.0,
+  "by_layer": {
+    "atomic": {
+      "passed": 365,
+      "failed": 0,
+      "skipped": 29,
+      "total": 394
+    },
+    "integration": {
+      "passed": 206,
+      "failed": 0,
+      "skipped": 42,
+      "total": 248
+    },
+    "system_e2e": {
+      "passed": 139,
+      "failed": 0,
+      "skipped": 11,
+      "total": 150
+    }
+  },
+  "unknown_taxonomy": [],
+  "unknown_taxonomy_count": 0
+}

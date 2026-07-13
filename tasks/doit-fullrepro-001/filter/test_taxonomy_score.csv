@@ -1,0 +1,17 @@
+metric,name,count
+total,collected_functions,909
+total,kept_nodeids,438
+layer,atomic,230
+layer,integration,207
+layer,system_e2e,1
+spec_section,Actions,65
+spec_section,"Command, Loader, Parser, Plugin, and Reporter APIs",50
+spec_section,Cross-View Invariants,14
+spec_section,Dependency State,144
+spec_section,Embedded Execution API,3
+spec_section,Error Semantics,55
+spec_section,Installable Surface,1
+spec_section,Task Loading,37
+spec_section,Task Object API,48
+spec_section,Top-Level API,1
+spec_section,Up-To-Date Helpers and Tools,20

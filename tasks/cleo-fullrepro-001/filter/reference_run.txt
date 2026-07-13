@@ -1,0 +1,2 @@
+Direct reference pytest: 87 passed / 87 retained nodeids.
+Isolated scorer reference: 87 passed / 87 retained nodeids.

@@ -1,0 +1,39 @@
+{
+  "task_id": "jsonpickle-fullrepro-001",
+  "stage": 1,
+  "source_repo": "jsonpickle/jsonpickle",
+  "checkout_name": "jsonpickle__jsonpickle",
+  "source_path": "/root/autodl-tmp/new-e2e/jsonpickle__jsonpickle",
+  "remote": "https://github.com/jsonpickle/jsonpickle.git",
+  "commit": "4bdc0d60779b8dac952b46788b5b858223a24674",
+  "mechanical_audit": {
+    "src_loc": 4128,
+    "source_py_files": 28,
+    "test_files": 20,
+    "test_functions_rough": 336,
+    "docs_files_rough": 17,
+    "private_import_file_rate": 0.0,
+    "network_test_file_rate": 0.15,
+    "snapshot_test_file_rate": 0.0,
+    "priority_score": 23.1,
+    "priority_reason": "screen_keep with docs/tests and acceptable import risk"
+  },
+  "collect_pre_screen": {
+    "status": "COLLECT_OK",
+    "returncode": 0,
+    "collected_nodeids": 784,
+    "error_markers": 0,
+    "command": [
+      "/root/miniconda3/bin/python",
+      "-m",
+      "pytest",
+      "--collect-only",
+      "-q",
+      "-o",
+      "addopts=",
+      "tests"
+    ]
+  },
+  "decision": "keep",
+  "selected_at": "2026-07-09"
+}

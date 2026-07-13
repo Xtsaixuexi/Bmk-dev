@@ -1,0 +1,3541 @@
+{
+  "source_repo": "/root/autodl-tmp/Bmk-Lizhiqian/wip/jsonpickle-fullrepro-001/filter/oracle_source",
+  "solution_dir": "/root/autodl-tmp/new-e2e/jsonpickle__jsonpickle",
+  "nodeids": "/root/autodl-tmp/Bmk-Lizhiqian/wip/jsonpickle-fullrepro-001/kept_nodeids.txt",
+  "taxonomy": "/root/autodl-tmp/Bmk-Lizhiqian/wip/jsonpickle-fullrepro-001/taxonomy.jsonl",
+  "run_dir": "/root/autodl-tmp/Bmk-Lizhiqian/wip/jsonpickle-fullrepro-001/filter/scorer_runs/reference",
+  "import_provenance": {
+    "returncode": 0,
+    "stdout": "/root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/__init__.py\n",
+    "stderr": ""
+  },
+  "grouped_results": {
+    "filter/generated_tests.py": {
+      "returncode": 0,
+      "stdout": "import surface and aliases are available\nimport surface and aliases are available\nencode decode roundtrip simple object state\nencode decode roundtrip simple object state\ndumps loads aliases roundtrip container\ndumps loads aliases roundtrip container\nunpicklable false returns plain json data\nunpicklable false returns plain json data\nprimitives lists dicts tuples and sets roundtrip\nprimitives lists dicts tuples and sets roundtrip\ntuple and set become lists when not unpicklable\ntuple and set become lists when not unpicklable\npickler flatten and unpickler restore match encode decode\npickler flatten and unpickler restore match encode decode\nunpickler reset false preserves reference state\nunpickler reset false preserves reference state\nrepeated object reference is shared after decode\nrepeated object reference is shared after decode\nobject cycle roundtrips to restored cycle\nobject cycle roundtrips to restored cycle\nlist cycle roundtrips to restored cycle\nlist cycle roundtrips to restored cycle\ndictionary identity is preserved in current format\ndictionary identity is preserved in current format\nmake refs false expands repeated objects\nmake refs false expands repeated objects\nunpicklable false breaks cycles with none\nunpicklable false breaks cycles with none\nmake refs false breaks cycle with repr string\nmake refs false breaks cycle with repr string\nnon string keys default to strings\nnon string keys default to strings\nkeys true roundtrips tuple int and none keys\nkeys true roundtrips tuple int and none keys\nkeys true roundtrips object keys and value refs\nkeys true roundtrips object keys and value refs\nkeys true preserves reserved tag string keys as user data\nkeys true preserves reserved tag string keys as user data\nkeys true decoded without keys returns escaped strings\nkeys true decoded without keys returns escaped strings\nnumeric keys preserves numeric keys in flattened projection\nnumeric keys preserves numeric keys in flattened projection\nclass metadata wire tags are semantically recognized\nclass metadata wire tags are semantically recognized\ntype and function metadata roundtrip\ntype and function metadata roundtrip\nclasses mapping restores renamed class\nclasses mapping restores renamed class\nclasses accept single sequence and dict forms\nclasses accept single sequence and dict forms\nmissing class ignore warn error and callback behaviors\nmissing class ignore warn error and callback behaviors\ninvalid on missing value warns and ignores\ninvalid on missing value warns and ignores\nv1 decode uses legacy reference numbering for dicts\nv1 decode uses legacy reference numbering for dicts\ngetstate and setstate are used for object state\ngetstate and setstate are used for object state\ngetstate without setstate returns non dict state when no newargs\ngetstate without setstate returns non dict state when no newargs\ngetnewargs and getnewargs ex restore tuple subclasses\ngetnewargs and getnewargs ex restore tuple subclasses\ngetinitargs roundtrip visible state\ngetinitargs roundtrip visible state\nreduce listitems restore visible mutation\nreduce listitems restore visible mutation\nexcluded attributes are not synthesized after decode\nexcluded attributes are not synthesized after decode\nslots instances roundtrip public slot values\nslots instances roundtrip public slot values\nbytes default and base85 roundtrip\nbytes default and base85 roundtrip\ninvalid base64 and base85 payloads restore empty bytes\ninvalid base64 and base85 payloads restore empty bytes\nmax depth uses repr for deeper values\nmax depth uses repr for deeper values\ninclude properties adds property metadata without breaking restore\ninclude properties adds property metadata without breaking restore\nhandle readonly roundtrips string subclass with empty slots\nhandle readonly roundtrips string subclass with empty slots\nfail safe replaces failed object and records exception\nfail safe replaces failed object and records exception\nfail safe does not catch keyboard interrupt\nfail safe does not catch keyboard interrupt\nwarn true emits warning for unpicklable file object\nwarn true emits warning for unpicklable file object\ndecode invalid json raises backend exception\ndecode invalid json raises backend exception\nregister rejects non class and base handler methods raise\nregister rejects non class and base handler methods raise\ncustom handler roundtrip and unregister restores default behavior\ncustom handler roundtrip and unregister restores default behavior\ncustom handler decorator registration\ncustom handler decorator registration\nbase handler applies to subclasses until specific handler overrides\nbase handler applies to subclasses until specific handler overrides\nhandler context passes only to accepting handlers\nhandler context passes only to accepting handlers\nhandler can share reference graph with context reset false\nhandler can share reference graph with context reset false\nload backend and preferred backend use custom module\nload backend and preferred backend use custom module\nload backend returns false for missing components\nload backend returns false for missing components\nremove backend allows absent backend and preferred unloaded raises\nremove backend allows absent backend and preferred unloaded raises\nbackend encoder decoder options persist for later calls\nbackend encoder decoder options persist for later calls\nper call indent and separators format but decode same projection\nper call indent and separators format but decode same projection\njsonbackend fallthrough raises last exception when enabled\njsonbackend fallthrough raises last exception when enabled\njsonbackend no fallthrough raises first exception\njsonbackend no fallthrough raises first exception\njsonbackend with no loaded backend raises assertion\njsonbackend with no loaded backend raises assertion\nworkflow object graph file style roundtrip\nworkflow object graph file style roundtrip\nworkflow keys true for non string keyed object graph\nworkflow keys true for non string keyed object graph\nworkflow custom handler with backend formatting\nworkflow custom handler with backend formatting\nsemantic json member order is not required for decode\nsemantic json member order is not required for decode\nsemantic json whitespace is not required for decode\nsemantic json whitespace is not required for decode\nno optional extension is needed for core roundtrip\nno optional extension is needed for core roundtrip\n\n128 passed in 0.24s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1783594633.8862505,
+        "duration": 0.2359170913696289,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/wip/jsonpickle-fullrepro-001/filter/scorer_runs/reference/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 64,
+          "total": 64,
+          "collected": 128
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "filter/generated_tests.py::test_import_surface_and_aliases_are_available",
+                "type": "Function",
+                "lineno": 203
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_import_surface_and_aliases_are_available",
+                "type": "Function",
+                "lineno": 203
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_encode_decode_roundtrip_simple_object_state",
+                "type": "Function",
+                "lineno": 214
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_encode_decode_roundtrip_simple_object_state",
+                "type": "Function",
+                "lineno": 214
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_dumps_loads_aliases_roundtrip_container",
+                "type": "Function",
+                "lineno": 223
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_dumps_loads_aliases_roundtrip_container",
+                "type": "Function",
+                "lineno": 223
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_unpicklable_false_returns_plain_json_data",
+                "type": "Function",
+                "lineno": 228
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_unpicklable_false_returns_plain_json_data",
+                "type": "Function",
+                "lineno": 228
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_primitives_lists_dicts_tuples_and_sets_roundtrip",
+                "type": "Function",
+                "lineno": 235
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_primitives_lists_dicts_tuples_and_sets_roundtrip",
+                "type": "Function",
+                "lineno": 235
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_tuple_and_set_become_lists_when_not_unpicklable",
+                "type": "Function",
+                "lineno": 243
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_tuple_and_set_become_lists_when_not_unpicklable",
+                "type": "Function",
+                "lineno": 243
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_pickler_flatten_and_unpickler_restore_match_encode_decode",
+                "type": "Function",
+                "lineno": 249
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_pickler_flatten_and_unpickler_restore_match_encode_decode",
+                "type": "Function",
+                "lineno": 249
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_unpickler_reset_false_preserves_reference_state",
+                "type": "Function",
+                "lineno": 258
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_unpickler_reset_false_preserves_reference_state",
+                "type": "Function",
+                "lineno": 258
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_repeated_object_reference_is_shared_after_decode",
+                "type": "Function",
+                "lineno": 268
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_repeated_object_reference_is_shared_after_decode",
+                "type": "Function",
+                "lineno": 268
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_object_cycle_roundtrips_to_restored_cycle",
+                "type": "Function",
+                "lineno": 275
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_object_cycle_roundtrips_to_restored_cycle",
+                "type": "Function",
+                "lineno": 275
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_list_cycle_roundtrips_to_restored_cycle",
+                "type": "Function",
+                "lineno": 282
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_list_cycle_roundtrips_to_restored_cycle",
+                "type": "Function",
+                "lineno": 282
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_dictionary_identity_is_preserved_in_current_format",
+                "type": "Function",
+                "lineno": 289
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_dictionary_identity_is_preserved_in_current_format",
+                "type": "Function",
+                "lineno": 289
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_make_refs_false_expands_repeated_objects",
+                "type": "Function",
+                "lineno": 297
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_make_refs_false_expands_repeated_objects",
+                "type": "Function",
+                "lineno": 297
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_unpicklable_false_breaks_cycles_with_none",
+                "type": "Function",
+                "lineno": 305
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_unpicklable_false_breaks_cycles_with_none",
+                "type": "Function",
+                "lineno": 305
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_make_refs_false_breaks_cycle_with_repr_string",
+                "type": "Function",
+                "lineno": 313
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_make_refs_false_breaks_cycle_with_repr_string",
+                "type": "Function",
+                "lineno": 313
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_non_string_keys_default_to_strings",
+                "type": "Function",
+                "lineno": 321
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_non_string_keys_default_to_strings",
+                "type": "Function",
+                "lineno": 321
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_keys_true_roundtrips_tuple_int_and_none_keys",
+                "type": "Function",
+                "lineno": 326
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_keys_true_roundtrips_tuple_int_and_none_keys",
+                "type": "Function",
+                "lineno": 326
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_keys_true_roundtrips_object_keys_and_value_refs",
+                "type": "Function",
+                "lineno": 331
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_keys_true_roundtrips_object_keys_and_value_refs",
+                "type": "Function",
+                "lineno": 331
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_keys_true_preserves_reserved_tag_string_keys_as_user_data",
+                "type": "Function",
+                "lineno": 341
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_keys_true_preserves_reserved_tag_string_keys_as_user_data",
+                "type": "Function",
+                "lineno": 341
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_keys_true_decoded_without_keys_returns_escaped_strings",
+                "type": "Function",
+                "lineno": 347
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_keys_true_decoded_without_keys_returns_escaped_strings",
+                "type": "Function",
+                "lineno": 347
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_numeric_keys_preserves_numeric_keys_in_flattened_projection",
+                "type": "Function",
+                "lineno": 354
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_numeric_keys_preserves_numeric_keys_in_flattened_projection",
+                "type": "Function",
+                "lineno": 354
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_class_metadata_wire_tags_are_semantically_recognized",
+                "type": "Function",
+                "lineno": 360
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_class_metadata_wire_tags_are_semantically_recognized",
+                "type": "Function",
+                "lineno": 360
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_type_and_function_metadata_roundtrip",
+                "type": "Function",
+                "lineno": 369
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_type_and_function_metadata_roundtrip",
+                "type": "Function",
+                "lineno": 369
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_classes_mapping_restores_renamed_class",
+                "type": "Function",
+                "lineno": 375
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_classes_mapping_restores_renamed_class",
+                "type": "Function",
+                "lineno": 375
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_classes_accept_single_sequence_and_dict_forms",
+                "type": "Function",
+                "lineno": 383
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_classes_accept_single_sequence_and_dict_forms",
+                "type": "Function",
+                "lineno": 383
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_missing_class_ignore_warn_error_and_callback_behaviors",
+                "type": "Function",
+                "lineno": 394
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_missing_class_ignore_warn_error_and_callback_behaviors",
+                "type": "Function",
+                "lineno": 394
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_invalid_on_missing_value_warns_and_ignores",
+                "type": "Function",
+                "lineno": 408
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_invalid_on_missing_value_warns_and_ignores",
+                "type": "Function",
+                "lineno": 408
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_v1_decode_uses_legacy_reference_numbering_for_dicts",
+                "type": "Function",
+                "lineno": 417
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_v1_decode_uses_legacy_reference_numbering_for_dicts",
+                "type": "Function",
+                "lineno": 417
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_getstate_and_setstate_are_used_for_object_state",
+                "type": "Function",
+                "lineno": 425
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_getstate_and_setstate_are_used_for_object_state",
+                "type": "Function",
+                "lineno": 425
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_getstate_without_setstate_returns_non_dict_state_when_no_newargs",
+                "type": "Function",
+                "lineno": 432
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_getstate_without_setstate_returns_non_dict_state_when_no_newargs",
+                "type": "Function",
+                "lineno": 432
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_getnewargs_and_getnewargs_ex_restore_tuple_subclasses",
+                "type": "Function",
+                "lineno": 437
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_getnewargs_and_getnewargs_ex_restore_tuple_subclasses",
+                "type": "Function",
+                "lineno": 437
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_getinitargs_roundtrip_visible_state",
+                "type": "Function",
+                "lineno": 442
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_getinitargs_roundtrip_visible_state",
+                "type": "Function",
+                "lineno": 442
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_reduce_listitems_restore_visible_mutation",
+                "type": "Function",
+                "lineno": 448
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_reduce_listitems_restore_visible_mutation",
+                "type": "Function",
+                "lineno": 448
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_excluded_attributes_are_not_synthesized_after_decode",
+                "type": "Function",
+                "lineno": 454
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_excluded_attributes_are_not_synthesized_after_decode",
+                "type": "Function",
+                "lineno": 454
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_slots_instances_roundtrip_public_slot_values",
+                "type": "Function",
+                "lineno": 460
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_slots_instances_roundtrip_public_slot_values",
+                "type": "Function",
+                "lineno": 460
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_bytes_default_and_base85_roundtrip",
+                "type": "Function",
+                "lineno": 466
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_bytes_default_and_base85_roundtrip",
+                "type": "Function",
+                "lineno": 466
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_invalid_base64_and_base85_payloads_restore_empty_bytes",
+                "type": "Function",
+                "lineno": 472
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_invalid_base64_and_base85_payloads_restore_empty_bytes",
+                "type": "Function",
+                "lineno": 472
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_max_depth_uses_repr_for_deeper_values",
+                "type": "Function",
+                "lineno": 477
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_max_depth_uses_repr_for_deeper_values",
+                "type": "Function",
+                "lineno": 477
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_include_properties_adds_property_metadata_without_breaking_restore",
+                "type": "Function",
+                "lineno": 482
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_include_properties_adds_property_metadata_without_breaking_restore",
+                "type": "Function",
+                "lineno": 482
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_handle_readonly_roundtrips_string_subclass_with_empty_slots",
+                "type": "Function",
+                "lineno": 491
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_handle_readonly_roundtrips_string_subclass_with_empty_slots",
+                "type": "Function",
+                "lineno": 491
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_fail_safe_replaces_failed_object_and_records_exception",
+                "type": "Function",
+                "lineno": 498
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_fail_safe_replaces_failed_object_and_records_exception",
+                "type": "Function",
+                "lineno": 498
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_fail_safe_does_not_catch_keyboard_interrupt",
+                "type": "Function",
+                "lineno": 509
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_fail_safe_does_not_catch_keyboard_interrupt",
+                "type": "Function",
+                "lineno": 509
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_warn_true_emits_warning_for_unpicklable_file_object",
+                "type": "Function",
+                "lineno": 518
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_warn_true_emits_warning_for_unpicklable_file_object",
+                "type": "Function",
+                "lineno": 518
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_decode_invalid_json_raises_backend_exception",
+                "type": "Function",
+                "lineno": 529
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_decode_invalid_json_raises_backend_exception",
+                "type": "Function",
+                "lineno": 529
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_register_rejects_non_class_and_base_handler_methods_raise",
+                "type": "Function",
+                "lineno": 534
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_register_rejects_non_class_and_base_handler_methods_raise",
+                "type": "Function",
+                "lineno": 534
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_custom_handler_roundtrip_and_unregister_restores_default_behavior",
+                "type": "Function",
+                "lineno": 544
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_custom_handler_roundtrip_and_unregister_restores_default_behavior",
+                "type": "Function",
+                "lineno": 544
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_custom_handler_decorator_registration",
+                "type": "Function",
+                "lineno": 554
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_custom_handler_decorator_registration",
+                "type": "Function",
+                "lineno": 554
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_base_handler_applies_to_subclasses_until_specific_handler_overrides",
+                "type": "Function",
+                "lineno": 563
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_base_handler_applies_to_subclasses_until_specific_handler_overrides",
+                "type": "Function",
+                "lineno": 563
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_handler_context_passes_only_to_accepting_handlers",
+                "type": "Function",
+                "lineno": 572
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_handler_context_passes_only_to_accepting_handlers",
+                "type": "Function",
+                "lineno": 572
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_handler_can_share_reference_graph_with_context_reset_false",
+                "type": "Function",
+                "lineno": 579
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_handler_can_share_reference_graph_with_context_reset_false",
+                "type": "Function",
+                "lineno": 579
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_load_backend_and_preferred_backend_use_custom_module",
+                "type": "Function",
+                "lineno": 612
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_load_backend_and_preferred_backend_use_custom_module",
+                "type": "Function",
+                "lineno": 612
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_load_backend_returns_false_for_missing_components",
+                "type": "Function",
+                "lineno": 620
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_load_backend_returns_false_for_missing_components",
+                "type": "Function",
+                "lineno": 620
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_remove_backend_allows_absent_backend_and_preferred_unloaded_raises",
+                "type": "Function",
+                "lineno": 627
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_remove_backend_allows_absent_backend_and_preferred_unloaded_raises",
+                "type": "Function",
+                "lineno": 627
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_backend_encoder_decoder_options_persist_for_later_calls",
+                "type": "Function",
+                "lineno": 633
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_backend_encoder_decoder_options_persist_for_later_calls",
+                "type": "Function",
+                "lineno": 633
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_per_call_indent_and_separators_format_but_decode_same_projection",
+                "type": "Function",
+                "lineno": 641
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_per_call_indent_and_separators_format_but_decode_same_projection",
+                "type": "Function",
+                "lineno": 641
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_jsonbackend_fallthrough_raises_last_exception_when_enabled",
+                "type": "Function",
+                "lineno": 669
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_jsonbackend_fallthrough_raises_last_exception_when_enabled",
+                "type": "Function",
+                "lineno": 669
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_jsonbackend_no_fallthrough_raises_first_exception",
+                "type": "Function",
+                "lineno": 683
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_jsonbackend_no_fallthrough_raises_first_exception",
+                "type": "Function",
+                "lineno": 683
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_jsonbackend_with_no_loaded_backend_raises_assertion",
+                "type": "Function",
+                "lineno": 697
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_jsonbackend_with_no_loaded_backend_raises_assertion",
+                "type": "Function",
+                "lineno": 697
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_workflow_object_graph_file_style_roundtrip",
+                "type": "Function",
+                "lineno": 706
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_workflow_object_graph_file_style_roundtrip",
+                "type": "Function",
+                "lineno": 706
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_workflow_keys_true_for_non_string_keyed_object_graph",
+                "type": "Function",
+                "lineno": 718
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_workflow_keys_true_for_non_string_keyed_object_graph",
+                "type": "Function",
+                "lineno": 718
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_workflow_custom_handler_with_backend_formatting",
+                "type": "Function",
+                "lineno": 727
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_workflow_custom_handler_with_backend_formatting",
+                "type": "Function",
+                "lineno": 727
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_semantic_json_member_order_is_not_required_for_decode",
+                "type": "Function",
+                "lineno": 739
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_semantic_json_member_order_is_not_required_for_decode",
+                "type": "Function",
+                "lineno": 739
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_semantic_json_whitespace_is_not_required_for_decode",
+                "type": "Function",
+                "lineno": 746
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_semantic_json_whitespace_is_not_required_for_decode",
+                "type": "Function",
+                "lineno": 746
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_no_optional_extension_is_needed_for_core_roundtrip",
+                "type": "Function",
+                "lineno": 752
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_no_optional_extension_is_needed_for_core_roundtrip",
+                "type": "Function",
+                "lineno": 752
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "filter/generated_tests.py::test_import_surface_and_aliases_are_available",
+            "lineno": 203,
+            "outcome": "passed",
+            "keywords": [
+              "test_import_surface_and_aliases_are_available",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00015532411634922028,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00010872073471546173,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012299977242946625,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_encode_decode_roundtrip_simple_object_state",
+            "lineno": 214,
+            "outcome": "passed",
+            "keywords": [
+              "test_encode_decode_roundtrip_simple_object_state",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00015990063548088074,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00030234456062316895,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00014051049947738647,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_dumps_loads_aliases_roundtrip_container",
+            "lineno": 223,
+            "outcome": "passed",
+            "keywords": [
+              "test_dumps_loads_aliases_roundtrip_container",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014430098235607147,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00018997862935066223,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012836232781410217,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_unpicklable_false_returns_plain_json_data",
+            "lineno": 228,
+            "outcome": "passed",
+            "keywords": [
+              "test_unpicklable_false_returns_plain_json_data",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014541484415531158,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0002126842737197876,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.000130457803606987,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_primitives_lists_dicts_tuples_and_sets_roundtrip",
+            "lineno": 235,
+            "outcome": "passed",
+            "keywords": [
+              "test_primitives_lists_dicts_tuples_and_sets_roundtrip",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014542974531650543,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00021706894040107727,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012765266001224518,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_tuple_and_set_become_lists_when_not_unpicklable",
+            "lineno": 243,
+            "outcome": "passed",
+            "keywords": [
+              "test_tuple_and_set_become_lists_when_not_unpicklable",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014555267989635468,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00019711628556251526,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012838654220104218,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_pickler_flatten_and_unpickler_restore_match_encode_decode",
+            "lineno": 249,
+            "outcome": "passed",
+            "keywords": [
+              "test_pickler_flatten_and_unpickler_restore_match_encode_decode",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014722347259521484,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00028463639318943024,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013071484863758087,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_unpickler_reset_false_preserves_reference_state",
+            "lineno": 258,
+            "outcome": "passed",
+            "keywords": [
+              "test_unpickler_reset_false_preserves_reference_state",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014561042189598083,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0002186894416809082,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012907199561595917,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_repeated_object_reference_is_shared_after_decode",
+            "lineno": 268,
+            "outcome": "passed",
+            "keywords": [
+              "test_repeated_object_reference_is_shared_after_decode",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00015413574874401093,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00025347620248794556,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001307409256696701,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_object_cycle_roundtrips_to_restored_cycle",
+            "lineno": 275,
+            "outcome": "passed",
+            "keywords": [
+              "test_object_cycle_roundtrips_to_restored_cycle",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014819204807281494,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00023531541228294373,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013108737766742706,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_list_cycle_roundtrips_to_restored_cycle",
+            "lineno": 282,
+            "outcome": "passed",
+            "keywords": [
+              "test_list_cycle_roundtrips_to_restored_cycle",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014358945190906525,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00016893260180950165,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001241397112607956,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_dictionary_identity_is_preserved_in_current_format",
+            "lineno": 289,
+            "outcome": "passed",
+            "keywords": [
+              "test_dictionary_identity_is_preserved_in_current_format",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001451633870601654,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00018474645912647247,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012589991092681885,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_make_refs_false_expands_repeated_objects",
+            "lineno": 297,
+            "outcome": "passed",
+            "keywords": [
+              "test_make_refs_false_expands_repeated_objects",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001463722437620163,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00026647187769412994,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012934766709804535,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_unpicklable_false_breaks_cycles_with_none",
+            "lineno": 305,
+            "outcome": "passed",
+            "keywords": [
+              "test_unpicklable_false_breaks_cycles_with_none",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001732129603624344,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00022947601974010468,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001373887062072754,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_make_refs_false_breaks_cycle_with_repr_string",
+            "lineno": 313,
+            "outcome": "passed",
+            "keywords": [
+              "test_make_refs_false_breaks_cycle_with_repr_string",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014537200331687927,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0002374313771724701,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.000127376988530159,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_non_string_keys_default_to_strings",
+            "lineno": 321,
+            "outcome": "passed",
+            "keywords": [
+              "test_non_string_keys_default_to_strings",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014418736100196838,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00018092431128025055,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012744776904582977,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_keys_true_roundtrips_tuple_int_and_none_keys",
+            "lineno": 326,
+            "outcome": "passed",
+            "keywords": [
+              "test_keys_true_roundtrips_tuple_int_and_none_keys",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014445558190345764,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00023720227181911469,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.000130360946059227,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_keys_true_roundtrips_object_keys_and_value_refs",
+            "lineno": 331,
+            "outcome": "passed",
+            "keywords": [
+              "test_keys_true_roundtrips_object_keys_and_value_refs",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014502741396427155,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00029084645211696625,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001285318285226822,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_keys_true_preserves_reserved_tag_string_keys_as_user_data",
+            "lineno": 341,
+            "outcome": "passed",
+            "keywords": [
+              "test_keys_true_preserves_reserved_tag_string_keys_as_user_data",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014742650091648102,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.000204525887966156,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012777186930179596,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_keys_true_decoded_without_keys_returns_escaped_strings",
+            "lineno": 347,
+            "outcome": "passed",
+            "keywords": [
+              "test_keys_true_decoded_without_keys_returns_escaped_strings",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001453012228012085,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0001890920102596283,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012672878801822662,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_numeric_keys_preserves_numeric_keys_in_flattened_projection",
+            "lineno": 354,
+            "outcome": "passed",
+            "keywords": [
+              "test_numeric_keys_preserves_numeric_keys_in_flattened_projection",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.000157991424202919,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0001308787614107132,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.000155765563249588,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_class_metadata_wire_tags_are_semantically_recognized",
+            "lineno": 360,
+            "outcome": "passed",
+            "keywords": [
+              "test_class_metadata_wire_tags_are_semantically_recognized",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00016009993851184845,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00022949278354644775,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012849830090999603,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_type_and_function_metadata_roundtrip",
+            "lineno": 369,
+            "outcome": "passed",
+            "keywords": [
+              "test_type_and_function_metadata_roundtrip",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014393962919712067,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00020282529294490814,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.000128183513879776,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_classes_mapping_restores_renamed_class",
+            "lineno": 375,
+            "outcome": "passed",
+            "keywords": [
+              "test_classes_mapping_restores_renamed_class",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014783255755901337,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00023548118770122528,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012889504432678223,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_classes_accept_single_sequence_and_dict_forms",
+            "lineno": 383,
+            "outcome": "passed",
+            "keywords": [
+              "test_classes_accept_single_sequence_and_dict_forms",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014469772577285767,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0002957899123430252,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012970902025699615,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_missing_class_ignore_warn_error_and_callback_behaviors",
+            "lineno": 394,
+            "outcome": "passed",
+            "keywords": [
+              "test_missing_class_ignore_warn_error_and_callback_behaviors",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001593753695487976,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0010472144931554794,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013488158583641052,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_invalid_on_missing_value_warns_and_ignores",
+            "lineno": 408,
+            "outcome": "passed",
+            "keywords": [
+              "test_invalid_on_missing_value_warns_and_ignores",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014639273285865784,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0003986433148384094,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013324618339538574,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_v1_decode_uses_legacy_reference_numbering_for_dicts",
+            "lineno": 417,
+            "outcome": "passed",
+            "keywords": [
+              "test_v1_decode_uses_legacy_reference_numbering_for_dicts",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014351867139339447,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00016783177852630615,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001247301697731018,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_getstate_and_setstate_are_used_for_object_state",
+            "lineno": 425,
+            "outcome": "passed",
+            "keywords": [
+              "test_getstate_and_setstate_are_used_for_object_state",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014433637261390686,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00022861361503601074,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012919865548610687,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_getstate_without_setstate_returns_non_dict_state_when_no_newargs",
+            "lineno": 432,
+            "outcome": "passed",
+            "keywords": [
+              "test_getstate_without_setstate_returns_non_dict_state_when_no_newargs",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014552846550941467,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0002243872731924057,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012778118252754211,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_getnewargs_and_getnewargs_ex_restore_tuple_subclasses",
+            "lineno": 437,
+            "outcome": "passed",
+            "keywords": [
+              "test_getnewargs_and_getnewargs_ex_restore_tuple_subclasses",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014623254537582397,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00031239911913871765,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001298375427722931,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_getinitargs_roundtrip_visible_state",
+            "lineno": 442,
+            "outcome": "passed",
+            "keywords": [
+              "test_getinitargs_roundtrip_visible_state",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00016011111438274384,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00023481622338294983,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012890063226222992,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_reduce_listitems_restore_visible_mutation",
+            "lineno": 448,
+            "outcome": "passed",
+            "keywords": [
+              "test_reduce_listitems_restore_visible_mutation",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014721229672431946,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00026270002126693726,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013820454478263855,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_excluded_attributes_are_not_synthesized_after_decode",
+            "lineno": 454,
+            "outcome": "passed",
+            "keywords": [
+              "test_excluded_attributes_are_not_synthesized_after_decode",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014622323215007782,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00022003799676895142,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013981200754642487,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_slots_instances_roundtrip_public_slot_values",
+            "lineno": 460,
+            "outcome": "passed",
+            "keywords": [
+              "test_slots_instances_roundtrip_public_slot_values",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014609470963478088,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0002319812774658203,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012928806245326996,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_bytes_default_and_base85_roundtrip",
+            "lineno": 466,
+            "outcome": "passed",
+            "keywords": [
+              "test_bytes_default_and_base85_roundtrip",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00026863813400268555,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00021396391093730927,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00015337392687797546,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_invalid_base64_and_base85_payloads_restore_empty_bytes",
+            "lineno": 472,
+            "outcome": "passed",
+            "keywords": [
+              "test_invalid_base64_and_base85_payloads_restore_empty_bytes",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001581050455570221,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00013502873480319977,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001351628452539444,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_max_depth_uses_repr_for_deeper_values",
+            "lineno": 477,
+            "outcome": "passed",
+            "keywords": [
+              "test_max_depth_uses_repr_for_deeper_values",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.000148700550198555,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0001777317374944687,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00014436431229114532,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_include_properties_adds_property_metadata_without_breaking_restore",
+            "lineno": 482,
+            "outcome": "passed",
+            "keywords": [
+              "test_include_properties_adds_property_metadata_without_breaking_restore",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00016934797167778015,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00033038482069969177,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001412760466337204,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_handle_readonly_roundtrips_string_subclass_with_empty_slots",
+            "lineno": 491,
+            "outcome": "passed",
+            "keywords": [
+              "test_handle_readonly_roundtrips_string_subclass_with_empty_slots",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00015373341739177704,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0021522343158721924,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013451650738716125,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_fail_safe_replaces_failed_object_and_records_exception",
+            "lineno": 498,
+            "outcome": "passed",
+            "keywords": [
+              "test_fail_safe_replaces_failed_object_and_records_exception",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00015961192548274994,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00023602694272994995,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012871809303760529,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_fail_safe_does_not_catch_keyboard_interrupt",
+            "lineno": 509,
+            "outcome": "passed",
+            "keywords": [
+              "test_fail_safe_does_not_catch_keyboard_interrupt",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001489780843257904,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00021359138190746307,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00017038732767105103,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_warn_true_emits_warning_for_unpicklable_file_object",
+            "lineno": 518,
+            "outcome": "passed",
+            "keywords": [
+              "test_warn_true_emits_warning_for_unpicklable_file_object",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005216691642999649,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0003480594605207443,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001475941389799118,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_decode_invalid_json_raises_backend_exception",
+            "lineno": 529,
+            "outcome": "passed",
+            "keywords": [
+              "test_decode_invalid_json_raises_backend_exception",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001502782106399536,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00016351602971553802,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012858398258686066,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_register_rejects_non_class_and_base_handler_methods_raise",
+            "lineno": 534,
+            "outcome": "passed",
+            "keywords": [
+              "test_register_rejects_non_class_and_base_handler_methods_raise",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014676712453365326,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00014200247824192047,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001243986189365387,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_custom_handler_roundtrip_and_unregister_restores_default_behavior",
+            "lineno": 544,
+            "outcome": "passed",
+            "keywords": [
+              "test_custom_handler_roundtrip_and_unregister_restores_default_behavior",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001485571265220642,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00041240081191062927,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013461150228977203,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_custom_handler_decorator_registration",
+            "lineno": 554,
+            "outcome": "passed",
+            "keywords": [
+              "test_custom_handler_decorator_registration",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00015886127948760986,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00022447481751441956,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013140402734279633,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_base_handler_applies_to_subclasses_until_specific_handler_overrides",
+            "lineno": 563,
+            "outcome": "passed",
+            "keywords": [
+              "test_base_handler_applies_to_subclasses_until_specific_handler_overrides",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014857575297355652,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0002714022994041443,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001299828290939331,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_handler_context_passes_only_to_accepting_handlers",
+            "lineno": 572,
+            "outcome": "passed",
+            "keywords": [
+              "test_handler_context_passes_only_to_accepting_handlers",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014871545135974884,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.000273779034614563,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013388879597187042,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_handler_can_share_reference_graph_with_context_reset_false",
+            "lineno": 579,
+            "outcome": "passed",
+            "keywords": [
+              "test_handler_can_share_reference_graph_with_context_reset_false",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014989078044891357,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00035468675196170807,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013428181409835815,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_load_backend_and_preferred_backend_use_custom_module",
+            "lineno": 612,
+            "outcome": "passed",
+            "keywords": [
+              "test_load_backend_and_preferred_backend_use_custom_module",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.000146595761179924,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0001613963395357132,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001264326274394989,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_load_backend_returns_false_for_missing_components",
+            "lineno": 620,
+            "outcome": "passed",
+            "keywords": [
+              "test_load_backend_returns_false_for_missing_components",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014437176287174225,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00011748448014259338,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001231841742992401,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_remove_backend_allows_absent_backend_and_preferred_unloaded_raises",
+            "lineno": 627,
+            "outcome": "passed",
+            "keywords": [
+              "test_remove_backend_allows_absent_backend_and_preferred_unloaded_raises",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001437366008758545,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.000125812366604805,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001254212111234665,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_backend_encoder_decoder_options_persist_for_later_calls",
+            "lineno": 633,
+            "outcome": "passed",
+            "keywords": [
+              "test_backend_encoder_decoder_options_persist_for_later_calls",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001460481435060501,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0001873169094324112,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001487676054239273,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_per_call_indent_and_separators_format_but_decode_same_projection",
+            "lineno": 641,
+            "outcome": "passed",
+            "keywords": [
+              "test_per_call_indent_and_separators_format_but_decode_same_projection",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014858320355415344,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00022850371897220612,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012831203639507294,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_jsonbackend_fallthrough_raises_last_exception_when_enabled",
+            "lineno": 669,
+            "outcome": "passed",
+            "keywords": [
+              "test_jsonbackend_fallthrough_raises_last_exception_when_enabled",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014815106987953186,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0003448035567998886,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.000135788694024086,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_jsonbackend_no_fallthrough_raises_first_exception",
+            "lineno": 683,
+            "outcome": "passed",
+            "keywords": [
+              "test_jsonbackend_no_fallthrough_raises_first_exception",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00016271322965621948,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00042659416794776917,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013449601829051971,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_jsonbackend_with_no_loaded_backend_raises_assertion",
+            "lineno": 697,
+            "outcome": "passed",
+            "keywords": [
+              "test_jsonbackend_with_no_loaded_backend_raises_assertion",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014826282858848572,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0002735164016485214,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013140402734279633,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_workflow_object_graph_file_style_roundtrip",
+            "lineno": 706,
+            "outcome": "passed",
+            "keywords": [
+              "test_workflow_object_graph_file_style_roundtrip",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005311798304319382,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00044306181371212006,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00014743581414222717,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_workflow_keys_true_for_non_string_keyed_object_graph",
+            "lineno": 718,
+            "outcome": "passed",
+            "keywords": [
+              "test_workflow_keys_true_for_non_string_keyed_object_graph",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014975108206272125,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00035198964178562164,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013458728790283203,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_workflow_custom_handler_with_backend_formatting",
+            "lineno": 727,
+            "outcome": "passed",
+            "keywords": [
+              "test_workflow_custom_handler_with_backend_formatting",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014667212963104248,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0003026798367500305,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013266317546367645,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_semantic_json_member_order_is_not_required_for_decode",
+            "lineno": 739,
+            "outcome": "passed",
+            "keywords": [
+              "test_semantic_json_member_order_is_not_required_for_decode",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001718774437904358,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00021939165890216827,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013742409646511078,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_semantic_json_whitespace_is_not_required_for_decode",
+            "lineno": 746,
+            "outcome": "passed",
+            "keywords": [
+              "test_semantic_json_whitespace_is_not_required_for_decode",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00015724822878837585,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00019408389925956726,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012607499957084656,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_no_optional_extension_is_needed_for_core_roundtrip",
+            "lineno": 752,
+            "outcome": "passed",
+            "keywords": [
+              "test_no_optional_extension_is_needed_for_core_roundtrip",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014639459550380707,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0002283044159412384,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00014387816190719604,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    },
+    "tests/collections_test.py": {
+      "returncode": 0,
+      "stdout": "dict no cycle\ndict no cycle\ndict self cycle\ndict self cycle\ndict mutual cycle\ndict mutual cycle\nset no cycle\nset no cycle\nset self cycle\nset self cycle\nset mutual cycle\nset mutual cycle\n\n12 passed in 0.08s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1783594634.2419777,
+        "duration": 0.08194732666015625,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/wip/jsonpickle-fullrepro-001/filter/scorer_runs/reference/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 6,
+          "total": 6,
+          "collected": 12
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "tests/collections_test.py::test_dict_no_cycle",
+                "type": "Function",
+                "lineno": 113
+              },
+              {
+                "nodeid": "tests/collections_test.py::test_dict_no_cycle",
+                "type": "Function",
+                "lineno": 113
+              },
+              {
+                "nodeid": "tests/collections_test.py::test_dict_self_cycle",
+                "type": "Function",
+                "lineno": 151
+              },
+              {
+                "nodeid": "tests/collections_test.py::test_dict_self_cycle",
+                "type": "Function",
+                "lineno": 151
+              },
+              {
+                "nodeid": "tests/collections_test.py::test_dict_mutual_cycle",
+                "type": "Function",
+                "lineno": 219
+              },
+              {
+                "nodeid": "tests/collections_test.py::test_dict_mutual_cycle",
+                "type": "Function",
+                "lineno": 219
+              },
+              {
+                "nodeid": "tests/collections_test.py::test_set_no_cycle",
+                "type": "Function",
+                "lineno": 291
+              },
+              {
+                "nodeid": "tests/collections_test.py::test_set_no_cycle",
+                "type": "Function",
+                "lineno": 291
+              },
+              {
+                "nodeid": "tests/collections_test.py::test_set_self_cycle",
+                "type": "Function",
+                "lineno": 311
+              },
+              {
+                "nodeid": "tests/collections_test.py::test_set_self_cycle",
+                "type": "Function",
+                "lineno": 311
+              },
+              {
+                "nodeid": "tests/collections_test.py::test_set_mutual_cycle",
+                "type": "Function",
+                "lineno": 335
+              },
+              {
+                "nodeid": "tests/collections_test.py::test_set_mutual_cycle",
+                "type": "Function",
+                "lineno": 335
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "tests/collections_test.py::test_dict_no_cycle",
+            "lineno": 113,
+            "outcome": "passed",
+            "keywords": [
+              "test_dict_no_cycle",
+              "collections_test.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010455399751663208,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0009317398071289062,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010865554213523865,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/collections_test.py::test_dict_self_cycle",
+            "lineno": 151,
+            "outcome": "passed",
+            "keywords": [
+              "test_dict_self_cycle",
+              "collections_test.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010257773101329803,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.001018323004245758,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010738521814346313,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/collections_test.py::test_dict_mutual_cycle",
+            "lineno": 219,
+            "outcome": "passed",
+            "keywords": [
+              "test_dict_mutual_cycle",
+              "collections_test.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00011811777949333191,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0017291326075792313,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00033615902066230774,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/collections_test.py::test_set_no_cycle",
+            "lineno": 291,
+            "outcome": "passed",
+            "keywords": [
+              "test_set_no_cycle",
+              "collections_test.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001190081238746643,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00043579190969467163,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012187473475933075,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/collections_test.py::test_set_self_cycle",
+            "lineno": 311,
+            "outcome": "passed",
+            "keywords": [
+              "test_set_self_cycle",
+              "collections_test.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001239832490682602,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0003871321678161621,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010535120964050293,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/collections_test.py::test_set_mutual_cycle",
+            "lineno": 335,
+            "outcome": "passed",
+            "keywords": [
+              "test_set_mutual_cycle",
+              "collections_test.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010098330676555634,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.000383647158741951,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010384991765022278,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    },
+    "tests/document_test.py": {
+      "returncode": 0,
+      "stdout": "cyclical\ncyclical\n\n2 passed in 0.02s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1783594634.5348568,
+        "duration": 0.02009105682373047,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/wip/jsonpickle-fullrepro-001/filter/scorer_runs/reference/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 1,
+          "total": 1,
+          "collected": 2
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "tests/document_test.py::test_cyclical",
+                "type": "Function",
+                "lineno": 55
+              },
+              {
+                "nodeid": "tests/document_test.py::test_cyclical",
+                "type": "Function",
+                "lineno": 55
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "tests/document_test.py::test_cyclical",
+            "lineno": 55,
+            "outcome": "passed",
+            "keywords": [
+              "test_cyclical",
+              "document_test.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010212138295173645,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0006262268871068954,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010457262396812439,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    },
+    "tests/stdlib_test.py": {
+      "returncode": 0,
+      "stdout": "random uuid\nrandom uuid\nknown uuid\nknown uuid\nbytestream\nbytestream\n\n6 passed in 0.02s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1783594634.810637,
+        "duration": 0.022671937942504883,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/wip/jsonpickle-fullrepro-001/filter/scorer_runs/reference/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 3,
+          "total": 3,
+          "collected": 6
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "tests/stdlib_test.py::test_random_uuid",
+                "type": "Function",
+                "lineno": 7
+              },
+              {
+                "nodeid": "tests/stdlib_test.py::test_random_uuid",
+                "type": "Function",
+                "lineno": 7
+              },
+              {
+                "nodeid": "tests/stdlib_test.py::test_known_uuid",
+                "type": "Function",
+                "lineno": 17
+              },
+              {
+                "nodeid": "tests/stdlib_test.py::test_known_uuid",
+                "type": "Function",
+                "lineno": 17
+              },
+              {
+                "nodeid": "tests/stdlib_test.py::test_bytestream",
+                "type": "Function",
+                "lineno": 27
+              },
+              {
+                "nodeid": "tests/stdlib_test.py::test_bytestream",
+                "type": "Function",
+                "lineno": 27
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "tests/stdlib_test.py::test_random_uuid",
+            "lineno": 7,
+            "outcome": "passed",
+            "keywords": [
+              "test_random_uuid",
+              "stdlib_test.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00018018297851085663,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00024049729108810425,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011293590068817139,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/stdlib_test.py::test_known_uuid",
+            "lineno": 17,
+            "outcome": "passed",
+            "keywords": [
+              "test_known_uuid",
+              "stdlib_test.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 9.893067181110382e-05,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0002088099718093872,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010144896805286407,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/stdlib_test.py::test_bytestream",
+            "lineno": 27,
+            "outcome": "passed",
+            "keywords": [
+              "test_bytestream",
+              "stdlib_test.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 9.744428098201752e-05,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00015915371477603912,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 9.601190686225891e-05,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    },
+    "tests/wizard_test.py": {
+      "returncode": 0,
+      "stdout": "with pickling\nwith pickling\n\n2 passed in 0.04s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1783594635.1077993,
+        "duration": 0.04192352294921875,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/wip/jsonpickle-fullrepro-001/filter/scorer_runs/reference/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 1,
+          "total": 1,
+          "collected": 2
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "tests/wizard_test.py::test_with_pickling",
+                "type": "Function",
+                "lineno": 131
+              },
+              {
+                "nodeid": "tests/wizard_test.py::test_with_pickling",
+                "type": "Function",
+                "lineno": 131
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "tests/wizard_test.py::test_with_pickling",
+            "lineno": 131,
+            "outcome": "passed",
+            "keywords": [
+              "test_with_pickling",
+              "wizard_test.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00011746399104595184,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0019087567925453186,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012120231986045837,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    },
+    "tests/zoneinfo_test.py": {
+      "returncode": 0,
+      "stdout": "zoneinfo\nzoneinfo\n\n2 passed in 0.02s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1783594635.4341903,
+        "duration": 0.020528316497802734,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/wip/jsonpickle-fullrepro-001/filter/scorer_runs/reference/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 1,
+          "total": 1,
+          "collected": 2
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "tests/zoneinfo_test.py::test_zoneinfo",
+                "type": "Function",
+                "lineno": 12
+              },
+              {
+                "nodeid": "tests/zoneinfo_test.py::test_zoneinfo",
+                "type": "Function",
+                "lineno": 12
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "tests/zoneinfo_test.py::test_zoneinfo",
+            "lineno": 12,
+            "outcome": "passed",
+            "keywords": [
+              "test_zoneinfo",
+              "zoneinfo_test.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010658986866474152,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0003432333469390869,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010664016008377075,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "summary": {
+    "passed": 76,
+    "total": 76
+  },
+  "pass_rate_excluding_skips": 1.0,
+  "by_layer": {
+    "atomic": {
+      "passed": 13,
+      "total": 13
+    },
+    "integration": {
+      "passed": 53,
+      "total": 53
+    },
+    "system_e2e": {
+      "passed": 10,
+      "total": 10
+    }
+  },
+  "cases": [
+    {
+      "nodeid": "filter/generated_tests.py::test_import_surface_and_aliases_are_available",
+      "base_nodeid": "filter/generated_tests.py::test_import_surface_and_aliases_are_available",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00010872073471546173,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_encode_decode_roundtrip_simple_object_state",
+      "base_nodeid": "filter/generated_tests.py::test_encode_decode_roundtrip_simple_object_state",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00030234456062316895,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_dumps_loads_aliases_roundtrip_container",
+      "base_nodeid": "filter/generated_tests.py::test_dumps_loads_aliases_roundtrip_container",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00018997862935066223,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_unpicklable_false_returns_plain_json_data",
+      "base_nodeid": "filter/generated_tests.py::test_unpicklable_false_returns_plain_json_data",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0002126842737197876,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_primitives_lists_dicts_tuples_and_sets_roundtrip",
+      "base_nodeid": "filter/generated_tests.py::test_primitives_lists_dicts_tuples_and_sets_roundtrip",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00021706894040107727,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_tuple_and_set_become_lists_when_not_unpicklable",
+      "base_nodeid": "filter/generated_tests.py::test_tuple_and_set_become_lists_when_not_unpicklable",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00019711628556251526,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_pickler_flatten_and_unpickler_restore_match_encode_decode",
+      "base_nodeid": "filter/generated_tests.py::test_pickler_flatten_and_unpickler_restore_match_encode_decode",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00028463639318943024,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_unpickler_reset_false_preserves_reference_state",
+      "base_nodeid": "filter/generated_tests.py::test_unpickler_reset_false_preserves_reference_state",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0002186894416809082,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_repeated_object_reference_is_shared_after_decode",
+      "base_nodeid": "filter/generated_tests.py::test_repeated_object_reference_is_shared_after_decode",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00025347620248794556,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_object_cycle_roundtrips_to_restored_cycle",
+      "base_nodeid": "filter/generated_tests.py::test_object_cycle_roundtrips_to_restored_cycle",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00023531541228294373,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_list_cycle_roundtrips_to_restored_cycle",
+      "base_nodeid": "filter/generated_tests.py::test_list_cycle_roundtrips_to_restored_cycle",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00016893260180950165,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_dictionary_identity_is_preserved_in_current_format",
+      "base_nodeid": "filter/generated_tests.py::test_dictionary_identity_is_preserved_in_current_format",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00018474645912647247,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_make_refs_false_expands_repeated_objects",
+      "base_nodeid": "filter/generated_tests.py::test_make_refs_false_expands_repeated_objects",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00026647187769412994,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_unpicklable_false_breaks_cycles_with_none",
+      "base_nodeid": "filter/generated_tests.py::test_unpicklable_false_breaks_cycles_with_none",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00022947601974010468,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_make_refs_false_breaks_cycle_with_repr_string",
+      "base_nodeid": "filter/generated_tests.py::test_make_refs_false_breaks_cycle_with_repr_string",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0002374313771724701,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_non_string_keys_default_to_strings",
+      "base_nodeid": "filter/generated_tests.py::test_non_string_keys_default_to_strings",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00018092431128025055,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_keys_true_roundtrips_tuple_int_and_none_keys",
+      "base_nodeid": "filter/generated_tests.py::test_keys_true_roundtrips_tuple_int_and_none_keys",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00023720227181911469,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_keys_true_roundtrips_object_keys_and_value_refs",
+      "base_nodeid": "filter/generated_tests.py::test_keys_true_roundtrips_object_keys_and_value_refs",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00029084645211696625,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_keys_true_preserves_reserved_tag_string_keys_as_user_data",
+      "base_nodeid": "filter/generated_tests.py::test_keys_true_preserves_reserved_tag_string_keys_as_user_data",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.000204525887966156,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_keys_true_decoded_without_keys_returns_escaped_strings",
+      "base_nodeid": "filter/generated_tests.py::test_keys_true_decoded_without_keys_returns_escaped_strings",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0001890920102596283,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_numeric_keys_preserves_numeric_keys_in_flattened_projection",
+      "base_nodeid": "filter/generated_tests.py::test_numeric_keys_preserves_numeric_keys_in_flattened_projection",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0001308787614107132,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_class_metadata_wire_tags_are_semantically_recognized",
+      "base_nodeid": "filter/generated_tests.py::test_class_metadata_wire_tags_are_semantically_recognized",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00022949278354644775,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_type_and_function_metadata_roundtrip",
+      "base_nodeid": "filter/generated_tests.py::test_type_and_function_metadata_roundtrip",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00020282529294490814,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_classes_mapping_restores_renamed_class",
+      "base_nodeid": "filter/generated_tests.py::test_classes_mapping_restores_renamed_class",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00023548118770122528,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_classes_accept_single_sequence_and_dict_forms",
+      "base_nodeid": "filter/generated_tests.py::test_classes_accept_single_sequence_and_dict_forms",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0002957899123430252,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_missing_class_ignore_warn_error_and_callback_behaviors",
+      "base_nodeid": "filter/generated_tests.py::test_missing_class_ignore_warn_error_and_callback_behaviors",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0010472144931554794,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_invalid_on_missing_value_warns_and_ignores",
+      "base_nodeid": "filter/generated_tests.py::test_invalid_on_missing_value_warns_and_ignores",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0003986433148384094,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_v1_decode_uses_legacy_reference_numbering_for_dicts",
+      "base_nodeid": "filter/generated_tests.py::test_v1_decode_uses_legacy_reference_numbering_for_dicts",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00016783177852630615,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_getstate_and_setstate_are_used_for_object_state",
+      "base_nodeid": "filter/generated_tests.py::test_getstate_and_setstate_are_used_for_object_state",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00022861361503601074,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_getstate_without_setstate_returns_non_dict_state_when_no_newargs",
+      "base_nodeid": "filter/generated_tests.py::test_getstate_without_setstate_returns_non_dict_state_when_no_newargs",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0002243872731924057,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_getnewargs_and_getnewargs_ex_restore_tuple_subclasses",
+      "base_nodeid": "filter/generated_tests.py::test_getnewargs_and_getnewargs_ex_restore_tuple_subclasses",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00031239911913871765,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_getinitargs_roundtrip_visible_state",
+      "base_nodeid": "filter/generated_tests.py::test_getinitargs_roundtrip_visible_state",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00023481622338294983,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_reduce_listitems_restore_visible_mutation",
+      "base_nodeid": "filter/generated_tests.py::test_reduce_listitems_restore_visible_mutation",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00026270002126693726,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_excluded_attributes_are_not_synthesized_after_decode",
+      "base_nodeid": "filter/generated_tests.py::test_excluded_attributes_are_not_synthesized_after_decode",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00022003799676895142,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_slots_instances_roundtrip_public_slot_values",
+      "base_nodeid": "filter/generated_tests.py::test_slots_instances_roundtrip_public_slot_values",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0002319812774658203,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_bytes_default_and_base85_roundtrip",
+      "base_nodeid": "filter/generated_tests.py::test_bytes_default_and_base85_roundtrip",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00021396391093730927,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_invalid_base64_and_base85_payloads_restore_empty_bytes",
+      "base_nodeid": "filter/generated_tests.py::test_invalid_base64_and_base85_payloads_restore_empty_bytes",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00013502873480319977,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_max_depth_uses_repr_for_deeper_values",
+      "base_nodeid": "filter/generated_tests.py::test_max_depth_uses_repr_for_deeper_values",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0001777317374944687,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_include_properties_adds_property_metadata_without_breaking_restore",
+      "base_nodeid": "filter/generated_tests.py::test_include_properties_adds_property_metadata_without_breaking_restore",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00033038482069969177,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_handle_readonly_roundtrips_string_subclass_with_empty_slots",
+      "base_nodeid": "filter/generated_tests.py::test_handle_readonly_roundtrips_string_subclass_with_empty_slots",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0021522343158721924,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_fail_safe_replaces_failed_object_and_records_exception",
+      "base_nodeid": "filter/generated_tests.py::test_fail_safe_replaces_failed_object_and_records_exception",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00023602694272994995,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_fail_safe_does_not_catch_keyboard_interrupt",
+      "base_nodeid": "filter/generated_tests.py::test_fail_safe_does_not_catch_keyboard_interrupt",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00021359138190746307,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_warn_true_emits_warning_for_unpicklable_file_object",
+      "base_nodeid": "filter/generated_tests.py::test_warn_true_emits_warning_for_unpicklable_file_object",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0003480594605207443,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_decode_invalid_json_raises_backend_exception",
+      "base_nodeid": "filter/generated_tests.py::test_decode_invalid_json_raises_backend_exception",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00016351602971553802,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_register_rejects_non_class_and_base_handler_methods_raise",
+      "base_nodeid": "filter/generated_tests.py::test_register_rejects_non_class_and_base_handler_methods_raise",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00014200247824192047,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_custom_handler_roundtrip_and_unregister_restores_default_behavior",
+      "base_nodeid": "filter/generated_tests.py::test_custom_handler_roundtrip_and_unregister_restores_default_behavior",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00041240081191062927,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_custom_handler_decorator_registration",
+      "base_nodeid": "filter/generated_tests.py::test_custom_handler_decorator_registration",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00022447481751441956,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_base_handler_applies_to_subclasses_until_specific_handler_overrides",
+      "base_nodeid": "filter/generated_tests.py::test_base_handler_applies_to_subclasses_until_specific_handler_overrides",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0002714022994041443,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_handler_context_passes_only_to_accepting_handlers",
+      "base_nodeid": "filter/generated_tests.py::test_handler_context_passes_only_to_accepting_handlers",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.000273779034614563,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_handler_can_share_reference_graph_with_context_reset_false",
+      "base_nodeid": "filter/generated_tests.py::test_handler_can_share_reference_graph_with_context_reset_false",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00035468675196170807,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_load_backend_and_preferred_backend_use_custom_module",
+      "base_nodeid": "filter/generated_tests.py::test_load_backend_and_preferred_backend_use_custom_module",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0001613963395357132,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_load_backend_returns_false_for_missing_components",
+      "base_nodeid": "filter/generated_tests.py::test_load_backend_returns_false_for_missing_components",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00011748448014259338,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_remove_backend_allows_absent_backend_and_preferred_unloaded_raises",
+      "base_nodeid": "filter/generated_tests.py::test_remove_backend_allows_absent_backend_and_preferred_unloaded_raises",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.000125812366604805,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_backend_encoder_decoder_options_persist_for_later_calls",
+      "base_nodeid": "filter/generated_tests.py::test_backend_encoder_decoder_options_persist_for_later_calls",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0001873169094324112,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_per_call_indent_and_separators_format_but_decode_same_projection",
+      "base_nodeid": "filter/generated_tests.py::test_per_call_indent_and_separators_format_but_decode_same_projection",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00022850371897220612,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_jsonbackend_fallthrough_raises_last_exception_when_enabled",
+      "base_nodeid": "filter/generated_tests.py::test_jsonbackend_fallthrough_raises_last_exception_when_enabled",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0003448035567998886,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_jsonbackend_no_fallthrough_raises_first_exception",
+      "base_nodeid": "filter/generated_tests.py::test_jsonbackend_no_fallthrough_raises_first_exception",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00042659416794776917,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_jsonbackend_with_no_loaded_backend_raises_assertion",
+      "base_nodeid": "filter/generated_tests.py::test_jsonbackend_with_no_loaded_backend_raises_assertion",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0002735164016485214,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_workflow_object_graph_file_style_roundtrip",
+      "base_nodeid": "filter/generated_tests.py::test_workflow_object_graph_file_style_roundtrip",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00044306181371212006,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_workflow_keys_true_for_non_string_keyed_object_graph",
+      "base_nodeid": "filter/generated_tests.py::test_workflow_keys_true_for_non_string_keyed_object_graph",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00035198964178562164,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_workflow_custom_handler_with_backend_formatting",
+      "base_nodeid": "filter/generated_tests.py::test_workflow_custom_handler_with_backend_formatting",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0003026798367500305,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_semantic_json_member_order_is_not_required_for_decode",
+      "base_nodeid": "filter/generated_tests.py::test_semantic_json_member_order_is_not_required_for_decode",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00021939165890216827,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_semantic_json_whitespace_is_not_required_for_decode",
+      "base_nodeid": "filter/generated_tests.py::test_semantic_json_whitespace_is_not_required_for_decode",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00019408389925956726,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_no_optional_extension_is_needed_for_core_roundtrip",
+      "base_nodeid": "filter/generated_tests.py::test_no_optional_extension_is_needed_for_core_roundtrip",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0002283044159412384,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/collections_test.py::test_dict_no_cycle",
+      "base_nodeid": "tests/collections_test.py::test_dict_no_cycle",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0009317398071289062,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/collections_test.py::test_dict_self_cycle",
+      "base_nodeid": "tests/collections_test.py::test_dict_self_cycle",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.001018323004245758,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/collections_test.py::test_dict_mutual_cycle",
+      "base_nodeid": "tests/collections_test.py::test_dict_mutual_cycle",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0017291326075792313,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/collections_test.py::test_set_no_cycle",
+      "base_nodeid": "tests/collections_test.py::test_set_no_cycle",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00043579190969467163,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/collections_test.py::test_set_self_cycle",
+      "base_nodeid": "tests/collections_test.py::test_set_self_cycle",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0003871321678161621,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/collections_test.py::test_set_mutual_cycle",
+      "base_nodeid": "tests/collections_test.py::test_set_mutual_cycle",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.000383647158741951,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/document_test.py::test_cyclical",
+      "base_nodeid": "tests/document_test.py::test_cyclical",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0006262268871068954,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/stdlib_test.py::test_random_uuid",
+      "base_nodeid": "tests/stdlib_test.py::test_random_uuid",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00024049729108810425,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/stdlib_test.py::test_known_uuid",
+      "base_nodeid": "tests/stdlib_test.py::test_known_uuid",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0002088099718093872,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/stdlib_test.py::test_bytestream",
+      "base_nodeid": "tests/stdlib_test.py::test_bytestream",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00015915371477603912,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/wizard_test.py::test_with_pickling",
+      "base_nodeid": "tests/wizard_test.py::test_with_pickling",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0019087567925453186,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/zoneinfo_test.py::test_zoneinfo",
+      "base_nodeid": "tests/zoneinfo_test.py::test_zoneinfo",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0003432333469390869,
+        "outcome": "passed"
+      }
+    }
+  ]
+}

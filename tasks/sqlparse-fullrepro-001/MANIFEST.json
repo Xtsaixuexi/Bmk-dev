@@ -1,0 +1,188 @@
+{
+  "task_id": "sqlparse-fullrepro-001",
+  "repo": "sqlparse",
+  "package": "sqlparse",
+  "github": "https://github.com/andialbrecht/sqlparse",
+  "remote": "https://github.com/andialbrecht/sqlparse",
+  "source_path": "/root/autodl-tmp/e2e/sqlparse",
+  "commit": "f80af6a",
+  "created_at": "2026-07-02T03:14:53Z",
+  "state": "S5_JUDGE_READY_FOR_CANDIDATE_EVAL",
+  "source_loc": 3271,
+  "source_files": 25,
+  "test_collected": 490,
+  "kept_nodeids": 90,
+  "reference_passed": 90,
+  "reference_failed": 0,
+  "oracle_source": "upstream_filtered_reference_passed",
+  "remove_paths": [
+    "sqlparse"
+  ],
+  "pytest_env": {
+    "PYTHONPATH": "<source>/src:<source>",
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+    "PYTHONWARNINGS": "ignore"
+  },
+  "score_harness": "harness/score_pytest_original.py",
+  "scorer_isolation": {
+    "score_harness": "harness/score_pytest_original.py",
+    "package_import": "sqlparse",
+    "preflight_command": "python -c \"import sqlparse; print(sqlparse.__file__)\"",
+    "remove_paths": [
+      "sqlparse"
+    ],
+    "recorded_from_artifacts": true,
+    "source_shadowing_guard": "Remove the source package path from the copied oracle worktree before scoring, then require preflight stdout to point into candidate output."
+  },
+  "status": "QUALIFIED",
+  "pipeline_state": "QUALIFIED",
+  "current_step": 8,
+  "completed_at": "2026-07-05T00:00:00Z",
+  "judge_report": "judge/gate_report.md",
+  "diagnosis_report": "judge/diagnosis_report.md",
+  "final_reference_summary": {
+    "passed": 90,
+    "failed": 0,
+    "total": 90,
+    "pass_rate_excluding_skips": 1.0,
+    "by_layer": {
+      "system_e2e": {
+        "passed": 23,
+        "total": 23
+      },
+      "atomic": {
+        "passed": 37,
+        "total": 37
+      },
+      "integration": {
+        "passed": 30,
+        "total": 30
+      }
+    }
+  },
+  "candidate_eval_summary": {
+    "adopted_model": "gpt-5.5",
+    "adopted_runners": [
+      "opencode",
+      "swe-agent"
+    ],
+    "best_candidate": {
+      "runner": "opencode",
+      "model": "gpt-5.5",
+      "run_id": "opencode-gpt-5.5-sqlparse-fullrepro-001-20260702T035140Z",
+      "run_path": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/e2e10-isolated/opencode-gpt-5.5-sqlparse-fullrepro-001-20260702T035140Z",
+      "passed": 17,
+      "total": 90,
+      "pass_rate_excluding_skips": 0.18888888888888888,
+      "summary": {
+        "failed": 73,
+        "passed": 17,
+        "total": 90
+      },
+      "by_layer": {
+        "atomic": {
+          "failed": 35,
+          "passed": 2,
+          "total": 37
+        },
+        "integration": {
+          "failed": 26,
+          "passed": 4,
+          "total": 30
+        },
+        "system_e2e": {
+          "failed": 12,
+          "passed": 11,
+          "total": 23
+        }
+      },
+      "import_provenance_stdout": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/e2e10-isolated/opencode-gpt-5.5-sqlparse-fullrepro-001-20260702T035140Z/output/sqlparse/__init__.py"
+    },
+    "all_scored": [
+      {
+        "runner": "opencode",
+        "model": "gpt-5.5",
+        "run_id": "opencode-gpt-5.5-sqlparse-fullrepro-001-20260702T035140Z",
+        "run_path": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/e2e10-isolated/opencode-gpt-5.5-sqlparse-fullrepro-001-20260702T035140Z",
+        "summary": {
+          "failed": 73,
+          "passed": 17,
+          "total": 90
+        },
+        "pass_rate_excluding_skips": 0.18888888888888888,
+        "by_layer": {
+          "atomic": {
+            "failed": 35,
+            "passed": 2,
+            "total": 37
+          },
+          "integration": {
+            "failed": 26,
+            "passed": 4,
+            "total": 30
+          },
+          "system_e2e": {
+            "failed": 12,
+            "passed": 11,
+            "total": 23
+          }
+        },
+        "import_provenance_stdout": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/e2e10-isolated/opencode-gpt-5.5-sqlparse-fullrepro-001-20260702T035140Z/output/sqlparse/__init__.py",
+        "import_provenance_clean": true
+      },
+      {
+        "runner": "swe-agent",
+        "model": "gpt-5.5",
+        "run_id": "swe-agent-gpt-5.5-sqlparse-fullrepro-001-20260702T035227Z",
+        "run_path": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/e2e10-sweagent/swe-agent-gpt-5.5-sqlparse-fullrepro-001-20260702T035227Z",
+        "summary": {
+          "failed": 83,
+          "passed": 7,
+          "total": 90
+        },
+        "pass_rate_excluding_skips": 0.07777777777777778,
+        "by_layer": {
+          "atomic": {
+            "failed": 35,
+            "passed": 2,
+            "total": 37
+          },
+          "integration": {
+            "failed": 26,
+            "passed": 4,
+            "total": 30
+          },
+          "system_e2e": {
+            "failed": 22,
+            "passed": 1,
+            "total": 23
+          }
+        },
+        "import_provenance_stdout": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/e2e10-sweagent/swe-agent-gpt-5.5-sqlparse-fullrepro-001-20260702T035227Z/output/sqlparse/__init__.py",
+        "import_provenance_clean": true
+      }
+    ],
+    "glm_policy": "opencode + glm-5.2 returned rc=1/no candidate output for the batch; swe-agent + glm-5.2 smoke timed out; GLM not adopted for this batch."
+  },
+  "candidate_visibility": "Candidate generation may receive only spec.md plus generic implementation instructions. Do not expose source path, tests, kept_nodeids, taxonomy, reference_score, reviews, score reports, or prior outputs.",
+  "qualification_reason": "Reference/oracle passes at 100%; candidate runs have clean import provenance; remaining failures are candidate implementation gaps.",
+  "labels": [
+    "qualified",
+    "e2e10",
+    "gpt-5.5-batch"
+  ],
+  "coverage-gap": {
+    "verdict": "FULL",
+    "scoreable_tests": 90,
+    "global_floor_ok": true,
+    "per_section_minimums": {
+      "Cross-View Invariants": 5,
+      "Error Semantics": 3,
+      "workflow_sections": 3,
+      "all_other_scored_sections": 3
+    },
+    "below_minimum_sections": [],
+    "unknown_mapping_cells": 0,
+    "requires_action": "No Gate D action required under current-main audit."
+  }
+}

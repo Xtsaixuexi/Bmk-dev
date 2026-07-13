@@ -1,0 +1,4 @@
+Branch coverage was collected against the WIP-local oracle source tree with the reference package present.
+Line coverage: 53% overall; branch coverage: 51% overall.
+Optional extension modules are included in the coverage denominator but are outside this task's core public spec.
+Stage 3 coverage gating is the spec-section floor recorded in coverage_floor.json; all scored sections meet their minimums and oracle_count is 76 >= 50.

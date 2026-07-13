@@ -1,0 +1,25 @@
+{
+  "summary": {
+    "passed": 90,
+    "total": 90
+  },
+  "pass_rate_excluding_skips": 1.0,
+  "by_layer": {
+    "integration": {
+      "passed": 48,
+      "total": 48
+    },
+    "system_e2e": {
+      "passed": 42,
+      "total": 42
+    }
+  },
+  "reference_validation": "retained nodeids passed against reference implementation using recorded harness and environment",
+  "source_repo": "/root/autodl-tmp/Bmk-Lizhiqian/../e2e/jsonschema",
+  "full_score_json": "/root/autodl-tmp/Bmk-Lizhiqian/logs/reference-runs/e2e-remaining-20260705-rerun/jsonschema/score_full.json",
+  "import_provenance": {
+    "returncode": 0,
+    "stdout": "/root/autodl-tmp/Bmk-Lizhiqian/logs/reference-runs/e2e-remaining-20260705-rerun/jsonschema/overlay_worktree/jsonschema/__init__.py\n",
+    "stderr": ""
+  }
+}

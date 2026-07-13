@@ -1,0 +1,34 @@
+{
+  "oracle_count": 76,
+  "global_floor": 50,
+  "global_floor_ok": true,
+  "section_counts": {
+    "Class Metadata And Missing Classes": 7,
+    "Cross-View Invariants": 24,
+    "Custom Handlers": 5,
+    "Dictionary Key Semantics": 10,
+    "Encoding And Decoding Behavior": 22,
+    "Error Semantics": 7,
+    "Installable Surface": 3,
+    "JSON Backend Selection": 7,
+    "Product State Model": 19,
+    "Public API": 18,
+    "References, Cycles, And Identity": 16,
+    "Representative Workflows": 5
+  },
+  "minimums": {
+    "Installable Surface": 3,
+    "Product State Model": 3,
+    "Public API": 3,
+    "Encoding And Decoding Behavior": 3,
+    "References, Cycles, And Identity": 3,
+    "Dictionary Key Semantics": 3,
+    "Class Metadata And Missing Classes": 3,
+    "Custom Handlers": 3,
+    "JSON Backend Selection": 3,
+    "Error Semantics": 3,
+    "Cross-View Invariants": 5,
+    "Representative Workflows": 3
+  },
+  "below_minimum_sections": {}
+}

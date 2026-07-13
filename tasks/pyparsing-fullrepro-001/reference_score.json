@@ -1,0 +1,31 @@
+{
+  "task_id": "pyparsing-fullrepro-001",
+  "repo": "pyparsing",
+  "source_path": "/root/autodl-tmp/e2e/pyparsing",
+  "source_commit": "ecb1b14dbf1ad1b699c081ed63b9746a244ee5fa",
+  "command": "cd /root/autodl-tmp/e2e/pyparsing && PYTHONPATH=. python -m pytest -q <298 kept_nodeids>",
+  "total": 298,
+  "passed": 298,
+  "failed": 0,
+  "skipped": 0,
+  "errors": 0,
+  "pass_rate_excluding_skips": 1.0,
+  "by_layer": {
+    "atomic": {
+      "passed": 167,
+      "total": 167
+    },
+    "integration": {
+      "passed": 106,
+      "total": 106
+    },
+    "system_e2e": {
+      "passed": 25,
+      "total": 25
+    }
+  },
+  "stdout_log": "logs/reference_pytest_stdout.txt",
+  "stderr_log": "logs/reference_pytest_stderr.txt",
+  "returncode": 0,
+  "spec_version": "v4"
+}

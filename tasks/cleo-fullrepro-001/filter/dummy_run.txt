@@ -1,0 +1,1 @@
+Dummy scorer: 0 passed / 87 retained nodeids; 56 failed, 12 errored, 19 collection_error.

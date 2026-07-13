@@ -1,0 +1,143 @@
+{
+  "task_id": "diskcache-fullrepro-001",
+  "repo": "grantjenks__python-diskcache",
+  "package": "diskcache",
+  "source_path": "/root/autodl-tmp/new-e2e/grantjenks__python-diskcache",
+  "source_pool": "/root/autodl-tmp/new-e2e",
+  "commit": "ebfa37cd99d7ef716ec452ad8af4b4276a8e2233",
+  "remote": "https://github.com/grantjenks/python-diskcache.git",
+  "selected_at": "2026-07-09",
+  "source_loc_top_level_package": 4150,
+  "implementation_files": [
+    "diskcache/__init__.py",
+    "diskcache/cli.py",
+    "diskcache/core.py",
+    "diskcache/djangocache.py",
+    "diskcache/fanout.py",
+    "diskcache/persistent.py",
+    "diskcache/recipes.py"
+  ],
+  "implementation_file_loc": {
+    "diskcache/__init__.py": 61,
+    "diskcache/cli.py": 1,
+    "diskcache/core.py": 1863,
+    "diskcache/djangocache.py": 345,
+    "diskcache/fanout.py": 537,
+    "diskcache/persistent.py": 951,
+    "diskcache/recipes.py": 392
+  },
+  "test_root": "tests",
+  "regular_test_files": [
+    "tests/test_core.py",
+    "tests/test_deque.py",
+    "tests/test_djangocache.py",
+    "tests/test_doctest.py",
+    "tests/test_fanout.py",
+    "tests/test_index.py",
+    "tests/test_recipes.py"
+  ],
+  "regular_test_function_count": 253,
+  "regular_test_function_count_by_file": {
+    "tests/test_core.py": 87,
+    "tests/test_deque.py": 33,
+    "tests/test_djangocache.py": 68,
+    "tests/test_doctest.py": 6,
+    "tests/test_fanout.py": 42,
+    "tests/test_index.py": 12,
+    "tests/test_recipes.py": 5
+  },
+  "tests_directory_python_files_count": 27,
+  "mechanical_audit": {
+    "triage_score": 25.32,
+    "source_py_files": 9,
+    "test_files_rough": 27,
+    "test_functions_rough": 254,
+    "docs_files_rough": 11,
+    "private_import_files_count": 0,
+    "private_import_file_rate": 0.0,
+    "private_assert_files_count": 6,
+    "network_test_files_count": 3,
+    "network_test_file_rate": 0.111,
+    "snapshot_test_files_count": 0,
+    "snapshot_test_file_rate": 0.0,
+    "exact_message_files_count": 0
+  },
+  "public_docs": [
+    "README.rst",
+    "docs/index.rst",
+    "docs/tutorial.rst",
+    "docs/api.rst",
+    "docs/development.rst"
+  ],
+  "public_api_surface_from___all__": [
+    "diskcache.Averager",
+    "diskcache.BoundedSemaphore",
+    "diskcache.Cache",
+    "diskcache.DEFAULT_SETTINGS",
+    "diskcache.Deque",
+    "diskcache.Disk",
+    "diskcache.ENOVAL",
+    "diskcache.EVICTION_POLICY",
+    "diskcache.EmptyDirWarning",
+    "diskcache.FanoutCache",
+    "diskcache.Index",
+    "diskcache.JSONDisk",
+    "diskcache.Lock",
+    "diskcache.RLock",
+    "diskcache.Timeout",
+    "diskcache.UNKNOWN",
+    "diskcache.UnknownFileWarning",
+    "diskcache.barrier",
+    "diskcache.memoize_stampede",
+    "diskcache.throttle",
+    "diskcache.DjangoCache (optional when Django imports successfully)"
+  ],
+  "core_fact_source": "Persistent cache entries stored in a cache directory using SQLite metadata and optional file-backed values.",
+  "derived_views": [
+    "Cache mapping interface",
+    "Cache set/get/delete/add/pop/incr/decr/touch methods",
+    "expiration and eviction results",
+    "iteration and reversed iteration over keys",
+    "tag, expire_time, statistics, volume, and settings projections",
+    "FanoutCache sharded cache behavior",
+    "Deque sequence behavior backed by cache state",
+    "Index mapping behavior backed by cache state",
+    "recipe-level lock, throttle, barrier, and memoization behavior",
+    "optional DjangoCache API compatibility"
+  ],
+  "external_deps": [
+    {
+      "name": "sqlite3",
+      "type": "standard-library/local",
+      "isolation_plan": "allowed as local persistence backend"
+    },
+    {
+      "name": "filesystem/tempfile/shutil",
+      "type": "standard-library/local",
+      "isolation_plan": "run in isolated temp directories"
+    },
+    {
+      "name": "Django",
+      "type": "optional",
+      "isolation_plan": "either install in reference/candidate scoring env or filter Django-specific tests"
+    },
+    {
+      "name": "rsync/subprocess",
+      "type": "environment-sensitive",
+      "isolation_plan": "filter unless behavior can be tested deterministically through public APIs"
+    }
+  ],
+  "private_import_audit": {
+    "module_level_private_imports_found": 0,
+    "command": "rg -n '^\\s*(from\\s+diskcache\\._|import\\s+diskcache\\._|from\\s+diskcache\\.[A-Za-z0-9_]+\\s+import\\s+_)' tests",
+    "notes": "No module-level diskcache private imports were found. Several tests still access private attributes or internal SQL/disk/shard objects and must be filtered later."
+  },
+  "docs_test_alignment": "aligned",
+  "decision": "keep",
+  "risks": [
+    "Tests touching _disk, _sql, _shards, exact repr, mocked internals, or Django private fields must be excluded or rewritten.",
+    "Django-specific tests require optional dependency handling.",
+    "Timing, expiration, subprocess, and rsync tests may be environment-sensitive.",
+    "Doctest transcript checks may require conservative filtering."
+  ]
+}

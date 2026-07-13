@@ -1,0 +1,128 @@
+{
+  "task_id": "lark-fullrepro-001",
+  "status": "QUALIFIED",
+  "package_name": "lark",
+  "package_version": "1.3.1",
+  "source_repo": "lark-parser/lark",
+  "source_path": "/root/autodl-tmp/e2e/lark",
+  "source_commit": "c169b26a5bec9d47e590bf4be83691bcbdfe7b6b",
+  "spec": "spec.md",
+  "kept_nodeids": "kept_nodeids.txt",
+  "kept_nodeids_direct": "kept_nodeids_direct.txt",
+  "spec_test_map": "spec_test_map.md",
+  "taxonomy": "taxonomy.jsonl",
+  "taxonomy_direct": "taxonomy_direct.jsonl",
+  "test_taxonomy_score": "test_taxonomy_score.csv",
+  "reference": "reference_score.json",
+  "reference_validation": "reference_validation.md",
+  "filter_validation": "filter_validation.md",
+  "rewrite_audit": "rewrite_audit.md",
+  "collection_audit": "collection_audit.md",
+  "filter_summary": {
+    "all_nodeids": 1273,
+    "kept_nodeids": 792,
+    "source_only": 422,
+    "excluded": 59,
+    "spec_gap": 0,
+    "layers": {
+      "atomic": 394,
+      "integration": 248,
+      "system_e2e": 150
+    },
+    "taxonomy_key_rule": "pytest collection routes through tests/__main__.py; taxonomy key format is __main__::Class.test"
+  },
+  "reference_summary": {
+    "passed": 710,
+    "failed": 0,
+    "skipped": 82,
+    "total": 792,
+    "pass_rate_excluding_skips": 1.0,
+    "by_layer": {
+      "atomic": {
+        "passed": 365,
+        "failed": 0,
+        "skipped": 29,
+        "total": 394
+      },
+      "integration": {
+        "passed": 206,
+        "failed": 0,
+        "skipped": 42,
+        "total": 248
+      },
+      "system_e2e": {
+        "passed": 139,
+        "failed": 0,
+        "skipped": 11,
+        "total": 150
+      }
+    }
+  },
+  "candidate_visibility": "Candidate generation may receive only spec.md plus generic implementation instructions. Do not expose source path, tests, kept_nodeids, taxonomy, reference_score, reviews, or prior outputs.",
+  "required_test_dependencies": [
+    "pytest",
+    "pytest-json-report"
+  ],
+  "scoring_entry": "Use kept_nodeids_direct.txt with taxonomy_direct.jsonl for candidate scoring. The original kept_nodeids.txt records the upstream aggregate collection nodeids from Step 4/5, but tests/__main__.py imports unrelated test modules before selecting kept nodeids and can cause false collection pollution.",
+  "skip_policy": "Candidate scoring must run the same kept nodeids in the same dependency profile as reference validation. Skips are accepted only when produced by the same upstream skip logic, optional-dependency availability, parser-mode support checks, or explicit slow-test markers observed during reference validation.",
+  "spec_revision": "spec_v1_step7_import_surface_patch_2026-07-02",
+  "judge_report": "../../wip/lark-fullrepro-001/judge/gate_report.md",
+  "best_candidate_summary": {
+    "run_id": "opencode-gpt-5.5-lark-fullrepro-001-resourcepatch-20260701T224057Z",
+    "runner": "opencode",
+    "model": "gpt-5.5",
+    "passed": 282,
+    "failed": 428,
+    "skipped": 82,
+    "total": 792,
+    "collection_error": 0,
+    "pass_rate_excluding_skips": 0.3971830985915493,
+    "by_layer": {
+      "atomic": {
+        "passed": 214,
+        "failed": 151,
+        "skipped": 29,
+        "total": 394
+      },
+      "integration": {
+        "passed": 20,
+        "failed": 186,
+        "skipped": 42,
+        "total": 248
+      },
+      "system_e2e": {
+        "passed": 48,
+        "failed": 91,
+        "skipped": 11,
+        "total": 150
+      }
+    }
+  },
+  "next_step": "No benchmark repair required; task is qualified.",
+  "scorer_isolation": {
+    "score_harness": "harness/score_pytest_original.py",
+    "package_import": "lark",
+    "preflight_command": "python -c \"import lark; print(lark.__file__)\"",
+    "remove_paths": [
+      "lark"
+    ],
+    "recorded_from_artifacts": false,
+    "source_shadowing_guard": "Remove the source package path from the copied oracle worktree before scoring, then require preflight stdout to point into candidate output.",
+    "verification_status": "recommended_not_historically_recorded; rerun scoring before using as a final candidate score"
+  },
+  "coverage-gap": {
+    "verdict": "FULL",
+    "scoreable_tests": 792,
+    "global_floor_ok": true,
+    "per_section_minimums": {
+      "Cross-View Invariants": 5,
+      "Error Semantics": 3,
+      "workflow_sections": 3,
+      "all_other_scored_sections": 3
+    },
+    "below_minimum_sections": [],
+    "unknown_mapping_cells": 0,
+    "requires_action": "No Gate D action required under current-main audit."
+  },
+  "labels": []
+}

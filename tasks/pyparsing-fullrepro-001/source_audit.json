@@ -1,0 +1,81 @@
+{
+  "repo": "pyparsing",
+  "task_id": "pyparsing-fullrepro-001",
+  "source_path": "/root/autodl-tmp/e2e/pyparsing",
+  "commit": "ecb1b14dbf1ad1b699c081ed63b9746a244ee5fa",
+  "branch_status": "## master...origin/master",
+  "src_loc_non_comment": 10004,
+  "src_files": 17,
+  "test_files": 9,
+  "test_functions": 106,
+  "pytest_parametrize_marks": 7,
+  "private_import_files": [],
+  "private_import_matches": [],
+  "docs": {
+    "has_readme": true,
+    "has_docs_dir": true,
+    "has_examples_dir": true,
+    "docs_files_sample": [
+      "docs/CODE_OF_CONDUCT.rst",
+      "docs/HowToUsePyparsing.rst",
+      "docs/Writing_Doctests.rst",
+      "docs/index.rst",
+      "docs/pyparsing.rst",
+      "docs/pyparsing_classes.md",
+      "docs/whats_new_in_3_0_0.rst",
+      "docs/whats_new_in_3_1.rst",
+      "docs/whats_new_in_3_2.rst",
+      "docs/whats_new_in_3_3.rst"
+    ]
+  },
+  "source_files_sample": [
+    "pyparsing/__init__.py",
+    "pyparsing/actions.py",
+    "pyparsing/common.py",
+    "pyparsing/core.py",
+    "pyparsing/exceptions.py",
+    "pyparsing/helpers.py",
+    "pyparsing/results.py",
+    "pyparsing/testing.py",
+    "pyparsing/unicode.py",
+    "pyparsing/util.py",
+    "pyparsing/warnings.py",
+    "pyparsing/ai/__init__.py",
+    "pyparsing/ai/show_best_practices/__init__.py",
+    "pyparsing/ai/show_best_practices/__main__.py",
+    "pyparsing/diagram/__init__.py",
+    "pyparsing/tools/__init__.py",
+    "pyparsing/tools/cvt_pyparsing_pep8_names.py"
+  ],
+  "test_file_list": [
+    "tests/test_diagram.py",
+    "tests/test_examples.py",
+    "tests/test_matplotlib_cases.py",
+    "tests/test_pep8_converter.py",
+    "tests/test_pre_pep8_deprecation_warnings.py",
+    "tests/test_simple_unit.py",
+    "tests/test_testing.py",
+    "tests/test_unit.py",
+    "tests/test_util.py"
+  ],
+  "public_api_screening": {
+    "init_exports_all": true,
+    "notable_public_surfaces": [
+      "ParserElement and parser expression classes",
+      "ParseResults",
+      "ParseException family",
+      "grammar operators and helper constructors",
+      "pyparsing.common",
+      "pyparsing.unicode",
+      "pyparsing.testing",
+      "show_best_practices CLI/helper"
+    ]
+  },
+  "gate_decision": "keep",
+  "gate_notes": [
+    "Passes LOC threshold and has a real test suite.",
+    "Top-level private import audit is clean.",
+    "Docs and examples provide enough public behavior for spec drafting.",
+    "Risk remains around high-saturation parsing primitives and implementation-shaped compatibility tests."
+  ]
+}

@@ -1,0 +1,63 @@
+tests/messages/test_catalog.py::test_message_python_format
+tests/messages/test_catalog.py::test_message_python_brace_format
+tests/messages/test_catalog.py::test_message_translator_comments
+tests/messages/test_catalog.py::test_message_clone_message_object
+tests/messages/test_catalog.py::test_catalog_add_returns_message_instance
+tests/messages/test_catalog.py::test_catalog_two_messages_with_same_singular
+tests/messages/test_catalog.py::test_catalog_duplicate_auto_comment
+tests/messages/test_catalog.py::test_catalog_duplicate_user_comment
+tests/messages/test_catalog.py::test_catalog_duplicate_location
+tests/messages/test_catalog.py::test_catalog_update_message_updates_comments
+tests/messages/test_checkers.py::test_2_num_plurals_checkers
+tests/messages/test_checkers.py::test_python_format_invalid[foo %s-foo]
+tests/messages/test_checkers.py::test_python_format_invalid[msgid1-msgstr1]
+tests/messages/test_checkers.py::test_python_format_invalid[msgid2-msgstr2]
+tests/messages/test_checkers.py::test_python_format_valid[foo-foo]
+tests/messages/test_checkers.py::test_python_format_valid[foo-foo %s]
+tests/messages/test_checkers.py::test_python_format_valid[foo %s-]
+tests/messages/test_checkers.py::test__validate_format_invalid[%s %(foo)s-%s %(foo)s-format string mixes positional and named placeholders]
+tests/messages/test_checkers.py::test__validate_format_invalid[foo %s-foo-placeholders are incompatible]
+tests/messages/test_checkers.py::test__validate_format_invalid[%s-%(foo)s-the format strings are of different kinds]
+tests/messages/test_checkers.py::test__validate_format_valid[foo-foo]
+tests/messages/test_checkers.py::test__validate_format_valid[foo-foo %s]
+tests/messages/test_checkers.py::test__validate_format_valid[%s foo-foo %s]
+tests/messages/test_js_extract.py::test_simple_extract
+tests/messages/test_js_extract.py::test_various_calls
+tests/messages/test_js_extract.py::test_message_with_line_comment
+tests/messages/test_js_extract.py::test_message_with_multiline_comment
+tests/messages/test_js_extract.py::test_ignore_function_definitions
+tests/messages/test_js_extract.py::test_misplaced_comments
+tests/messages/test_js_extract.py::test_jsx_extraction[False]
+tests/messages/test_js_extract.py::test_jsx_extraction[True]
+tests/messages/test_js_extract.py::test_dotted_keyword_extract
+tests/messages/test_js_extract.py::test_template_string_standard_usage
+tests/messages/test_js_extract.py::test_template_string_tag_usage
+tests/messages/test_js_extract.py::test_inside_template_string
+tests/messages/test_js_extract.py::test_inside_template_string_with_linebreaks
+tests/messages/test_js_extract.py::test_inside_nested_template_string
+tests/messages/test_jslexer.py::test_unquote
+tests/messages/test_jslexer.py::test_dollar_in_identifier
+tests/messages/test_jslexer.py::test_dotted_name
+tests/messages/test_jslexer.py::test_dotted_name_end
+tests/messages/test_jslexer.py::test_template_string
+tests/messages/test_jslexer.py::test_jsx
+tests/messages/test_mofile.py::test_basics
+tests/messages/test_pofile.py::test_unescape
+tests/messages/test_pofile.py::test_unescape_of_quoted_newline
+tests/messages/test_pofile.py::test_denormalize_on_msgstr_without_empty_first_line
+tests/messages/test_pofile.py::test_extract_locations_valid_location_comment[\u2068file1.po\u2069-locations0]
+tests/messages/test_pofile.py::test_extract_locations_valid_location_comment[file1.po \u2068file 2.po\u2069 file3.po-locations1]
+tests/messages/test_pofile.py::test_extract_locations_valid_location_comment[file1.po:1 \u2068file 2.po\u2069:2 file3.po:3-locations2]
+tests/messages/test_pofile.py::test_extract_locations_invalid_location_comment[\u2068file 1.po]
+tests/messages/test_pofile.py::test_extract_locations_invalid_location_comment[file 1.po\u2069]
+tests/messages/test_pofile.py::test_extract_locations_invalid_location_comment[\u2069file 1.po\u2068]
+tests/messages/test_pofile.py::test_enclose_filename_if_necessary_no_change[file.po]
+tests/messages/test_pofile.py::test_enclose_filename_if_necessary_no_change[file_a.po]
+tests/messages/test_pofile.py::test_enclose_filename_if_necessary_no_change[file-a.po]
+tests/messages/test_pofile.py::test_enclose_filename_if_necessary_enclosed[file a.po]
+tests/messages/test_pofile.py::test_enclose_filename_if_necessary_enclosed[file\ta.po]
+tests/messages/test_pofile.py::test_iterable_of_mismatching_strings[1]
+tests/messages/test_pofile.py::test_iterable_of_mismatching_strings[-1]
+tests/messages/test_pofile.py::test_issue_1087
+tests/messages/test_pofile.py::test_issue_1134[False-msgid "foo"]
+tests/messages/test_pofile.py::test_issue_1134[False-msgid "foo"\nmsgid_plural "foos"]

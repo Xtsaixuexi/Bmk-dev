@@ -1,0 +1,138 @@
+{
+  "task_id": "marshmallow-fullrepro-001",
+  "status": "QUALIFIED",
+  "package_name": "marshmallow",
+  "package_version": "4.3.0",
+  "source_repo": "marshmallow-code/marshmallow",
+  "source_commit": "cea3d44f40683832b88b792b84f4a91be032f7ad",
+  "spec": "spec.md",
+  "kept_nodeids": "kept_nodeids.txt",
+  "spec_test_map": "spec_test_map.md",
+  "taxonomy": "taxonomy.jsonl",
+  "test_taxonomy_score": "test_taxonomy_score.csv",
+  "reference": "reference_score.json",
+  "reference_validation": "reference_validation.md",
+  "filter_validation": "filter_validation.md",
+  "filter_summary": {
+    "all_nodeids": 1178,
+    "kept_nodeids": 832,
+    "source_only": 305,
+    "excluded": 41,
+    "spec_gap": 0,
+    "layers": {
+      "atomic": 292,
+      "integration": 481,
+      "system_e2e": 59
+    }
+  },
+  "reference_summary": {
+    "passed": 832,
+    "total": 832,
+    "pass_rate_excluding_skips": 1.0,
+    "by_layer": {
+      "atomic": 292,
+      "integration": 481,
+      "system_e2e": 59
+    }
+  },
+  "candidate_visibility": "Candidate generation may receive only spec.md plus generic implementation instructions. Do not expose source path, tests, kept_nodeids, taxonomy, reference_score, reviews, or prior outputs.",
+  "caveat": "Two excluded parameterized all-nodeids include dynamic current-date strings; kept set is unaffected and collect-only confirmed kept_subset_of_collection=true.",
+  "required_test_dependencies": [
+    "pytest",
+    "pytest-json-report",
+    "simplejson"
+  ],
+  "next_step": "Step 6 candidate generation across OpenCode, Codex subagent, Claude Code subagent, OpenHands, swe-agent, mini-swe-agent using gpt-5.5 and glm-5.2 where available.",
+  "current_step": "Step 8 final reviews PASS; opencode 451/832 adopted as final best score; corrected subagent score retained as historical comparison",
+  "spec_revision": "spec_v1_orderedset_correction_2026-07-02",
+  "orderedset_correction": "spec.md updated; see wip review/step8_correction_orderedset.md",
+  "corrected_score": {
+    "runner": "codex-subagent",
+    "model": "gpt-5.5",
+    "passed": 437,
+    "total": 832,
+    "pass_rate_excluding_skips": 0.5252403846153846,
+    "collection_error": 0,
+    "run_id": "codex-subagent-gpt-5.5-marshmallow-fullrepro-001-orderedsetfix-20260701T191528Z"
+  },
+  "tool_failed": {
+    "runner": "codex",
+    "model": "gpt-5.5",
+    "run_id": "codex-gpt-5.5-marshmallow-fullrepro-001-orderedsetfix-20260701T191528Z",
+    "reason": "codex exec sandbox/user-namespace and write failure before file creation"
+  },
+  "best_candidate_summary": {
+    "runner": "opencode",
+    "model": "gpt-5.5",
+    "run_id": "opencode-gpt-5.5-marshmallow-fullrepro-001-orderedsetfix-20260701T210138Z",
+    "run_path": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/opencode-gpt-5.5-marshmallow-fullrepro-001-orderedsetfix-20260701T210138Z",
+    "passed": 451,
+    "total": 832,
+    "pass_rate_excluding_skips": 0.5420673076923077,
+    "by_layer": {
+      "atomic": {
+        "passed": 85,
+        "total": 292
+      },
+      "integration": {
+        "passed": 328,
+        "total": 481
+      },
+      "system_e2e": {
+        "passed": 38,
+        "total": 59
+      }
+    },
+    "provenance_caveat": "score_result lacks original machine-readable preflight; supplemental post-hoc import check points to candidate output"
+  },
+  "scorer_isolation": {
+    "score_harness": "harness/score_pytest_original.py",
+    "package_import": "marshmallow",
+    "preflight_command": "python -c \"import marshmallow; print(marshmallow.__file__)\"",
+    "remove_paths": [
+      "src/marshmallow",
+      "marshmallow"
+    ],
+    "recorded_from_artifacts": false,
+    "source_shadowing_guard": "Remove the source package path from the copied oracle worktree before scoring, then require preflight stdout to point into candidate output.",
+    "verification_status": "recommended_not_historically_recorded; rerun scoring before using as a final candidate score"
+  },
+  "coverage-gap": {
+    "verdict": "GAP",
+    "scoreable_tests": 832,
+    "global_floor_ok": true,
+    "per_section_minimums": {
+      "Cross-View Invariants": 5,
+      "Error Semantics": 3,
+      "workflow_sections": 3,
+      "all_other_scored_sections": 3
+    },
+    "below_minimum_sections": [
+      {
+        "section": "Top-Level Names",
+        "covered": 1,
+        "minimum": 3
+      },
+      {
+        "section": "OrderedSet",
+        "covered": 2,
+        "minimum": 3
+      },
+      {
+        "section": "Utility Helpers",
+        "covered": 0,
+        "minimum": 3
+      },
+      {
+        "section": "Behavioral Sections",
+        "covered": 0,
+        "minimum": 3
+      }
+    ],
+    "unknown_mapping_cells": 0,
+    "requires_action": "Expand or remap fair public tests before strict current-main qualification; retain caveat if generation is saturated without circular/source-only assertions."
+  },
+  "labels": [
+    "coverage-gap"
+  ]
+}

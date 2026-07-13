@@ -1,0 +1,1047 @@
+
+GetInitialWorkdir
+
+    get initial workdir
+
+Main
+
+    execute
+
+CmdAction
+
+    env
+    error
+    failure
+    result
+    str
+    success
+    success noshell
+    unicode
+    values
+
+CmdActionParams
+
+    changePath
+    invalid param stdout
+    noPathSet
+
+CmdVerbosity
+
+    captureStderr
+    captureStdout
+    noCaptureStderr
+    noCaptureStdout
+
+TaskIOCapture
+
+    cmd io capture no
+    cmd io capture yes
+    py io capture no
+    py io capture yes
+
+CmdExpandAction
+
+    callable invalid
+    callable return command str
+    callable tuple return command str
+    list can contain path
+    list should contain strings or paths
+    string list cant be expanded
+    task meta reference
+    task options
+    task pos arg
+    task pos arg None
+
+CmdActionStringFormatting
+
+    both
+    new
+    old
+
+CmdSaveOuput
+
+    success
+
+Writer
+
+    fileno
+    fileno not supported
+    isatty false
+    isatty true
+    write
+
+PythonAction
+
+    callable obj
+    error exception
+    error object
+    error taskerror
+    error taskfail
+    fail bool
+    init callable builtin
+    init callable class
+    result
+    result dict
+    str
+    success None
+    success bool
+    success dict
+    success str
+    values
+
+PythonVerbosity
+
+    captureStderr
+    captureStdout
+    noCaptureStderr
+    noCaptureStdout
+    redirectStderr
+    redirectStdout
+
+PythonActionPrepareKwargsMeta
+
+    action modifies task but not attrs
+    callable obj
+    extra arg overwritten
+    extra kwarg overwritten
+    keyword extra args
+    kwonlyargs full
+    kwonlyargs minimal
+    meta arg default disallowed
+    method
+    mixed args
+    named extra args
+    no extra args
+    option default allowed
+    task options
+    task pos arg
+
+CreateAction
+
+    testBaseAction
+    testInvalidActionNone
+    testInvalidActionObject
+    testListStringAction
+    testMethodAction
+    testStringAction
+    testTupleAction
+    testTupleActionMoreThanThreeElements
+    invalid action task param name
+
+Run
+
+    run
+
+RunTasks
+
+    run tasks error
+    run tasks pos
+    run tasks success
+
+VersionTuple
+
+    version tuple
+
+Command
+
+    call value cmd line arg
+    call value option default
+    call value overwritten default
+    configure
+    failCall
+
+ModuleTaskLoader
+
+    load tasks from dict
+    load tasks from module
+    task config
+    task opt from api to action
+    task opt from api to creator
+
+DodoTaskLoader
+
+    load tasks
+
+DoitCmdBase
+
+    testCustomChecker
+    testCustomCodec
+    testInvalidChecker
+    execute
+    execute provides dep manager
+    minversion
+    new cmd
+
+ForceVerbosity
+
+    force verbosity
+
+CheckTasksExist
+
+    None
+    invalid
+    valid
+
+TaskAndDepsIter
+
+    dep iter
+
+SubtaskIter
+
+    sub iter
+
+DefaultUpdate
+
+    test
+    add defaults
+
+CmdOption
+
+    invalid field
+    missing field
+    non required fields
+
+CmdOption str2val
+
+    bool
+    int
+    invalid value
+    list
+    non string values are not converted
+    str
+    str2boolean
+
+CmdOption help param
+
+    bool param
+    metavar
+    no long
+    non bool param
+
+CmdOption help doc
+
+    choices desc doc
+    choices nodesc doc
+    name config env
+    no doc param
+    param
+    contains
+    env val
+    env val bool
+    getOption
+    getitem
+    long
+    option list
+    overwrite defaults
+    overwrite defaults convert type
+    parseDefaults
+    parseError
+    parseLongValues
+    parsePositionalArgs
+    parseShortValues
+    parseWrongChoice
+    parseWrongType
+    short
+
+UtilFunctions
+
+    md5
+    sqlite import
+    unicode md5
+
+DependencyDbJson
+
+    corrupted file
+    corrupted file unrecognized excep
+    dump
+    getNonExistent
+    get set
+    get set unicode name
+    in
+    remove
+    remove all
+    remove from non empty file
+
+DependencyDbSqlite
+
+    corrupted file
+    corrupted file unrecognized excep
+    dump
+    getNonExistent
+    get set
+    get set unicode name
+    in
+    remove
+    remove all
+    remove from non empty file
+
+DependencyDbDbmGnu
+
+    corrupted file
+    corrupted file unrecognized excep
+    dump
+    getNonExistent
+    get set
+    get set unicode name
+    in
+    remove
+    remove all
+    remove from non empty file
+
+DependencyDbDbmNdbm
+
+    corrupted file
+    corrupted file unrecognized excep
+    dump
+    getNonExistent
+    get set
+    get set unicode name
+    in
+    remove
+    remove all
+    remove from non empty file
+
+DependencyDbDbmDumb
+
+    corrupted file
+    corrupted file unrecognized excep
+    dump
+    getNonExistent
+    get set
+    get set unicode name
+    in
+    remove
+    remove all
+    remove from non empty file
+
+SaveSuccessJson
+
+    save file md5
+    save files
+    save result
+    save resultNone
+    save result dict
+    save result hash
+    save skip
+    save values
+
+SaveSuccessSqlite
+
+    save file md5
+    save files
+    save result
+    save resultNone
+    save result dict
+    save result hash
+    save skip
+    save values
+
+SaveSuccessDbmGnu
+
+    save file md5
+    save files
+    save result
+    save resultNone
+    save result dict
+    save result hash
+    save skip
+    save values
+
+SaveSuccessDbmNdbm
+
+    save file md5
+    save files
+    save result
+    save resultNone
+    save result dict
+    save result hash
+    save skip
+    save values
+
+SaveSuccessDbmDumb
+
+    save file md5
+    save files
+    save result
+    save resultNone
+    save result dict
+    save result hash
+    save skip
+    save values
+
+GetValueJson
+
+    all values
+    invalid key
+    invalid taskid
+    ok
+    ok dot on task name
+
+GetValueSqlite
+
+    all values
+    invalid key
+    invalid taskid
+    ok
+    ok dot on task name
+
+GetValueDbmGnu
+
+    all values
+    invalid key
+    invalid taskid
+    ok
+    ok dot on task name
+
+GetValueDbmNdbm
+
+    all values
+    invalid key
+    invalid taskid
+    ok
+    ok dot on task name
+
+GetValueDbmDumb
+
+    all values
+    invalid key
+    invalid taskid
+    ok
+    ok dot on task name
+
+RemoveSuccessJson
+
+    save result
+
+RemoveSuccessSqlite
+
+    save result
+
+RemoveSuccessDbmGnu
+
+    save result
+
+RemoveSuccessDbmNdbm
+
+    save result
+
+RemoveSuccessDbmDumb
+
+    save result
+
+IgnoreJson
+
+    save result
+
+IgnoreSqlite
+
+    save result
+
+IgnoreDbmGnu
+
+    save result
+
+IgnoreDbmNdbm
+
+    save result
+
+IgnoreDbmDumb
+
+    save result
+
+MD5Checker
+
+    md5
+    size
+    timestamp
+
+CustomChecker
+
+    not implemented
+
+TimestampChecker
+
+    timestamp
+
+DependencyStatus
+
+    add reason
+    add reason error
+    get error message
+    no log
+    set reason
+
+GetStatusJson
+
+    UptodateCallable True
+    UptodateCallable added attributes
+    UptodateCommand False
+    UptodateCommand True
+    UptodateFalse
+    UptodateFunction False
+    UptodateFunction True
+    UptodateFunction extra args True
+    UptodateFunction without args True
+    UptodateMethod True
+    UptodateNone
+    UptodateTrue
+    change checker
+    fileDependencies
+    fileDependencies changed
+    fileDependencies changed get log
+    file dependency not exist
+    ignore
+    noDependency
+    targetFolder
+    targets
+    targets notThere
+    uptodate call all even if some False
+
+GetStatusSqlite
+
+    UptodateCallable True
+    UptodateCallable added attributes
+    UptodateCommand False
+    UptodateCommand True
+    UptodateFalse
+    UptodateFunction False
+    UptodateFunction True
+    UptodateFunction extra args True
+    UptodateFunction without args True
+    UptodateMethod True
+    UptodateNone
+    UptodateTrue
+    change checker
+    fileDependencies
+    fileDependencies changed
+    fileDependencies changed get log
+    file dependency not exist
+    ignore
+    noDependency
+    targetFolder
+    targets
+    targets notThere
+    uptodate call all even if some False
+
+GetStatusDbmGnu
+
+    UptodateCallable True
+    UptodateCallable added attributes
+    UptodateCommand False
+    UptodateCommand True
+    UptodateFalse
+    UptodateFunction False
+    UptodateFunction True
+    UptodateFunction extra args True
+    UptodateFunction without args True
+    UptodateMethod True
+    UptodateNone
+    UptodateTrue
+    change checker
+    fileDependencies
+    fileDependencies changed
+    fileDependencies changed get log
+    file dependency not exist
+    ignore
+    noDependency
+    targetFolder
+    targets
+    targets notThere
+    uptodate call all even if some False
+
+GetStatusDbmNdbm
+
+    UptodateCallable True
+    UptodateCallable added attributes
+    UptodateCommand False
+    UptodateCommand True
+    UptodateFalse
+    UptodateFunction False
+    UptodateFunction True
+    UptodateFunction extra args True
+    UptodateFunction without args True
+    UptodateMethod True
+    UptodateNone
+    UptodateTrue
+    change checker
+    fileDependencies
+    fileDependencies changed
+    fileDependencies changed get log
+    file dependency not exist
+    ignore
+    noDependency
+    targetFolder
+    targets
+    targets notThere
+    uptodate call all even if some False
+
+GetStatusDbmDumb
+
+    UptodateCallable True
+    UptodateCallable added attributes
+    UptodateCommand False
+    UptodateCommand True
+    UptodateFalse
+    UptodateFunction False
+    UptodateFunction True
+    UptodateFunction extra args True
+    UptodateFunction without args True
+    UptodateMethod True
+    UptodateNone
+    UptodateTrue
+    change checker
+    fileDependencies
+    fileDependencies changed
+    fileDependencies changed get log
+    file dependency not exist
+    ignore
+    noDependency
+    targetFolder
+    targets
+    targets notThere
+    uptodate call all even if some False
+    cmdline loader option before cmd name
+    cmdline loader option mixed
+    cmdline vars
+    cmdline vars not opts
+    run is default
+    run other subcommand
+    task loader has cmd list
+    version
+
+RunExtraConfig
+
+    extra config
+
+Errors
+
+    internal error
+    interrupt
+    user error
+
+Config
+
+    no ini config file
+
+FlatGenerator
+
+    nested
+
+GetModule
+
+    testAbsolutePath
+    testInParentDir
+    testInvalidCwd
+    testRelativePath
+    testWrongFileName
+    testWrongFileNameInParentDir
+
+LoadTasks
+
+    testCreateAfterDecorator
+    testCreateAfterDecoratorOnMethod
+    testNameInBlacklist
+    testUse create doit tasks
+    testUse object methods
+
+TaskGeneratorParams
+
+    args
+    args second
+    call api
+    config
+    default
+    delayed
+    dup param
+    method
+
+DodoConfig
+
+    testConfigDict Ok
+    testConfigType Error
+    testDefaultConfig Dict
+
+GenerateTaskInvalid
+
+    testInvalidValue
+
+GenerateTaskNone
+
+    testEmpty
+
+GenerateTasksSingle
+
+    testBaseName
+    testDict
+    testDocstringNotUsed
+    testInvalidNameField
+    testTaskObj
+    testUseDocstring
+
+GenerateTasksGenerator
+
+    testGenerator
+    testGeneratorBaseOnly
+    testGeneratorBasename
+    testGeneratorBasenameCanNotRepeat
+    testGeneratorBasenameCanNotRepeatNonGroup
+    testGeneratorBasenameName
+    testGeneratorDictMissingAction
+    testGeneratorDictMissingName
+    testGeneratorDoesntReturnDict
+    testGeneratorNameCanNotRepeat
+    testGeneratorReturnTaskObj
+    testGeneratorWithNoTasks
+
+PluginEntry
+
+    get
+    load error module not found
+    load error obj not found
+
+PluginDict
+
+    add plugins from pkg resources
+
+Stream
+
+    force global
+    from task
+    task verbosity not specified
+
+TaskCheckInput
+
+    testFailType
+    testFailValue
+    testOkType
+    testOkTypeABC
+    testOkValue
+
+TaskCompare
+
+    equal
+    lt
+
+TaskInit
+
+    dependencyNotSequence
+    dependencySequenceIsValid
+    forbid equal sign on name
+    groupTask
+    options
+    options from cfg
+    options from cfg override
+    setup
+
+TaskValueSavers
+
+    execute value savers
+
+TaskUpToDate
+
+    FalseRunalways
+    NoneIgnored
+    callable function
+    callable instance method
+    invalid
+    object with configure
+    str
+    tuple
+
+TaskExpandFileDep
+
+    dependencyStringIsFile
+    file dep path
+    file dep str
+    file dep unicode
+
+TaskDeps
+
+    calc dep
+    task dep
+    update deps
+
+TaskTargets
+
+    targets can be path
+    targets should be string or path
+
+Task Loader
+
+    delayed after execution
+
+Task Getargs
+
+    invalid desc
+    invalid desc tuple
+    ok
+
+TaskTitle
+
+    custom title
+    title
+
+TaskActions
+
+    fail first
+    fail second
+    failure
+    many
+    mixed
+    result
+    success
+    values
+
+TaskTeardown
+
+    fail
+    ok
+
+TaskClean
+
+    clean action error
+    clean action kwargs
+    clean non existent targets
+
+TaskDoc
+
+    just new line
+    multiple lines
+    no doc
+    single line
+    start with empty lines
+
+DictToTask
+
+    testDictFieldTypo
+    testDictMissingFieldAction
+    testDictOkMinimum
+
+ResultDep
+
+    group
+    single
+
+CreateFolder
+
+    create folder
+    error if path is a file
+
+TitleWithActions
+
+    actions
+    group
+
+RunOnce
+
+    run
+
+ConfigChanged
+
+    dict
+    invalid type
+    nested dict
+    string
+    unicode
+    using custom encoder
+
+Timeout
+
+    int
+    invalid
+    timedelta
+    timedelta big
+
+CheckTimestampUnchanged
+
+    op ge
+
+LongRunning
+
+    ignore keyboard interrupt
+    success
+
+Interactive
+
+    fail
+    success
+
+PythonInteractiveAction
+
+    ignore keyboard interrupt
+    returned dict saved result values
+    returned string saved result
+    success
+
+=============================== warnings summary ===============================
+test_cmd_base.py::TestDoitCmdBase::testCustomCodec
+  /root/miniconda3/lib/python3.10/site-packages/_pytest/unraisableexception.py:67: PytestUnraisableExceptionWarning: Exception ignored in: <function _Database.close at 0x7fc39a9d7760>
+  
+  Traceback (most recent call last):
+    File "/root/miniconda3/lib/python3.10/dbm/dumb.py", line 274, in close
+      self._commit()
+    File "/root/miniconda3/lib/python3.10/dbm/dumb.py", line 129, in _commit
+      with self._io.open(self._dirfile, 'w', encoding="Latin-1") as f:
+  FileNotFoundError: [Errno 2] No such file or directory: '/tmp/doit-test-62v4jeqe/testdb.dir'
+  
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+    warnings.warn(pytest.PytestUnraisableExceptionWarning(msg))
+
+test_cmd_base.py::TestDoitCmdBase::test_execute
+  /root/miniconda3/lib/python3.10/site-packages/_pytest/unraisableexception.py:67: PytestUnraisableExceptionWarning: Exception ignored in: <function _Database.close at 0x7fc39a9d7760>
+  
+  Traceback (most recent call last):
+    File "/root/miniconda3/lib/python3.10/dbm/dumb.py", line 274, in close
+      self._commit()
+    File "/root/miniconda3/lib/python3.10/dbm/dumb.py", line 129, in _commit
+      with self._io.open(self._dirfile, 'w', encoding="Latin-1") as f:
+  FileNotFoundError: [Errno 2] No such file or directory: '/tmp/doit-test-kj_2t_v7/testdb.dir'
+  
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+    warnings.warn(pytest.PytestUnraisableExceptionWarning(msg))
+
+test_cmd_base.py::TestDoitCmdBase::test_minversion
+  /root/miniconda3/lib/python3.10/site-packages/_pytest/unraisableexception.py:67: PytestUnraisableExceptionWarning: Exception ignored in: <function _Database.close at 0x7fc39a9d7760>
+  
+  Traceback (most recent call last):
+    File "/root/miniconda3/lib/python3.10/dbm/dumb.py", line 274, in close
+      self._commit()
+    File "/root/miniconda3/lib/python3.10/dbm/dumb.py", line 129, in _commit
+      with self._io.open(self._dirfile, 'w', encoding="Latin-1") as f:
+  FileNotFoundError: [Errno 2] No such file or directory: '/tmp/doit-test-3kofqoz4/testdb.dir'
+  
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+    warnings.warn(pytest.PytestUnraisableExceptionWarning(msg))
+
+test_cmd_base.py::TestForceVerbosity::test_force_verbosity
+  /root/miniconda3/lib/python3.10/site-packages/_pytest/unraisableexception.py:67: PytestUnraisableExceptionWarning: Exception ignored in: <function _Database.close at 0x7fc39a9d7760>
+  
+  Traceback (most recent call last):
+    File "/root/miniconda3/lib/python3.10/dbm/dumb.py", line 274, in close
+      self._commit()
+    File "/root/miniconda3/lib/python3.10/dbm/dumb.py", line 129, in _commit
+      with self._io.open(self._dirfile, 'w', encoding="Latin-1") as f:
+  FileNotFoundError: [Errno 2] No such file or directory: '/tmp/doit-test-u65p_alr/testdb.dir'
+  
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+    warnings.warn(pytest.PytestUnraisableExceptionWarning(msg))
+
+test_dependency.py::TestDependencyDbDbmGnu::test_corrupted_file_unrecognized_excep
+  /root/miniconda3/lib/python3.10/site-packages/_pytest/unraisableexception.py:67: PytestUnraisableExceptionWarning: Exception ignored in: <function _Database.close at 0x7fc39a9d7760>
+  
+  Traceback (most recent call last):
+    File "/root/miniconda3/lib/python3.10/dbm/dumb.py", line 274, in close
+      self._commit()
+    File "/root/miniconda3/lib/python3.10/dbm/dumb.py", line 129, in _commit
+      with self._io.open(self._dirfile, 'w', encoding="Latin-1") as f:
+  FileNotFoundError: [Errno 2] No such file or directory: '/tmp/doit-test-mnj288wg/testdb.dir'
+  
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+    warnings.warn(pytest.PytestUnraisableExceptionWarning(msg))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_dependency.py:135: close() does not release fp on windows
+SKIPPED [1] tests/test_dependency.py:156: close() does not release fp on windows
+SKIPPED [1] tests/test_dependency.py:135: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:156: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:124: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:178: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:113: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:118: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:181: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:186: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:211: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:196: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:135: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:156: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:124: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:178: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:113: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:118: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:181: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:186: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:211: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:196: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:268: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:298: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:244: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:257: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:262: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:251: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:284: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:317: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:268: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:298: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:244: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:257: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:262: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:251: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:284: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:317: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:347: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:371: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:365: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:353: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:359: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:347: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:371: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:365: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:353: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:359: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:400: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:400: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:431: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:431: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:790: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:814: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:834: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:829: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:691: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:740: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:729: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:779: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:760: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:802: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:713: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:708: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:663: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:573: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:602: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:631: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:658: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:565: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:681: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:875: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:855: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:840: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:768: "dbm.gnu" not available.
+SKIPPED [1] tests/test_dependency.py:790: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:814: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:834: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:829: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:691: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:740: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:729: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:779: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:760: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:802: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:713: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:708: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:663: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:573: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:602: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:631: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:658: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:565: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:681: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:875: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:855: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:840: "dbm.ndbm" not available.
+SKIPPED [1] tests/test_dependency.py:768: "dbm.ndbm" not available.
+458 passed, 98 skipped, 5 warnings in 5.88s

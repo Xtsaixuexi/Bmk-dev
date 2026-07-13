@@ -1,0 +1,2519 @@
+{
+  "source_repo": "/root/autodl-tmp/Bmk-Lizhiqian/tasks/diskcache-fullrepro-001",
+  "solution_dir": "/root/autodl-tmp/new-e2e/grantjenks__python-diskcache",
+  "nodeids": "/root/autodl-tmp/Bmk-Lizhiqian/tasks/diskcache-fullrepro-001/kept_nodeids.txt",
+  "taxonomy": "/root/autodl-tmp/Bmk-Lizhiqian/tasks/diskcache-fullrepro-001/taxonomy.jsonl",
+  "run_dir": "/root/autodl-tmp/Bmk-Lizhiqian/final-score-runs/diskcache-fullrepro-001-reference-package-check",
+  "import_provenance": {
+    "returncode": 0,
+    "stdout": "/root/autodl-tmp/new-e2e/grantjenks__python-diskcache/diskcache/__init__.py\n",
+    "stderr": ""
+  },
+  "grouped_results": {
+    "tests/test_generated_diskcache.py": {
+      "returncode": 0,
+      "stdout": "cache set get mapping membership\ncache missing defaults and key errors\ncache delete and delitem remove all views\ncache add only inserts missing key\ncache touch extends and can expire entry\ncache incr and decr create and update values\ncache file like value round trip\ncache get metadata tuple order\ncache pop returns metadata and removes entry\ncache expire uses strict cutoff\ncache tag evict removes only matching tag\ncache clear returns removed count\ncache stats track hits and misses when enabled\ncache length counts expired entries until cleanup\ncache push generates documented integer edges\ncache push generates prefixed keys\ncache peek does not remove queue item\ncache pull and peek skip expired queue items\ncache queue metadata tuple shape\ncache peekitem returns first and last pairs\ncache iteration and reversed key order\ncache reset updates setting and attribute\ncache volume includes database and value files\ncache context manager and pickle reopen same directory\ncache memoize caches results and exposes key\ncache memoize ignore removes arguments from cache key\ncache memoize typed separates equal values by type\ncache memoize rejects bare decorator use\njsondisk round trips json compatible values\nfanout set get delete membership\nfanout add touch incr decr\nfanout pop and default values\nfanout stats accumulate across shards\nfanout clear and iteration\nfanout child cache reopens named state\nfanout child deque reopens named state\nfanout child index reopens named state\nfanout transact requires retry true\nfanout reset updates shard settings\nfanout file like read round trip\ndeque initialization and iteration\ndeque append appendleft pop popleft\ndeque maxlen discards from opposite side\ndeque index assignment and deletion\ndeque extendleft reverse and rotate\ndeque count remove and missing value\ndeque persists by directory\ndeque fromcache uses supplied cache state\nindex initialization order and views\nindex setdefault pop and key errors\nindex popitem first and last\nindex push pull queue behavior\nindex memoize caches results\nindex persists by directory\nindex fromcache uses supplied cache state\naverager tracks average and pop clears state\nlock context sets and releases lock key\nrlock allows nested acquire and balanced release\nbounded semaphore allows acquire release within bound\nthrottle uses sleep until capacity is available\nbarrier decorator returns function result\nmemoize stampede caches result and exposes key\npublic constants and exports are available\n\n63 passed in 1.03s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1783587079.7229013,
+        "duration": 1.0194015502929688,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/final-score-runs/diskcache-fullrepro-001-reference-package-check/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 63,
+          "total": 63,
+          "collected": 63
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_set_get_mapping_membership",
+                "type": "Function",
+                "lineno": 10
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_missing_defaults_and_key_errors",
+                "type": "Function",
+                "lineno": 20
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_delete_and_delitem_remove_all_views",
+                "type": "Function",
+                "lineno": 30
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_add_only_inserts_missing_key",
+                "type": "Function",
+                "lineno": 42
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_touch_extends_and_can_expire_entry",
+                "type": "Function",
+                "lineno": 50
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_incr_and_decr_create_and_update_values",
+                "type": "Function",
+                "lineno": 62
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_file_like_value_round_trip",
+                "type": "Function",
+                "lineno": 73
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_get_metadata_tuple_order",
+                "type": "Function",
+                "lineno": 86
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_pop_returns_metadata_and_removes_entry",
+                "type": "Function",
+                "lineno": 96
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_expire_uses_strict_cutoff",
+                "type": "Function",
+                "lineno": 108
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_tag_evict_removes_only_matching_tag",
+                "type": "Function",
+                "lineno": 119
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_clear_returns_removed_count",
+                "type": "Function",
+                "lineno": 129
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_stats_track_hits_and_misses_when_enabled",
+                "type": "Function",
+                "lineno": 138
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_length_counts_expired_entries_until_cleanup",
+                "type": "Function",
+                "lineno": 152
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_push_generates_documented_integer_edges",
+                "type": "Function",
+                "lineno": 161
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_push_generates_prefixed_keys",
+                "type": "Function",
+                "lineno": 171
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_peek_does_not_remove_queue_item",
+                "type": "Function",
+                "lineno": 180
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_pull_and_peek_skip_expired_queue_items",
+                "type": "Function",
+                "lineno": 190
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_queue_metadata_tuple_shape",
+                "type": "Function",
+                "lineno": 200
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_peekitem_returns_first_and_last_pairs",
+                "type": "Function",
+                "lineno": 213
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_iteration_and_reversed_key_order",
+                "type": "Function",
+                "lineno": 222
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_reset_updates_setting_and_attribute",
+                "type": "Function",
+                "lineno": 232
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_volume_includes_database_and_value_files",
+                "type": "Function",
+                "lineno": 240
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_context_manager_and_pickle_reopen_same_directory",
+                "type": "Function",
+                "lineno": 249
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_memoize_caches_results_and_exposes_key",
+                "type": "Function",
+                "lineno": 262
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_memoize_ignore_removes_arguments_from_cache_key",
+                "type": "Function",
+                "lineno": 279
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_memoize_typed_separates_equal_values_by_type",
+                "type": "Function",
+                "lineno": 294
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_cache_memoize_rejects_bare_decorator_use",
+                "type": "Function",
+                "lineno": 310
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_jsondisk_round_trips_json_compatible_values",
+                "type": "Function",
+                "lineno": 317
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_fanout_set_get_delete_membership",
+                "type": "Function",
+                "lineno": 325
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_fanout_add_touch_incr_decr",
+                "type": "Function",
+                "lineno": 336
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_fanout_pop_and_default_values",
+                "type": "Function",
+                "lineno": 347
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_fanout_stats_accumulate_across_shards",
+                "type": "Function",
+                "lineno": 355
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_fanout_clear_and_iteration",
+                "type": "Function",
+                "lineno": 367
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_fanout_child_cache_reopens_named_state",
+                "type": "Function",
+                "lineno": 378
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_fanout_child_deque_reopens_named_state",
+                "type": "Function",
+                "lineno": 387
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_fanout_child_index_reopens_named_state",
+                "type": "Function",
+                "lineno": 396
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_fanout_transact_requires_retry_true",
+                "type": "Function",
+                "lineno": 404
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_fanout_reset_updates_shard_settings",
+                "type": "Function",
+                "lineno": 417
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_fanout_file_like_read_round_trip",
+                "type": "Function",
+                "lineno": 424
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_deque_initialization_and_iteration",
+                "type": "Function",
+                "lineno": 434
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_deque_append_appendleft_pop_popleft",
+                "type": "Function",
+                "lineno": 441
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_deque_maxlen_discards_from_opposite_side",
+                "type": "Function",
+                "lineno": 453
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_deque_index_assignment_and_deletion",
+                "type": "Function",
+                "lineno": 461
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_deque_extendleft_reverse_and_rotate",
+                "type": "Function",
+                "lineno": 472
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_deque_count_remove_and_missing_value",
+                "type": "Function",
+                "lineno": 484
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_deque_persists_by_directory",
+                "type": "Function",
+                "lineno": 493
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_deque_fromcache_uses_supplied_cache_state",
+                "type": "Function",
+                "lineno": 501
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_index_initialization_order_and_views",
+                "type": "Function",
+                "lineno": 510
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_index_setdefault_pop_and_key_errors",
+                "type": "Function",
+                "lineno": 519
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_index_popitem_first_and_last",
+                "type": "Function",
+                "lineno": 529
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_index_push_pull_queue_behavior",
+                "type": "Function",
+                "lineno": 539
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_index_memoize_caches_results",
+                "type": "Function",
+                "lineno": 550
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_index_persists_by_directory",
+                "type": "Function",
+                "lineno": 565
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_index_fromcache_uses_supplied_cache_state",
+                "type": "Function",
+                "lineno": 574
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_averager_tracks_average_and_pop_clears_state",
+                "type": "Function",
+                "lineno": 583
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_lock_context_sets_and_releases_lock_key",
+                "type": "Function",
+                "lineno": 594
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_rlock_allows_nested_acquire_and_balanced_release",
+                "type": "Function",
+                "lineno": 605
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_bounded_semaphore_allows_acquire_release_within_bound",
+                "type": "Function",
+                "lineno": 619
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_throttle_uses_sleep_until_capacity_is_available",
+                "type": "Function",
+                "lineno": 631
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_barrier_decorator_returns_function_result",
+                "type": "Function",
+                "lineno": 654
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_memoize_stampede_caches_result_and_exposes_key",
+                "type": "Function",
+                "lineno": 667
+              },
+              {
+                "nodeid": "tests/test_generated_diskcache.py::test_public_constants_and_exports_are_available",
+                "type": "Function",
+                "lineno": 686
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_set_get_mapping_membership",
+            "lineno": 10,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_set_get_mapping_membership",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0015182700008153915,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.012495433911681175,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001739896833896637,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_missing_defaults_and_key_errors",
+            "lineno": 20,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_missing_defaults_and_key_errors",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005356930196285248,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.007315974682569504,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013096071779727936,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_delete_and_delitem_remove_all_views",
+            "lineno": 30,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_delete_and_delitem_remove_all_views",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0004844591021537781,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.010940713807940483,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012514367699623108,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_add_only_inserts_missing_key",
+            "lineno": 42,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_add_only_inserts_missing_key",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005298871546983719,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.008448218926787376,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012541189789772034,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_touch_extends_and_can_expire_entry",
+            "lineno": 50,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_touch_extends_and_can_expire_entry",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005084555596113205,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00934651494026184,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012464635074138641,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_incr_and_decr_create_and_update_values",
+            "lineno": 62,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_incr_and_decr_create_and_update_values",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0004738718271255493,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.012252062559127808,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012743473052978516,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_file_like_value_round_trip",
+            "lineno": 73,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_file_like_value_round_trip",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00047944672405719757,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.01059550791978836,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00022230669856071472,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_get_metadata_tuple_order",
+            "lineno": 86,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_get_metadata_tuple_order",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0008208900690078735,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.010296475142240524,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012867338955402374,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_pop_returns_metadata_and_removes_entry",
+            "lineno": 96,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_pop_returns_metadata_and_removes_entry",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0004826989024877548,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.009148756042122841,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013694539666175842,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_expire_uses_strict_cutoff",
+            "lineno": 108,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_expire_uses_strict_cutoff",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.000477643683552742,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.008487515151500702,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012600049376487732,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_tag_evict_removes_only_matching_tag",
+            "lineno": 119,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_tag_evict_removes_only_matching_tag",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00047206878662109375,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.010432746261358261,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012682005763053894,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_clear_returns_removed_count",
+            "lineno": 129,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_clear_returns_removed_count",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00047727301716804504,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.009521584957838058,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00014790333807468414,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_stats_track_hits_and_misses_when_enabled",
+            "lineno": 138,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_stats_track_hits_and_misses_when_enabled",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005086585879325867,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.009271416813135147,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001262165606021881,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_length_counts_expired_entries_until_cleanup",
+            "lineno": 152,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_length_counts_expired_entries_until_cleanup",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00047200731933116913,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.010495815426111221,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00024828873574733734,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_push_generates_documented_integer_edges",
+            "lineno": 161,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_push_generates_documented_integer_edges",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0009023454040288925,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.01052773930132389,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00026298128068447113,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_push_generates_prefixed_keys",
+            "lineno": 171,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_push_generates_prefixed_keys",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0010315757244825363,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.012568267062306404,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00022190064191818237,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_peek_does_not_remove_queue_item",
+            "lineno": 180,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_peek_does_not_remove_queue_item",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0008115358650684357,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.01275789737701416,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00043911300599575043,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_pull_and_peek_skip_expired_queue_items",
+            "lineno": 190,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_pull_and_peek_skip_expired_queue_items",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0010813325643539429,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.010058997198939323,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00014597363770008087,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_queue_metadata_tuple_shape",
+            "lineno": 200,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_queue_metadata_tuple_shape",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005567446351051331,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.007021984085440636,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00014457479119300842,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_peekitem_returns_first_and_last_pairs",
+            "lineno": 213,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_peekitem_returns_first_and_last_pairs",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00055672787129879,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0061767250299453735,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00014387257397174835,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_iteration_and_reversed_key_order",
+            "lineno": 222,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_iteration_and_reversed_key_order",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005415529012680054,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.009181952103972435,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001353193074464798,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_reset_updates_setting_and_attribute",
+            "lineno": 232,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_reset_updates_setting_and_attribute",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005103591829538345,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0066758375614881516,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012637116014957428,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_volume_includes_database_and_value_files",
+            "lineno": 240,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_volume_includes_database_and_value_files",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0004835352301597595,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.008339563384652138,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012686289846897125,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_context_manager_and_pickle_reopen_same_directory",
+            "lineno": 249,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_context_manager_and_pickle_reopen_same_directory",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0004785154014825821,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0125338826328516,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013676099479198456,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_memoize_caches_results_and_exposes_key",
+            "lineno": 262,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_memoize_caches_results_and_exposes_key",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005201566964387894,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.006434300914406776,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001325514167547226,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_memoize_ignore_removes_arguments_from_cache_key",
+            "lineno": 279,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_memoize_ignore_removes_arguments_from_cache_key",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0004903525114059448,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.006299976259469986,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012573599815368652,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_memoize_typed_separates_equal_values_by_type",
+            "lineno": 294,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_memoize_typed_separates_equal_values_by_type",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0004975982010364532,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.010446663945913315,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0002989191561937332,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_cache_memoize_rejects_bare_decorator_use",
+            "lineno": 310,
+            "outcome": "passed",
+            "keywords": [
+              "test_cache_memoize_rejects_bare_decorator_use",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.001135118305683136,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.012042943388223648,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00041642598807811737,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_jsondisk_round_trips_json_compatible_values",
+            "lineno": 317,
+            "outcome": "passed",
+            "keywords": [
+              "test_jsondisk_round_trips_json_compatible_values",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0015419591218233109,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.009361306205391884,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00020629540085792542,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_fanout_set_get_delete_membership",
+            "lineno": 325,
+            "outcome": "passed",
+            "keywords": [
+              "test_fanout_set_get_delete_membership",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0007742159068584442,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.026205560192465782,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012844614684581757,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_fanout_add_touch_incr_decr",
+            "lineno": 336,
+            "outcome": "passed",
+            "keywords": [
+              "test_fanout_add_touch_incr_decr",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0004937388002872467,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.023754213005304337,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00016007386147975922,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_fanout_pop_and_default_values",
+            "lineno": 347,
+            "outcome": "passed",
+            "keywords": [
+              "test_fanout_pop_and_default_values",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005728118121623993,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.02639729157090187,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013932213187217712,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_fanout_stats_accumulate_across_shards",
+            "lineno": 355,
+            "outcome": "passed",
+            "keywords": [
+              "test_fanout_stats_accumulate_across_shards",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005766265094280243,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.027960769832134247,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013726577162742615,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_fanout_clear_and_iteration",
+            "lineno": 367,
+            "outcome": "passed",
+            "keywords": [
+              "test_fanout_clear_and_iteration",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005349665880203247,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.027574555948376656,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001330450177192688,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_fanout_child_cache_reopens_named_state",
+            "lineno": 378,
+            "outcome": "passed",
+            "keywords": [
+              "test_fanout_child_cache_reopens_named_state",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0006143655627965927,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.029948215931653976,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013330578804016113,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_fanout_child_deque_reopens_named_state",
+            "lineno": 387,
+            "outcome": "passed",
+            "keywords": [
+              "test_fanout_child_deque_reopens_named_state",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005348939448595047,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.03429568372666836,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001315586268901825,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_fanout_child_index_reopens_named_state",
+            "lineno": 396,
+            "outcome": "passed",
+            "keywords": [
+              "test_fanout_child_index_reopens_named_state",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005293358117341995,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.024199889972805977,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012970343232154846,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_fanout_transact_requires_retry_true",
+            "lineno": 404,
+            "outcome": "passed",
+            "keywords": [
+              "test_fanout_transact_requires_retry_true",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005508530884981155,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.024590449407696724,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001395493745803833,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_fanout_reset_updates_shard_settings",
+            "lineno": 417,
+            "outcome": "passed",
+            "keywords": [
+              "test_fanout_reset_updates_shard_settings",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.000571075826883316,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.02306998521089554,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012902356684207916,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_fanout_file_like_read_round_trip",
+            "lineno": 424,
+            "outcome": "passed",
+            "keywords": [
+              "test_fanout_file_like_read_round_trip",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005096811801195145,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.033474016934633255,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00017870403826236725,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_deque_initialization_and_iteration",
+            "lineno": 434,
+            "outcome": "passed",
+            "keywords": [
+              "test_deque_initialization_and_iteration",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0006925556808710098,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00788029097020626,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00016328506171703339,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_deque_append_appendleft_pop_popleft",
+            "lineno": 441,
+            "outcome": "passed",
+            "keywords": [
+              "test_deque_append_appendleft_pop_popleft",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0006566401571035385,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00732002779841423,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001481715589761734,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_deque_maxlen_discards_from_opposite_side",
+            "lineno": 453,
+            "outcome": "passed",
+            "keywords": [
+              "test_deque_maxlen_discards_from_opposite_side",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005283933132886887,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.006524289026856422,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00044111162424087524,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_deque_index_assignment_and_deletion",
+            "lineno": 461,
+            "outcome": "passed",
+            "keywords": [
+              "test_deque_index_assignment_and_deletion",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0016418620944023132,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.008073952049016953,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00016799382865428925,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_deque_extendleft_reverse_and_rotate",
+            "lineno": 472,
+            "outcome": "passed",
+            "keywords": [
+              "test_deque_extendleft_reverse_and_rotate",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.000644441694021225,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.025386784225702286,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00022841617465019226,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_deque_count_remove_and_missing_value",
+            "lineno": 484,
+            "outcome": "passed",
+            "keywords": [
+              "test_deque_count_remove_and_missing_value",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0009001586586236954,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.006892813369631767,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013689324259757996,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_deque_persists_by_directory",
+            "lineno": 493,
+            "outcome": "passed",
+            "keywords": [
+              "test_deque_persists_by_directory",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005657598376274109,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.009646344929933548,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001268722116947174,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_deque_fromcache_uses_supplied_cache_state",
+            "lineno": 501,
+            "outcome": "passed",
+            "keywords": [
+              "test_deque_fromcache_uses_supplied_cache_state",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00051063671708107,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.007329734042286873,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012628361582756042,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_index_initialization_order_and_views",
+            "lineno": 510,
+            "outcome": "passed",
+            "keywords": [
+              "test_index_initialization_order_and_views",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005046669393777847,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.007829505950212479,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013482384383678436,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_index_setdefault_pop_and_key_errors",
+            "lineno": 519,
+            "outcome": "passed",
+            "keywords": [
+              "test_index_setdefault_pop_and_key_errors",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.000624658539891243,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.007966244593262672,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013389810919761658,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_index_popitem_first_and_last",
+            "lineno": 529,
+            "outcome": "passed",
+            "keywords": [
+              "test_index_popitem_first_and_last",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005975253880023956,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.008990123867988586,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012420862913131714,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_index_push_pull_queue_behavior",
+            "lineno": 539,
+            "outcome": "passed",
+            "keywords": [
+              "test_index_push_pull_queue_behavior",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005339570343494415,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.007361359894275665,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013536028563976288,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_index_memoize_caches_results",
+            "lineno": 550,
+            "outcome": "passed",
+            "keywords": [
+              "test_index_memoize_caches_results",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005761142820119858,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0060685016214847565,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013628415763378143,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_index_persists_by_directory",
+            "lineno": 565,
+            "outcome": "passed",
+            "keywords": [
+              "test_index_persists_by_directory",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005074851214885712,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.008849039673805237,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00016843155026435852,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_index_fromcache_uses_supplied_cache_state",
+            "lineno": 574,
+            "outcome": "passed",
+            "keywords": [
+              "test_index_fromcache_uses_supplied_cache_state",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005704443901777267,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.007306648418307304,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00014396384358406067,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_averager_tracks_average_and_pop_clears_state",
+            "lineno": 583,
+            "outcome": "passed",
+            "keywords": [
+              "test_averager_tracks_average_and_pop_clears_state",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0006058197468519211,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.006718555465340614,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013595819473266602,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_lock_context_sets_and_releases_lock_key",
+            "lineno": 594,
+            "outcome": "passed",
+            "keywords": [
+              "test_lock_context_sets_and_releases_lock_key",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005462262779474258,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.009959936141967773,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012536905705928802,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_rlock_allows_nested_acquire_and_balanced_release",
+            "lineno": 605,
+            "outcome": "passed",
+            "keywords": [
+              "test_rlock_allows_nested_acquire_and_balanced_release",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005331393331289291,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00802590325474739,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00014097616076469421,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_bounded_semaphore_allows_acquire_release_within_bound",
+            "lineno": 619,
+            "outcome": "passed",
+            "keywords": [
+              "test_bounded_semaphore_allows_acquire_release_within_bound",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005628690123558044,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00882619246840477,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001260843127965927,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_throttle_uses_sleep_until_capacity_is_available",
+            "lineno": 631,
+            "outcome": "passed",
+            "keywords": [
+              "test_throttle_uses_sleep_until_capacity_is_available",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005102772265672684,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.007496250793337822,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012579187750816345,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_barrier_decorator_returns_function_result",
+            "lineno": 654,
+            "outcome": "passed",
+            "keywords": [
+              "test_barrier_decorator_returns_function_result",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005081798881292343,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.016477495431900024,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00024132989346981049,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_memoize_stampede_caches_result_and_exposes_key",
+            "lineno": 667,
+            "outcome": "passed",
+            "keywords": [
+              "test_memoize_stampede_caches_result_and_exposes_key",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0009537134319543839,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00825008749961853,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00023634545505046844,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "tests/test_generated_diskcache.py::test_public_constants_and_exports_are_available",
+            "lineno": 686,
+            "outcome": "passed",
+            "keywords": [
+              "test_public_constants_and_exports_are_available",
+              "test_generated_diskcache.py",
+              "tests",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00019401311874389648,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0001340024173259735,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00020818039774894714,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "summary": {
+    "passed": 63,
+    "total": 63
+  },
+  "pass_rate_excluding_skips": 1.0,
+  "by_layer": {
+    "atomic": {
+      "passed": 22,
+      "total": 22
+    },
+    "integration": {
+      "passed": 33,
+      "total": 33
+    },
+    "system_e2e": {
+      "passed": 8,
+      "total": 8
+    }
+  },
+  "cases": [
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_set_get_mapping_membership",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_set_get_mapping_membership",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.012495433911681175,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_missing_defaults_and_key_errors",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_missing_defaults_and_key_errors",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.007315974682569504,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_delete_and_delitem_remove_all_views",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_delete_and_delitem_remove_all_views",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.010940713807940483,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_add_only_inserts_missing_key",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_add_only_inserts_missing_key",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.008448218926787376,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_touch_extends_and_can_expire_entry",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_touch_extends_and_can_expire_entry",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00934651494026184,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_incr_and_decr_create_and_update_values",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_incr_and_decr_create_and_update_values",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.012252062559127808,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_file_like_value_round_trip",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_file_like_value_round_trip",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.01059550791978836,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_get_metadata_tuple_order",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_get_metadata_tuple_order",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.010296475142240524,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_pop_returns_metadata_and_removes_entry",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_pop_returns_metadata_and_removes_entry",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.009148756042122841,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_expire_uses_strict_cutoff",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_expire_uses_strict_cutoff",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.008487515151500702,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_tag_evict_removes_only_matching_tag",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_tag_evict_removes_only_matching_tag",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.010432746261358261,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_clear_returns_removed_count",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_clear_returns_removed_count",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.009521584957838058,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_stats_track_hits_and_misses_when_enabled",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_stats_track_hits_and_misses_when_enabled",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.009271416813135147,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_length_counts_expired_entries_until_cleanup",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_length_counts_expired_entries_until_cleanup",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.010495815426111221,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_push_generates_documented_integer_edges",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_push_generates_documented_integer_edges",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.01052773930132389,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_push_generates_prefixed_keys",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_push_generates_prefixed_keys",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.012568267062306404,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_peek_does_not_remove_queue_item",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_peek_does_not_remove_queue_item",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.01275789737701416,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_pull_and_peek_skip_expired_queue_items",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_pull_and_peek_skip_expired_queue_items",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.010058997198939323,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_queue_metadata_tuple_shape",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_queue_metadata_tuple_shape",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.007021984085440636,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_peekitem_returns_first_and_last_pairs",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_peekitem_returns_first_and_last_pairs",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0061767250299453735,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_iteration_and_reversed_key_order",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_iteration_and_reversed_key_order",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.009181952103972435,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_reset_updates_setting_and_attribute",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_reset_updates_setting_and_attribute",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0066758375614881516,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_volume_includes_database_and_value_files",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_volume_includes_database_and_value_files",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.008339563384652138,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_context_manager_and_pickle_reopen_same_directory",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_context_manager_and_pickle_reopen_same_directory",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0125338826328516,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_memoize_caches_results_and_exposes_key",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_memoize_caches_results_and_exposes_key",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.006434300914406776,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_memoize_ignore_removes_arguments_from_cache_key",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_memoize_ignore_removes_arguments_from_cache_key",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.006299976259469986,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_memoize_typed_separates_equal_values_by_type",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_memoize_typed_separates_equal_values_by_type",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.010446663945913315,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_cache_memoize_rejects_bare_decorator_use",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_cache_memoize_rejects_bare_decorator_use",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.012042943388223648,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_jsondisk_round_trips_json_compatible_values",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_jsondisk_round_trips_json_compatible_values",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.009361306205391884,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_fanout_set_get_delete_membership",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_fanout_set_get_delete_membership",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.026205560192465782,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_fanout_add_touch_incr_decr",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_fanout_add_touch_incr_decr",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.023754213005304337,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_fanout_pop_and_default_values",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_fanout_pop_and_default_values",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.02639729157090187,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_fanout_stats_accumulate_across_shards",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_fanout_stats_accumulate_across_shards",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.027960769832134247,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_fanout_clear_and_iteration",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_fanout_clear_and_iteration",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.027574555948376656,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_fanout_child_cache_reopens_named_state",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_fanout_child_cache_reopens_named_state",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.029948215931653976,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_fanout_child_deque_reopens_named_state",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_fanout_child_deque_reopens_named_state",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.03429568372666836,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_fanout_child_index_reopens_named_state",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_fanout_child_index_reopens_named_state",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.024199889972805977,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_fanout_transact_requires_retry_true",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_fanout_transact_requires_retry_true",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.024590449407696724,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_fanout_reset_updates_shard_settings",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_fanout_reset_updates_shard_settings",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.02306998521089554,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_fanout_file_like_read_round_trip",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_fanout_file_like_read_round_trip",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.033474016934633255,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_deque_initialization_and_iteration",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_deque_initialization_and_iteration",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00788029097020626,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_deque_append_appendleft_pop_popleft",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_deque_append_appendleft_pop_popleft",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00732002779841423,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_deque_maxlen_discards_from_opposite_side",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_deque_maxlen_discards_from_opposite_side",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.006524289026856422,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_deque_index_assignment_and_deletion",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_deque_index_assignment_and_deletion",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.008073952049016953,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_deque_extendleft_reverse_and_rotate",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_deque_extendleft_reverse_and_rotate",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.025386784225702286,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_deque_count_remove_and_missing_value",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_deque_count_remove_and_missing_value",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.006892813369631767,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_deque_persists_by_directory",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_deque_persists_by_directory",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.009646344929933548,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_deque_fromcache_uses_supplied_cache_state",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_deque_fromcache_uses_supplied_cache_state",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.007329734042286873,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_index_initialization_order_and_views",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_index_initialization_order_and_views",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.007829505950212479,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_index_setdefault_pop_and_key_errors",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_index_setdefault_pop_and_key_errors",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.007966244593262672,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_index_popitem_first_and_last",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_index_popitem_first_and_last",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.008990123867988586,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_index_push_pull_queue_behavior",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_index_push_pull_queue_behavior",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.007361359894275665,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_index_memoize_caches_results",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_index_memoize_caches_results",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0060685016214847565,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_index_persists_by_directory",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_index_persists_by_directory",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.008849039673805237,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_index_fromcache_uses_supplied_cache_state",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_index_fromcache_uses_supplied_cache_state",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.007306648418307304,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_averager_tracks_average_and_pop_clears_state",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_averager_tracks_average_and_pop_clears_state",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.006718555465340614,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_lock_context_sets_and_releases_lock_key",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_lock_context_sets_and_releases_lock_key",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.009959936141967773,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_rlock_allows_nested_acquire_and_balanced_release",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_rlock_allows_nested_acquire_and_balanced_release",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00802590325474739,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_bounded_semaphore_allows_acquire_release_within_bound",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_bounded_semaphore_allows_acquire_release_within_bound",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00882619246840477,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_throttle_uses_sleep_until_capacity_is_available",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_throttle_uses_sleep_until_capacity_is_available",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.007496250793337822,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_barrier_decorator_returns_function_result",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_barrier_decorator_returns_function_result",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.016477495431900024,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_memoize_stampede_caches_result_and_exposes_key",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_memoize_stampede_caches_result_and_exposes_key",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00825008749961853,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "tests/test_generated_diskcache.py::test_public_constants_and_exports_are_available",
+      "base_nodeid": "tests/test_generated_diskcache.py::test_public_constants_and_exports_are_available",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0001340024173259735,
+        "outcome": "passed"
+      }
+    }
+  ]
+}

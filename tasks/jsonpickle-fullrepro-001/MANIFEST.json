@@ -1,0 +1,333 @@
+{
+  "task_id": "jsonpickle-fullrepro-001",
+  "repo": "jsonpickle",
+  "package": "jsonpickle",
+  "github": "https://github.com/jsonpickle/jsonpickle",
+  "remote": "https://github.com/jsonpickle/jsonpickle.git",
+  "source_path": "/root/autodl-tmp/new-e2e/jsonpickle__jsonpickle",
+  "oracle_source_path": "/root/autodl-tmp/Bmk-Lizhiqian/wip/jsonpickle-fullrepro-001/filter/oracle_source",
+  "commit": "4bdc0d6",
+  "created_at": "2026-07-09T00:00:00Z",
+  "updated_at": "2026-07-09T00:00:00Z",
+  "state": "QUALIFIED",
+  "pipeline_state": "QUALIFIED",
+  "test_collected": 784,
+  "unique_collected_nodeids": 440,
+  "functions_in_scope": 784,
+  "functions_kept": 12,
+  "functions_excluded": 772,
+  "generated_nodeids": 64,
+  "kept_nodeids": 76,
+  "reference_passed": 76,
+  "reference_failed": 0,
+  "reference_errors": 0,
+  "reference_skipped": 0,
+  "dummy_passed": 0,
+  "oracle_source": "mixed_upstream_filtered_and_generated",
+  "remove_paths": [
+    "jsonpickle"
+  ],
+  "pytest_args": [
+    "-o",
+    "addopts="
+  ],
+  "score_harness": "harness/score_pytest_original.py",
+  "scorer_isolation": {
+    "score_harness": "harness/score_pytest_original.py",
+    "package_import": "jsonpickle",
+    "preflight_command": "python -c \"import jsonpickle; print(jsonpickle.__file__)\"",
+    "source_repo_for_scoring": "/root/autodl-tmp/Bmk-Lizhiqian/wip/jsonpickle-fullrepro-001/filter/oracle_source",
+    "solution_dir_for_reference_gate": "/root/autodl-tmp/new-e2e/jsonpickle__jsonpickle",
+    "remove_paths": [
+      "jsonpickle"
+    ],
+    "pytest_args": [
+      "-o",
+      "addopts="
+    ],
+    "reference_import_provenance_stdout": "/root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/__init__.py",
+    "dummy_import_provenance_stdout": "/root/autodl-tmp/Bmk-Lizhiqian/wip/jsonpickle-fullrepro-001/filter/dummy_solution/jsonpickle/__init__.py",
+    "source_shadowing_guard": "The scorer copies filter/oracle_source, removes its jsonpickle package with --remove-path jsonpickle, then prepends the solution directory to PYTHONPATH; reference preflight must point to the solution_dir path."
+  },
+  "final_reference_summary": {
+    "summary": {
+      "passed": 76,
+      "total": 76
+    },
+    "pass_rate_excluding_skips": 1.0,
+    "by_layer": {
+      "atomic": {
+        "passed": 13,
+        "total": 13
+      },
+      "integration": {
+        "passed": 53,
+        "total": 53
+      },
+      "system_e2e": {
+        "passed": 10,
+        "total": 10
+      }
+    }
+  },
+  "dummy_summary": {
+    "summary": {
+      "failed": 76,
+      "total": 76
+    },
+    "pass_rate_excluding_skips": 0.0,
+    "by_layer": {
+      "atomic": {
+        "failed": 13,
+        "total": 13
+      },
+      "integration": {
+        "failed": 53,
+        "total": 53
+      },
+      "system_e2e": {
+        "failed": 10,
+        "total": 10
+      }
+    }
+  },
+  "coverage_floor": {
+    "oracle_count": 76,
+    "global_floor": 50,
+    "global_floor_ok": true,
+    "section_counts": {
+      "Class Metadata And Missing Classes": 7,
+      "Cross-View Invariants": 24,
+      "Custom Handlers": 5,
+      "Dictionary Key Semantics": 10,
+      "Encoding And Decoding Behavior": 22,
+      "Error Semantics": 7,
+      "Installable Surface": 3,
+      "JSON Backend Selection": 7,
+      "Product State Model": 19,
+      "Public API": 18,
+      "References, Cycles, And Identity": 16,
+      "Representative Workflows": 5
+    },
+    "minimums": {
+      "Installable Surface": 3,
+      "Product State Model": 3,
+      "Public API": 3,
+      "Encoding And Decoding Behavior": 3,
+      "References, Cycles, And Identity": 3,
+      "Dictionary Key Semantics": 3,
+      "Class Metadata And Missing Classes": 3,
+      "Custom Handlers": 3,
+      "JSON Backend Selection": 3,
+      "Error Semantics": 3,
+      "Cross-View Invariants": 5,
+      "Representative Workflows": 3
+    },
+    "below_minimum_sections": {}
+  },
+  "branch_coverage": {
+    "tool": "coverage 7.15.0 installed under filter/runtime/vendor",
+    "json": "filter/coverage.json",
+    "totals": {
+      "covered_lines": 1156,
+      "num_statements": 2140,
+      "percent_covered": 53.196664350243225,
+      "percent_covered_display": "53",
+      "missing_lines": 984,
+      "excluded_lines": 8,
+      "percent_statements_covered": 54.018691588785046,
+      "percent_statements_covered_display": "54",
+      "num_branches": 738,
+      "num_partial_branches": 83,
+      "covered_branches": 375,
+      "missing_branches": 363,
+      "percent_branches_covered": 50.8130081300813,
+      "percent_branches_covered_display": "51"
+    }
+  },
+  "artifacts": {
+    "spec": "spec.md",
+    "filter_spec_test_map": "filter/spec_test_map.md",
+    "spec_test_map": "spec_test_map.md",
+    "filter_kept_nodeids": "filter/kept_nodeids.txt",
+    "kept_nodeids": "kept_nodeids.txt",
+    "filter_taxonomy": "filter/taxonomy.jsonl",
+    "taxonomy": "taxonomy.jsonl",
+    "candidate_filter_map": "filter/candidate_filter_map.md",
+    "rewrite_audit": "filter/rewrite_audit.md",
+    "generated_tests": "filter/generated_tests.py",
+    "reference_score": "reference_score.json",
+    "dummy_score": "filter/dummy_score.json",
+    "reference_validation": "reference_validation.md",
+    "taxonomy_score_csv": "test_taxonomy_score.csv",
+    "coverage_floor": "filter/coverage_floor.json",
+    "stage3_alignment": "github_alignment/stage3_test_filter_alignment.md",
+    "workflow_manifest": "github_alignment/raw_main/FETCH_MANIFEST.json",
+    "filter_validation": "filter/filter_validation.md",
+    "root_filter_validation": "filter_validation.md",
+    "candidate_score_result": "candidate-runs/opencode-gpt-5.5-jsonpickle-fullrepro-001-20260709T-stage4-cleanroom/score_result.json",
+    "candidate_score_report": "candidate-runs/opencode-gpt-5.5-jsonpickle-fullrepro-001-20260709T-stage4-cleanroom/score_report.md",
+    "judge_diagnosis": "judge/diagnosis_report.md",
+    "judge_gate_report": "judge/gate_report.md",
+    "stage5_deepseek_review": "review/step5_deepseekv4pro_review.md",
+    "stage5_glm52_review": "review/step5_glm52_review.md"
+  },
+  "candidate_visibility": "Candidate generation may receive only spec.md plus generic implementation instructions. Do not expose source path, tests, kept_nodeids, taxonomy, reference_score, reviews, score reports, or prior outputs.",
+  "github_workflow": {
+    "fetched_at_utc": "2026-07-09T09:57:29Z",
+    "source": "https://gh-proxy.com/https://github.com/E2E-Bmk/Bmk-dev.git",
+    "upstream_url": "https://github.com/E2E-Bmk/Bmk-dev/tree/main",
+    "commit": "f7b79f0ada1605aa24d7fe7b6e81665019788bea",
+    "files": [
+      {
+        "path": "README.md",
+        "sha256": "70c35e4bc15379f7fac1b55275803faa8fbf09a6a689c4f882dd34cd36014afa",
+        "bytes": 3340
+      },
+      {
+        "path": "WORKFLOW_CN.md",
+        "sha256": "f23e03f1c263a28c530caa60ee0ac17009d8f898b0b4ac77fe44a4c4b828f303",
+        "bytes": 44446
+      },
+      {
+        "path": "AGENTS.md",
+        "sha256": "21e22094047cd96c809acfb10df615c3e29681957229d8b2b22527d880fc303e",
+        "bytes": 31
+      },
+      {
+        "path": "MANIFEST.json",
+        "sha256": "e5c0894a2f7bcbbcc5a27c85aec1f31ff802841febdd8083855bccfcf75d2c6a",
+        "bytes": 5155
+      },
+      {
+        "path": "skills/PIPELINE_STATE.template.md",
+        "sha256": "179fa88b81221129ace3337e05afe6ace562a586a16c06133b83816cf281ecd6",
+        "bytes": 9140
+      },
+      {
+        "path": "skills/README.md",
+        "sha256": "26db980e3f279d0789adebf91213fe3e4a5d220f1ac6c5931c70ad5635c11fce",
+        "bytes": 2915
+      },
+      {
+        "path": "skills/candidate-selector/SKILL.md",
+        "sha256": "bc733e48e9eaae9193729ef1f990ef6b1464d7ba09e35f6786c148d19cee9f8d",
+        "bytes": 3816
+      },
+      {
+        "path": "skills/spec-writer/SKILL.md",
+        "sha256": "8be46346849b15c831d9bdc985c4dd9a7793c547c58affbdfea3e6bb98ae90c7",
+        "bytes": 13977
+      },
+      {
+        "path": "skills/test-filter/SKILL.md",
+        "sha256": "aaca8196d6a0d5bc6d3767832a0725832bc9fe2daf9f9040d93138ce04ac566b",
+        "bytes": 20452
+      },
+      {
+        "path": "skills/task-judge/SKILL.md",
+        "sha256": "3c7a5ac311a7fe2acde80390a51ad5c6b19b42943a59072d36831d3672f40559",
+        "bytes": 14717
+      },
+      {
+        "path": "skills/task-synthesizer/SKILL.md",
+        "sha256": "e841510f432ead6a413bc30deeeb7a2f9ea4d142a38bfb3c72fca51124b45e12",
+        "bytes": 11201
+      },
+      {
+        "path": "harness/score_pytest_original.py",
+        "sha256": "0d819c9ed97730a314157b886b644862ca785ce28d61dde208e429318ccc9553",
+        "bytes": 8766
+      },
+      {
+        "path": "harness/score.py",
+        "sha256": "503d3cfe9209b826008959acacb7cb4d7febedfa6d3cfaff5499ecd38696dd21",
+        "bytes": 13246
+      },
+      {
+        "path": "harness/run.py",
+        "sha256": "f953b36c74bf344bdb50ed6a57f8f54684c5f48cf2b83b182d5d77441c3c6619",
+        "bytes": 5974
+      },
+      {
+        "path": "harness/filter.py",
+        "sha256": "9e7ecf537ee4ad8ef3c045fc1199118d596a505f557c874ad85eaffe6870facc",
+        "bytes": 6386
+      },
+      {
+        "path": "tools/format_coverage.py",
+        "sha256": "00cc7f8a282b3ac5bb3a8219b44c66df96c035d2b46ad1f21c3bf88669c4738e",
+        "bytes": 2314
+      }
+    ]
+  },
+  "current_step": 5,
+  "model_reviews": {
+    "stage3": {
+      "deepseek-v4-pro": "PASS_CONTINUE",
+      "glm-5.2": "PASS_CONTINUE",
+      "external_review_models_called": true
+    },
+    "stage5": {
+      "deepseek-v4-pro": "PASS_QUALIFY",
+      "glm-5.2": "PASS_QUALIFY"
+    }
+  },
+  "stage4_candidate": {
+    "run_id": "opencode-gpt-5.5-jsonpickle-fullrepro-001-20260709T-stage4-cleanroom",
+    "runner": "opencode",
+    "model": "gpt-5.5",
+    "score_result": "candidate-runs/opencode-gpt-5.5-jsonpickle-fullrepro-001-20260709T-stage4-cleanroom/score_result.json",
+    "score_summary": {
+      "failed": 18,
+      "passed": 58,
+      "total": 76
+    },
+    "pass_rate_excluding_skips": 0.7631578947368421,
+    "by_layer": {
+      "atomic": {
+        "failed": 2,
+        "passed": 11,
+        "total": 13
+      },
+      "integration": {
+        "failed": 10,
+        "passed": 43,
+        "total": 53
+      },
+      "system_e2e": {
+        "failed": 6,
+        "passed": 4,
+        "total": 10
+      }
+    }
+  },
+  "status": "QUALIFIED",
+  "judge_summary": {
+    "verdict": "QUALIFIED",
+    "candidate_run": "opencode-gpt-5.5-jsonpickle-fullrepro-001-20260709T-stage4-cleanroom",
+    "score_summary": {
+      "failed": 18,
+      "passed": 58,
+      "total": 76
+    },
+    "pass_rate_excluding_skips": 0.7631578947368421,
+    "by_layer": {
+      "atomic": {
+        "failed": 2,
+        "passed": 11,
+        "total": 13
+      },
+      "integration": {
+        "failed": 10,
+        "passed": 43,
+        "total": 53
+      },
+      "system_e2e": {
+        "failed": 6,
+        "passed": 4,
+        "total": 10
+      }
+    }
+  }
+}

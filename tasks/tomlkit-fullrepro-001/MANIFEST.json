@@ -1,0 +1,119 @@
+{
+  "task_id": "tomlkit-fullrepro-001",
+  "status": "QUALIFIED",
+  "package_name": "tomlkit",
+  "package_version": "0.15.0",
+  "source_repo": "python-poetry/tomlkit",
+  "source_path": "/root/autodl-tmp/e2e/tomlkit",
+  "source_commit": "43668ddebc3f082bf385d328aceed18d26976897",
+  "spec": "spec.md",
+  "kept_nodeids": "kept_nodeids.txt",
+  "spec_test_map": "spec_test_map.md",
+  "taxonomy": "taxonomy.jsonl",
+  "test_taxonomy_score": "test_taxonomy_score.csv",
+  "reference": "reference_score.json",
+  "reference_validation": "reference_validation.md",
+  "filter_validation": "filter_validation.md",
+  "rewrite_audit": "rewrite_audit.md",
+  "generated_tests": "generated_public_tests.py",
+  "scorer": "score_tomlkit_oracle.py",
+  "scorer_isolation": {
+    "score_harness": "score_tomlkit_oracle.py",
+    "package_import": "tomlkit",
+    "preflight_command": "python -c \"import tomlkit; print(tomlkit.__file__)\"",
+    "remove_paths": [
+      "tomlkit"
+    ],
+    "recorded_from_artifacts": false,
+    "source_shadowing_guard": "Remove the source package path from the copied oracle worktree before scoring, then require preflight stdout to point into candidate output.",
+    "verification_status": "recommended_not_historically_recorded; rerun scoring before using as a final candidate score"
+  },
+  "filter_summary": {
+    "all_upstream_nodeids": 1035,
+    "kept_upstream": 12,
+    "generated": 52,
+    "scoreable": 64,
+    "source_only": 0,
+    "excluded": 1023,
+    "spec_gap": 0,
+    "layers": {
+      "atomic": 25,
+      "integration": 19,
+      "system_e2e": 20
+    },
+    "oracle_source": "upstream_plus_generated"
+  },
+  "reference_summary": {
+    "passed": 64,
+    "total": 64,
+    "pass_rate_excluding_skips": 1.0,
+    "by_layer": {
+      "system_e2e": {
+        "passed": 20,
+        "total": 20
+      },
+      "integration": {
+        "passed": 19,
+        "total": 19
+      },
+      "atomic": {
+        "passed": 25,
+        "total": 25
+      }
+    }
+  },
+  "candidate_eval_summary": {
+    "best_runner": "mini-swe-agent",
+    "best_model": "gpt-5.5",
+    "best_score": "42/64",
+    "best_pass_rate_excluding_skips": 0.65625,
+    "by_layer": {
+      "atomic": "16/25",
+      "integration": "11/19",
+      "system_e2e": "15/20"
+    },
+    "run_id": "mini-swe-agent-gpt-5.5-tomlkit-fullrepro-001-batch1-20260702T120000Z",
+    "run_path": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/mini-swe-agent-gpt-5.5-tomlkit-fullrepro-001-batch1-20260702T120000Z",
+    "import_provenance_stdout": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/mini-swe-agent-gpt-5.5-tomlkit-fullrepro-001-batch1-20260702T120000Z/output/tomlkit/__init__.py",
+    "comparison": "OpenCode gpt-5.5 remains recorded as 40/64 but is not the adopted best row."
+  },
+  "candidate_visibility": "Candidate generation may receive only spec.md plus generic implementation instructions. Do not expose source path, tests, kept_nodeids, taxonomy, reference_score, reviews, generated tests, or prior outputs.",
+  "required_test_dependencies": [
+    "pytest",
+    "pytest-json-report"
+  ],
+  "judge": "diagnosis_report.md",
+  "labels": [
+    "qualified",
+    "discriminating",
+    "style-preservation-signal",
+    "cross-view-consistency-signal",
+    "runner-interrupted-caveat",
+    "coverage-gap"
+  ],
+  "coverage-gap": {
+    "verdict": "PARTIAL",
+    "scoreable_tests": 64,
+    "global_floor_ok": true,
+    "per_section_minimums": {
+      "Cross-View Invariants": 5,
+      "Error Semantics": 3,
+      "workflow_sections": 3,
+      "all_other_scored_sections": 3
+    },
+    "below_minimum_sections": [
+      {
+        "section": "Custom Encoders",
+        "covered": 2,
+        "minimum": 3
+      },
+      {
+        "section": "Use a custom encoder",
+        "covered": 2,
+        "minimum": 3
+      }
+    ],
+    "unknown_mapping_cells": 0,
+    "requires_action": "Expand or remap fair public tests before strict current-main qualification; retain caveat if generation is saturated without circular/source-only assertions."
+  }
+}

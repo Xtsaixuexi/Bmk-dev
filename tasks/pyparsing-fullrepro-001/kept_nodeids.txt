@@ -1,0 +1,298 @@
+tests/test_simple_unit.py::TestLiteral::runTest
+tests/test_simple_unit.py::TestCaselessLiteral::runTest
+tests/test_simple_unit.py::TestWord::runTest
+tests/test_simple_unit.py::TestCombine::runTest
+tests/test_simple_unit.py::TestRepetition::runTest
+tests/test_simple_unit.py::TestResultsName::runTest
+tests/test_simple_unit.py::TestGroups::runTest
+tests/test_simple_unit.py::TestParseAction::runTest
+tests/test_simple_unit.py::TestResultsModifyingParseAction::runTest
+tests/test_simple_unit.py::TestRegex::runTest
+tests/test_simple_unit.py::TestParseCondition::runTest
+tests/test_simple_unit.py::TestTransformStringUsingParseActions::runTest
+tests/test_simple_unit.py::TestCommonHelperExpressions::runTest
+tests/test_simple_unit.py::TestWhitespaceMethods::runTest
+tests/test_unit.py::Test02_WithoutPackrat::testAddCondition
+tests/test_unit.py::Test02_WithoutPackrat::testAtLineStart
+tests/test_unit.py::Test02_WithoutPackrat::testCStyleCommentParser
+tests/test_unit.py::Test02_WithoutPackrat::testCaselessKeywordVsKeywordCaseless
+tests/test_unit.py::Test02_WithoutPackrat::testCaselessOneOf
+tests/test_unit.py::Test02_WithoutPackrat::testChainedTernaryOperator
+tests/test_unit.py::Test02_WithoutPackrat::testCharAsKeyword
+tests/test_unit.py::Test02_WithoutPackrat::testCharRe
+tests/test_unit.py::Test02_WithoutPackrat::testCharsNotIn
+tests/test_unit.py::Test02_WithoutPackrat::testClearParseActions
+tests/test_unit.py::Test02_WithoutPackrat::testCloseMatch
+tests/test_unit.py::Test02_WithoutPackrat::testCloseMatchCaseless
+tests/test_unit.py::Test02_WithoutPackrat::testCol
+tests/test_unit.py::Test02_WithoutPackrat::testCombineSetName
+tests/test_unit.py::Test02_WithoutPackrat::testCombineWithResultsNames
+tests/test_unit.py::Test02_WithoutPackrat::testCommonExpressions
+tests/test_unit.py::Test02_WithoutPackrat::testCommonUrl
+tests/test_unit.py::Test02_WithoutPackrat::testCommonUrlExprs
+tests/test_unit.py::Test02_WithoutPackrat::testCommonUrlParts
+tests/test_unit.py::Test02_WithoutPackrat::testConvertToDateErr
+tests/test_unit.py::Test02_WithoutPackrat::testConvertToDatetimeErr
+tests/test_unit.py::Test02_WithoutPackrat::testCountedArray
+tests/test_unit.py::Test02_WithoutPackrat::testCountedArrayTest2
+tests/test_unit.py::Test02_WithoutPackrat::testCountedArrayTest3
+tests/test_unit.py::Test02_WithoutPackrat::testCountedArrayTest4
+tests/test_unit.py::Test02_WithoutPackrat::testCuneiformTransformString
+tests/test_unit.py::Test02_WithoutPackrat::testCustomQuotes
+tests/test_unit.py::Test02_WithoutPackrat::testCustomQuotes2
+tests/test_unit.py::Test02_WithoutPackrat::testDateTimeValidation
+tests/test_unit.py::Test02_WithoutPackrat::testDefaultKeywordChars
+tests/test_unit.py::Test02_WithoutPackrat::testDelimitedListMinMax
+tests/test_unit.py::Test02_WithoutPackrat::testDelimitedListName
+tests/test_unit.py::Test02_WithoutPackrat::testDelimitedListOfStrLiterals
+tests/test_unit.py::Test02_WithoutPackrat::testDelimitedListParseActions1
+tests/test_unit.py::Test02_WithoutPackrat::testDelimitedListParseActions2
+tests/test_unit.py::Test02_WithoutPackrat::testDelimitedListParseActions3
+tests/test_unit.py::Test02_WithoutPackrat::testDoubleSlashCommentParser
+tests/test_unit.py::Test02_WithoutPackrat::testEachWithMultipleMatch
+tests/test_unit.py::Test02_WithoutPackrat::testEachWithOptionalWithResultsName
+tests/test_unit.py::Test02_WithoutPackrat::testEachWithParseFatalException
+tests/test_unit.py::Test02_WithoutPackrat::testEllipsisRepetition
+tests/test_unit.py::Test02_WithoutPackrat::testEllipsisRepetitionWithResultsNames
+tests/test_unit.py::Test02_WithoutPackrat::testEmptyDictDoesNotRaiseException
+tests/test_unit.py::Test02_WithoutPackrat::testEmptyExpressionsAreHandledProperly
+tests/test_unit.py::Test02_WithoutPackrat::testExprSplitter
+tests/test_unit.py::Test02_WithoutPackrat::testExpressionDefaultStrings
+tests/test_unit.py::Test02_WithoutPackrat::testFollowedBy
+tests/test_unit.py::Test02_WithoutPackrat::testGoToColumn
+tests/test_unit.py::Test02_WithoutPackrat::testGreedyQuotedStrings
+tests/test_unit.py::Test02_WithoutPackrat::testHTMLEntities
+tests/test_unit.py::Test02_WithoutPackrat::testHTMLStripper
+tests/test_unit.py::Test02_WithoutPackrat::testHtmlCommentParser
+tests/test_unit.py::Test02_WithoutPackrat::testIgnoreString
+tests/test_unit.py::Test02_WithoutPackrat::testIndentedBlock
+tests/test_unit.py::Test02_WithoutPackrat::testIndentedBlockClass
+tests/test_unit.py::Test02_WithoutPackrat::testIndentedBlockClass2
+tests/test_unit.py::Test02_WithoutPackrat::testIndentedBlockClassWithRecursion
+tests/test_unit.py::Test02_WithoutPackrat::testIndentedBlockScan
+tests/test_unit.py::Test02_WithoutPackrat::testIndentedBlockTest2
+tests/test_unit.py::Test02_WithoutPackrat::testInfixNotationBasicArithEval
+tests/test_unit.py::Test02_WithoutPackrat::testInfixNotationEvalBoolExprUsingAstClasses
+tests/test_unit.py::Test02_WithoutPackrat::testInfixNotationExceptions
+tests/test_unit.py::Test02_WithoutPackrat::testInfixNotationGrammarTest5
+tests/test_unit.py::Test02_WithoutPackrat::testInfixNotationMinimalParseActionCalls
+tests/test_unit.py::Test02_WithoutPackrat::testInfixNotationTernaryOperator
+tests/test_unit.py::Test02_WithoutPackrat::testInfixNotationWithAlternateParenSymbols
+tests/test_unit.py::Test02_WithoutPackrat::testInfixNotationWithNonOperators
+tests/test_unit.py::Test02_WithoutPackrat::testInfixNotationWithParseActions
+tests/test_unit.py::Test02_WithoutPackrat::testInlineLiteralsUsing
+tests/test_unit.py::Test02_WithoutPackrat::testInvalidMinMaxArgs
+tests/test_unit.py::Test02_WithoutPackrat::testKeywordCopyIdentChars
+tests/test_unit.py::Test02_WithoutPackrat::testLineAndStringEnd
+tests/test_unit.py::Test02_WithoutPackrat::testLineMethodSpecialCaseAtStart
+tests/test_unit.py::Test02_WithoutPackrat::testLineStart
+tests/test_unit.py::Test02_WithoutPackrat::testLineStart2
+tests/test_unit.py::Test02_WithoutPackrat::testLineStartWithLeadingSpaces
+tests/test_unit.py::Test02_WithoutPackrat::testLiteralException
+tests/test_unit.py::Test02_WithoutPackrat::testLiteralVsKeyword
+tests/test_unit.py::Test02_WithoutPackrat::testLocatedExpr
+tests/test_unit.py::Test02_WithoutPackrat::testLocatedExprLeadingWhitespace
+tests/test_unit.py::Test02_WithoutPackrat::testLocatedExprUsingLocated
+tests/test_unit.py::Test02_WithoutPackrat::testMakeXMLTags
+tests/test_unit.py::Test02_WithoutPackrat::testMarkInputLine
+tests/test_unit.py::Test02_WithoutPackrat::testMatchFirstIteratesOverAllChoices
+tests/test_unit.py::Test02_WithoutPackrat::testMatchOnlyAtCol
+tests/test_unit.py::Test02_WithoutPackrat::testMatchOnlyAtColErr
+tests/test_unit.py::Test02_WithoutPackrat::testMulWithEllipsis
+tests/test_unit.py::Test02_WithoutPackrat::testMulWithNegativeNumber
+tests/test_unit.py::Test02_WithoutPackrat::testNestedAsDict
+tests/test_unit.py::Test02_WithoutPackrat::testNestedExpressionDoesNotOverwriteParseActions
+tests/test_unit.py::Test02_WithoutPackrat::testNestedExpressionRandom
+tests/test_unit.py::Test02_WithoutPackrat::testNestedExpressions
+tests/test_unit.py::Test02_WithoutPackrat::testNestedExpressions2
+tests/test_unit.py::Test02_WithoutPackrat::testNestedExpressions3
+tests/test_unit.py::Test02_WithoutPackrat::testNestedExpressions4
+tests/test_unit.py::Test02_WithoutPackrat::testNumericExpressions
+tests/test_unit.py::Test02_WithoutPackrat::testOneOf
+tests/test_unit.py::Test02_WithoutPackrat::testOneOfKeywords
+tests/test_unit.py::Test02_WithoutPackrat::testOneOfWithDuplicateSymbols
+tests/test_unit.py::Test02_WithoutPackrat::testOneOfWithEmptyList
+tests/test_unit.py::Test02_WithoutPackrat::testOneOfWithUnexpectedInput
+tests/test_unit.py::Test02_WithoutPackrat::testOneOrMoreStop
+tests/test_unit.py::Test02_WithoutPackrat::testOnlyOnce
+tests/test_unit.py::Test02_WithoutPackrat::testOptionalBeyondEndOfString
+tests/test_unit.py::Test02_WithoutPackrat::testOptionalEachTest1
+tests/test_unit.py::Test02_WithoutPackrat::testOptionalEachTest2
+tests/test_unit.py::Test02_WithoutPackrat::testOptionalEachTest3
+tests/test_unit.py::Test02_WithoutPackrat::testOptionalEachTest4
+tests/test_unit.py::Test02_WithoutPackrat::testOptionalWithResultsNameAndNoMatch
+tests/test_unit.py::Test02_WithoutPackrat::testOriginalTextFor
+tests/test_unit.py::Test02_WithoutPackrat::testParseActionIndexErrorException
+tests/test_unit.py::Test02_WithoutPackrat::testParseActionNesting
+tests/test_unit.py::Test02_WithoutPackrat::testParseActionRunsInNotAny
+tests/test_unit.py::Test02_WithoutPackrat::testParseActionWithDelimitedList
+tests/test_unit.py::Test02_WithoutPackrat::testParseAll
+tests/test_unit.py::Test02_WithoutPackrat::testParseCommaSeparatedValues
+tests/test_unit.py::Test02_WithoutPackrat::testParseExpressionResults
+tests/test_unit.py::Test02_WithoutPackrat::testParseExpressionResultsAccumulate
+tests/test_unit.py::Test02_WithoutPackrat::testParseExpressionsWithRegex
+tests/test_unit.py::Test02_WithoutPackrat::testParseFatalException
+tests/test_unit.py::Test02_WithoutPackrat::testParseFatalException2
+tests/test_unit.py::Test02_WithoutPackrat::testParseFatalException3
+tests/test_unit.py::Test02_WithoutPackrat::testParseFile
+tests/test_unit.py::Test02_WithoutPackrat::testParseHTMLTags
+tests/test_unit.py::Test02_WithoutPackrat::testParseKeyword
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsAcceptingACollectionTypeValue
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsAddingSuppressedTokenWithResultsName
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsAppend
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsArithmeticContract
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsBool
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsClear
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsCopy
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsDeepcopy
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsDeepcopy2
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsDeepcopy3
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsDel
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsExtendWithParseResults
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsExtendWithString
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsFromDict
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsInsert
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsInsertWithResultsNames
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsNameBelowUngroupedName
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsNamedResultWithEmptyString
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsNamesInGroupWithDict
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsNewEdgeCases
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsReversed
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsStringListUsingCombine
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsValues
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsWithAsListWithAndWithoutFlattening
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsWithNameMatchFirst
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsWithNameOr
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsWithNamedTuple
+tests/test_unit.py::Test02_WithoutPackrat::testParseResultsWithNestedNames
+tests/test_unit.py::Test02_WithoutPackrat::testParseUsingRegex
+tests/test_unit.py::Test02_WithoutPackrat::testParserElementAddOperatorWithOtherTypes
+tests/test_unit.py::Test02_WithoutPackrat::testParserElementEachOperatorWithOtherTypes
+tests/test_unit.py::Test02_WithoutPackrat::testParserElementMatchFirstOperatorWithOtherTypes
+tests/test_unit.py::Test02_WithoutPackrat::testParserElementMatchLongestWithOtherTypes
+tests/test_unit.py::Test02_WithoutPackrat::testParserElementMulByZero
+tests/test_unit.py::Test02_WithoutPackrat::testParserElementMulOperatorWithOtherTypes
+tests/test_unit.py::Test02_WithoutPackrat::testParserElementMulOperatorWithTuples
+tests/test_unit.py::Test02_WithoutPackrat::testParserElementPassedStrToMultiplierShorthand
+tests/test_unit.py::Test02_WithoutPackrat::testParserElementPassedThreeArgsToMultiplierShorthand
+tests/test_unit.py::Test02_WithoutPackrat::testParserElementSubOperatorWithOtherTypes
+tests/test_unit.py::Test02_WithoutPackrat::testPatientOr
+tests/test_unit.py::Test02_WithoutPackrat::testPop
+tests/test_unit.py::Test02_WithoutPackrat::testPopKwargsErr
+tests/test_unit.py::Test02_WithoutPackrat::testPrecededBy
+tests/test_unit.py::Test02_WithoutPackrat::testPythonQuotedStrings
+tests/test_unit.py::Test02_WithoutPackrat::testQuotedStringEscapedExtendedChars
+tests/test_unit.py::Test02_WithoutPackrat::testQuotedStringEscapedQuotes
+tests/test_unit.py::Test02_WithoutPackrat::testQuotedStringLoc
+tests/test_unit.py::Test02_WithoutPackrat::testQuotedStringUnquotesAndConvertWhitespaceEscapes
+tests/test_unit.py::Test02_WithoutPackrat::testQuotedStrings
+tests/test_unit.py::Test02_WithoutPackrat::testReStringRange
+tests/test_unit.py::Test02_WithoutPackrat::testRecursiveCombine
+tests/test_unit.py::Test02_WithoutPackrat::testRegexAsType
+tests/test_unit.py::Test02_WithoutPackrat::testRegexDeferredCompile
+tests/test_unit.py::Test02_WithoutPackrat::testRegexDeferredCompileCommonHtmlEntity
+tests/test_unit.py::Test02_WithoutPackrat::testRegexInvalidType
+tests/test_unit.py::Test02_WithoutPackrat::testRegexLoopPastEndOfString
+tests/test_unit.py::Test02_WithoutPackrat::testRegexSub
+tests/test_unit.py::Test02_WithoutPackrat::testRepeater
+tests/test_unit.py::Test02_WithoutPackrat::testRepeater2
+tests/test_unit.py::Test02_WithoutPackrat::testRepeater3
+tests/test_unit.py::Test02_WithoutPackrat::testRepeater4
+tests/test_unit.py::Test02_WithoutPackrat::testRepeater5
+tests/test_unit.py::Test02_WithoutPackrat::testRepeaterPreservesParseAction
+tests/test_unit.py::Test02_WithoutPackrat::testRepeaterRecursiveFalse
+tests/test_unit.py::Test02_WithoutPackrat::testRepeaterRecursiveWhitespace
+tests/test_unit.py::Test02_WithoutPackrat::testRequiredEach
+tests/test_unit.py::Test02_WithoutPackrat::testRunTests
+tests/test_unit.py::Test02_WithoutPackrat::testRunTestsPostParse
+tests/test_unit.py::Test02_WithoutPackrat::testScanString
+tests/test_unit.py::Test02_WithoutPackrat::testScanStringWithOverlap
+tests/test_unit.py::Test02_WithoutPackrat::testSetName
+tests/test_unit.py::Test02_WithoutPackrat::testSetNameToStrAndNone
+tests/test_unit.py::Test02_WithoutPackrat::testSetParseActionUncallableErr
+tests/test_unit.py::Test02_WithoutPackrat::testSetResultsNameWithOneOrMoreAndZeroOrMore
+tests/test_unit.py::Test02_WithoutPackrat::testSingleArgException
+tests/test_unit.py::Test02_WithoutPackrat::testSkipToIgnoreExpr2
+tests/test_unit.py::Test02_WithoutPackrat::testSkipToParserTests
+tests/test_unit.py::Test02_WithoutPackrat::testSkipToPreParseIgnoreExprs
+tests/test_unit.py::Test02_WithoutPackrat::testStringStart
+tests/test_unit.py::Test02_WithoutPackrat::testStringStartAndLineStartInsideAnd
+tests/test_unit.py::Test02_WithoutPackrat::testSumParseResults
+tests/test_unit.py::Test02_WithoutPackrat::testTagElements
+tests/test_unit.py::Test02_WithoutPackrat::testTokenMap
+tests/test_unit.py::Test02_WithoutPackrat::testTraceParseActionDecorator
+tests/test_unit.py::Test02_WithoutPackrat::testTraceParseActionDecorator_with_exception
+tests/test_unit.py::Test02_WithoutPackrat::testTransformString
+tests/test_unit.py::Test02_WithoutPackrat::testTransformStringWithExpectedLeadingWhitespace
+tests/test_unit.py::Test02_WithoutPackrat::testTransformStringWithLeadingNotAny
+tests/test_unit.py::Test02_WithoutPackrat::testTransformStringWithLeadingWhitespace
+tests/test_unit.py::Test02_WithoutPackrat::testTransformStringWithLeadingWhitespaceFromTranslateProject
+tests/test_unit.py::Test02_WithoutPackrat::testUnicodeExpression
+tests/test_unit.py::Test02_WithoutPackrat::testUnicodeSetNameEquivalence
+tests/test_unit.py::Test02_WithoutPackrat::testUnicodeTests
+tests/test_unit.py::Test02_WithoutPackrat::testUnicodeTests2
+tests/test_unit.py::Test02_WithoutPackrat::testUpcaseDowncaseUnicode
+tests/test_unit.py::Test02_WithoutPackrat::testUpdateDefaultWhitespace
+tests/test_unit.py::Test02_WithoutPackrat::testUpdateDefaultWhitespace2
+tests/test_unit.py::Test02_WithoutPackrat::testWithAttributeParseAction
+tests/test_unit.py::Test02_WithoutPackrat::testWordBoundaryExpressions
+tests/test_unit.py::Test02_WithoutPackrat::testWordBoundaryExpressions2
+tests/test_unit.py::Test02_WithoutPackrat::testWordCopyWhenWordCharsIncludeSpace
+tests/test_unit.py::Test02_WithoutPackrat::testWordCopyWhenWordCharsIncludeSpace2
+tests/test_unit.py::Test02_WithoutPackrat::testWordCopyWhenWordCharsIncludeSpace3
+tests/test_unit.py::Test02_WithoutPackrat::testWordExact
+tests/test_unit.py::Test02_WithoutPackrat::testWordExclude
+tests/test_unit.py::Test02_WithoutPackrat::testWordExclude2
+tests/test_unit.py::Test02_WithoutPackrat::testWordInternalReRanges
+tests/test_unit.py::Test02_WithoutPackrat::testWordInternalReRangesKnownSet
+tests/test_unit.py::Test02_WithoutPackrat::testWordMaxGreaterThanZeroAndAsKeyword1
+tests/test_unit.py::Test02_WithoutPackrat::testWordMaxGreaterThanZeroAndAsKeyword2
+tests/test_unit.py::Test02_WithoutPackrat::testWordMin
+tests/test_unit.py::Test02_WithoutPackrat::testWordMinMaxArgs
+tests/test_unit.py::Test02_WithoutPackrat::testWordMinMaxExactArgs
+tests/test_unit.py::Test02_WithoutPackrat::testWordMinOfZero
+tests/test_unit.py::Test02_WithoutPackrat::testWordWithIdentChars
+tests/test_unit.py::Test02_WithoutPackrat::testZeroOrMoreStop
+tests/test_unit.py::Test02_WithoutPackrat::test_pep8_synonyms
+tests/test_unit.py::Test11_LR1_Recursion::test_add_sub
+tests/test_unit.py::Test11_LR1_Recursion::test_binary_associative
+tests/test_unit.py::Test11_LR1_Recursion::test_binary_recursive
+tests/test_unit.py::Test11_LR1_Recursion::test_math
+tests/test_unit.py::Test11_LR1_Recursion::test_non_peg
+tests/test_unit.py::Test11_LR1_Recursion::test_repeat_as_recurse
+tests/test_unit.py::Test11_LR1_Recursion::test_terminate_empty
+tests/test_unit.py::TestShowBestPractices::test_cli_invocation_with_module_flag
+tests/test_unit.py::TestShowBestPractices::test_fallback_when_file_missing
+tests/test_unit.py::TestShowBestPractices::test_loads_markdown_file
+tests/test_util.py::test_col[First column, no newline-0-abcdef-1]
+tests/test_util.py::test_col[Second column, no newline-1-abcdef-2]
+tests/test_util.py::test_col[First column after newline-4-abc\ndef-1]
+tests/test_util.py::test_col[Second column after newline-5-abc\ndef-2]
+tests/test_util.py::test_col[Column after multiple newlines-9-abc\ndef\nghi-2]
+tests/test_util.py::test_col[Location at start of string-0-abcdef-1]
+tests/test_util.py::test_col[Location at end of string-5-abcdef-6]
+tests/test_util.py::test_col[Column after newline at end-3-abc\n-4]
+tests/test_util.py::test_col[Tab character in the string-4-a\tbcd\tef-5]
+tests/test_util.py::test_col[Multiple lines with tab-8-a\tb\nc\td-5]
+tests/test_util.py::test_line[Single line, no newlines-0-abcdef-abcdef]
+tests/test_util.py::test_line[First line in multi-line string-2-abc\ndef-abc]
+tests/test_util.py::test_line[Second line in multi-line string-5-abc\ndef-def]
+tests/test_util.py::test_line[Location at start of second line-4-abc\ndef-def]
+tests/test_util.py::test_line[Empty string-0--]
+tests/test_util.py::test_line[Location at newline character-3-abc\ndef-abc]
+tests/test_util.py::test_line[Last line without trailing newline-7-abc\ndef\nghi-def]
+tests/test_util.py::test_line[Single line with newline at end-2-abc\n-abc]
+tests/test_util.py::test_line[Multi-line with multiple newlines-6-line1\nline2\nline3-line2]
+tests/test_util.py::test_line[Multi-line with trailing newline-11-line1\nline2\nline3\n-line2]
+tests/test_util.py::test_lineno[Single line, no newlines-0-abcdef-1]
+tests/test_util.py::test_lineno[First line in multi-line string-2-abc\ndef-1]
+tests/test_util.py::test_lineno[Second line in multi-line string-5-abc\ndef-2]
+tests/test_util.py::test_lineno[Location at start of second line-4-abc\ndef-2]
+tests/test_util.py::test_lineno[Multiple newlines, third line-10-abc\ndef\nghi-3]
+tests/test_util.py::test_lineno[Empty string-0--1]
+tests/test_util.py::test_lineno[Location at newline character-3-abc\ndef-1]
+tests/test_util.py::test_lineno[Last line without trailing newline-7-abc\ndef\nghi-2]
+tests/test_util.py::test_lineno[Single line with newline at end-4-abc\n-2]
+tests/test_util.py::test_lineno[Multi-line with trailing newline-12-line1\nline2\nline3\n-3]
+tests/test_util.py::test_lineno[Location in middle of a tabbed string-7-a\tb\nc\td-2]
+tests/test_util.py::test_html_entities

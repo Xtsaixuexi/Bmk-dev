@@ -1,0 +1,322 @@
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF                     [100%]
+=================================== FAILURES ===================================
+_______________ test_config_from_pyfile_loads_public_attributes ________________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py:82: in test_config_from_pyfile_loads_public_attributes
+    assert config.access_log_format == "bob"
+E   AttributeError: 'NoneType' object has no attribute 'access_log_format'
+________________ test_config_from_toml_loads_public_attributes _________________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py:98: in test_config_from_toml_loads_public_attributes
+    assert config.access_log_format == "bob"
+E   AttributeError: 'NoneType' object has no attribute 'access_log_format'
+_______________ test_config_from_object_loads_public_attributes ________________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py:115: in test_config_from_object_loads_public_attributes
+    assert config.access_log_format == "bob"
+E   AttributeError: 'NoneType' object has no attribute 'access_log_format'
+______________ test_config_response_headers_follow_metadata_flags ______________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py:123: in test_config_response_headers_follow_metadata_flags
+    assert config.response_headers("test") == [(b"server", b"hypercorn-test")]
+E   AssertionError: assert None == [(b'server', b'hypercorn-test')]
+E    +  where None = response_headers('test')
+E    +    where response_headers = <hypercorn.config.Config object at 0x7f40622bddb0>.response_headers
+_____ test_http_to_https_redirect_preserves_http_raw_path_and_query[/abc] ______
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py:149: in test_http_to_https_redirect_preserves_http_raw_path_and_query
+    assert sent_events[0] == {
+E   IndexError: list index out of range
+____ test_http_to_https_redirect_preserves_http_raw_path_and_query[/abc%3C] ____
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py:149: in test_http_to_https_redirect_preserves_http_raw_path_and_query
+    assert sent_events[0] == {
+E   IndexError: list index out of range
+___ test_http_to_https_redirect_preserves_websocket_raw_path_and_query[/abc] ___
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py:181: in test_http_to_https_redirect_preserves_websocket_raw_path_and_query
+    assert sent_events[0] == {
+E   IndexError: list index out of range
+_ test_http_to_https_redirect_preserves_websocket_raw_path_and_query[/abc%3C] __
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py:181: in test_http_to_https_redirect_preserves_websocket_raw_path_and_query
+    assert sent_events[0] == {
+E   IndexError: list index out of range
+______ test_http_to_https_redirect_uses_https_scheme_for_http2_websocket _______
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py:210: in test_http_to_https_redirect_uses_https_scheme_for_http2_websocket
+    assert sent_events[0] == {
+E   IndexError: list index out of range
+____ test_http_to_https_redirect_closes_websocket_without_denial_extension _____
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py:229: in test_http_to_https_redirect_closes_websocket_without_denial_extension
+    assert sent_events == [{"type": "websocket.close"}]
+E   AssertionError: assert [] == [{'type': 'websocket.close'}]
+E     
+E     Right contains one more item: {'type': 'websocket.close'}
+E     Use -v to get more diff
+_ test_http_to_https_redirect_uses_request_host_when_constructor_host_is_none __
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py:246: in test_http_to_https_redirect_uses_request_host_when_constructor_host_is_none
+    assert sent_events[0]["headers"] == [(b"location", b"https://example.com/")]
+E   IndexError: list index out of range
+________ test_proxy_fix_legacy_restores_trusted_client_scheme_and_host _________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py:269: in test_proxy_fix_legacy_restores_trusted_client_scheme_and_host
+    scope = seen_scopes[0]
+E   IndexError: list index out of range
+________ test_proxy_fix_modern_restores_trusted_client_scheme_and_host _________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py:304: in test_proxy_fix_modern_restores_trusted_client_scheme_and_host
+    scope = seen_scopes[0]
+E   IndexError: list index out of range
+_______ test_dispatcher_routes_by_insertion_order_and_updates_root_path ________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py:324: in test_dispatcher_routes_by_insertion_order_and_updates_root_path
+    assert bodies == [b"/api/x|/api/x/b", b"/api|/api/b"]
+E   AssertionError: assert [] == [b'/api/x|/ap...'/api|/api/b']
+E     
+E     Right contains 2 more items, first extra item: b'/api/x|/api/x/b'
+E     Use -v to get more diff
+______________ test_dispatcher_returns_404_when_no_mount_matches _______________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py:337: in test_dispatcher_returns_404_when_no_mount_matches
+    assert sent_events[0]["type"] == "http.response.start"
+E   IndexError: list index out of range
+_________ test_dispatcher_broadcasts_lifespan_to_mounted_applications __________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py:370: in test_dispatcher_broadcasts_lifespan_to_mounted_applications
+    assert calls == ["lifespan", "lifespan"]
+E   AssertionError: assert [] == ['lifespan', 'lifespan']
+E     
+E     Right contains 2 more items, first extra item: 'lifespan'
+E     Use -v to get more diff
+____________ test_asyncio_wsgi_middleware_emits_wsgi_response_body _____________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py:404: in test_asyncio_wsgi_middleware_emits_wsgi_response_body
+    assert messages[0]["type"] == "http.response.start"
+E   IndexError: list index out of range
+_______ test_asyncio_wsgi_middleware_returns_400_when_body_exceeds_limit _______
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py:425: in test_asyncio_wsgi_middleware_returns_400_when_body_exceeds_limit
+    assert messages[0]["type"] == "http.response.start"
+E   IndexError: list index out of range
+_______ test_asyncio_wsgi_middleware_requires_start_response_before_body _______
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py:439: in test_asyncio_wsgi_middleware_requires_start_response_before_body
+    with pytest.raises(RuntimeError):
+E   Failed: DID NOT RAISE RuntimeError
+______________ test_trio_wsgi_middleware_emits_wsgi_response_body ______________
+  + Exception Group Traceback (most recent call last):
+  |   File "/root/autodl-tmp/Bmk-Lizhiqian/envs/hypercorn-fullrepro-001/lib/python3.10/site-packages/trio/_core/_run.py", line 1126, in __aexit__
+  |     raise combined_error_from_nursery
+  | exceptiongroup.ExceptionGroup: Exceptions from Trio nursery (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "/root/autodl-tmp/Bmk-Lizhiqian/envs/hypercorn-fullrepro-001/lib/python3.10/site-packages/pytest_trio/plugin.py", line 195, in _fixture_manager
+    |     yield nursery_fixture
+    |   File "/root/autodl-tmp/Bmk-Lizhiqian/envs/hypercorn-fullrepro-001/lib/python3.10/site-packages/pytest_trio/plugin.py", line 250, in run
+    |     await self._func(**resolved_kwargs)
+    |   File "/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py", line 460, in test_trio_wsgi_middleware_emits_wsgi_response_body
+    |     assert messages[0]["type"] == "http.response.start"
+    | IndexError: list index out of range
+    +------------------------------------
+_________________ test_config_documented_defaults_are_visible __________________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:80: in test_config_documented_defaults_are_visible
+    assert config.bind == ["127.0.0.1:8000"]
+E   AssertionError: assert None == ['127.0.0.1:8000']
+E    +  where None = <hypercorn.config.Config object at 0x7f40622bcaf0>.bind
+___________ test_config_bind_groups_accept_single_string_assignments ___________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:96: in test_config_bind_groups_accept_single_string_assignments
+    assert config.bind == ["127.0.0.1:9000"]
+E   AssertionError: assert '127.0.0.1:9000' == ['127.0.0.1:9000']
+E    +  where '127.0.0.1:9000' = <hypercorn.config.Config object at 0x7f40622be410>.bind
+__________ test_config_root_path_assignment_removes_trailing_slashes ___________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:106: in test_config_root_path_assignment_removes_trailing_slashes
+    assert config.root_path == "/api/v1"
+E   AssertionError: assert '/api/v1///' == '/api/v1'
+E     
+E     - /api/v1
+E     + /api/v1///
+E     ?        +++
+___________ test_config_from_mapping_applies_keyword_arguments_last ____________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:117: in test_config_from_mapping_applies_keyword_arguments_last
+    assert config.bind == ["127.0.0.1:9000"]
+E   AttributeError: 'NoneType' object has no attribute 'bind'
+_________ test_config_from_mapping_accepts_keyword_only_configuration __________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:125: in test_config_from_mapping_accepts_keyword_only_configuration
+    assert config.access_log_format == "custom"
+E   AttributeError: 'NoneType' object has no attribute 'access_log_format'
+________________ test_config_from_object_resolves_dotted_object ________________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:141: in test_config_from_object_resolves_dotted_object
+    assert config.bind == ["127.0.0.1:7777"]
+E   AttributeError: 'NoneType' object has no attribute 'bind'
+_______________ test_config_from_pyfile_propagates_missing_file ________________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:146: in test_config_from_pyfile_propagates_missing_file
+    with pytest.raises(FileNotFoundError):
+E   Failed: DID NOT RAISE FileNotFoundError
+_____________ test_config_from_pyfile_propagates_execution_failure _____________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:154: in test_config_from_pyfile_propagates_execution_failure
+    with pytest.raises(RuntimeError):
+E   Failed: DID NOT RAISE RuntimeError
+________________ test_config_from_toml_propagates_parse_failure ________________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:162: in test_config_from_toml_propagates_parse_failure
+    with pytest.raises(Exception):
+E   Failed: DID NOT RAISE Exception
+________ test_config_ssl_enabled_reflects_certificate_and_key_presence _________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:169: in test_config_ssl_enabled_reflects_certificate_and_key_presence
+    assert config.ssl_enabled is False
+E   assert None is False
+E    +  where None = <hypercorn.config.Config object at 0x7f40622bdd50>.ssl_enabled
+___________ test_config_response_headers_include_each_alt_svc_value ____________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:184: in test_config_response_headers_include_each_alt_svc_value
+    assert config.response_headers("h2") == [
+E   assert None == [(b'alt-svc', b'h3=":443"'), (b'alt-svc', b'h2=":8443"')]
+E    +  where None = response_headers('h2')
+E    +    where response_headers = <hypercorn.config.Config object at 0x7f40622bc5b0>.response_headers
+_____________ test_config_statsd_logger_class_requires_statsd_host _____________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:197: in test_config_statsd_logger_class_requires_statsd_host
+    assert config.logger_class is Logger
+E   assert None is Logger
+E    +  where None = <hypercorn.config.Config object at 0x7f40622cdf30>.logger_class
+___ test_config_statsd_logger_class_replaces_default_when_statsd_is_enabled ____
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:208: in test_config_statsd_logger_class_replaces_default_when_statsd_is_enabled
+    assert config.logger_class is CustomLogger
+E   AssertionError: assert None is <class 'generated_tests.test_config_statsd_logger_class_replaces_default_when_statsd_is_enabled.<locals>.CustomLogger'>
+E    +  where None = <hypercorn.config.Config object at 0x7f40621d3f40>.logger_class
+_____ test_redirect_without_constructor_or_request_host_raises_value_error _____
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:218: in test_redirect_without_constructor_or_request_host_raises_value_error
+    with pytest.raises(ValueError):
+E   Failed: DID NOT RAISE ValueError
+__________ test_redirect_location_includes_root_path_before_raw_path ___________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:236: in test_redirect_location_includes_root_path_before_raw_path
+    assert sent_events[0]["headers"] == [
+E   IndexError: list index out of range
+_________ test_redirect_passes_secure_websocket_to_wrapped_application _________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:259: in test_redirect_passes_secure_websocket_to_wrapped_application
+    assert seen_scopes == [scope]
+E   AssertionError: assert [] == [{'type': 'we...: 'wss', ...}]
+E     
+E     Right contains one more item: {'type': 'websocket', 'asgi': {}, 'http_version': '1.1', 'scheme': 'wss', ...}
+E     Use -v to get more diff
+__________ test_redirect_passes_non_http_scope_without_requiring_host __________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:275: in test_redirect_passes_non_http_scope_without_requiring_host
+    assert seen_scopes == [scope]
+E   AssertionError: assert [] == [{'type': 'li... 'state': {}}]
+E     
+E     Right contains one more item: {'type': 'lifespan', 'asgi': {'version': '3.0'}, 'state': {}}
+E     Use -v to get more diff
+_______ test_proxy_fix_without_forwarded_headers_preserves_scope_values ________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:288: in test_proxy_fix_without_forwarded_headers_preserves_scope_values
+    assert seen_scopes[0]["scheme"] == "http"
+E   IndexError: list index out of range
+___________ test_proxy_fix_trusted_hops_selects_value_from_the_right ___________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:315: in test_proxy_fix_trusted_hops_selects_value_from_the_right
+    scope = seen_scopes[0]
+E   IndexError: list index out of range
+___________ test_proxy_fix_modern_mode_falls_back_to_legacy_headers ____________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:342: in test_proxy_fix_modern_mode_falls_back_to_legacy_headers
+    scope = seen_scopes[0]
+E   IndexError: list index out of range
+___________ test_proxy_fix_non_http_scope_is_passed_without_copying ____________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:360: in test_proxy_fix_non_http_scope_is_passed_without_copying
+    assert seen_scopes == [scope]
+E   AssertionError: assert [] == [{'type': 'li... 'state': {}}]
+E     
+E     Right contains one more item: {'type': 'lifespan', 'asgi': {'version': '3.0'}, 'state': {}}
+E     Use -v to get more diff
+__ test_dispatcher_uses_first_matching_mount_even_when_later_mount_is_longer ___
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:381: in test_dispatcher_uses_first_matching_mount_even_when_later_mount_is_longer
+    assert [event.get("body") for event in sent_events if event["type"] == "http.response.body"] == [
+E   AssertionError: assert [] == [b'first']
+E     
+E     Right contains one more item: b'first'
+E     Use -v to get more diff
+________ test_dispatcher_extends_existing_root_path_for_selected_mount _________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:402: in test_dispatcher_extends_existing_root_path_for_selected_mount
+    assert seen_scopes[0]["root_path"] == "/base/api"
+E   IndexError: list index out of range
+_____ test_wsgi_environment_contains_root_path_path_info_query_and_headers _____
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:433: in test_wsgi_environment_contains_root_path_path_info_query_and_headers
+    assert messages[0]["status"] == 200
+E   IndexError: list index out of range
+_______ test_wsgi_path_outside_root_path_returns_404_without_calling_app _______
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:459: in test_wsgi_path_outside_root_path_returns_404_without_calling_app
+    assert messages[0]["type"] == "http.response.start"
+E   IndexError: list index out of range
+__________ test_wsgi_websocket_scope_closes_without_calling_wsgi_app ___________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:488: in test_wsgi_websocket_scope_closes_without_calling_wsgi_app
+    assert sent_events == [{"type": "websocket.close"}]
+E   AssertionError: assert [] == [{'type': 'websocket.close'}]
+E     
+E     Right contains one more item: {'type': 'websocket.close'}
+E     Use -v to get more diff
+__ test_logger_access_logfile_dash_writes_configured_access_record_to_stdout ___
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:507: in test_logger_access_logfile_dash_writes_configured_access_record_to_stdout
+    assert "GET /resource 204 5" in captured.out
+E   AssertionError: assert 'GET /resource 204 5' in ''
+E    +  where '' = CaptureResult(out='', err='').out
+_________________ test_logger_missing_access_atom_renders_dash _________________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:520: in test_logger_missing_access_atom_renders_dash
+    assert captured.out.rstrip().endswith("-")
+E   AssertionError: assert False
+E    +  where False = <built-in method endswith of str object at 0x7f4064194030>('-')
+E    +    where <built-in method endswith of str object at 0x7f4064194030> = ''.endswith
+E    +      where '' = <built-in method rstrip of str object at 0x7f4064194030>()
+E    +        where <built-in method rstrip of str object at 0x7f4064194030> = ''.rstrip
+E    +          where '' = CaptureResult(out='', err='').out
+_________ test_logger_errorlog_dash_writes_error_and_warning_to_stderr _________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:535: in test_logger_errorlog_dash_writes_error_and_warning_to_stderr
+    assert "failed request" in captured.err
+E   AssertionError: assert 'failed request' in ''
+E    +  where '' = CaptureResult(out='', err='').err
+_____ test_asyncio_serve_warns_when_process_or_loop_settings_do_not_apply ______
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:559: in test_asyncio_serve_warns_when_process_or_loop_settings_do_not_apply
+    with pytest.warns(Warning) as records:
+E   Failed: DID NOT WARN. No warnings of type (<class 'Warning'>,) were emitted.
+E    Emitted warnings: [].
+__________ test_hypercorn_module_help_exposes_command_line_interface ___________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:575: in test_hypercorn_module_help_exposes_command_line_interface
+    assert result.returncode == 0
+E   assert 1 == 0
+E    +  where 1 = CompletedProcess(args=['/root/autodl-tmp/Bmk-Lizhiqian/envs/hypercorn-fullrepro-001/bin/python', '-m', 'hypercorn', '-...lrepro-001/bin/python: No module named hypercorn.__main__; 'hypercorn' is a package and cannot be directly executed\n").returncode
+______________ test_hypercorn_module_rejects_unknown_verify_mode _______________
+/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py:589: in test_hypercorn_module_rejects_unknown_verify_mode
+    assert "CERT_UNKNOWN" in result.stderr
+E   assert 'CERT_UNKNOWN' in "/root/autodl-tmp/Bmk-Lizhiqian/envs/hypercorn-fullrepro-001/bin/python: No module named hypercorn.__main__; 'hypercorn' is a package and cannot be directly executed\n"
+E    +  where "/root/autodl-tmp/Bmk-Lizhiqian/envs/hypercorn-fullrepro-001/bin/python: No module named hypercorn.__main__; 'hypercorn' is a package and cannot be directly executed\n" = CompletedProcess(args=['/root/autodl-tmp/Bmk-Lizhiqian/envs/hypercorn-fullrepro-001/bin/python', '-m', 'hypercorn', '-...lrepro-001/bin/python: No module named hypercorn.__main__; 'hypercorn' is a package and cannot be directly executed\n").stderr
+=========================== short test summary info ============================
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py::test_config_from_pyfile_loads_public_attributes
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py::test_config_from_toml_loads_public_attributes
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py::test_config_from_object_loads_public_attributes
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py::test_config_response_headers_follow_metadata_flags
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py::test_http_to_https_redirect_preserves_http_raw_path_and_query[/abc]
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py::test_http_to_https_redirect_preserves_http_raw_path_and_query[/abc%3C]
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py::test_http_to_https_redirect_preserves_websocket_raw_path_and_query[/abc]
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py::test_http_to_https_redirect_preserves_websocket_raw_path_and_query[/abc%3C]
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py::test_http_to_https_redirect_uses_https_scheme_for_http2_websocket
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py::test_http_to_https_redirect_closes_websocket_without_denial_extension
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py::test_http_to_https_redirect_uses_request_host_when_constructor_host_is_none
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py::test_proxy_fix_legacy_restores_trusted_client_scheme_and_host
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py::test_proxy_fix_modern_restores_trusted_client_scheme_and_host
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py::test_dispatcher_routes_by_insertion_order_and_updates_root_path
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py::test_dispatcher_returns_404_when_no_mount_matches
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py::test_dispatcher_broadcasts_lifespan_to_mounted_applications
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py::test_asyncio_wsgi_middleware_emits_wsgi_response_body
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py::test_asyncio_wsgi_middleware_returns_400_when_body_exceeds_limit
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py::test_asyncio_wsgi_middleware_requires_start_response_before_body
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/rewritten_upstream_tests.py::test_trio_wsgi_middleware_emits_wsgi_response_body
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_config_documented_defaults_are_visible
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_config_bind_groups_accept_single_string_assignments
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_config_root_path_assignment_removes_trailing_slashes
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_config_from_mapping_applies_keyword_arguments_last
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_config_from_mapping_accepts_keyword_only_configuration
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_config_from_object_resolves_dotted_object
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_config_from_pyfile_propagates_missing_file
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_config_from_pyfile_propagates_execution_failure
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_config_from_toml_propagates_parse_failure
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_config_ssl_enabled_reflects_certificate_and_key_presence
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_config_response_headers_include_each_alt_svc_value
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_config_statsd_logger_class_requires_statsd_host
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_config_statsd_logger_class_replaces_default_when_statsd_is_enabled
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_redirect_without_constructor_or_request_host_raises_value_error
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_redirect_location_includes_root_path_before_raw_path
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_redirect_passes_secure_websocket_to_wrapped_application
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_redirect_passes_non_http_scope_without_requiring_host
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_proxy_fix_without_forwarded_headers_preserves_scope_values
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_proxy_fix_trusted_hops_selects_value_from_the_right
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_proxy_fix_modern_mode_falls_back_to_legacy_headers
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_proxy_fix_non_http_scope_is_passed_without_copying
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_dispatcher_uses_first_matching_mount_even_when_later_mount_is_longer
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_dispatcher_extends_existing_root_path_for_selected_mount
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_wsgi_environment_contains_root_path_path_info_query_and_headers
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_wsgi_path_outside_root_path_returns_404_without_calling_app
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_wsgi_websocket_scope_closes_without_calling_wsgi_app
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_logger_access_logfile_dash_writes_configured_access_record_to_stdout
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_logger_missing_access_atom_renders_dash
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_logger_errorlog_dash_writes_error_and_warning_to_stderr
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_asyncio_serve_warns_when_process_or_loop_settings_do_not_apply
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_hypercorn_module_help_exposes_command_line_interface
+FAILED ../root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/generated_tests.py::test_hypercorn_module_rejects_unknown_verify_mode
+52 failed in 0.57s

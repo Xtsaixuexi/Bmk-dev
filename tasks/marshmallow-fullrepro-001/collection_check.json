@@ -1,0 +1,19 @@
+{
+  "returncode": 0,
+  "collected_nodeids": 1178,
+  "expected_all_nodeids": 1178,
+  "collection_matches_all": false,
+  "missing_from_collection": [
+    "tests/test_deserialization.py::TestFieldDeserialization::test_invalid_datetime_deserialization[07-01-2026 17:26:51]",
+    "tests/test_deserialization.py::TestFieldDeserialization::test_invalid_datetime_deserialization[17:26:51 2026-07-01]"
+  ],
+  "missing_total": 2,
+  "extra_in_collection": [
+    "tests/test_deserialization.py::TestFieldDeserialization::test_invalid_datetime_deserialization[02:24:21 2026-07-02]",
+    "tests/test_deserialization.py::TestFieldDeserialization::test_invalid_datetime_deserialization[07-02-2026 02:24:21]"
+  ],
+  "extra_total": 2,
+  "kept_subset_of_collection": true,
+  "kept_count": 832,
+  "env": "PYTHONPATH=source/src"
+}

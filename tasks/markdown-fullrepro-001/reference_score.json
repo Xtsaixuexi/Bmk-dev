@@ -1,0 +1,20 @@
+{
+  "summary": {
+    "passed": 90,
+    "failed": 0,
+    "total": 90
+  },
+  "pass_rate_excluding_skips": 1.0,
+  "by_layer": {
+    "atomic": {
+      "passed": 81,
+      "total": 81
+    },
+    "integration": {
+      "passed": 9,
+      "total": 9
+    }
+  },
+  "reference_validation": "sampled retained nodeids passed in source tree with plugin autoload disabled",
+  "source_repo": "/root/autodl-tmp/e2e/markdown"
+}

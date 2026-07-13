@@ -1,0 +1,2287 @@
+{
+  "source_repo": "/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/oracle_source",
+  "solution_dir": "/root/autodl-tmp/new-e2e/pgjones__hypercorn/src",
+  "nodeids": "/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/kept_nodeids.txt",
+  "taxonomy": "/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/filter/taxonomy.jsonl",
+  "run_dir": "/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/runs/reference_final_corrected",
+  "import_provenance": {
+    "returncode": 0,
+    "stdout": "/root/autodl-tmp/new-e2e/pgjones__hypercorn/src/hypercorn/__init__.py\n",
+    "stderr": ""
+  },
+  "grouped_results": {
+    "filter/generated_tests.py": {
+      "returncode": 0,
+      "stdout": "................................                                         [100%]\n32 passed in 0.38s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1783859029.4392083,
+        "duration": 0.37210726737976074,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/runs/reference_final_corrected/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 32,
+          "total": 32,
+          "collected": 32
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "filter/generated_tests.py::test_config_documented_defaults_are_visible",
+                "type": "Function",
+                "lineno": 76
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_config_bind_groups_accept_single_string_assignments",
+                "type": "Function",
+                "lineno": 88
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_config_root_path_assignment_removes_trailing_slashes",
+                "type": "Function",
+                "lineno": 100
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_config_from_mapping_applies_keyword_arguments_last",
+                "type": "Function",
+                "lineno": 108
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_config_from_mapping_accepts_keyword_only_configuration",
+                "type": "Function",
+                "lineno": 121
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_config_from_object_resolves_dotted_object",
+                "type": "Function",
+                "lineno": 128
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_config_from_pyfile_propagates_missing_file",
+                "type": "Function",
+                "lineno": 144
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_config_from_pyfile_propagates_execution_failure",
+                "type": "Function",
+                "lineno": 149
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_config_from_toml_propagates_parse_failure",
+                "type": "Function",
+                "lineno": 157
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_config_ssl_enabled_reflects_certificate_and_key_presence",
+                "type": "Function",
+                "lineno": 165
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_config_response_headers_include_each_alt_svc_value",
+                "type": "Function",
+                "lineno": 177
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_config_statsd_logger_class_requires_statsd_host",
+                "type": "Function",
+                "lineno": 189
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_config_statsd_logger_class_replaces_default_when_statsd_is_enabled",
+                "type": "Function",
+                "lineno": 199
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_redirect_without_constructor_or_request_host_raises_value_error",
+                "type": "Coroutine",
+                "lineno": 210
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_redirect_location_includes_root_path_before_raw_path",
+                "type": "Coroutine",
+                "lineno": 221
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_redirect_passes_secure_websocket_to_wrapped_application",
+                "type": "Coroutine",
+                "lineno": 240
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_redirect_passes_non_http_scope_without_requiring_host",
+                "type": "Coroutine",
+                "lineno": 262
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_proxy_fix_without_forwarded_headers_preserves_scope_values",
+                "type": "Coroutine",
+                "lineno": 277
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_proxy_fix_trusted_hops_selects_value_from_the_right",
+                "type": "Coroutine",
+                "lineno": 293
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_proxy_fix_modern_mode_falls_back_to_legacy_headers",
+                "type": "Coroutine",
+                "lineno": 322
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_proxy_fix_non_http_scope_is_passed_without_copying",
+                "type": "Coroutine",
+                "lineno": 349
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_dispatcher_uses_first_matching_mount_even_when_later_mount_is_longer",
+                "type": "Coroutine",
+                "lineno": 362
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_dispatcher_extends_existing_root_path_for_selected_mount",
+                "type": "Coroutine",
+                "lineno": 385
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_wsgi_environment_contains_root_path_path_info_query_and_headers",
+                "type": "Coroutine",
+                "lineno": 405
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_wsgi_path_outside_root_path_returns_404_without_calling_app",
+                "type": "Coroutine",
+                "lineno": 443
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_wsgi_websocket_scope_closes_without_calling_wsgi_app",
+                "type": "Coroutine",
+                "lineno": 466
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_logger_access_logfile_dash_writes_configured_access_record_to_stdout",
+                "type": "Coroutine",
+                "lineno": 491
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_logger_missing_access_atom_renders_dash",
+                "type": "Coroutine",
+                "lineno": 509
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_logger_errorlog_dash_writes_error_and_warning_to_stderr",
+                "type": "Coroutine",
+                "lineno": 522
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_asyncio_serve_warns_when_process_or_loop_settings_do_not_apply",
+                "type": "Coroutine",
+                "lineno": 538
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_hypercorn_module_help_exposes_command_line_interface",
+                "type": "Function",
+                "lineno": 566
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_hypercorn_module_rejects_unknown_verify_mode",
+                "type": "Function",
+                "lineno": 579
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "filter/generated_tests.py::test_config_documented_defaults_are_visible",
+            "lineno": 76,
+            "outcome": "passed",
+            "keywords": [
+              "test_config_documented_defaults_are_visible",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005530286580324173,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00040356069803237915,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001640859991312027,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_config_bind_groups_accept_single_string_assignments",
+            "lineno": 88,
+            "outcome": "passed",
+            "keywords": [
+              "test_config_bind_groups_accept_single_string_assignments",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00020676478743553162,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0002183523029088974,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011799857020378113,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_config_root_path_assignment_removes_trailing_slashes",
+            "lineno": 100,
+            "outcome": "passed",
+            "keywords": [
+              "test_config_root_path_assignment_removes_trailing_slashes",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014180317521095276,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00015374459326267242,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011187605559825897,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_config_from_mapping_applies_keyword_arguments_last",
+            "lineno": 108,
+            "outcome": "passed",
+            "keywords": [
+              "test_config_from_mapping_applies_keyword_arguments_last",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.000136546790599823,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0001638755202293396,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00011082738637924194,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_config_from_mapping_accepts_keyword_only_configuration",
+            "lineno": 121,
+            "outcome": "passed",
+            "keywords": [
+              "test_config_from_mapping_accepts_keyword_only_configuration",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014266185462474823,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00013760104775428772,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 9.552761912345886e-05,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_config_from_object_resolves_dotted_object",
+            "lineno": 128,
+            "outcome": "passed",
+            "keywords": [
+              "test_config_from_object_resolves_dotted_object",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.001886654645204544,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0008079148828983307,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00014428980648517609,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_config_from_pyfile_propagates_missing_file",
+            "lineno": 144,
+            "outcome": "passed",
+            "keywords": [
+              "test_config_from_pyfile_propagates_missing_file",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00012696720659732819,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00024656206369400024,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010440126061439514,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_config_from_pyfile_propagates_execution_failure",
+            "lineno": 149,
+            "outcome": "passed",
+            "keywords": [
+              "test_config_from_pyfile_propagates_execution_failure",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.000593964010477066,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0005244594067335129,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013783946633338928,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_config_from_toml_propagates_parse_failure",
+            "lineno": 157,
+            "outcome": "passed",
+            "keywords": [
+              "test_config_from_toml_propagates_parse_failure",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005270075052976608,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0004574432969093323,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012582913041114807,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_config_ssl_enabled_reflects_certificate_and_key_presence",
+            "lineno": 165,
+            "outcome": "passed",
+            "keywords": [
+              "test_config_ssl_enabled_reflects_certificate_and_key_presence",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00012639537453651428,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0001409035176038742,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 9.752810001373291e-05,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_config_response_headers_include_each_alt_svc_value",
+            "lineno": 177,
+            "outcome": "passed",
+            "keywords": [
+              "test_config_response_headers_include_each_alt_svc_value",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0001207161694765091,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00013499893248081207,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001222267746925354,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_config_statsd_logger_class_requires_statsd_host",
+            "lineno": 189,
+            "outcome": "passed",
+            "keywords": [
+              "test_config_statsd_logger_class_requires_statsd_host",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00012330710887908936,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.000151854008436203,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 9.745359420776367e-05,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_config_statsd_logger_class_replaces_default_when_statsd_is_enabled",
+            "lineno": 199,
+            "outcome": "passed",
+            "keywords": [
+              "test_config_statsd_logger_class_replaces_default_when_statsd_is_enabled",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00012138858437538147,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00014973990619182587,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 9.920820593833923e-05,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_redirect_without_constructor_or_request_host_raises_value_error",
+            "lineno": 210,
+            "outcome": "passed",
+            "keywords": [
+              "test_redirect_without_constructor_or_request_host_raises_value_error",
+              "asyncio",
+              "pytestmark",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005761273205280304,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.000383058562874794,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0004451759159564972,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_redirect_location_includes_root_path_before_raw_path",
+            "lineno": 221,
+            "outcome": "passed",
+            "keywords": [
+              "test_redirect_location_includes_root_path_before_raw_path",
+              "asyncio",
+              "pytestmark",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0004419758915901184,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00032060593366622925,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00027623213827610016,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_redirect_passes_secure_websocket_to_wrapped_application",
+            "lineno": 240,
+            "outcome": "passed",
+            "keywords": [
+              "test_redirect_passes_secure_websocket_to_wrapped_application",
+              "asyncio",
+              "pytestmark",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0004109591245651245,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00028370507061481476,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0002498328685760498,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_redirect_passes_non_http_scope_without_requiring_host",
+            "lineno": 262,
+            "outcome": "passed",
+            "keywords": [
+              "test_redirect_passes_non_http_scope_without_requiring_host",
+              "asyncio",
+              "pytestmark",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00039889663457870483,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00027224794030189514,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0002515893429517746,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_proxy_fix_without_forwarded_headers_preserves_scope_values",
+            "lineno": 277,
+            "outcome": "passed",
+            "keywords": [
+              "test_proxy_fix_without_forwarded_headers_preserves_scope_values",
+              "asyncio",
+              "pytestmark",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00040461495518684387,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0003257226198911667,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0002549178898334503,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_proxy_fix_trusted_hops_selects_value_from_the_right",
+            "lineno": 293,
+            "outcome": "passed",
+            "keywords": [
+              "test_proxy_fix_trusted_hops_selects_value_from_the_right",
+              "asyncio",
+              "pytestmark",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00039582327008247375,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0003223717212677002,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00024411641061306,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_proxy_fix_modern_mode_falls_back_to_legacy_headers",
+            "lineno": 322,
+            "outcome": "passed",
+            "keywords": [
+              "test_proxy_fix_modern_mode_falls_back_to_legacy_headers",
+              "asyncio",
+              "pytestmark",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00038461387157440186,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0003254096955060959,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00024871155619621277,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_proxy_fix_non_http_scope_is_passed_without_copying",
+            "lineno": 349,
+            "outcome": "passed",
+            "keywords": [
+              "test_proxy_fix_non_http_scope_is_passed_without_copying",
+              "asyncio",
+              "pytestmark",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00039538927376270294,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00028304383158683777,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0002473369240760803,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_dispatcher_uses_first_matching_mount_even_when_later_mount_is_longer",
+            "lineno": 362,
+            "outcome": "passed",
+            "keywords": [
+              "test_dispatcher_uses_first_matching_mount_even_when_later_mount_is_longer",
+              "asyncio",
+              "pytestmark",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00039938464760780334,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0002765767276287079,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00027579255402088165,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_dispatcher_extends_existing_root_path_for_selected_mount",
+            "lineno": 385,
+            "outcome": "passed",
+            "keywords": [
+              "test_dispatcher_extends_existing_root_path_for_selected_mount",
+              "asyncio",
+              "pytestmark",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0003938879817724228,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0003304947167634964,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0002520512789487839,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_wsgi_environment_contains_root_path_path_info_query_and_headers",
+            "lineno": 405,
+            "outcome": "passed",
+            "keywords": [
+              "test_wsgi_environment_contains_root_path_path_info_query_and_headers",
+              "asyncio",
+              "pytestmark",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00039854273200035095,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0013869702816009521,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0006587430834770203,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_wsgi_path_outside_root_path_returns_404_without_calling_app",
+            "lineno": 443,
+            "outcome": "passed",
+            "keywords": [
+              "test_wsgi_path_outside_root_path_returns_404_without_calling_app",
+              "asyncio",
+              "pytestmark",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00040840916335582733,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0002997014671564102,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0002499464899301529,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_wsgi_websocket_scope_closes_without_calling_wsgi_app",
+            "lineno": 466,
+            "outcome": "passed",
+            "keywords": [
+              "test_wsgi_websocket_scope_closes_without_calling_wsgi_app",
+              "asyncio",
+              "pytestmark",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0004208274185657501,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00026918016374111176,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0002497360110282898,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_logger_access_logfile_dash_writes_configured_access_record_to_stdout",
+            "lineno": 491,
+            "outcome": "passed",
+            "keywords": [
+              "test_logger_access_logfile_dash_writes_configured_access_record_to_stdout",
+              "asyncio",
+              "pytestmark",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005780588835477829,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0006142035126686096,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0003056749701499939,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_logger_missing_access_atom_renders_dash",
+            "lineno": 509,
+            "outcome": "passed",
+            "keywords": [
+              "test_logger_missing_access_atom_renders_dash",
+              "asyncio",
+              "pytestmark",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005445890128612518,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0005644988268613815,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0003036521375179291,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_logger_errorlog_dash_writes_error_and_warning_to_stderr",
+            "lineno": 522,
+            "outcome": "passed",
+            "keywords": [
+              "test_logger_errorlog_dash_writes_error_and_warning_to_stderr",
+              "asyncio",
+              "pytestmark",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005477871745824814,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0005307309329509735,
+              "outcome": "passed",
+              "log": [
+                {
+                  "name": "hypercorn.error",
+                  "msg": "failed request",
+                  "args": null,
+                  "levelname": "ERROR",
+                  "levelno": 40,
+                  "pathname": "/root/autodl-tmp/new-e2e/pgjones__hypercorn/src/hypercorn/logging.py",
+                  "filename": "logging.py",
+                  "module": "logging",
+                  "exc_info": null,
+                  "exc_text": null,
+                  "stack_info": null,
+                  "lineno": 99,
+                  "funcName": "error",
+                  "created": 1783859029.222993,
+                  "msecs": 222.0,
+                  "relativeCreated": 504.82964515686035,
+                  "thread": 139742013282112,
+                  "threadName": "MainThread",
+                  "processName": "MainProcess",
+                  "process": 416636,
+                  "asctime": "[2026-07-12 20:23:49 +0800]"
+                },
+                {
+                  "name": "hypercorn.error",
+                  "msg": "slow request",
+                  "args": null,
+                  "levelname": "WARNING",
+                  "levelno": 30,
+                  "pathname": "/root/autodl-tmp/new-e2e/pgjones__hypercorn/src/hypercorn/logging.py",
+                  "filename": "logging.py",
+                  "module": "logging",
+                  "exc_info": null,
+                  "exc_text": null,
+                  "stack_info": null,
+                  "lineno": 103,
+                  "funcName": "warning",
+                  "created": 1783859029.2231193,
+                  "msecs": 223.0,
+                  "relativeCreated": 504.9560070037842,
+                  "thread": 139742013282112,
+                  "threadName": "MainThread",
+                  "processName": "MainProcess",
+                  "process": 416636,
+                  "asctime": "[2026-07-12 20:23:49 +0800]"
+                }
+              ]
+            },
+            "teardown": {
+              "duration": 0.0003062281757593155,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_asyncio_serve_warns_when_process_or_loop_settings_do_not_apply",
+            "lineno": 538,
+            "outcome": "passed",
+            "keywords": [
+              "test_asyncio_serve_warns_when_process_or_loop_settings_do_not_apply",
+              "asyncio",
+              "pytestmark",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00040953047573566437,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0008322205394506454,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00035342201590538025,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_hypercorn_module_help_exposes_command_line_interface",
+            "lineno": 566,
+            "outcome": "passed",
+            "keywords": [
+              "test_hypercorn_module_help_exposes_command_line_interface",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014801882207393646,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.10990824364125729,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00042982958257198334,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_hypercorn_module_rejects_unknown_verify_mode",
+            "lineno": 579,
+            "outcome": "passed",
+            "keywords": [
+              "test_hypercorn_module_rejects_unknown_verify_mode",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00047760456800460815,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.09908835217356682,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0006348546594381332,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    },
+    "filter/rewritten_upstream_tests.py": {
+      "returncode": 0,
+      "stdout": "....................                                                     [100%]\n20 passed in 0.16s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1783859030.1666803,
+        "duration": 0.15500998497009277,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/wip/hypercorn-fullrepro-001/runs/reference_final_corrected/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 20,
+          "total": 20,
+          "collected": 20
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_config_from_pyfile_loads_public_attributes",
+                "type": "Function",
+                "lineno": 70
+              },
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_config_from_toml_loads_public_attributes",
+                "type": "Function",
+                "lineno": 86
+              },
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_config_from_object_loads_public_attributes",
+                "type": "Function",
+                "lineno": 102
+              },
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_config_response_headers_follow_metadata_flags",
+                "type": "Function",
+                "lineno": 119
+              },
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_preserves_http_raw_path_and_query[/abc]",
+                "type": "Coroutine",
+                "lineno": 128
+              },
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_preserves_http_raw_path_and_query[/abc%3C]",
+                "type": "Coroutine",
+                "lineno": 128
+              },
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_preserves_websocket_raw_path_and_query[/abc]",
+                "type": "Coroutine",
+                "lineno": 157
+              },
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_preserves_websocket_raw_path_and_query[/abc%3C]",
+                "type": "Coroutine",
+                "lineno": 157
+              },
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_uses_https_scheme_for_http2_websocket",
+                "type": "Coroutine",
+                "lineno": 189
+              },
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_closes_websocket_without_denial_extension",
+                "type": "Coroutine",
+                "lineno": 218
+              },
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_uses_request_host_when_constructor_host_is_none",
+                "type": "Coroutine",
+                "lineno": 231
+              },
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_proxy_fix_legacy_restores_trusted_client_scheme_and_host",
+                "type": "Coroutine",
+                "lineno": 248
+              },
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_proxy_fix_modern_restores_trusted_client_scheme_and_host",
+                "type": "Coroutine",
+                "lineno": 279
+              },
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_dispatcher_routes_by_insertion_order_and_updates_root_path",
+                "type": "Coroutine",
+                "lineno": 311
+              },
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_dispatcher_returns_404_when_no_mount_matches",
+                "type": "Coroutine",
+                "lineno": 326
+              },
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_dispatcher_broadcasts_lifespan_to_mounted_applications",
+                "type": "Coroutine",
+                "lineno": 342
+              },
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_asyncio_wsgi_middleware_emits_wsgi_response_body",
+                "type": "Coroutine",
+                "lineno": 397
+              },
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_asyncio_wsgi_middleware_returns_400_when_body_exceeds_limit",
+                "type": "Coroutine",
+                "lineno": 408
+              },
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_asyncio_wsgi_middleware_requires_start_response_before_body",
+                "type": "Coroutine",
+                "lineno": 433
+              },
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_trio_wsgi_middleware_emits_wsgi_response_body",
+                "type": "Function",
+                "lineno": 445
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_config_from_pyfile_loads_public_attributes",
+            "lineno": 70,
+            "outcome": "passed",
+            "keywords": [
+              "test_config_from_pyfile_loads_public_attributes",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.001788351684808731,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0006145667284727097,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001641400158405304,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_config_from_toml_loads_public_attributes",
+            "lineno": 86,
+            "outcome": "passed",
+            "keywords": [
+              "test_config_from_toml_loads_public_attributes",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0006047859787940979,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0003300923854112625,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013478845357894897,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_config_from_object_loads_public_attributes",
+            "lineno": 102,
+            "outcome": "passed",
+            "keywords": [
+              "test_config_from_object_loads_public_attributes",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005538705736398697,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0006518233567476273,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001399759203195572,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_config_response_headers_follow_metadata_flags",
+            "lineno": 119,
+            "outcome": "passed",
+            "keywords": [
+              "test_config_response_headers_follow_metadata_flags",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00015500187873840332,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00015563145279884338,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010879337787628174,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_preserves_http_raw_path_and_query[/abc]",
+            "lineno": 128,
+            "outcome": "passed",
+            "keywords": [
+              "test_http_to_https_redirect_preserves_http_raw_path_and_query[/abc]",
+              "parametrize",
+              "asyncio",
+              "pytestmark",
+              "/abc",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.000853339210152626,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00038686953485012054,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0004359781742095947,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_preserves_http_raw_path_and_query[/abc%3C]",
+            "lineno": 128,
+            "outcome": "passed",
+            "keywords": [
+              "test_http_to_https_redirect_preserves_http_raw_path_and_query[/abc%3C]",
+              "parametrize",
+              "asyncio",
+              "pytestmark",
+              "/abc%3C",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005191359668970108,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00032960623502731323,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00032916851341724396,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_preserves_websocket_raw_path_and_query[/abc]",
+            "lineno": 157,
+            "outcome": "passed",
+            "keywords": [
+              "test_http_to_https_redirect_preserves_websocket_raw_path_and_query[/abc]",
+              "parametrize",
+              "asyncio",
+              "pytestmark",
+              "/abc",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0005302354693412781,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.000309675931930542,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00025694072246551514,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_preserves_websocket_raw_path_and_query[/abc%3C]",
+            "lineno": 157,
+            "outcome": "passed",
+            "keywords": [
+              "test_http_to_https_redirect_preserves_websocket_raw_path_and_query[/abc%3C]",
+              "parametrize",
+              "asyncio",
+              "pytestmark",
+              "/abc%3C",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0004794001579284668,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0002798084169626236,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00025637075304985046,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_uses_https_scheme_for_http2_websocket",
+            "lineno": 189,
+            "outcome": "passed",
+            "keywords": [
+              "test_http_to_https_redirect_uses_https_scheme_for_http2_websocket",
+              "asyncio",
+              "pytestmark",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00039667077362537384,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00027849897742271423,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00025464408099651337,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_closes_websocket_without_denial_extension",
+            "lineno": 218,
+            "outcome": "passed",
+            "keywords": [
+              "test_http_to_https_redirect_closes_websocket_without_denial_extension",
+              "asyncio",
+              "pytestmark",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0003984682261943817,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00027815625071525574,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00024925172328948975,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_uses_request_host_when_constructor_host_is_none",
+            "lineno": 231,
+            "outcome": "passed",
+            "keywords": [
+              "test_http_to_https_redirect_uses_request_host_when_constructor_host_is_none",
+              "asyncio",
+              "pytestmark",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00039150193333625793,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0002873949706554413,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0002511031925678253,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_proxy_fix_legacy_restores_trusted_client_scheme_and_host",
+            "lineno": 248,
+            "outcome": "passed",
+            "keywords": [
+              "test_proxy_fix_legacy_restores_trusted_client_scheme_and_host",
+              "asyncio",
+              "pytestmark",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0004042498767375946,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0003336295485496521,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0002734251320362091,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_proxy_fix_modern_restores_trusted_client_scheme_and_host",
+            "lineno": 279,
+            "outcome": "passed",
+            "keywords": [
+              "test_proxy_fix_modern_restores_trusted_client_scheme_and_host",
+              "asyncio",
+              "pytestmark",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0004395749419927597,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0003167819231748581,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0002690032124519348,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_dispatcher_routes_by_insertion_order_and_updates_root_path",
+            "lineno": 311,
+            "outcome": "passed",
+            "keywords": [
+              "test_dispatcher_routes_by_insertion_order_and_updates_root_path",
+              "asyncio",
+              "pytestmark",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0004122108221054077,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0002726353704929352,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0002520699054002762,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_dispatcher_returns_404_when_no_mount_matches",
+            "lineno": 326,
+            "outcome": "passed",
+            "keywords": [
+              "test_dispatcher_returns_404_when_no_mount_matches",
+              "asyncio",
+              "pytestmark",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00040480680763721466,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00028043612837791443,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00025290995836257935,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_dispatcher_broadcasts_lifespan_to_mounted_applications",
+            "lineno": 342,
+            "outcome": "passed",
+            "keywords": [
+              "test_dispatcher_broadcasts_lifespan_to_mounted_applications",
+              "asyncio",
+              "pytestmark",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00039733387529850006,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0005222782492637634,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0002903267741203308,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_asyncio_wsgi_middleware_emits_wsgi_response_body",
+            "lineno": 397,
+            "outcome": "passed",
+            "keywords": [
+              "test_asyncio_wsgi_middleware_emits_wsgi_response_body",
+              "asyncio",
+              "pytestmark",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0004090815782546997,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0022944677621126175,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0014382954686880112,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_asyncio_wsgi_middleware_returns_400_when_body_exceeds_limit",
+            "lineno": 408,
+            "outcome": "passed",
+            "keywords": [
+              "test_asyncio_wsgi_middleware_returns_400_when_body_exceeds_limit",
+              "asyncio",
+              "pytestmark",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0014149509370326996,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.000922253355383873,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0008068084716796875,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_asyncio_wsgi_middleware_requires_start_response_before_body",
+            "lineno": 433,
+            "outcome": "passed",
+            "keywords": [
+              "test_asyncio_wsgi_middleware_requires_start_response_before_body",
+              "asyncio",
+              "pytestmark",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.001414785161614418,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0016631651669740677,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0010343324393033981,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_trio_wsgi_middleware_emits_wsgi_response_body",
+            "lineno": 445,
+            "outcome": "passed",
+            "keywords": [
+              "test_trio_wsgi_middleware_emits_wsgi_response_body",
+              "trio",
+              "pytestmark",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00019080378115177155,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.013916488736867905,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0007477812469005585,
+              "outcome": "passed"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "summary": {
+    "passed": 52,
+    "total": 52
+  },
+  "pass_rate_excluding_skips": 1.0,
+  "by_layer": {
+    "atomic": {
+      "passed": 20,
+      "total": 20
+    },
+    "integration": {
+      "passed": 30,
+      "total": 30
+    },
+    "system_e2e": {
+      "passed": 2,
+      "total": 2
+    }
+  },
+  "cases": [
+    {
+      "nodeid": "filter/generated_tests.py::test_config_documented_defaults_are_visible",
+      "base_nodeid": "filter/generated_tests.py::test_config_documented_defaults_are_visible",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00040356069803237915,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_config_bind_groups_accept_single_string_assignments",
+      "base_nodeid": "filter/generated_tests.py::test_config_bind_groups_accept_single_string_assignments",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0002183523029088974,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_config_root_path_assignment_removes_trailing_slashes",
+      "base_nodeid": "filter/generated_tests.py::test_config_root_path_assignment_removes_trailing_slashes",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00015374459326267242,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_config_from_mapping_applies_keyword_arguments_last",
+      "base_nodeid": "filter/generated_tests.py::test_config_from_mapping_applies_keyword_arguments_last",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0001638755202293396,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_config_from_mapping_accepts_keyword_only_configuration",
+      "base_nodeid": "filter/generated_tests.py::test_config_from_mapping_accepts_keyword_only_configuration",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00013760104775428772,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_config_from_object_resolves_dotted_object",
+      "base_nodeid": "filter/generated_tests.py::test_config_from_object_resolves_dotted_object",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0008079148828983307,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_config_from_pyfile_propagates_missing_file",
+      "base_nodeid": "filter/generated_tests.py::test_config_from_pyfile_propagates_missing_file",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00024656206369400024,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_config_from_pyfile_propagates_execution_failure",
+      "base_nodeid": "filter/generated_tests.py::test_config_from_pyfile_propagates_execution_failure",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0005244594067335129,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_config_from_toml_propagates_parse_failure",
+      "base_nodeid": "filter/generated_tests.py::test_config_from_toml_propagates_parse_failure",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0004574432969093323,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_config_ssl_enabled_reflects_certificate_and_key_presence",
+      "base_nodeid": "filter/generated_tests.py::test_config_ssl_enabled_reflects_certificate_and_key_presence",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0001409035176038742,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_config_response_headers_include_each_alt_svc_value",
+      "base_nodeid": "filter/generated_tests.py::test_config_response_headers_include_each_alt_svc_value",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00013499893248081207,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_config_statsd_logger_class_requires_statsd_host",
+      "base_nodeid": "filter/generated_tests.py::test_config_statsd_logger_class_requires_statsd_host",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.000151854008436203,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_config_statsd_logger_class_replaces_default_when_statsd_is_enabled",
+      "base_nodeid": "filter/generated_tests.py::test_config_statsd_logger_class_replaces_default_when_statsd_is_enabled",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00014973990619182587,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_redirect_without_constructor_or_request_host_raises_value_error",
+      "base_nodeid": "filter/generated_tests.py::test_redirect_without_constructor_or_request_host_raises_value_error",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.000383058562874794,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_redirect_location_includes_root_path_before_raw_path",
+      "base_nodeid": "filter/generated_tests.py::test_redirect_location_includes_root_path_before_raw_path",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00032060593366622925,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_redirect_passes_secure_websocket_to_wrapped_application",
+      "base_nodeid": "filter/generated_tests.py::test_redirect_passes_secure_websocket_to_wrapped_application",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00028370507061481476,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_redirect_passes_non_http_scope_without_requiring_host",
+      "base_nodeid": "filter/generated_tests.py::test_redirect_passes_non_http_scope_without_requiring_host",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00027224794030189514,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_proxy_fix_without_forwarded_headers_preserves_scope_values",
+      "base_nodeid": "filter/generated_tests.py::test_proxy_fix_without_forwarded_headers_preserves_scope_values",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0003257226198911667,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_proxy_fix_trusted_hops_selects_value_from_the_right",
+      "base_nodeid": "filter/generated_tests.py::test_proxy_fix_trusted_hops_selects_value_from_the_right",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0003223717212677002,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_proxy_fix_modern_mode_falls_back_to_legacy_headers",
+      "base_nodeid": "filter/generated_tests.py::test_proxy_fix_modern_mode_falls_back_to_legacy_headers",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0003254096955060959,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_proxy_fix_non_http_scope_is_passed_without_copying",
+      "base_nodeid": "filter/generated_tests.py::test_proxy_fix_non_http_scope_is_passed_without_copying",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00028304383158683777,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_dispatcher_uses_first_matching_mount_even_when_later_mount_is_longer",
+      "base_nodeid": "filter/generated_tests.py::test_dispatcher_uses_first_matching_mount_even_when_later_mount_is_longer",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0002765767276287079,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_dispatcher_extends_existing_root_path_for_selected_mount",
+      "base_nodeid": "filter/generated_tests.py::test_dispatcher_extends_existing_root_path_for_selected_mount",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0003304947167634964,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_wsgi_environment_contains_root_path_path_info_query_and_headers",
+      "base_nodeid": "filter/generated_tests.py::test_wsgi_environment_contains_root_path_path_info_query_and_headers",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0013869702816009521,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_wsgi_path_outside_root_path_returns_404_without_calling_app",
+      "base_nodeid": "filter/generated_tests.py::test_wsgi_path_outside_root_path_returns_404_without_calling_app",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0002997014671564102,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_wsgi_websocket_scope_closes_without_calling_wsgi_app",
+      "base_nodeid": "filter/generated_tests.py::test_wsgi_websocket_scope_closes_without_calling_wsgi_app",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00026918016374111176,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_logger_access_logfile_dash_writes_configured_access_record_to_stdout",
+      "base_nodeid": "filter/generated_tests.py::test_logger_access_logfile_dash_writes_configured_access_record_to_stdout",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0006142035126686096,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_logger_missing_access_atom_renders_dash",
+      "base_nodeid": "filter/generated_tests.py::test_logger_missing_access_atom_renders_dash",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0005644988268613815,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_logger_errorlog_dash_writes_error_and_warning_to_stderr",
+      "base_nodeid": "filter/generated_tests.py::test_logger_errorlog_dash_writes_error_and_warning_to_stderr",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0005307309329509735,
+        "outcome": "passed",
+        "log": [
+          {
+            "name": "hypercorn.error",
+            "msg": "failed request",
+            "args": null,
+            "levelname": "ERROR",
+            "levelno": 40,
+            "pathname": "/root/autodl-tmp/new-e2e/pgjones__hypercorn/src/hypercorn/logging.py",
+            "filename": "logging.py",
+            "module": "logging",
+            "exc_info": null,
+            "exc_text": null,
+            "stack_info": null,
+            "lineno": 99,
+            "funcName": "error",
+            "created": 1783859029.222993,
+            "msecs": 222.0,
+            "relativeCreated": 504.82964515686035,
+            "thread": 139742013282112,
+            "threadName": "MainThread",
+            "processName": "MainProcess",
+            "process": 416636,
+            "asctime": "[2026-07-12 20:23:49 +0800]"
+          },
+          {
+            "name": "hypercorn.error",
+            "msg": "slow request",
+            "args": null,
+            "levelname": "WARNING",
+            "levelno": 30,
+            "pathname": "/root/autodl-tmp/new-e2e/pgjones__hypercorn/src/hypercorn/logging.py",
+            "filename": "logging.py",
+            "module": "logging",
+            "exc_info": null,
+            "exc_text": null,
+            "stack_info": null,
+            "lineno": 103,
+            "funcName": "warning",
+            "created": 1783859029.2231193,
+            "msecs": 223.0,
+            "relativeCreated": 504.9560070037842,
+            "thread": 139742013282112,
+            "threadName": "MainThread",
+            "processName": "MainProcess",
+            "process": 416636,
+            "asctime": "[2026-07-12 20:23:49 +0800]"
+          }
+        ]
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_asyncio_serve_warns_when_process_or_loop_settings_do_not_apply",
+      "base_nodeid": "filter/generated_tests.py::test_asyncio_serve_warns_when_process_or_loop_settings_do_not_apply",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0008322205394506454,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_hypercorn_module_help_exposes_command_line_interface",
+      "base_nodeid": "filter/generated_tests.py::test_hypercorn_module_help_exposes_command_line_interface",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.10990824364125729,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_hypercorn_module_rejects_unknown_verify_mode",
+      "base_nodeid": "filter/generated_tests.py::test_hypercorn_module_rejects_unknown_verify_mode",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.09908835217356682,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_config_from_pyfile_loads_public_attributes",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_config_from_pyfile_loads_public_attributes",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0006145667284727097,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_config_from_toml_loads_public_attributes",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_config_from_toml_loads_public_attributes",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0003300923854112625,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_config_from_object_loads_public_attributes",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_config_from_object_loads_public_attributes",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0006518233567476273,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_config_response_headers_follow_metadata_flags",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_config_response_headers_follow_metadata_flags",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00015563145279884338,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_preserves_http_raw_path_and_query[/abc]",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_preserves_http_raw_path_and_query",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00038686953485012054,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_preserves_http_raw_path_and_query[/abc%3C]",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_preserves_http_raw_path_and_query",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00032960623502731323,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_preserves_websocket_raw_path_and_query[/abc]",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_preserves_websocket_raw_path_and_query",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.000309675931930542,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_preserves_websocket_raw_path_and_query[/abc%3C]",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_preserves_websocket_raw_path_and_query",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0002798084169626236,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_uses_https_scheme_for_http2_websocket",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_uses_https_scheme_for_http2_websocket",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00027849897742271423,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_closes_websocket_without_denial_extension",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_closes_websocket_without_denial_extension",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00027815625071525574,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_uses_request_host_when_constructor_host_is_none",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_http_to_https_redirect_uses_request_host_when_constructor_host_is_none",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0002873949706554413,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_proxy_fix_legacy_restores_trusted_client_scheme_and_host",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_proxy_fix_legacy_restores_trusted_client_scheme_and_host",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0003336295485496521,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_proxy_fix_modern_restores_trusted_client_scheme_and_host",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_proxy_fix_modern_restores_trusted_client_scheme_and_host",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0003167819231748581,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_dispatcher_routes_by_insertion_order_and_updates_root_path",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_dispatcher_routes_by_insertion_order_and_updates_root_path",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0002726353704929352,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_dispatcher_returns_404_when_no_mount_matches",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_dispatcher_returns_404_when_no_mount_matches",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00028043612837791443,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_dispatcher_broadcasts_lifespan_to_mounted_applications",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_dispatcher_broadcasts_lifespan_to_mounted_applications",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0005222782492637634,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_asyncio_wsgi_middleware_emits_wsgi_response_body",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_asyncio_wsgi_middleware_emits_wsgi_response_body",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0022944677621126175,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_asyncio_wsgi_middleware_returns_400_when_body_exceeds_limit",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_asyncio_wsgi_middleware_returns_400_when_body_exceeds_limit",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.000922253355383873,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_asyncio_wsgi_middleware_requires_start_response_before_body",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_asyncio_wsgi_middleware_requires_start_response_before_body",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0016631651669740677,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_trio_wsgi_middleware_emits_wsgi_response_body",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_trio_wsgi_middleware_emits_wsgi_response_body",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.013916488736867905,
+        "outcome": "passed"
+      }
+    }
+  ]
+}

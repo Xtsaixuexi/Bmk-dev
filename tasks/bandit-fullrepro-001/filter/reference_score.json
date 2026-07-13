@@ -1,0 +1,3813 @@
+{
+  "source_repo": "/root/autodl-tmp/Bmk-Lizhiqian/wip/bandit-fullrepro-001/filter/oracle_source",
+  "solution_dir": "/root/autodl-tmp/new-e2e/PyCQA__bandit",
+  "nodeids": "/root/autodl-tmp/Bmk-Lizhiqian/wip/bandit-fullrepro-001/kept_nodeids.txt",
+  "taxonomy": "/root/autodl-tmp/Bmk-Lizhiqian/wip/bandit-fullrepro-001/taxonomy.jsonl",
+  "run_dir": "/root/autodl-tmp/Bmk-Lizhiqian/scorer-runs/bandit-reference-v2",
+  "import_provenance": {
+    "returncode": 0,
+    "stdout": "/root/autodl-tmp/new-e2e/PyCQA__bandit/bandit/__init__.py\n",
+    "stderr": ""
+  },
+  "grouped_results": {
+    "filter/generated_tests.py": {
+      "returncode": 0,
+      "stdout": "........................................................................ [ 85%]\n............                                                             [100%]\n=============================== warnings summary ===============================\n../../../envs/bandit-fullrepro-001/lib/python3.10/site-packages/stevedore/extension.py:187\n../../../envs/bandit-fullrepro-001/lib/python3.10/site-packages/stevedore/extension.py:187\n../../../envs/bandit-fullrepro-001/lib/python3.10/site-packages/stevedore/extension.py:187\n  The verify_requirements argument is now a no-op and is deprecated for removal. Remove the argument from calls.\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n84 passed, 3 warnings in 15.75s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1783853076.3584607,
+        "duration": 15.74778699874878,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/scorer-runs/bandit-reference-v2/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 84,
+          "total": 84,
+          "collected": 84
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "filter/generated_tests.py::test_ranking_constants_are_strings",
+                "type": "Function",
+                "lineno": 37
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_cwe_dictionary_and_link[0]",
+                "type": "Function",
+                "lineno": 46
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_cwe_dictionary_and_link[79]",
+                "type": "Function",
+                "lineno": 46
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_cwe_dictionary_and_link[605]",
+                "type": "Function",
+                "lineno": 46
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_cwe_from_dict_mutates_and_returns_none",
+                "type": "Function",
+                "lineno": 58
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_cwe_string_and_json_string",
+                "type": "Function",
+                "lineno": 66
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_issue_filter_uses_both_rankings[HIGH-HIGH-MEDIUM-MEDIUM-True]",
+                "type": "Function",
+                "lineno": 72
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_issue_filter_uses_both_rankings[LOW-HIGH-MEDIUM-LOW-False]",
+                "type": "Function",
+                "lineno": 72
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_issue_filter_uses_both_rankings[HIGH-LOW-LOW-MEDIUM-False]",
+                "type": "Function",
+                "lineno": 72
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_issue_filter_uses_both_rankings[UNDEFINED-UNDEFINED-UNDEFINED-UNDEFINED-True]",
+                "type": "Function",
+                "lineno": 72
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_issue_as_dict_schema_without_code",
+                "type": "Function",
+                "lineno": 105
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_issue_from_dict_mutates_and_defaults_columns",
+                "type": "Function",
+                "lineno": 124
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_issue_equality_ignores_location_but_not_identity_fields",
+                "type": "Function",
+                "lineno": 138
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_issue_get_code_respects_line_limit",
+                "type": "Function",
+                "lineno": 148
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_public_decorators_preserve_callable_behavior[checks-args0]",
+                "type": "Function",
+                "lineno": 158
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_public_decorators_preserve_callable_behavior[test_id-args1]",
+                "type": "Function",
+                "lineno": 158
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_public_decorators_preserve_callable_behavior[takes_config-args2]",
+                "type": "Function",
+                "lineno": 158
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_public_decorators_preserve_callable_behavior[accepts_baseline-args3]",
+                "type": "Function",
+                "lineno": 158
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B101]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B102]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B103]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B104]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B105]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B106]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B107]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B108]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B110]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B112]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B113]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B201]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B202]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B301]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B307]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B310]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B311]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B312]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B323]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B324]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B401]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B403]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B404]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B405]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B415]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B501]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B506]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B507]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B602]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B603]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B605]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B607]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B608]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B609]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B612]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B614]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B615]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B701]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B703]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B704]",
+                "type": "Function",
+                "lineno": 227
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_clean_scan_has_empty_results_and_zero_exit",
+                "type": "Function",
+                "lineno": 240
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_finding_scan_has_one_exit_and_exit_zero_override",
+                "type": "Function",
+                "lineno": 247
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_syntax_error_is_reported_but_not_a_finding",
+                "type": "Function",
+                "lineno": 256
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_stdin_scan_uses_same_json_projection",
+                "type": "Function",
+                "lineno": 263
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_directory_requires_recursive_flag_for_python_files",
+                "type": "Function",
+                "lineno": 276
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_recursive_exclusion_removes_matching_subtree",
+                "type": "Function",
+                "lineno": 288
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_bare_nosec_and_ignore_nosec",
+                "type": "Function",
+                "lineno": 305
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_named_nosec_suppresses_only_named_check",
+                "type": "Function",
+                "lineno": 317
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_threshold_filters_results_but_not_metrics",
+                "type": "Function",
+                "lineno": 326
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_overlapping_include_and_skip_is_invocation_error",
+                "type": "Function",
+                "lineno": 334
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_repeated_tests_option_uses_last_value",
+                "type": "Function",
+                "lineno": 343
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_ini_defaults_are_replaced_by_explicit_cli_tests",
+                "type": "Function",
+                "lineno": 352
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_ini_targets_apply_when_cli_target_is_absent",
+                "type": "Function",
+                "lineno": 364
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_yaml_profile_is_extended_by_selected_cli_tests",
+                "type": "Function",
+                "lineno": 376
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_number_controls_json_code_context",
+                "type": "Function",
+                "lineno": 396
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_supported_report_formats_emit_findings[csv]",
+                "type": "Function",
+                "lineno": 405
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_supported_report_formats_emit_findings[yaml]",
+                "type": "Function",
+                "lineno": 405
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_supported_report_formats_emit_findings[xml]",
+                "type": "Function",
+                "lineno": 405
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_supported_report_formats_emit_findings[sarif]",
+                "type": "Function",
+                "lineno": 405
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_supported_report_formats_emit_findings[txt]",
+                "type": "Function",
+                "lineno": 405
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_output_file_receives_json_report",
+                "type": "Function",
+                "lineno": 414
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_aggregate_mode_changes_result_order",
+                "type": "Function",
+                "lineno": 425
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_baseline_removes_matching_finding_and_changes_exit",
+                "type": "Function",
+                "lineno": 442
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_baseline_json_candidates_for_duplicate_new_signature",
+                "type": "Function",
+                "lineno": 457
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_non_baseline_aware_format_is_invocation_error",
+                "type": "Function",
+                "lineno": 472
+              },
+              {
+                "nodeid": "filter/generated_tests.py::test_json_result_cwe_link_and_location_fields",
+                "type": "Function",
+                "lineno": 482
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "filter/generated_tests.py::test_ranking_constants_are_strings",
+            "lineno": 37,
+            "outcome": "passed",
+            "keywords": [
+              "test_ranking_constants_are_strings",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00022642873227596283,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0001443326473236084,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013768859207630157,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_cwe_dictionary_and_link[0]",
+            "lineno": 46,
+            "outcome": "passed",
+            "keywords": [
+              "test_cwe_dictionary_and_link[0]",
+              "parametrize",
+              "pytestmark",
+              "0",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0002684667706489563,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00012455880641937256,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013240240514278412,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_cwe_dictionary_and_link[79]",
+            "lineno": 46,
+            "outcome": "passed",
+            "keywords": [
+              "test_cwe_dictionary_and_link[79]",
+              "parametrize",
+              "pytestmark",
+              "79",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00020221993327140808,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00012079626321792603,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012038089334964752,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_cwe_dictionary_and_link[605]",
+            "lineno": 46,
+            "outcome": "passed",
+            "keywords": [
+              "test_cwe_dictionary_and_link[605]",
+              "parametrize",
+              "pytestmark",
+              "605",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00019264407455921173,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00011651590466499329,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001108907163143158,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_cwe_from_dict_mutates_and_returns_none",
+            "lineno": 58,
+            "outcome": "passed",
+            "keywords": [
+              "test_cwe_from_dict_mutates_and_returns_none",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 9.63360071182251e-05,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00010448694229125977,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 9.819492697715759e-05,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_cwe_string_and_json_string",
+            "lineno": 66,
+            "outcome": "passed",
+            "keywords": [
+              "test_cwe_string_and_json_string",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 9.403564035892487e-05,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00011309050023555756,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001155361533164978,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_issue_filter_uses_both_rankings[HIGH-HIGH-MEDIUM-MEDIUM-True]",
+            "lineno": 72,
+            "outcome": "passed",
+            "keywords": [
+              "test_issue_filter_uses_both_rankings[HIGH-HIGH-MEDIUM-MEDIUM-True]",
+              "parametrize",
+              "pytestmark",
+              "HIGH-HIGH-MEDIUM-MEDIUM-True",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00038929469883441925,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00012333504855632782,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00014362111687660217,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_issue_filter_uses_both_rankings[LOW-HIGH-MEDIUM-LOW-False]",
+            "lineno": 72,
+            "outcome": "passed",
+            "keywords": [
+              "test_issue_filter_uses_both_rankings[LOW-HIGH-MEDIUM-LOW-False]",
+              "parametrize",
+              "pytestmark",
+              "LOW-HIGH-MEDIUM-LOW-False",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00039659440517425537,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00012223795056343079,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00014505907893180847,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_issue_filter_uses_both_rankings[HIGH-LOW-LOW-MEDIUM-False]",
+            "lineno": 72,
+            "outcome": "passed",
+            "keywords": [
+              "test_issue_filter_uses_both_rankings[HIGH-LOW-LOW-MEDIUM-False]",
+              "parametrize",
+              "pytestmark",
+              "HIGH-LOW-LOW-MEDIUM-False",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0003915056586265564,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00012341327965259552,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00014387071132659912,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_issue_filter_uses_both_rankings[UNDEFINED-UNDEFINED-UNDEFINED-UNDEFINED-True]",
+            "lineno": 72,
+            "outcome": "passed",
+            "keywords": [
+              "test_issue_filter_uses_both_rankings[UNDEFINED-UNDEFINED-UNDEFINED-UNDEFINED-True]",
+              "parametrize",
+              "pytestmark",
+              "UNDEFINED-UNDEFINED-UNDEFINED-UNDEFINED-True",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0003907717764377594,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.000124441459774971,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001470521092414856,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_issue_as_dict_schema_without_code",
+            "lineno": 105,
+            "outcome": "passed",
+            "keywords": [
+              "test_issue_as_dict_schema_without_code",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010591931641101837,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.000126691535115242,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010633282363414764,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_issue_from_dict_mutates_and_defaults_columns",
+            "lineno": 124,
+            "outcome": "passed",
+            "keywords": [
+              "test_issue_from_dict_mutates_and_defaults_columns",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010474398732185364,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00014880672097206116,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010716356337070465,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_issue_equality_ignores_location_but_not_identity_fields",
+            "lineno": 138,
+            "outcome": "passed",
+            "keywords": [
+              "test_issue_equality_ignores_location_but_not_identity_fields",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00010382197797298431,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00012505054473876953,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00010385550558567047,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_issue_get_code_respects_line_limit",
+            "lineno": 148,
+            "outcome": "passed",
+            "keywords": [
+              "test_issue_get_code_respects_line_limit",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0013905316591262817,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00028816238045692444,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012653321027755737,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_public_decorators_preserve_callable_behavior[checks-args0]",
+            "lineno": 158,
+            "outcome": "passed",
+            "keywords": [
+              "test_public_decorators_preserve_callable_behavior[checks-args0]",
+              "parametrize",
+              "pytestmark",
+              "checks-args0",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00024278275668621063,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0001233220100402832,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012109242379665375,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_public_decorators_preserve_callable_behavior[test_id-args1]",
+            "lineno": 158,
+            "outcome": "passed",
+            "keywords": [
+              "test_public_decorators_preserve_callable_behavior[test_id-args1]",
+              "parametrize",
+              "pytestmark",
+              "test_id-args1",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00038602016866207123,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00012539885938167572,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00013120286166667938,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_public_decorators_preserve_callable_behavior[takes_config-args2]",
+            "lineno": 158,
+            "outcome": "passed",
+            "keywords": [
+              "test_public_decorators_preserve_callable_behavior[takes_config-args2]",
+              "parametrize",
+              "pytestmark",
+              "takes_config-args2",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0002553984522819519,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00012095458805561066,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012856349349021912,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_public_decorators_preserve_callable_behavior[accepts_baseline-args3]",
+            "lineno": 158,
+            "outcome": "passed",
+            "keywords": [
+              "test_public_decorators_preserve_callable_behavior[accepts_baseline-args3]",
+              "parametrize",
+              "pytestmark",
+              "accepts_baseline-args3",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00025791488587856293,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00012071244418621063,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00012799911201000214,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B101]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B101]",
+              "parametrize",
+              "pytestmark",
+              "B101",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0006279945373535156,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.22205985896289349,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0003949236124753952,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B102]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B102]",
+              "parametrize",
+              "pytestmark",
+              "B102",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0013481974601745605,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.21165704168379307,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00027387216687202454,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B103]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B103]",
+              "parametrize",
+              "pytestmark",
+              "B103",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0009632240980863571,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.20592043548822403,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00027259625494480133,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B104]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B104]",
+              "parametrize",
+              "pytestmark",
+              "B104",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0009706318378448486,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.209624245762825,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0003988873213529587,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B105]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B105]",
+              "parametrize",
+              "pytestmark",
+              "B105",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0014342255890369415,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.2001953460276127,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00034981220960617065,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B106]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B106]",
+              "parametrize",
+              "pytestmark",
+              "B106",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0013494715094566345,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.20160211995244026,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.000432383269071579,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B107]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B107]",
+              "parametrize",
+              "pytestmark",
+              "B107",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0016537867486476898,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.20215418376028538,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0004164576530456543,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B108]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B108]",
+              "parametrize",
+              "pytestmark",
+              "B108",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0020674467086791992,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.20539898797869682,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0005439091473817825,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B110]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B110]",
+              "parametrize",
+              "pytestmark",
+              "B110",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.002102367579936981,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.20548341795802116,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0005729757249355316,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B112]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B112]",
+              "parametrize",
+              "pytestmark",
+              "B112",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00221848301589489,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.21934428066015244,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0006538033485412598,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B113]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B113]",
+              "parametrize",
+              "pytestmark",
+              "B113",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0025176163762807846,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.21588213182985783,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00028699636459350586,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B201]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B201]",
+              "parametrize",
+              "pytestmark",
+              "B201",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.001116141676902771,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.20977655611932278,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.000587116926908493,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B202]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B202]",
+              "parametrize",
+              "pytestmark",
+              "B202",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0023591332137584686,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.2220282070338726,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0005021318793296814,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B301]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B301]",
+              "parametrize",
+              "pytestmark",
+              "B301",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0021195653825998306,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.21294630877673626,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0003237370401620865,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B307]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B307]",
+              "parametrize",
+              "pytestmark",
+              "B307",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0012920591980218887,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.21197451651096344,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0008250176906585693,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B310]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B310]",
+              "parametrize",
+              "pytestmark",
+              "B310",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.002896426245570183,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.22224827483296394,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00026316195726394653,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B311]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B311]",
+              "parametrize",
+              "pytestmark",
+              "B311",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0011166445910930634,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.20094341225922108,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00023103877902030945,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B312]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B312]",
+              "parametrize",
+              "pytestmark",
+              "B312",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0009484812617301941,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.21356471441686153,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0003957301378250122,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B323]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B323]",
+              "parametrize",
+              "pytestmark",
+              "B323",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0018131881952285767,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.2280882876366377,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0002970770001411438,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B324]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B324]",
+              "parametrize",
+              "pytestmark",
+              "B324",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0010446887463331223,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.2205382026731968,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0006842240691184998,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B401]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B401]",
+              "parametrize",
+              "pytestmark",
+              "B401",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0026224814355373383,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.22270410135388374,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0002839677035808563,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B403]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B403]",
+              "parametrize",
+              "pytestmark",
+              "B403",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.000935552641749382,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.20751060545444489,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00029148906469345093,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B404]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B404]",
+              "parametrize",
+              "pytestmark",
+              "B404",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0009664110839366913,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.20458524860441685,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00028262101113796234,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B405]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B405]",
+              "parametrize",
+              "pytestmark",
+              "B405",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0010105837136507034,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.21080221608281136,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00039133429527282715,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B415]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B415]",
+              "parametrize",
+              "pytestmark",
+              "B415",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.001451803371310234,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.20313572324812412,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00042226724326610565,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B501]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B501]",
+              "parametrize",
+              "pytestmark",
+              "B501",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0015878789126873016,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.19983654469251633,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0002947859466075897,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B506]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B506]",
+              "parametrize",
+              "pytestmark",
+              "B506",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0009957291185855865,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.21427581273019314,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0005797389894723892,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B507]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B507]",
+              "parametrize",
+              "pytestmark",
+              "B507",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.002312593162059784,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.22242571413516998,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0006705373525619507,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B602]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B602]",
+              "parametrize",
+              "pytestmark",
+              "B602",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0026183612644672394,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.2058558352291584,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0004087146371603012,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B603]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B603]",
+              "parametrize",
+              "pytestmark",
+              "B603",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0012315008789300919,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.20504622906446457,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.000283828005194664,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B605]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B605]",
+              "parametrize",
+              "pytestmark",
+              "B605",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0010220818221569061,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.2099380809813738,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0002686362713575363,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B607]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B607]",
+              "parametrize",
+              "pytestmark",
+              "B607",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.001006564125418663,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.2064710669219494,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0002792011946439743,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B608]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B608]",
+              "parametrize",
+              "pytestmark",
+              "B608",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0009813830256462097,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.2066131867468357,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00034980662167072296,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B609]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B609]",
+              "parametrize",
+              "pytestmark",
+              "B609",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0013626087456941605,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.2041019145399332,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00036309845745563507,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B612]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B612]",
+              "parametrize",
+              "pytestmark",
+              "B612",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0014990083873271942,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.20332923531532288,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0005821883678436279,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B614]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B614]",
+              "parametrize",
+              "pytestmark",
+              "B614",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.002346772700548172,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.2068419810384512,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00046991556882858276,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B615]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B615]",
+              "parametrize",
+              "pytestmark",
+              "B615",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0021374449133872986,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.20276912860572338,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0005303006619215012,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B701]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B701]",
+              "parametrize",
+              "pytestmark",
+              "B701",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.002142608165740967,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.20096634700894356,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0005982667207717896,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B703]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B703]",
+              "parametrize",
+              "pytestmark",
+              "B703",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0023300424218177795,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.203602883964777,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.000718582421541214,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B704]",
+            "lineno": 227,
+            "outcome": "passed",
+            "keywords": [
+              "test_detection_family_reports_expected_id[B704]",
+              "parametrize",
+              "pytestmark",
+              "B704",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0036364197731018066,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.20381087809801102,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0009721908718347549,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_clean_scan_has_empty_results_and_zero_exit",
+            "lineno": 240,
+            "outcome": "passed",
+            "keywords": [
+              "test_clean_scan_has_empty_results_and_zero_exit",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.001954995095729828,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.19855219312012196,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0004152655601501465,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_finding_scan_has_one_exit_and_exit_zero_override",
+            "lineno": 247,
+            "outcome": "passed",
+            "keywords": [
+              "test_finding_scan_has_one_exit_and_exit_zero_override",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0013192109763622284,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.39744318276643753,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00035921670496463776,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_syntax_error_is_reported_but_not_a_finding",
+            "lineno": 256,
+            "outcome": "passed",
+            "keywords": [
+              "test_syntax_error_is_reported_but_not_a_finding",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.001523379236459732,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.2039917204529047,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0003313608467578888,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_stdin_scan_uses_same_json_projection",
+            "lineno": 263,
+            "outcome": "passed",
+            "keywords": [
+              "test_stdin_scan_uses_same_json_projection",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.002376774325966835,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.21044778637588024,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00025333650410175323,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_directory_requires_recursive_flag_for_python_files",
+            "lineno": 276,
+            "outcome": "passed",
+            "keywords": [
+              "test_directory_requires_recursive_flag_for_python_files",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0008535012602806091,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.41597077064216137,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00032916292548179626,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_recursive_exclusion_removes_matching_subtree",
+            "lineno": 288,
+            "outcome": "passed",
+            "keywords": [
+              "test_recursive_exclusion_removes_matching_subtree",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.001293916255235672,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.2033427394926548,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0003921743482351303,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_bare_nosec_and_ignore_nosec",
+            "lineno": 305,
+            "outcome": "passed",
+            "keywords": [
+              "test_bare_nosec_and_ignore_nosec",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0013400949537754059,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.40913406014442444,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00039493292570114136,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_named_nosec_suppresses_only_named_check",
+            "lineno": 317,
+            "outcome": "passed",
+            "keywords": [
+              "test_named_nosec_suppresses_only_named_check",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0013700034469366074,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.21378127299249172,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0005559287965297699,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_threshold_filters_results_but_not_metrics",
+            "lineno": 326,
+            "outcome": "passed",
+            "keywords": [
+              "test_threshold_filters_results_but_not_metrics",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0018270965665578842,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.22818588092923164,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00037076883018016815,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_overlapping_include_and_skip_is_invocation_error",
+            "lineno": 334,
+            "outcome": "passed",
+            "keywords": [
+              "test_overlapping_include_and_skip_is_invocation_error",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0012186523526906967,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.19246819615364075,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00033191777765750885,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_repeated_tests_option_uses_last_value",
+            "lineno": 343,
+            "outcome": "passed",
+            "keywords": [
+              "test_repeated_tests_option_uses_last_value",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0013615284115076065,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.20296267792582512,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0005815811455249786,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_ini_defaults_are_replaced_by_explicit_cli_tests",
+            "lineno": 352,
+            "outcome": "passed",
+            "keywords": [
+              "test_ini_defaults_are_replaced_by_explicit_cli_tests",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0022241249680519104,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.20538939349353313,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00025242753326892853,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_ini_targets_apply_when_cli_target_is_absent",
+            "lineno": 364,
+            "outcome": "passed",
+            "keywords": [
+              "test_ini_targets_apply_when_cli_target_is_absent",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0008481629192829132,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.2174514476209879,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0002551805227994919,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_yaml_profile_is_extended_by_selected_cli_tests",
+            "lineno": 376,
+            "outcome": "passed",
+            "keywords": [
+              "test_yaml_profile_is_extended_by_selected_cli_tests",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0009071044623851776,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.2126972395926714,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0003435444086790085,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_number_controls_json_code_context",
+            "lineno": 396,
+            "outcome": "passed",
+            "keywords": [
+              "test_number_controls_json_code_context",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0011226851493120193,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.20955991186201572,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.000562695786356926,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_supported_report_formats_emit_findings[csv]",
+            "lineno": 405,
+            "outcome": "passed",
+            "keywords": [
+              "test_supported_report_formats_emit_findings[csv]",
+              "parametrize",
+              "pytestmark",
+              "csv",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0021133646368980408,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.20077643729746342,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0005070716142654419,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_supported_report_formats_emit_findings[yaml]",
+            "lineno": 405,
+            "outcome": "passed",
+            "keywords": [
+              "test_supported_report_formats_emit_findings[yaml]",
+              "parametrize",
+              "pytestmark",
+              "yaml",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.002000747248530388,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.21327142417430878,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.000555671751499176,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_supported_report_formats_emit_findings[xml]",
+            "lineno": 405,
+            "outcome": "passed",
+            "keywords": [
+              "test_supported_report_formats_emit_findings[xml]",
+              "parametrize",
+              "pytestmark",
+              "xml",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.002745220437645912,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.2227699551731348,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0003605782985687256,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_supported_report_formats_emit_findings[sarif]",
+            "lineno": 405,
+            "outcome": "passed",
+            "keywords": [
+              "test_supported_report_formats_emit_findings[sarif]",
+              "parametrize",
+              "pytestmark",
+              "sarif",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.001313658431172371,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.2104317955672741,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00026827678084373474,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_supported_report_formats_emit_findings[txt]",
+            "lineno": 405,
+            "outcome": "passed",
+            "keywords": [
+              "test_supported_report_formats_emit_findings[txt]",
+              "parametrize",
+              "pytestmark",
+              "txt",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0010777376592159271,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.2152534183114767,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0003898702561855316,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_output_file_receives_json_report",
+            "lineno": 414,
+            "outcome": "passed",
+            "keywords": [
+              "test_output_file_receives_json_report",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.001096293330192566,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.21017244271934032,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0004812590777873993,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_aggregate_mode_changes_result_order",
+            "lineno": 425,
+            "outcome": "passed",
+            "keywords": [
+              "test_aggregate_mode_changes_result_order",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0017281267791986465,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.4345365669578314,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0004920288920402527,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_baseline_removes_matching_finding_and_changes_exit",
+            "lineno": 442,
+            "outcome": "passed",
+            "keywords": [
+              "test_baseline_removes_matching_finding_and_changes_exit",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.002376476302742958,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.4274339396506548,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00023851916193962097,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_baseline_json_candidates_for_duplicate_new_signature",
+            "lineno": 457,
+            "outcome": "passed",
+            "keywords": [
+              "test_baseline_json_candidates_for_duplicate_new_signature",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0008402001112699509,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.4241555593907833,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0003575235605239868,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_non_baseline_aware_format_is_invocation_error",
+            "lineno": 472,
+            "outcome": "passed",
+            "keywords": [
+              "test_non_baseline_aware_format_is_invocation_error",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0012129582464694977,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.41137150302529335,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00033608265221118927,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/generated_tests.py::test_json_result_cwe_link_and_location_fields",
+            "lineno": 482,
+            "outcome": "passed",
+            "keywords": [
+              "test_json_result_cwe_link_and_location_fields",
+              "generated_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.001120271161198616,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.20353005081415176,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0006281882524490356,
+              "outcome": "passed"
+            }
+          }
+        ],
+        "warnings": [
+          {
+            "message": "The verify_requirements argument is now a no-op and is deprecated for removal. Remove the argument from calls.",
+            "category": "DeprecationWarning",
+            "when": "collect",
+            "filename": "/root/autodl-tmp/Bmk-Lizhiqian/envs/bandit-fullrepro-001/lib/python3.10/site-packages/stevedore/extension.py",
+            "lineno": 187
+          },
+          {
+            "message": "The verify_requirements argument is now a no-op and is deprecated for removal. Remove the argument from calls.",
+            "category": "DeprecationWarning",
+            "when": "collect",
+            "filename": "/root/autodl-tmp/Bmk-Lizhiqian/envs/bandit-fullrepro-001/lib/python3.10/site-packages/stevedore/extension.py",
+            "lineno": 187
+          },
+          {
+            "message": "The verify_requirements argument is now a no-op and is deprecated for removal. Remove the argument from calls.",
+            "category": "DeprecationWarning",
+            "when": "collect",
+            "filename": "/root/autodl-tmp/Bmk-Lizhiqian/envs/bandit-fullrepro-001/lib/python3.10/site-packages/stevedore/extension.py",
+            "lineno": 187
+          }
+        ]
+      }
+    },
+    "filter/rewritten_upstream_tests.py": {
+      "returncode": 0,
+      "stdout": "......                                                                   [100%]\n=============================== warnings summary ===============================\n../../../envs/bandit-fullrepro-001/lib/python3.10/site-packages/stevedore/extension.py:187\n../../../envs/bandit-fullrepro-001/lib/python3.10/site-packages/stevedore/extension.py:187\n../../../envs/bandit-fullrepro-001/lib/python3.10/site-packages/stevedore/extension.py:187\n  The verify_requirements argument is now a no-op and is deprecated for removal. Remove the argument from calls.\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n6 passed, 3 warnings in 0.17s\n",
+      "stderr": "",
+      "json_report": {
+        "created": 1783853076.798885,
+        "duration": 0.16527438163757324,
+        "exitcode": 0,
+        "root": "/root/autodl-tmp/Bmk-Lizhiqian/scorer-runs/bandit-reference-v2/oracle_worktree",
+        "environment": {},
+        "summary": {
+          "passed": 6,
+          "total": 6,
+          "collected": 6
+        },
+        "collectors": [
+          {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_issue_constructor_and_public_attributes",
+                "type": "Function",
+                "lineno": 16
+              },
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_issue_as_dict_without_code",
+                "type": "Function",
+                "lineno": 23
+              },
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_issue_filter_severity_ranking",
+                "type": "Function",
+                "lineno": 43
+              },
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_issue_filter_confidence_ranking",
+                "type": "Function",
+                "lineno": 52
+              },
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_issue_equality_fields_and_location_independence",
+                "type": "Function",
+                "lineno": 61
+              },
+              {
+                "nodeid": "filter/rewritten_upstream_tests.py::test_issue_get_code_from_public_filename",
+                "type": "Function",
+                "lineno": 70
+              }
+            ]
+          }
+        ],
+        "tests": [
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_issue_constructor_and_public_attributes",
+            "lineno": 16,
+            "outcome": "passed",
+            "keywords": [
+              "test_issue_constructor_and_public_attributes",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.0002479609102010727,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0002043992280960083,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0001569744199514389,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_issue_as_dict_without_code",
+            "lineno": 23,
+            "outcome": "passed",
+            "keywords": [
+              "test_issue_as_dict_without_code",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014114566147327423,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00025565922260284424,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00014688074588775635,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_issue_filter_severity_ranking",
+            "lineno": 43,
+            "outcome": "passed",
+            "keywords": [
+              "test_issue_filter_severity_ranking",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00014490820467472076,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00016896985471248627,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00018161162734031677,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_issue_filter_confidence_ranking",
+            "lineno": 52,
+            "outcome": "passed",
+            "keywords": [
+              "test_issue_filter_confidence_ranking",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00018869899213314056,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.0002054106444120407,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00017655827105045319,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_issue_equality_fields_and_location_independence",
+            "lineno": 61,
+            "outcome": "passed",
+            "keywords": [
+              "test_issue_equality_fields_and_location_independence",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.00017922557890415192,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00042360275983810425,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.0003747008740901947,
+              "outcome": "passed"
+            }
+          },
+          {
+            "nodeid": "filter/rewritten_upstream_tests.py::test_issue_get_code_from_public_filename",
+            "lineno": 70,
+            "outcome": "passed",
+            "keywords": [
+              "test_issue_get_code_from_public_filename",
+              "rewritten_upstream_tests.py",
+              "filter",
+              "oracle_worktree",
+              ""
+            ],
+            "setup": {
+              "duration": 0.003908313810825348,
+              "outcome": "passed"
+            },
+            "call": {
+              "duration": 0.00040634721517562866,
+              "outcome": "passed"
+            },
+            "teardown": {
+              "duration": 0.00023711472749710083,
+              "outcome": "passed"
+            }
+          }
+        ],
+        "warnings": [
+          {
+            "message": "The verify_requirements argument is now a no-op and is deprecated for removal. Remove the argument from calls.",
+            "category": "DeprecationWarning",
+            "when": "collect",
+            "filename": "/root/autodl-tmp/Bmk-Lizhiqian/envs/bandit-fullrepro-001/lib/python3.10/site-packages/stevedore/extension.py",
+            "lineno": 187
+          },
+          {
+            "message": "The verify_requirements argument is now a no-op and is deprecated for removal. Remove the argument from calls.",
+            "category": "DeprecationWarning",
+            "when": "collect",
+            "filename": "/root/autodl-tmp/Bmk-Lizhiqian/envs/bandit-fullrepro-001/lib/python3.10/site-packages/stevedore/extension.py",
+            "lineno": 187
+          },
+          {
+            "message": "The verify_requirements argument is now a no-op and is deprecated for removal. Remove the argument from calls.",
+            "category": "DeprecationWarning",
+            "when": "collect",
+            "filename": "/root/autodl-tmp/Bmk-Lizhiqian/envs/bandit-fullrepro-001/lib/python3.10/site-packages/stevedore/extension.py",
+            "lineno": 187
+          }
+        ]
+      }
+    }
+  },
+  "summary": {
+    "passed": 90,
+    "total": 90
+  },
+  "pass_rate_excluding_skips": 1.0,
+  "by_layer": {
+    "atomic": {
+      "passed": 65,
+      "total": 65
+    },
+    "integration": {
+      "passed": 14,
+      "total": 14
+    },
+    "system_e2e": {
+      "passed": 11,
+      "total": 11
+    }
+  },
+  "cases": [
+    {
+      "nodeid": "filter/generated_tests.py::test_ranking_constants_are_strings",
+      "base_nodeid": "filter/generated_tests.py::test_ranking_constants_are_strings",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0001443326473236084,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_cwe_dictionary_and_link[0]",
+      "base_nodeid": "filter/generated_tests.py::test_cwe_dictionary_and_link",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00012455880641937256,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_cwe_dictionary_and_link[79]",
+      "base_nodeid": "filter/generated_tests.py::test_cwe_dictionary_and_link",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00012079626321792603,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_cwe_dictionary_and_link[605]",
+      "base_nodeid": "filter/generated_tests.py::test_cwe_dictionary_and_link",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00011651590466499329,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_cwe_from_dict_mutates_and_returns_none",
+      "base_nodeid": "filter/generated_tests.py::test_cwe_from_dict_mutates_and_returns_none",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00010448694229125977,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_cwe_string_and_json_string",
+      "base_nodeid": "filter/generated_tests.py::test_cwe_string_and_json_string",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00011309050023555756,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_issue_filter_uses_both_rankings[HIGH-HIGH-MEDIUM-MEDIUM-True]",
+      "base_nodeid": "filter/generated_tests.py::test_issue_filter_uses_both_rankings",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00012333504855632782,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_issue_filter_uses_both_rankings[LOW-HIGH-MEDIUM-LOW-False]",
+      "base_nodeid": "filter/generated_tests.py::test_issue_filter_uses_both_rankings",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00012223795056343079,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_issue_filter_uses_both_rankings[HIGH-LOW-LOW-MEDIUM-False]",
+      "base_nodeid": "filter/generated_tests.py::test_issue_filter_uses_both_rankings",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00012341327965259552,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_issue_filter_uses_both_rankings[UNDEFINED-UNDEFINED-UNDEFINED-UNDEFINED-True]",
+      "base_nodeid": "filter/generated_tests.py::test_issue_filter_uses_both_rankings",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.000124441459774971,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_issue_as_dict_schema_without_code",
+      "base_nodeid": "filter/generated_tests.py::test_issue_as_dict_schema_without_code",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.000126691535115242,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_issue_from_dict_mutates_and_defaults_columns",
+      "base_nodeid": "filter/generated_tests.py::test_issue_from_dict_mutates_and_defaults_columns",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00014880672097206116,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_issue_equality_ignores_location_but_not_identity_fields",
+      "base_nodeid": "filter/generated_tests.py::test_issue_equality_ignores_location_but_not_identity_fields",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00012505054473876953,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_issue_get_code_respects_line_limit",
+      "base_nodeid": "filter/generated_tests.py::test_issue_get_code_respects_line_limit",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00028816238045692444,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_public_decorators_preserve_callable_behavior[checks-args0]",
+      "base_nodeid": "filter/generated_tests.py::test_public_decorators_preserve_callable_behavior",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0001233220100402832,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_public_decorators_preserve_callable_behavior[test_id-args1]",
+      "base_nodeid": "filter/generated_tests.py::test_public_decorators_preserve_callable_behavior",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00012539885938167572,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_public_decorators_preserve_callable_behavior[takes_config-args2]",
+      "base_nodeid": "filter/generated_tests.py::test_public_decorators_preserve_callable_behavior",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00012095458805561066,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_public_decorators_preserve_callable_behavior[accepts_baseline-args3]",
+      "base_nodeid": "filter/generated_tests.py::test_public_decorators_preserve_callable_behavior",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00012071244418621063,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B101]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.22205985896289349,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B102]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.21165704168379307,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B103]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.20592043548822403,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B104]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.209624245762825,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B105]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.2001953460276127,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B106]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.20160211995244026,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B107]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.20215418376028538,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B108]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.20539898797869682,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B110]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.20548341795802116,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B112]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.21934428066015244,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B113]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.21588213182985783,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B201]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.20977655611932278,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B202]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.2220282070338726,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B301]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.21294630877673626,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B307]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.21197451651096344,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B310]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.22224827483296394,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B311]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.20094341225922108,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B312]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.21356471441686153,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B323]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.2280882876366377,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B324]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.2205382026731968,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B401]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.22270410135388374,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B403]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.20751060545444489,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B404]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.20458524860441685,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B405]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.21080221608281136,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B415]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.20313572324812412,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B501]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.19983654469251633,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B506]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.21427581273019314,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B507]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.22242571413516998,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B602]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.2058558352291584,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B603]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.20504622906446457,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B605]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.2099380809813738,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B607]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.2064710669219494,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B608]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.2066131867468357,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B609]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.2041019145399332,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B612]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.20332923531532288,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B614]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.2068419810384512,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B615]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.20276912860572338,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B701]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.20096634700894356,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B703]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.203602883964777,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id[B704]",
+      "base_nodeid": "filter/generated_tests.py::test_detection_family_reports_expected_id",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.20381087809801102,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_clean_scan_has_empty_results_and_zero_exit",
+      "base_nodeid": "filter/generated_tests.py::test_clean_scan_has_empty_results_and_zero_exit",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.19855219312012196,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_finding_scan_has_one_exit_and_exit_zero_override",
+      "base_nodeid": "filter/generated_tests.py::test_finding_scan_has_one_exit_and_exit_zero_override",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.39744318276643753,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_syntax_error_is_reported_but_not_a_finding",
+      "base_nodeid": "filter/generated_tests.py::test_syntax_error_is_reported_but_not_a_finding",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.2039917204529047,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_stdin_scan_uses_same_json_projection",
+      "base_nodeid": "filter/generated_tests.py::test_stdin_scan_uses_same_json_projection",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.21044778637588024,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_directory_requires_recursive_flag_for_python_files",
+      "base_nodeid": "filter/generated_tests.py::test_directory_requires_recursive_flag_for_python_files",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.41597077064216137,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_recursive_exclusion_removes_matching_subtree",
+      "base_nodeid": "filter/generated_tests.py::test_recursive_exclusion_removes_matching_subtree",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.2033427394926548,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_bare_nosec_and_ignore_nosec",
+      "base_nodeid": "filter/generated_tests.py::test_bare_nosec_and_ignore_nosec",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.40913406014442444,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_named_nosec_suppresses_only_named_check",
+      "base_nodeid": "filter/generated_tests.py::test_named_nosec_suppresses_only_named_check",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.21378127299249172,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_threshold_filters_results_but_not_metrics",
+      "base_nodeid": "filter/generated_tests.py::test_threshold_filters_results_but_not_metrics",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.22818588092923164,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_overlapping_include_and_skip_is_invocation_error",
+      "base_nodeid": "filter/generated_tests.py::test_overlapping_include_and_skip_is_invocation_error",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.19246819615364075,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_repeated_tests_option_uses_last_value",
+      "base_nodeid": "filter/generated_tests.py::test_repeated_tests_option_uses_last_value",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.20296267792582512,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_ini_defaults_are_replaced_by_explicit_cli_tests",
+      "base_nodeid": "filter/generated_tests.py::test_ini_defaults_are_replaced_by_explicit_cli_tests",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.20538939349353313,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_ini_targets_apply_when_cli_target_is_absent",
+      "base_nodeid": "filter/generated_tests.py::test_ini_targets_apply_when_cli_target_is_absent",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.2174514476209879,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_yaml_profile_is_extended_by_selected_cli_tests",
+      "base_nodeid": "filter/generated_tests.py::test_yaml_profile_is_extended_by_selected_cli_tests",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.2126972395926714,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_number_controls_json_code_context",
+      "base_nodeid": "filter/generated_tests.py::test_number_controls_json_code_context",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.20955991186201572,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_supported_report_formats_emit_findings[csv]",
+      "base_nodeid": "filter/generated_tests.py::test_supported_report_formats_emit_findings",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.20077643729746342,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_supported_report_formats_emit_findings[yaml]",
+      "base_nodeid": "filter/generated_tests.py::test_supported_report_formats_emit_findings",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.21327142417430878,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_supported_report_formats_emit_findings[xml]",
+      "base_nodeid": "filter/generated_tests.py::test_supported_report_formats_emit_findings",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.2227699551731348,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_supported_report_formats_emit_findings[sarif]",
+      "base_nodeid": "filter/generated_tests.py::test_supported_report_formats_emit_findings",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.2104317955672741,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_supported_report_formats_emit_findings[txt]",
+      "base_nodeid": "filter/generated_tests.py::test_supported_report_formats_emit_findings",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.2152534183114767,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_output_file_receives_json_report",
+      "base_nodeid": "filter/generated_tests.py::test_output_file_receives_json_report",
+      "layer": "integration",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.21017244271934032,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_aggregate_mode_changes_result_order",
+      "base_nodeid": "filter/generated_tests.py::test_aggregate_mode_changes_result_order",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.4345365669578314,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_baseline_removes_matching_finding_and_changes_exit",
+      "base_nodeid": "filter/generated_tests.py::test_baseline_removes_matching_finding_and_changes_exit",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.4274339396506548,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_baseline_json_candidates_for_duplicate_new_signature",
+      "base_nodeid": "filter/generated_tests.py::test_baseline_json_candidates_for_duplicate_new_signature",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.4241555593907833,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_non_baseline_aware_format_is_invocation_error",
+      "base_nodeid": "filter/generated_tests.py::test_non_baseline_aware_format_is_invocation_error",
+      "layer": "system_e2e",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.41137150302529335,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/generated_tests.py::test_json_result_cwe_link_and_location_fields",
+      "base_nodeid": "filter/generated_tests.py::test_json_result_cwe_link_and_location_fields",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.20353005081415176,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_issue_constructor_and_public_attributes",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_issue_constructor_and_public_attributes",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0002043992280960083,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_issue_as_dict_without_code",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_issue_as_dict_without_code",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00025565922260284424,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_issue_filter_severity_ranking",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_issue_filter_severity_ranking",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00016896985471248627,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_issue_filter_confidence_ranking",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_issue_filter_confidence_ranking",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.0002054106444120407,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_issue_equality_fields_and_location_independence",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_issue_equality_fields_and_location_independence",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00042360275983810425,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "filter/rewritten_upstream_tests.py::test_issue_get_code_from_public_filename",
+      "base_nodeid": "filter/rewritten_upstream_tests.py::test_issue_get_code_from_public_filename",
+      "layer": "atomic",
+      "outcome": "passed",
+      "call": {
+        "duration": 0.00040634721517562866,
+        "outcome": "passed"
+      }
+    }
+  ]
+}

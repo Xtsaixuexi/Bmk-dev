@@ -1,0 +1,1488 @@
+benchmarking/analyze_benchmarks.py::filter_results_by_name
+benchmarking/analyze_benchmarks.py::main
+jsonpickle/compat.py::iterator
+jsonpickle/ext/numpy.py::get_byteorder
+jsonpickle/ext/numpy.py::register_handlers
+jsonpickle/ext/numpy.py::unregister_handlers
+jsonpickle/ext/yaml.py::register
+jsonpickle/handlers.py::register
+jsonpickle/handlers.py::unregister
+jsonpickle/handlers.py::get
+jsonpickle/handlers.py::handler_accepts_handler_context
+jsonpickle/pickler.py::encode
+jsonpickle/pickler.py::jsonpickle.pickler.Pickler.flatten
+jsonpickle/pickler.py::jsonpickle.pickler._mktyperef
+jsonpickle/pickler.py::jsonpickle.pickler.encode
+jsonpickle/unpickler.py::decode
+jsonpickle/unpickler.py::has_tag
+jsonpickle/unpickler.py::getargs
+jsonpickle/unpickler.py::make_blank_classic
+jsonpickle/unpickler.py::loadrepr
+jsonpickle/unpickler.py::has_tag_dict
+jsonpickle/unpickler.py::jsonpickle.unpickler.Unpickler._refname
+jsonpickle/unpickler.py::jsonpickle.unpickler.Unpickler.restore
+jsonpickle/unpickler.py::jsonpickle.unpickler._loadmodule
+jsonpickle/unpickler.py::jsonpickle.unpickler.decode
+jsonpickle/unpickler.py::jsonpickle.unpickler.has_tag
+jsonpickle/unpickler.py::jsonpickle.unpickler.has_tag_dict
+jsonpickle/unpickler.py::jsonpickle.unpickler.loadrepr
+jsonpickle/util.py::jsonpickle.util._is_dictionary_subclass
+jsonpickle/util.py::jsonpickle.util._is_function
+jsonpickle/util.py::jsonpickle.util._is_installed
+jsonpickle/util.py::jsonpickle.util._is_module_function
+jsonpickle/util.py::jsonpickle.util._is_object
+jsonpickle/util.py::jsonpickle.util._is_picklable
+jsonpickle/util.py::jsonpickle.util._is_primitive
+jsonpickle/util.py::jsonpickle.util._is_sequence_subclass
+jsonpickle/util.py::jsonpickle.util._is_type
+jsonpickle/util.py::jsonpickle.util.importable_name
+jsonpickle/util.py::jsonpickle.util.loadclass
+jsonpickle_benchmarks.py::simple_dict_encode
+jsonpickle_benchmarks.py::simple_dict_decode
+jsonpickle_benchmarks.py::simple_list_encode
+jsonpickle_benchmarks.py::simple_list_decode
+jsonpickle_benchmarks.py::simple_tuple_encode
+jsonpickle_benchmarks.py::simple_tuple_decode
+jsonpickle_benchmarks.py::simple_set_encode
+jsonpickle_benchmarks.py::simple_set_decode
+jsonpickle_benchmarks.py::complex_homogenous_dict_encode
+jsonpickle_benchmarks.py::complex_homogenous_dict_decode
+jsonpickle_benchmarks.py::complex_homogenous_list_encode
+jsonpickle_benchmarks.py::complex_homogenous_list_decode
+jsonpickle_benchmarks.py::complex_homogenous_tuple_encode
+jsonpickle_benchmarks.py::complex_homogenous_tuple_decode
+jsonpickle_benchmarks.py::complex_homogenous_set_encode
+jsonpickle_benchmarks.py::complex_homogenous_set_decode
+jsonpickle_benchmarks.py::complex_heterogenous_dict_encode
+jsonpickle_benchmarks.py::complex_heterogenous_dict_decode
+jsonpickle_benchmarks.py::complex_heterogenous_list_encode
+jsonpickle_benchmarks.py::complex_heterogenous_list_decode
+jsonpickle_benchmarks.py::complex_heterogenous_tuple_encode
+jsonpickle_benchmarks.py::complex_heterogenous_tuple_decode
+jsonpickle_benchmarks.py::complex_heterogenous_set_encode
+jsonpickle_benchmarks.py::complex_heterogenous_set_decode
+jsonpickle_benchmarks.py::simple_class_encode
+jsonpickle_benchmarks.py::simple_class_decode
+jsonpickle_benchmarks.py::complex_class_encode
+jsonpickle_benchmarks.py::complex_class_decode
+jsonpickle_benchmarks.py::state_class_encode
+jsonpickle_benchmarks.py::state_class_decode
+tests/backend_test.py::BackendBase::skip
+tests/backend_test.py::BackendBase::set_backend
+tests/backend_test.py::BackendBase::set_preferred_backend
+tests/backend_test.py::BackendBase::tearDown
+tests/backend_test.py::BackendBase::assert_roundtrip
+tests/backend_test.py::BackendBase::test_None_dict_key
+tests/backend_test.py::BackendBase::test_encode_with_indent_and_separators
+tests/backend_test.py::JsonTestCase::skip
+tests/backend_test.py::JsonTestCase::set_backend
+tests/backend_test.py::JsonTestCase::set_preferred_backend
+tests/backend_test.py::JsonTestCase::tearDown
+tests/backend_test.py::JsonTestCase::assert_roundtrip
+tests/backend_test.py::JsonTestCase::test_None_dict_key
+tests/backend_test.py::JsonTestCase::test_encode_with_indent_and_separators
+tests/backend_test.py::JsonTestCase::setUp
+tests/backend_test.py::JsonTestCase::test_backend
+tests/backend_test.py::SimpleJsonTestCase::skip
+tests/backend_test.py::SimpleJsonTestCase::set_backend
+tests/backend_test.py::SimpleJsonTestCase::set_preferred_backend
+tests/backend_test.py::SimpleJsonTestCase::tearDown
+tests/backend_test.py::SimpleJsonTestCase::assert_roundtrip
+tests/backend_test.py::SimpleJsonTestCase::test_None_dict_key
+tests/backend_test.py::SimpleJsonTestCase::test_encode_with_indent_and_separators
+tests/backend_test.py::SimpleJsonTestCase::setUp
+tests/backend_test.py::SimpleJsonTestCase::test_backend
+tests/backend_test.py::SimpleJsonTestCase::test_decimal
+tests/backend_test.py::SimpleJsonTestCase::test_sort_keys
+tests/backend_test.py::has_module
+tests/backend_test.py::UJsonTestCase::skip
+tests/backend_test.py::UJsonTestCase::set_backend
+tests/backend_test.py::UJsonTestCase::set_preferred_backend
+tests/backend_test.py::UJsonTestCase::tearDown
+tests/backend_test.py::UJsonTestCase::assert_roundtrip
+tests/backend_test.py::UJsonTestCase::test_None_dict_key
+tests/backend_test.py::UJsonTestCase::test_encode_with_indent_and_separators
+tests/backend_test.py::UJsonTestCase::setUp
+tests/backend_test.py::UJsonTestCase::test_backend
+tests/backend_test.py::YamlTestCase::skip
+tests/backend_test.py::YamlTestCase::set_backend
+tests/backend_test.py::YamlTestCase::set_preferred_backend
+tests/backend_test.py::YamlTestCase::tearDown
+tests/backend_test.py::YamlTestCase::assert_roundtrip
+tests/backend_test.py::YamlTestCase::test_None_dict_key
+tests/backend_test.py::YamlTestCase::test_encode_with_indent_and_separators
+tests/backend_test.py::YamlTestCase::setUp
+tests/backend_test.py::YamlTestCase::test_backend
+tests/collections_test.py::c_factory
+tests/collections_test.py::pickle_and_unpickle
+tests/collections_test.py::test_dict_no_cycle
+tests/collections_test.py::test_dict_self_cycle
+tests/collections_test.py::test_dict_mutual_cycle
+tests/collections_test.py::test_set_no_cycle
+tests/collections_test.py::test_set_self_cycle
+tests/collections_test.py::test_set_mutual_cycle
+tests/collections_test.py::test_dict_no_cycle
+tests/collections_test.py::test_dict_self_cycle
+tests/collections_test.py::test_dict_mutual_cycle
+tests/collections_test.py::test_set_no_cycle
+tests/collections_test.py::test_set_self_cycle
+tests/collections_test.py::test_set_mutual_cycle
+tests/datetime_test.py::test_object_with_inner_datetime_refs
+tests/datetime_test.py::test_datetime
+tests/datetime_test.py::test_date
+tests/datetime_test.py::test_time
+tests/datetime_test.py::test_timedelta
+tests/datetime_test.py::test_utc
+tests/datetime_test.py::test_unpickleable
+tests/datetime_test.py::test_object_with_datetime
+tests/datetime_test.py::test_datetime_with_zoneinfo
+tests/datetime_test.py::test_struct_time
+tests/datetime_test.py::test_struct_time_chars
+tests/datetime_test.py::test_datetime_structure
+tests/datetime_test.py::test_datetime_inside_int_keys_defaults
+tests/datetime_test.py::test_datetime_inside_int_keys_with_keys_enabled
+tests/datetime_test.py::test_datetime_repr_not_unpicklable
+tests/datetime_test.py::test_datetime_dict_keys_defaults
+tests/datetime_test.py::test_datetime_dict_keys_with_keys_enabled
+tests/datetime_test.py::test_object_with_inner_datetime_refs
+tests/datetime_test.py::test_datetime
+tests/datetime_test.py::test_date
+tests/datetime_test.py::test_time
+tests/datetime_test.py::test_timedelta
+tests/datetime_test.py::test_utc
+tests/datetime_test.py::test_unpickleable
+tests/datetime_test.py::test_object_with_datetime
+tests/datetime_test.py::test_datetime_with_zoneinfo
+tests/datetime_test.py::test_struct_time
+tests/datetime_test.py::test_struct_time_chars
+tests/datetime_test.py::test_datetime_structure
+tests/datetime_test.py::test_datetime_inside_int_keys_defaults
+tests/datetime_test.py::test_datetime_inside_int_keys_with_keys_enabled
+tests/datetime_test.py::test_datetime_repr_not_unpicklable
+tests/datetime_test.py::test_datetime_dict_keys_defaults
+tests/datetime_test.py::test_datetime_dict_keys_with_keys_enabled
+tests/document_test.py::test_cyclical
+tests/document_test.py::test_cyclical
+tests/ecdsa_test.py::gmpy_extension
+tests/ecdsa_test.py::EcdsaTestCase::skip
+tests/ecdsa_test.py::EcdsaTestCase::setUp
+tests/ecdsa_test.py::EcdsaTestCase::test_roundtrip
+tests/feedparser_test.py::FeedParserTestCase::skip
+tests/feedparser_test.py::FeedParserTestCase::setUp
+tests/feedparser_test.py::FeedParserTestCase::test
+tests/handler_test.py::HandlerTestCase::setUp
+tests/handler_test.py::HandlerTestCase::tearDown
+tests/handler_test.py::HandlerTestCase::roundtrip
+tests/handler_test.py::HandlerTestCase::test_custom_handler
+tests/handler_test.py::HandlerTestCase::test_references
+tests/handler_test.py::HandlerTestCase::test_invalid_class
+tests/handler_test.py::HandlerTestCase::test_base_handler
+tests/handler_test.py::HandlerTestCase::test_decorated_register
+tests/handler_test.py::HandlerTestCase::test_custom_handler_can_rewrite_everything
+tests/handler_test.py::HandlerTestCase::test_custom_handler_with_context
+tests/handler_test.py::HandlerTestCase::test_custom_handler_without_context
+tests/helper.py::SkippableTest::skip
+tests/jsonpickle_test.py::on_missing_callback
+tests/jsonpickle_test.py::pickler
+tests/jsonpickle_test.py::unpickler
+tests/jsonpickle_test.py::b85_pickler
+tests/jsonpickle_test.py::test_bytes_base85
+tests/jsonpickle_test.py::test_bytes_base64_default
+tests/jsonpickle_test.py::test_decode_base85
+tests/jsonpickle_test.py::test_decode_invalid_b85[]
+tests/jsonpickle_test.py::test_decode_invalid_b85[/]
+tests/jsonpickle_test.py::test_decode_invalid_b85[\udc00]
+tests/jsonpickle_test.py::test_decode_invalid_b85[1]
+tests/jsonpickle_test.py::test_decode_invalid_b85[True]
+tests/jsonpickle_test.py::test_decode_invalid_b85[False]
+tests/jsonpickle_test.py::test_decode_invalid_b85[None]
+tests/jsonpickle_test.py::test_decode_invalid_b85[value7]
+tests/jsonpickle_test.py::test_decode_invalid_b85[value8]
+tests/jsonpickle_test.py::test_base85_still_handles_base64
+tests/jsonpickle_test.py::test_decode_invalid_b64[]
+tests/jsonpickle_test.py::test_decode_invalid_b64[x]
+tests/jsonpickle_test.py::test_decode_invalid_b64[!]
+tests/jsonpickle_test.py::test_decode_invalid_b64[\udc00]
+tests/jsonpickle_test.py::test_decode_invalid_b64[0]
+tests/jsonpickle_test.py::test_decode_invalid_b64[1]
+tests/jsonpickle_test.py::test_decode_invalid_b64[True]
+tests/jsonpickle_test.py::test_decode_invalid_b64[False]
+tests/jsonpickle_test.py::test_decode_invalid_b64[None]
+tests/jsonpickle_test.py::test_decode_invalid_b64[value9]
+tests/jsonpickle_test.py::test_decode_invalid_b64[value10]
+tests/jsonpickle_test.py::test_string
+tests/jsonpickle_test.py::test_int
+tests/jsonpickle_test.py::test_float
+tests/jsonpickle_test.py::test_boolean
+tests/jsonpickle_test.py::test_none
+tests/jsonpickle_test.py::test_list
+tests/jsonpickle_test.py::test_nonetype
+tests/jsonpickle_test.py::test_set
+tests/jsonpickle_test.py::test_set_with_invalid_data[]
+tests/jsonpickle_test.py::test_set_with_invalid_data[0]
+tests/jsonpickle_test.py::test_set_with_invalid_data[1]
+tests/jsonpickle_test.py::test_set_with_invalid_data[True]
+tests/jsonpickle_test.py::test_set_with_invalid_data[False]
+tests/jsonpickle_test.py::test_set_with_invalid_data[None]
+tests/jsonpickle_test.py::test_set_with_invalid_data[value6]
+tests/jsonpickle_test.py::test_set_with_invalid_data[value7]
+tests/jsonpickle_test.py::test_tuple_with_invalid_data[]
+tests/jsonpickle_test.py::test_tuple_with_invalid_data[0]
+tests/jsonpickle_test.py::test_tuple_with_invalid_data[1]
+tests/jsonpickle_test.py::test_tuple_with_invalid_data[True]
+tests/jsonpickle_test.py::test_tuple_with_invalid_data[False]
+tests/jsonpickle_test.py::test_tuple_with_invalid_data[None]
+tests/jsonpickle_test.py::test_tuple_with_invalid_data[value6]
+tests/jsonpickle_test.py::test_tuple_with_invalid_data[value7]
+tests/jsonpickle_test.py::test_iterator_with_invalid_data
+tests/jsonpickle_test.py::test_reduce_with_invalid_data[]
+tests/jsonpickle_test.py::test_reduce_with_invalid_data[0]
+tests/jsonpickle_test.py::test_reduce_with_invalid_data[True]
+tests/jsonpickle_test.py::test_reduce_with_invalid_data[False]
+tests/jsonpickle_test.py::test_reduce_with_invalid_data[None]
+tests/jsonpickle_test.py::test_reduce_with_invalid_data[value5]
+tests/jsonpickle_test.py::test_reduce_with_invalid_data[value6]
+tests/jsonpickle_test.py::test_reduce_with_invalid_data[value7]
+tests/jsonpickle_test.py::test_reduce_with_invalid_data[value8]
+tests/jsonpickle_test.py::test_restore_id_with_invalid_data[]
+tests/jsonpickle_test.py::test_restore_id_with_invalid_data[x]
+tests/jsonpickle_test.py::test_restore_id_with_invalid_data[1]
+tests/jsonpickle_test.py::test_restore_id_with_invalid_data[True]
+tests/jsonpickle_test.py::test_restore_id_with_invalid_data[value4]
+tests/jsonpickle_test.py::test_restore_id_with_invalid_data[value5]
+tests/jsonpickle_test.py::test_dict
+tests/jsonpickle_test.py::test_tuple
+tests/jsonpickle_test.py::test_tuple_roundtrip
+tests/jsonpickle_test.py::test_set_roundtrip
+tests/jsonpickle_test.py::test_list_roundtrip
+tests/jsonpickle_test.py::test_method_roundtrip
+tests/jsonpickle_test.py::test_types_module_roundtrip
+tests/jsonpickle_test.py::test_class
+tests/jsonpickle_test.py::test_classlist
+tests/jsonpickle_test.py::test_classdict
+tests/jsonpickle_test.py::test_recursive
+tests/jsonpickle_test.py::test_tuple_notunpicklable
+tests/jsonpickle_test.py::test_set_not_unpicklable
+tests/jsonpickle_test.py::test_reduce_only_object_notunpicklable
+tests/jsonpickle_test.py::test_thing_with_module
+tests/jsonpickle_test.py::test_thing_with_module_safe
+tests/jsonpickle_test.py::test_thing_with_submodule
+tests/jsonpickle_test.py::test_type_reference
+tests/jsonpickle_test.py::test_class_reference
+tests/jsonpickle_test.py::test_supports_getstate_setstate
+tests/jsonpickle_test.py::test_references
+tests/jsonpickle_test.py::test_references_in_number_keyed_dict
+tests/jsonpickle_test.py::test_builtin_error
+tests/jsonpickle_test.py::test_builtin_function
+tests/jsonpickle_test.py::test_restore_legacy_builtins
+tests/jsonpickle_test.py::test_restore_invalid_repr[module_does_not_exist/ignored-None]
+tests/jsonpickle_test.py::test_restore_invalid_repr[builtins/int-None]
+tests/jsonpickle_test.py::test_restore_invalid_repr[builtins/invalid.int-None]
+tests/jsonpickle_test.py::test_restore_invalid_repr[builtins/builtinsx.int-None]
+tests/jsonpickle_test.py::test_unpickler_on_missing
+tests/jsonpickle_test.py::test_private_slot_members
+tests/jsonpickle_test.py::test_include_properties_slots
+tests/jsonpickle_test.py::test_include_properties_dict
+tests/jsonpickle_test.py::test_load_non_fully_qualified_classes
+tests/jsonpickle_test.py::test_classes_dict
+tests/jsonpickle_test.py::test_warnings
+tests/jsonpickle_test.py::test_API_names
+tests/jsonpickle_test.py::test_encode
+tests/jsonpickle_test.py::test_encode_notunpicklable
+tests/jsonpickle_test.py::test_decode
+tests/jsonpickle_test.py::test_json
+tests/jsonpickle_test.py::test_unicode_dict_keys
+tests/jsonpickle_test.py::test_tuple_dict_keys_default
+tests/jsonpickle_test.py::test_tuple_dict_keys_with_keys_enabled
+tests/jsonpickle_test.py::test_None_dict_key_default
+tests/jsonpickle_test.py::test_None_dict_key_with_keys_enabled
+tests/jsonpickle_test.py::test_object_dict_keys
+tests/jsonpickle_test.py::test_int_dict_keys_defaults
+tests/jsonpickle_test.py::test_int_dict_keys_with_keys_enabled
+tests/jsonpickle_test.py::test_string_key_requiring_escape_dict_keys_with_keys_enabled
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/bytes]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/default_factory]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/function]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/id]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/initargs]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/iterator]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/mod]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/newargs]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/newargsex]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/newobj]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/object]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/property]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/reduce]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/ref]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/repr]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/seq]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/set]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/state]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/tuple]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/type]
+tests/jsonpickle_test.py::test_reserved_tag_dict_key_nested_in_object_with_keys_enabled
+tests/jsonpickle_test.py::test_string_key_not_requiring_escape_dict_keys_with_keys_enabled
+tests/jsonpickle_test.py::test_dict_subclass
+tests/jsonpickle_test.py::test_dict_subclass_with_references
+tests/jsonpickle_test.py::test_list_of_objects
+tests/jsonpickle_test.py::test_refs_keys_values
+tests/jsonpickle_test.py::test_object_keys_to_list
+tests/jsonpickle_test.py::test_refs_in_objects
+tests/jsonpickle_test.py::test_refs_recursive
+tests/jsonpickle_test.py::test_load_backend
+tests/jsonpickle_test.py::test_set_preferred_backend_allows_magic
+tests/jsonpickle_test.py::test_load_backend_submodule
+tests/jsonpickle_test.py::test_load_backend_handles_bad_encode
+tests/jsonpickle_test.py::test_load_backend_raises_on_bad_decode
+tests/jsonpickle_test.py::test_load_backend_handles_bad_loads_exc
+tests/jsonpickle_test.py::test_list_item_reference
+tests/jsonpickle_test.py::test_reference_to_list
+tests/jsonpickle_test.py::test_make_refs_disabled_list
+tests/jsonpickle_test.py::test_make_refs_disabled_reference_to_list
+tests/jsonpickle_test.py::test_can_serialize_inner_classes
+tests/jsonpickle_test.py::test_can_serialize_nested_classes
+tests/jsonpickle_test.py::test_can_serialize_nested_class_objects
+tests/jsonpickle_test.py::test_listlike
+tests/jsonpickle_test.py::test_v1_decode
+tests/jsonpickle_test.py::test_depth_tracking
+tests/jsonpickle_test.py::test_readonly_attrs
+tests/jsonpickle_test.py::test_readonly_str_attrs
+tests/jsonpickle_test.py::test_exception_kwargs
+tests/jsonpickle_test.py::protocol_2_reduce_tuple_func
+tests/jsonpickle_test.py::test_pickle_newargs_ex
+tests/jsonpickle_test.py::test_validate_reconstruct_by_newargs_ex
+tests/jsonpickle_test.py::test_references_named_tuple
+tests/jsonpickle_test.py::test_reduce_complex_num
+tests/jsonpickle_test.py::test_reduce_complex_zero
+tests/jsonpickle_test.py::test_reduce_dictitems
+tests/jsonpickle_test.py::test_reduce_listitems_extend
+tests/jsonpickle_test.py::test_reduce_listitems_append
+tests/jsonpickle_test.py::test_reduce_state_setstate
+tests/jsonpickle_test.py::test_reduce_state_no_dict
+tests/jsonpickle_test.py::test_reduce_state_dict
+tests/jsonpickle_test.py::test_reduce_basic
+tests/jsonpickle_test.py::test_reduce_basic_func
+tests/jsonpickle_test.py::test_reduce_newobj
+tests/jsonpickle_test.py::test_reduce_iter
+tests/jsonpickle_test.py::test_reduce_iterable
+tests/jsonpickle_test.py::test_reduce_string
+tests/jsonpickle_test.py::test_reduce_ex_string
+tests/jsonpickle_test.py::test_pickle_newargs
+tests/jsonpickle_test.py::test_validate_reconstruct_by_newargs
+tests/jsonpickle_test.py::test_getnewargs_priority
+tests/jsonpickle_test.py::test_restore_dict_state
+tests/jsonpickle_test.py::test_restore_nested_dict_state_with_references_preserved
+tests/jsonpickle_test.py::test_restore_slots_state
+tests/jsonpickle_test.py::test_restore_slots_dict_state
+tests/jsonpickle_test.py::test_setstate
+tests/jsonpickle_test.py::test_handles_nested_objects
+tests/jsonpickle_test.py::test_cyclical_objects
+tests/jsonpickle_test.py::test_handles_cyclical_objects_in_lists
+tests/jsonpickle_test.py::test_cyclical_objects_unpickleable
+tests/jsonpickle_test.py::test_dict_references_are_preserved
+tests/jsonpickle_test.py::test_repeat_objects_are_expanded
+tests/jsonpickle_test.py::test_bytes_base85
+tests/jsonpickle_test.py::test_bytes_base64_default
+tests/jsonpickle_test.py::test_decode_base85
+tests/jsonpickle_test.py::test_decode_invalid_b85[]
+tests/jsonpickle_test.py::test_decode_invalid_b85[/]
+tests/jsonpickle_test.py::test_decode_invalid_b85[\udc00]
+tests/jsonpickle_test.py::test_decode_invalid_b85[1]
+tests/jsonpickle_test.py::test_decode_invalid_b85[True]
+tests/jsonpickle_test.py::test_decode_invalid_b85[False]
+tests/jsonpickle_test.py::test_decode_invalid_b85[None]
+tests/jsonpickle_test.py::test_decode_invalid_b85[value7]
+tests/jsonpickle_test.py::test_decode_invalid_b85[value8]
+tests/jsonpickle_test.py::test_base85_still_handles_base64
+tests/jsonpickle_test.py::test_decode_invalid_b64[]
+tests/jsonpickle_test.py::test_decode_invalid_b64[x]
+tests/jsonpickle_test.py::test_decode_invalid_b64[!]
+tests/jsonpickle_test.py::test_decode_invalid_b64[\udc00]
+tests/jsonpickle_test.py::test_decode_invalid_b64[0]
+tests/jsonpickle_test.py::test_decode_invalid_b64[1]
+tests/jsonpickle_test.py::test_decode_invalid_b64[True]
+tests/jsonpickle_test.py::test_decode_invalid_b64[False]
+tests/jsonpickle_test.py::test_decode_invalid_b64[None]
+tests/jsonpickle_test.py::test_decode_invalid_b64[value9]
+tests/jsonpickle_test.py::test_decode_invalid_b64[value10]
+tests/jsonpickle_test.py::test_string
+tests/jsonpickle_test.py::test_int
+tests/jsonpickle_test.py::test_float
+tests/jsonpickle_test.py::test_boolean
+tests/jsonpickle_test.py::test_none
+tests/jsonpickle_test.py::test_list
+tests/jsonpickle_test.py::test_nonetype
+tests/jsonpickle_test.py::test_set
+tests/jsonpickle_test.py::test_set_with_invalid_data[]
+tests/jsonpickle_test.py::test_set_with_invalid_data[0]
+tests/jsonpickle_test.py::test_set_with_invalid_data[1]
+tests/jsonpickle_test.py::test_set_with_invalid_data[True]
+tests/jsonpickle_test.py::test_set_with_invalid_data[False]
+tests/jsonpickle_test.py::test_set_with_invalid_data[None]
+tests/jsonpickle_test.py::test_set_with_invalid_data[value6]
+tests/jsonpickle_test.py::test_set_with_invalid_data[value7]
+tests/jsonpickle_test.py::test_tuple_with_invalid_data[]
+tests/jsonpickle_test.py::test_tuple_with_invalid_data[0]
+tests/jsonpickle_test.py::test_tuple_with_invalid_data[1]
+tests/jsonpickle_test.py::test_tuple_with_invalid_data[True]
+tests/jsonpickle_test.py::test_tuple_with_invalid_data[False]
+tests/jsonpickle_test.py::test_tuple_with_invalid_data[None]
+tests/jsonpickle_test.py::test_tuple_with_invalid_data[value6]
+tests/jsonpickle_test.py::test_tuple_with_invalid_data[value7]
+tests/jsonpickle_test.py::test_iterator_with_invalid_data
+tests/jsonpickle_test.py::test_reduce_with_invalid_data[]
+tests/jsonpickle_test.py::test_reduce_with_invalid_data[0]
+tests/jsonpickle_test.py::test_reduce_with_invalid_data[True]
+tests/jsonpickle_test.py::test_reduce_with_invalid_data[False]
+tests/jsonpickle_test.py::test_reduce_with_invalid_data[None]
+tests/jsonpickle_test.py::test_reduce_with_invalid_data[value5]
+tests/jsonpickle_test.py::test_reduce_with_invalid_data[value6]
+tests/jsonpickle_test.py::test_reduce_with_invalid_data[value7]
+tests/jsonpickle_test.py::test_reduce_with_invalid_data[value8]
+tests/jsonpickle_test.py::test_restore_id_with_invalid_data[]
+tests/jsonpickle_test.py::test_restore_id_with_invalid_data[x]
+tests/jsonpickle_test.py::test_restore_id_with_invalid_data[1]
+tests/jsonpickle_test.py::test_restore_id_with_invalid_data[True]
+tests/jsonpickle_test.py::test_restore_id_with_invalid_data[value4]
+tests/jsonpickle_test.py::test_restore_id_with_invalid_data[value5]
+tests/jsonpickle_test.py::test_dict
+tests/jsonpickle_test.py::test_tuple
+tests/jsonpickle_test.py::test_tuple_roundtrip
+tests/jsonpickle_test.py::test_set_roundtrip
+tests/jsonpickle_test.py::test_list_roundtrip
+tests/jsonpickle_test.py::test_method_roundtrip
+tests/jsonpickle_test.py::test_types_module_roundtrip
+tests/jsonpickle_test.py::test_class
+tests/jsonpickle_test.py::test_classlist
+tests/jsonpickle_test.py::test_classdict
+tests/jsonpickle_test.py::test_recursive
+tests/jsonpickle_test.py::test_tuple_notunpicklable
+tests/jsonpickle_test.py::test_set_not_unpicklable
+tests/jsonpickle_test.py::test_reduce_only_object_notunpicklable
+tests/jsonpickle_test.py::test_thing_with_module
+tests/jsonpickle_test.py::test_thing_with_module_safe
+tests/jsonpickle_test.py::test_thing_with_submodule
+tests/jsonpickle_test.py::test_type_reference
+tests/jsonpickle_test.py::test_class_reference
+tests/jsonpickle_test.py::test_supports_getstate_setstate
+tests/jsonpickle_test.py::test_references
+tests/jsonpickle_test.py::test_references_in_number_keyed_dict
+tests/jsonpickle_test.py::test_builtin_error
+tests/jsonpickle_test.py::test_builtin_function
+tests/jsonpickle_test.py::test_restore_legacy_builtins
+tests/jsonpickle_test.py::test_restore_invalid_repr[module_does_not_exist/ignored-None]
+tests/jsonpickle_test.py::test_restore_invalid_repr[builtins/int-None]
+tests/jsonpickle_test.py::test_restore_invalid_repr[builtins/invalid.int-None]
+tests/jsonpickle_test.py::test_restore_invalid_repr[builtins/builtinsx.int-None]
+tests/jsonpickle_test.py::test_unpickler_on_missing
+tests/jsonpickle_test.py::test_private_slot_members
+tests/jsonpickle_test.py::test_include_properties_slots
+tests/jsonpickle_test.py::test_include_properties_dict
+tests/jsonpickle_test.py::test_load_non_fully_qualified_classes
+tests/jsonpickle_test.py::test_classes_dict
+tests/jsonpickle_test.py::test_warnings
+tests/jsonpickle_test.py::test_API_names
+tests/jsonpickle_test.py::test_encode
+tests/jsonpickle_test.py::test_encode_notunpicklable
+tests/jsonpickle_test.py::test_decode
+tests/jsonpickle_test.py::test_json
+tests/jsonpickle_test.py::test_unicode_dict_keys
+tests/jsonpickle_test.py::test_tuple_dict_keys_default
+tests/jsonpickle_test.py::test_tuple_dict_keys_with_keys_enabled
+tests/jsonpickle_test.py::test_None_dict_key_default
+tests/jsonpickle_test.py::test_None_dict_key_with_keys_enabled
+tests/jsonpickle_test.py::test_object_dict_keys
+tests/jsonpickle_test.py::test_int_dict_keys_defaults
+tests/jsonpickle_test.py::test_int_dict_keys_with_keys_enabled
+tests/jsonpickle_test.py::test_string_key_requiring_escape_dict_keys_with_keys_enabled
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/bytes]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/default_factory]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/function]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/id]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/initargs]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/iterator]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/mod]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/newargs]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/newargsex]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/newobj]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/object]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/property]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/reduce]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/ref]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/repr]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/seq]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/set]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/state]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/tuple]
+tests/jsonpickle_test.py::test_reserved_tag_dict_keys_with_keys_enabled[py/type]
+tests/jsonpickle_test.py::test_reserved_tag_dict_key_nested_in_object_with_keys_enabled
+tests/jsonpickle_test.py::test_string_key_not_requiring_escape_dict_keys_with_keys_enabled
+tests/jsonpickle_test.py::test_dict_subclass
+tests/jsonpickle_test.py::test_dict_subclass_with_references
+tests/jsonpickle_test.py::test_list_of_objects
+tests/jsonpickle_test.py::test_refs_keys_values
+tests/jsonpickle_test.py::test_object_keys_to_list
+tests/jsonpickle_test.py::test_refs_in_objects
+tests/jsonpickle_test.py::test_refs_recursive
+tests/jsonpickle_test.py::test_load_backend
+tests/jsonpickle_test.py::test_set_preferred_backend_allows_magic
+tests/jsonpickle_test.py::test_load_backend_submodule
+tests/jsonpickle_test.py::test_load_backend_handles_bad_encode
+tests/jsonpickle_test.py::test_load_backend_raises_on_bad_decode
+tests/jsonpickle_test.py::test_load_backend_handles_bad_loads_exc
+tests/jsonpickle_test.py::test_list_item_reference
+tests/jsonpickle_test.py::test_reference_to_list
+tests/jsonpickle_test.py::test_make_refs_disabled_list
+tests/jsonpickle_test.py::test_make_refs_disabled_reference_to_list
+tests/jsonpickle_test.py::test_can_serialize_inner_classes
+tests/jsonpickle_test.py::test_can_serialize_nested_classes
+tests/jsonpickle_test.py::test_can_serialize_nested_class_objects
+tests/jsonpickle_test.py::test_listlike
+tests/jsonpickle_test.py::test_v1_decode
+tests/jsonpickle_test.py::test_depth_tracking
+tests/jsonpickle_test.py::test_readonly_attrs
+tests/jsonpickle_test.py::test_readonly_str_attrs
+tests/jsonpickle_test.py::test_exception_kwargs
+tests/jsonpickle_test.py::test_pickle_newargs_ex
+tests/jsonpickle_test.py::test_validate_reconstruct_by_newargs_ex
+tests/jsonpickle_test.py::test_references_named_tuple
+tests/jsonpickle_test.py::test_reduce_complex_num
+tests/jsonpickle_test.py::test_reduce_complex_zero
+tests/jsonpickle_test.py::test_reduce_dictitems
+tests/jsonpickle_test.py::test_reduce_listitems_extend
+tests/jsonpickle_test.py::test_reduce_listitems_append
+tests/jsonpickle_test.py::test_reduce_state_setstate
+tests/jsonpickle_test.py::test_reduce_state_no_dict
+tests/jsonpickle_test.py::test_reduce_state_dict
+tests/jsonpickle_test.py::test_reduce_basic
+tests/jsonpickle_test.py::test_reduce_basic_func
+tests/jsonpickle_test.py::test_reduce_newobj
+tests/jsonpickle_test.py::test_reduce_iter
+tests/jsonpickle_test.py::test_reduce_iterable
+tests/jsonpickle_test.py::test_reduce_string
+tests/jsonpickle_test.py::test_reduce_ex_string
+tests/jsonpickle_test.py::test_pickle_newargs
+tests/jsonpickle_test.py::test_validate_reconstruct_by_newargs
+tests/jsonpickle_test.py::test_getnewargs_priority
+tests/jsonpickle_test.py::test_restore_dict_state
+tests/jsonpickle_test.py::test_restore_nested_dict_state_with_references_preserved
+tests/jsonpickle_test.py::test_restore_slots_state
+tests/jsonpickle_test.py::test_restore_slots_dict_state
+tests/jsonpickle_test.py::test_setstate
+tests/jsonpickle_test.py::test_handles_nested_objects
+tests/jsonpickle_test.py::test_cyclical_objects
+tests/jsonpickle_test.py::test_handles_cyclical_objects_in_lists
+tests/jsonpickle_test.py::test_cyclical_objects_unpickleable
+tests/jsonpickle_test.py::test_dict_references_are_preserved
+tests/jsonpickle_test.py::test_repeat_objects_are_expanded
+tests/numpy_test.py::numpy_extension
+tests/numpy_test.py::roundtrip
+tests/numpy_test.py::test_dtype_roundtrip
+tests/numpy_test.py::test_generic_roundtrip
+tests/numpy_test.py::test_ndarray_roundtrip
+tests/numpy_test.py::test_shapes_containing_zeroes
+tests/numpy_test.py::test_accuracy
+tests/numpy_test.py::test_b64
+tests/numpy_test.py::test_views
+tests/numpy_test.py::test_strides
+tests/numpy_test.py::test_weird_arrays
+tests/numpy_test.py::test_transpose
+tests/numpy_test.py::test_fortran_base
+tests/numpy_test.py::test_buffer
+tests/numpy_test.py::test_as_strided
+tests/numpy_test.py::test_immutable
+tests/numpy_test.py::test_byteorder
+tests/numpy_test.py::test_zero_dimensional_array
+tests/numpy_test.py::test_nested_data_list_of_dict_with_list_keys
+tests/numpy_test.py::test_size_threshold_None
+tests/numpy_test.py::test_ndarray_dtype_object
+tests/numpy_test.py::test_np_random
+tests/numpy_test.py::test_np_poly1d
+tests/numpy_test.py::test_np_datetime64_units
+tests/numpy_test.py::test_np_ufuncs
+tests/numpy_test.py::test_no_external_references
+tests/numpy_test.py::test_dtype_roundtrip
+tests/numpy_test.py::test_generic_roundtrip
+tests/numpy_test.py::test_ndarray_roundtrip
+tests/numpy_test.py::test_shapes_containing_zeroes
+tests/numpy_test.py::test_accuracy
+tests/numpy_test.py::test_b64
+tests/numpy_test.py::test_views
+tests/numpy_test.py::test_strides
+tests/numpy_test.py::test_weird_arrays
+tests/numpy_test.py::test_transpose
+tests/numpy_test.py::test_fortran_base
+tests/numpy_test.py::test_buffer
+tests/numpy_test.py::test_as_strided
+tests/numpy_test.py::test_immutable
+tests/numpy_test.py::test_byteorder
+tests/numpy_test.py::test_zero_dimensional_array
+tests/numpy_test.py::test_nested_data_list_of_dict_with_list_keys
+tests/numpy_test.py::test_size_threshold_None
+tests/numpy_test.py::test_ndarray_dtype_object
+tests/numpy_test.py::test_np_random
+tests/numpy_test.py::test_np_poly1d
+tests/numpy_test.py::test_np_datetime64_units
+tests/numpy_test.py::test_np_ufuncs
+tests/numpy_test.py::test_no_external_references
+tests/object_test.py::pickler
+tests/object_test.py::unpickler
+tests/object_test.py::func
+tests/object_test.py::FailSafeTestCase::skip
+tests/object_test.py::FailSafeTestCase::test_no_error
+tests/object_test.py::FailSafeTestCase::test_error_recorded
+tests/object_test.py::FailSafeTestCase::test_custom_err_msg
+tests/object_test.py::test_list_subclass
+tests/object_test.py::test_list_subclass_with_init
+tests/object_test.py::test_list_subclass_with_data
+tests/object_test.py::test_set_subclass
+tests/object_test.py::test_set_subclass_with_data
+tests/object_test.py::test_decimal
+tests/object_test.py::test_oldstyleclass
+tests/object_test.py::test_dictsubclass
+tests/object_test.py::test_dictsubclass_notunpickable
+tests/object_test.py::test_getstate_dict_subclass_structure
+tests/object_test.py::test_getstate_dict_subclass_roundtrip_simple
+tests/object_test.py::test_getstate_dict_subclass_roundtrip_cyclical
+tests/object_test.py::test_getstate_list_simple
+tests/object_test.py::test_getstate_list_inside_list
+tests/object_test.py::test_getstate_with_getstate_only
+tests/object_test.py::test_thing_with_queue
+tests/object_test.py::test_thing_with_func
+tests/object_test.py::test_thing_with_compiled_regex
+tests/object_test.py::test_base_object_roundrip
+tests/object_test.py::test_enum34
+tests/object_test.py::test_bytes_unicode
+tests/object_test.py::test_nested_objects
+tests/object_test.py::test_threading_lock
+tests/object_test.py::test_array_handler_numeric
+tests/object_test.py::test_exceptions_with_arguments
+tests/object_test.py::test_getstate_does_not_recurse_infinitely
+tests/object_test.py::test_defaultdict_roundtrip
+tests/object_test.py::test_defaultdict_preserves_default_factory_key
+tests/object_test.py::test_default_factory_initialization
+tests/object_test.py::test_defaultdict_roundtrip_simple_lambda
+tests/object_test.py::test_defaultdict_roundtrip_simple_lambda2
+tests/object_test.py::test_defaultdict_and_things_roundtrip_simple_lambda
+tests/object_test.py::test_defaultdict_subclass_with_self_as_default_factory
+tests/object_test.py::test_defaultdict_subclass_with_class_as_default_factory
+tests/object_test.py::test_posix_stat_result
+tests/object_test.py::test_repr_using_jsonpickle
+tests/object_test.py::test_broken_repr_dict_key
+tests/object_test.py::test_ordered_dict_python3
+tests/object_test.py::test_ordered_dict
+tests/object_test.py::test_ordered_dict_unpicklable
+tests/object_test.py::test_ordered_dict_reduces
+tests/object_test.py::test_int_keys_in_object_with_getstate_only
+tests/object_test.py::test_ordered_dict_int_keys
+tests/object_test.py::test_ordered_dict_nested
+tests/object_test.py::test_deque_roundtrip
+tests/object_test.py::test_namedtuple_roundtrip
+tests/object_test.py::test_counter_roundtrip
+tests/object_test.py::test_counter_roundtrip_with_keys
+tests/object_test.py::test_list_with_fd
+tests/object_test.py::test_thing_with_fd
+tests/object_test.py::test_dict_with_fd
+tests/object_test.py::test_thing_with_lamda
+tests/object_test.py::test_newstyleslots
+tests/object_test.py::test_newstyleslots_inherited
+tests/object_test.py::test_newstyleslots_inherited_deleted_attr
+tests/object_test.py::test_newstyleslots_with_children
+tests/object_test.py::test_newstyleslots_with_children_inherited
+tests/object_test.py::test_newstyleslots_iterable
+tests/object_test.py::test_newstyleslots_string_slot
+tests/object_test.py::test_enum34_nested
+tests/object_test.py::test_enum_references
+tests/object_test.py::test_enum_unpicklable
+tests/object_test.py::test_enum_int_key_and_value
+tests/object_test.py::test_enum_string_key_and_value
+tests/object_test.py::test_int_enum_with_auto_value
+tests/object_test.py::test_multiple_string_enums_when_make_refs_is_false
+tests/object_test.py::Mixin::ok
+tests/object_test.py::test_unicode_mixin
+tests/object_test.py::test_datetime_with_tz_copies_refs
+tests/object_test.py::test_with_exclude
+tests/object_test.py::test_contained_exclusion
+tests/object_test.py::test_exclude_slots
+tests/object_test.py::test_exclude_getstate_from_slots
+tests/object_test.py::test_list_subclass
+tests/object_test.py::test_list_subclass_with_init
+tests/object_test.py::test_list_subclass_with_data
+tests/object_test.py::test_set_subclass
+tests/object_test.py::test_set_subclass_with_data
+tests/object_test.py::test_decimal
+tests/object_test.py::test_oldstyleclass
+tests/object_test.py::test_dictsubclass
+tests/object_test.py::test_dictsubclass_notunpickable
+tests/object_test.py::test_getstate_dict_subclass_structure
+tests/object_test.py::test_getstate_dict_subclass_roundtrip_simple
+tests/object_test.py::test_getstate_dict_subclass_roundtrip_cyclical
+tests/object_test.py::test_getstate_list_simple
+tests/object_test.py::test_getstate_list_inside_list
+tests/object_test.py::test_getstate_with_getstate_only
+tests/object_test.py::test_thing_with_queue
+tests/object_test.py::test_thing_with_func
+tests/object_test.py::test_thing_with_compiled_regex
+tests/object_test.py::test_base_object_roundrip
+tests/object_test.py::test_enum34
+tests/object_test.py::test_bytes_unicode
+tests/object_test.py::test_nested_objects
+tests/object_test.py::test_threading_lock
+tests/object_test.py::test_array_handler_numeric
+tests/object_test.py::test_exceptions_with_arguments
+tests/object_test.py::test_getstate_does_not_recurse_infinitely
+tests/object_test.py::test_defaultdict_roundtrip
+tests/object_test.py::test_defaultdict_preserves_default_factory_key
+tests/object_test.py::test_default_factory_initialization
+tests/object_test.py::test_defaultdict_roundtrip_simple_lambda
+tests/object_test.py::test_defaultdict_roundtrip_simple_lambda2
+tests/object_test.py::test_defaultdict_and_things_roundtrip_simple_lambda
+tests/object_test.py::test_defaultdict_subclass_with_self_as_default_factory
+tests/object_test.py::test_defaultdict_subclass_with_class_as_default_factory
+tests/object_test.py::test_posix_stat_result
+tests/object_test.py::test_repr_using_jsonpickle
+tests/object_test.py::test_broken_repr_dict_key
+tests/object_test.py::test_ordered_dict_python3
+tests/object_test.py::test_ordered_dict
+tests/object_test.py::test_ordered_dict_unpicklable
+tests/object_test.py::test_ordered_dict_reduces
+tests/object_test.py::test_int_keys_in_object_with_getstate_only
+tests/object_test.py::test_ordered_dict_int_keys
+tests/object_test.py::test_ordered_dict_nested
+tests/object_test.py::test_deque_roundtrip
+tests/object_test.py::test_namedtuple_roundtrip
+tests/object_test.py::test_counter_roundtrip
+tests/object_test.py::test_counter_roundtrip_with_keys
+tests/object_test.py::test_list_with_fd
+tests/object_test.py::test_thing_with_fd
+tests/object_test.py::test_dict_with_fd
+tests/object_test.py::test_thing_with_lamda
+tests/object_test.py::test_newstyleslots
+tests/object_test.py::test_newstyleslots_inherited
+tests/object_test.py::test_newstyleslots_inherited_deleted_attr
+tests/object_test.py::test_newstyleslots_with_children
+tests/object_test.py::test_newstyleslots_with_children_inherited
+tests/object_test.py::test_newstyleslots_iterable
+tests/object_test.py::test_newstyleslots_string_slot
+tests/object_test.py::test_enum34_nested
+tests/object_test.py::test_enum_references
+tests/object_test.py::test_enum_unpicklable
+tests/object_test.py::test_enum_int_key_and_value
+tests/object_test.py::test_enum_string_key_and_value
+tests/object_test.py::test_int_enum_with_auto_value
+tests/object_test.py::test_multiple_string_enums_when_make_refs_is_false
+tests/object_test.py::test_unicode_mixin
+tests/object_test.py::test_datetime_with_tz_copies_refs
+tests/object_test.py::test_with_exclude
+tests/object_test.py::test_contained_exclusion
+tests/object_test.py::test_exclude_slots
+tests/object_test.py::test_exclude_getstate_from_slots
+tests/sqlalchemy_test.py::SQLAlchemyTestCase::skip
+tests/sqlalchemy_test.py::SQLAlchemyTestCase::setUp
+tests/sqlalchemy_test.py::SQLAlchemyTestCase::test_sqlalchemy_roundtrip_with_detached_session
+tests/sqlalchemy_test.py::SQLAlchemyTestCase::test_sqlalchemy_roundtrip_with_two_sessions
+tests/sqlalchemy_test.py::SQLAlchemyTestCase::test_sqlalchemy_with_dynamic_table
+tests/stdlib_test.py::test_random_uuid
+tests/stdlib_test.py::test_known_uuid
+tests/stdlib_test.py::test_bytestream
+tests/stdlib_test.py::test_random_uuid
+tests/stdlib_test.py::test_known_uuid
+tests/stdlib_test.py::test_bytestream
+tests/util_test.py::MethodTestClass::static_method
+tests/util_test.py::MethodTestClass::class_method
+tests/util_test.py::MethodTestClass::bound_method
+tests/util_test.py::MethodTestSubclass::static_method
+tests/util_test.py::MethodTestSubclass::class_method
+tests/util_test.py::MethodTestSubclass::bound_method
+tests/util_test.py::MethodTestOldStyle::bound_method
+tests/util_test.py::test_is_primitive_int
+tests/util_test.py::test_is_primitive_float
+tests/util_test.py::test_is_primitive_long
+tests/util_test.py::test_is_primitive_bool
+tests/util_test.py::test_is_primitive_None
+tests/util_test.py::test_is_primitive_bytes
+tests/util_test.py::test_is_primitive_unicode
+tests/util_test.py::test_is_primitive_list
+tests/util_test.py::test_is_primitive_dict
+tests/util_test.py::test_is_primitive_tuple
+tests/util_test.py::test_is_primitive_set
+tests/util_test.py::test_is_primitive_object
+tests/util_test.py::test_is_dictionary_subclass_dict
+tests/util_test.py::test_is_dictionary_subclass_subclass
+tests/util_test.py::test_is_sequence_subclass_subclass
+tests/util_test.py::test_is_sequence_subclass_list
+tests/util_test.py::test_is_noncomplex_time_struct
+tests/util_test.py::test_is_noncomplex_other
+tests/util_test.py::test_is_function_builtins
+tests/util_test.py::test_is_function_lambda
+tests/util_test.py::test_is_function_instance_method
+tests/util_test.py::test_itemgetter
+tests/util_test.py::test_has_method
+tests/util_test.py::test_importable_name
+tests/util_test.py::test_is_primitive_int
+tests/util_test.py::test_is_primitive_float
+tests/util_test.py::test_is_primitive_long
+tests/util_test.py::test_is_primitive_bool
+tests/util_test.py::test_is_primitive_None
+tests/util_test.py::test_is_primitive_bytes
+tests/util_test.py::test_is_primitive_unicode
+tests/util_test.py::test_is_primitive_list
+tests/util_test.py::test_is_primitive_dict
+tests/util_test.py::test_is_primitive_tuple
+tests/util_test.py::test_is_primitive_set
+tests/util_test.py::test_is_primitive_object
+tests/util_test.py::test_is_dictionary_subclass_dict
+tests/util_test.py::test_is_dictionary_subclass_subclass
+tests/util_test.py::test_is_sequence_subclass_subclass
+tests/util_test.py::test_is_sequence_subclass_list
+tests/util_test.py::test_is_noncomplex_time_struct
+tests/util_test.py::test_is_noncomplex_other
+tests/util_test.py::test_is_function_builtins
+tests/util_test.py::test_is_function_lambda
+tests/util_test.py::test_is_function_instance_method
+tests/util_test.py::test_itemgetter
+tests/util_test.py::test_has_method
+tests/util_test.py::test_importable_name
+tests/wizard_test.py::hashsum
+tests/wizard_test.py::compare_spells
+tests/wizard_test.py::test_without_pickling
+tests/wizard_test.py::test_with_pickling
+tests/wizard_test.py::test_without_pickling
+tests/wizard_test.py::test_with_pickling
+tests/zoneinfo_test.py::test_zoneinfo
+tests/zoneinfo_test.py::test_zoneinfo
+
+==================================== ERRORS ====================================
+____________ ERROR collecting fuzzing/fuzz-targets/fuzz_unpickle.py ____________
+ImportError while importing test module '/root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/fuzzing/fuzz-targets/fuzz_unpickle.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/root/miniconda3/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+fuzzing/fuzz-targets/fuzz_unpickle.py:4: in <module>
+    import atheris
+E   ModuleNotFoundError: No module named 'atheris'
+____________ ERROR collecting fuzzing/fuzz-targets/fuzz_unpickle.py ____________
+ImportError while importing test module '/root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/fuzzing/fuzz-targets/fuzz_unpickle.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/root/miniconda3/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+fuzzing/fuzz-targets/fuzz_unpickle.py:4: in <module>
+    import atheris
+E   ModuleNotFoundError: No module named 'atheris'
+________________ ERROR collecting fuzzing/fuzz-targets/utils.py ________________
+ImportError while importing test module '/root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/fuzzing/fuzz-targets/utils.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/root/miniconda3/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+fuzzing/fuzz-targets/utils.py:4: in <module>
+    import atheris  # pragma: no cover
+E   ModuleNotFoundError: No module named 'atheris'
+________________ ERROR collecting fuzzing/fuzz-targets/utils.py ________________
+ImportError while importing test module '/root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/fuzzing/fuzz-targets/utils.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/root/miniconda3/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+fuzzing/fuzz-targets/utils.py:4: in <module>
+    import atheris  # pragma: no cover
+E   ModuleNotFoundError: No module named 'atheris'
+___________________ ERROR collecting jsonpickle/ext/gmpy.py ____________________
+jsonpickle/ext/gmpy.py:13: in <module>
+    class GmpyMPZHandler(BaseHandler):
+jsonpickle/ext/gmpy.py:14: in GmpyMPZHandler
+    def flatten(self, obj: gmpy.mpz, data: dict[str, Any]) -> HandlerReturn:
+E   AttributeError: 'NoneType' object has no attribute 'mpz'
+___________________ ERROR collecting jsonpickle/ext/gmpy.py ____________________
+jsonpickle/ext/gmpy.py:13: in <module>
+    class GmpyMPZHandler(BaseHandler):
+jsonpickle/ext/gmpy.py:14: in GmpyMPZHandler
+    def flatten(self, obj: gmpy.mpz, data: dict[str, Any]) -> HandlerReturn:
+E   AttributeError: 'NoneType' object has no attribute 'mpz'
+__________________ ERROR collecting jsonpickle/ext/pandas.py ___________________
+ImportError while importing test module '/root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/ext/pandas.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/root/miniconda3/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+jsonpickle/ext/pandas.py:8: in <module>
+    import pandas as pd
+E   ModuleNotFoundError: No module named 'pandas'
+__________________ ERROR collecting jsonpickle/ext/pandas.py ___________________
+ImportError while importing test module '/root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/ext/pandas.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/root/miniconda3/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+jsonpickle/ext/pandas.py:8: in <module>
+    import pandas as pd
+E   ModuleNotFoundError: No module named 'pandas'
+____________________ ERROR collecting jsonpickle/tags_pd.py ____________________
+ImportError while importing test module '/root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/tags_pd.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/root/miniconda3/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+jsonpickle/tags_pd.py:10: in <module>
+    import pandas as pd
+E   ModuleNotFoundError: No module named 'pandas'
+____________________ ERROR collecting jsonpickle/tags_pd.py ____________________
+ImportError while importing test module '/root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/tags_pd.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/root/miniconda3/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+jsonpickle/tags_pd.py:10: in <module>
+    import pandas as pd
+E   ModuleNotFoundError: No module named 'pandas'
+_____________________ ERROR collecting jsonpickle/util.py ______________________
+'yield' keyword is allowed in fixtures, but not in tests (items)
+=============================== warnings summary ===============================
+.:0
+  :0: PytestCollectionWarning: cannot collect 'json' because it is not a function.
+
+jsonpickle/backend.py:5
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/backend.py:5: PytestCollectionWarning: cannot collect test class 'JSONBackend' because it has a __init__ constructor (from: jsonpickle/backend.py)
+    class JSONBackend:
+
+jsonpickle/errors.py:8
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/errors.py:8: PytestCollectionWarning: cannot collect test class 'ClassNotFoundError' because it has a __init__ constructor (from: jsonpickle/errors.py)
+    class ClassNotFoundError(BaseException):
+
+jsonpickle/ext/numpy.py:35
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/ext/numpy.py:35: PytestCollectionWarning: cannot collect test class 'NumpyBaseHandler' because it has a __init__ constructor (from: jsonpickle/ext/numpy.py)
+    class NumpyBaseHandler(BaseHandler):
+
+jsonpickle/ext/numpy.py:53
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/ext/numpy.py:53: PytestCollectionWarning: cannot collect test class 'NumpyDTypeHandler' because it has a __init__ constructor (from: jsonpickle/ext/numpy.py)
+    class NumpyDTypeHandler(NumpyBaseHandler):
+
+jsonpickle/ext/numpy.py:62
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/ext/numpy.py:62: PytestCollectionWarning: cannot collect test class 'NumpyGenericHandler' because it has a __init__ constructor (from: jsonpickle/ext/numpy.py)
+    class NumpyGenericHandler(NumpyBaseHandler):
+
+jsonpickle/ext/numpy.py:73
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/ext/numpy.py:73: PytestCollectionWarning: cannot collect test class 'NumpyDatetimeHandler' because it has a __init__ constructor (from: jsonpickle/ext/numpy.py)
+    class NumpyDatetimeHandler(NumpyGenericHandler):
+
+jsonpickle/ext/numpy.py:84
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/ext/numpy.py:84: PytestCollectionWarning: cannot collect test class 'UnpickleableNumpyGenericHandler' because it has a __init__ constructor (from: jsonpickle/ext/numpy.py)
+    class UnpickleableNumpyGenericHandler(NumpyGenericHandler):
+
+jsonpickle/ext/numpy.py:101
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/ext/numpy.py:101: PytestCollectionWarning: cannot collect test class 'NumpyNDArrayHandler' because it has a __init__ constructor (from: jsonpickle/ext/numpy.py)
+    class NumpyNDArrayHandler(NumpyBaseHandler):
+
+jsonpickle/ext/numpy.py:135
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/ext/numpy.py:135: PytestCollectionWarning: cannot collect test class 'NumpyNDArrayHandlerBinary' because it has a __init__ constructor (from: jsonpickle/ext/numpy.py)
+    class NumpyNDArrayHandlerBinary(NumpyNDArrayHandler):
+
+jsonpickle/ext/numpy.py:248
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/ext/numpy.py:248: PytestCollectionWarning: cannot collect test class 'NumpyNDArrayHandlerView' because it has a __init__ constructor (from: jsonpickle/ext/numpy.py)
+    class NumpyNDArrayHandlerView(NumpyNDArrayHandlerBinary):
+
+jsonpickle/ext/numpy.py:429
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/ext/numpy.py:429: PytestCollectionWarning: cannot collect test class 'NumpyUfuncHandler' because it has a __init__ constructor (from: jsonpickle/ext/numpy.py)
+    class NumpyUfuncHandler(BaseHandler):
+
+.:0
+.:0
+  :0: PytestCollectionWarning: cannot collect 'T' because it is not a function.
+
+.:0
+  :0: PytestCollectionWarning: cannot collect 'registry' because it is not a function.
+
+jsonpickle/handlers.py:39
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/handlers.py:39: PytestCollectionWarning: cannot collect test class 'Registry' because it has a __init__ constructor (from: jsonpickle/handlers.py)
+    class Registry:
+
+jsonpickle/handlers.py:129
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/handlers.py:129: PytestCollectionWarning: cannot collect test class 'BaseHandler' because it has a __init__ constructor (from: jsonpickle/handlers.py)
+    class BaseHandler:
+
+jsonpickle/handlers.py:182
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/handlers.py:182: PytestCollectionWarning: cannot collect test class 'ArrayHandler' because it has a __init__ constructor (from: jsonpickle/handlers.py)
+    class ArrayHandler(BaseHandler):
+
+jsonpickle/handlers.py:201
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/handlers.py:201: PytestCollectionWarning: cannot collect test class 'DatetimeHandler' because it has a __init__ constructor (from: jsonpickle/handlers.py)
+    class DatetimeHandler(BaseHandler):
+
+jsonpickle/handlers.py:240
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/handlers.py:240: PytestCollectionWarning: cannot collect test class 'RegexHandler' because it has a __init__ constructor (from: jsonpickle/handlers.py)
+    class RegexHandler(BaseHandler):
+
+jsonpickle/handlers.py:254
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/handlers.py:254: PytestCollectionWarning: cannot collect test class 'QueueHandler' because it has a __init__ constructor (from: jsonpickle/handlers.py)
+    class QueueHandler(BaseHandler):
+
+jsonpickle/handlers.py:272
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/handlers.py:272: PytestCollectionWarning: cannot collect test class 'CloneFactory' because it has a __init__ constructor (from: jsonpickle/handlers.py)
+    class CloneFactory:
+
+jsonpickle/handlers.py:286
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/handlers.py:286: PytestCollectionWarning: cannot collect test class 'UUIDHandler' because it has a __init__ constructor (from: jsonpickle/handlers.py)
+    class UUIDHandler(BaseHandler):
+
+jsonpickle/handlers.py:300
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/handlers.py:300: PytestCollectionWarning: cannot collect test class 'LockHandler' because it has a __init__ constructor (from: jsonpickle/handlers.py)
+    class LockHandler(BaseHandler):
+
+jsonpickle/handlers.py:318
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/handlers.py:318: PytestCollectionWarning: cannot collect test class 'TextIOHandler' because it has a __init__ constructor (from: jsonpickle/handlers.py)
+    class TextIOHandler(BaseHandler):
+
+jsonpickle/pickler.py:209
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/pickler.py:209: PytestCollectionWarning: cannot collect test class 'Pickler' because it has a __init__ constructor (from: jsonpickle/pickler.py)
+    class Pickler:
+
+jsonpickle/unpickler.py:332
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle/unpickler.py:332: PytestCollectionWarning: cannot collect test class 'Unpickler' because it has a __init__ constructor (from: jsonpickle/unpickler.py)
+    class Unpickler:
+
+.:0
+  :0: PytestCollectionWarning: cannot collect 'K' because it is not a function.
+
+.:0
+  :0: PytestCollectionWarning: cannot collect 'V' because it is not a function.
+
+jsonpickle_benchmarks.py:40
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle_benchmarks.py:40: PytestCollectionWarning: cannot collect test class 'MyClass' because it has a __init__ constructor (from: jsonpickle_benchmarks.py)
+    class MyClass(object):
+
+jsonpickle_benchmarks.py:64
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle_benchmarks.py:64: PytestCollectionWarning: cannot collect test class 'MyClassGetState' because it has a __init__ constructor (from: jsonpickle_benchmarks.py)
+    class MyClassGetState(SlotPickleMixin):
+
+jsonpickle_benchmarks.py:94
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/jsonpickle_benchmarks.py:94: PytestCollectionWarning: cannot collect test class 'MyClassSimple' because it has a __init__ constructor (from: jsonpickle_benchmarks.py)
+    class MyClassSimple(object):
+
+tests/backend_test.py:12
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/backend_test.py:12: PytestCollectionWarning: cannot collect test class 'Thing' because it has a __init__ constructor (from: tests/backend_test.py)
+    class Thing:
+
+tests/backend_test.py:18
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/backend_test.py:18: PytestCollectionWarning: cannot collect test class 'A' because it has a __init__ constructor (from: tests/backend_test.py)
+    class A:
+
+tests/backend_test.py:23
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/backend_test.py:23: PytestCollectionWarning: cannot collect test class 'BSlots' because it has a __init__ constructor (from: tests/backend_test.py)
+    class BSlots:
+
+tests/collections_test.py:59
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/collections_test.py:59: PytestCollectionWarning: cannot collect test class 'Group' because it has a __init__ constructor (from: tests/collections_test.py)
+    class Group:
+
+tests/collections_test.py:69
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/collections_test.py:69: PytestCollectionWarning: cannot collect test class 'C' because it has a __init__ constructor (from: tests/collections_test.py)
+    class C:
+
+tests/collections_test.py:93
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/collections_test.py:93: PytestCollectionWarning: cannot collect test class 'D' because it has a __init__ constructor (from: tests/collections_test.py)
+    class D:
+
+.:0
+  :0: PytestCollectionWarning: cannot collect 'utc' because it is not a function.
+
+tests/datetime_test.py:15
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/datetime_test.py:15: PytestCollectionWarning: cannot collect test class 'ObjWithDate' because it has a __init__ constructor (from: tests/datetime_test.py)
+    class ObjWithDate:
+
+tests/datetime_test.py:23
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/datetime_test.py:23: PytestCollectionWarning: cannot collect test class 'UTC' because it has a __new__ constructor (from: tests/datetime_test.py)
+    class UTC(datetime.tzinfo):
+
+tests/datetime_test.py:39
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/datetime_test.py:39: PytestCollectionWarning: cannot collect test class 'TimestampedVariable' because it has a __init__ constructor (from: tests/datetime_test.py)
+    class TimestampedVariable:
+
+tests/datetime_test.py:76
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/datetime_test.py:76: PytestCollectionWarning: cannot collect test class 'PersistantVariables' because it has a __init__ constructor (from: tests/datetime_test.py)
+    class PersistantVariables:
+
+tests/document_test.py:4
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/document_test.py:4: PytestCollectionWarning: cannot collect test class 'Node' because it has a __init__ constructor (from: tests/document_test.py)
+    class Node:
+
+tests/document_test.py:17
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/document_test.py:17: PytestCollectionWarning: cannot collect test class 'Document' because it has a __init__ constructor (from: tests/document_test.py)
+    class Document(Node):
+
+tests/document_test.py:31
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/document_test.py:31: PytestCollectionWarning: cannot collect test class 'Question' because it has a __init__ constructor (from: tests/document_test.py)
+    class Question(Node):
+
+tests/document_test.py:42
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/document_test.py:42: PytestCollectionWarning: cannot collect test class 'Section' because it has a __init__ constructor (from: tests/document_test.py)
+    class Section(Node):
+
+tests/handler_test.py:13
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/handler_test.py:13: PytestCollectionWarning: cannot collect test class 'CustomObject' because it has a __init__ constructor (from: tests/handler_test.py)
+    class CustomObject:
+
+tests/handler_test.py:24
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/handler_test.py:24: PytestCollectionWarning: cannot collect test class 'CustomA' because it has a __init__ constructor (from: tests/handler_test.py)
+    class CustomA(CustomObject):
+
+tests/handler_test.py:28
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/handler_test.py:28: PytestCollectionWarning: cannot collect test class 'CustomB' because it has a __init__ constructor (from: tests/handler_test.py)
+    class CustomB(CustomA):
+
+tests/handler_test.py:32
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/handler_test.py:32: PytestCollectionWarning: cannot collect test class 'ContextObject' because it has a __init__ constructor (from: tests/handler_test.py)
+    class ContextObject(CustomObject):
+
+tests/handler_test.py:36
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/handler_test.py:36: PytestCollectionWarning: cannot collect test class 'NullHandler' because it has a __init__ constructor (from: tests/handler_test.py)
+    class NullHandler(jsonpickle.handlers.BaseHandler):
+
+tests/handler_test.py:45
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/handler_test.py:45: PytestCollectionWarning: cannot collect test class 'DecoratedBase' because it has a __init__ constructor (from: tests/handler_test.py)
+    class DecoratedBase(CustomObject):
+
+tests/handler_test.py:49
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/handler_test.py:49: PytestCollectionWarning: cannot collect test class 'DecoratedChild' because it has a __init__ constructor (from: tests/handler_test.py)
+    class DecoratedChild(DecoratedBase):
+
+tests/handler_test.py:53
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/handler_test.py:53: PytestCollectionWarning: cannot collect test class 'DecoratedHandler' because it has a __init__ constructor (from: tests/handler_test.py)
+    @jsonpickle.handlers.register(DecoratedBase, base=True)
+
+tests/handler_test.py:58
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/handler_test.py:58: PytestCollectionWarning: cannot collect test class 'SithHandler' because it has a __init__ constructor (from: tests/handler_test.py)
+    class SithHandler(jsonpickle.handlers.BaseHandler):
+
+tests/handler_test.py:67
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/handler_test.py:67: PytestCollectionWarning: cannot collect test class 'ContextAwareHandler' because it has a __init__ constructor (from: tests/handler_test.py)
+    class ContextAwareHandler(jsonpickle.handlers.BaseHandler):
+
+.:0
+  :0: PytestCollectionWarning: cannot collect 'slotmagic' because it is not a function.
+
+.:0
+  :0: PytestCollectionWarning: cannot collect 'dictmagic' because it is not a function.
+
+tests/jsonpickle_test.py:21
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:21: PytestCollectionWarning: cannot collect test class 'ListLike' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class ListLike:
+
+tests/jsonpickle_test.py:32
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:32: PytestCollectionWarning: cannot collect test class 'Thing' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class Thing:
+
+tests/jsonpickle_test.py:47
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:47: PytestCollectionWarning: cannot collect test class 'Capture' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class Capture:
+
+tests/jsonpickle_test.py:56
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:56: PytestCollectionWarning: cannot collect test class 'ThingWithProps' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class ThingWithProps:
+
+tests/jsonpickle_test.py:100
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:100: PytestCollectionWarning: cannot collect test class 'UserDict' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class UserDict(dict):
+
+tests/jsonpickle_test.py:114
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:114: PytestCollectionWarning: cannot collect test class 'MySlots' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class MySlots:
+
+tests/jsonpickle_test.py:122
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:122: PytestCollectionWarning: cannot collect test class 'MyPropertiesSlots' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class MyPropertiesSlots:
+
+tests/jsonpickle_test.py:146
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:146: PytestCollectionWarning: cannot collect test class 'MyPropertiesDict' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class MyPropertiesDict:
+
+tests/jsonpickle_test.py:173
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:173: PytestCollectionWarning: cannot collect test class 'SafeString' because it has a __new__ constructor (from: tests/jsonpickle_test.py)
+    class SafeString(str, SafeData):
+
+tests/jsonpickle_test.py:177
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:177: PytestCollectionWarning: cannot collect test class 'KwargsSubclassTest' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class KwargsSubclassTest(Exception):
+
+tests/jsonpickle_test.py:1295
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:1295: PytestCollectionWarning: cannot collect test class 'PicklableNamedTuple' because it has a __new__ constructor (from: tests/jsonpickle_test.py)
+    class PicklableNamedTuple:
+
+tests/jsonpickle_test.py:1311
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:1311: PytestCollectionWarning: cannot collect test class 'PicklableNamedTupleEx' because it has a __new__ constructor (from: tests/jsonpickle_test.py)
+    class PicklableNamedTupleEx:
+
+tests/jsonpickle_test.py:1331
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:1331: PytestCollectionWarning: cannot collect test class 'PickleProtocol2Thing' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class PickleProtocol2Thing:
+
+tests/jsonpickle_test.py:1361
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:1361: PytestCollectionWarning: cannot collect test class 'PickleProtocol2GetState' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class PickleProtocol2GetState(PickleProtocol2Thing):
+
+tests/jsonpickle_test.py:1373
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:1373: PytestCollectionWarning: cannot collect test class 'PickleProtocol2GetStateDict' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class PickleProtocol2GetStateDict(PickleProtocol2Thing):
+
+tests/jsonpickle_test.py:1380
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:1380: PytestCollectionWarning: cannot collect test class 'PickleProtocol2GetStateNestedDict' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class PickleProtocol2GetStateNestedDict(PickleProtocol2Thing):
+
+tests/jsonpickle_test.py:1387
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:1387: PytestCollectionWarning: cannot collect test class 'PickleProtocol2GetStateSlots' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class PickleProtocol2GetStateSlots(PickleProtocol2Thing):
+
+tests/jsonpickle_test.py:1394
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:1394: PytestCollectionWarning: cannot collect test class 'PickleProtocol2GetStateSlotsDict' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class PickleProtocol2GetStateSlotsDict(PickleProtocol2Thing):
+
+tests/jsonpickle_test.py:1401
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:1401: PytestCollectionWarning: cannot collect test class 'PickleProtocol2GetSetState' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class PickleProtocol2GetSetState(PickleProtocol2GetState):
+
+tests/jsonpickle_test.py:1412
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:1412: PytestCollectionWarning: cannot collect test class 'PickleProtocol2ChildThing' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class PickleProtocol2ChildThing:
+
+tests/jsonpickle_test.py:1440
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:1440: PytestCollectionWarning: cannot collect test class 'PickleProtocol2ReduceTuple' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class PickleProtocol2ReduceTuple:
+
+tests/jsonpickle_test.py:1475
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:1475: PytestCollectionWarning: cannot collect test class 'PickleProtocol2ReduceTupleFunc' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class PickleProtocol2ReduceTupleFunc:
+
+tests/jsonpickle_test.py:1496
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:1496: PytestCollectionWarning: cannot collect test class 'PickleProtocol2ReduceNewobj' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class PickleProtocol2ReduceNewobj(PickleProtocol2ReduceTupleFunc):
+
+tests/jsonpickle_test.py:1514
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:1514: PytestCollectionWarning: cannot collect test class 'PickleProtocol2ReduceTupleState' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class PickleProtocol2ReduceTupleState(PickleProtocol2ReduceTuple):
+
+tests/jsonpickle_test.py:1527
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:1527: PytestCollectionWarning: cannot collect test class 'PickleProtocol2ReduceTupleSetState' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class PickleProtocol2ReduceTupleSetState(PickleProtocol2ReduceTuple):
+
+tests/jsonpickle_test.py:1543
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:1543: PytestCollectionWarning: cannot collect test class 'PickleProtocol2ReduceTupleStateSlots' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class PickleProtocol2ReduceTupleStateSlots:
+
+tests/jsonpickle_test.py:1562
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:1562: PytestCollectionWarning: cannot collect test class 'PickleProtocol2ReduceListitemsAppend' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class PickleProtocol2ReduceListitemsAppend:
+
+tests/jsonpickle_test.py:1581
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:1581: PytestCollectionWarning: cannot collect test class 'PickleProtocol2ReduceListitemsExtend' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class PickleProtocol2ReduceListitemsExtend:
+
+tests/jsonpickle_test.py:1600
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/jsonpickle_test.py:1600: PytestCollectionWarning: cannot collect test class 'PickleProtocol2ReduceDictitems' because it has a __init__ constructor (from: tests/jsonpickle_test.py)
+    class PickleProtocol2ReduceDictitems:
+
+tests/numpy_test.py:418
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/numpy_test.py:418: PytestCollectionWarning: cannot collect test class 'ThingWithDel' because it has a __init__ constructor (from: tests/numpy_test.py)
+    class ThingWithDel:
+
+tests/object_test.py:29
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:29: PytestCollectionWarning: cannot collect test class 'Thing' because it has a __init__ constructor (from: tests/object_test.py)
+    class Thing:
+
+tests/object_test.py:35
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:35: PytestCollectionWarning: cannot collect test class 'DictSubclass' because it has a __init__ constructor (from: tests/object_test.py)
+    class DictSubclass(dict):
+
+tests/object_test.py:39
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:39: PytestCollectionWarning: cannot collect test class 'ListSubclass' because it has a __init__ constructor (from: tests/object_test.py)
+    class ListSubclass(list):
+
+tests/object_test.py:43
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:43: PytestCollectionWarning: cannot collect test class 'BrokenReprThing' because it has a __init__ constructor (from: tests/object_test.py)
+    class BrokenReprThing(Thing):
+
+tests/object_test.py:51
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:51: PytestCollectionWarning: cannot collect test class 'GetstateDict' because it has a __init__ constructor (from: tests/object_test.py)
+    class GetstateDict(dict):
+
+tests/object_test.py:66
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:66: PytestCollectionWarning: cannot collect test class 'GetstateOnly' because it has a __init__ constructor (from: tests/object_test.py)
+    class GetstateOnly:
+
+tests/object_test.py:75
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:75: PytestCollectionWarning: cannot collect test class 'GetstateReturnsList' because it has a __init__ constructor (from: tests/object_test.py)
+    class GetstateReturnsList:
+
+tests/object_test.py:92
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:92: PytestCollectionWarning: cannot collect test class 'ListSubclassWithInit' because it has a __init__ constructor (from: tests/object_test.py)
+    class ListSubclassWithInit(list):
+
+tests/object_test.py:0
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:0: PytestCollectionWarning: cannot collect test class 'NamedTuple' because it has a __new__ constructor (from: tests/object_test.py)
+
+tests/object_test.py:101
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:101: PytestCollectionWarning: cannot collect test class 'ObjWithJsonPickleRepr' because it has a __init__ constructor (from: tests/object_test.py)
+    class ObjWithJsonPickleRepr:
+
+tests/object_test.py:113
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:113: PytestCollectionWarning: cannot collect test class 'SetSubclass' because it has a __init__ constructor (from: tests/object_test.py)
+    class SetSubclass(set):
+
+tests/object_test.py:121
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:121: PytestCollectionWarning: cannot collect test class 'ThingWithFunctionRefs' because it has a __init__ constructor (from: tests/object_test.py)
+    class ThingWithFunctionRefs:
+
+tests/object_test.py:126
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:126: PytestCollectionWarning: cannot collect test class 'ThingWithQueue' because it has a __init__ constructor (from: tests/object_test.py)
+    class ThingWithQueue:
+
+tests/object_test.py:134
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:134: PytestCollectionWarning: cannot collect test class 'ThingWithSlots' because it has a __init__ constructor (from: tests/object_test.py)
+    class ThingWithSlots:
+
+tests/object_test.py:142
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:142: PytestCollectionWarning: cannot collect test class 'ThingWithInheritedSlots' because it has a __init__ constructor (from: tests/object_test.py)
+    class ThingWithInheritedSlots(ThingWithSlots):
+
+tests/object_test.py:150
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:150: PytestCollectionWarning: cannot collect test class 'ThingWithIterableSlots' because it has a __init__ constructor (from: tests/object_test.py)
+    class ThingWithIterableSlots:
+
+tests/object_test.py:158
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:158: PytestCollectionWarning: cannot collect test class 'ThingWithStringSlots' because it has a __init__ constructor (from: tests/object_test.py)
+    class ThingWithStringSlots:
+
+tests/object_test.py:165
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:165: PytestCollectionWarning: cannot collect test class 'ThingWithSelfAsDefaultFactory' because it has a __init__ constructor (from: tests/object_test.py)
+    class ThingWithSelfAsDefaultFactory(collections.defaultdict):
+
+tests/object_test.py:175
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:175: PytestCollectionWarning: cannot collect test class 'ThingWithClassAsDefaultFactory' because it has a __init__ constructor (from: tests/object_test.py)
+    class ThingWithClassAsDefaultFactory(collections.defaultdict):
+
+.:0
+  :0: PytestCollectionWarning: cannot collect 'count' because it is not a function.
+
+tests/object_test.py:191
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:191: PytestCollectionWarning: cannot collect test class 'ThingWithDefaultFactory' because it has a __init__ constructor (from: tests/object_test.py)
+    class ThingWithDefaultFactory:
+
+tests/object_test.py:204
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:204: PytestCollectionWarning: cannot collect test class 'IntEnumTest' because it has a __new__ constructor (from: tests/object_test.py)
+    class IntEnumTest(enum.IntEnum):
+
+tests/object_test.py:209
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:209: PytestCollectionWarning: cannot collect test class 'StringEnumTest' because it has a __new__ constructor (from: tests/object_test.py)
+    class StringEnumTest(enum.Enum):
+
+tests/object_test.py:214
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:214: PytestCollectionWarning: cannot collect test class 'SubEnum' because it has a __new__ constructor (from: tests/object_test.py)
+    class SubEnum(enum.Enum):
+
+tests/object_test.py:219
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:219: PytestCollectionWarning: cannot collect test class 'EnumClass' because it has a __init__ constructor (from: tests/object_test.py)
+    class EnumClass:
+
+tests/object_test.py:225
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:225: PytestCollectionWarning: cannot collect test class 'MessageTypes' because it has a __new__ constructor (from: tests/object_test.py)
+    class MessageTypes(enum.Enum):
+
+tests/object_test.py:230
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:230: PytestCollectionWarning: cannot collect test class 'MessageStatus' because it has a __new__ constructor (from: tests/object_test.py)
+    class MessageStatus(enum.Enum):
+
+tests/object_test.py:235
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:235: PytestCollectionWarning: cannot collect test class 'MessageCommands' because it has a __new__ constructor (from: tests/object_test.py)
+    class MessageCommands(enum.Enum):
+
+tests/object_test.py:239
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:239: PytestCollectionWarning: cannot collect test class 'Message' because it has a __init__ constructor (from: tests/object_test.py)
+    class Message:
+
+tests/object_test.py:250
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:250: PytestCollectionWarning: cannot collect test class 'ThingWithTimedeltaAttribute' because it has a __init__ constructor (from: tests/object_test.py)
+    class ThingWithTimedeltaAttribute:
+
+.:0
+.:0
+  :0: PytestCollectionWarning: cannot collect 'good' because it is not a function.
+
+.:0
+.:0
+  :0: PytestCollectionWarning: cannot collect 'to_pickle' because it is not a function.
+
+tests/object_test.py:290
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:290: PytestCollectionWarning: cannot collect test class 'IntKeysObject' because it has a __init__ constructor (from: tests/object_test.py)
+    class IntKeysObject:
+
+tests/object_test.py:298
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:298: PytestCollectionWarning: cannot collect test class 'ExceptionWithArguments' because it has a __init__ constructor (from: tests/object_test.py)
+    class ExceptionWithArguments(Exception):
+
+tests/object_test.py:304
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:304: PytestCollectionWarning: cannot collect test class 'ThingWithExclusion' because it has a __init__ constructor (from: tests/object_test.py)
+    class ThingWithExclusion:
+
+tests/object_test.py:312
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:312: PytestCollectionWarning: cannot collect test class 'ThingWithExcludeSubclass' because it has a __init__ constructor (from: tests/object_test.py)
+    class ThingWithExcludeSubclass:
+
+tests/object_test.py:318
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:318: PytestCollectionWarning: cannot collect test class 'SlotsThing' because it has a __init__ constructor (from: tests/object_test.py)
+    class SlotsThing:
+
+tests/object_test.py:327
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:327: PytestCollectionWarning: cannot collect test class 'SlotsGetstateThing' because it has a __init__ constructor (from: tests/object_test.py)
+    class SlotsGetstateThing:
+
+tests/object_test.py:1170
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:1170: PytestCollectionWarning: cannot collect test class 'UnicodeMixin' because it has a __new__ constructor (from: tests/object_test.py)
+    class UnicodeMixin(str, Mixin):
+
+tests/object_test.py:1176
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/object_test.py:1176: PytestCollectionWarning: cannot collect test class 'UnicodeMixinHandler' because it has a __init__ constructor (from: tests/object_test.py)
+    class UnicodeMixinHandler(handlers.BaseHandler):
+
+tests/util_test.py:14
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/util_test.py:14: PytestCollectionWarning: cannot collect test class 'Thing' because it has a __init__ constructor (from: tests/util_test.py)
+    class Thing:
+
+tests/util_test.py:20
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/util_test.py:20: PytestCollectionWarning: cannot collect test class 'DictSubclass' because it has a __init__ constructor (from: tests/util_test.py)
+    class DictSubclass(dict):
+
+tests/util_test.py:24
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/util_test.py:24: PytestCollectionWarning: cannot collect test class 'ListSubclass' because it has a __init__ constructor (from: tests/util_test.py)
+    class ListSubclass(list):
+
+.:0
+.:0
+  :0: PytestCollectionWarning: cannot collect 'variable' because it is not a function.
+
+tests/wizard_test.py:14
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/wizard_test.py:14: PytestCollectionWarning: cannot collect test class 'World' because it has a __init__ constructor (from: tests/wizard_test.py)
+    class World:
+
+tests/wizard_test.py:19
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/wizard_test.py:19: PytestCollectionWarning: cannot collect test class 'Wizard' because it has a __init__ constructor (from: tests/wizard_test.py)
+    class Wizard:
+
+tests/wizard_test.py:53
+  /root/autodl-tmp/new-e2e/jsonpickle__jsonpickle/tests/wizard_test.py:53: PytestCollectionWarning: cannot collect test class 'Spell' because it has a __init__ constructor (from: tests/wizard_test.py)
+    class Spell:
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+ERROR fuzzing/fuzz-targets/fuzz_unpickle.py
+ERROR fuzzing/fuzz-targets/fuzz_unpickle.py
+ERROR fuzzing/fuzz-targets/utils.py
+ERROR fuzzing/fuzz-targets/utils.py
+ERROR jsonpickle/ext/gmpy.py - AttributeError: 'NoneType' object has no attri...
+ERROR jsonpickle/ext/gmpy.py - AttributeError: 'NoneType' object has no attri...
+ERROR jsonpickle/ext/pandas.py
+ERROR jsonpickle/ext/pandas.py
+ERROR jsonpickle/tags_pd.py
+ERROR jsonpickle/tags_pd.py
+ERROR jsonpickle/util.py - Failed: 'yield' keyword is allowed in fixtures, bu...
+!!!!!!!!!!!!!!!!!!! Interrupted: 11 errors during collection !!!!!!!!!!!!!!!!!!!
+853 tests collected, 11 errors in 2.31s

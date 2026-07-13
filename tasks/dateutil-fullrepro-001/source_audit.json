@@ -1,0 +1,27 @@
+{
+  "repo": "dateutil",
+  "src_loc": 5950,
+  "src_files": 23,
+  "test_collected": 1517,
+  "kept": 90,
+  "bad_files": [
+    {
+      "file": "tests/_common.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.01s"
+    },
+    {
+      "file": "tests/test_rrule.py",
+      "rc": 2,
+      "kind": "no_nodes",
+      "tail": "E   ModuleNotFoundError: No module named 'freezegun'\n=========================== short test summary info ============================\nERROR tests/test_rrule.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\nno tests collected, 1 error in 0.18s"
+    },
+    {
+      "file": "tests/test_utils.py",
+      "rc": 2,
+      "kind": "no_nodes",
+      "tail": "E   ModuleNotFoundError: No module named 'freezegun'\n=========================== short test summary info ============================\nERROR tests/test_utils.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\nno tests collected, 1 error in 0.11s"
+    }
+  ]
+}

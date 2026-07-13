@@ -1,0 +1,30 @@
+{
+  "by_layer": {
+    "atomic": 59,
+    "integration": 33,
+    "system_e2e": 8
+  },
+  "by_section": {
+    "Application, Prompt, and I/O": 3,
+    "Completion": 18,
+    "Cross-View Invariants": 5,
+    "Document and Buffer": 13,
+    "Error Semantics": 8,
+    "Formatted Text": 16,
+    "Formatted Text and Styles": 3,
+    "Full-Screen Layout With a Buffer and Exit Binding": 3,
+    "Installable Surface": 3,
+    "Key Bindings": 6,
+    "Layout Controls": 3,
+    "Product State Model": 5,
+    "Prompt With Completion and Validation": 3,
+    "Styles": 7,
+    "Validation": 4
+  },
+  "generated_covered": 32,
+  "oracle_count": 100,
+  "upstream_collected": 156,
+  "upstream_covered": 68,
+  "upstream_excluded": 60,
+  "upstream_source_only": 28
+}

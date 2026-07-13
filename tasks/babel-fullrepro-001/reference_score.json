@@ -1,0 +1,20 @@
+{
+  "summary": {
+    "passed": 63,
+    "failed": 0,
+    "total": 63
+  },
+  "pass_rate_excluding_skips": 1.0,
+  "by_layer": {
+    "integration": {
+      "passed": 14,
+      "total": 14
+    },
+    "atomic": {
+      "passed": 49,
+      "total": 49
+    }
+  },
+  "reference_validation": "sampled retained nodeids passed in source tree with plugin autoload disabled",
+  "source_repo": "/root/autodl-tmp/e2e/babel"
+}

@@ -1,0 +1,152 @@
+{
+  "task_id": "hypercorn-fullrepro-001",
+  "repo": "pgjones__hypercorn",
+  "status": "QUALIFIED",
+  "current_step": 5,
+  "source": {
+    "repo": "pgjones/hypercorn",
+    "path": "/root/autodl-tmp/new-e2e/pgjones__hypercorn",
+    "commit": "0e2311f1ad2ae587aaa590f3824f59aa5dc0e770",
+    "package": "hypercorn",
+    "tests": "tests"
+  },
+  "stage1": {
+    "source_loc": 4775,
+    "source_python_files": 43,
+    "test_files": 31,
+    "test_functions_rough": 141,
+    "isolated_collected_nodeids": 196,
+    "collect_errors": 0,
+    "docs_files_rough": 28,
+    "private_import_file_rate": 0.032,
+    "network_test_file_rate": 0.161,
+    "snapshot_test_file_rate": 0.032,
+    "environment": "/root/autodl-tmp/Bmk-Lizhiqian/envs/hypercorn-fullrepro-001"
+  },
+  "stage2": {
+    "spec_version": "v1",
+    "candidate_spec": "spec.md",
+    "internal_spec": "spec/spec_v1.md",
+    "candidate_body": "spec/spec_v1_candidate.md",
+    "source_and_q1_q2_audit": "spec_sources.md",
+    "validation": "spec/spec_validation.md",
+    "documentation_style": "formal author-to-user reference documentation",
+    "cross_view_invariants": 10,
+    "style_audit_forbidden_process_terms": 0,
+    "weak_modal_audit": 0,
+    "private_internal_symbol_audit": 0,
+    "precedence_reference_probes": 2
+  },
+  "cleanroom_policy": {
+    "candidate_visible": [
+      "spec.md",
+      "generic implementation instructions"
+    ],
+    "candidate_forbidden": [
+      "source repository",
+      "tests",
+      "source and Q1/Q2 audit",
+      "review prompts and reports",
+      "filter and taxonomy artifacts",
+      "reference or dummy results",
+      "prior candidate outputs",
+      "api key files"
+    ]
+  },
+  "pipeline_state": "QUALIFIED",
+  "model_reviews": {
+    "stage1": {
+      "deepseek-v4-pro": "PASS_CONTINUE",
+      "glm-5.2": "PASS_CONTINUE"
+    },
+    "stage2_v1": {
+      "deepseek-v4-pro": "PASS_AUTHOR_SPEC",
+      "glm-5.2": "PASS_GITHUB_PRINCIPLES"
+    },
+    "stage2_github_principles": {
+      "deepseek-v4-pro": "ALL_DIMENSIONS_PASS_PROCESS_LEAKAGE_NONE",
+      "glm-5.2": "ALL_DIMENSIONS_PASS_PROCESS_LEAKAGE_NONE"
+    },
+    "final_audit": {
+      "deepseek-v4-pro": "PASS_FINAL_AUDIT_QUALIFIED_WITH_CAVEATS",
+      "glm-5.2": "PASS_FINAL_AUDIT_QUALIFIED_WITH_CAVEATS"
+    }
+  },
+  "created_at": "2026-07-10T00:00:00Z",
+  "updated_at": "2026-07-12T00:00:00Z",
+  "stage3a": {
+    "upstream_nodeids_audited": 196,
+    "upstream_test_files": 21,
+    "files_retained_with_public_rewrite": 5,
+    "files_discarded_after_rewrite": 16,
+    "discard_rate_after_rewrite": 0.762,
+    "rewritten_upstream_nodeids": 20,
+    "excluded_or_source_only_nodeids": 176,
+    "rewrite_audit": "filter/rewrite_audit.md",
+    "candidate_filter_map": "filter/candidate_filter_map.md",
+    "rewritten_tests": "filter/rewritten_upstream_tests.py",
+    "reference_rewrite_result": "20 passed",
+    "track_b_trigger": "discarded_files_gt_50_percent"
+  },
+  "stage3b": {
+    "coverage_json": "filter/coverage.json",
+    "coverage_gaps": "filter/coverage_gaps.txt",
+    "generated_tests": "filter/generated_tests.py",
+    "generated_nodeids": 32,
+    "dummy_result": "0/52 passed",
+    "reference_result": "52/52 passed"
+  },
+  "stage3": {
+    "oracle_count": 52,
+    "upstream_rewrite_nodeids": 20,
+    "generated_nodeids": 32,
+    "kept_nodeids": "filter/kept_nodeids.txt",
+    "spec_test_map": "filter/spec_test_map.md",
+    "taxonomy": "filter/taxonomy.jsonl",
+    "coverage_quota": "filter/coverage_quota.md",
+    "reference_score": "filter/reference_score.json",
+    "dummy_score": "dummy_score.json",
+    "by_layer": {
+      "atomic": 20,
+      "integration": 30,
+      "system_e2e": 2
+    },
+    "unknown_taxonomy": 0
+  },
+  "scorer_isolation": {
+    "method": "score_pytest_original.py with --remove-path src/hypercorn and solution-dir /root/autodl-tmp/new-e2e/pgjones__hypercorn/src",
+    "package": "hypercorn",
+    "import_provenance": "/root/autodl-tmp/new-e2e/pgjones__hypercorn/src/hypercorn/__init__.py"
+  },
+  "stage4": {
+    "candidate_run": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/hypercorn/codex-gpt-5.6-hypercorn-fullrepro-001-20260712T000000Z",
+    "candidate_visible": [
+      "spec.md",
+      "prompt.md"
+    ],
+    "output_dir": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/hypercorn/codex-gpt-5.6-hypercorn-fullrepro-001-20260712T000000Z/output",
+    "worker_agent": "019f563b-d64f-7751-a0f4-0c583d9e6317",
+    "model": "gpt-5.6-sol",
+    "status": "scored",
+    "score_result": "candidate-runs/hypercorn/codex-gpt-5.6-hypercorn-fullrepro-001-20260712T000000Z/score_result.json",
+    "score": "52/52"
+  },
+  "judge": {
+    "gate_report": "judge/gate_report.md",
+    "recommendation": "QUALIFIED_WITH_CAVEATS",
+    "labels": [
+      "saturated-candidate-score",
+      "trivially-solved",
+      "public-middleware-heavy",
+      "limited-service-e2e",
+      "coverage-gap-secondary-protocols"
+    ],
+    "final_audit_required": true,
+    "final_audit": {
+      "deepseek-v4-pro": "review/final_audit_deepseekv4pro_review.md",
+      "glm-5.2": "review/final_audit_glm52_review.md",
+      "prompt": "review/final_audit_prompt.md"
+    }
+  },
+  "qualification": "QUALIFIED_WITH_CAVEATS"
+}

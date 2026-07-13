@@ -1,0 +1,19 @@
+{
+  "task_id": "hypercorn-fullrepro-001",
+  "repo": "pgjones/hypercorn",
+  "path": "/root/autodl-tmp/new-e2e/pgjones__hypercorn",
+  "commit": "0e2311f1ad2ae587aaa590f3824f59aa5dc0e770",
+  "package": "hypercorn",
+  "source_loc": 4775,
+  "source_python_files": 43,
+  "test_files": 31,
+  "test_functions_rough": 141,
+  "collected_nodeids": 196,
+  "collection_errors": 0,
+  "docs_files_rough": 28,
+  "private_import_file_rate": 0.032,
+  "network_test_file_rate": 0.161,
+  "snapshot_test_file_rate": 0.032,
+  "environment": "/root/autodl-tmp/Bmk-Lizhiqian/envs/hypercorn-fullrepro-001",
+  "proposed_disposition": "S1_SELECTED_PENDING_REVIEW"
+}

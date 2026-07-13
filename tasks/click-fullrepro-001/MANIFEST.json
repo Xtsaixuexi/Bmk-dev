@@ -1,0 +1,150 @@
+{
+  "task_id": "click-fullrepro-001",
+  "repo": "click",
+  "package": "click",
+  "github": "https://github.com/pallets/click",
+  "remote": "https://github.com/pallets/click",
+  "source_path": "/root/autodl-tmp/e2e/click",
+  "commit": "679a7a0",
+  "created_at": "2026-07-02T03:14:53Z",
+  "state": "QUALIFIED",
+  "source_loc": 9985,
+  "source_files": 32,
+  "test_collected": 32699,
+  "kept_nodeids": 90,
+  "reference_passed": 90,
+  "reference_failed": 0,
+  "oracle_source": "upstream_filtered_reference_passed",
+  "remove_paths": [
+    "src/click"
+  ],
+  "pytest_env": {
+    "PYTHONPATH": "<source>/src:<source>",
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+    "PYTHONWARNINGS": "ignore"
+  },
+  "score_harness": "harness/score_pytest_original.py",
+  "scorer_isolation": {
+    "score_harness": "harness/score_pytest_original.py",
+    "package_import": "click",
+    "preflight_command": "python -c \"import click; print(click.__file__)\"",
+    "remove_paths": [
+      "src/click"
+    ],
+    "recorded_from_artifacts": true,
+    "source_shadowing_guard": "Remove the source package path from the copied oracle worktree before scoring, then require preflight stdout to point into candidate output."
+  },
+  "status": "QUALIFIED",
+  "pipeline_state": "QUALIFIED",
+  "current_step": 8,
+  "completed_at": "2026-07-05T00:00:00Z",
+  "judge_report": "judge/gate_report.md",
+  "diagnosis_report": "judge/diagnosis_report.md",
+  "final_reference_summary": {
+    "passed": 90,
+    "failed": 0,
+    "total": 90,
+    "pass_rate_excluding_skips": 1.0,
+    "by_layer": {
+      "atomic": {
+        "passed": 70,
+        "total": 70
+      },
+      "system_e2e": {
+        "passed": 20,
+        "total": 20
+      }
+    }
+  },
+  "candidate_eval_summary": {
+    "adopted_model": "gpt-5.5",
+    "adopted_runners": [
+      "opencode"
+    ],
+    "best_candidate": {
+      "runner": "opencode",
+      "model": "gpt-5.5",
+      "run_id": "opencode-gpt-5.5-click-fullrepro-001-20260705T-repair-provenance",
+      "run_path": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/click-repair-opencode/opencode-gpt-5.5-click-fullrepro-001-20260705T-repair-provenance",
+      "passed": 2,
+      "total": 90,
+      "pass_rate_excluding_skips": 0.022222222222222223,
+      "summary": {
+        "collection_error": 60,
+        "failed": 27,
+        "passed": 2,
+        "total": 90,
+        "xfailed": 1
+      },
+      "by_layer": {
+        "atomic": {
+          "collection_error": 59,
+          "failed": 11,
+          "total": 71,
+          "xfailed": 1
+        },
+        "system_e2e": {
+          "collection_error": 1,
+          "failed": 16,
+          "passed": 2,
+          "total": 19
+        }
+      },
+      "import_provenance_stdout": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/click-repair-opencode/opencode-gpt-5.5-click-fullrepro-001-20260705T-repair-provenance/output/click/__init__.py"
+    },
+    "all_scored": [
+      {
+        "runner": "opencode",
+        "model": "gpt-5.5",
+        "run_id": "opencode-gpt-5.5-click-fullrepro-001-20260705T-repair-provenance",
+        "run_path": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/click-repair-opencode/opencode-gpt-5.5-click-fullrepro-001-20260705T-repair-provenance",
+        "summary": {
+          "collection_error": 60,
+          "failed": 27,
+          "passed": 2,
+          "total": 90,
+          "xfailed": 1
+        },
+        "pass_rate_excluding_skips": 0.022222222222222223,
+        "by_layer": {
+          "atomic": {
+            "collection_error": 59,
+            "failed": 11,
+            "total": 71,
+            "xfailed": 1
+          },
+          "system_e2e": {
+            "collection_error": 1,
+            "failed": 16,
+            "passed": 2,
+            "total": 19
+          }
+        },
+        "import_provenance_stdout": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/click-repair-opencode/opencode-gpt-5.5-click-fullrepro-001-20260705T-repair-provenance/output/click/__init__.py",
+        "import_provenance_clean": true
+      }
+    ]
+  },
+  "candidate_visibility": "Candidate generation may receive only spec.md plus generic implementation instructions. Do not expose source path, tests, kept_nodeids, taxonomy, reference_score, reviews, score reports, or prior outputs.",
+  "qualification_reason": "Reference/oracle passes at 100%; repaired candidate run has clean import provenance; candidate failures are implementation gaps.",
+  "labels": [
+    "qualified",
+    "e2e10",
+    "provenance-repaired",
+    "gpt-5.5-opencode"
+  ],
+  "coverage-gap": {
+    "verdict": "FULL",
+    "scoreable_tests": 90,
+    "global_floor_ok": true,
+    "per_section_minimums": {
+      "Cross-View Invariants": 5,
+      "Error Semantics": 3,
+      "workflow_sections": 3,
+      "all_other_scored_sections": 3
+    },
+    "below_minimum_sections": [],
+    "unknown_mapping_cells": 0,
+    "requires_action": "No Gate D action required under current-main audit."
+  }
+}

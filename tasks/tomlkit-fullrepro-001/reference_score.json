@@ -1,0 +1,41 @@
+{
+  "task_id": "tomlkit-fullrepro-001",
+  "reference": "/root/autodl-tmp/e2e/tomlkit",
+  "oracle_source": "upstream_plus_generated",
+  "upstream_tests": 12,
+  "generated_tests": 52,
+  "total": 64,
+  "passed": 64,
+  "failed": 0,
+  "skipped": 0,
+  "errors": 0,
+  "pass_rate_excluding_skips": 1.0,
+  "summary": {
+    "passed": 64,
+    "total": 64
+  },
+  "by_layer": {
+    "system_e2e": {
+      "passed": 20,
+      "total": 20
+    },
+    "integration": {
+      "passed": 19,
+      "total": 19
+    },
+    "atomic": {
+      "passed": 25,
+      "total": 25
+    }
+  },
+  "reports": {
+    "upstream": "reference/upstream_pytest_report.json",
+    "generated": "reference/generated_pytest_report.json"
+  },
+  "logs": {
+    "upstream_stdout": "logs/reference_upstream_stdout.txt",
+    "upstream_stderr": "logs/reference_upstream_stderr.txt",
+    "generated_stdout": "logs/reference_generated_stdout.txt",
+    "generated_stderr": "logs/reference_generated_stderr.txt"
+  }
+}

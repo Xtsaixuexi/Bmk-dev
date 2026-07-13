@@ -1,0 +1,90 @@
+tests/test_cli.py::test_cli_main_empty
+tests/test_cli.py::test_parser_empty
+tests/test_cli.py::test_main_help
+tests/test_cli.py::test_valid_args
+tests/test_cli.py::test_invalid_choice
+tests/test_cli.py::test_invalid_args
+tests/test_cli.py::test_invalid_infile
+tests/test_cli.py::test_invalid_outfile
+tests/test_cli.py::test_stdout
+tests/test_cli.py::test_script
+tests/test_cli.py::test_encoding_stdout[encoding_utf8.sql-utf-8]
+tests/test_cli.py::test_encoding_stdout[encoding_gbk.sql-gbk]
+tests/test_cli.py::test_encoding_output_file[encoding_utf8.sql-utf-8]
+tests/test_cli.py::test_encoding_output_file[encoding_gbk.sql-gbk]
+tests/test_cli.py::test_encoding_stdin[encoding_utf8.sql-utf-8]
+tests/test_cli.py::test_encoding_stdin[encoding_gbk.sql-gbk]
+tests/test_cli.py::test_encoding
+tests/test_cli.py::test_cli_multiple_files_with_inplace
+tests/test_cli.py::test_cli_multiple_files_without_inplace_fails
+tests/test_cli.py::test_cli_inplace_with_stdin_fails
+tests/test_cli.py::test_cli_outfile_with_multiple_files_fails
+tests/test_cli.py::test_cli_single_file_inplace
+tests/test_cli.py::test_cli_error_handling_continues
+tests/test_dos_prevention.py::TestDoSPrevention::test_large_tuple_list_performance
+tests/test_dos_prevention.py::TestDoSPrevention::test_deeply_nested_groups_limited
+tests/test_dos_prevention.py::TestDoSPrevention::test_very_large_token_list_limited
+tests/test_dos_prevention.py::TestDoSPrevention::test_nested_paren_within_cap_under_1s
+tests/test_dos_prevention.py::TestDoSPrevention::test_nested_case_within_cap_under_1s
+tests/test_dos_prevention.py::TestDoSPrevention::test_normal_sql_still_works
+tests/test_dos_prevention.py::TestDoSPrevention::test_reasonable_tuple_list_works
+tests/test_format.py::TestFormat::test_keywordcase
+tests/test_format.py::TestFormat::test_keywordcase_invalid_option
+tests/test_format.py::TestFormat::test_identifiercase
+tests/test_format.py::TestFormat::test_identifiercase_invalid_option
+tests/test_format.py::TestFormat::test_identifiercase_quotes
+tests/test_format.py::TestFormat::test_strip_comments_single
+tests/test_format.py::TestFormat::test_strip_comments_invalid_option
+tests/test_format.py::TestFormat::test_strip_comments_multi
+tests/test_format.py::TestFormat::test_strip_comments_preserves_linebreak
+tests/test_format.py::TestFormat::test_strip_comments_preserves_whitespace
+tests/test_format.py::TestFormat::test_strip_comments_preserves_hint
+tests/test_format.py::TestFormat::test_strip_ws
+tests/test_format.py::TestFormat::test_strip_ws_invalid_option
+tests/test_format.py::TestFormat::test_preserve_ws
+tests/test_format.py::TestFormat::test_notransform_of_quoted_crlf
+tests/test_format.py::TestFormatReindentAligned::test_basic
+tests/test_format.py::TestFormatReindentAligned::test_joins
+tests/test_format.py::TestFormatReindentAligned::test_case_statement
+tests/test_format.py::TestFormatReindentAligned::test_case_statement_with_between
+tests/test_format.py::TestFormatReindentAligned::test_group_by
+tests/test_format.py::TestFormatReindentAligned::test_group_by_subquery
+tests/test_format.py::TestFormatReindentAligned::test_window_functions
+tests/test_format.py::TestSpacesAroundOperators::test_basic
+tests/test_format.py::TestSpacesAroundOperators::test_bools
+tests/test_format.py::TestSpacesAroundOperators::test_nested
+tests/test_format.py::TestSpacesAroundOperators::test_wildcard_vs_mult
+tests/test_format.py::TestFormatReindent::test_option
+tests/test_format.py::TestFormatReindent::test_stmts
+tests/test_format.py::TestFormatReindent::test_keywords
+tests/test_format.py::TestFormatReindent::test_keywords_between
+tests/test_grouping.py::test_grouping_parenthesis
+tests/test_grouping.py::test_grouping_assignment[foo := 1;]
+tests/test_grouping.py::test_grouping_assignment[foo := 1]
+tests/test_grouping.py::test_grouping_typed_literal[x > DATE '2020-01-01']
+tests/test_grouping.py::test_grouping_typed_literal[x > TIMESTAMP '2020-01-01 00:00:00']
+tests/test_grouping.py::test_compare_expr[select a from b where c < d + e-Identifier-Identifier]
+tests/test_grouping.py::test_compare_expr[select a from b where c < d + interval '1 day'-Identifier-TypedLiteral]
+tests/test_grouping.py::test_compare_expr[select a from b where c < d + interval '6' month-Identifier-TypedLiteral]
+tests/test_grouping.py::test_grouping_identifiers
+tests/test_grouping.py::test_simple_identifiers[1 as f]
+tests/test_grouping.py::test_simple_identifiers[foo as f]
+tests/test_grouping.py::test_simple_identifiers[foo f]
+tests/test_grouping.py::test_group_identifier_list[foo, bar]
+tests/test_grouping.py::test_group_identifier_list[sum(a), sum(b)]
+tests/test_grouping.py::test_group_identifier_list[sum(a) as x, b as y]
+tests/test_grouping.py::test_grouping_identifier_wildcard
+tests/test_grouping.py::test_grouping_identifier_name_wildcard
+tests/test_grouping.py::test_grouping_identifier_invalid
+tests/test_grouping.py::test_grouping_identifier_invalid_in_middle
+tests/test_grouping.py::test_grouping_identifer_as[foo as (select *)]
+tests/test_grouping.py::test_grouping_identifer_as[foo as(select *)]
+tests/test_grouping.py::test_grouping_identifier_as_invalid
+tests/test_grouping.py::test_grouping_identifier_function
+tests/test_grouping.py::test_grouping_operation[foo+100]
+tests/test_grouping.py::test_grouping_operation[foo + 100]
+tests/test_grouping.py::test_grouping_operation[foo*100]
+tests/test_grouping.py::test_grouping_identifier_list
+tests/test_grouping.py::test_grouping_identifier_list_subquery
+tests/test_grouping.py::test_grouping_identifier_list_case
+tests/test_grouping.py::test_grouping_identifier_list_other

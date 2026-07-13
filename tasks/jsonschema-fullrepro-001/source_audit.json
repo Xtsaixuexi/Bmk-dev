@@ -1,0 +1,25 @@
+{
+  "repo": "jsonschema",
+  "src_loc": 4142,
+  "test_collected": 8337,
+  "kept": 90,
+  "collected_files": {
+    "jsonschema/tests/test_jsonschema_test_suite.py": 7841,
+    "jsonschema/tests/test_validators.py": 303,
+    "jsonschema/tests/test_exceptions.py": 59,
+    "jsonschema/tests/test_cli.py": 50,
+    "jsonschema/tests/test_utils.py": 38,
+    "jsonschema/tests/test_deprecations.py": 23,
+    "jsonschema/tests/test_types.py": 15,
+    "jsonschema/tests/test_format.py": 8
+  },
+  "kept_files": {
+    "jsonschema/tests/test_validators.py": 35,
+    "jsonschema/tests/test_cli.py": 25,
+    "jsonschema/tests/test_exceptions.py": 15,
+    "jsonschema/tests/test_format.py": 8,
+    "jsonschema/tests/test_deprecations.py": 7
+  },
+  "private_import_files_rough": 2,
+  "collect_status": "rc=0, 8337 nodeids"
+}

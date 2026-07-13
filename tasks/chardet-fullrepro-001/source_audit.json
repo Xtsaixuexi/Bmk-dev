@@ -1,0 +1,57 @@
+{
+  "repo": "chardet",
+  "src_loc": 9628,
+  "src_files": 46,
+  "test_collected": 9253,
+  "kept": 90,
+  "bad_files": [
+    {
+      "file": "tests/data/scripts/check_test_data.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.12s"
+    },
+    {
+      "file": "tests/data/scripts/cleanup_duplicates.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.12s"
+    },
+    {
+      "file": "tests/data/scripts/encoding_gaps.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.13s"
+    },
+    {
+      "file": "tests/data/scripts/encoding_overlaps.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.17s"
+    },
+    {
+      "file": "tests/data/scripts/find_real_test_data.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.15s"
+    },
+    {
+      "file": "tests/data/scripts/generate_test_files.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.17s"
+    },
+    {
+      "file": "tests/data/scripts/regenerate_catalog.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.11s"
+    },
+    {
+      "file": "tests/data/scripts/substitutions.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.11s"
+    }
+  ]
+}

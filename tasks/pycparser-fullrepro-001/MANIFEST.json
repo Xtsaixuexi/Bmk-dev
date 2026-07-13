@@ -1,0 +1,169 @@
+{
+  "task_id": "pycparser-fullrepro-001",
+  "repo": "pycparser",
+  "package": "pycparser",
+  "github": "https://github.com/eliben/pycparser",
+  "remote": "https://github.com/eliben/pycparser",
+  "source_path": "/root/autodl-tmp/e2e/pycparser",
+  "commit": "89c9f3d",
+  "created_at": "2026-07-02T03:14:53Z",
+  "state": "S5_JUDGE_READY_FOR_CANDIDATE_EVAL",
+  "source_loc": 4912,
+  "source_files": 28,
+  "test_collected": 135,
+  "kept_nodeids": 90,
+  "reference_passed": 90,
+  "reference_failed": 0,
+  "oracle_source": "upstream_filtered_reference_passed",
+  "remove_paths": [
+    "pycparser"
+  ],
+  "pytest_env": {
+    "PYTHONPATH": "<source>/src:<source>",
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+    "PYTHONWARNINGS": "ignore"
+  },
+  "score_harness": "harness/score_pytest_original.py",
+  "scorer_isolation": {
+    "score_harness": "harness/score_pytest_original.py",
+    "package_import": "pycparser",
+    "preflight_command": "python -c \"import pycparser; print(pycparser.__file__)\"",
+    "remove_paths": [
+      "pycparser"
+    ],
+    "recorded_from_artifacts": true,
+    "source_shadowing_guard": "Remove the source package path from the copied oracle worktree before scoring, then require preflight stdout to point into candidate output."
+  },
+  "status": "QUALIFIED",
+  "pipeline_state": "QUALIFIED",
+  "current_step": 8,
+  "completed_at": "2026-07-05T00:00:00Z",
+  "judge_report": "judge/gate_report.md",
+  "diagnosis_report": "judge/diagnosis_report.md",
+  "final_reference_summary": {
+    "passed": 90,
+    "failed": 0,
+    "total": 90,
+    "pass_rate_excluding_skips": 1.0,
+    "by_layer": {
+      "atomic": {
+        "passed": 60,
+        "total": 60
+      },
+      "integration": {
+        "passed": 30,
+        "total": 30
+      }
+    }
+  },
+  "candidate_eval_summary": {
+    "adopted_model": "gpt-5.5",
+    "adopted_runners": [
+      "opencode",
+      "swe-agent"
+    ],
+    "best_candidate": {
+      "runner": "swe-agent",
+      "model": "gpt-5.5",
+      "run_id": "swe-agent-gpt-5.5-pycparser-fullrepro-001-20260702T035227Z",
+      "run_path": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/e2e10-sweagent/swe-agent-gpt-5.5-pycparser-fullrepro-001-20260702T035227Z",
+      "passed": 33,
+      "total": 90,
+      "pass_rate_excluding_skips": 0.36666666666666664,
+      "summary": {
+        "failed": 57,
+        "passed": 33,
+        "total": 90
+      },
+      "by_layer": {
+        "atomic": {
+          "failed": 29,
+          "passed": 31,
+          "total": 60
+        },
+        "integration": {
+          "failed": 28,
+          "passed": 2,
+          "total": 30
+        }
+      },
+      "import_provenance_stdout": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/e2e10-sweagent/swe-agent-gpt-5.5-pycparser-fullrepro-001-20260702T035227Z/output/pycparser/__init__.py"
+    },
+    "all_scored": [
+      {
+        "runner": "opencode",
+        "model": "gpt-5.5",
+        "run_id": "opencode-gpt-5.5-pycparser-fullrepro-001-20260702T035140Z",
+        "run_path": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/e2e10-isolated/opencode-gpt-5.5-pycparser-fullrepro-001-20260702T035140Z",
+        "summary": {
+          "failed": 63,
+          "passed": 27,
+          "total": 90
+        },
+        "pass_rate_excluding_skips": 0.3,
+        "by_layer": {
+          "atomic": {
+            "failed": 38,
+            "passed": 22,
+            "total": 60
+          },
+          "integration": {
+            "failed": 25,
+            "passed": 5,
+            "total": 30
+          }
+        },
+        "import_provenance_stdout": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/e2e10-isolated/opencode-gpt-5.5-pycparser-fullrepro-001-20260702T035140Z/output/pycparser/__init__.py",
+        "import_provenance_clean": true
+      },
+      {
+        "runner": "swe-agent",
+        "model": "gpt-5.5",
+        "run_id": "swe-agent-gpt-5.5-pycparser-fullrepro-001-20260702T035227Z",
+        "run_path": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/e2e10-sweagent/swe-agent-gpt-5.5-pycparser-fullrepro-001-20260702T035227Z",
+        "summary": {
+          "failed": 57,
+          "passed": 33,
+          "total": 90
+        },
+        "pass_rate_excluding_skips": 0.36666666666666664,
+        "by_layer": {
+          "atomic": {
+            "failed": 29,
+            "passed": 31,
+            "total": 60
+          },
+          "integration": {
+            "failed": 28,
+            "passed": 2,
+            "total": 30
+          }
+        },
+        "import_provenance_stdout": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/e2e10-sweagent/swe-agent-gpt-5.5-pycparser-fullrepro-001-20260702T035227Z/output/pycparser/__init__.py",
+        "import_provenance_clean": true
+      }
+    ],
+    "glm_policy": "opencode + glm-5.2 returned rc=1/no candidate output for the batch; swe-agent + glm-5.2 smoke timed out; GLM not adopted for this batch."
+  },
+  "candidate_visibility": "Candidate generation may receive only spec.md plus generic implementation instructions. Do not expose source path, tests, kept_nodeids, taxonomy, reference_score, reviews, score reports, or prior outputs.",
+  "qualification_reason": "Reference/oracle passes at 100%; candidate runs have clean import provenance; remaining failures are candidate implementation gaps.",
+  "labels": [
+    "qualified",
+    "e2e10",
+    "gpt-5.5-batch"
+  ],
+  "coverage-gap": {
+    "verdict": "FULL",
+    "scoreable_tests": 90,
+    "global_floor_ok": true,
+    "per_section_minimums": {
+      "Cross-View Invariants": 5,
+      "Error Semantics": 3,
+      "workflow_sections": 3,
+      "all_other_scored_sections": 3
+    },
+    "below_minimum_sections": [],
+    "unknown_mapping_cells": 0,
+    "requires_action": "No Gate D action required under current-main audit."
+  }
+}

@@ -1,0 +1,1861 @@
+
+
+============================================================
+## src/hypercorn/__main__.py  (covered: 0%)
+
+Uncovered branch: line 15 → line 16
+      12  
+      13  
+      14  def _load_config(config_path: str | None) -> Config:
+>>>   15      if config_path is None:
+      16          return Config()
+      17      elif config_path.startswith("python:"):
+      18          return Config.from_object(config_path[len("python:") :])
+      19      elif config_path.startswith("file:"):
+      20          return Config.from_pyfile(config_path[len("file:") :])
+      21      else:
+
+Uncovered branch: line 17 → line 18
+      14  def _load_config(config_path: str | None) -> Config:
+      15      if config_path is None:
+      16          return Config()
+>>>   17      elif config_path.startswith("python:"):
+      18          return Config.from_object(config_path[len("python:") :])
+      19      elif config_path.startswith("file:"):
+      20          return Config.from_pyfile(config_path[len("file:") :])
+      21      else:
+      22          return Config.from_toml(config_path)
+      23  
+
+Uncovered branch: line 19 → line 20
+      16          return Config()
+      17      elif config_path.startswith("python:"):
+      18          return Config.from_object(config_path[len("python:") :])
+>>>   19      elif config_path.startswith("file:"):
+      20          return Config.from_pyfile(config_path[len("file:") :])
+      21      else:
+      22          return Config.from_toml(config_path)
+      23  
+      24  
+      25  def main(sys_args: list[str] | None = None) -> int:
+
+Uncovered branch: line 228 → line 229
+     225      config = _load_config(args.config)
+     226      config.application_path = args.application
+     227  
+>>>  228      if args.log_level is not sentinel:
+     229          config.loglevel = args.log_level
+     230      if args.access_logformat is not sentinel:
+     231          config.access_log_format = args.access_logformat
+     232      if args.access_log is not sentinel:
+     233          warnings.warn(
+     234              "The --access-log argument is deprecated, use `--access-logfile` instead",
+
+Uncovered branch: line 230 → line 231
+     227  
+     228      if args.log_level is not sentinel:
+     229          config.loglevel = args.log_level
+>>>  230      if args.access_logformat is not sentinel:
+     231          config.access_log_format = args.access_logformat
+     232      if args.access_log is not sentinel:
+     233          warnings.warn(
+     234              "The --access-log argument is deprecated, use `--access-logfile` instead",
+     235              DeprecationWarning,
+     236          )
+
+Uncovered branch: line 232 → line 233
+     229          config.loglevel = args.log_level
+     230      if args.access_logformat is not sentinel:
+     231          config.access_log_format = args.access_logformat
+>>>  232      if args.access_log is not sentinel:
+     233          warnings.warn(
+     234              "The --access-log argument is deprecated, use `--access-logfile` instead",
+     235              DeprecationWarning,
+     236          )
+     237          config.accesslog = args.access_log
+     238      if args.access_logfile is not sentinel:
+
+Uncovered branch: line 238 → line 239
+     235              DeprecationWarning,
+     236          )
+     237          config.accesslog = args.access_log
+>>>  238      if args.access_logfile is not sentinel:
+     239          config.accesslog = args.access_logfile
+     240      if args.backlog is not sentinel:
+     241          config.backlog = args.backlog
+     242      if args.ca_certs is not sentinel:
+     243          config.ca_certs = args.ca_certs
+     244      if args.certfile is not sentinel:
+
+Uncovered branch: line 240 → line 241
+     237          config.accesslog = args.access_log
+     238      if args.access_logfile is not sentinel:
+     239          config.accesslog = args.access_logfile
+>>>  240      if args.backlog is not sentinel:
+     241          config.backlog = args.backlog
+     242      if args.ca_certs is not sentinel:
+     243          config.ca_certs = args.ca_certs
+     244      if args.certfile is not sentinel:
+     245          config.certfile = args.certfile
+     246      if args.cert_reqs is not sentinel:
+
+Uncovered branch: line 242 → line 243
+     239          config.accesslog = args.access_logfile
+     240      if args.backlog is not sentinel:
+     241          config.backlog = args.backlog
+>>>  242      if args.ca_certs is not sentinel:
+     243          config.ca_certs = args.ca_certs
+     244      if args.certfile is not sentinel:
+     245          config.certfile = args.certfile
+     246      if args.cert_reqs is not sentinel:
+     247          config.cert_reqs = args.cert_reqs
+     248      if args.ciphers is not sentinel:
+
+Uncovered branch: line 244 → line 245
+     241          config.backlog = args.backlog
+     242      if args.ca_certs is not sentinel:
+     243          config.ca_certs = args.ca_certs
+>>>  244      if args.certfile is not sentinel:
+     245          config.certfile = args.certfile
+     246      if args.cert_reqs is not sentinel:
+     247          config.cert_reqs = args.cert_reqs
+     248      if args.ciphers is not sentinel:
+     249          config.ciphers = args.ciphers
+     250      if args.daemon is not sentinel:
+
+Uncovered branch: line 246 → line 247
+     243          config.ca_certs = args.ca_certs
+     244      if args.certfile is not sentinel:
+     245          config.certfile = args.certfile
+>>>  246      if args.cert_reqs is not sentinel:
+     247          config.cert_reqs = args.cert_reqs
+     248      if args.ciphers is not sentinel:
+     249          config.ciphers = args.ciphers
+     250      if args.daemon is not sentinel:
+     251          config.daemon = args.daemon
+     252      if args.debug is not sentinel:
+
+Uncovered branch: line 248 → line 249
+     245          config.certfile = args.certfile
+     246      if args.cert_reqs is not sentinel:
+     247          config.cert_reqs = args.cert_reqs
+>>>  248      if args.ciphers is not sentinel:
+     249          config.ciphers = args.ciphers
+     250      if args.daemon is not sentinel:
+     251          config.daemon = args.daemon
+     252      if args.debug is not sentinel:
+     253          config.debug = args.debug
+     254      if args.error_log is not sentinel:
+
+Uncovered branch: line 250 → line 251
+     247          config.cert_reqs = args.cert_reqs
+     248      if args.ciphers is not sentinel:
+     249          config.ciphers = args.ciphers
+>>>  250      if args.daemon is not sentinel:
+     251          config.daemon = args.daemon
+     252      if args.debug is not sentinel:
+     253          config.debug = args.debug
+     254      if args.error_log is not sentinel:
+     255          warnings.warn(
+     256              "The --error-log argument is deprecated, use `--error-logfile` instead",
+
+Uncovered branch: line 252 → line 253
+     249          config.ciphers = args.ciphers
+     250      if args.daemon is not sentinel:
+     251          config.daemon = args.daemon
+>>>  252      if args.debug is not sentinel:
+     253          config.debug = args.debug
+     254      if args.error_log is not sentinel:
+     255          warnings.warn(
+     256              "The --error-log argument is deprecated, use `--error-logfile` instead",
+     257              DeprecationWarning,
+     258          )
+
+Uncovered branch: line 254 → line 255
+     251          config.daemon = args.daemon
+     252      if args.debug is not sentinel:
+     253          config.debug = args.debug
+>>>  254      if args.error_log is not sentinel:
+     255          warnings.warn(
+     256              "The --error-log argument is deprecated, use `--error-logfile` instead",
+     257              DeprecationWarning,
+     258          )
+     259          config.errorlog = args.error_log
+     260      if args.error_logfile is not sentinel:
+
+Uncovered branch: line 260 → line 261
+     257              DeprecationWarning,
+     258          )
+     259          config.errorlog = args.error_log
+>>>  260      if args.error_logfile is not sentinel:
+     261          config.errorlog = args.error_logfile
+     262      if args.graceful_timeout is not sentinel:
+     263          config.graceful_timeout = args.graceful_timeout
+     264      if args.read_timeout is not sentinel:
+     265          config.read_timeout = args.read_timeout
+     266      if args.group is not sentinel:
+
+Uncovered branch: line 262 → line 263
+     259          config.errorlog = args.error_log
+     260      if args.error_logfile is not sentinel:
+     261          config.errorlog = args.error_logfile
+>>>  262      if args.graceful_timeout is not sentinel:
+     263          config.graceful_timeout = args.graceful_timeout
+     264      if args.read_timeout is not sentinel:
+     265          config.read_timeout = args.read_timeout
+     266      if args.group is not sentinel:
+     267          config.group = args.group
+     268      if args.keep_alive is not sentinel:
+
+Uncovered branch: line 264 → line 265
+     261          config.errorlog = args.error_logfile
+     262      if args.graceful_timeout is not sentinel:
+     263          config.graceful_timeout = args.graceful_timeout
+>>>  264      if args.read_timeout is not sentinel:
+     265          config.read_timeout = args.read_timeout
+     266      if args.group is not sentinel:
+     267          config.group = args.group
+     268      if args.keep_alive is not sentinel:
+     269          config.keep_alive_timeout = args.keep_alive
+     270      if args.keyfile is not sentinel:
+
+Uncovered branch: line 266 → line 267
+     263          config.graceful_timeout = args.graceful_timeout
+     264      if args.read_timeout is not sentinel:
+     265          config.read_timeout = args.read_timeout
+>>>  266      if args.group is not sentinel:
+     267          config.group = args.group
+     268      if args.keep_alive is not sentinel:
+     269          config.keep_alive_timeout = args.keep_alive
+     270      if args.keyfile is not sentinel:
+     271          config.keyfile = args.keyfile
+     272      if args.keyfile_password is not sentinel:
+
+Uncovered branch: line 268 → line 269
+     265          config.read_timeout = args.read_timeout
+     266      if args.group is not sentinel:
+     267          config.group = args.group
+>>>  268      if args.keep_alive is not sentinel:
+     269          config.keep_alive_timeout = args.keep_alive
+     270      if args.keyfile is not sentinel:
+     271          config.keyfile = args.keyfile
+     272      if args.keyfile_password is not sentinel:
+     273          config.keyfile_password = args.keyfile_password
+     274      if args.log_config is not sentinel:
+
+Uncovered branch: line 270 → line 271
+     267          config.group = args.group
+     268      if args.keep_alive is not sentinel:
+     269          config.keep_alive_timeout = args.keep_alive
+>>>  270      if args.keyfile is not sentinel:
+     271          config.keyfile = args.keyfile
+     272      if args.keyfile_password is not sentinel:
+     273          config.keyfile_password = args.keyfile_password
+     274      if args.log_config is not sentinel:
+     275          config.logconfig = args.log_config
+     276      if args.max_requests is not sentinel:
+
+Uncovered branch: line 272 → line 273
+     269          config.keep_alive_timeout = args.keep_alive
+     270      if args.keyfile is not sentinel:
+     271          config.keyfile = args.keyfile
+>>>  272      if args.keyfile_password is not sentinel:
+     273          config.keyfile_password = args.keyfile_password
+     274      if args.log_config is not sentinel:
+     275          config.logconfig = args.log_config
+     276      if args.max_requests is not sentinel:
+     277          config.max_requests = args.max_requests
+     278      if args.max_requests_jitter is not sentinel:
+
+Uncovered branch: line 274 → line 275
+     271          config.keyfile = args.keyfile
+     272      if args.keyfile_password is not sentinel:
+     273          config.keyfile_password = args.keyfile_password
+>>>  274      if args.log_config is not sentinel:
+     275          config.logconfig = args.log_config
+     276      if args.max_requests is not sentinel:
+     277          config.max_requests = args.max_requests
+     278      if args.max_requests_jitter is not sentinel:
+     279          config.max_requests_jitter = args.max_requests
+     280      if args.pid is not sentinel:
+
+Uncovered branch: line 276 → line 277
+     273          config.keyfile_password = args.keyfile_password
+     274      if args.log_config is not sentinel:
+     275          config.logconfig = args.log_config
+>>>  276      if args.max_requests is not sentinel:
+     277          config.max_requests = args.max_requests
+     278      if args.max_requests_jitter is not sentinel:
+     279          config.max_requests_jitter = args.max_requests
+     280      if args.pid is not sentinel:
+     281          config.pid_path = args.pid
+     282      if args.root_path is not sentinel:
+
+Uncovered branch: line 278 → line 279
+     275          config.logconfig = args.log_config
+     276      if args.max_requests is not sentinel:
+     277          config.max_requests = args.max_requests
+>>>  278      if args.max_requests_jitter is not sentinel:
+     279          config.max_requests_jitter = args.max_requests
+     280      if args.pid is not sentinel:
+     281          config.pid_path = args.pid
+     282      if args.root_path is not sentinel:
+     283          config.root_path = args.root_path
+     284      if args.reload is not sentinel:
+
+Uncovered branch: line 280 → line 281
+     277          config.max_requests = args.max_requests
+     278      if args.max_requests_jitter is not sentinel:
+     279          config.max_requests_jitter = args.max_requests
+>>>  280      if args.pid is not sentinel:
+     281          config.pid_path = args.pid
+     282      if args.root_path is not sentinel:
+     283          config.root_path = args.root_path
+     284      if args.reload is not sentinel:
+     285          config.use_reloader = args.reload
+     286      if args.statsd_host is not sentinel:
+
+Uncovered branch: line 282 → line 283
+     279          config.max_requests_jitter = args.max_requests
+     280      if args.pid is not sentinel:
+     281          config.pid_path = args.pid
+>>>  282      if args.root_path is not sentinel:
+     283          config.root_path = args.root_path
+     284      if args.reload is not sentinel:
+     285          config.use_reloader = args.reload
+     286      if args.statsd_host is not sentinel:
+     287          config.statsd_host = args.statsd_host
+     288      if args.statsd_prefix is not sentinel:
+
+Uncovered branch: line 284 → line 285
+     281          config.pid_path = args.pid
+     282      if args.root_path is not sentinel:
+     283          config.root_path = args.root_path
+>>>  284      if args.reload is not sentinel:
+     285          config.use_reloader = args.reload
+     286      if args.statsd_host is not sentinel:
+     287          config.statsd_host = args.statsd_host
+     288      if args.statsd_prefix is not sentinel:
+     289          config.statsd_prefix = args.statsd_prefix
+     290      if args.umask is not sentinel:
+
+Uncovered branch: line 286 → line 287
+     283          config.root_path = args.root_path
+     284      if args.reload is not sentinel:
+     285          config.use_reloader = args.reload
+>>>  286      if args.statsd_host is not sentinel:
+     287          config.statsd_host = args.statsd_host
+     288      if args.statsd_prefix is not sentinel:
+     289          config.statsd_prefix = args.statsd_prefix
+     290      if args.umask is not sentinel:
+     291          config.umask = args.umask
+     292      if args.user is not sentinel:
+
+Uncovered branch: line 288 → line 289
+     285          config.use_reloader = args.reload
+     286      if args.statsd_host is not sentinel:
+     287          config.statsd_host = args.statsd_host
+>>>  288      if args.statsd_prefix is not sentinel:
+     289          config.statsd_prefix = args.statsd_prefix
+     290      if args.umask is not sentinel:
+     291          config.umask = args.umask
+     292      if args.user is not sentinel:
+     293          config.user = args.user
+     294      if args.worker_class is not sentinel:
+
+Uncovered branch: line 290 → line 291
+     287          config.statsd_host = args.statsd_host
+     288      if args.statsd_prefix is not sentinel:
+     289          config.statsd_prefix = args.statsd_prefix
+>>>  290      if args.umask is not sentinel:
+     291          config.umask = args.umask
+     292      if args.user is not sentinel:
+     293          config.user = args.user
+     294      if args.worker_class is not sentinel:
+     295          config.worker_class = args.worker_class
+     296      if args.verify_mode is not sentinel:
+
+Uncovered branch: line 292 → line 293
+     289          config.statsd_prefix = args.statsd_prefix
+     290      if args.umask is not sentinel:
+     291          config.umask = args.umask
+>>>  292      if args.user is not sentinel:
+     293          config.user = args.user
+     294      if args.worker_class is not sentinel:
+     295          config.worker_class = args.worker_class
+     296      if args.verify_mode is not sentinel:
+     297          config.verify_mode = args.verify_mode
+     298      if args.websocket_ping_interval is not sentinel:
+
+Uncovered branch: line 294 → line 295
+     291          config.umask = args.umask
+     292      if args.user is not sentinel:
+     293          config.user = args.user
+>>>  294      if args.worker_class is not sentinel:
+     295          config.worker_class = args.worker_class
+     296      if args.verify_mode is not sentinel:
+     297          config.verify_mode = args.verify_mode
+     298      if args.websocket_ping_interval is not sentinel:
+     299          config.websocket_ping_interval = args.websocket_ping_interval
+     300      if args.workers is not sentinel:
+
+Uncovered branch: line 296 → line 297
+     293          config.user = args.user
+     294      if args.worker_class is not sentinel:
+     295          config.worker_class = args.worker_class
+>>>  296      if args.verify_mode is not sentinel:
+     297          config.verify_mode = args.verify_mode
+     298      if args.websocket_ping_interval is not sentinel:
+     299          config.websocket_ping_interval = args.websocket_ping_interval
+     300      if args.workers is not sentinel:
+     301          config.workers = args.workers
+     302  
+
+Uncovered branch: line 298 → line 299
+     295          config.worker_class = args.worker_class
+     296      if args.verify_mode is not sentinel:
+     297          config.verify_mode = args.verify_mode
+>>>  298      if args.websocket_ping_interval is not sentinel:
+     299          config.websocket_ping_interval = args.websocket_ping_interval
+     300      if args.workers is not sentinel:
+     301          config.workers = args.workers
+     302  
+     303      if len(args.binds) > 0:
+     304          config.bind = args.binds
+
+Uncovered branch: line 300 → line 301
+     297          config.verify_mode = args.verify_mode
+     298      if args.websocket_ping_interval is not sentinel:
+     299          config.websocket_ping_interval = args.websocket_ping_interval
+>>>  300      if args.workers is not sentinel:
+     301          config.workers = args.workers
+     302  
+     303      if len(args.binds) > 0:
+     304          config.bind = args.binds
+     305      if len(args.insecure_binds) > 0:
+     306          config.insecure_bind = args.insecure_binds
+
+Uncovered branch: line 303 → line 304
+     300      if args.workers is not sentinel:
+     301          config.workers = args.workers
+     302  
+>>>  303      if len(args.binds) > 0:
+     304          config.bind = args.binds
+     305      if len(args.insecure_binds) > 0:
+     306          config.insecure_bind = args.insecure_binds
+     307      if len(args.quic_binds) > 0:
+     308          config.quic_bind = args.quic_binds
+     309      if len(args.server_names) > 0:
+
+Uncovered branch: line 305 → line 306
+     302  
+     303      if len(args.binds) > 0:
+     304          config.bind = args.binds
+>>>  305      if len(args.insecure_binds) > 0:
+     306          config.insecure_bind = args.insecure_binds
+     307      if len(args.quic_binds) > 0:
+     308          config.quic_bind = args.quic_binds
+     309      if len(args.server_names) > 0:
+     310          config.server_names = args.server_names
+     311  
+
+Uncovered branch: line 307 → line 308
+     304          config.bind = args.binds
+     305      if len(args.insecure_binds) > 0:
+     306          config.insecure_bind = args.insecure_binds
+>>>  307      if len(args.quic_binds) > 0:
+     308          config.quic_bind = args.quic_binds
+     309      if len(args.server_names) > 0:
+     310          config.server_names = args.server_names
+     311  
+     312      return run(config)
+     313  
+
+Uncovered branch: line 309 → line 310
+     306          config.insecure_bind = args.insecure_binds
+     307      if len(args.quic_binds) > 0:
+     308          config.quic_bind = args.quic_binds
+>>>  309      if len(args.server_names) > 0:
+     310          config.server_names = args.server_names
+     311  
+     312      return run(config)
+     313  
+     314  
+     315  if __name__ == "__main__":
+
+Uncovered branch: line 315 → exit/exception
+     312      return run(config)
+     313  
+     314  
+>>>  315  if __name__ == "__main__":
+     316      sys.exit(main())
+
+## src/hypercorn/asyncio/run.py  (covered: 20%)
+
+Uncovered branch: line 41 → line 45
+      38  except ImportError:
+      39      from taskgroup import TaskGroup  # type: ignore
+      40  
+>>>   41  if sys.version_info < (3, 11):
+      42      from exceptiongroup import BaseExceptionGroup
+      43  
+      44  
+      45  def _share_socket(sock: socket) -> socket:
+      46      # Windows requires the socket be explicitly shared across
+      47      # multiple workers (processes).
+
+Uncovered branch: line 65 → line 66
+      62  
+      63      loop = asyncio.get_event_loop()
+      64  
+>>>   65      if shutdown_trigger is None:
+      66          signal_event = asyncio.Event()
+      67  
+      68          def _signal_handler(*_: Any) -> None:  # noqa: N803
+      69              signal_event.set()
+      70  
+      71          for signal_name in {"SIGINT", "SIGTERM", "SIGBREAK"}:
+
+Uncovered branch: line 71 → line 72
+      68          def _signal_handler(*_: Any) -> None:  # noqa: N803
+      69              signal_event.set()
+      70  
+>>>   71          for signal_name in {"SIGINT", "SIGTERM", "SIGBREAK"}:
+      72              if hasattr(signal, signal_name):
+      73                  try:
+      74                      loop.add_signal_handler(getattr(signal, signal_name), _signal_handler)
+      75                  except NotImplementedError:
+      76                      # Add signal handler may not be implemented on Windows
+      77                      signal.signal(getattr(signal, signal_name), _signal_handler)
+
+Uncovered branch: line 72 → line 71
+      69              signal_event.set()
+      70  
+      71          for signal_name in {"SIGINT", "SIGTERM", "SIGBREAK"}:
+>>>   72              if hasattr(signal, signal_name):
+      73                  try:
+      74                      loop.add_signal_handler(getattr(signal, signal_name), _signal_handler)
+      75                  except NotImplementedError:
+      76                      # Add signal handler may not be implemented on Windows
+      77                      signal.signal(getattr(signal, signal_name), _signal_handler)
+      78  
+
+Uncovered branch: line 86 → line 87
+      83  
+      84      lifespan_task = loop.create_task(lifespan.handle_lifespan())
+      85      await lifespan.wait_for_startup()
+>>>   86      if lifespan_task.done():
+      87          exception = lifespan_task.exception()
+      88          if exception is not None:
+      89              raise exception
+      90  
+      91      if sockets is None:
+      92          sockets = config.create_sockets()
+
+Uncovered branch: line 88 → line 89
+      85      await lifespan.wait_for_startup()
+      86      if lifespan_task.done():
+      87          exception = lifespan_task.exception()
+>>>   88          if exception is not None:
+      89              raise exception
+      90  
+      91      if sockets is None:
+      92          sockets = config.create_sockets()
+      93  
+      94      ssl_handshake_timeout = None
+
+Uncovered branch: line 91 → line 92
+      88          if exception is not None:
+      89              raise exception
+      90  
+>>>   91      if sockets is None:
+      92          sockets = config.create_sockets()
+      93  
+      94      ssl_handshake_timeout = None
+      95      if config.ssl_enabled:
+      96          ssl_context = config.create_ssl_context()
+      97          ssl_handshake_timeout = config.ssl_handshake_timeout
+
+Uncovered branch: line 95 → line 96
+      92          sockets = config.create_sockets()
+      93  
+      94      ssl_handshake_timeout = None
+>>>   95      if config.ssl_enabled:
+      96          ssl_context = config.create_ssl_context()
+      97          ssl_handshake_timeout = config.ssl_handshake_timeout
+      98  
+      99      max_requests = None
+     100      if config.max_requests is not None:
+     101          max_requests = config.max_requests + randint(0, config.max_requests_jitter)
+
+Uncovered branch: line 100 → line 101
+      97          ssl_handshake_timeout = config.ssl_handshake_timeout
+      98  
+      99      max_requests = None
+>>>  100      if config.max_requests is not None:
+     101          max_requests = config.max_requests + randint(0, config.max_requests_jitter)
+     102      context = WorkerContext(max_requests)
+     103      server_tasks: set[asyncio.Task] = set()
+     104  
+     105      async def _server_callback(reader: asyncio.StreamReader, writer: asyncio.StreamWriter) -> None:
+     106          task = asyncio.current_task(loop)
+
+Uncovered branch: line 112 → line 113
+     109          await TCPServer(app, loop, config, context, lifespan_state, reader, writer)
+     110  
+     111      servers = []
+>>>  112      for sock in sockets.secure_sockets:
+     113          if config.workers > 1 and platform.system() == "Windows":
+     114              sock = _share_socket(sock)
+     115  
+     116          servers.append(
+     117              await asyncio.start_server(
+     118                  _server_callback,
+
+Uncovered branch: line 113 → line 114
+     110  
+     111      servers = []
+     112      for sock in sockets.secure_sockets:
+>>>  113          if config.workers > 1 and platform.system() == "Windows":
+     114              sock = _share_socket(sock)
+     115  
+     116          servers.append(
+     117              await asyncio.start_server(
+     118                  _server_callback,
+     119                  backlog=config.backlog,
+
+Uncovered branch: line 128 → line 129
+     125          bind = repr_socket_addr(sock.family, sock.getsockname())
+     126          await config.log.info(f"Running on https://{bind} (CTRL + C to quit)")
+     127  
+>>>  128      for sock in sockets.insecure_sockets:
+     129          if config.workers > 1 and platform.system() == "Windows":
+     130              sock = _share_socket(sock)
+     131  
+     132          servers.append(
+     133              await asyncio.start_server(_server_callback, backlog=config.backlog, sock=sock)
+     134          )
+
+Uncovered branch: line 129 → line 130
+     126          await config.log.info(f"Running on https://{bind} (CTRL + C to quit)")
+     127  
+     128      for sock in sockets.insecure_sockets:
+>>>  129          if config.workers > 1 and platform.system() == "Windows":
+     130              sock = _share_socket(sock)
+     131  
+     132          servers.append(
+     133              await asyncio.start_server(_server_callback, backlog=config.backlog, sock=sock)
+     134          )
+     135          bind = repr_socket_addr(sock.family, sock.getsockname())
+
+Uncovered branch: line 138 → line 139
+     135          bind = repr_socket_addr(sock.family, sock.getsockname())
+     136          await config.log.info(f"Running on http://{bind} (CTRL + C to quit)")
+     137  
+>>>  138      for sock in sockets.quic_sockets:
+     139          if config.workers > 1 and platform.system() == "Windows":
+     140              sock = _share_socket(sock)
+     141  
+     142          _, protocol = await loop.create_datagram_endpoint(
+     143              lambda: UDPServer(app, loop, config, context, lifespan_state), sock=sock
+     144          )
+
+Uncovered branch: line 139 → line 140
+     136          await config.log.info(f"Running on http://{bind} (CTRL + C to quit)")
+     137  
+     138      for sock in sockets.quic_sockets:
+>>>  139          if config.workers > 1 and platform.system() == "Windows":
+     140              sock = _share_socket(sock)
+     141  
+     142          _, protocol = await loop.create_datagram_endpoint(
+     143              lambda: UDPServer(app, loop, config, context, lifespan_state), sock=sock
+     144          )
+     145          task = loop.create_task(protocol.run())
+
+Uncovered branch: line 157 → line 158
+     154              task_group.create_task(raise_shutdown(context.terminate.wait))
+     155      except BaseExceptionGroup as error:
+     156          _, other_errors = error.split((ShutdownError, KeyboardInterrupt))
+>>>  157          if other_errors is not None:
+     158              raise other_errors
+     159      except (ShutdownError, KeyboardInterrupt):
+     160          pass
+     161      finally:
+     162          await context.terminated.set()
+     163  
+
+Uncovered branch: line 164 → line 165
+     161      finally:
+     162          await context.terminated.set()
+     163  
+>>>  164          for server in servers:
+     165              server.close()
+     166              await server.wait_closed()
+     167  
+     168          try:
+     169              gathered_server_tasks = asyncio.gather(*server_tasks)
+     170              await asyncio.wait_for(gathered_server_tasks, config.graceful_timeout)
+
+Uncovered branch: line 189 → line 190
+     186      app = load_application(config.application_path, config.wsgi_max_body_size)
+     187  
+     188      shutdown_trigger = None
+>>>  189      if shutdown_event is not None:
+     190          shutdown_trigger = partial(check_multiprocess_shutdown_event, shutdown_event, asyncio.sleep)
+     191  
+     192      if config.workers > 1 and platform.system() == "Windows":
+     193          asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())  # type: ignore
+     194  
+     195      _run(
+
+Uncovered branch: line 192 → line 193
+     189      if shutdown_event is not None:
+     190          shutdown_trigger = partial(check_multiprocess_shutdown_event, shutdown_event, asyncio.sleep)
+     191  
+>>>  192      if config.workers > 1 and platform.system() == "Windows":
+     193          asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())  # type: ignore
+     194  
+     195      _run(
+     196          partial(worker_serve, app, config, sockets=sockets),
+     197          debug=config.debug,
+     198          shutdown_trigger=shutdown_trigger,
+
+Uncovered branch: line 213 → line 214
+     210      app = load_application(config.application_path, config.wsgi_max_body_size)
+     211  
+     212      shutdown_trigger = None
+>>>  213      if shutdown_event is not None:
+     214          shutdown_trigger = partial(check_multiprocess_shutdown_event, shutdown_event, asyncio.sleep)
+     215  
+     216      _run(
+     217          partial(worker_serve, app, config, sockets=sockets),
+     218          debug=config.debug,
+     219          shutdown_trigger=shutdown_trigger,
+
+Uncovered branch: line 238 → line 239
+     235  
+     236  def _exception_handler(loop: asyncio.AbstractEventLoop, context: dict) -> None:
+     237      exception = context.get("exception")
+>>>  238      if isinstance(exception, ssl.SSLError):
+     239          pass  # Handshake failure
+     240      else:
+     241          loop.default_exception_handler(context)
+
+## src/hypercorn/config.py  (covered: 50%)
+
+Uncovered branch: line 27 → line 28
+      24  from typing import Any
+      25  from wsgiref.handlers import format_date_time
+      26  
+>>>   27  if sys.version_info >= (3, 11):
+      28      import tomllib
+      29  else:
+      30      import tomli as tomllib
+      31  
+      32  from .logging import Logger
+      33  
+
+Uncovered branch: line 125 → line 126
+     122  
+     123      @property
+     124      def log(self) -> Logger:
+>>>  125          if self._log is None:
+     126              self._log = self.logger_class(self)
+     127          return self._log
+     128  
+     129      @property
+     130      def bind(self) -> list[str]:
+     131          return self._bind
+
+Uncovered branch: line 135 → line 138
+     132  
+     133      @bind.setter
+     134      def bind(self, value: list[str] | str) -> None:
+>>>  135          if isinstance(value, str):
+     136              self._bind = [value]
+     137          else:
+     138              self._bind = value
+     139  
+     140      @property
+     141      def insecure_bind(self) -> list[str]:
+
+Uncovered branch: line 146 → line 147
+     143  
+     144      @insecure_bind.setter
+     145      def insecure_bind(self, value: list[str] | str) -> None:
+>>>  146          if isinstance(value, str):
+     147              self._insecure_bind = [value]
+     148          else:
+     149              self._insecure_bind = value
+     150  
+     151      @property
+     152      def quic_bind(self) -> list[str]:
+
+Uncovered branch: line 157 → line 158
+     154  
+     155      @quic_bind.setter
+     156      def quic_bind(self, value: list[str] | str) -> None:
+>>>  157          if isinstance(value, str):
+     158              self._quic_bind = [value]
+     159          else:
+     160              self._quic_bind = value
+     161  
+     162      @property
+     163      def root_path(self) -> str:
+
+Uncovered branch: line 171 → line 172
+     168          self._root_path = value.rstrip("/")
+     169  
+     170      def create_ssl_context(self) -> SSLContext | None:
+>>>  171          if not self.ssl_enabled:
+     172              return None
+     173  
+     174          context = create_default_context(Purpose.CLIENT_AUTH)
+     175          context.set_ciphers(self.ciphers)
+     176          context.minimum_version = TLSVersion.TLSv1_2  # RFC 7540 Section 9.2: MUST be TLS >=1.2
+     177          context.options = OP_NO_COMPRESSION  # RFC 7540 Section 9.2.1: MUST disable compression
+
+Uncovered branch: line 180 → line 181
+     177          context.options = OP_NO_COMPRESSION  # RFC 7540 Section 9.2.1: MUST disable compression
+     178          context.set_alpn_protocols(self.alpn_protocols)
+     179  
+>>>  180          if self.certfile is not None and self.keyfile is not None:
+     181              context.load_cert_chain(
+     182                  certfile=self.certfile,
+     183                  keyfile=self.keyfile,
+     184                  password=self.keyfile_password,
+     185              )
+     186  
+
+Uncovered branch: line 187 → line 188
+     184                  password=self.keyfile_password,
+     185              )
+     186  
+>>>  187          if self.ca_certs is not None:
+     188              context.load_verify_locations(self.ca_certs)
+     189          if self.verify_mode is not None:
+     190              context.verify_mode = self.verify_mode
+     191          if self.verify_flags is not None:
+     192              context.verify_flags = self.verify_flags
+     193  
+
+Uncovered branch: line 189 → line 190
+     186  
+     187          if self.ca_certs is not None:
+     188              context.load_verify_locations(self.ca_certs)
+>>>  189          if self.verify_mode is not None:
+     190              context.verify_mode = self.verify_mode
+     191          if self.verify_flags is not None:
+     192              context.verify_flags = self.verify_flags
+     193  
+     194          return context
+     195  
+
+Uncovered branch: line 191 → line 192
+     188              context.load_verify_locations(self.ca_certs)
+     189          if self.verify_mode is not None:
+     190              context.verify_mode = self.verify_mode
+>>>  191          if self.verify_flags is not None:
+     192              context.verify_flags = self.verify_flags
+     193  
+     194          return context
+     195  
+     196      @property
+     197      def ssl_enabled(self) -> bool:
+
+Uncovered branch: line 201 → line 202
+     198          return self.certfile is not None and self.keyfile is not None
+     199  
+     200      def create_sockets(self) -> Sockets:
+>>>  201          if self.ssl_enabled:
+     202              secure_sockets = self._create_sockets(self.bind)
+     203              insecure_sockets = self._create_sockets(self.insecure_bind)
+     204              quic_sockets = self._create_sockets(self.quic_bind, socket.SOCK_DGRAM)
+     205              self._set_quic_addresses(quic_sockets)
+     206          else:
+     207              secure_sockets = []
+
+Uncovered branch: line 214 → exit/exception
+     211  
+     212      def _set_quic_addresses(self, sockets: list[socket.socket]) -> None:
+     213          self._quic_addresses = []
+>>>  214          for sock in sockets:
+     215              name = sock.getsockname()
+     216              if type(name) is not str and len(name) >= 2:
+     217                  self._quic_addresses.append(name)
+     218              else:
+     219                  warnings.warn(
+     220                      f'Cannot create a alt-svc header for the QUIC socket with address "{name}"',
+
+Uncovered branch: line 216 → line 217
+     213          self._quic_addresses = []
+     214          for sock in sockets:
+     215              name = sock.getsockname()
+>>>  216              if type(name) is not str and len(name) >= 2:
+     217                  self._quic_addresses.append(name)
+     218              else:
+     219                  warnings.warn(
+     220                      f'Cannot create a alt-svc header for the QUIC socket with address "{name}"',
+     221                      Warning,
+     222                  )
+
+Uncovered branch: line 228 → line 229
+     225          self, binds: list[str], type_: int = socket.SOCK_STREAM
+     226      ) -> list[socket.socket]:
+     227          sockets: list[socket.socket] = []
+>>>  228          for bind in binds:
+     229              binding: Any = None
+     230              if bind.startswith("unix:"):
+     231                  sock = socket.socket(socket.AF_UNIX, type_)
+     232                  binding = bind[5:]
+     233                  try:
+     234                      if stat.S_ISSOCK(os.stat(binding).st_mode):
+
+Uncovered branch: line 230 → line 231
+     227          sockets: list[socket.socket] = []
+     228          for bind in binds:
+     229              binding: Any = None
+>>>  230              if bind.startswith("unix:"):
+     231                  sock = socket.socket(socket.AF_UNIX, type_)
+     232                  binding = bind[5:]
+     233                  try:
+     234                      if stat.S_ISSOCK(os.stat(binding).st_mode):
+     235                          os.remove(binding)
+     236                  except FileNotFoundError:
+
+Uncovered branch: line 234 → line 235
+     231                  sock = socket.socket(socket.AF_UNIX, type_)
+     232                  binding = bind[5:]
+     233                  try:
+>>>  234                      if stat.S_ISSOCK(os.stat(binding).st_mode):
+     235                          os.remove(binding)
+     236                  except FileNotFoundError:
+     237                      pass
+     238              elif bind.startswith("fd://"):
+     239                  sock = socket.socket(fileno=int(bind[5:]))
+     240                  actual_type = sock.getsockopt(socket.SOL_SOCKET, socket.SO_TYPE)
+
+Uncovered branch: line 238 → line 239
+     235                          os.remove(binding)
+     236                  except FileNotFoundError:
+     237                      pass
+>>>  238              elif bind.startswith("fd://"):
+     239                  sock = socket.socket(fileno=int(bind[5:]))
+     240                  actual_type = sock.getsockopt(socket.SOL_SOCKET, socket.SO_TYPE)
+     241                  if actual_type != type_:
+     242                      raise SocketTypeError(type_, actual_type)
+     243              else:
+     244                  bind = bind.replace("[", "").replace("]", "")
+
+Uncovered branch: line 241 → line 242
+     238              elif bind.startswith("fd://"):
+     239                  sock = socket.socket(fileno=int(bind[5:]))
+     240                  actual_type = sock.getsockopt(socket.SOL_SOCKET, socket.SO_TYPE)
+>>>  241                  if actual_type != type_:
+     242                      raise SocketTypeError(type_, actual_type)
+     243              else:
+     244                  bind = bind.replace("[", "").replace("]", "")
+     245                  try:
+     246                      value = bind.rsplit(":", 1)
+     247                      host, port = value[0], int(value[1])
+
+Uncovered branch: line 252 → line 253
+     249                      host, port = bind, 8000
+     250                  sock = socket.socket(socket.AF_INET6 if ":" in host else socket.AF_INET, type_)
+     251  
+>>>  252                  if type_ == socket.SOCK_STREAM:
+     253                      sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+     254  
+     255                  if self.workers > 1:
+     256                      try:
+     257                          sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEPORT, 1)
+     258                      except AttributeError:
+
+Uncovered branch: line 255 → line 256
+     252                  if type_ == socket.SOCK_STREAM:
+     253                      sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+     254  
+>>>  255                  if self.workers > 1:
+     256                      try:
+     257                          sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEPORT, 1)
+     258                      except AttributeError:
+     259                          pass
+     260                  binding = (host, port)
+     261  
+
+Uncovered branch: line 264 → line 265
+     261  
+     262              sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+     263  
+>>>  264              if bind.startswith("unix:"):
+     265                  if self.umask is not None:
+     266                      current_umask = os.umask(self.umask)
+     267                  sock.bind(binding)
+     268                  if self.user is not None and self.group is not None:
+     269                      os.chown(binding, self.user, self.group)
+     270                  if self.umask is not None:
+
+Uncovered branch: line 265 → line 266
+     262              sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+     263  
+     264              if bind.startswith("unix:"):
+>>>  265                  if self.umask is not None:
+     266                      current_umask = os.umask(self.umask)
+     267                  sock.bind(binding)
+     268                  if self.user is not None and self.group is not None:
+     269                      os.chown(binding, self.user, self.group)
+     270                  if self.umask is not None:
+     271                      os.umask(current_umask)
+
+Uncovered branch: line 268 → line 269
+     265                  if self.umask is not None:
+     266                      current_umask = os.umask(self.umask)
+     267                  sock.bind(binding)
+>>>  268                  if self.user is not None and self.group is not None:
+     269                      os.chown(binding, self.user, self.group)
+     270                  if self.umask is not None:
+     271                      os.umask(current_umask)
+     272              elif bind.startswith("fd://"):
+     273                  pass
+     274              else:
+
+Uncovered branch: line 270 → line 271
+     267                  sock.bind(binding)
+     268                  if self.user is not None and self.group is not None:
+     269                      os.chown(binding, self.user, self.group)
+>>>  270                  if self.umask is not None:
+     271                      os.umask(current_umask)
+     272              elif bind.startswith("fd://"):
+     273                  pass
+     274              else:
+     275                  sock.bind(binding)
+     276  
+
+Uncovered branch: line 272 → line 273
+     269                      os.chown(binding, self.user, self.group)
+     270                  if self.umask is not None:
+     271                      os.umask(current_umask)
+>>>  272              elif bind.startswith("fd://"):
+     273                  pass
+     274              else:
+     275                  sock.bind(binding)
+     276  
+     277              sock.setblocking(False)
+     278              try:
+
+Uncovered branch: line 287 → line 288
+     284  
+     285      def response_headers(self, protocol: str) -> list[tuple[bytes, bytes]]:
+     286          headers = []
+>>>  287          if self.include_date_header:
+     288              headers.append((b"date", format_date_time(time()).encode("ascii")))
+     289          if self.include_server_header:
+     290              headers.append((b"server", f"hypercorn-{protocol}".encode("ascii")))
+     291  
+     292          for alt_svc_header in self.alt_svc_headers:
+     293              headers.append((b"alt-svc", alt_svc_header.encode()))
+
+Uncovered branch: line 292 → line 293
+     289          if self.include_server_header:
+     290              headers.append((b"server", f"hypercorn-{protocol}".encode("ascii")))
+     291  
+>>>  292          for alt_svc_header in self.alt_svc_headers:
+     293              headers.append((b"alt-svc", alt_svc_header.encode()))
+     294          if len(self.alt_svc_headers) == 0 and self._quic_addresses:
+     295              from aioquic.h3.connection import H3_ALPN
+     296  
+     297              for version in H3_ALPN:
+     298                  for addr in self._quic_addresses:
+
+Uncovered branch: line 294 → line 295
+     291  
+     292          for alt_svc_header in self.alt_svc_headers:
+     293              headers.append((b"alt-svc", alt_svc_header.encode()))
+>>>  294          if len(self.alt_svc_headers) == 0 and self._quic_addresses:
+     295              from aioquic.h3.connection import H3_ALPN
+     296  
+     297              for version in H3_ALPN:
+     298                  for addr in self._quic_addresses:
+     299                      port = addr[1]
+     300                      headers.append((b"alt-svc", b'%s=":%d"; ma=3600' % (version.encode(), port)))
+
+Uncovered branch: line 297 → line 298
+     294          if len(self.alt_svc_headers) == 0 and self._quic_addresses:
+     295              from aioquic.h3.connection import H3_ALPN
+     296  
+>>>  297              for version in H3_ALPN:
+     298                  for addr in self._quic_addresses:
+     299                      port = addr[1]
+     300                      headers.append((b"alt-svc", b'%s=":%d"; ma=3600' % (version.encode(), port)))
+     301  
+     302          return headers
+     303  
+
+Uncovered branch: line 298 → line 297
+     295              from aioquic.h3.connection import H3_ALPN
+     296  
+     297              for version in H3_ALPN:
+>>>  298                  for addr in self._quic_addresses:
+     299                      port = addr[1]
+     300                      headers.append((b"alt-svc", b'%s=":%d"; ma=3600' % (version.encode(), port)))
+     301  
+     302          return headers
+     303  
+     304      def set_statsd_logger_class(self, statsd_logger: type[Logger]) -> None:
+
+Uncovered branch: line 305 → exit/exception
+     302          return headers
+     303  
+     304      def set_statsd_logger_class(self, statsd_logger: type[Logger]) -> None:
+>>>  305          if self.logger_class == Logger and self.statsd_host is not None:
+     306              self.logger_class = statsd_logger
+     307  
+     308      @classmethod
+     309      def from_mapping(
+     310          cls: type[Config], mapping: Mapping[str, Any] | None = None, **kwargs: Any
+     311      ) -> Config:
+
+Uncovered branch: line 329 → line 331
+     326                  form a mapping.
+     327          """
+     328          mappings: dict[str, Any] = {}
+>>>  329          if mapping is not None:
+     330              mappings.update(mapping)
+     331          mappings.update(kwargs)
+     332          config = cls()
+     333          for key, value in mappings.items():
+     334              try:
+     335                  setattr(config, key, value)
+
+## src/hypercorn/logging.py  (covered: 18%)
+
+Uncovered branch: line 13 → line 14
+      10  from logging.config import dictConfig, fileConfig
+      11  from typing import Any, IO, TYPE_CHECKING
+      12  
+>>>   13  if sys.version_info >= (3, 11):
+      14      import tomllib
+      15  else:
+      16      import tomli as tomllib
+      17  
+      18  
+      19  if TYPE_CHECKING:
+
+Uncovered branch: line 32 → line 33
+      29      *,
+      30      propagate: bool = True,
+      31  ) -> logging.Logger | None:
+>>>   32      if isinstance(target, logging.Logger):
+      33          return target
+      34  
+      35      if target:
+      36          logger = logging.getLogger(name)
+      37          logger.handlers = [
+      38              logging.StreamHandler(sys_default) if target == "-" else logging.FileHandler(target)
+
+Uncovered branch: line 35 → line 36
+      32      if isinstance(target, logging.Logger):
+      33          return target
+      34  
+>>>   35      if target:
+      36          logger = logging.getLogger(name)
+      37          logger.handlers = [
+      38              logging.StreamHandler(sys_default) if target == "-" else logging.FileHandler(target)
+      39          ]
+      40          logger.propagate = propagate
+      41          formatter = logging.Formatter(
+
+Uncovered branch: line 46 → line 47
+      43              "[%Y-%m-%d %H:%M:%S %z]",
+      44          )
+      45          logger.handlers[0].setFormatter(formatter)
+>>>   46          if level is not None:
+      47              logger.setLevel(logging.getLevelName(level.upper()))
+      48          return logger
+      49      else:
+      50          return None
+      51  
+      52  
+
+Uncovered branch: line 68 → line 69
+      65              "hypercorn.error", config.errorlog, config.loglevel, sys.stderr
+      66          )
+      67  
+>>>   68          if config.logconfig is not None:
+      69              if config.logconfig.startswith("json:"):
+      70                  with open(config.logconfig[5:]) as file_:
+      71                      dictConfig(json.load(file_))
+      72              elif config.logconfig.startswith("toml:"):
+      73                  with open(config.logconfig[5:], "rb") as file_:
+      74                      dictConfig(tomllib.load(file_))
+
+Uncovered branch: line 69 → line 70
+      66          )
+      67  
+      68          if config.logconfig is not None:
+>>>   69              if config.logconfig.startswith("json:"):
+      70                  with open(config.logconfig[5:]) as file_:
+      71                      dictConfig(json.load(file_))
+      72              elif config.logconfig.startswith("toml:"):
+      73                  with open(config.logconfig[5:], "rb") as file_:
+      74                      dictConfig(tomllib.load(file_))
+      75              else:
+
+Uncovered branch: line 72 → line 73
+      69              if config.logconfig.startswith("json:"):
+      70                  with open(config.logconfig[5:]) as file_:
+      71                      dictConfig(json.load(file_))
+>>>   72              elif config.logconfig.startswith("toml:"):
+      73                  with open(config.logconfig[5:], "rb") as file_:
+      74                      dictConfig(tomllib.load(file_))
+      75              else:
+      76                  log_config = {
+      77                      "__file__": config.logconfig,
+      78                      "here": os.path.dirname(config.logconfig),
+
+Uncovered branch: line 82 → exit/exception
+      79                  }
+      80                  fileConfig(config.logconfig, defaults=log_config, disable_existing_loggers=False)
+      81          else:
+>>>   82              if config.logconfig_dict is not None:
+      83                  dictConfig(config.logconfig_dict)
+      84  
+      85      async def access(
+      86          self, request: WWWScope, response: ResponseSummary, request_time: float
+      87      ) -> None:
+      88          if self.access_logger is not None:
+
+Uncovered branch: line 88 → exit/exception
+      85      async def access(
+      86          self, request: WWWScope, response: ResponseSummary, request_time: float
+      87      ) -> None:
+>>>   88          if self.access_logger is not None:
+      89              self.access_logger.info(
+      90                  self.access_log_format, self.atoms(request, response, request_time)
+      91              )
+      92  
+      93      async def critical(self, message: str, *args: Any, **kwargs: Any) -> None:
+      94          if self.error_logger is not None:
+
+Uncovered branch: line 94 → exit/exception
+      91              )
+      92  
+      93      async def critical(self, message: str, *args: Any, **kwargs: Any) -> None:
+>>>   94          if self.error_logger is not None:
+      95              self.error_logger.critical(message, *args, **kwargs)
+      96  
+      97      async def error(self, message: str, *args: Any, **kwargs: Any) -> None:
+      98          if self.error_logger is not None:
+      99              self.error_logger.error(message, *args, **kwargs)
+     100  
+
+Uncovered branch: line 98 → exit/exception
+      95              self.error_logger.critical(message, *args, **kwargs)
+      96  
+      97      async def error(self, message: str, *args: Any, **kwargs: Any) -> None:
+>>>   98          if self.error_logger is not None:
+      99              self.error_logger.error(message, *args, **kwargs)
+     100  
+     101      async def warning(self, message: str, *args: Any, **kwargs: Any) -> None:
+     102          if self.error_logger is not None:
+     103              self.error_logger.warning(message, *args, **kwargs)
+     104  
+
+Uncovered branch: line 102 → exit/exception
+      99              self.error_logger.error(message, *args, **kwargs)
+     100  
+     101      async def warning(self, message: str, *args: Any, **kwargs: Any) -> None:
+>>>  102          if self.error_logger is not None:
+     103              self.error_logger.warning(message, *args, **kwargs)
+     104  
+     105      async def info(self, message: str, *args: Any, **kwargs: Any) -> None:
+     106          if self.error_logger is not None:
+     107              self.error_logger.info(message, *args, **kwargs)
+     108  
+
+Uncovered branch: line 106 → exit/exception
+     103              self.error_logger.warning(message, *args, **kwargs)
+     104  
+     105      async def info(self, message: str, *args: Any, **kwargs: Any) -> None:
+>>>  106          if self.error_logger is not None:
+     107              self.error_logger.info(message, *args, **kwargs)
+     108  
+     109      async def debug(self, message: str, *args: Any, **kwargs: Any) -> None:
+     110          if self.error_logger is not None:
+     111              self.error_logger.debug(message, *args, **kwargs)
+     112  
+
+Uncovered branch: line 110 → exit/exception
+     107              self.error_logger.info(message, *args, **kwargs)
+     108  
+     109      async def debug(self, message: str, *args: Any, **kwargs: Any) -> None:
+>>>  110          if self.error_logger is not None:
+     111              self.error_logger.debug(message, *args, **kwargs)
+     112  
+     113      async def exception(self, message: str, *args: Any, **kwargs: Any) -> None:
+     114          if self.error_logger is not None:
+     115              self.error_logger.exception(message, *args, **kwargs)
+     116  
+
+Uncovered branch: line 114 → exit/exception
+     111              self.error_logger.debug(message, *args, **kwargs)
+     112  
+     113      async def exception(self, message: str, *args: Any, **kwargs: Any) -> None:
+>>>  114          if self.error_logger is not None:
+     115              self.error_logger.exception(message, *args, **kwargs)
+     116  
+     117      async def log(self, level: int, message: str, *args: Any, **kwargs: Any) -> None:
+     118          if self.error_logger is not None:
+     119              self.error_logger.log(level, message, *args, **kwargs)
+     120  
+
+Uncovered branch: line 118 → exit/exception
+     115              self.error_logger.exception(message, *args, **kwargs)
+     116  
+     117      async def log(self, level: int, message: str, *args: Any, **kwargs: Any) -> None:
+>>>  118          if self.error_logger is not None:
+     119              self.error_logger.log(level, message, *args, **kwargs)
+     120  
+     121      def atoms(
+     122          self, request: WWWScope, response: ResponseSummary | None, request_time: float
+     123      ) -> Mapping[str, str]:
+     124          """Create and return an access log atoms dictionary.
+
+Uncovered branch: line 139 → line 140
+     136      def __init__(
+     137          self, request: WWWScope, response: ResponseSummary | None, request_time: float
+     138      ) -> None:
+>>>  139          for name, value in request["headers"]:
+     140              self[f"{{{name.decode('latin1').lower()}}}i"] = value.decode("latin1")
+     141          for name, value in os.environ.items():
+     142              self[f"{{{name.lower()}}}e"] = value
+     143          protocol = request.get("http_version", "ws")
+     144          client = request.get("client")
+     145          if client is None:
+
+Uncovered branch: line 141 → line 142
+     138      ) -> None:
+     139          for name, value in request["headers"]:
+     140              self[f"{{{name.decode('latin1').lower()}}}i"] = value.decode("latin1")
+>>>  141          for name, value in os.environ.items():
+     142              self[f"{{{name.lower()}}}e"] = value
+     143          protocol = request.get("http_version", "ws")
+     144          client = request.get("client")
+     145          if client is None:
+     146              remote_addr = None
+     147          elif len(client) == 2:
+
+Uncovered branch: line 145 → line 146
+     142              self[f"{{{name.lower()}}}e"] = value
+     143          protocol = request.get("http_version", "ws")
+     144          client = request.get("client")
+>>>  145          if client is None:
+     146              remote_addr = None
+     147          elif len(client) == 2:
+     148              remote_addr = f"{client[0]}:{client[1]}"
+     149          elif len(client) == 1:
+     150              remote_addr = client[0]
+     151          else:  # make sure not to throw UnboundLocalError
+
+Uncovered branch: line 147 → line 148
+     144          client = request.get("client")
+     145          if client is None:
+     146              remote_addr = None
+>>>  147          elif len(client) == 2:
+     148              remote_addr = f"{client[0]}:{client[1]}"
+     149          elif len(client) == 1:
+     150              remote_addr = client[0]
+     151          else:  # make sure not to throw UnboundLocalError
+     152              remote_addr = f"<???{client}???>"
+     153          if request["type"] == "http":
+
+Uncovered branch: line 149 → line 150
+     146              remote_addr = None
+     147          elif len(client) == 2:
+     148              remote_addr = f"{client[0]}:{client[1]}"
+>>>  149          elif len(client) == 1:
+     150              remote_addr = client[0]
+     151          else:  # make sure not to throw UnboundLocalError
+     152              remote_addr = f"<???{client}???>"
+     153          if request["type"] == "http":
+     154              method = request["method"]
+     155          else:
+
+Uncovered branch: line 153 → line 154
+     150              remote_addr = client[0]
+     151          else:  # make sure not to throw UnboundLocalError
+     152              remote_addr = f"<???{client}???>"
+>>>  153          if request["type"] == "http":
+     154              method = request["method"]
+     155          else:
+     156              method = "GET"
+     157          query_string = request["query_string"].decode()
+     158          path_with_qs = request["path"] + ("?" + query_string if query_string else "")
+     159  
+
+Uncovered branch: line 162 → line 163
+     159  
+     160          status_code = "-"
+     161          status_phrase = "-"
+>>>  162          if response is not None:
+     163              for name, value in response.get("headers", []):  # type: ignore
+     164                  self[f"{{{name.decode('latin1').lower()}}}o"] = value.decode("latin1")  # type: ignore # noqa: E501
+     165              status_code = str(response["status"])
+     166              try:
+     167                  status_phrase = HTTPStatus(response["status"]).phrase
+     168              except ValueError:
+
+Uncovered branch: line 163 → line 164
+     160          status_code = "-"
+     161          status_phrase = "-"
+     162          if response is not None:
+>>>  163              for name, value in response.get("headers", []):  # type: ignore
+     164                  self[f"{{{name.decode('latin1').lower()}}}o"] = value.decode("latin1")  # type: ignore # noqa: E501
+     165              status_code = str(response["status"])
+     166              try:
+     167                  status_phrase = HTTPStatus(response["status"]).phrase
+     168              except ValueError:
+     169                  status_phrase = f"<???{status_code}???>"
+
+Uncovered branch: line 198 → line 199
+     195  
+     196      def __getitem__(self, key: str) -> str:
+     197          try:
+>>>  198              if key.startswith("{"):
+     199                  return super().__getitem__(key.lower())
+     200              else:
+     201                  return super().__getitem__(key)
+     202          except KeyError:
+     203              return "-"
+
+## src/hypercorn/middleware/dispatcher.py  (covered: 56%)
+
+Uncovered branch: line 60 → line 56
+      57                  message = await receive()
+      58                  for queue in self.app_queues.values():
+      59                      await queue.put(message)
+>>>   60                  if message["type"] == "lifespan.shutdown":
+      61                      break
+      62  
+      63      async def send(self, path: str, send: Callable, message: dict) -> None:
+      64          if message["type"] == "lifespan.startup.complete":
+      65              self.startup_complete[path] = True
+      66              if all(self.startup_complete.values()):
+
+Uncovered branch: line 64 → line 68
+      61                      break
+      62  
+      63      async def send(self, path: str, send: Callable, message: dict) -> None:
+>>>   64          if message["type"] == "lifespan.startup.complete":
+      65              self.startup_complete[path] = True
+      66              if all(self.startup_complete.values()):
+      67                  await send({"type": "lifespan.startup.complete"})
+      68          elif message["type"] == "lifespan.shutdown.complete":
+      69              self.shutdown_complete[path] = True
+      70              if all(self.shutdown_complete.values()):
+
+Uncovered branch: line 68 → exit/exception
+      65              self.startup_complete[path] = True
+      66              if all(self.startup_complete.values()):
+      67                  await send({"type": "lifespan.startup.complete"})
+>>>   68          elif message["type"] == "lifespan.shutdown.complete":
+      69              self.shutdown_complete[path] = True
+      70              if all(self.shutdown_complete.values()):
+      71                  await send({"type": "lifespan.shutdown.complete"})
+      72  
+      73  
+      74  class TrioDispatcherMiddleware(_DispatcherMiddleware):
+
+Uncovered branch: line 70 → exit/exception
+      67                  await send({"type": "lifespan.startup.complete"})
+      68          elif message["type"] == "lifespan.shutdown.complete":
+      69              self.shutdown_complete[path] = True
+>>>   70              if all(self.shutdown_complete.values()):
+      71                  await send({"type": "lifespan.shutdown.complete"})
+      72  
+      73  
+      74  class TrioDispatcherMiddleware(_DispatcherMiddleware):
+      75      async def _handle_lifespan(self, scope: Scope, receive: Callable, send: Callable) -> None:
+      76          import trio
+
+Uncovered branch: line 85 → line 86
+      82          self.shutdown_complete = {path: False for path in self.mounts}
+      83  
+      84          async with trio.open_nursery() as nursery:
+>>>   85              for path, app in self.mounts.items():
+      86                  nursery.start_soon(
+      87                      app,
+      88                      scope,
+      89                      self.app_queues[path][1].receive,
+      90                      partial(self.send, path, send),
+      91                  )
+
+Uncovered branch: line 95 → line 96
+      92  
+      93              while True:
+      94                  message = await receive()
+>>>   95                  for channels in self.app_queues.values():
+      96                      await channels[0].send(message)
+      97                  if message["type"] == "lifespan.shutdown":
+      98                      break
+      99  
+     100      async def send(self, path: str, send: Callable, message: dict) -> None:
+     101          if message["type"] == "lifespan.startup.complete":
+
+Uncovered branch: line 97 → line 93
+      94                  message = await receive()
+      95                  for channels in self.app_queues.values():
+      96                      await channels[0].send(message)
+>>>   97                  if message["type"] == "lifespan.shutdown":
+      98                      break
+      99  
+     100      async def send(self, path: str, send: Callable, message: dict) -> None:
+     101          if message["type"] == "lifespan.startup.complete":
+     102              self.startup_complete[path] = True
+     103              if all(self.startup_complete.values()):
+
+Uncovered branch: line 101 → line 102
+      98                      break
+      99  
+     100      async def send(self, path: str, send: Callable, message: dict) -> None:
+>>>  101          if message["type"] == "lifespan.startup.complete":
+     102              self.startup_complete[path] = True
+     103              if all(self.startup_complete.values()):
+     104                  await send({"type": "lifespan.startup.complete"})
+     105          elif message["type"] == "lifespan.shutdown.complete":
+     106              self.shutdown_complete[path] = True
+     107              if all(self.shutdown_complete.values()):
+
+Uncovered branch: line 103 → exit/exception
+     100      async def send(self, path: str, send: Callable, message: dict) -> None:
+     101          if message["type"] == "lifespan.startup.complete":
+     102              self.startup_complete[path] = True
+>>>  103              if all(self.startup_complete.values()):
+     104                  await send({"type": "lifespan.startup.complete"})
+     105          elif message["type"] == "lifespan.shutdown.complete":
+     106              self.shutdown_complete[path] = True
+     107              if all(self.shutdown_complete.values()):
+     108                  await send({"type": "lifespan.shutdown.complete"})
+     109  
+
+Uncovered branch: line 105 → exit/exception
+     102              self.startup_complete[path] = True
+     103              if all(self.startup_complete.values()):
+     104                  await send({"type": "lifespan.startup.complete"})
+>>>  105          elif message["type"] == "lifespan.shutdown.complete":
+     106              self.shutdown_complete[path] = True
+     107              if all(self.shutdown_complete.values()):
+     108                  await send({"type": "lifespan.shutdown.complete"})
+     109  
+     110  
+     111  DispatcherMiddleware = AsyncioDispatcherMiddleware  # Remove with version 0.11
+
+Uncovered branch: line 107 → exit/exception
+     104                  await send({"type": "lifespan.startup.complete"})
+     105          elif message["type"] == "lifespan.shutdown.complete":
+     106              self.shutdown_complete[path] = True
+>>>  107              if all(self.shutdown_complete.values()):
+     108                  await send({"type": "lifespan.shutdown.complete"})
+     109  
+     110  
+     111  DispatcherMiddleware = AsyncioDispatcherMiddleware  # Remove with version 0.11
+
+## src/hypercorn/middleware/http_to_https.py  (covered: 89%)
+
+Uncovered branch: line 17 → line 26
+      14      async def __call__(self, scope: Scope, receive: Callable, send: Callable) -> None:
+      15          if scope["type"] == "http" and scope["scheme"] == "http":
+      16              await self._send_http_redirect(scope, send)
+>>>   17          elif scope["type"] == "websocket" and scope["scheme"] == "ws":
+      18              # If the server supports the WebSocket Denial Response
+      19              # extension we can send a redirection response, if not we
+      20              # can only deny the WebSocket connection.
+      21              if "websocket.http.response" in scope.get("extensions", {}):
+      22                  await self._send_websocket_redirect(scope, send)
+      23              else:
+
+Uncovered branch: line 59 → line 63
+      56      def _new_url(self, scheme: str, scope: WWWScope) -> str:
+      57          host = self.host
+      58          if host is None:
+>>>   59              for key, value in scope["headers"]:
+      60                  if key == b"host":
+      61                      host = value.decode("latin-1")
+      62                      break
+      63          if host is None:
+      64              raise ValueError("Host to redirect to cannot be determined")
+      65  
+
+Uncovered branch: line 60 → line 59
+      57          host = self.host
+      58          if host is None:
+      59              for key, value in scope["headers"]:
+>>>   60                  if key == b"host":
+      61                      host = value.decode("latin-1")
+      62                      break
+      63          if host is None:
+      64              raise ValueError("Host to redirect to cannot be determined")
+      65  
+      66          path = scope.get("root_path", "") + scope["raw_path"].decode()
+
+Uncovered branch: line 63 → line 64
+      60                  if key == b"host":
+      61                      host = value.decode("latin-1")
+      62                      break
+>>>   63          if host is None:
+      64              raise ValueError("Host to redirect to cannot be determined")
+      65  
+      66          path = scope.get("root_path", "") + scope["raw_path"].decode()
+      67          return urlunsplit((scheme, host, path, scope["query_string"].decode(), ""))
+
+## src/hypercorn/middleware/proxy_fix.py  (covered: 88%)
+
+Uncovered branch: line 23 → line 63
+      20  
+      21      async def __call__(self, scope: Scope, receive: Callable, send: Callable) -> None:
+      22          # Keep the `or` instead of `in {'http' …}` to allow type narrowing
+>>>   23          if scope["type"] == "http" or scope["type"] == "websocket":
+      24              scope = deepcopy(scope)
+      25              headers = scope["headers"]
+      26              client: str | None = None
+      27              scheme: str | None = None
+      28              host: str | None = None
+      29  
+
+Uncovered branch: line 40 → line 35
+      37                          client = part[4:].strip()
+      38                      elif part.startswith("host="):
+      39                          host = part[5:].strip()
+>>>   40                      elif part.startswith("proto="):
+      41                          scheme = part[6:].strip()
+      42  
+      43              else:
+      44                  client = _get_trusted_value(b"x-forwarded-for", headers, self.trusted_hops)
+      45                  scheme = _get_trusted_value(b"x-forwarded-proto", headers, self.trusted_hops)
+      46                  host = _get_trusted_value(b"x-forwarded-host", headers, self.trusted_hops)
+
+Uncovered branch: line 48 → line 51
+      45                  scheme = _get_trusted_value(b"x-forwarded-proto", headers, self.trusted_hops)
+      46                  host = _get_trusted_value(b"x-forwarded-host", headers, self.trusted_hops)
+      47  
+>>>   48              if client is not None:
+      49                  scope["client"] = (client, 0)
+      50  
+      51              if scheme is not None:
+      52                  scope["scheme"] = scheme
+      53  
+      54              if host is not None:
+
+Uncovered branch: line 51 → line 54
+      48              if client is not None:
+      49                  scope["client"] = (client, 0)
+      50  
+>>>   51              if scheme is not None:
+      52                  scope["scheme"] = scheme
+      53  
+      54              if host is not None:
+      55                  headers = [
+      56                      (name, header_value)
+      57                      for name, header_value in headers
+
+Uncovered branch: line 54 → line 63
+      51              if scheme is not None:
+      52                  scope["scheme"] = scheme
+      53  
+>>>   54              if host is not None:
+      55                  headers = [
+      56                      (name, header_value)
+      57                      for name, header_value in headers
+      58                      if name.lower() != b"host"
+      59                  ]
+      60                  headers.append((b"host", host.encode()))
+
+Uncovered branch: line 69 → line 70
+      66  def _get_trusted_value(
+      67      name: bytes, headers: Iterable[tuple[bytes, bytes]], trusted_hops: int
+      68  ) -> str | None:
+>>>   69      if trusted_hops == 0:
+      70          return None
+      71  
+      72      values = []
+      73      for header_name, header_value in headers:
+      74          if header_name.lower() == name:
+      75              values.extend([value.decode("latin1").strip() for value in header_value.split(b",")])
+
+Uncovered branch: line 77 → line 80
+      74          if header_name.lower() == name:
+      75              values.extend([value.decode("latin1").strip() for value in header_value.split(b",")])
+      76  
+>>>   77      if len(values) >= trusted_hops:
+      78          return values[-trusted_hops]
+      79  
+      80      return None
+
+## src/hypercorn/middleware/wsgi.py  (covered: 96%)
+
+## src/hypercorn/trio/run.py  (covered: 0%)
+
+Uncovered branch: line 26 → line 27
+      23      ShutdownError,
+      24  )
+      25  
+>>>   26  if sys.version_info < (3, 11):
+      27      from exceptiongroup import BaseExceptionGroup
+      28  
+      29  
+      30  async def worker_serve(
+      31      app: AppWrapper,
+      32      config: Config,
+
+Uncovered branch: line 43 → line 44
+      40      lifespan_state: LifespanState = {}
+      41      lifespan = Lifespan(app, config, lifespan_state)
+      42      max_requests = None
+>>>   43      if config.max_requests is not None:
+      44          max_requests = config.max_requests + randint(0, config.max_requests_jitter)
+      45      context = WorkerContext(max_requests)
+      46  
+      47      async with trio.open_nursery() as lifespan_nursery:
+      48          await lifespan_nursery.start(lifespan.handle_lifespan)
+      49          await lifespan.wait_for_startup()
+
+Uncovered branch: line 52 → line 53
+      49          await lifespan.wait_for_startup()
+      50  
+      51          async with trio.open_nursery() as server_nursery:
+>>>   52              if sockets is None:
+      53                  sockets = config.create_sockets()
+      54                  for sock in sockets.secure_sockets:
+      55                      sock.listen(config.backlog)
+      56                  for sock in sockets.insecure_sockets:
+      57                      sock.listen(config.backlog)
+      58  
+
+Uncovered branch: line 54 → line 55
+      51          async with trio.open_nursery() as server_nursery:
+      52              if sockets is None:
+      53                  sockets = config.create_sockets()
+>>>   54                  for sock in sockets.secure_sockets:
+      55                      sock.listen(config.backlog)
+      56                  for sock in sockets.insecure_sockets:
+      57                      sock.listen(config.backlog)
+      58  
+      59              ssl_context = config.create_ssl_context()
+      60              listeners: list[trio.SSLListener[trio.SocketStream] | trio.SocketListener] = []
+
+Uncovered branch: line 56 → line 57
+      53                  sockets = config.create_sockets()
+      54                  for sock in sockets.secure_sockets:
+      55                      sock.listen(config.backlog)
+>>>   56                  for sock in sockets.insecure_sockets:
+      57                      sock.listen(config.backlog)
+      58  
+      59              ssl_context = config.create_ssl_context()
+      60              listeners: list[trio.SSLListener[trio.SocketStream] | trio.SocketListener] = []
+      61              binds = []
+      62              for sock in sockets.secure_sockets:
+
+Uncovered branch: line 62 → line 63
+      59              ssl_context = config.create_ssl_context()
+      60              listeners: list[trio.SSLListener[trio.SocketStream] | trio.SocketListener] = []
+      61              binds = []
+>>>   62              for sock in sockets.secure_sockets:
+      63                  listeners.append(
+      64                      trio.SSLListener(
+      65                          trio.SocketListener(trio.socket.from_stdlib_socket(sock)),
+      66                          ssl_context,
+      67                          https_compatible=True,
+      68                      )
+
+Uncovered branch: line 74 → line 75
+      71                  binds.append(f"https://{bind}")
+      72                  await config.log.info(f"Running on https://{bind} (CTRL + C to quit)")
+      73  
+>>>   74              for sock in sockets.insecure_sockets:
+      75                  listeners.append(trio.SocketListener(trio.socket.from_stdlib_socket(sock)))
+      76                  bind = repr_socket_addr(sock.family, sock.getsockname())
+      77                  binds.append(f"http://{bind}")
+      78                  await config.log.info(f"Running on http://{bind} (CTRL + C to quit)")
+      79  
+      80              for sock in sockets.quic_sockets:
+
+Uncovered branch: line 80 → line 81
+      77                  binds.append(f"http://{bind}")
+      78                  await config.log.info(f"Running on http://{bind} (CTRL + C to quit)")
+      79  
+>>>   80              for sock in sockets.quic_sockets:
+      81                  await server_nursery.start(
+      82                      UDPServer(
+      83                          app, config, context, ConnectionState(lifespan_state.copy()), sock
+      84                      ).run
+      85                  )
+      86                  bind = repr_socket_addr(sock.family, sock.getsockname())
+
+Uncovered branch: line 92 → line 93
+      89              task_status.started(binds)
+      90              try:
+      91                  async with trio.open_nursery(strict_exception_groups=True) as nursery:
+>>>   92                      if shutdown_trigger is not None:
+      93                          nursery.start_soon(raise_shutdown, shutdown_trigger)
+      94                      nursery.start_soon(raise_shutdown, context.terminate.wait)
+      95  
+      96                      nursery.start_soon(
+      97                          partial(
+      98                              trio.serve_listeners,
+
+Uncovered branch: line 114 → line 115
+     111                      await trio.sleep_forever()
+     112              except BaseExceptionGroup as error:
+     113                  _, other_errors = error.split((ShutdownError, KeyboardInterrupt))
+>>>  114                  if other_errors is not None:
+     115                      raise other_errors
+     116              finally:
+     117                  await context.terminated.set()
+     118                  server_nursery.cancel_scope.deadline = trio.current_time() + config.graceful_timeout
+     119  
+     120          await lifespan.wait_for_shutdown()
+
+Uncovered branch: line 127 → line 128
+     124  def trio_worker(
+     125      config: Config, sockets: Sockets | None = None, shutdown_event: EventType | None = None
+     126  ) -> None:
+>>>  127      if sockets is not None:
+     128          for sock in sockets.secure_sockets:
+     129              sock.listen(config.backlog)
+     130          for sock in sockets.insecure_sockets:
+     131              sock.listen(config.backlog)
+     132      app = load_application(config.application_path, config.wsgi_max_body_size)
+     133  
+
+Uncovered branch: line 128 → line 129
+     125      config: Config, sockets: Sockets | None = None, shutdown_event: EventType | None = None
+     126  ) -> None:
+     127      if sockets is not None:
+>>>  128          for sock in sockets.secure_sockets:
+     129              sock.listen(config.backlog)
+     130          for sock in sockets.insecure_sockets:
+     131              sock.listen(config.backlog)
+     132      app = load_application(config.application_path, config.wsgi_max_body_size)
+     133  
+     134      shutdown_trigger = None
+
+Uncovered branch: line 130 → line 131
+     127      if sockets is not None:
+     128          for sock in sockets.secure_sockets:
+     129              sock.listen(config.backlog)
+>>>  130          for sock in sockets.insecure_sockets:
+     131              sock.listen(config.backlog)
+     132      app = load_application(config.application_path, config.wsgi_max_body_size)
+     133  
+     134      shutdown_trigger = None
+     135      if shutdown_event is not None:
+     136          shutdown_trigger = partial(check_multiprocess_shutdown_event, shutdown_event, trio.sleep)
+
+Uncovered branch: line 135 → line 136
+     132      app = load_application(config.application_path, config.wsgi_max_body_size)
+     133  
+     134      shutdown_trigger = None
+>>>  135      if shutdown_event is not None:
+     136          shutdown_trigger = partial(check_multiprocess_shutdown_event, shutdown_event, trio.sleep)
+     137  
+     138      trio.run(partial(worker_serve, app, config, sockets=sockets, shutdown_trigger=shutdown_trigger))

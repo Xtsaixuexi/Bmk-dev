@@ -1,0 +1,12 @@
+{
+  "collected": 438,
+  "command": "pytest against sandboxed copied upstream tests with PYTHONPATH dummy_impl first",
+  "dummy_gate": "pass",
+  "dummy_impl_path": "/root/autodl-tmp/Bmk-Lizhiqian/wip/doit-fullrepro-001/filter/dummy_impl",
+  "error": 142,
+  "failed": 296,
+  "passed": 0,
+  "skipped": 0,
+  "test_sandbox_path": "/root/autodl-tmp/Bmk-Lizhiqian/wip/doit-fullrepro-001/filter/test_sandbox",
+  "total": 438
+}

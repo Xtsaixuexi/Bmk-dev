@@ -1,0 +1,161 @@
+{
+  "task_id": "pyparsing-fullrepro-001",
+  "repo": "pyparsing",
+  "source_path": "/root/autodl-tmp/e2e/pyparsing",
+  "source_commit": "ecb1b14dbf1ad1b699c081ed63b9746a244ee5fa",
+  "status": "QUALIFIED",
+  "current_step": 8,
+  "pipeline_state": "QUALIFIED",
+  "created_at": "2026-07-02",
+  "source": {
+    "path": "/root/autodl-tmp/e2e/pyparsing",
+    "commit": "ecb1b14dbf1ad1b699c081ed63b9746a244ee5fa",
+    "package": "pyparsing",
+    "tests": "tests"
+  },
+  "cleanroom_policy": {
+    "candidate_visible": [
+      "spec.md",
+      "public implementation prompt"
+    ],
+    "candidate_forbidden": [
+      "source repository",
+      "upstream tests",
+      "hidden oracle tests",
+      "kept_nodeids.txt",
+      "taxonomy.jsonl",
+      "spec_test_map.md",
+      "reference_score.json",
+      "candidate score reports",
+      "api.txt"
+    ]
+  },
+  "artifacts": {
+    "candidate_selection": "candidate_selection.md",
+    "filter_notes": "filter_notes.md",
+    "source_audit": "source_audit.json",
+    "source_pointer": "source_pointer.md",
+    "spec_sources": "spec_sources.md",
+    "pipeline_state": "PIPELINE_STATE.md",
+    "spec": "spec.md",
+    "internal_spec": "spec/spec_v4.md",
+    "candidate_spec": "spec.md",
+    "public_api_surface": "spec/public_api_surface.md",
+    "spec_validation": "spec/spec_validation.md",
+    "kept_nodeids": "kept_nodeids.txt",
+    "taxonomy": "taxonomy.jsonl",
+    "test_taxonomy_score": "test_taxonomy_score.csv",
+    "spec_test_map": "spec_test_map.md",
+    "filter_validation": "filter_validation.md",
+    "rewrite_audit": "rewrite_audit.md",
+    "collection_audit": "collection_audit.md",
+    "reference_score": "reference_score.json",
+    "reference_validation": "reference_validation.md"
+  },
+  "filter_summary": {
+    "total_nodeids": 2040,
+    "kept_covered": 298,
+    "source_only": 307,
+    "excluded": 1435,
+    "spec_gap": 0,
+    "layers": {
+      "atomic": 167,
+      "integration": 106,
+      "system_e2e": 25
+    }
+  },
+  "reference_summary": {
+    "passed": 298,
+    "total": 298,
+    "pass_rate_excluding_skips": 1.0,
+    "spec_version": "v4",
+    "by_layer": {
+      "atomic": {
+        "passed": 167,
+        "total": 167
+      },
+      "integration": {
+        "passed": 106,
+        "total": 106
+      },
+      "system_e2e": {
+        "passed": 25,
+        "total": 25
+      }
+    }
+  },
+  "judge_report": "../../wip/pyparsing-fullrepro-001/judge/gate_report.md",
+  "best_candidate_summary": {
+    "run_id": "opencode-gpt-5.5-pyparsing-fullrepro-001-v4-clean-20260702T124500Z",
+    "runner": "opencode",
+    "model": "gpt-5.5 v4 clean",
+    "passed": 30,
+    "failed": 16,
+    "collection_error": 252,
+    "total": 298,
+    "pass_rate_excluding_skips": 0.10067114093959731,
+    "by_layer": {
+      "atomic": {
+        "passed": 30,
+        "failed": 8,
+        "collection_error": 129,
+        "total": 167
+      },
+      "integration": {
+        "passed": 0,
+        "failed": 7,
+        "collection_error": 99,
+        "total": 106
+      },
+      "system_e2e": {
+        "passed": 0,
+        "failed": 1,
+        "collection_error": 24,
+        "total": 25
+      }
+    },
+    "import_provenance_stdout": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/opencode-gpt-5.5-pyparsing-fullrepro-001-v4-clean-20260702T124500Z/output/pyparsing/__init__.py"
+  },
+  "diagnostic_candidates": [
+    {
+      "run_id": "opencode-direct-gpt-5.5-pyparsing-fullrepro-001-v3-isolated-20260701T223807Z",
+      "score": "32/298",
+      "status": "DIAGNOSTIC_NOT_FINAL",
+      "reason": "v3 diagnostic run after spec gap; not adopted for final scoring"
+    }
+  ],
+  "scorer_isolation": {
+    "score_harness": "harness/score_pytest_original.py",
+    "package_import": "pyparsing",
+    "preflight_command": "python -c \"import pyparsing; print(pyparsing.__file__)\"",
+    "remove_paths": [
+      "pyparsing"
+    ],
+    "recorded_from_artifacts": false,
+    "source_shadowing_guard": "Remove the source package path from the copied oracle worktree before scoring, then require preflight stdout to point into candidate output.",
+    "verification_status": "recommended_not_historically_recorded; rerun scoring before using as a final candidate score"
+  },
+  "coverage-gap": {
+    "verdict": "GAP",
+    "scoreable_tests": 298,
+    "global_floor_ok": true,
+    "per_section_minimums": {
+      "Cross-View Invariants": 5,
+      "Error Semantics": 3,
+      "workflow_sections": 3,
+      "all_other_scored_sections": 3
+    },
+    "below_minimum_sections": [
+      {
+        "section": "Diagrams",
+        "covered": 0,
+        "minimum": 3
+      }
+    ],
+    "unknown_mapping_cells": 0,
+    "requires_action": "Expand or remap fair public tests before strict current-main qualification; retain caveat if generation is saturated without circular/source-only assertions."
+  },
+  "labels": [
+    "coverage-gap"
+  ]
+}

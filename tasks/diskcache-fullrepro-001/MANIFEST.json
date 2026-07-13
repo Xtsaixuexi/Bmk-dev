@@ -1,0 +1,278 @@
+{
+  "task_id": "diskcache-fullrepro-001",
+  "repo": "grantjenks__python-diskcache",
+  "status": "QUALIFIED",
+  "current_step": 5,
+  "source": {
+    "path": "/root/autodl-tmp/new-e2e/grantjenks__python-diskcache",
+    "commit": "ebfa37cd99d7ef716ec452ad8af4b4276a8e2233",
+    "package": "diskcache",
+    "tests": "tests/test_*.py"
+  },
+  "cleanroom_policy": {
+    "candidate_visible": [
+      "spec.md",
+      "public implementation prompt"
+    ],
+    "candidate_forbidden": [
+      "source repository",
+      "upstream tests",
+      "hidden oracle tests",
+      "kept_nodeids.txt",
+      "taxonomy.jsonl",
+      "spec_test_map.md",
+      "reference_score.json",
+      "candidate score reports",
+      "api.txt"
+    ]
+  },
+  "artifacts": {
+    "candidate_selection": "candidate_selection.md",
+    "source_audit": "source_audit.json",
+    "source_pointer": "source_pointer.md",
+    "filter_notes": "filter_notes.md",
+    "step1_deepseekv4pro_review": "review/step1_deepseekv4pro_review.md",
+    "step1_glm52_review": "review/step1_glm52_review.md",
+    "spec_v1": "spec/spec_v1.md",
+    "spec_v1_candidate": "spec/spec_v1_candidate.md",
+    "spec_validation": "spec/spec_validation.md",
+    "stage2_deepseekv4pro_review_v2": "review/step2_v2_deepseekv4pro_review.md",
+    "stage2_glm52_review_v2": "review/step2_v2_glm52_review.md",
+    "generated_tests": "filter/oracle_repo/tests/test_generated_diskcache.py",
+    "rewrite_audit": "filter/rewrite_audit.md",
+    "spec_test_map": "filter/spec_test_map.md",
+    "kept_nodeids": "filter/kept_nodeids.txt",
+    "taxonomy": "filter/taxonomy.jsonl",
+    "test_taxonomy_score": "filter/test_taxonomy_score.csv",
+    "dummy_score": "filter/dummy_score.json",
+    "reference_score": "reference_score.json",
+    "final_reference_score_check": "final_reference_score_check.json",
+    "reference_validation": "reference_validation.md",
+    "filter_validation": "filter/filter_validation.md",
+    "stage3_alignment": "github_alignment/stage3_test_filter_alignment.md",
+    "stage2_alignment": "github_alignment/stage2_spec_writer_alignment.md",
+    "final_github_workflow_checksum_check": "github_alignment/final_workflow_checksum_check.md",
+    "final_stage_product_check": "github_alignment/final_stage_product_check.md",
+    "stage2_deepseekv4pro_review_v3": "review/step2_v3_deepseekv4pro_review.md",
+    "stage2_glm52_review_v3": "review/step2_v3_glm52_review.md",
+    "stage3_deepseekv4pro_review": "review/step3_deepseekv4pro_review.md",
+    "stage3_glm52_review": "review/step3_glm52_review.md",
+    "candidate_score_result": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/opencode-gpt-5.5-diskcache-fullrepro-001-20260709T-stage4-cleanroom/score_result.json",
+    "candidate_score_report": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/opencode-gpt-5.5-diskcache-fullrepro-001-20260709T-stage4-cleanroom/score_report.md",
+    "diagnosis_report": "judge/diagnosis_report.md",
+    "gate_report": "judge/gate_report.md",
+    "stage5_deepseekv4pro_review": "review/step5_deepseekv4pro_review.md",
+    "stage5_glm52_review": "review/step5_glm52_review.md",
+    "generated_oracle_repo": "filter/oracle_repo",
+    "generated_public_tests": "tests/test_generated_diskcache.py",
+    "README": "README.md",
+    "root_kept_nodeids": "kept_nodeids.txt",
+    "root_taxonomy": "taxonomy.jsonl",
+    "root_spec_test_map": "spec_test_map.md"
+  },
+  "selection_summary": {
+    "source_loc_top_level_package": 4150,
+    "regular_test_files": 7,
+    "regular_test_functions": 253,
+    "module_level_private_import_files": 0,
+    "docs_test_alignment": "aligned",
+    "decision": "keep"
+  },
+  "state": "QUALIFIED",
+  "spec_version": "v1",
+  "kept_nodeids": "kept_nodeids.txt",
+  "oracle_source": "generated_only",
+  "reference_passed": 63,
+  "reference_failed": 0,
+  "reference_total": 63,
+  "score_harness": "harness/score_pytest_original.py",
+  "remove_paths": [
+    "diskcache"
+  ],
+  "scorer_isolation": {
+    "score_harness": "harness/score_pytest_original.py",
+    "package_import": "diskcache",
+    "preflight_command": "python -c \"import diskcache; print(diskcache.__file__)\"",
+    "remove_paths": [
+      "diskcache"
+    ],
+    "source_repo_for_oracle_tests": "tasks/diskcache-fullrepro-001",
+    "source_shadowing_guard": "Use generated oracle worktree with no reference package, add solution dir through PYTHONPATH, and pass --remove-path diskcache.",
+    "recorded_from_artifacts": true
+  },
+  "filter_summary": {
+    "upstream_collectable_functions": 179,
+    "generated_scoreable_functions": 63,
+    "oracle_count": 63,
+    "layers": {
+      "atomic": 22,
+      "integration": 33,
+      "system_e2e": 8
+    },
+    "dummy_passed": 0,
+    "reference_passed": 63,
+    "reference_total": 63,
+    "coverage_below_minimum_sections": [],
+    "generated_only_spotcheck_required": true,
+    "candidate_passed": 61,
+    "candidate_total": 63,
+    "candidate_failures": [
+      "test_cache_length_counts_expired_entries_until_cleanup",
+      "test_fanout_reset_updates_shard_settings"
+    ],
+    "all_upstream_nodeids": 179,
+    "kept_upstream": 0,
+    "generated": 63,
+    "scoreable": 63,
+    "source_only": 0,
+    "excluded": "179 upstream audited but not rewritten; optional Django/doctest collection unavailable without Django",
+    "spec_gap": 0,
+    "oracle_source": "generated_only"
+  },
+  "model_reviews": {
+    "stage2_v3": {
+      "deepseek-v4-pro": "CONTINUE",
+      "glm-5.2": "PASS_CONTINUE"
+    },
+    "stage3": {
+      "deepseek-v4-pro": "CONTINUE",
+      "glm-5.2": "PASS_CONTINUE"
+    },
+    "stage5": {
+      "deepseek-v4-pro": "QUALIFIED_CONTINUE",
+      "glm-5.2": "CONFIRMED_QUALIFIED"
+    }
+  },
+  "pipeline_state": "QUALIFIED",
+  "completed_at": "2026-07-08T22:17:26Z",
+  "filter_version": "generated_filter_v2",
+  "candidate_eval_summary": {
+    "adopted_model": "gpt-5.5",
+    "adopted_runner": "opencode",
+    "best_candidate": {
+      "runner": "opencode",
+      "model": "gpt-5.5",
+      "run_id": "opencode-gpt-5.5-diskcache-fullrepro-001-20260709T-stage4-cleanroom",
+      "run_path": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/opencode-gpt-5.5-diskcache-fullrepro-001-20260709T-stage4-cleanroom",
+      "passed": 61,
+      "total": 63,
+      "pass_rate_excluding_skips": 0.9682539682539683,
+      "summary": {
+        "failed": 2,
+        "passed": 61,
+        "total": 63
+      },
+      "by_layer": {
+        "atomic": {
+          "passed": 22,
+          "total": 22
+        },
+        "integration": {
+          "failed": 2,
+          "passed": 31,
+          "total": 33
+        },
+        "system_e2e": {
+          "passed": 8,
+          "total": 8
+        }
+      },
+      "import_provenance_stdout": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/opencode-gpt-5.5-diskcache-fullrepro-001-20260709T-stage4-cleanroom/output/diskcache/__init__.py"
+    },
+    "adopted_runners": [
+      "opencode"
+    ],
+    "all_scored": [
+      {
+        "runner": "opencode",
+        "model": "gpt-5.5",
+        "run_id": "opencode-gpt-5.5-diskcache-fullrepro-001-20260709T-stage4-cleanroom",
+        "run_path": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/opencode-gpt-5.5-diskcache-fullrepro-001-20260709T-stage4-cleanroom",
+        "passed": 61,
+        "total": 63,
+        "pass_rate_excluding_skips": 0.9682539682539683,
+        "summary": {
+          "failed": 2,
+          "passed": 61,
+          "total": 63
+        },
+        "by_layer": {
+          "atomic": {
+            "passed": 22,
+            "total": 22
+          },
+          "integration": {
+            "failed": 2,
+            "passed": 31,
+            "total": 33
+          },
+          "system_e2e": {
+            "passed": 8,
+            "total": 8
+          }
+        },
+        "import_provenance_stdout": "/root/autodl-tmp/Bmk-Lizhiqian/candidate-runs/opencode-gpt-5.5-diskcache-fullrepro-001-20260709T-stage4-cleanroom/output/diskcache/__init__.py"
+      }
+    ]
+  },
+  "qualification_reason": "Reference/dummy/scorer-isolation gates pass; generated-only oracle spot-check passes; Gate D coverage is FULL; remaining candidate failures are spec-driven behavioral gaps.",
+  "labels": [
+    "qualified",
+    "generated-only-spotchecked",
+    "high-candidate-score",
+    "expiration-state-signal",
+    "settings-cross-view-signal"
+  ],
+  "coverage-gap": {
+    "verdict": "FULL",
+    "scoreable_tests": 63,
+    "global_floor_ok": true,
+    "below_minimum_sections": [],
+    "unknown_mapping_cells": 0,
+    "requires_action": "No Gate D action required."
+  },
+  "package_name": "diskcache",
+  "package_version": "5.6.3",
+  "source_repo": "grantjenks/python-diskcache",
+  "source_path": "/root/autodl-tmp/new-e2e/grantjenks__python-diskcache",
+  "source_commit": "ebfa37cd99d7ef716ec452ad8af4b4276a8e2233",
+  "spec": "spec.md",
+  "spec_test_map": "spec_test_map.md",
+  "taxonomy": "taxonomy.jsonl",
+  "test_taxonomy_score": "test_taxonomy_score.csv",
+  "reference": "reference_score.json",
+  "reference_validation": "reference_validation.md",
+  "filter_validation": "filter_validation.md",
+  "rewrite_audit": "rewrite_audit.md",
+  "generated_tests": "tests/test_generated_diskcache.py",
+  "judge": "judge/diagnosis_report.md",
+  "diagnosis_report": "judge/diagnosis_report.md",
+  "candidate_visibility": "Candidate generation may receive only spec.md plus generic implementation instructions. Do not expose source path, generated tests, kept_nodeids, taxonomy, spec_test_map, reference_score, reviews, score reports, prior outputs, or API keys.",
+  "required_test_dependencies": [
+    "pytest",
+    "pytest-json-report"
+  ],
+  "final_reference_summary": {
+    "artifact": "final_reference_score_check.json",
+    "run_dir": "/root/autodl-tmp/Bmk-Lizhiqian/final-score-runs/diskcache-fullrepro-001-reference-package-check",
+    "import_provenance_stdout": "/root/autodl-tmp/new-e2e/grantjenks__python-diskcache/diskcache/__init__.py",
+    "passed": 63,
+    "failed": 0,
+    "total": 63,
+    "pass_rate_excluding_skips": 1.0,
+    "by_layer": {
+      "atomic": {
+        "passed": 22,
+        "total": 22
+      },
+      "integration": {
+        "passed": 33,
+        "total": 33
+      },
+      "system_e2e": {
+        "passed": 8,
+        "total": 8
+      }
+    }
+  }
+}

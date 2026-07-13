@@ -1,0 +1,39 @@
+{
+  "task_id": "pyyaml-fullrepro-001",
+  "stage": 1,
+  "source_repo": "yaml/pyyaml",
+  "checkout_name": "yaml__pyyaml",
+  "source_path": "/root/autodl-tmp/new-e2e/yaml__pyyaml",
+  "remote": "https://github.com/yaml/pyyaml.git",
+  "commit": "34a9bf82357f4952d8f194a5a31f1c39743652d0",
+  "mechanical_audit": {
+    "src_loc": 5238,
+    "source_py_files": 23,
+    "test_files": 25,
+    "test_functions_rough": 49,
+    "docs_files_rough": 3,
+    "private_import_file_rate": 0.04,
+    "network_test_file_rate": 0.04,
+    "snapshot_test_file_rate": 0.0,
+    "priority_score": 4.22,
+    "priority_reason": "screen_keep with docs/tests and acceptable import risk"
+  },
+  "collect_pre_screen": {
+    "status": "COLLECT_OK",
+    "returncode": 0,
+    "collected_nodeids": 2616,
+    "error_markers": 0,
+    "command": [
+      "/root/miniconda3/bin/python",
+      "-m",
+      "pytest",
+      "--collect-only",
+      "-q",
+      "-o",
+      "addopts=",
+      "tests"
+    ]
+  },
+  "decision": "keep",
+  "selected_at": "2026-07-09"
+}

@@ -1,0 +1,15 @@
+{
+  "repo": "pycparser",
+  "src_loc": 4912,
+  "src_files": 28,
+  "test_collected": 135,
+  "kept": 90,
+  "bad_files": [
+    {
+      "file": "tests/test_util.py",
+      "rc": 5,
+      "kind": "no_nodes",
+      "tail": "\nno tests collected in 0.00s"
+    }
+  ]
+}

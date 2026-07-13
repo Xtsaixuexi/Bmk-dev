@@ -1,0 +1,8 @@
+{
+  "total": 52,
+  "passed": 0,
+  "failed": 52,
+  "pass_rate": 0.0,
+  "stdout": "logs/stage3_dummy_corrected_stdout.txt",
+  "stderr": "logs/stage3_dummy_corrected_stderr.txt"
+}
